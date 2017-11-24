@@ -1,0 +1,8 @@
+
+=  Validation rules
+
+:leveloffset: +1
+include::transaction-business-rules.adoc[]
+include::transaction-syntax-rules.adoc[]
+
+:leveloffset: -1

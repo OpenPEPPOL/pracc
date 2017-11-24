@@ -1,0 +1,22 @@
+
+=	Code lists and business rules
+
+
+The piloting of {link-esens} for Call for Tenders, is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the following {link-cenbii}[CEN BII] documents: +
+
+* CWA 17027-212 UBL SIG - Trdm083 Call for Tenders
+* CWA 17027-112 Profile 47 - Call for Tenders
+* ESPD Exchange Data Model
+
+[NOTE]
+====
+
+The profile document and syntax implementation guides from CEN BII, as well as the ESPD Exchange Data Model and ESPD Documentation must be considered when implementing Call for Tenders based on this BIS document
+
+====
+
+:leveloffset: +1
+
+include::espd.adoc[]
+
+:leveloffset: -1

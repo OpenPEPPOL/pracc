@@ -1,0 +1,18 @@
+
+
+=  Code lists for coded elements
+[cols="3,2,2,3,2", options="header"]
+.Code list for coded elements
+|===
+| Business Term | Source | Subset | Xpath | ListID
+| Country of registration | link:https://www.iso.org/iso-3166-country-codes.html[ISO 3166-1 Alpha2] | |cbc:IdentificationCode |ISO3166-1:Alpha2
+| Procedure type |OJEU | |cbc:ProcedureCode |PR_PROC
+| Procurement project type |OJEU | |cbc:ProcurementTypeCode |PROJECT_TYPE
+| Document Type Code | link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[eSENS] | |cbc:DocumentTypeCode |documentType
+| Provided document to be returned indicator | link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[eSENS] | |cbc:DocumentStatusCode |documentStatusType
+| Document mime type code | link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[IANA] |Valid values according to EN16931 |cbc:MimeCode |
+| Provided document language | link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO 639-1] | |cbc:LocaleCode |ISO639-1
+| Type of Contract to Establish |CEN BII | |cbc:ContractingSystemCode |CONTRACT_TYPE
+| Backup for electronic submission indicator /Electronic submission required indicator |CEN BII | |ccbc:SubmissionMethodCode |BII_SUBMISSION
+|
+|===
