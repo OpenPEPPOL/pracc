@@ -1,0 +1,11 @@
+*.html
+*.log
+*.iml
+*.jar
+*.zip
+target
+/target-core
+*.html
+*.pdf
+*.epub
+tmp*
