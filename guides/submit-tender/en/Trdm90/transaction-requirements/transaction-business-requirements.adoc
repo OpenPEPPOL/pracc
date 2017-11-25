@@ -1,0 +1,101 @@
+
+= Identification and description of the requirements
+
+[cols="2,10", options="header"]
+.Transaction business requirements of Trdm090
+|===
+| ID | Requirement
+| tbr90-001| The CEN/BII profile and transaction names and versions shall be identified.
+| tbr90-002| The economic operator shall be identified.
+| tbr90-003| The contracting body shall be identified.
+| tbr90-004| The sending date and time (and time zone) of the message shall be stated.
+| tbr90-005| The message shall have a message ID and may refer to message ID’s of previously submitted
+tenders.
+| tbr90-006| The message shall contain the following information about the business opportunity: +
+* Call for tenders ID and version +
+* Procurement Reference number +
+| tbr90-007| The  message  shall  contain  either  credentials  issued  by  the  Contracting  Body,  or  the  following information about the business: +
+* Economic operator ID +
+* Economic operator ID type +
+* Economic operator name +
+* Economic operator legal form +
+* Registration number in the professional registry +
+* Economic operator registration country code +
+* Economic operator postal address (standard address elements) +
+* Contacting details (standard contact person elements) +
+| tbr90-008| The message shall contain the following information about the tender: +
+* Tender ID +
+* Tender signature +
+| tbr90-009| The message shall contain one or more (unstructured) tender documents.
+| tbr90-010| The message may contain the following information about the tender: +
+* Lot ID +
+* Language
+| tbr90-011| The message shall contain metadata of each of the documents that are attached to the tender: +
+* ID +
+* Document type (Mime code) +
+* Document description +
+* Name +
+* Size +
+* Hash +
+* Hash method +
+* Encryption Information / certificate +
+* The package to which the document belongs +
+* Lot ID (if the document is specific to a lot)
+| tbr90-012| The message shall identify the tender documents. It may identify the language of the packaged documents.
+| tbr90-013| If imposed by the contracting body, the tender documents must be signed as specified by the contracting body
+|===
+
+
+[cols="1,1,2,4,2,2", options="header"]
+.Transaction information requirements of Trdm090
+|===
+| ID | Card. | Business term | Usage | Data Type | BusReqID
+ | tir90-001 | 1..1 | Tender identifier | Identifier of the tender document. | Identifier | tbr90-005
+ | tir90-002 | 1..1 | Reference number | An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. |   | tbr90-006
+ | tir90-003 | 1..1 | Call for tender reference | A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender. |   | tbr90-005
+ | tir90-055 | 0..1 | Call for tender version | Identifies the version of the call for tenders. |   | tbr90-005
+ | tir90-56 | 0..1 | Tender language | The language used to write the tender. | Code | tbr90-010
+ | tir90-57 | 0..n | Lot identifier | An identifier for the lot. | Identifier | tbr90-010
+ | tir90-100 | 0..1 | Tender digest | Digest of the document. The digest of this tender document. |   | tbr90-009
+ | tir90-101 | 0..1 | Tender digest method code | Code that indicates the algorithm used to calculate the hash. | Code | tbr90-009
+ | tir90-102 | 0..1 | Tender signature | The signature of the document. Used to add the signature for this tender document. |   | tbr90-008
+ |   | 1..1 | Process control | Information about the specification that apply to the transaction. |   |
+ |   | 1..1 | Business process type identifier | Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way. | Identifier | tbr00-001
+ |   | 1..1 | Specification identification | An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. This identifies the European invoice norm, as well as any extensions applied. The identification may include the version of the specification. | Code | tbr00-002
+ |   | 0..1 | Contracting body | The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/23/EU, 2014/24/EU, 2014/25/EU). |   |
+ | tir90-016 | 0..1 | Contracting body name | The name of the contracting body as it is registered. |   | tbr90-003
+ | tir90-014 | 0..1 | Contracting body identifier | The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO) | Identifier | tbr90-003
+ | tir90-020 | 1..1 | Contracting body electronic address identifier | Electronic address of the contracting body. | Identifier | tbr90-003
+ | 2 | 0..n | Economic operator | Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. Information about the economic operator submitting the tender. |   |
+ | tir90-040 | 0..1 | Economic operator identifier | An identifier that identifies the economic operator, such as a legal registration identifier. | Identifier | tbr90-007
+ | tir90-041 | 0..1 | Economic operator registration country code | The registration country code of the economic operator. | Code | tbr90-007
+ | tir90-042 | 0..1 | Economic operator name | The name of the economic operator. |   | tbr90-007
+ | tir90-060 | 1..1 | Economic operator electronic address identifier | Electronic address of the economic operator. |   | tbr90-007
+ | tir90-061 | 0..1 | Economic operator legal form | A textual description of the legal form of the economic operator. |   | tbr90-007
+ |   | 0..1 | Postal address | Address information. |   | tbr90-007
+ | tir90-045 | 0..1 | Address line 1 | The main address line in an address. Usually the street name and number or post office box. | Text | tbr44-007
+ | tir90-046 | 0..1 | Address line 2 | An additional address line in an address that can be used to give further details supplementing the main line. | Text | tbr44-007
+ | tir90-047 | 0..1 | City | The common name of a city where the address is. | Text | tbr44-007
+ | tir90-048 | 0..1 | Post code | The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code. | Text | tbr44-007
+ | tir90-049 | 0..1 | Country subdivision | The subdivision of a country such as region, county, state, province etc. | Text | tbr44-007
+ | tir90-050 | 0..1 | Country code | A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation. | Code | tbr44-007
+ |   | 0..1 | Contacting details | Used to provide contacting information for a party in general or a person. |   |
+ |   | 0..1 | Contact point | The name of the contact point. | Text |
+ | tir90-053 | 0..1 | Contact telephone number | A phone number for the contact point. | Text | tbr90-007
+ | tir90-054 | 0..1 | Contact email address | An e-mail address for the contact point. | Text | tbr90-007
+ |   | 0..n | Document package | A set of related documents used in a call for tenders or tender. |   |
+ | tir90-70 | 0..1 | Document package identifier | Identifier of a document package within a call for tender or tender | Identifier | tbr90-012
+ | tir90-71 | 0..1 | Document package language | Language of the documents contained in a package within a call for tender or tender. |   | tbr90-012
+ |   | 0..n | Document | Information about an attached document. |   |
+ |   | 0..1 | Attachment identifier | An identifier that can be used to reference the attached document, such as an unique identifier. | Identifier |
+ | tir90-72 | 0..1 | Attachment description code | A functional description of the attachment expressed as code. | Code |
+ |   | 0..1 | Attached document | An attached document embedded as binary object. Attached document is used when documentation shall be stored with the invoice for future reference or audit purposes. | Binary Object |
+ | tir90-62 | 1..1 | Document identifier |   |   | tbr90-011
+ | tir90-63 | 1..1 | Document description |   |   | tbr90-011
+ | tir90-64 | 1..1 | Document type code | A code specifying the type of the document. The mime type code | Code | tbr90-011
+ | tir90-65 | 1..1 | Document name | The file name of the document. |   | tbr90-011
+ | tir90-66 | 1..1 | Document size | The file size of the document. |   | tbr90-011
+ | tir90-67 | 1..1 | Document digest | Digest of the document. |   | tbr90-011
+ | tir90-68 | 1..1 | Document digest method code | Code that indicates the algorithm used to calculate the hash. | Code | tbr90-011
+ | tir90-69 | 0..1 | Lot identifier | An identifier for the lot. | Identifier | tbr90-011
+|===

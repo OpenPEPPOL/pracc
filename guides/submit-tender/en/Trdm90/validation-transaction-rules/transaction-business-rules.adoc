@@ -1,0 +1,35 @@
+
+= Business rules
+
+The below listed business rules are additional rules added by the e-SENS pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the PEPPOL Transport infrastructure are present.
+
+[IMPORTANT]
+====
+Additional business rules are listed in the CEN BII documents, and these cannot be violated if the instance document is to be valid!
+====
+
+[cols="3,2,7", options="header"]
+.Business Rules for Trdm090, Submit tender
+|===
+ | ID | Flag | Rule
+ | eSENS-T90-R001 | Fatal | A Tender MUST have a syntax identifier.
+ | eSENS-T90-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0'
+ | eSENS-T90-R003 | Fatal | ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii54:ver3.0'
+ | eSENS-T90-R004 | Fatal | A Submit Tender Identifier MUST have a schemeURI attribute.
+ | eSENS-T90-R005 | Fatal | schemeURI for Submit Tender Identifier MUST be 'urn:uuid'.
+ | eSENS-T90-R006 | Fatal | A Submit Tender Identifier MUST be expressed in a UUID syntax (RFC 4122)
+ | eSENS-T90-R007 | Fatal | IssueTime MUST have a granularity of seconds
+ | eSENS-T90-R008 | Fatal | A Party Identifier MUST have a scheme identifier attribute.
+ | eSENS-T90-R009 | Fatal | "A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the ""PEPPOL Policy for using Identifiers""."
+ | eSENS-T90-R010 | Fatal | An Endpoint Identifier MUST have a scheme identifier attribute.
+ | eSENS-T90-R011 | Fatal | "An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the ""PEPPOL Policy for using Identifiers""."
+ | eSENS-T90-R012 | Fatal | DocumentReference Identifier for a Call for Tender Reference MUST be expressed in a UUID syntax (RFC 4122)
+ | eSENS-T90-R013 | Fatal | DocumentReference Identifiers MUST be unique.
+ | eSENS-T90-R014 | Fatal | FileName values MUST be unique.
+ | eSENS-T90-R015 | Fatal | listID for LocaleCode MUST be 'ISO639-1'.
+ | eSENS-T90-R016 | Fatal | LocalCode MUST be a valid Language Code.
+ | eSENS-T90-R017 | Fatal | DocumentHash MUST resemble a SHA-256 hash value (32 byte HexString)
+ | eSENS-T90-R018 | Fatal | HashAlgorithmMethod MUST be 'http://www.w3.org/2001/04/xmlenc#sha256'
+ | eSENS-T90-R019 | Fatal | A Tender MUST identify the Contracting Authority by its party and endpoint identifiers.
+ | eSENS-T90-R020 | Fatal | A Tender MUST identify the Economic Operator by its party and endpoint identifiers.
+|===

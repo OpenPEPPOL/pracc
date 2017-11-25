@@ -1,0 +1,10 @@
+
+= Example
+
+link:../files/tender-instance.xml[Example file]
+
+[source,xml,indent=0]
+.Example
+----
+include::../files/tender-instance.xml[]
+----

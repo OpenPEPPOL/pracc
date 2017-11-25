@@ -1,0 +1,10 @@
+[appendix]
+= Key examples/use cases
+
+:leveloffset: +1
+
+include::examples.adoc[]
+
+
+
+:leveloffset: -1

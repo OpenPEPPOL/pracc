@@ -1,0 +1,7 @@
+
+= Implementation guidelines
+
+Detailed implementation guidelines for each transaction, can be found here:
+
+*  {link-profil54-90}[Submit tender]
+*  {link-profil54-45}[Tender receipt]

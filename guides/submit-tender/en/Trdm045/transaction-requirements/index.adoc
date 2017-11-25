@@ -1,0 +1,12 @@
+
+= Transaction business and information requirements
+
+:leveloffset: +1
+
+include::transaction-business-requirements.adoc[]
+
+include::CENBII_transaction_requirements.adoc[]
+
+include::tender-receipt-notification.adoc[]
+
+:leveloffset: -1

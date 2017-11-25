@@ -1,0 +1,41 @@
+include::settings.adoc[]
+
+= BIS 54 - Submit Tender
+:author:
+:revnumber: 1.0
+:revdate: 01-11-2017
+:icons: font
+:toc: left
+:toclevels: 2
+:sectnums:
+:sectanchors:
+:source-highlighter: coderay
+:sourcedir: .
+:gendoc: ../../../shared
+:imagesdir: images
+
+:sectnums:
+
+:title-logo-image:
+
+:leveloffset: +1
+
+include::introduction.adoc[]
+
+include::principles-prerequisites/index.adoc[]
+
+include::business-process/index.adoc[]
+
+include::rem-evidence/index.adoc[]
+
+include::code-business-rules/index.adoc[]
+
+include::code-business-rules/peppol.adoc[]
+
+
+include::revision/index.adoc[]
+
+include::contributors/index.adoc[]
+
+
+:leveloffset: -1
