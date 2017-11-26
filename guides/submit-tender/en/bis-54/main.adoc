@@ -26,8 +26,6 @@ include::principles-prerequisites/index.adoc[]
 
 include::business-process/index.adoc[]
 
-include::business-requirements/index.adoc[]
-
 include::rem-evidence/index.adoc[]
 
 include::code-business-rules/index.adoc[]
