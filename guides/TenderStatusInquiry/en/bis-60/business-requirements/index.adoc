@@ -1,0 +1,15 @@
+
+= Business requirements
+
+The Tender Status Inquiry business process includes 2 transactions:
+
+* Trdm097 Tender Status Inquiry
+* Trdm083 Call For Tenders
+
+The technical specification of the transactions can be found on {link-cenbii}[CEN/BII] Profile 60 (for Trdm097) and Profile 47 (for Trdm083).
+
+The following aspects of the transactions are described in the profiles:
+
+* Business requirements
+* Data model
+* Information requirements, which contains a detailed specification of the transaction information elements

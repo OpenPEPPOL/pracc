@@ -1,0 +1,20 @@
+
+=	Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of the {link-esens} eTendering BIS. It is based on the {link-cenbii}[CEN BII] profiles:
+
+* Profile 60 Tender Status Inquiry (CWA 17027-123)
+
+*Note*: The profile document is available from your national standardization body.
+
+
+:leveloffset: +1
+
+include::scope.adoc[]
+
+include::interoperability.adoc[]
+
+include::non-functional-requirements.adoc[]
+
+
+:leveloffset: -1

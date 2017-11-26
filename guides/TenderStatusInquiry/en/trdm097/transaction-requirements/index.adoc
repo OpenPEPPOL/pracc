@@ -1,0 +1,8 @@
+
+= Transaction business and information requirements
+
+:leveloffset: +1
+
+include::transaction-business-requirements.adoc[]
+
+:leveloffset: -1

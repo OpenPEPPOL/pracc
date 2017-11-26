@@ -1,0 +1,27 @@
+
+= Syntax Mapping
+
+The following table describes the mapping of the information requirement elements to UBL.
+
+[cols="2,1,4,5", options="header"]
+.Syntax mapping of Trdm097 Tender Status Inquiry
+|===
+ | InfRqID | Crd | Tree and Business term | Syntax Mapping
+ | tir97-001 | 1..1 | Document identifier | TenderStatusRequest/cbc:ID
+ | tir97-002 | 1..1 | Document issue date | TenderStatusRequest/cbc:IssueDate
+ | tir97-003 | 0..1 | Document issue time | TenderStatusRequest/cbc:IssueTime
+ | tir97-034 | 1..1 | Reference number | TenderStatusRequest/cbc:ContractFolderID
+ | | *1..1* | *Process control* |
+ | tir97-006 | 1..1 | Business process type identifier | TenderStatusRequest/cbc:ProfileID
+ | tir97-007 | 1..1 | Specification identification | TenderStatusRequest/cbc:CustomizationID
+ | |	*1..1*	| *Contracting body* |
+ | tir97-008	| 0..1 | Contracting body name | TenderStatusRequest/cac:ContractingParty/cac:Party/cac:PartyName/cbc:Name
+ | tir97-009	| 1..1 | Contracting body identifier | TenderStatusRequest/cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID
+ | tir97-010	| 1..1 | Contracting body electronic address identifier | TenderStatusRequest/cac:ContractingParty/cac:Party/cbc:EndpointID
+ | | *1..1* | *Economic operator* |
+ | tir97-021	| 1..1 | Economic operator identifier | TenderStatusRequest/cac:EconomicOperatorParty/cac:Party/cac:PartyIdentification/cbc:ID
+ | tir97-022	| 1..1 | Economic operator name | TenderStatusRequest/cac:EconomicOperatorParty/cac:Party/cac:PartyName/cbc:Name
+ | tir97-023	| 1..1 | Economic operator electronic address identifier | TenderStatusRequest/cac:EconomicOperatorParty/cac:Party/cbc:EndpointID
+ | | *0..n* | *Requested lot* |
+ | tir97-035	| 1..1 | Lot identifier | TenderStatusRequest/cac:ProcurementProjectLot/cbc:ID
+|===
