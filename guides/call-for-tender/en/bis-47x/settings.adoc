@@ -23,3 +23,4 @@
 :link-UBL22: http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Pilot+Specifications+-+UBL+specifications+and+Schematrons
 :link-bpmn: https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
 :link-espd: https://en.wikipedia.org/wiki/European_Single_Procurement_Document
+:link-art43-50: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0025&from=EN
