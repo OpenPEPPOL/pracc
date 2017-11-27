@@ -28,3 +28,4 @@
 :link-profil54-45: https://test-vefa.difi.no/esens/gefeg/tenderreceipt/1.0/
 :link-bpmn: https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
 :link-rem-evidence: http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Pilot+Specifications+-+eDelivery+guide+for+eTendering#id-5.1.1-PilotSpecifications-eDeliveryguideforeTendering-5.1.1-REMEvidence
+:link-art43-50: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0025&from=EN

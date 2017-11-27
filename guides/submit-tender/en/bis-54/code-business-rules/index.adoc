@@ -10,12 +10,3 @@ The piloting of {link-esens} for Submit Tender, is based on work done by {link-c
 * Profile 54 Submit Tender: CWA 17027-119
 
 NOTE: The profile document and syntax implementation guides from CEN BII must be considered when implementing Submit Tender based on this BIS document.
-
-:leveloffset: +1
-
-////
-include::xx.adoc[]
-
-////
-
-:leveloffset: -1

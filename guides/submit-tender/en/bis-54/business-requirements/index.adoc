@@ -5,4 +5,3 @@ The Submit Tender business process includes 2 transactions:
 
 * Trdm090 Tender
 * Trdm045 Tender Receipt Notification
-
