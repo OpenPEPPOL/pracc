@@ -1,7 +1,6 @@
 
 = Introduction
 
-include::{shared-dir}/content/introduction/background-and-objective.adoc[]
 
 
 == Audience
