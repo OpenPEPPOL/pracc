@@ -4,8 +4,5 @@
 :leveloffset: +1
 
 include::code-list-identifers-scheme.adoc[]
-include::peppol.adoc[]
-include::asic-e.adoc[]
-include::sbdh.adoc[]
 
 :leveloffset: -1
