@@ -24,6 +24,8 @@ include::transaction-requirements/index.adoc[]
 
 include::codelists/index.adoc[]
 
+include::additional/index.adoc[]
+
 include::validation-transaction-rules/index.adoc[]
 
 include::syntax-binding/index.adoc[]

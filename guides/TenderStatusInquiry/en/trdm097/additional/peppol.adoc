@@ -1,0 +1,4 @@
+
+= PEPPOL Identifiers
+
+Documentation about PEPPOL identifiers can be found at the following page: {link-eTendering}
