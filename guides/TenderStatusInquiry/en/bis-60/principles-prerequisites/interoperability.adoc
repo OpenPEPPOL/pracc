@@ -17,15 +17,15 @@ It applies the Framework as follows:
 ** This {link-esens} eTendering BIS supports cross border, regional and domestic tendering procedures in EU and EEA
 ** This {link-esens} eTendering BIS can function as a standardized EDI agreement within a trading community
 ** This {link-esens} eTendering BIS supports linking of business processes within the sending and receiving organization.
-** Organization (Process):
-*** This {link-esens} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
+* Organization (Process):
+** This {link-esens} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
 
 . Semantic interoperability
 * Semantic:
 ** A minimum set of information elements required to conduct a procurement procedure. The set of information elements is assumed to be sufficient to support organizational business and processing requirements stated above.
-*** A CORE:
-**** Data model, a set of elements that the receiver MUST be able to process.
-**** Business rules, a set of business rules that ensure a common way of processing the information elements. The rules are stated in a way that allows for automated validation of document instances.
+* A CORE:
+** Data model, a set of elements that the receiver MUST be able to process.
+** Business rules, a set of business rules that ensure a common way of processing the information elements. The rules are stated in a way that allows for automated validation of document instances.
 
 
 . Technical interoperability

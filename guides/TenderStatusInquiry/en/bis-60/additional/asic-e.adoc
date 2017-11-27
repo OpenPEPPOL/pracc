@@ -1,0 +1,4 @@
+
+= ASiC-E container with CAdES signature
+
+Documentation about ASiC-E container (Associated Signature Container Extended) can be found at the following page: {link-eTendering}
