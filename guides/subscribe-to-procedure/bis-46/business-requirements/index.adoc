@@ -1,0 +1,16 @@
+
+= Business requirements
+
+The Subscribe to procedure business process includes 4 transactions:
+
+* Trdm081 Subscribe to Procedure
+* Trdm082 Subscribe to Procedure Confirmation
+* Trdm106 Unsubscribe to Procedure
+* Trdm107 Unsubscribe to Procedure Confirmation
+
+[NOTE]
+====
+Trdm083 and Trdm084 are out-of-scope of the e-SENS pilot.
+
+Subscribe to Procedure is also called Expression of Interest.
+====
