@@ -1,0 +1,12 @@
+[appendix]
+
+= Key examples/use cases
+
+link:../{xml-doc-fil}[Example file]
+
+[source,xml,indent=0]
+----
+
+include::../{xml-doc-fil}[]
+
+----
