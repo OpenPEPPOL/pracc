@@ -1,7 +1,7 @@
 
 = Identification and description of the requirements
 
-[cols="2,10", options="header"]
+[cols="2,10a", options="header"]
 .Transaction business requirements of Trdm083
 |===
 | ID| Requirement
@@ -10,12 +10,12 @@
 | tbr83-003| If the call for tenders is an update of a previously issued call for tenders, this shall be indicated.
 | tbr83-004| The contracting body shall be identified with a name, the country of registration, an endpoint and an identifier.
 | tbr83-005| The call for tenders may include information about contacts to obtain additional information. Email or internet address at which the procurement documents shall be available for unrestricted and full direct access, free of charge.
-| tbr83-007| "The Call for tenders shall contain the following information about the procurement process: +
- * Procedure type +
- * Deadline to submit offer (date, time, timezone), and/or +
+| tbr83-007| The Call for tenders shall contain the following information about the procurement process: 
+
+ * Procedure type
+  * Deadline to submit offer (date, time, timezone), and/or
  * Deadline to request participation (date, time, timezone)"
-| tbr83-008| "The address to which tenders or requests to participation shall be submitted must be included in the call for tenders, including encryption parameters and time-stamping: Art 22 and 53 of Directive +
-2014/24/EC."
+| tbr83-008| "The address to which tenders or requests to participation shall be submitted must be included in the call for tenders, including encryption parameters and time-stamping: Art 22 and 53 of Directive 2014/24/EC."
 | tbr83-009| The call for tenders may include references to specific legislation applying to the procedure.
 | tbr83-012| The call for tenders shall contain a title and a description of the object of the contract. The description of the object of the contract is basic information for both tenderer and contracting body.
 | tbr83-013| The call for tenders shall contain information about the type of procurement project (goods, works, services) and corresponding subtype. Type of contracts is defined in article 2 of the Directive 2014/24/EU and article 2 of the Directive 2014/25/EU. Depending on the contract type different articles, thresholds, information, etc. are required.

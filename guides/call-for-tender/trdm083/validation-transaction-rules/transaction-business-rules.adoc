@@ -2,12 +2,12 @@
 = Business rules
 The below listed business rules are additional rules added by the e-SENS pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the openPEPPOL Transport infrastructure are present.
 
-[cols="3,3,6" options="header"]
+[cols="2,1,9", options="header"]
 .Business Rules for Trdm083, Call for tender
 |===
 | ID | Flag | Rule
 | eSENS-T83-R001 | Fatal | A Call For Tenders MUST have a syntax identifier.
-| eSENS-T83-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended{zwsp}:urn:www.peppol.eu:bis:peppol47x:ver1.0'
+| eSENS-T83-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:{zwsp}transaction:biitrdm083:ver3.0:extended:urn:www.peppol.eu:bis:peppol47x:ver1.0'
 | eSENS-T83-R003 | Fatal | ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii47:ver3.0'
 | eSENS-T83-R004 | Warning | A Call For Tenders Identifier MUST have a schemeURI attribute.
 | eSENS-T83-R005 | Warning | schemeURI for Call For Tenders Identifier MUST be 'urn:uuid'.
