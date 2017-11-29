@@ -9,12 +9,12 @@ Additional business rules are listed in the CEN BII documents, and these cannot 
 ====
 
 
-[cols="3,2,7", options="header"]
+[cols="2,1,9", options="header"]
 .Rules for Trdm045, Tender receipt notification
 |===
 | ID | Flag | Rule
 | eSENS-T45-R001 | Fatal | A Tender Receipt Notification MUST have a syntax identifier.
-| eSENS-T45-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0'
+| eSENS-T45-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:{zwsp}transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0'
 | eSENS-T45-R003 | Fatal | ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii54:ver3.0'
 | eSENS-T45-R004 | Fatal | A Tender Receipt Notification Identifier MUST have a schemeURI attribute.
 | eSENS-T45-R005 | Fatal | schemeURI for Tender Receipt Notification Identifier MUST be 'urn:uuid'.
