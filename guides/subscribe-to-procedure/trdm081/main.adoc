@@ -1,0 +1,35 @@
+include::settings.adoc[]
+
+= Subscribe to Procedure
+:author:
+:revnumber: 1.0
+:revdate: 01-11-2017
+:icons: font
+:toc: left
+:toclevels: 2
+:sectnums:
+:sectanchors:
+:source-highlighter: coderay
+:sourcedir: .
+:gendoc:
+:imagesdir: images/
+:title-logo-image:
+:sectnums:
+
+:leveloffset: +1
+
+include::principles-prerequisites/index.adoc[]
+
+include::transaction-requirements/index.adoc[]
+
+include::codelists/index.adoc[]
+
+include::additional/index.adoc[]
+
+include::validation-transaction-rules/index.adoc[]
+
+include::syntax-binding/index.adoc[]
+
+include::examples-usecase/index.adoc[]
+
+:leveloffset: -1

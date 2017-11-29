@@ -1,0 +1,4 @@
+
+= PEPPOL Identifiers
+
+Documentation about PEPPOL identifiers can be found at the following page: link:http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Pilot+Specifications+-+eDelivery+guide+for+eTendering[eDelivery guide for eTendering].

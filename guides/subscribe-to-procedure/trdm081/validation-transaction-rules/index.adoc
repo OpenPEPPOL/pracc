@@ -1,0 +1,7 @@
+= Rules and validation
+
+:leveloffset: +1
+
+include::validation-rules.adoc[]
+
+:leveloffset: -1
