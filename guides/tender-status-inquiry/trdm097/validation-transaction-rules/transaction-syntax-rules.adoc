@@ -1,7 +1,7 @@
 
 = Syntax rules
 
-[cols="3,2,7", options="header"]
+[cols="2,1,9", options="header"]
 .Syntax rules for Trdm097, Tender Status Inquiry
 |===
 | ID | Flag | Rule
