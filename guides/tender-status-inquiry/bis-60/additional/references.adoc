@@ -1,11 +1,7 @@
 = References
 
-:frame: none
-:grid: none
-:halign: left
-:valign: top
 
-[cols="3,6"]
+[cols="3,6", frame="none", grid="none"]
 |====
 
 | [e-SENS] | http://www.e-SENS.eu/home/
