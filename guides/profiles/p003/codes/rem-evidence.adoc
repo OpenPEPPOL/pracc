@@ -1,0 +1,4 @@
+
+= REM Evidence
+
+The {link-rem-evidence}[REM-Evidence] will be carried within the ASIC container of  the Tender Reception Notification TRN as a separate attachment. The REM will be stored by the receiver of the TRN and will be used as prove  in the case of a dispute. The TRN will be processed by the receiver, because  it contains all the crucial  information from the REM e.g. time of arrival and the digest of the binary ASIC of the Tender.

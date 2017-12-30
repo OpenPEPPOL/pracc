@@ -1,0 +1,34 @@
+=	Use case, T005 submit tender
+
+
+****
+Use Case Name::
+  Simple tender metadata, profile P003.
+
+Description::
+In this scenario the transaction is used in profile P003 – Tender Submission, where all tender documents are given in unstructured attachments. 
+
+Parties involved::
+Economic operator  +
+Contracting body
+
+Assumptions::
+Tender metadata contains:
+
+* Reference to call for tender
+* Reference to tender document
+* Reference to attached item specification
+* Lot ID
+
+
+Flow::
+
+The Economic operator sends a tender to the contracting body.
+
+Result::
+The contracting body sends a tender receipt to the economic operator as a response to a previously submitted tender.
+
+Example file::
+See <<Example, Use case>>
+
+****

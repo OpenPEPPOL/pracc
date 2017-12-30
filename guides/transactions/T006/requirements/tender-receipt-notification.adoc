@@ -1,0 +1,33 @@
+= Tender Receipt Notification
+
+Based on the information in the REM-MD Evidence  and the Tender Reception Notification can be created by the etendering system as specified in the following table.
+
+[cols="1,1,2,4,2,2", options="header"]
+.Trdm045 Tender Reception Notification Transaction Information Requirements
+|===
+| ID | Card. | Business term | Usage | Data Type | Description
+
+| | | TenderReceptionNotification |  |  |
+| tir45-001 | 1..1 | Document identifier | Identifier of a document The identifier enables positive referencing the document instance for various purposes including referencing between transactions that are part of the same process. | Identifier |
+| tir45-018 | 1..1 | Reference number | An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. | Identifier | We do not need to wait for the arrival of the Tender Trdm090 to fill this mandatory value. It can be copied from the REM-MD Evidence field uaMessageIdentifier field.
+| tir45-002 | 1..1 | Document issue date | Date when the referred document was issued. | Date | System date
+| tir45-003 | 1..1 | Document issue time | Time when the document was issued. | Time | System time
+| tir45-022 | 1..1 | Document reception date | Date when the referred document was received. | Date | Date from EvidentTime of REM Evidence
+| tir45-023 | 1..1 | Document reception time | The time at which the referenced document was received by the sender of the response. | Time | Time from EvidentTime of REM Evidence
+| | 1..1 | Process control | A group of business terms providing information on the business process and rules applicable to the document. |  |
+| tir45-005 | 1..1 | Business process type identifier | Identifies the business process context in which the transaction appears. It enables the buyer to process the invoice in an appropriate way. | Identifier | Fixed value: urn:www.cenbii.eu:profile:bii54: ver3.0
+| tir45-006 | 1..1 | Specification identification | An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. The identification may include the version of the specification as well as any customizations applied. | Identifier | Fixed value: urn:www.cenbii.eu:transaction: biitrdm090:ver3.0
+| | 1..1 | Contracting body | The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU). |  |
+| tir45-007 | 0..1 | Contracting body name | The name of the contracting body as it is registered. | Text | Empty or copy from the Tender Trdm090.
+| tir45-008 | 0..1 | Contracting body identifier | The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO) | Identifier | Copied from RecipientsDetails/EntityDetails/ AttributedElectronicAddress of REM Evidence
+| tir45-009 | 0..1 | Contracting body electronic address identifier | Electronic address of the contracting body. | Identifier | Empty or copy from Tender Trdm090.
+| | 1..1 | Economic operator | Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. |  |
+| tir45-011 | 0..1 | Economic operator identifier | An identifier that identifies the economic operator, such as a legal registration identifier. | Identifier | Copied from SenderDetails/ AttributedElectronicAddress of REM Evidence
+| tir45-010 | 0..1 | Economic operator name | The name of the economic operator. | Text | Empty or copy from Tender Trdm090.
+| tir45-012 | 0..1 | Economic operator electronic address identifier | Electronic address of the economic operator. A response may contain the party electronic address. The address can be of any format and the format should be identified in the message. | Identifier | Empty or copy from Tender Trdm090.
+| | 1..1 | Received document reference | References to the business document that the reported decision applies. |  |
+| tir45-016 | 1..1 | Document identifier | Identifier of a document | Identifier | Message Identifier of Tender Copied from MessageIdentifierByREMMD of REM Evidence
+| tir45-017 | 1..1 | Document type code | A code specifying the type of the document. | Code | Fixed value:310 (from type code list UNCL1001)
+| tir45-021 | 0..1 | Document digest | Digest of the document. | Text | Copied from DigestValue of REM Evidence
+| tir45-024 | 0..1 | Document digest method code | Code that indicates the algorithm used to calculate the hash. | Code | Copied from DigestMethod of REM Evidence
+|===

@@ -1,0 +1,13 @@
+
+= Implementation guidelines
+
+{name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
+
+* UBL binding for "Trdm090 Tender"(CWA 17027-218)
+* UBL binding for "Trdm045 Tender Reception Notification"(CWA 17027-205)
+* {name-profile-org}
+
+{peppol} {name-profile} business process includes 2 transactions:
+
+* {link-profil54-90}[T005 - Tender]
+* {link-profil54-45}[T006 - Tender Receipt Notification]

@@ -1,0 +1,18 @@
+include::links.adoc[]
+
+:lang: en
+
+:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
+:minor: 0.1
+:revision: 0.1.0
+:shared-dir: ../../shared
+:rules-dir: ..\..\..\..\rules\peppol-tender-1.0\peppol-res
+
+:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
+
+:name-profile-org: {bii3} “Profile 54 Tendering" (CWA 17027-119)
+:name-profile: Profile P003 - "Tender Submission"
+
+:name-transaction-org: "Trdm090 Tender"(CWA 17027-218)
+:name-transaction: T005 - Tender
+:name-trans-short: Tender

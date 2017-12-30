@@ -1,0 +1,10 @@
+
+= Example
+
+link:../files/tender-instance.xml[Download example file]
+
+[source,xml,indent=0]
+.Example used in document
+----
+include::../{xml-doc-fil}[tags=**]
+----

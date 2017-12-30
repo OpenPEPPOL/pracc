@@ -1,0 +1,109 @@
+
+= Syntax rules
+
+[cols="2,1,9", options="header"]
+.Syntax rules for T004, Call for tender
+|===
+| ID | Flag | Rule
+| eSENS-T004-S001 | Fatal | A Call for Tenders document MUST have a valid syntax (be valid regarding the UBL XSD)
+| eSENS-T004-S002 | Fatal | A Call For Tenders document MUST NOT contain empty elements.
+| eSENS-T004-S002 | Fatal | A Call For Tenders document MUST NOT contain empty elements.
+| eSENS-T004-S003 | Warning | A Call For Tenders document SHOULD only contain elements and attributes described in the syntax mapping.
+| eSENS-T004-S301 | Warning	| UBLExtensions SHOULD NOT be used.
+| eSENS-T004-S302 | Warning | UBLVersionID SHOULD NOT contain any attributes.
+| eSENS-T004-S303 | Warning | CustomizationID SHOULD NOT have any attributes.
+| eSENS-T004-S304 | Warning | ProfileID SHOULD NOT have any attributes.
+| eSENS-T004-S305 | Warning | ProfileExecutionID SHOULD NOT be used.
+| eSENS-T004-S306 | Warning | A Call For Tenders Identifier SHOULD NOT have any attributes but schemeURI
+| eSENS-T004-S307 | Warning | CopyIndicator SHOULD NOT be used.
+| eSENS-T004-S308 | Warning | UUID SHOULD NOT be used.
+| eSENS-T004-S309 | Warning | ContractFolderID SHOULD NOT have any attributes.
+| eSENS-T004-S310 | Warning | ApprovalDate SHOULD NOT be used.
+| eSENS-T004-S311 | Warning | Note SHOULD NOT be used.
+| eSENS-T004-S312 | Warning | VersionID SHOULD NOT have any attributes.
+| eSENS-T004-S313 | Warning | PreviousVersionID SHOULD NOT be used.
+| eSENS-T004-S314 | Warning | LegalDocumentReference SHOULD NOT be used.
+| eSENS-T004-S315 | Warning | TechnicalDocumentReference SHOULD NOT be used.
+| eSENS-T004-S316 | Warning | AdditionalDocumentReference SHOULD NOT contain any elements but ID, IssueDate, DocumentTypeCode, LocaleCode, VersionID, DocumentStatusCode, DocumentDescription, Attachment.
+| eSENS-T004-S317 | Warning | AdditionalDocumentReference for a Document with DocumentTypeCode='REQUIRED' SHOULD NOT contain any elements but ID, DocumentTypeCode, DocumentStatusCode
+| eSENS-T004-S318 | Warning | DocumentTypeCode SHOULD be used.
+| eSENS-T004-S319 | Warning | Additional Document Reference Identifier SHOULD NOT have any attributes.
+| eSENS-T004-S320 | Warning | DocumentTypeCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S321 | Warning | LocaleCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S322 | Warning | Additional Document Reference VersionIdentifier SHOULD NOT have any attributes.
+| eSENS-T004-S323 | Warning | DocumentStatusCode SHOULD be used.
+| eSENS-T004-S324 | Warning | DocumentStatusCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S325 | Warning | DocumentDescription SHOULD NOT have any attributes.
+| eSENS-T004-S326 | Warning | DocumentDescription SHOULD NOT be used more than once when DocumentTypeCode = 'REQUIRED'.
+| eSENS-T004-S328 | Warning | Attachment SHOULD NOT contain any element but ExternalReference
+| eSENS-T004-S329 | Warning | ExternalReference SHOULD NOT contain any element but URI, MimeCode, FileName
+| eSENS-T004-S330 | Warning | URI SHOULD NOT have any attributes.
+| eSENS-T004-S331 | Warning | Signature SHOULD NOT be used.
+| eSENS-T004-S332 | Warning | ContractingParty SHOULD NOT be used more than once.
+| eSENS-T004-S333 | Warning | ContractingParty SHOULD NOT contain any elements but cac:Party.
+| eSENS-T004-S334 | Warning | A ContractingParty/cac:Party SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName, PartyLegalEntity
+| eSENS-T004-S335 | Warning | EndpointID SHOULD NOT have any further attributes but schemeID
+| eSENS-T004-S336 | Warning | PartyIdentification SHOULD be used exactly once.
+| eSENS-T004-S337 | Warning | cac:PartyIdentification/cbc:ID SHOULD NOT have any further attributes but schemeID
+| eSENS-T004-S338 | Warning | PartyName SHOULD NOT be used more than once.
+| eSENS-T004-S339 | Warning | Name SHOULD NOT contain any attributes.
+| eSENS-T004-S340 | Warning | PartyLegalEntity SHOULD NOT be used more than once.
+| eSENS-T004-S341 | Warning | PartyLegalEntity SHOULD NOT contain any elements but cac:RegistrationAddress.
+| eSENS-T004-S342 | Warning | RegistrationAddress SHOULD NOT contain any elements but cac:Country.
+| eSENS-T004-S343 | Warning | Country SHOULD NOT contain any elements but IdentificationCode.
+| eSENS-T004-S344 | Warning | IdentificationCode SHOULD NOT have any attributes but listID,
+| eSENS-T004-S345 | Warning | OriginatorCustomerParty SHOULD NOT be used.
+| eSENS-T004-S346 | Warning | Receiver Party SHOULD NOT be used.
+| eSENS-T004-S347 | Warning | TenderingTerms SHOULD be used.
+| eSENS-T004-S348 | Warning | TenderingTerms SHOULD NOT contain any element but MaximumVariantQuantity, VariantConstraintIndicator, Note, AdditionalConditions, ProcurementLegislationDocumentReference, CallForTendersDocumentReference, DocumentProviderParty, TenderRecipientParty.
+| eSENS-T004-S349 | Warning | MaximumVariantQuantity SHOULD be expressed as an integer value.
+| eSENS-T004-S350 | Warning | MaximumVariantQuantity SHOULD NOT contain any attributes.
+| eSENS-T004-S351 | Warning | MaximumVariantQuantity SHOULD NOT be used or MUST be equal to 0 when VariantConstraintIndicator is set to false.
+| eSENS-T004-S353 | Warning | VariantConstraintIndicator SHOULD be used.
+| eSENS-T004-S354 | Warning | Note SHOULD NOT be used more than once
+| eSENS-T004-S355 | Warning | Note SHOULD be expressed as an integer value when used.
+| eSENS-T004-S357 | Warning | Note SHOULD NOT contain any attributes.
+| eSENS-T004-S358 | Warning | AdditionalConditions SHOULD NOT be used more than once
+| eSENS-T004-S360 | Warning | AdditionalConditions SHOULD NOT contain any attributes.
+| eSENS-T004-S361 | Warning | ProcurementLegislationDocumentReference SHOULD NOT contain any elements but ID, DocumentDescription.
+| eSENS-T004-S362 | Warning | ProcurementLegislationDocumentReference Identifier SHOULD NOT contain any attributes.
+| eSENS-T004-S363 | Warning | ProcurementLegislationDocumentReference DocumentDescription SHOULD NOT contain any attributes.
+| eSENS-T004-S364 | Warning | CallForTendersDocumentReference SHOULD NOT contain any elements but ID
+| eSENS-T004-S365 | Warning | A Call For Tenders Document Reference Identifier SHOULD NOT have any attributes but schemeURI
+| eSENS-T004-S366 | Warning | DocumentProviderParty SHOULD NOT contain any elements but EndpointID
+| eSENS-T004-S367 | Warning | TenderRecipientParty SHOULD NOT contain any elements but EndpointID
+| eSENS-T004-S368 | Warning | TenderingProcess SHOULD be used.
+| eSENS-T004-S369 | Warning | TenderingProcess SHOULD NOT contain any elements but ProcedureCode, ContractingSystemCode, SubmissionMethodCode, TenderSubmissionDeadlinePeriod, ParticipationRequestReceptionPeriod.
+| eSENS-T004-S370 | Warning | ProcedureCode SHOULD be used.
+| eSENS-T004-S371 | Warning | ProcedureCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S372 | Warning | SubmissionMethodCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S373 | Warning | TenderSubmissionDeadlinePeriod SHOULD be used.
+| eSENS-T004-S374 | Warning | TenderSubmissionDeadlinePeriod SHOULD NOT contain any elements but EndDate and EndTime.
+| eSENS-T004-S375 | Warning | TenderSubmissionDeadlinePeriod EndDate SHOULD be used.
+| eSENS-T004-S376 | Warning | ParticipationRequestReceptionPeriod SHOULD NOT contain any elements but EndDate and EndTime.
+| eSENS-T004-S378 | Warning | ProcurementProject SHOULD NOT contain any elements but Name, Description, ProcurementTypeCode, MainCommodityClassification, AdditionalCommodityClassification, RealizedLocation.
+| eSENS-T004-S379 | Warning | ProcurementProject Name SHOULD be used exactly once.
+| eSENS-T004-S380 | Warning | ProcurementProject Description SHOULD be used exactly once.
+| eSENS-T004-S381 | Warning | ProcurementProject Description SHOULD NOT contain any attributes.
+| eSENS-T004-S382 | Warning | ProcurementTypeCode SHOULD be used.
+| eSENS-T004-S383 | Warning | ProcurementTypeCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S384 | Warning | ProcurementProject MainCommodityClassification SHOULD be used exactly once.
+| eSENS-T004-S385 | Warning | MainCommodityClassification SHOULD NOT contain any elements but ItemClassificationCode.
+| eSENS-T004-S386 | Warning | AdditionalCommodityClassification SHOULD NOT contain any elements but ItemClassificationCode.
+| eSENS-T004-S387 | Warning | ItemClassificationCode SHOULD NOT have any attributes but listID.
+| eSENS-T004-S388 | Warning | ProcurementProject RealizedLocation SHOULD be used at least once.
+| eSENS-T004-S389 | Warning | RealizedLocation SHOULD NOT contain any elements but ID.
+| eSENS-T004-S390 | Warning | cac:RealizedLocation/cbc:ID SHOULD NOT have any attributes but schemeID.
+| eSENS-T004-S391 | Warning | ProcurementProjectLot SHOULD NOT contain any elements but ID, ProcurementProject.
+| eSENS-T004-S392 | Warning | ProcurementProjectLot Identifier SHOULD NOT contain any attributes.
+| eSENS-T004-S393 | Warning | ProcurementProjectLot ProcurementProject SHOULD NOT contain any elements but Name.
+| eSENS-T004-S394 | Warning | ProcurementProjectLot ProcurementProject Name SHOULD be used exactly once.
+| eSENS-T004-S395 | Warning | MimeCode SHOULD NOT have any attributes.
+| eSENS-T004-S396 | Warning | FileName SHOULD NOT have any attributes.
+| eSENS-T004-S397 | Warning | ContractingSystemCode SHOULD NOT have any attributes but listID.
+|===
+
+
+The schematron file(s) for Trdm083/T004 can be found below:
+
+http://wiki.ds.unipi.gr/download/attachments/31425187/Schematrons%20e-SENS_BIS47x_T004-CfT.rar?version=3&modificationDate=1486483470000&api=v2[Schematrons e-SENS_T004-CfT.rar]

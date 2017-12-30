@@ -1,0 +1,12 @@
+
+= Example
+
+link:../files/tender-receipt-notification.xml[Download example file]
+
+[source,xml,indent=0]
+.Example
+
+----
+include::../{xml-doc-fil}[tags=**]
+
+----

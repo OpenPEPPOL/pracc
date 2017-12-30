@@ -1,0 +1,17 @@
+
+= Code lists
+
+This transaction message is based on work done by {bii3} and on {link-esens} for {name-trans-short}, and business rules and code lists used are inherited from the following CEN BII documents:
+
+* UBL binding for  {name-trans-short}:  {name-transaction-org}
+
+
+:leveloffset: +1
+
+
+include::code-list-element.adoc[]
+include::code-list-identifers-scheme.adoc[]
+//include::peppol.adoc[]
+
+
+:leveloffset: -1

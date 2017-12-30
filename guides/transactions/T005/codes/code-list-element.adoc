@@ -1,0 +1,38 @@
+
+= Code list for elements
+
+
+== Document language
+[cols="1,4"]
+|===
+h| Qualifier
+| `ISO639-1` (listID)
+h| Document location
+| `cac:DocumentReference/cbc:LocaleCode`
+h| Source codelist
+| link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
+|===
+
+== Country code
+
+[cols="1,4"]
+|===
+h| Qualifier
+| `ISO3166-1:Alpha2` (listID)
+h| Document location
+| `cac:Country/cbc:IdentificationCode`
+h| Source codelist
+| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
+|===
+
+== DocumentTypeCode
+
+[cols="1,4"]
+|===
+h| Qualifier
+| `UNCL1001` (listID)
+h| Document location
+| `cac:DocumentReference/cbc:DocumentTypeCode`
+h| Source codelist
+|  http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001 (Subset by CEN BII2)]
+|===
