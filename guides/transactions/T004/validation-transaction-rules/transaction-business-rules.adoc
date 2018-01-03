@@ -1,7 +1,6 @@
 
-= Business rules
+= Business and syntax rules
 The below listed business and syntax rules are additional rules added by the e-SENS pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the openPEPPOL Transport infrastructure are present.
-////
 
 [cols="1,4", options="header"]
 |===
@@ -54,3 +53,4 @@ include::{rules-dir}/eSENS-T004.sch.adoc[]
 | eSENS-T004-R037 | Fatal | Participation Request Reception Period MUST not be given for proceduretypes without participation contest.
 | eSENS-T004-R038 | Fatal | A Call For Tenders MUST have a version identifier
 |===
+////

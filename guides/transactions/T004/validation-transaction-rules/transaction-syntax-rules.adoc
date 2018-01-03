@@ -1,5 +1,14 @@
 
+////
 = Syntax rules
+
+[cols="1,4", options="header"]
+|===
+|Rule
+|Message/Context/Test
+include::{rules-dir}/eSENS-T004-syntax.sch.adoc[]
+|===
+
 
 [cols="2,1,9", options="header"]
 .Syntax rules for T004, Call for tender
@@ -103,6 +112,7 @@
 | eSENS-T004-S397 | Warning | ContractingSystemCode SHOULD NOT have any attributes but listID.
 |===
 
+////
 
 The schematron file(s) for Trdm083/T004 can be found below:
 
