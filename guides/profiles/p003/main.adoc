@@ -27,20 +27,9 @@ include::principles/index.adoc[]
 
 include::process/index.adoc[]
 
-//include::requirements/index.adoc[]
-
-//include::codes/index.adoc[]
-
 include::codes/peppol.adoc[]
 
 include::revision/index.adoc[]
-
-
-//include::codes/index.adoc[]
-
-//include::descriptions/index.adoc[]
-
-//include::profiles/index.adoc[]
 
 include::contributors/index.adoc[]
 

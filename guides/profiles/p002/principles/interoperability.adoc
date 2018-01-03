@@ -25,11 +25,4 @@ It applies the Framework as follows:
 ** Binding to {link-e-SENS-SBDH}[e-SENS-SBDH]
 ** {link-e-SENS-SBDH}[ASiC-E container with CAdES signature]
 ** link:https://github.com/espd[ESPD Github Account]
-////
-. Semantic interoperability
-* Semantic:
-** A minimum set of information elements required to conduct a procurement procedure. The set of information elements is assumed to be sufficient to support organizational business and processing requirements stated above.
-*** A CORE:
-**** Data model, a set of elements that the receiver MUST be able to process.
-**** Business rules, a set of business rules that ensure a common way of processing the information elements. The rules are stated in a way that allows for automated validation of document instances.
-////
+
