@@ -1,0 +1,14 @@
+= Implementation guidelines
+
+{name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
+
+
+* CWA 17027-xxx UBL SIG - Trdm097 Tender Status Inquiry
+* CWA 17027-216 - UBL SIG - Trdm083 Call for Tenders
+* {name-profile-org}
+
+
+{peppol} {name-profile} business process includes 2 transactions:
+
+* T003 Tender Status Inquiry
+* T004 Call for Tenders

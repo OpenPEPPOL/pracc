@@ -1,0 +1,13 @@
+include::links.adoc[]
+
+:lang: en
+
+:doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-profile}
+:minor: 0.8
+:revision: 0.8.0
+:shared-dir: ../../shared
+:rules-dir: /tmp/rules
+
+:name-op-en:  pre-award OpenPEPPOL AISBL
+:name-profile-org: {bii3} "Profile 60 Tender Status Inquiry" (CWA 17027-123)
+:name-profile: Profile P002/60 - "Procurement document access"
