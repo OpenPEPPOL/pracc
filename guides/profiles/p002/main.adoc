@@ -18,7 +18,6 @@ v{revision}
 {description}
 include::{shared-dir}/copyright.adoc[]
 
-
 :leveloffset: +1
 
 include::introduction.adoc[]
