@@ -6,33 +6,7 @@
 
 PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment. The e-Tendering pilot adopts and extends the PEPPOL Policy in the following ways:
 
-== Party Identifiers used in business (UBL) documents
-The `@schemeID` attribute must be populated in all instances of the ID element when used within a PartyIdentification-container and in all instances of the EndpointID element when used within a Party-container.
-
-Examples of usage in PartyIdentification and EndpointID:
-
-[source,xml,indent=0]
-.Examples of usage in PartyIdentification and EndpointID
-----
-<cbc:EndpointID schemeID="NL:KVK">12345678</cbc:EndpointID>
-..
-<cac:PartyIdentification>
-	<cbc:ID schemeID="NO:ORGNR">999888777</cbc:ID>
-</cac:PartyIdentification>
-
-----
-
 == Document Identifiers used in business (UBL) documents
-
-=== UBL Version ID
-
-All BIS specifications that are described in this page are using the UBL 2.2 syntax. The namespace of the XML-message does only communicate the major version number. Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value 2.2:
-
-[source,xml,indent=0]
-.Examples of usage in PartyIdentification and EndpointID
-----
-<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-----
 
 === Profile ID and Customization ID
 
@@ -46,14 +20,14 @@ The full syntax is:
 
 Which customization identification should be used, is based on which transaction is sent, and the extension identification for BIS documents.
 
-[cols="2,2,3,3,3", options="header"]
+[cols="2,2,4,4", options="header"]
 .The table below shows an overview of  the values to be used for the Customization ID per transaction.
 |===
-| TranasactionID | Transaction name | Short Description | ProcessID | CustomizationId
-| BiiTrdm081 | ExpressionOfInterestRequest | CEO shows his interest in the procurement project |urn:www.cenbii.eu:profile:bii46:ver3.0 | urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0
-| BiiTrdm082 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | urn:www.cenbii.eu:profile:bii46:ver3.0 | urn:www.cenbii.eu:transaction:biitrdm082:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0
-| T001 | ExpressionOfInterestRequest | CEO shows his interest in the procurement project | #**urn:www.peppol.eu:profile:p001:ver1.0**# | #**urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.peppol.eu:bis:t001:ver1.0**#
-| T002 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | #**urn:www.peppol.eu:profile:p001:ver1.0**# | #**urn:www.cenbii.eu:transaction:biitrdm082:ver3.0:extended:urn:www.peppol.eu:bis:t002:ver1.0**#
+| TransactionID | Transaction name | Short Description | ProcessID
+| BiiTrdm081 | ExpressionOfInterestRequest  | CEO shows his interest in the procurement project | urn:www.cenbii.eu:profile:bii46:ver3.0
+| BiiTrdm082 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | urn:www.cenbii.eu:profile:bii46:ver3.0
+| T001 | ExpressionOfInterestRequest | CEO shows his interest in the procurement project | #**urn:www.peppol.eu:profile:p001:ver1.0**#
+| T002 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | #**urn:www.peppol.eu:profile:p001:ver1.0**#
 |===
 
 Note:: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

@@ -12,3 +12,5 @@ include::links.adoc[]
 
 :name-profile-org: {bii3} “Profile 54 Tendering" (CWA 17027-119)
 :name-profile: Profile P003 - "Tender Submission"
+
+:profile-description: The {name-profile} describes electronic messaging support for the business process of Tendering .

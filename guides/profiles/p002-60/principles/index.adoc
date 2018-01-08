@@ -6,7 +6,7 @@ based on the {link-cenbii}[CEN BII] and the work done by {link-esens} eTendering
 
 * {name-profile-org}
 
-NOTE: The profile document is available from your national standardization body.
+NOTE: The {bii3} profile document is available from your national standardization body.
 
 
 :leveloffset: +1

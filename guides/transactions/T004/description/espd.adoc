@@ -10,10 +10,6 @@ Documentation and services related to {link-espd}[ESPD] are provided by the Euro
 * link:https://espd.github.io/ESPD-EDM/[ESPD Exchange Data Model]
 * link:https://github.com/espd[ESPD Github Account]
 
-
-ESPD is included as an attachment to T004 - Call for Tenders.
-
-////
 Implementers of this profile attach ESPD Request/Response by adding a DocumentReference. Values to be used:
 
 `cac:DocumentReference/cbc:DocumentTypeCode`
@@ -25,5 +21,3 @@ Implementers of this profile attach ESPD Request/Response by adding a DocumentRe
 ESPD Request/Response
 
 Please also see link:https://test-vefa.difi.no/esens/guide/bis47x/#espd_descr[chapter for description] for further details.
-
-////

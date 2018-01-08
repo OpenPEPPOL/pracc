@@ -2,9 +2,10 @@
 
 {name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
 
+* UBL binding for "Trdm090 Tender"(CWA 17027-218)
 
-* CWA 17027-xxx UBL SIG - Trdm097 Tender Status Inquiry
-* CWA 17027-216 - UBL SIG - Trdm083 Call for Tenders
+* #UBL binding for "Trdm097 Tender Status Inquiry"(CWA 17027-xxx)#
+* UBL binding for "Trdm083 Call for Tenders"(CWA 17027-216)
 * {name-profile-org}
 
 

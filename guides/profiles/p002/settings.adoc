@@ -11,3 +11,5 @@ include::links.adoc[]
 :name-op-en:  pre-award OpenPEPPOL AISBL
 :name-profile-org: {bii3} "Profile 47 Call for Tender" (CWA 17027-112)
 :name-profile: Profile P002 - "Procurement document access"
+
+:profile-description: The {name-profile} describes electronic messaging support for the business process of Call for Tender.

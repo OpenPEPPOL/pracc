@@ -11,7 +11,8 @@ include::tendering-process.adoc[]
 
 include::attachment.adoc[]
 
-include::transport-encryption.adoc[]
+include::espd.adoc[]
 
+include::transport-encryption.adoc[]
 
 :leveloffset: -1
