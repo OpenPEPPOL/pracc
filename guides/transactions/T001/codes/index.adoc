@@ -5,7 +5,6 @@ This transaction message is based on work done by {bii3} and on {link-esens} for
 
 * UBL binding for {name-trans-short}: {name-transaction-org}
 
-
 :leveloffset: +1
 
 include::code-list-element.adoc[]

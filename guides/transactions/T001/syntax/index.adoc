@@ -1,0 +1,174 @@
+
+= Syntax Mapping
+
+The following tables describe the mapping of the information requirement elements to UBL 2.2. The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any.
+
+[cols="2,1,4,5", options="header"]
+.Syntax mapping of Trdm081
+|===
+| InfRqID | Crd | Tree and Business term | Syntax Mapping
+
+|
+|
+|*Express interest in call for tender*
+|
+
+| tir81-001
+| 1..1
+| Express of interest identifier
+| ExpressionOfInterestRequest/cbc:ID
+
+| tir81-002
+| 1..1
+| Express of interest issue date
+| ExpressionOfInterestRequest/cbc:IssueDate
+
+| tir81-003
+| 1..1
+| Express of interest issue time
+| ExpressionOfInterestRequest/cbc:IssueTime
+
+| tir81-029
+| 0..1
+| Economic operator preferred language
+| ExpressionOfInterestRequest/cbc:PreferredLanguageLocaleCode
+
+|
+| 1..1
+| *Process control*
+|
+
+| tir81-006
+| 1..1
+| Profile identifier
+| ExpressionOfInterestRequest/cbc:ProfileID
+
+| tir81-007
+| 1..1
+| Customization identifier
+| ExpressionOfInterestRequest/cbc:CustomizationID
+|
+| 1..1
+| *Contracting body*
+|
+
+| tir81-009
+| 1..1
+| Contracting body identifier
+| ExpressionOfInterestRequest/cac:ContractingParty/cac:Party/cac:{zwsp}PartyIdentification/cbc:ID
+
+|
+| 1..1
+| CA Electronic Address
+| ExpressionOfInterestRequest/cac:ContractingParty/cac:Party/cbc:EndpointID
+
+|
+| 1..1
+| *Economic operator*
+|
+
+| tir81-012
+| 1..1
+| Economic operator identifier
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PartyIdentification/cbc:ID
+
+| tir81-013
+| 1..1
+| Economic operator name
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PartyName/cbc:Name
+
+| tir81-030
+| 1..1
+| Economic operator electronic address identifier
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cbc:{zwsp}EndpointID
+
+| tir81-014
+| 0..1
+| Economic operator registration country code
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PartyLegalEntity/cac:RegistrationAddress/cac:Country/cbc:IdentificationCode
+
+| tir81 -028
+| 0..1
+| Economic operator type code
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cbc:{zwsp}IndustryClassificationCode
+
+|
+| 0..1
+| *Postal address*
+|
+
+| tir81 -015
+| 0..1
+| Address line 1
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cbc:StreetName
+
+| tir81 -016
+| 0..1
+| Address line 2
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cbc:AdditionalStreetName
+
+| tir81 -017
+| 0..1
+| City
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cbc:CityName
+
+| tir81 -018
+| 0..1
+| Post code
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cbc:PostalZone
+
+| tir81 -019
+| 0..1
+| Country subdivision
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cbc:CountrySubentity
+
+| tir81 -020
+| 0..1
+| Country code
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}PostalAddress/cac:Country/cbc:IdentificationCode
+
+|
+| 1..1
+| *Contacting details*
+|
+
+| tir81 -021
+| 1..1
+| Contact person name
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}Contact/cbc:Name
+
+| tir81 -022
+| 0..1
+| Contact fax number
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}Contact/cbc:Telefax
+
+| tir81 -023
+| 0..1
+| Contact telephone number
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}Contact/cbc:Telephone
+
+| tir81 -024
+| 0..1
+| Contact email address
+| ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/cac:{zwsp}Contact/cbc:ElectronicMail
+
+|
+| 1..1
+| *Procurement project*
+|
+
+| tir81 -025
+| 1..1
+| Procurement project identifier
+| ExpressionOfInterestRequest/cbc:ContractFolderID
+
+|
+| 0..n
+| *Requested lot*
+|
+
+| tir81 -026
+| 0..1
+| Lot identifier
+| ExpressionOfInterestRequest/cac:ProcurementProjectLotReference/cbc:ID
+|===
