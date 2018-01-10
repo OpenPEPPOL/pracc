@@ -4,8 +4,8 @@
 {name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
 
 
-* UBL binding for "Trdm083 Call for Tenders"(CWA 17027-212)
-* UBL binding for "Profile 47  Call for Tenders"(CWA 17027-112)
+* Profile BII47  Call for Tenders (CWA 17027-112)
+* UBL Syntax Implementation Guideline for Trdm083 Call for Tenders (CWA 17027-212)
 * https://espd.github.io/ESPD-EDM/[ESPD Exchange Data Model]
 
 

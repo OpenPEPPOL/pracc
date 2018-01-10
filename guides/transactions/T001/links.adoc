@@ -14,6 +14,7 @@
 :link-esens: https://www.esens.eu/[e-SENS]
 :un-ece-1001: http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001]
 
+:link-peppol: http://www.peppol.eu/
 :link-peppol-transp: http://peppol.eu/transport-infrastructure-specifications/
 :link-peppol-transpdifi: https://vefa.difi.no/peppol/
 :link-ubl-orderresponse: http://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html#T-ORDER-RESPONSE

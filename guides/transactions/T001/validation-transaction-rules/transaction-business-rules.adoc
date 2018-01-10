@@ -1,7 +1,16 @@
 
 = Business rules
 
-The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppopl}[PEPPOL] Transport infrastructure is present.
+The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppol-transp}[PEPPOL Transport infrastructure] is present.
+
+////
+[cols="1,4", options="header"]
+|===
+|Rule
+|Message/Context/Test
+include::{rules-dir}/esens-T001.sch.adoc[]
+|===
+////
 
 [cols="2,1,9", options="header"]
 .Business rules for T001, Expression of Interest

@@ -1,8 +1,0 @@
-
-=	Code lists and business rules
-
-:leveloffset: +1
-
-include::espd.adoc[]
-
-:leveloffset: -1

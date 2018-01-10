@@ -26,7 +26,7 @@ include::principles/index.adoc[]
 
 include::process/index.adoc[]
 
-include::codes/index.adoc[]
+include::codes/espd.adoc[]
 
 include::codes/peppol.adoc[]
 

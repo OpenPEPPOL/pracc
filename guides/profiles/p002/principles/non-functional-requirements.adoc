@@ -2,7 +2,7 @@
 
 = Non-functional requirements
 
-For the {peppol} BIS all {peppol} non-functional requirements are applicable as mentioned in {name-profile-org} and ESPD Exchange Data Model. When adopting the {peppol} BIS implementers must comply to these requirements.
+For the {peppol} BIS all {peppol} non-functional requirements are applicable as mentioned in {bii3} {name-profile-org} and ESPD Exchange Data Model. When adopting the {peppol} BIS implementers must comply to these requirements.
 
 
 [cols="2,10", options="header"]

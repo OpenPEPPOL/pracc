@@ -6,7 +6,7 @@ include::links.adoc[]
 :minor: 0.1
 :revision: 0.1.0
 :shared-dir: ..\..\shared
-:rules-dir: ..\..\..\..\rules\peppol-tender-1.0\peppol-res
+:rules-dir: ..\..\..\..\rules\peppol-procurement-procedure-subscription-1.0\peppol-res
 
 :name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 

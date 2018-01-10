@@ -9,8 +9,5 @@ include::links.adoc[]
 :rules-dir: /tmp/rules
 
 :name-op-en:  pre-award OpenPEPPOL AISBL
-
-:name-profile-org: {bii3} “Profile 46 Subscribe to Procedure" (CWA 17027-111)
+:name-profile-org: “Profile BII46  Subscribe to Procedure" (CWA 17027-111)
 :name-profile: Profile P001 - "Procurement procedure subscription"
-
-:profile-description: The {name-profile} describes electronic messaging support for the business process of Subscribe to Procedure.

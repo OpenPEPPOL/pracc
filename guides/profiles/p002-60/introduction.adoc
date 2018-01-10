@@ -6,10 +6,7 @@ This {peppol} BIS provides a set of specifications for implementing a {peppol} b
 .Relationship between BII profiles and e-SENS / PEPPOL BIS
 image::../images/cenbii-esens.png[align="center", width=600]
 
-//The {name-profile} describes electronic messaging support for the business process of submitting electronic tenders by an economic operator in response of a Call for Tenders.
-
-{profile-description}
-
+The {name-profile} describes electronic messaging support for the business process where an economic operator requests the status of a procurement project from the contracting body, who provides the economic operator with the latest procurement project metadata by call for tender message.
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
 
