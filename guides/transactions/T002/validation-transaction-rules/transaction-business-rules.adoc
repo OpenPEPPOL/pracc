@@ -1,0 +1,46 @@
+
+= Business rules
+
+The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppopl:}[PEPPOL] Transport infrastructure is present.
+
+////
+[cols="1,4", options="header"]
+|===
+|Rule
+|Message/Context/Test
+include::{rules-dir}/esens-T002.sch.adoc[]
+|===
+////
+
+[cols="2,1,9", options="header"]
+.Business rules for T002, Expression of Interest Confirmation
+|===
+| ID | Flag | Rule
+| eSENS-T002-R001 | Fatal | An Expression of Interest Confirmation MUST have a customization identifier
+| eSENS-T002-R002 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:{zwsp}transaction:biitrdm082:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0'
+| eSENS-T002-R003 | Fatal | An Expression of Interest Confirmation MUST have a profile identifier
+| eSENS-T002-R004 | Fatal | ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii46:ver3.0'
+| eSENS-T002-R005 | Fatal | An Expression of Interest Confirmation MUST have an Expression of Interest Confirmation Identifier.
+| eSENS-T002-R006 | Fatal | An Expression of Interest Confirmation Identifier MUST have a schemeURI attribute.
+| eSENS-T002-R007 | Fatal | schemeURI for Expression of Interest Confirmation Identifier MUST be 'urn:uuid'.
+| eSENS-T002-R008 | Fatal | Expression of Interest Confirmation Identifier value MUST be expressed in a UUID syntax (RFC 4122)
+| eSENS-T002-R009 | Fatal | An Expression of Interest Confirmation MUST have a ContractFolderID.
+| eSENS-T002-R010 | Fatal | An Expression of Interest Confirmation MUST have an issue date
+| eSENS-T002-R011 | Fatal | An Expression of Interest Confirmation MUST have an issue time
+| eSENS-T002-R012 | Fatal | IssueTime MUST include timezone information.
+| eSENS-T002-R013 | Fatal | IssueTime MUST have a granularity of seconds
+| eSENS-T002-R014 | Fatal | An Expression of Interest Confirmation MUST identify the Contracting Body by its party identifier and its endpoint identifier.
+| eSENS-T002-R015 | Fatal | An Expression of Interest Confirmation MUST identify the Economic Operator by its party identifier and its endpoint identifier.
+| eSENS-T002-R016 | Fatal | A Party Identifier MUST have a scheme identifier attribute.
+| eSENS-T002-R017 | Fatal | A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+| eSENS-T002-R018 | Fatal | TenderLanguageLocalCode MUST be a valid Language Code.
+| eSENS-T002-R019 | Fatal | TenderLanguageLocalCode MUST have a list identifier attribute.
+| eSENS-T002-R020 | Fatal | listID for TenderLanguageLocaleCode MUST be 'ISO639-1'.
+| eSENS-T002-R021 | Fatal | An Endpoint Identifier MUST have a scheme identifier attribute.
+| eSENS-T002-R022 | Fatal | An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+| eSENS-T002-R023 | Fatal | Lot identifiers MUST be unique.
+| eSENS-T002-R025 | Fatal | An Expression of Interest Document Reference Identifier MUST have a schemeURI attribute.
+| eSENS-T002-R026 | Fatal | schemeURI for Expression of Interest Document Reference Identifier SHOULD be 'urn:uuid'.
+| eSENS-T002-R027 | Fatal | Expression of Interest Document Reference Identifier value MUST be expressed in a UUID syntax (RFC 4122)
+| eSENS-T002-R028 | Fatal | Expression of Interest Document Reference Identifier MUSTS NOT be identical to the Expression of Interest Confirmation Identifier
+|===

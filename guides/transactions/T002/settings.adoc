@@ -1,0 +1,18 @@
+include::links.adoc[]
+
+:lang: en
+
+:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
+:minor: 0.1
+:revision: 0.1.0
+:shared-dir: ..\..\shared
+:rules-dir: ..\..\..\..\rules\peppol-procurement-procedure-subscription-1.0\peppol-res
+
+:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
+
+:name-profile-org: {bii3} “Profile 46 Subscribe to Procedure" (CWA 17027-111)
+:name-profile: Profile P001 - "Procurement procedure subscription"
+
+:name-transaction-org: "Trdm082  Procedure Subscription Confirmation"({link-esens})
+:name-transaction: T002 -  Procedure Subscription Confirmation
+:name-trans-short:  Procedure Subscription Confirmation
