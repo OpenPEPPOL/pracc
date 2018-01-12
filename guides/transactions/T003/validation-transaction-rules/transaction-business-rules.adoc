@@ -1,0 +1,40 @@
+
+= Business rules
+
+The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppol-transp}[PEPPOL Transport infrastructure] is present.
+
+////
+[cols="1,4", options="header"]
+|===
+|Rule
+|Message/Context/Test
+include::{rules-dir}/esens-T003.sch.adoc[]
+|===
+////
+
+[cols="2,1,9", options="header"]
+.Business rules for T003, Tender Status Inquiry
+|===
+| ID | Flag | Rule
+| eSENS-T003-R001 | Fatal |A Tender Status Inquiry MUST have a specification (customization) identifier.
+| eSENS-T003-R002 | Fatal | A Tender Status Inquiry MUST have a business process (profile) identifier.
+| eSENS-T003-R003 | Fatal | A Tender Status Inquiry MUST have a Tender Status Inquiry identifier.
+| eSENS-T003-R004 | Fatal | A Tender Status Inquiry MUST have a reference number.
+| eSENS-T003-R005 | Fatal | A Tender Status Inquiry MUST have an issue date.
+| eSENS-T003-R007 | Fatal | A Tender Status Inquiry MUST identify the Contracting Body by its party and endpoint identifiers.
+| eSENS-T003-R008 | Fatal | A Tender Status Inquiry MUST identify the Economic Operator by its party and endpoint identifiers.
+| eSENS-T003-R009 | Warning | A Tender Status Inquiry MUST include the name of the Economic Operator.
+| eSENS-T003-R010 | Fatal | CustomizationID value MUST be 'urn:www.cenbii.eu:{zwsp}transaction:biitrdm097:ver3.0:extended:urn:www.esens.eu:bis:esens60a:ver1.0'
+| eSENS-T003-R011 | Fatal | ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii60:ver3.0'
+| eSENS-T003-R012 | Fatal | A Tender Status Inquiry Identifier MUST have a schemeURI attribute.
+| eSENS-T003-R013 | Fatal | schemeURI for Tender Status Inquiry Identifier MUST be 'urn:uuid'.
+| eSENS-T003-R014 | Fatal | A Tender Status Inquiry Identifier MUST be expressed in a UUID syntax (RFC 4122)
+| eSENS-T003-R015 | Fatal | A Tender Status Inquiry MUST have an issue time.
+| eSENS-T003-R016 | Fatal | IssueTime MUST include timezone information.
+| eSENS-T003-R017 | Fatal | IssueTime MUST have a granularity of seconds
+| eSENS-T003-R018 | Fatal | A Party Identifier MUST have a scheme identifier attribute.
+| eSENS-T003-R019 | Fatal | A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+| eSENS-T003-R020 | Fatal | An Endpoint Identifier MUST have a scheme identifier attribute.
+| eSENS-T003-R021 | Fatal | An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
+| eSENS-T003-R022 | Fatal | Lot identifiers MUST be unique.
+|===

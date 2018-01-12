@@ -1,0 +1,57 @@
+
+
+= PEPPOL Identifiers
+
+//Documentation about PEPPOL identifiers supported by this BIS can be found at the following page: {link-identifier-policy}[eDelivery guide for eTendering].
+
+PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment. The e-Tendering pilot adopts and extends the PEPPOL Policy in the following ways:
+
+== Party Identifiers used in business (UBL) documents
+The `@schemeID` attribute must be populated in all instances of the ID element when used within a PartyIdentification-container and in all instances of the EndpointID element when used within a Party-container.
+
+Examples of usage in PartyIdentification and EndpointID:
+
+[source,xml,indent=0]
+.Examples of usage in PartyIdentification and EndpointID
+----
+<cbc:EndpointID schemeID="NL:KVK">12345678</cbc:EndpointID>
+..
+<cac:PartyIdentification>
+	<cbc:ID schemeID="NO:ORGNR">999888777</cbc:ID>
+</cac:PartyIdentification>
+
+----
+
+== Document Identifiers used in business (UBL) documents
+
+=== UBL Version ID
+
+This transaction model is using the UBL 2.2 syntax. The namespace of the XML-message does only communicate the major version number. Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value 2.2:
+
+[source,xml,indent=0]
+.Examples of usage in PartyIdentification and EndpointID
+----
+<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+----
+
+=== Profile ID and Customization ID
+
+The PEPPOL Customization ID identifies the specification of content and rules that apply to the transaction. This transaction requires some minor additions and changes to the CEN BII transaction. Following the CEN BII methodology any extension must be communicated by adding an extension ID onto the Customization ID.
+
+The full syntax is:
+[source,xml,indent=0]
+----
+<transactionId>:(restrictive|extended|partly):<extensionId>[(restrictive|extended|partly):<extensionId>]
+----
+
+Which customization identification should be used, is based on which transaction is sent, and the extension identification for BIS documents.
+
+[cols="2,2,3,5", options="header"]
+.The table below shows an overview of  the values to be used for the Customization ID per transaction.
+|===
+| TransactionID | Transaction name | Short Description |  CustomizationId
+| BiiTrdm097 | TenderStatusRequest | EO requests CA for the procurement project documents | urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended:urn:www.esens.eu:bis:esens60a:ver1.0
+| T001 | TenderStatusRequest | EO requests CA for the procurement project documents | #**urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended:urn:www.peppol.eu:bis:t003:ver1.0**#
+|===
+
+Note:: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.
