@@ -9,5 +9,5 @@
 
 {peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T005\main.html[T005 - Tender]
-* link:..\..\transactions\T006\main.html[T006 - Tender Receipt Notification]
+* link:..\..\transactions\T005\[T005 - Tender]
+* link:..\..\transactions\T006\[T006 - Tender Receipt Notification]

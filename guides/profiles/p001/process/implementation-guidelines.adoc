@@ -19,5 +19,5 @@ Subscribe to Procedure is also called Expression of Interest.
 
 {peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T001\main.html[T001 Subscribe to Procedure]
-* link:..\..\transactions\T002\main.html[T002 Subscribe to Procedure Confirmation]
+* link:..\..\transactions\T001\[T001 Subscribe to Procedure]
+* link:..\..\transactions\T002\[T002 Subscribe to Procedure Confirmation]
