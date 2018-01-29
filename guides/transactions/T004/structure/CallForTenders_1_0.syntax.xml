@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:fdc:difi.no:2017:vefa:structure-1 file:///C:/BAB/Jobb/Prosjekter/Difi/Transition%20In/ErlendDok/structure-1.xsd">
+	<Term>respons</Term>
+	<Name>CallForTenders 0.1</Name>
+	<Description>Document type is a respons to economic operator interest of procurement project with or without ESPD schema</Description>
+	<Property key="sch:prefix">EHF-T001-RES</Property>
+	<Property key="sch:identifier">respons-basic</Property>
+	<Namespace>urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Document>
+		<Term>CallForTenders</Term>
+		<Element cardinality="1..1">
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL Version identifier</Name>
+			<Description>Requires UBL version 2.2</Description>
+			<Attribute>
+				<Term>schemeAgencyID</Term>
+				<Value type="FIXED">OASIS-UBL-TC</Value>
+			</Attribute>
+			<Value type="FIXED">2.2</Value>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ID</Term>
+			<Name>Call for tender identifier</Name>
+			<Description>Identifies the call for tender as issued by the contracting body.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T83-R003</Reference>
+			<Reference type="BUSINESS_TERM">tir83-002</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:IssueDate</Term>
+			<Name>Call for tender issue date</Name>
+			<Description>The date on which the call for tender is issued.</Description>
+			<DataType>Date</DataType>
+			<Reference type="RULE">BII3-T83-R005</Reference>
+			<Reference type="BUSINESS_TERM">tir83-341</Reference>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:IssueTime</Term>
+			<Name>Call for tender issue time</Name>
+			<Description>Time of issue of a call for tender. The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<DataType>Time</DataType>
+			<Reference type="RULE">NOGOV-T83-R009</Reference>
+			<Reference type="BUSINESS_TERM">tir83-355</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T83-R004</Reference>
+			<Reference type="BUSINESS_TERM">tir83-003</Reference>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:VersionID</Term>
+			<Name>Call for tender version</Name>
+			<Description>Identifies the version of the call for tenders.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="BUSINESS_TERM">tir83-001</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:TenderingTerms</Term>
+			<Element>
+				<Term>cac:CallForTendersDocumentReference</Term>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Call for tender previous identifier</Name>
+					<Description>Identifies a previously issued call for tender when updated by the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="BUSINESS_TERM">tir83-367</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:DocumentProviderParty</Term>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Tender procurement documents URI</Name>
+					<Description>URI from where tenderers and interested economic operators can access procurement documents.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="BUSINESS_TERM">tir83-368</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:TenderRecipientParty</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:EndpointID</Term>
+					<Name>Submission of tenders and requests to participate URI</Name>
+					<Description>The URI where the tenderer provides �the submission.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="BUSINESS_TERM">tir83-369</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
+						<Property key="required"></Property>
+						<Value type="EXAMPLE">NO:ORGNR</Value>
+					</Attribute>
+				</Element>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cbc:VariantConstraintIndicator</Term>
+				<Name>Variants indicator</Name>
+				<Description>Indicates if variants are accepted in the tender. Use true when variants are allowed.</Description>
+				<DataType>Indicator</DataType>
+				<Reference type="RULE">BII3-T83-R012</Reference>
+				<Reference type="BUSINESS_TERM">tir83-082</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:MaximumVariantQuantity</Term>
+				<Name>Maximum number of variants to submit</Name>
+				<Description>Maximum number of variants a tenderer can submit.</Description>
+				<DataType>Numeric</DataType>
+				<Reference type="BUSINESS_TERM">tir83-380</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:ProcurementLegislationDocumentReference</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:DocumentDescription</Term>
+					<Name>Legal references</Name>
+					<Description>Textual description of references to specific legislation</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir83-083</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:Note</Term>
+				<Name>Required number of copies</Name>
+				<Description>Required number of paper copies to submit if using postal submission.</Description>
+				<DataType>Numeric</DataType>
+				<Reference type="BUSINESS_TERM">tir83-366</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:AdditionalConditions</Term>
+				<Name>Overall expected level of tender signature</Name>
+				<Description>Expected level of signature to be used by the tenderer when submitting the tenders.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">tir83-381</Reference>
+			</Element>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ProfileID</Term>
+			<Name>Business process type identifier</Name>
+			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T83-R002</Reference>
+			<Reference type="BUSINESS_TERM">tir83-004</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:CustomizationID</Term>
+			<Name>Specification identification</Name>
+			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T83-R001</Reference>
+			<Reference type="BUSINESS_TERM">tir83-005</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:ContractingParty</Term>
+			<Element cardinality="1..1">
+				<Term>cac:Party</Term>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Contracting body name</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir83-008</Reference>
+					</Element>
+				</Element>
+				<Element cardinality="1..1">
+					<Term>cac:PartyIdentification</Term>
+					<Element cardinality="1..1">
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE">NOGOV-T83-R007</Reference>
+						<Reference type="BUSINESS_TERM">tir83-006</Reference>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndpointID</Term>
+					<Name>Contracting body electronic address identifier</Name>
+					<Description>Electronic address of the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">NOGOV-T83-R005</Reference>
+					<Reference type="BUSINESS_TERM">tir83-510</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyLegalEntity</Term>
+					<Element cardinality="0..1">
+						<Term>cac:RegistrationAddress</Term>
+						<Element cardinality="0..1">
+							<Term>cac:Country</Term>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country of registration</Name>
+								<Description>The country where the party is registered. The country should always be given by using ISO code 3166 alpha 2</Description>
+								<DataType>Code</DataType>
+								<Reference type="RULE">CL-T83-R005</Reference>
+								<Reference type="BUSINESS_TERM">tir83-007</Reference>
+								<Attribute>
+									<Term>listID</Term>
+									<Value type="FIXED">ISO3166-1:Alpha2</Value>
+								</Attribute>
+							</Element>
+						</Element>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:TenderingProcess</Term>
+			<Element cardinality="1..1">
+				<Term>cbc:ProcedureCode</Term>
+				<Name>Procedure type</Name>
+				<Description>A code specifying the type of this tendering process. The coded version of the description of procedure. (E.g.) Open procedure, negotiated etc.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">BII3-T83-R009</Reference>
+				<Reference type="RULE">CL-T83-R001</Reference>
+				<Reference type="BUSINESS_TERM">tir83-032</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED">PR_PROC</Value>
+				</Attribute>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cac:TenderSubmissionDeadlinePeriod</Term>
+				<Element cardinality="1..1">
+					<Term>cbc:EndDate</Term>
+					<Name>Tender submission deadline</Name>
+					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
+					<DataType>Date</DataType>
+					<Reference type="RULE">BII3-T83-R010</Reference>
+					<Reference type="BUSINESS_TERM">tir83-034</Reference>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Tender submission deadline</Name>
+					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">tir83-034</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:ParticipationRequestReceptionPeriod</Term>
+				<Element cardinality="1..1">
+					<Term>cbc:EndDate</Term>
+					<Name>Request for participation deadline</Name>
+					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
+					<DataType>Date</DataType>
+					<Reference type="RULE">BII3-T83-R011</Reference>
+					<Reference type="BUSINESS_TERM">tir83-036</Reference>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:EndTime</Term>
+					<Name>Request for participation deadline</Name>
+					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">tir83-036</Reference>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:ContractingSystemCode</Term>
+				<Name>Type of contract to establish</Name>
+				<Description>Specifies that the aim of the awarding process is to establish a public contract or to setup a framework agreement or a dynamic purchasing system. For framework agreement and DPS,  indicates whether the new contract will be based on an already established framework agreement or dynamic purchasing system or not.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">CL-T83-R006</Reference>
+				<Reference type="BUSINESS_TERM">tir83-040</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED"/>
+				</Attribute>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:SubmissionMethodCode</Term>
+				<Name>Backup for electronic submission indicator</Name>
+				<Description>Indicator whether postal submission of the tender is merely a backup for the electronic submission</Description>
+				<DataType>Indicator</DataType>
+				<Reference type="RULE">CL-T83-R007</Reference>
+				<Reference type="BUSINESS_TERM">tir83-364</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED"/>
+				</Attribute>
+			</Element>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:ProcurementProject</Term>
+			<Element cardinality="1..1">
+				<Term>cbc:Name</Term>
+				<Name>Procurement project name</Name>
+				<Description>Title attributed to the contract by the contracting body.</Description>
+				<DataType>Text</DataType>
+				<Reference type="RULE">BII3-T83-R013</Reference>
+				<Reference type="BUSINESS_TERM">tir83-044</Reference>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cbc:Description</Term>
+				<Name>Procurement project description</Name>
+				<Description>A  textual description of this Procurement project.</Description>
+				<DataType>Text</DataType>
+				<Reference type="RULE">BII3-T83-R014</Reference>
+				<Reference type="BUSINESS_TERM">tir83-045</Reference>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cbc:ProcurementTypeCode</Term>
+				<Name>Procurement project type</Name>
+				<Description>Type of contract (Works, Supplies or Services).</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">BII3-T83-R015</Reference>
+				<Reference type="RULE">CL-T83-R002</Reference>
+				<Reference type="BUSINESS_TERM">tir83-046</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED">PROJECT_TYPE</Value>
+				</Attribute>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cac:MainCommodityClassification</Term>
+				<Element cardinality="1..1">
+					<Term>cbc:ItemClassificationCode</Term>
+					<Name>CPV</Name>
+					<Description>Classification code of goods, works and services commonly used in procurement.</Description>
+					<DataType>Code</DataType>
+					<Reference type="RULE">BII3-T83-R016</Reference>
+					<Reference type="BUSINESS_TERM">tir83-049</Reference>
+					<Attribute>
+						<Term>listID</Term>
+						<Value type="FIXED">CPV</Value>
+						
+					</Attribute>
+				</Element>
+			</Element>
+			<Element cardinality="0..n">
+				<Term>cac:AdditionalCommodityClassification</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:ItemClassificationCode</Term>
+					<Name>CPV supplementary</Name>
+					<Description>A supplementary code to help contracting bodies describe the subject matter of contracts comprehensively.</Description>
+					<DataType>Code</DataType>
+					<Reference type="BUSINESS_TERM">tir83-350</Reference>
+					<Attribute>
+						<Term>listID</Term>
+						<Value type="FIXED">??CPV</Value>
+					</Attribute>
+				</Element>
+			</Element>
+			<Element cardinality="1..n">
+				<Term>cac:RealizedLocation</Term>
+				<Element cardinality="1..1">
+					<Term>cbc:ID</Term>
+					<Name>Procurement project location NUTS code</Name>
+					<Description>The identification with the NUTS code of the project location.</Description>
+					<DataType>Code</DataType>
+					<Reference type="RULE">BII3-T83-R017</Reference>
+					<Reference type="BUSINESS_TERM">tir83-052</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Value type="FIXED">??</Value>
+					</Attribute>
+				</Element>
+			</Element>
+			<Element>
+				<Term>cbc:ID</Term>
+			</Element>
+			<Element>
+				<Term>cac:ProcurementProject</Term>
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:AdditionalDocumentReference</Term>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentDescription</Term>
+				<Name>Lot reference</Name>
+				<Description>A reference to one or more lots the economic operator is applying for. The original lot definition is part of the call for tender document. The Qualification instance only references the corresponding IDs in order to establish the connection to the call for tender information.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir83-374</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentTypeCode</Term>
+				<Name>Document type code</Name>
+				<Description>A code specifying the type of the document.</Description>
+				<DataType>Code</DataType>
+				<Reference type="BUSINESS_TERM">tir83-375</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED"></Value>
+				</Attribute>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:IssueDate</Term>
+				<Name>Document issue date</Name>
+				<Description>Date when the referred document was issued.</Description>
+				<DataType>Date</DataType>
+				<Reference type="BUSINESS_TERM">tir83-076</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:VersionID</Term>
+				<Name>Provided document version</Name>
+				<Description>Version of a document that is provided as part of a tender or call for tender.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">tir83-077</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Attachment</Term>
+				<Element cardinality="0..1">
+					<Term>cac:ExternalReference</Term>
+					<Element cardinality="0..1">
+						<Term>cbc:FileName</Term>
+						<Name>Provided document name</Name>
+						<Description>Name of a document that is provided as part of a tender or call for tender.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir83-359</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:MimeCode</Term>
+						<Name>Document mime type code</Name>
+						<Description>Stands for </Description>
+						<DataType>Code</DataType>
+						<Reference type="RULE">CL-T83-R004</Reference>
+						<Reference type="BUSINESS_TERM">tir83-390</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:URI</Term>
+						<Name>Provided document url</Name>
+						<Description>URL where a document that is provided as part of a call for tender can be downloaded.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir83-361</Reference>
+					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:LocaleCode</Term>
+				<Name>Provided document language</Name>
+				<Description>Language of a document that is provided as part of a call for tender.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">NOGOV-T83-R008</Reference>
+				<Reference type="BUSINESS_TERM">tir83-078</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED">??</Value>
+				</Attribute>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:DocumentStatusCode</Term>
+				<Name>Provided document to be returned indicator</Name>
+				<Description>Indicates that the provided document in the call for tender has to be returned as part of the tender.</Description>
+				<DataType>Indicator</DataType>
+				<Reference type="BUSINESS_TERM">tir83-079</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Value type="FIXED">??</Value>
+				</Attribute>
+			</Element>
+			<Element cardinality="1..1">
+				<Term>cbc:ID</Term>
+				<Name>Required document reference identifier</Name>
+				<Description>Reference identifier for a required document for a tender.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir83-376</Reference>
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:ProcurementProjectLot</Term>
+			<Element cardinality="1..1">
+				<Term>cbc:ID</Term>
+				<Name>Lot identifier</Name>
+				<Description>An identifier for the lot.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir83-187</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:ProcurementProject</Term>
+				<Element cardinality="1..1">
+					<Term>cbc:Name</Term>
+					<Name>Lot name</Name>
+					<Description>The title of the lot</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">tir83-188</Reference>
+				</Element>
+			</Element>
+		</Element>
+	</Document>
+</Structure>
