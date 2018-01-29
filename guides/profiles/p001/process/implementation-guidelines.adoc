@@ -12,7 +12,7 @@ NOTE:: The syntax mapping has been added during the eSENS pilot since CEN/BII di
 
 [NOTE]
 ====
-Trdm083 and Trdm084 are out-of-scope of the e-SENS pilot.
+Trdm083, Trdm084, Trdm106 and Trdm107 are out-of-scope of the e-SENS pilot.
 
 Subscribe to Procedure is also called Expression of Interest.
 ====
