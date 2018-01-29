@@ -92,7 +92,7 @@
 					<Attribute>
 						<Term>schemeID</Term>
 						<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
-						<Property key="required"></Property>
+						<Property key="required"/>
 						<Value type="EXAMPLE">NO:ORGNR</Value>
 					</Attribute>
 				</Element>
@@ -273,7 +273,7 @@
 				<Reference type="BUSINESS_TERM">tir83-040</Reference>
 				<Attribute>
 					<Term>listID</Term>
-					<Value type="FIXED"/>
+					<Value type="FIXED">CONTRACT_TYPE</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="0..1">
@@ -285,7 +285,7 @@
 				<Reference type="BUSINESS_TERM">tir83-364</Reference>
 				<Attribute>
 					<Term>listID</Term>
-					<Value type="FIXED"/>
+					<Value type="FIXED">BII_SUBMISSION</Value>
 				</Attribute>
 			</Element>
 		</Element>
@@ -332,7 +332,6 @@
 					<Attribute>
 						<Term>listID</Term>
 						<Value type="FIXED">CPV</Value>
-						
 					</Attribute>
 				</Element>
 			</Element>
@@ -346,7 +345,7 @@
 					<Reference type="BUSINESS_TERM">tir83-350</Reference>
 					<Attribute>
 						<Term>listID</Term>
-						<Value type="FIXED">??CPV</Value>
+						<Value type="FIXED">CPV</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -361,7 +360,7 @@
 					<Reference type="BUSINESS_TERM">tir83-052</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
-						<Value type="FIXED">??</Value>
+						<Value type="FIXED">NUTS</Value>
 					</Attribute>
 				</Element>
 			</Element>
@@ -389,7 +388,7 @@
 				<Reference type="BUSINESS_TERM">tir83-375</Reference>
 				<Attribute>
 					<Term>listID</Term>
-					<Value type="FIXED"></Value>
+					<Value type="FIXED">documentType</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="0..1">
@@ -443,7 +442,7 @@
 				<Reference type="BUSINESS_TERM">tir83-078</Reference>
 				<Attribute>
 					<Term>listID</Term>
-					<Value type="FIXED">??</Value>
+					<Value type="FIXED">ISO639-1</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="0..1">
@@ -454,7 +453,7 @@
 				<Reference type="BUSINESS_TERM">tir83-079</Reference>
 				<Attribute>
 					<Term>listID</Term>
-					<Value type="FIXED">??</Value>
+					<Value type="FIXED">documentStatusType</Value>
 				</Attribute>
 			</Element>
 			<Element cardinality="1..1">
