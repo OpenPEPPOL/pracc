@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:fdc:difi.no:2017:vefa:structure-1 file:///C:/BAB/Jobb/Prosjekter/Difi/Transition%20In/ErlendDok/structure-1.xsd">
+	<Term>request</Term>
+	<Name>ExpressionOfInterestRequest 0.1</Name>
+	<Description>Expression Of InterestRequest</Description>
+	<Property key="sch:prefix">EHF-T001-RES</Property>
+	<Property key="sch:identifier">request-basic</Property>
+	<Namespace>urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Document>
+		<Term>ExpressionOfInterestRequest</Term>
+		<Element cardinality="1..1">
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL Version identifier</Name>
+			<Description>Requires UBL version 2.2</Description>
+			<Attribute>
+				<Term>schemeAgencyID</Term>
+				<Value type="FIXED">OASIS-UBL-TC</Value>
+			</Attribute>
+			<Value type="FIXED">2.2</Value>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ID</Term>
+			<Name>Express of interest identifier</Name>
+			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-001</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:IssueDate</Term>
+			<Name>Call for tender issue date</Name>
+			<Description>The date on which transaction is issued.</Description>
+			<DataType>Date</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-002</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:IssueTime</Term>
+			<Name>Call for tender issue time</Name>
+			<Description>Time of issue of Transaction.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<DataType>Time</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-003</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. Used as a link to the call for tenders.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-005</Reference>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:PreferredLanguageLocaleCode</Term>
+			<Name>Economic operator preferred languager</Name>
+			<Description>The language the economic operator prefers to use when receiving documents from the contracting body. Use the ISO 639 1 code list</Description>
+			<DataType>Code</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-005</Reference>
+			<Attribute>
+				<Term>listID</Term>
+				<Value type="FIXED">ISO639-1</Value>
+			</Attribute>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:ProfileID</Term>
+			<Name>Profile identifier</Name>
+			<Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-006</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cbc:CustomizationID</Term>
+			<Name>Customization identifier</Name>
+			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE"/>
+			<Reference type="BUSINESS_TERM">tir81-007</Reference>
+		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:ContractingParty</Term>
+			<Element cardinality="1..1">
+				<Term>cac:Party</Term>
+				<Element cardinality="1..1">
+					<Term>cac:PartyIdentification</Term>
+					<Element cardinality="1..1">
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE"></Reference>
+						<Reference type="BUSINESS_TERM">tir81-009</Reference>
+					</Element>
+				</Element>
+				<Element cardinality="1..1">
+					<Term>cbc:EndpointID</Term>
+					<Name>Contracting body electronic address identifier</Name>
+					<Description>Electronic address of the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE"></Reference>
+					<Reference type="BUSINESS_TERM">tir81-010</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
+			</Element>
+		</Element>
+		
+		
+		
+		<Element cardinality="1..1">
+			<Term>cac:EconomicOperatorParty</Term>
+			<Element cardinality="1..1">
+				<Term>cac:Party</Term>
+				<Element cardinality="1..1">
+					<Term>cac:PartyName</Term>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Economic operator name</Name>
+						<Description>The name of the economic operator.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-013</Reference>
+					</Element>
+				</Element>
+				<Element cardinality="1..1">
+					<Term>cac:PartyIdentification</Term>
+					<Element cardinality="1..1">
+						<Term>cbc:ID</Term>
+						<Name>Economic operator identifier</Name>
+						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE"></Reference>
+						<Reference type="BUSINESS_TERM">tir81-012</Reference>
+						<Attribute>
+						<Term>schemeID</Term>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+					</Element>
+				</Element>
+				<Element cardinality="1..1">
+					<Term>cbc:EndpointID</Term>
+					<Name>Economic operator electronic address identifier</Name>
+					<Description>Electronic address of the economic operato</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE"></Reference>
+					<Reference type="BUSINESS_TERM">tir81-030</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
+				<!--tir81-028	0..1	Economic operator type code	The type of the economic operator, used for statistical purposes: sme , group of economic operators (joint venture, consortium, or other).-->
+				<Element cardinality="0..1">
+					<Term>cac:PartyLegalEntity</Term>
+					<Element cardinality="0..1">
+						<Term>cac:RegistrationAddress</Term>
+						<Element cardinality="0..1">
+							<Term>cac:Country</Term>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Economic operator registration country code</Name>
+								<Description>The registration country code of the economic operator. The country should always be given by using ISO code 3166 alpha 2</Description>
+								<DataType>Code</DataType>
+								<Reference type="RULE"></Reference>
+								<Reference type="BUSINESS_TERM">tir81-014</Reference>
+								<Attribute>
+									<Term>listID</Term>
+									<Value type="FIXED">ISO3166-1:Alpha2</Value>
+								</Attribute>
+							</Element>
+						</Element>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PostalAddress</Term>
+					<Element cardinality="0..1">
+						<Term>cbc:StreetName</Term>
+						<Name>Address line 1</Name>
+						<Description>The main address line in an address. Usually the street name and number or post office box</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-015</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CityName</Term>
+						<Name>City</Name>
+						<Description>The common name of a city where the address is located.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-017</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:PostalZone</Term>
+						<Name>Post code</Name>
+						<Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-018</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:CountrySubentity</Term>
+						<Name>Country subdivision</Name>
+						<Description>The subdivision of a country such as region, county, state, province etc.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-019</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:Country</Term>
+						<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country code</Name>
+								<Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
+								<DataType>Code</DataType>
+								<Reference type="RULE"></Reference>
+								<Reference type="BUSINESS_TERM">tir81-020</Reference>
+								<Attribute>
+									<Term>listID</Term>
+									<Value type="FIXED">ISO3166-1:Alpha2</Value>
+								</Attribute>
+							</Element>
+						</Element>					
+				</Element>
+			<!--	<Element cardinality="0..1">
+					<Term>cac:Contact</Term>
+					<Element>
+						<Term>Contact point</Term>
+						<Name>Contact point</Name>
+						<Description>The name of the contact point.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-021</Reference>
+						
+					</Element>
+					<Element>
+						<Term>Contact point</Term>
+						<Name>Contact point</Name>
+						<Description>The name of the contact point.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-021</Reference>
+						
+					</Element>
+					<Element>
+						<Term>Contact point</Term>
+						<Name>Contact point</Name>
+						<Description>The name of the contact point.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-021</Reference>
+						
+					</Element>
+					<Element>
+						<Term>cbc:ElectronicMail</Term>
+						<Name>Contact email addres</Name>
+						<Description>An e-mail address for the contact point.</Description>
+						<DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-024</Reference>
+						
+					</Element>
+				</Element>
+				-->
+			</Element>
+		</Element>
+	</Document>
+</Structure>
