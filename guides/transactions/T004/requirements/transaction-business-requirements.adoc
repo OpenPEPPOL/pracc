@@ -1,8 +1,10 @@
 
 = Identification and description of the requirements
 
+The following tables describe the transaction business and information requirements of {bii3}  {name-transaction-org} which the "{name-transaction}" inherits form.
+
 [cols="2,10a", options="header"]
-.Transaction business requirements of Trdm083
+.Transaction business requirements of T004
 |===
 | ID| Requirement
 | tbr83-001| The call for tenders shall contain a unique ID, the issue date and the reference number of the procurement project. A unique ID is needed to establish the relation between all the documents in the process, and the tendering procedure by all the parties involved.

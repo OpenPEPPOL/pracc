@@ -1,8 +1,6 @@
 = Principle and prerequisites
 
 
-
-
 :leveloffset: +1
 
 include::../{shared-dir}/transaction/scope-transaction.adoc[]

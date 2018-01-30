@@ -13,6 +13,6 @@ include::links.adoc[]
 :name-profile-org: {bii3} “Profile 46 Subscribe to Procedure" (CWA 17027-111)
 :name-profile: Profile P001 - "Procurement procedure subscription"
 
-:name-transaction-org: "Trdm081 Subscribe to Procedure"({link-esens})
+:name-transaction-org: "Trdm081 Subscribe to Procedure"
 :name-transaction: T001 - Subscribe to Procedure
 :name-trans-short: Subscribe to Procedure

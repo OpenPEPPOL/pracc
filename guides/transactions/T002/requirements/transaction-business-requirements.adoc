@@ -3,10 +3,9 @@
 
 == Business Requirements
 
-The following tables describe the transaction business and information requirements of Trdm082.
 
 [cols="2,10", options="header"]
-.Transaction business requirements of Trdm082
+.Transaction business requirements of T002
 |===
 | ID | Requirement
 | tbr82-001 | The economic operator shall be identified.

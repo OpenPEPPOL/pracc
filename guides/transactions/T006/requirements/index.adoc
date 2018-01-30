@@ -1,9 +1,7 @@
 
 = Transaction business and information requirements
 
-{name-transaction} transaction inherited from the following {bii3} documents:
-
-* UBL binding for {name-transaction-org}
+The following tables describe the transaction business and information requirements of "{name-transaction}", it inherits from {bii3}  {name-transaction-org}.
 
 :leveloffset: +1
 

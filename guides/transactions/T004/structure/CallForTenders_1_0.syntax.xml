@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:fdc:difi.no:2017:vefa:structure-1 file:///C:/BAB/Jobb/Prosjekter/Difi/Transition%20In/ErlendDok/structure-1.xsd">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>respons</Term>
 	<Name>CallForTenders 0.1</Name>
 	<Description>Document type is a respons to economic operator interest of procurement project with or without ESPD schema</Description>
-	<Property key="sch:prefix">EHF-T001-RES</Property>
+	<Property key="sch:prefix">EHF-T004-RES</Property>
 	<Property key="sch:identifier">respons-basic</Property>
 	<Namespace>urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>

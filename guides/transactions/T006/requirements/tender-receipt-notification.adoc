@@ -3,7 +3,7 @@
 Based on the information in the REM-MD Evidence  and the Tender Reception Notification can be created by the etendering system as specified in the following table.
 
 [cols="1,1,2,4,2,2", options="header"]
-.Trdm045 Tender Reception Notification Transaction Information Requirements
+.T006 Tender Reception Notification Transaction Information Requirements
 |===
 | ID | Card. | Business term | Usage | Data Type | Description
 

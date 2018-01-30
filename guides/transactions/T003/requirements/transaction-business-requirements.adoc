@@ -3,10 +3,9 @@
 
 == Business Requirements
 
-The following tables describe the transaction business and information requirements of Trdm097.
 
 [cols="2,10", options="header"]
-.Transaction business requirements of Trdm097
+.Transaction business requirements of T003
 |===
 | ID | Requirement
 | tbr97-001 |	The economic operator shall be identified.

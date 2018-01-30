@@ -2,7 +2,7 @@
 = Identification and description of the requirements
 
 [cols="2,10", options="header"]
-.Transaction business requirements of Trdm045
+.Transaction business requirements of T006
 |===
 | ID |  Requirement
 | tbr45-001 | The Tender Reception Notification shall have its own ID, date and time (and timezone) of issue and name or identification of its sender and receiver.

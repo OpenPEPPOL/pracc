@@ -2,7 +2,7 @@
 = Identification and description of the requirements
 
 [cols="2,10a", options="header"]
-.Transaction business requirements of Trdm090
+.Transaction business requirements of T005
 |===
 | ID | Requirement
 | tbr90-001 | The CEN/BII profile and transaction names and versions shall be identified.
