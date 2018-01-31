@@ -91,7 +91,7 @@
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"></Reference>
+						<Reference type="RULE"/>
 						<Reference type="BUSINESS_TERM">tir81-009</Reference>
 					</Element>
 				</Element>
@@ -100,7 +100,7 @@
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE"></Reference>
+					<Reference type="RULE"/>
 					<Reference type="BUSINESS_TERM">tir81-010</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -109,9 +109,6 @@
 				</Element>
 			</Element>
 		</Element>
-		
-		
-		
 		<Element cardinality="1..1">
 			<Term>cac:EconomicOperatorParty</Term>
 			<Element cardinality="1..1">
@@ -133,12 +130,12 @@
 						<Name>Economic operator identifier</Name>
 						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"></Reference>
+						<Reference type="RULE"/>
 						<Reference type="BUSINESS_TERM">tir81-012</Reference>
 						<Attribute>
-						<Term>schemeID</Term>
-						<Value type="FIXED">SchemeID</Value>
-					</Attribute>
+							<Term>schemeID</Term>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
 					</Element>
 				</Element>
 				<Element cardinality="1..1">
@@ -146,7 +143,7 @@
 					<Name>Economic operator electronic address identifier</Name>
 					<Description>Electronic address of the economic operato</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE"></Reference>
+					<Reference type="RULE"/>
 					<Reference type="BUSINESS_TERM">tir81-030</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -165,7 +162,7 @@
 								<Name>Economic operator registration country code</Name>
 								<Description>The registration country code of the economic operator. The country should always be given by using ISO code 3166 alpha 2</Description>
 								<DataType>Code</DataType>
-								<Reference type="RULE"></Reference>
+								<Reference type="RULE"/>
 								<Reference type="BUSINESS_TERM">tir81-014</Reference>
 								<Attribute>
 									<Term>listID</Term>
@@ -208,55 +205,60 @@
 					<Element cardinality="0..1">
 						<Term>cac:Country</Term>
 						<Element>
-								<Term>cbc:IdentificationCode</Term>
-								<Name>Country code</Name>
-								<Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
-								<DataType>Code</DataType>
-								<Reference type="RULE"></Reference>
-								<Reference type="BUSINESS_TERM">tir81-020</Reference>
-								<Attribute>
-									<Term>listID</Term>
-									<Value type="FIXED">ISO3166-1:Alpha2</Value>
-								</Attribute>
-							</Element>
-						</Element>					
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Country code</Name>
+							<Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
+							<DataType>Code</DataType>
+							<Reference type="RULE"/>
+							<Reference type="BUSINESS_TERM">tir81-020</Reference>
+							<Attribute>
+								<Term>listID</Term>
+								<Value type="FIXED">ISO3166-1:Alpha2</Value>
+							</Attribute>
+						</Element>
+					</Element>
 				</Element>
-			<!--	<Element cardinality="0..1">
+				<Element cardinality="0..1">
 					<Term>cac:Contact</Term>
-					<Element>
-						<Term>Contact point</Term>
+					<Element cardinality="0..1">
+						<Term>cbc:Name</Term>
 						<Name>Contact point</Name>
 						<Description>The name of the contact point.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir81-021</Reference>
-						
 					</Element>
-					<Element>
-						<Term>Contact point</Term>
-						<Name>Contact point</Name>
-						<Description>The name of the contact point.</Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Telefax</Term>
+						<Name>Contact fax number</Name>
+						<Description>A fax number for the contact point.</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir81-021</Reference>
-						
+						<Reference type="BUSINESS_TERM">tir81-022</Reference>
 					</Element>
-					<Element>
-						<Term>Contact point</Term>
-						<Name>Contact point</Name>
-						<Description>The name of the contact point.</Description>
+					<Element cardinality="0..1">
+						<Term>cbc:Telephone</Term>
+						<Name>Contact telephone number</Name>
+						<Description>TA phone number for the contact point</Description>
 						<DataType>Text</DataType>
-						<Reference type="BUSINESS_TERM">tir81-021</Reference>
-						
+						<Reference type="BUSINESS_TERM">tir81-023</Reference>
 					</Element>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
-						<Name>Contact email addres</Name>
+						<Name>Contact email address</Name>
 						<Description>An e-mail address for the contact point.</Description>
 						<DataType>Text</DataType>
 						<Reference type="BUSINESS_TERM">tir81-024</Reference>
-						
 					</Element>
 				</Element>
-				-->
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>ccac:ProcurementProjectLotReferenc</Term>
+			<Element cardinality="1..n">
+				<Term>cbc:ID</Term>
+				<Name>Lot identifier</Name>
+				<Description>An identifier for the lot.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir81-026</Reference>
 			</Element>
 		</Element>
 	</Document>

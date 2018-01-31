@@ -5,7 +5,6 @@ The following code lists for coded elements and identifier schemes are used in t
 
 NOTE: Additional code lists are listed in the CEN BII documents, and must also be used to ensure valid instance documents!
 
-
 :leveloffset: +1
 
 include::code-list-element.adoc[]
