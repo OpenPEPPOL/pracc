@@ -4,7 +4,7 @@
 	<Name>TenderReceipt</Name>
 	<Document>
 		<Term>TenderReceipt</Term>
-		<Element>
+		<Element cardinality="0..1">
 			<Term>cbc:UBLVersionID</Term>
 			<Reference type="RULE">NOGOV-T45-R002</Reference>
 			<Reference type="RULE">NOGOV-T45-R003</Reference>
@@ -64,7 +64,7 @@
 			<DataType>Time</DataType>
 			<Reference type="RULE">BII3-T45-R004 and BII3-T45-R012</Reference>
 		</Element>
-		<Element>
+		<Element cardinality="1..n">
 			<Term>cac:TenderDocumentReference</Term>
 			<Name>Received document reference</Name>
 			<Reference type="RULE">BII3-T45-R008</Reference>
@@ -86,17 +86,17 @@
 					<Reference type="RULE">BII3-T45-R016</Reference>
 				</Attribute>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:Attachment</Term>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cac:ExternalReference</Term>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:DocumentHash</Term>
 						<Name>Document digest</Name>
 						<Description>Digest of the document.</Description>
 						<DataType>Text</DataType>
 					</Element>
-					<Element>
+					<Element cardinality="0..1">
 						<Term>cbc:HashAlgorithmMethod</Term>
 						<Name>Document digest method code</Name>
 						<Description>Code that indicates the algorithm used to calculate the hash.</Description>
@@ -104,9 +104,9 @@
 					</Element>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:IssuerParty</Term>
-				<Element>
+				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Attribute>
 						<Term>@schemeID</Term>
@@ -122,7 +122,7 @@
 			<Name>Contracting body</Name>
 			<Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
 			<Reference type="RULE">BII3-T45-R005</Reference>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cbc:EndpointID</Term>
 				<Name>Contracting body electronic address identifier</Name>
 				<Description>Electronic address of the contracting body.</Description>
@@ -132,11 +132,11 @@
 					<Term>@schemeID</Term>
 					<Reference type="RULE">NOGOV-T45-R004</Reference>
 					<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
-						<Property key="required"/>
-						<Value type="EXAMPLE">NO:ORGNR</Value>
+					<Property key="required"/>
+					<Value type="EXAMPLE">NO:ORGNR</Value>
 				</Attribute>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
 				<Element>
 					<Term>cbc:ID</Term>
@@ -150,7 +150,7 @@
 					</Attribute>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Element>
 					<Term>cbc:Name</Term>
@@ -165,7 +165,7 @@
 			<Name>Economic operator</Name>
 			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
 			<Reference type="RULE">BII3-T45-R006</Reference>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
@@ -175,11 +175,11 @@
 					<Term>@schemeID</Term>
 					<Reference type="RULE">NOGOV-T45-R004</Reference>
 					<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
-						<Property key="required"/>
-						<Value type="EXAMPLE">NO:ORGNR</Value>
+					<Property key="required"/>
+					<Value type="EXAMPLE">NO:ORGNR</Value>
 				</Attribute>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyIdentification</Term>
 				<Element>
 					<Term>cbc:ID</Term>
@@ -193,7 +193,7 @@
 					</Attribute>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Element>
 					<Term>cbc:Name</Term>

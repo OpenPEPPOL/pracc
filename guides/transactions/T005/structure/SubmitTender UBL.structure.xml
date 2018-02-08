@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+	<Term>request</Term>
+	<Name>Tender</Name>
+	<Document>
+		<Term>Tender</Term>
+		<Element>
+			<Term>cbc:UBLVersionID</Term>
+			<Reference type="RULE">NOGOV-T90-R002</Reference>
+			<Reference type="RULE">NOGOV-T90-R003</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Specification identification</Name>
+			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T90-R001</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Business process type identifier</Name>
+			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T90-R002</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:ID</Term>
+			<Name>Tender identifier</Name>
+			<Description>Identifier of the tender document.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T90-R008</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">BII3-T90-R009</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:IssueDate</Term>
+			<Name>Tender issue date</Name>
+			<Description>The date when the tender is issued by the economic operator.</Description>
+			<DataType>Date</DataType>
+			<Reference type="RULE">BII3-T90-R005</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:IssueTime</Term>
+			<Name>Tender issue time</Name>
+			<Description>The time when the tender is issued by the economic operator. The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<DataType>Time</DataType>
+			<Reference type="RULE">BII3-T90-R006</Reference>
+			<Reference type="RULE">BII3-T90-R007</Reference>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:DocumentReference</Term>
+			<Name>Provided document</Name>
+			<Description>Document that is provided as part of a  call for tender.</Description>
+			<Reference type="RULE">BII3-T90-R012</Reference>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>Call for tender reference Document identifier</Name>
+				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.
+Identifier of a document</Description>
+				<DataType>Identifier
+Identifier</DataType>
+				<Reference type="RULE">BII3-T90-R010</Reference>
+				<Reference type="RULE">BII3-T90-R013</Reference>
+			</Element>
+			<Element>
+				<Term>cbc:DocumentTypeCode</Term>
+				<Name>Document type code</Name>
+				<Description>A code specifying the type of the document.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">BII3-T90-R015</Reference>
+				<Reference type="RULE">CL-T90-R003</Reference>
+				<Attribute>
+					<Term>@listID</Term>
+					<Reference type="RULE">BII3-T90-R021</Reference>
+				</Attribute>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cbc:LocaleCode</Term>
+				<Name>Tender language</Name>
+				<Description>The language used to write the tender.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">NOGOV-T90-R008</Reference>
+				<Attribute>
+					<Term>@listID</Term>
+					<Reference type="RULE">NOGOV-T90-R009</Reference>
+				</Attribute>
+			</Element>
+			<Element>
+				<Term>cbc:VersionID</Term>
+				<Name>Call for tender version</Name>
+				<Description>Identifies the version of the call for tenders.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="RULE">BII3-T90-R011</Reference>
+			</Element>
+			<Element>
+				<Term>cbc:DocumentDescription</Term>
+				<Name>Document description</Name>
+				<Description>Textual description of the document.</Description>
+				<DataType>Text</DataType>
+				<Reference type="RULE">BII3-T90-R014</Reference>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Attachment</Term>
+				<Element cardinality="0..1">
+					<Term>cac:ExternalReference</Term>
+					<Element>
+						<Term>cbc:DocumentHash</Term>
+						<Name>Document digest</Name>
+						<Description>Digest of the document.</Description>
+						<DataType>Text</DataType>
+						<Reference type="RULE">BII3-T90-R017</Reference>
+					</Element>
+					<Element>
+						<Term>cbc:HashAlgorithmMethod</Term>
+						<Name>Document digest method code</Name>
+						<Description>Code that indicates the algorithm used to calculate the hash.</Description>
+						<DataType>Code</DataType>
+						<Reference type="RULE">BII3-T90-R018</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:MimeCode</Term>
+						<Name>Document mime type code</Name>
+						<Description>Stands for </Description>
+						<DataType>Code</DataType>
+						<Reference type="RULE">CL-T90-R002</Reference>
+					</Element>
+					<Element>
+						<Term>cbc:FileName</Term>
+						<Name>Document name</Name>
+						<Description>The file name of the document.</Description>
+						<DataType>Text</DataType>
+						<Reference type="RULE">BII3-T90-R016</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:TendererParty</Term>
+			<Name>Economic operator</Name>
+			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
+			<Reference type="RULE">BII3-T90-R003</Reference>
+			<Element cardinality="0..1">
+				<Term>cbc:EndpointID</Term>
+				<Name>Economic operator electronic address identifier</Name>
+				<Description>Electronic address of the economic operator.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="RULE">NOGOV-T90-R005</Reference>
+				<Attribute>
+					<Term>@schemeID</Term>
+					<Reference type="RULE">NOGOV-T90-R004</Reference>
+				</Attribute>
+			</Element>
+			<Element>
+				<Term>cac:PartyIdentification</Term>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Economic operator identifier</Name>
+					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">NOGOV-T90-R007</Reference>
+					<Attribute>
+						<Term>@schemeID</Term>
+						<Reference type="RULE">NOGOV-T90-R006</Reference>
+					</Attribute>
+				</Element>
+			</Element>
+			<Element>
+				<Term>cac:PartyName</Term>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Economic operator name</Name>
+					<Description>The name of the economic operator.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PostalAddress</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:StreetName</Term>
+					<Name>Address line 1</Name>
+					<Description>The main address line in an address.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:AdditionalStreetName</Term>
+					<Name>Address line 2</Name>
+					<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:CityName</Term>
+					<Name>City</Name>
+					<Description>The common name of a city where the address is located.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:PostalZone</Term>
+					<Name>Post code</Name>
+					<Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:CountrySubentity</Term>
+					<Name>Country subdivision</Name>
+					<Description>The subdivision of a country such as region, county, state, province etc.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Country</Term>
+					<Element cardinality="0..1">
+						<Term>cbc:IdentificationCode</Term>
+						<Name>Country code</Name>
+						<Description>A code that identifies the country.</Description>
+						<DataType>Code</DataType>
+						<Reference type="RULE">CL-T90-R001</Reference>
+						<Element>
+							<Term>@listID</Term>
+							<Reference type="RULE">BII3-T90-R020</Reference>
+						</Element>
+					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PartyLegalEntity</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:CompanyLegalForm</Term>
+					<Name>Economic operator legal form</Name>
+					<Description>A textual description of the legal form of the economic operator.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:RegistrationAddress</Term>
+					<Element cardinality="0..1">
+						<Term>cac:Country</Term>
+						<Element cardinality="0..1">
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Economic operator registration country code</Name>
+							<Description>The registration country code of the economic operator.</Description>
+							<DataType>Code</DataType>
+							<Reference type="RULE">CL-T90-R001</Reference>
+							<Attribute>
+								<Term>@listID</Term>
+								<Reference type="RULE">BII3-T90-R020</Reference>
+							</Attribute>
+						</Element>
+					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Contact</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:Name</Term>
+					<Name>Contact point</Name>
+					<Description>The name of the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:Telephone</Term>
+					<Name>Contact telephone number</Name>
+					<Description>A phone number for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:Telefax</Term>
+					<Name>Contact fax number</Name>
+					<Description>A fax number for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:ElectronicMail</Term>
+					<Name>Contact email address</Name>
+					<Description>An e-mail address for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cac:ContractingParty</Term>
+			<Name>Contracting body</Name>
+			<Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
+			<Reference type="RULE">BII3-T90-R004</Reference>
+			<Element>
+				<Term>cac:Party</Term>
+				<Element cardinality="0..1">
+					<Term>cbc:EndpointID</Term>
+					<Name>Contracting body electronic address identifier</Name>
+					<Description>Electronic address of the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">NOGOV-T90-R005</Reference>
+					<Attribute>
+						<Term>@schemeID</Term>
+						<Reference type="RULE">NOGOV-T90-R004</Reference>
+					</Attribute>
+				</Element>
+				<Element>
+					<Term>cac:PartyIdentification</Term>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE">NOGOV-T90-R007</Reference>
+						<Attribute>
+							<Term>@schemeID</Term>
+							<Reference type="RULE">NOGOV-T90-R006</Reference>
+						</Attribute>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Contracting body name</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Text</DataType>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:TenderedProject</Term>
+			<Element cardinality="0..1">
+				<Term>cac:ProcurementProjectLot</Term>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Lot identifier</Name>
+					<Description>An identifier for the lot.</Description>
+					<DataType>Identifier</DataType>
+				</Element>
+			</Element>
+		</Element>
+	</Document>
+</Structure>
