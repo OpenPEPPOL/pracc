@@ -1,7 +1,6 @@
 
 = Identification and description of the requirements
 
-The following tables describe the transaction business and information requirements of {bii3}  {name-transaction-org} which the "{name-transaction}" inherits form.
 
 [cols="2,10a", options="header"]
 .Transaction business requirements of T004

@@ -13,4 +13,4 @@
 {peppol} {name-profile} business process includes 2 transactions:
 
 * link:..\..\transactions\T004\[T004 - Call for Tenders]
-* ESPD Github Account
+* link:https://github.com/espd/[ESPD Github Account]
