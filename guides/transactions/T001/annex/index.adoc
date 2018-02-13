@@ -2,7 +2,7 @@
 
 = Key examples/use cases
 
-link:../{xml-doc-fil}[Example file]
+link:{xml-doc-fil}[Example file]
 
 [source,xml,indent=0]
 ----
