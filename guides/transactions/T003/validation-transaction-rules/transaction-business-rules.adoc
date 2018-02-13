@@ -1,9 +1,9 @@
 
-= Business rules
+= Business and syntax rules
 
 The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppol-transp}[PEPPOL Transport infrastructure] is present.
 
-////
+
 [cols="1,4", options="header"]
 |===
 |Rule
@@ -38,3 +38,5 @@ include::{rules-dir}/esens-T003.sch.adoc[]
 | eSENS-T003-R021 | Fatal | An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".
 | eSENS-T003-R022 | Fatal | Lot identifiers MUST be unique.
 |===
+
+////

@@ -1,9 +1,9 @@
 
-= Business rules
+= Business and syntax rules
 
 The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppol-transp}[PEPPOL Transport infrastructure] is present.
 
-////
+
 [cols="1,4", options="header"]
 |===
 |Rule
@@ -49,3 +49,5 @@ include::{rules-dir}/esens-T001.sch.adoc[]
 |eSENS-T001-R031 | Fatal | An Expression of Interest MUST include Economic Operator Contact information.
 |eSENS-T001-R032 | Fatal | Contact Information MUST include Contact Name and either one of Telephone, Telefax or ElectronicMail
 |===
+
+////

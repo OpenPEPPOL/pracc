@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TenderReceipt xmlns="urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2 file:///C:/BAB/Jobb/UBL22/xsd/maindoc/UBL-TenderReceipt-2.2.xsd">
+<TenderReceipt xmlns="urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2" 
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" 
+    xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+    >
 	<!-- tag::UBL[] -->
 	<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
 	<!-- end::UBL[] -->
