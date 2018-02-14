@@ -15,5 +15,10 @@
         <Path>structure/syntax/TenderReceipt.xml</Path>
         <Title>Tender Receipt</Title>
     </Resource>
+	<Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/CallForTenders.xml</Path>
+        <Title>Call for Tender</Title>
+    </Resource>
 
 </Project>
