@@ -2,8 +2,11 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term/>
 	<Name>TenderReceipt</Name>
+	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
-		<Term>TenderReceipt</Term>
+		<Term>ubl:TenderReceipt</Term>
 		<Element cardinality="0..1">
 			<Term>cbc:UBLVersionID</Term>
 			<Reference type="RULE">NOGOV-T45-R002</Reference>
