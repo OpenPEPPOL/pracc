@@ -75,7 +75,7 @@ Identifier</DataType>
 				<Reference type="RULE">BII3-T90-R015</Reference>
 				<Reference type="RULE">CL-T90-R003</Reference>
 				<Attribute>
-					<Term>@listID</Term>
+					<Term>listID</Term>
 					<Reference type="RULE">BII3-T90-R021</Reference>
 				</Attribute>
 			</Element>
@@ -86,7 +86,7 @@ Identifier</DataType>
 				<DataType>Code</DataType>
 				<Reference type="RULE">NOGOV-T90-R008</Reference>
 				<Attribute>
-					<Term>@listID</Term>
+					<Term>listID</Term>
 					<Reference type="RULE">NOGOV-T90-R009</Reference>
 				</Attribute>
 			</Element>
@@ -151,7 +151,7 @@ Identifier</DataType>
 				<DataType>Identifier</DataType>
 				<Reference type="RULE">NOGOV-T90-R005</Reference>
 				<Attribute>
-					<Term>@schemeID</Term>
+					<Term>schemeID</Term>
 					<Reference type="RULE">NOGOV-T90-R004</Reference>
 				</Attribute>
 			</Element>
@@ -164,7 +164,7 @@ Identifier</DataType>
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">NOGOV-T90-R007</Reference>
 					<Attribute>
-						<Term>@schemeID</Term>
+						<Term>schemeID</Term>
 						<Reference type="RULE">NOGOV-T90-R006</Reference>
 					</Attribute>
 				</Element>
@@ -218,10 +218,10 @@ Identifier</DataType>
 						<Description>A code that identifies the country.</Description>
 						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T90-R001</Reference>
-						<Element>
-							<Term>@listID</Term>
+						<Attribute>
+							<Term>listID</Term>
 							<Reference type="RULE">BII3-T90-R020</Reference>
-						</Element>
+						</Attribute>
 					</Element>
 				</Element>
 			</Element>
@@ -244,7 +244,7 @@ Identifier</DataType>
 							<DataType>Code</DataType>
 							<Reference type="RULE">CL-T90-R001</Reference>
 							<Attribute>
-								<Term>@listID</Term>
+								<Term>listID</Term>
 								<Reference type="RULE">BII3-T90-R020</Reference>
 							</Attribute>
 						</Element>
@@ -293,7 +293,7 @@ Identifier</DataType>
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">NOGOV-T90-R005</Reference>
 					<Attribute>
-						<Term>@schemeID</Term>
+						<Term>schemeID</Term>
 						<Reference type="RULE">NOGOV-T90-R004</Reference>
 					</Attribute>
 				</Element>
@@ -306,7 +306,7 @@ Identifier</DataType>
 						<DataType>Identifier</DataType>
 						<Reference type="RULE">NOGOV-T90-R007</Reference>
 						<Attribute>
-							<Term>@schemeID</Term>
+							<Term>schemeID</Term>
 							<Reference type="RULE">NOGOV-T90-R006</Reference>
 						</Attribute>
 					</Element>
