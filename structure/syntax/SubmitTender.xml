@@ -4,7 +4,7 @@
 	<Name>Tender</Name>
 	<Document>
 		<Term>Tender</Term>
-		<Element>
+		<Element cardinality="0..1">
 			<Term>cbc:UBLVersionID</Term>
 			<Reference type="RULE">NOGOV-T90-R002</Reference>
 			<Reference type="RULE">NOGOV-T90-R003</Reference>
@@ -322,7 +322,7 @@ Identifier</DataType>
 				</Element>
 			</Element>
 		</Element>
-		<Element cardinality="0..n">
+		<Element cardinality="1..n">
 			<Term>cac:TenderedProject</Term>
 			<Element cardinality="0..1">
 				<Term>cac:ProcurementProjectLot</Term>

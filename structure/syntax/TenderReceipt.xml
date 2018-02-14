@@ -82,7 +82,7 @@
 				<DataType>Code</DataType>
 				<Reference type="RULE">BII3-T45-R014</Reference>
 				<Attribute>
-					<Term>@listID</Term>
+					<Term>listID</Term>
 					<Reference type="RULE">BII3-T45-R016</Reference>
 				</Attribute>
 			</Element>
@@ -109,7 +109,7 @@
 				<Element cardinality="0..1">
 					<Term>cbc:EndpointID</Term>
 					<Attribute>
-						<Term>@schemeID</Term>
+						<Term>schemeID</Term>
 						<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
 						<Property key="required"/>
 						<Value type="EXAMPLE">NO:ORGNR</Value>
@@ -129,7 +129,7 @@
 				<DataType>Identifier</DataType>
 				<Reference type="RULE">NOGOV-T45-R005</Reference>
 				<Attribute>
-					<Term>@schemeID</Term>
+					<Term>schemeID</Term>
 					<Reference type="RULE">NOGOV-T45-R004</Reference>
 					<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
 					<Property key="required"/>
@@ -145,7 +145,7 @@
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">NOGOV-T45-R007</Reference>
 					<Attribute>
-						<Term>@schemeID</Term>
+						<Term>schemeID</Term>
 						<Reference type="RULE">NOGOV-T45-R006</Reference>
 					</Attribute>
 				</Element>
@@ -172,7 +172,7 @@
 				<DataType>Identifier</DataType>
 				<Reference type="RULE">NOGOV-T45-R005</Reference>
 				<Attribute>
-					<Term>@schemeID</Term>
+					<Term>schemeID</Term>
 					<Reference type="RULE">NOGOV-T45-R004</Reference>
 					<Reference type="CODE_LIST">Must be according to PEPPOL Policy for use of identifiers, policy 8</Reference>
 					<Property key="required"/>
@@ -188,7 +188,7 @@
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">NOGOV-T45-R007</Reference>
 					<Attribute>
-						<Term>@schemeID</Term>
+						<Term>schemeID</Term>
 						<Reference type="RULE">NOGOV-T45-R006</Reference>
 					</Attribute>
 				</Element>
