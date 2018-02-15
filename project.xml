@@ -26,6 +26,11 @@
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
 		<Title>ExpressionOfInterestRequest</Title>
 	</Resource>
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
+		<Title>ExpressionOfInterestResponse</Title>
+	</Resource>
 
 	<!-- Rules -->
 	<Resource>

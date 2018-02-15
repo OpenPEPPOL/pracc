@@ -28,7 +28,7 @@
 		</Element>
 		<Element cardinality="1..1">
 			<Term>cbc:IssueDate</Term>
-			<Name>Call for tender issue date</Name>
+			<Name>Express of interest issue date</Name>
 			<Description>The date on which transaction is issued.</Description>
 			<DataType>Date</DataType>
 			<Reference type="RULE"/>
@@ -36,7 +36,7 @@
 		</Element>
 		<Element cardinality="1..1">
 			<Term>cbc:IssueTime</Term>
-			<Name>Call for tender issue time</Name>
+			<Name>Express of interest issue time</Name>
 			<Description>Time of issue of Transaction.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE"/>
@@ -59,8 +59,12 @@
 			<Reference type="BUSINESS_TERM">tir81-005</Reference>
 			<Attribute>
 				<Term>listID</Term>
+				<Name>Economic operator preferred language</Name>
+				<Reference type="RULE">eSENS-T81-R021</Reference>
+				<Reference type="RULE">eSENS-T81-R022</Reference>
+				<Reference type="RULE">eSENS-T81-R023</Reference>
 				<Value type="FIXED">ISO639-1</Value>
-			</Attribute>
+				</Attribute>
 		</Element>
 		<Element cardinality="1..1">
 			<Term>cbc:ProfileID</Term>
