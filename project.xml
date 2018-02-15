@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>PEPPOL BIS Pre-Award e-Sens Transition-In</Name>
+	<Name>PEPPOL BIS Pre-Award e-Sens Transition-In</Name>
 
-    <!-- Syntax -->
+	<!-- Syntax -->
 
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/SubmitTender.xml</Path>
-        <Title>Tender</Title>
-    </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/TenderReceipt.xml</Path>
-        <Title>Tender Receipt</Title>
-    </Resource>
 	<Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/CallForTenders.xml</Path>
-        <Title>Call for Tender</Title>
-    </Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/SubmitTender.xml</Path>
+		<Title>Tender</Title>
+	</Resource>
 	<Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
-        <Title>ExpressionOfInterestRequest</Title>
-    </Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/TenderReceipt.xml</Path>
+		<Title>Tender Receipt</Title>
+	</Resource>
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/CallForTenders.xml</Path>
+		<Title>Call for Tender</Title>
+	</Resource>
+
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
+		<Title>ExpressionOfInterestRequest</Title>
+	</Resource>
+
+	<!-- Rules -->
+
+	<Resource>
+		<Identifier>T004</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-call-for-tender-1.0/peppol/ESENS-UBL-T004.sch</Path>
+		<Title>PEPPOL T004 rules</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T005</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch</Path>
+		<Title>PEPPOL T005 rules</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T006</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
+		<Title>PEPPOL T006 rules</Title>
+	</Resource>
 </Project>
