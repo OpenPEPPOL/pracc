@@ -43,7 +43,7 @@
 	<Resource>
 		<Identifier>T003</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/rules/peppol-tender-status-inquiry-1.0/peppol/ESENS-UBL-T003.sch</Path>
+		<Path>rules/peppol-tender-status-inquiry-1.0/peppol/ESENS-UBL-T003.sch</Path>
 		<Title>PEPPOL T003 rules</Title>
 	</Resource>
 	<Resource>
@@ -65,10 +65,10 @@
 		<Title>PEPPOL T006 rules</Title>
 	</Resource>
 	<Resource>
-		<Identifier>BII-T45</Identifier>
+		<Identifier>BIIT006</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/BIIRULES-UBL-T45.sch</Path>
-		<Title>CENBII T45/T006 rules</Title>
+		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
+		<Title>CENBII T006 rules</Title>
 	</Resource>
 
 </Project>
