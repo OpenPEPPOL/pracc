@@ -28,7 +28,24 @@
 	</Resource>
 
 	<!-- Rules -->
-
+	<Resource>
+		<Identifier>T001</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T001.sch</Path>
+		<Title>PEPPOL T001 rules</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T002</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T002.sch</Path>
+		<Title>PEPPOL T002 rules</Title>
+	</Resource>
+	<Resource>
+		<Identifier>T003</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/rules/peppol-tender-status-inquiry-1.0/peppol/ESENS-UBL-T003.sch</Path>
+		<Title>PEPPOL T003 rules</Title>
+	</Resource>
 	<Resource>
 		<Identifier>T004</Identifier>
 		<Type>native:Schematron</Type>
@@ -47,4 +64,12 @@
 		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
 		<Title>PEPPOL T006 rules</Title>
 	</Resource>
+	<Resource>
+		<Identifier>BII-T45</Identifier>
+		<Type>native:Schematron</Type>
+		<Path>rules/peppol-tender-1.0/CENBII/BIIRULES-UBL-T45.sch</Path>
+		<Title>CENBII T45/T006 rules</Title>
+	</Resource>
+	/Users/Siw/pracc-esens
+
 </Project>
