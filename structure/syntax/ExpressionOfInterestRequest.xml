@@ -3,8 +3,6 @@
 	<Term>request</Term>
 	<Name>ExpressionOfInterestRequest</Name>
 	<Description>Expression Of InterestRequest</Description>
-	<Property key="sch:prefix">PEPPOL-T001-RES</Property>
-	<Property key="sch:identifier">request-basic</Property>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
