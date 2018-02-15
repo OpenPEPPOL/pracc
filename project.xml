@@ -20,5 +20,9 @@
         <Path>structure/syntax/CallForTenders.xml</Path>
         <Title>Call for Tender</Title>
     </Resource>
-
+	<Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
+        <Title>ExpressionOfInterestRequest</Title>
+    </Resource>
 </Project>
