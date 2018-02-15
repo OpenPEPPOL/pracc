@@ -64,11 +64,6 @@
 		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
 		<Title>PEPPOL T006 rules</Title>
 	</Resource>
-	<Resource>
-		<Identifier>BIIT006</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
-		<Title>CENBII T006 rules</Title>
-	</Resource>
+
 
 </Project>
