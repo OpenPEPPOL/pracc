@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term/>
+	<Term>Tender</Term>
 	<Name>Tender</Name>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Tender-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -25,6 +25,7 @@
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R002</Reference>
+			<Reference type="RULE">eSENS-T005-R003</Reference>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -32,6 +33,7 @@
 			<Description>Identifier of the tender document.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R008</Reference>
+			<Reference type="RULE">eSENS-T005-R004</Reference>
 		</Element>
 		<Element>
 			<Term>cbc:ContractFolderID</Term>

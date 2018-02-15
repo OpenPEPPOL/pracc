@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term/>
+	<Term>CallForTenders</Term>
 	<Name>CallForTenders</Name>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
