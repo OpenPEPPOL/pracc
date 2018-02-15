@@ -1,5 +1,5 @@
 
-= Syntax binding
+= Syntax Mapping
 
 :leveloffset: +1
 

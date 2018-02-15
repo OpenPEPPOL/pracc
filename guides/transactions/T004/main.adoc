@@ -33,7 +33,7 @@ include::validation-transaction-rules/index.adoc[]
 
 include::description/index.adoc[]
 
-include::syntax-binding/index.adoc[]
+include::syntax/index.adoc[]
 
 include::examples-usecase/index.adoc[]
 

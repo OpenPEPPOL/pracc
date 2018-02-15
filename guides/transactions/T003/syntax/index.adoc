@@ -4,7 +4,7 @@
 The following table describes the mapping of the information requirement elements to UBL.
 
 [cols="2,1,4,5", options="header"]
-.Syntax mapping of Trdm097 Tender Status Inquiry
+.Syntax mapping of T003 Tender Status Inquiry
 |===
  | InfRqID | Crd | Tree and Business term | Syntax Mapping
  | tir97-001 | 1..1 | Document identifier | TenderStatusRequest/cbc:ID
