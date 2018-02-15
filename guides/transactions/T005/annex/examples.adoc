@@ -1,7 +1,7 @@
 
 = Example
 
-link:files/tender-instance.xml[Download example file]
+link:files/tender-instance-download.xml[Download example file]
 
 [source,xml,indent=0]
 .Example used in document
