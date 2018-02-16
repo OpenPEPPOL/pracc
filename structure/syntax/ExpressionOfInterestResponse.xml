@@ -43,6 +43,14 @@
 			</Attribute>
 		</Element>
 		<Element>
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T002-R009</Reference>
+			<Reference type="BUSINESS_TERM">tir82-025</Reference>
+		</Element>
+		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Response issue date</Name>
 			<Description>The date on which transaction is issued.</Description>
@@ -60,15 +68,63 @@
 			<Reference type="RULE">eSENS-T002-R013</Reference>
 			<Reference type="BUSINESS_TERM">tir82-003</Reference>
 		</Element>
-		<Element>
-			<Term>cbc:ContractFolderID</Term>
-			<Name>Reference number</Name>
-			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="RULE">eSENS-T002-R009</Reference>
-			<Reference type="BUSINESS_TERM">tir82-025</Reference>
+		<Element cardinality="0..1">
+			<Term>cbc:TenderLanguageLocaleCode</Term>
+			<Name>Tender document language</Name>
+			<Description>Language used in the tender documents.</Description>
+			<DataType>Code</DataType>
+			<Reference type="RULE">eSENS-T002-R018</Reference>
+			<Reference type="BUSINESS_TERM">tir82-028</Reference>
+			<Attribute>
+				<Term>listID</Term>
+				<Name>listID for TenderLanguageLocaleCode</Name>
+				<Reference type="RULE">eSENS-T002-R019</Reference>
+				<Reference type="RULE">eSENS-T82-R020</Reference>
+				<Value type="FIXED">ISO639-1</Value>
+			</Attribute>
 		</Element>
 		<Element cardinality="0..1">
+			<Element cardinality="1..1">
+				<Term>cac:EconomicOperatorParty</Term>
+				<Name>Economic operator</Name>
+				<Element cardinality="1..1">
+					<Term>cac:Party</Term>
+					<Name>Economic operator</Name>
+					<Element cardinality="1..1">
+						<Term>cac:PartyIdentification</Term>
+						<Name>Party Identification</Name>
+						<Reference type="RULE">eSENS-T002-R015</Reference>
+						<Element cardinality="1..1">
+							<Term>cbc:ID</Term>
+							<Name>Economic operator identifier</Name>
+							<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
+							<DataType>Identifier</DataType>
+							<Reference type="RULE">eSENS-T002-R017</Reference>
+							<Reference type="BUSINESS_TERM">tir82-012</Reference>
+							<Attribute>
+								<Term>schemeID</Term>
+								<Name>Economic operator identifier</Name>
+								<Reference type="RULE">eSENS-T002-R016</Reference>
+								<Value type="FIXED">SchemeID</Value>
+							</Attribute>
+						</Element>
+					</Element>
+					<Element cardinality="1..1">
+						<Term>cbc:EndpointID</Term>
+						<Name>Economic operator electronic address identifier</Name>
+						<Description>Electronic address of the economic operato</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE">eSENS-T002-R022</Reference>
+						<Reference type="BUSINESS_TERM">tir82-0xx</Reference>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Electronic address identifier</Name>
+							<Reference type="RULE">eSENS-T002-R021</Reference>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
+					</Element>
+				</Element>
+			</Element>
 			<Term>cac:ExpressionOfInterestDocumentReference</Term>
 			<Name>Expression of interest identifier</Name>
 			<Description>An identifier that is suitable for identifying or referencing an expression of interest.</Description>
@@ -86,21 +142,6 @@
 					<Value type="FIXED">urn:uuid</Value>
 				</Attribute>
 			</Element>
-		</Element>
-		<Element cardinality="0..1">
-			<Term>cbc:TenderLanguageLocaleCode</Term>
-			<Name>Tender document language</Name>
-			<Description>Language used in the tender documents.</Description>
-			<DataType>Code</DataType>
-			<Reference type="RULE">eSENS-T002-R018</Reference>
-			<Reference type="BUSINESS_TERM">tir82-028</Reference>
-			<Attribute>
-				<Term>listID</Term>
-				<Name>listID for TenderLanguageLocaleCode</Name>
-				<Reference type="RULE">eSENS-T002-R019</Reference>
-				<Reference type="RULE">eSENS-T82-R020</Reference>
-				<Value type="FIXED">ISO639-1</Value>
-			</Attribute>
 		</Element>
 		<Element cardinality="1..1">
 			<Term>cac:ContractingParty</Term>
@@ -152,47 +193,6 @@
 						<Reference type="RULE"/>
 						<Reference type="BUSINESS_TERM">tir82-008</Reference>
 					</Element>
-				</Element>
-			</Element>
-		</Element>
-		<Element cardinality="1..1">
-			<Term>cac:EconomicOperatorParty</Term>
-			<Name>Economic operator</Name>
-			<Element cardinality="1..1">
-				<Term>cac:Party</Term>
-				<Name>Economic operator</Name>
-				<Element cardinality="1..1">
-					<Term>cac:PartyIdentification</Term>
-					<Name>Party Identification</Name>
-					<Reference type="RULE">eSENS-T002-R015</Reference>
-					<Element cardinality="1..1">
-						<Term>cbc:ID</Term>
-						<Name>Economic operator identifier</Name>
-						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
-						<DataType>Identifier</DataType>
-						<Reference type="RULE">eSENS-T002-R017</Reference>
-						<Reference type="BUSINESS_TERM">tir82-012</Reference>
-						<Attribute>
-							<Term>schemeID</Term>
-							<Name>Economic operator identifier</Name>
-							<Reference type="RULE">eSENS-T002-R016</Reference>
-							<Value type="FIXED">SchemeID</Value>
-						</Attribute>
-					</Element>
-				</Element>
-				<Element cardinality="1..1">
-					<Term>cbc:EndpointID</Term>
-					<Name>Economic operator electronic address identifier</Name>
-					<Description>Electronic address of the economic operato</Description>
-					<DataType>Identifier</DataType>
-					<Reference type="RULE">eSENS-T002-R022</Reference>
-					<Reference type="BUSINESS_TERM">tir82-0xx</Reference>
-					<Attribute>
-						<Term>schemeID</Term>
-						<Name>Electronic address identifier</Name>
-						<Reference type="RULE">eSENS-T002-R021</Reference>
-						<Value type="FIXED">SchemeID</Value>
-					</Attribute>
 				</Element>
 			</Element>
 		</Element>
