@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:fdc:difi.no:2017:vefa:structure-1 file:///C:/BAB/Jobb/Prosjekter/Difi/Transition%20In/ErlendDok/structure-1.xsd">
 	<Term>ExpressionOfInterestResponse</Term>
 	<Name>ExpressionOfInterestResponse</Name>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestResponse-2</Namespace>
@@ -8,17 +8,25 @@
 	<Document>
 		<Term>ubl:ExpressionOfInterestResponse</Term>
 		<Name>Expression Of Interest Response</Name>
-		<Element cardinality="0..1">
-			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Version identifier</Name>
-			<Description>Requires UBL version 2.2</Description>
-			<Attribute>
-				<Term>schemeAgencyID</Term>
-				<Value type="FIXED">OASIS-UBL-TC</Value>
-			</Attribute>
-			<Value type="FIXED">2.2</Value>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Customization identifier</Name>
+			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T002-R001</Reference>
+			<Reference type="RULE">eSENS-T002-R002</Reference>
+			<Reference type="BUSINESS_TERM">tir82-007</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Profile identifier</Name>
+			<Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T002-R003</Reference>
+			<Reference type="RULE">eSENS-T002-R004</Reference>
+			<Reference type="BUSINESS_TERM">tir82-006</Reference>
+		</Element>
+		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Response identifier</Name>
 			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
@@ -28,13 +36,13 @@
 			<Reference type="BUSINESS_TERM">tir82-001</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
-				<Name>schemeURI must be 'urn:uuid'.</Name>
+				<Name>Scheme URI</Name>
 				<Reference type="RULE">eSENS-T002-R006</Reference>
 				<Reference type="RULE">eSENS-T002-R007</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Response issue date</Name>
 			<Description>The date on which transaction is issued.</Description>
@@ -42,17 +50,17 @@
 			<Reference type="RULE">eSENS-T002-R010</Reference>
 			<Reference type="BUSINESS_TERM">tir82-002</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Response issue time</Name>
-			<Description>The time at which the transaction instance was issued.</Description>
+			<Description>The time at which the transaction instance was issued.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">eSENS-T002-R011</Reference>
-			<Reference type="RULE">eSENS-T002-R012</Reference> 
-			<Reference type="RULE">eSENS-T002-R013</Reference> 
+			<Reference type="RULE">eSENS-T002-R012</Reference>
+			<Reference type="RULE">eSENS-T002-R013</Reference>
 			<Reference type="BUSINESS_TERM">tir82-003</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
@@ -69,7 +77,6 @@
 			<Reference type="BUSINESS_TERM">tir82-004</Reference>
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
-				<Reference type="RULE">eSENS-T002-R025</Reference>
 				<Reference type="RULE">eSENS-T002-R027</Reference>
 				<Attribute>
 					<Term>schemeURI</Term>
@@ -96,30 +103,12 @@
 			</Attribute>
 		</Element>
 		<Element cardinality="1..1">
-			<Term>cbc:ProfileID</Term>
-			<Name>Profile identifier</Name>
-			<Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="RULE">eSENS-T002-R003</Reference>
-			<Reference type="RULE">eSENS-T002-R004</Reference>
-			<Reference type="BUSINESS_TERM">tir82-006</Reference>
-		</Element>
-		<Element cardinality="1..1">
-			<Term>cbc:CustomizationID</Term>
-			<Name>Customization identifier</Name>
-			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="RULE">eSENS-T002-R001</Reference>
-			<Reference type="RULE">eSENS-T002-R002</Reference>
-			<Reference type="BUSINESS_TERM">tir82-007</Reference>
-		</Element>
-		<Element cardinality="1..1">
 			<Term>cac:ContractingParty</Term>
 			<Name>Contracting body</Name>
 			<Element cardinality="1..1">
 				<Term>cac:Party</Term>
-				<Name>Contracting body</Name>
-				<Element cardinality="1..1">
+				<Name>Contracting party</Name>
+				<Element>
 					<Term>cac:PartyIdentification</Term>
 					<Name>Contracting body identifier</Name>
 					<Reference type="RULE">eSENS-T002-R014</Reference>
@@ -142,12 +131,13 @@
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE">eSENS-T002-R021</Reference>
+					<Reference type="RULE">eSENS-T002-R014</Reference>
 					<Reference type="RULE">eSENS-T002-R022</Reference>
 					<Reference type="BUSINESS_TERM">tir82-010</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T002-R021</Reference>
 						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
@@ -171,22 +161,23 @@
 			<Element cardinality="1..1">
 				<Term>cac:Party</Term>
 				<Name>Economic operator</Name>
-				<Reference type="RULE">eSENS-T002-R015</Reference>
 				<Element cardinality="1..1">
 					<Term>cac:PartyIdentification</Term>
+					<Name>Party Identification</Name>
+					<Reference type="RULE">eSENS-T002-R015</Reference>
 					<Element cardinality="1..1">
 						<Term>cbc:ID</Term>
 						<Name>Economic operator identifier</Name>
 						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE">eSENS-T002-R016</Reference>
 						<Reference type="RULE">eSENS-T002-R017</Reference>
 						<Reference type="BUSINESS_TERM">tir82-012</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Economic operator identifier</Name>
+							<Reference type="RULE">eSENS-T002-R016</Reference>
 							<Value type="FIXED">SchemeID</Value>
-						</Attribute>					
+						</Attribute>
 					</Element>
 				</Element>
 				<Element cardinality="1..1">
@@ -194,15 +185,15 @@
 					<Name>Economic operator electronic address identifier</Name>
 					<Description>Electronic address of the economic operato</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE">eSENS-T002-R021</Reference>
 					<Reference type="RULE">eSENS-T002-R022</Reference>
 					<Reference type="BUSINESS_TERM">tir82-0xx</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T002-R021</Reference>
 						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
-				</Element>				
+				</Element>
 			</Element>
 		</Element>
 		<Element cardinality="0..n">

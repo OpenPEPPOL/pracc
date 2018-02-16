@@ -8,46 +8,64 @@
 	<Document>
 		<Term>ubl:ExpressionOfInterestRequest</Term>
 		<Name>Expression Of Interest Request</Name>
-		<Element cardinality="0..1">
-			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Version identifier</Name>
-			<Description>Requires UBL version 2.2</Description>
-			<Attribute>
-				<Term>schemeAgencyID</Term>
-				<Value type="FIXED">OASIS-UBL-TC</Value>
-			</Attribute>
-			<Value type="FIXED">2.2</Value>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Customization identifier</Name>
+			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T001-R001</Reference>
+			<Reference type="RULE">eSENS-T001-R002</Reference>
+			<Reference type="BUSINESS_TERM">tir81-007</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Profile identifier</Name>
+			<Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T001-R003</Reference>
+			<Reference type="RULE">eSENS-T001-R004</Reference>
+			<Reference type="BUSINESS_TERM">tir81-006</Reference>
+		</Element>
+		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Express of interest identifier</Name>
 			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
 			<DataType>Identifier</DataType>
-			<Reference type="RULE"/>
+			<Reference type="RULE">eSENS-T001-R005</Reference>
+			<Reference type="RULE">eSENS-T001-R008</Reference>
 			<Reference type="BUSINESS_TERM">tir81-001</Reference>
+			<Attribute>
+				<Term>schemeURI</Term>
+				<Name>Scheme URI</Name>
+				<Reference type="RULE">eSENS-T001-R006</Reference>
+				<Reference type="RULE">eSENS-T001-R007</Reference>
+				<Value type="FIXED">urn:uuid</Value>
+			</Attribute>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Express of interest issue date</Name>
 			<Description>The date on which transaction is issued.</Description>
 			<DataType>Date</DataType>
-			<Reference type="RULE"/>
+			<Reference type="RULE">eSENS-T001-R010</Reference>
 			<Reference type="BUSINESS_TERM">tir81-002</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Express of interest issue time</Name>
 			<Description>Time of issue of Transaction.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
 			<DataType>Time</DataType>
-			<Reference type="RULE"/>
+			<Reference type="RULE">eSENS-T001-R011</Reference>
+			<Reference type="RULE">eSENS-T001-R012</Reference>
+			<Reference type="RULE">eSENS-T001-R030</Reference>
 			<Reference type="BUSINESS_TERM">tir81-003</Reference>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. Used as a link to the call for tenders.</Description>
 			<DataType>Identifier</DataType>
-			<Reference type="RULE"/>
+			<Reference type="RULE">eSENS-T001-R009</Reference>
 			<Reference type="BUSINESS_TERM">tir81-005</Reference>
 		</Element>
 		<Element cardinality="0..1">
@@ -55,46 +73,39 @@
 			<Name>Economic operator preferred languager</Name>
 			<Description>The language the economic operator prefers to use when receiving documents from the contracting body. Use the ISO 639 1 code list</Description>
 			<DataType>Code</DataType>
-			<Reference type="RULE"/>
+			<Reference type="RULE">eSENS-T001-R021</Reference>
 			<Reference type="BUSINESS_TERM">tir81-005</Reference>
 			<Attribute>
 				<Term>listID</Term>
 				<Name>Economic operator preferred language</Name>
-				<Reference type="RULE">eSENS-T81-R021</Reference>
-				<Reference type="RULE">eSENS-T81-R022</Reference>
-				<Reference type="RULE">eSENS-T81-R023</Reference>
+				<Reference type="RULE">eSENS-T001-R022</Reference>
+				<Reference type="RULE">eSENS-T001-R023</Reference>
 				<Value type="FIXED">ISO639-1</Value>
 			</Attribute>
 		</Element>
 		<Element cardinality="1..1">
-			<Term>cbc:ProfileID</Term>
-			<Name>Profile identifier</Name>
-			<Description>Identifies the BII profile or business process context in which the transaction appears.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="RULE"/>
-			<Reference type="BUSINESS_TERM">tir81-006</Reference>
-		</Element>
-		<Element cardinality="1..1">
-			<Term>cbc:CustomizationID</Term>
-			<Name>Customization identifier</Name>
-			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="RULE"/>
-			<Reference type="BUSINESS_TERM">tir81-007</Reference>
-		</Element>
-		<Element cardinality="1..1">
 			<Term>cac:ContractingParty</Term>
+			<Name>Contracting body</Name>
 			<Element cardinality="1..1">
 				<Term>cac:Party</Term>
-				<Element cardinality="1..1">
+				<Name>Contracting party</Name>
+				<Element>
 					<Term>cac:PartyIdentification</Term>
+					<Name>Contracting body identifier</Name>
+					<Reference type="RULE">eSENS-T001-R013</Reference>
 					<Element cardinality="1..1">
 						<Term>cbc:ID</Term>
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"/>
+						<Reference type="RULE">eSENS-T001-R016</Reference>
 						<Reference type="BUSINESS_TERM">tir81-009</Reference>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Contracting body identifier</Name>
+							<Reference type="RULE">eSENS-T001-R015</Reference>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
 					</Element>
 				</Element>
 				<Element cardinality="1..1">
@@ -102,10 +113,13 @@
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE"/>
+					<Reference type="RULE">eSENS-T001-R013</Reference>
+					<Reference type="RULE">eSENS-T001-R025</Reference>
 					<Reference type="BUSINESS_TERM">tir81-010</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
+						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T001-R024</Reference>
 						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
@@ -122,20 +136,25 @@
 						<Name>Economic operator name</Name>
 						<Description>The name of the economic operator.</Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R017</Reference>
 						<Reference type="BUSINESS_TERM">tir81-013</Reference>
 					</Element>
 				</Element>
 				<Element cardinality="1..1">
 					<Term>cac:PartyIdentification</Term>
+					<Name>Economic operator identification</Name>
+					<Reference type="RULE">eSENS-T001-R014</Reference>
 					<Element cardinality="1..1">
 						<Term>cbc:ID</Term>
 						<Name>Economic operator identifier</Name>
 						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"/>
+						<Reference type="RULE">eSENS-T001-R016</Reference>
 						<Reference type="BUSINESS_TERM">tir81-012</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
+							<Name>Scheme ID</Name>
+							<Reference type="RULE">eSENS-T001-R015</Reference>
 							<Value type="FIXED">SchemeID</Value>
 						</Attribute>
 					</Element>
@@ -145,14 +164,29 @@
 					<Name>Economic operator electronic address identifier</Name>
 					<Description>Electronic address of the economic operato</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE"/>
+					<Reference type="RULE">eSENS-T001-R014</Reference>
+					<Reference type="RULE">eSENS-T001-R025</Reference>
 					<Reference type="BUSINESS_TERM">tir81-030</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
+						<Name>Scheme ID</Name>
+						<Reference type="RULE">eSENS-T001-R024</Reference>
 						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
-				<!--tir81-028	0..1	Economic operator type code	The type of the economic operator, used for statistical purposes: sme , group of economic operators (joint venture, consortium, or other).-->
+				<Element cardinality="0..1">
+					<Term>cbc:IndustryClassificationCode</Term>
+					<Name>Economic operator type code</Name>
+					<Reference type="RULE">eSENS-T001-R026</Reference>
+					<Reference type="BUSINESS_TERM">tir81-028</Reference>
+					<Attribute>
+						<Term>listID</Term>
+						<Name>List ID</Name>
+						<Reference type="RULE">eSENS-T001-R027</Reference>
+						<Reference type="RULE">eSENS-T001-R028</Reference>
+						<Value type="FIXED">TendererRole</Value>
+					</Attribute>
+				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
 					<Element cardinality="0..1">
@@ -164,10 +198,13 @@
 								<Name>Economic operator registration country code</Name>
 								<Description>The registration country code of the economic operator. The country should always be given by using ISO code 3166 alpha 2</Description>
 								<DataType>Code</DataType>
-								<Reference type="RULE"/>
+								<Reference type="RULE">eSENS-T001-R018</Reference>
 								<Reference type="BUSINESS_TERM">tir81-014</Reference>
 								<Attribute>
 									<Term>listID</Term>
+									<Name> List ID</Name>
+									<Reference type="RULE">eSENS-T001-R019</Reference>
+									<Reference type="RULE">eSENS-T001-R020</Reference>
 									<Value type="FIXED">ISO3166-1:Alpha2</Value>
 								</Attribute>
 							</Element>
@@ -211,22 +248,27 @@
 							<Name>Country code</Name>
 							<Description>A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.</Description>
 							<DataType>Code</DataType>
-							<Reference type="RULE"/>
+							<Reference type="RULE">eSENS-T001-R018</Reference>
 							<Reference type="BUSINESS_TERM">tir81-020</Reference>
 							<Attribute>
 								<Term>listID</Term>
+								<Name>List ID</Name>
+								<Reference type="RULE">eSENS-T001-R019</Reference>
+								<Reference type="RULE">eSENS-T001-R020</Reference>
 								<Value type="FIXED">ISO3166-1:Alpha2</Value>
 							</Attribute>
 						</Element>
 					</Element>
 				</Element>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:Contact</Term>
+					<Reference type="RULE">eSENS-T001-R031</Reference>
 					<Element cardinality="0..1">
 						<Term>cbc:Name</Term>
 						<Name>Contact point</Name>
 						<Description>The name of the contact point.</Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-021</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -234,6 +276,7 @@
 						<Name>Contact fax number</Name>
 						<Description>A fax number for the contact point.</Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-022</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -241,6 +284,7 @@
 						<Name>Contact telephone number</Name>
 						<Description>TA phone number for the contact point</Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-023</Reference>
 					</Element>
 					<Element cardinality="0..1">
@@ -248,18 +292,20 @@
 						<Name>Contact email address</Name>
 						<Description>An e-mail address for the contact point.</Description>
 						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-024</Reference>
 					</Element>
 				</Element>
 			</Element>
 		</Element>
 		<Element cardinality="0..n">
-			<Term>cac:ProcurementProjectLotReferenc</Term>
+			<Term>cac:ProcurementProjectLotReference</Term>
 			<Element cardinality="1..n">
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
 				<DataType>Identifier</DataType>
+				<Reference type="RULE">eSENS-T001-R029</Reference>
 				<Reference type="BUSINESS_TERM">tir81-026</Reference>
 			</Element>
 		</Element>

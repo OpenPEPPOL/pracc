@@ -23,16 +23,6 @@ Examples of usage in PartyIdentification and EndpointID:
 
 == Document Identifiers used in business (UBL) documents
 
-=== UBL Version ID
-
-This transaction model is using the UBL 2.2 syntax. The namespace of the XML-message does only communicate the major version number. Since it is important for the receiver to also know what minor version of the syntax that is used, the element UBLVersionID must be stated with the value 2.2:
-
-[source,xml,indent=0]
-.Examples of usage in PartyIdentification and EndpointID
-----
-<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-----
-
 === Profile ID and Customization ID
 
 The PEPPOL Customization ID identifies the specification of content and rules that apply to the transaction. This transaction requires some minor additions and changes to the CEN BII transaction. Following the CEN BII methodology any extension must be communicated by adding an extension ID onto the Customization ID.
