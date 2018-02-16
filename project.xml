@@ -20,16 +20,15 @@
 		<Path>structure/syntax/CallForTenders.xml</Path>
 		<Title>Call for Tender</Title>
 	</Resource>
-
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
-		<Title>ExpressionOfInterestRequest</Title>
+		<Title>Expression Of InterestRequest</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
-		<Title>ExpressionOfInterestResponse</Title>
+		<Title>Expression Of InterestResponse</Title>
 	</Resource>
 
 	<!-- Rules -->
