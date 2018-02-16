@@ -14,6 +14,8 @@
 
 * CustomizationID and profileID values must be changed
 * For complex elements where there is only one child element, the child element is set to mandatory
+* Where there are mismatches between BII or eSens validation rules and cardinality in the model, the validation rule is used.
+** Example is DocumentHash and method for Submit tender (T005)
 
 == Submit Tender (T005)
 
@@ -34,6 +36,7 @@
 |Contracting body
 |Cardinality 0..1
 |Change to 1..1
+
 |===
 
 == Tender Receipt (T006)

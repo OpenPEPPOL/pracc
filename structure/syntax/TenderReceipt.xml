@@ -9,7 +9,7 @@
 	
 	<Document>
 		<Term>ubl:TenderReceipt</Term>
-		<Name>Tender receipt</Name>
+		<Name>Tender receipt, root element</Name>
 		
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
@@ -71,7 +71,7 @@
 		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Document issue time</Name>
-			<Description>Time when the document was issued.</Description>
+			<Description>Time when the document was issued.The issue time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">eSENS-T006-R007</Reference>
 			<Reference type="RULE">BII3-T45-R003</Reference>
@@ -87,7 +87,7 @@
 		<Element>
 			<Term>cbc:RegisteredTime</Term>
 			<Name>Document reception time</Name>
-			<Description>The time at which the referenced document was received by the sender of the response.</Description>
+			<Description>The time at which the referenced document was received by the sender of the response.The registered time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">BII3-T45-R017</Reference>
 			<Reference type="RULE">BII3-T45-R012</Reference>
@@ -101,7 +101,7 @@
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Document identifier</Name>
-				<Description>Identifier of a document, must be a UUID</Description>
+				<Description>Identifier of the recieved tender document, must be the UUID of the received tender.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="RULE">BII3-T45-R013</Reference>
 				<Reference type="RULE">eSENS-T006-R013</Reference>

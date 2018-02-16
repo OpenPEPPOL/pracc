@@ -8,7 +8,7 @@
 	
 	<Document>
 		<Term>ubl:Tender</Term>
-		<Name>Tender</Name>
+		<Name>Tender, root element</Name>
 		
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
@@ -69,7 +69,7 @@
 		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Tender issue time</Name>
-			<Description>The time when the tender is issued by the economic operator. The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<Description>The time when the tender is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">BII3-T90-R006</Reference>
 			<Reference type="RULE">BII3-T90-R007</Reference>
@@ -83,7 +83,7 @@
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Call for tender reference Document identifier</Name>
-				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders reference must be a UUID</Description>
+				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="RULE">BII3-T90-R010</Reference>
 				<Reference type="RULE">BII3-T90-R013</Reference>
@@ -117,7 +117,7 @@
 					<Value type="FIXED">ISO639-1</Value>
 				</Attribute>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cbc:VersionID</Term>
 				<Name>Call for tender version</Name>
 				<Description>Identifies the version of the call for tenders.</Description>
@@ -134,13 +134,13 @@
 			<Element cardinality="0..1">
 				<Term>cac:Attachment</Term>
 				<Name>Attachment</Name>
-				<Element cardinality="0..1">
+				<Element>
 					<Term>cac:ExternalReference</Term>
 					<Name>External reference</Name>
 					<Element>
 						<Term>cbc:DocumentHash</Term>
 						<Name>Document digest</Name>
-						<Description>Digest of the document,, must be a SHA-256 value</Description>
+						<Description>Digest of the document, must be a SHA-256 value</Description>
 						<DataType>Text</DataType>
 						<Reference type="RULE">BII3-T90-R017</Reference>
 						<Reference type="RULE">eSENS-T005-R017</Reference>
@@ -157,7 +157,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:MimeCode</Term>
 						<Name>Document mime type code</Name>
-						<Description>Stands for </Description>
+						<Description>Mime code of the attached document (IANA)</Description>
 						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T90-R002</Reference>
 					</Element>
@@ -209,7 +209,7 @@
 					</Attribute>
 				</Element>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
 				<Name>Party name</Name>
 				<Element>
