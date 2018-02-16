@@ -2,12 +2,12 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>ExpressionOfInterestRequest</Term>
 	<Name>ExpressionOfInterestRequest</Name>
-	<Description>Expression Of InterestRequest</Description>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ExpressionOfInterestRequest</Term>
+		<Name>Expression Of Interest Request</Name>
 		<Element cardinality="0..1">
 			<Term>cbc:UBLVersionID</Term>
 			<Name>UBL Version identifier</Name>
