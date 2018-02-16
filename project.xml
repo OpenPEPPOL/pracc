@@ -10,12 +10,12 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/SubmitTender.xml</Path>
-		<Title>Tender</Title>
+		<Title>Tender (T005)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/TenderReceipt.xml</Path>
-		<Title>Tender Receipt</Title>
+		<Title>Tender Receipt (T006)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>

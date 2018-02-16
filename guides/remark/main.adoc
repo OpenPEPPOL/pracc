@@ -13,8 +13,9 @@
 == General
 
 * CustomizationID and profileID values must be changed
+* For complex elements where there is only one child element, the child element is set to mandatory
 
-== Submit Tender
+== Submit Tender (T005)
 
 [cols="1s,2,3", options="header"]
 |===
@@ -33,4 +34,19 @@
 |Contracting body
 |Cardinality 0..1
 |Change to 1..1
+|===
+
+== Tender Receipt (T006)
+
+[cols="1s,2,3", options="header"]
+|===
+|Element/attribute
+|Issue
+|Suggested change
+
+|UBLVersionID
+|Value 2.2 not validated
+|Add validation to ensure value 2.2
+
+
 |===
