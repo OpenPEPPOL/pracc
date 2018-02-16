@@ -1,0 +1,36 @@
+
+=  Syntax mapping remarks
+:toc: left
+:toclevels: 2
+:sectnums:
+:sectanchors:
+:source-highlighter: coderay
+:sourcedir: .
+:gendoc:
+:sectnums:
+
+
+== General
+
+* CustomizationID and profileID values must be changed
+
+== Submit Tender
+
+[cols="1s,2,3", options="header"]
+|===
+|Element/attribute
+|Issue
+|Suggested change
+
+|UBLVersionID
+|Value 2.2 not validated
+|Add validation to ensure value 2.2
+
+|Economic operator
+| Cardinality 0..n
+| Change to 1..1
+
+|Contracting body
+|Cardinality 0..1
+|Change to 1..1
+|===

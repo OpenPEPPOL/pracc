@@ -3,6 +3,8 @@
 
 	<Name>PEPPOL BIS Pre-Award e-Sens Transition-In</Name>
 
+	  <Documentation path="remark/">Syntax mapping remarks</Documentation>
+
 	<!-- Syntax -->
 
 	<Resource>
