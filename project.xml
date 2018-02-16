@@ -23,12 +23,12 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
-		<Title>Expression Of InterestRequest</Title>
+		<Title>Expression Of Interest Request</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
-		<Title>Expression Of InterestResponse</Title>
+		<Title>Expression Of Interest Response</Title>
 	</Resource>
 
 	<!-- Rules -->
