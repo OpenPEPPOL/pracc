@@ -74,7 +74,7 @@
 			<Description>The language the economic operator prefers to use when receiving documents from the contracting body. Use the ISO 639 1 code list</Description>
 			<DataType>Code</DataType>
 			<Reference type="RULE">eSENS-T001-R021</Reference>
-			<Reference type="BUSINESS_TERM">tir81-005</Reference>
+			<Reference type="BUSINESS_TERM">tir81-029</Reference>
 			<Attribute>
 				<Term>listID</Term>
 				<Name>Economic operator preferred language</Name>
@@ -115,7 +115,6 @@
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">eSENS-T001-R013</Reference>
 					<Reference type="RULE">eSENS-T001-R025</Reference>
-					<Reference type="BUSINESS_TERM">tir81-010</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
@@ -127,8 +126,10 @@
 		</Element>
 		<Element cardinality="1..1">
 			<Term>cac:EconomicOperatorParty</Term>
+			<Name>Economic operator</Name>
 			<Element cardinality="1..1">
 				<Term>cac:Party</Term>
+				<Name>Economic operator party</Name>
 				<Element cardinality="1..1">
 					<Term>cac:PartyName</Term>
 					<Element>
@@ -177,6 +178,7 @@
 				<Element cardinality="0..1">
 					<Term>cbc:IndustryClassificationCode</Term>
 					<Name>Economic operator type code</Name>
+					<DataType>Code</DataType>
 					<Reference type="RULE">eSENS-T001-R026</Reference>
 					<Reference type="BUSINESS_TERM">tir81-028</Reference>
 					<Attribute>
@@ -189,6 +191,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyLegalEntity</Term>
+					<Name>Economic operator legal Entity</Name>
 					<Element cardinality="0..1">
 						<Term>cac:RegistrationAddress</Term>
 						<Element cardinality="0..1">
@@ -300,7 +303,7 @@
 		</Element>
 		<Element cardinality="0..n">
 			<Term>cac:ProcurementProjectLotReference</Term>
-			<Element cardinality="1..n">
+			<Element cardinality="1..1">
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
