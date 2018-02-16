@@ -234,20 +234,20 @@
 						<Reference type="BUSINESS_TERM">tir81-021</Reference>
 					</Element>
 					<Element cardinality="0..1">
-						<Term>cbc:Telefax</Term>
-						<Name>Contact fax number</Name>
-						<Description>A fax number for the contact point.</Description>
-						<DataType>Text</DataType>
-						<Reference type="RULE">eSENS-T001-R032</Reference>
-						<Reference type="BUSINESS_TERM">tir81-022</Reference>
-					</Element>
-					<Element cardinality="0..1">
 						<Term>cbc:Telephone</Term>
 						<Name>Contact telephone number</Name>
 						<Description>TA phone number for the contact point</Description>
 						<DataType>Text</DataType>
 						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-023</Reference>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cbc:Telefax</Term>
+						<Name>Contact fax number</Name>
+						<Description>A fax number for the contact point.</Description>
+						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T001-R032</Reference>
+						<Reference type="BUSINESS_TERM">tir81-022</Reference>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:ElectronicMail</Term>
