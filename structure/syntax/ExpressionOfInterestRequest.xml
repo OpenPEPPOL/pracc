@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term>request</Term>
+	<Term>ExpressionOfInterestRequest</Term>
 	<Name>ExpressionOfInterestRequest</Name>
 	<Description>Expression Of InterestRequest</Description>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
