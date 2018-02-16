@@ -5,7 +5,7 @@
 	<Description>Expression Of InterestRequest</Description>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ExpressionOfInterestRequest</Term>
 		<Element cardinality="0..1">
