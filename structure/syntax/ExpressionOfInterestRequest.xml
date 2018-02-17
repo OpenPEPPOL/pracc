@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>ExpressionOfInterestRequest</Term>
-	<Name>ExpressionOfInterestRequest</Name>
+	<Name>ExpressionOfInterestRequest (T001)</Name>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ExpressionOfInterestRequest</Term>
-		<Name>Expression Of Interest Request</Name>
+		<Name>Expression Of Interest Request, root element</Name>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
 			<Name>Customization identifier</Name>
@@ -83,13 +83,13 @@
 				<Value type="FIXED">ISO639-1</Value>
 			</Attribute>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cac:EconomicOperatorParty</Term>
 			<Name>Economic operator</Name>
-			<Element cardinality="1..1">
+			<Element>
 				<Term>cac:Party</Term>
 				<Name>Economic operator party</Name>
-				<Element cardinality="1..1">
+				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Economic operator electronic address identifier</Name>
 					<Description>Electronic address of the economic operato</Description>
@@ -118,11 +118,11 @@
 						<Value type="FIXED">TendererRole</Value>
 					</Attribute>
 				</Element>
-				<Element cardinality="1..1">
+				<Element>
 					<Term>cac:PartyIdentification</Term>
 					<Name>Economic operator identification</Name>
 					<Reference type="RULE">eSENS-T001-R014</Reference>
-					<Element cardinality="1..1">
+					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Economic operator identifier</Name>
 						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
@@ -137,7 +137,7 @@
 						</Attribute>
 					</Element>
 				</Element>
-				<Element cardinality="1..1">
+				<Element>
 					<Term>cac:PartyName</Term>
 					<Element>
 						<Term>cbc:Name</Term>
@@ -150,6 +150,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PostalAddress</Term>
+					<Name>Postal address</Name>
 					<Element cardinality="0..1">
 						<Term>cbc:StreetName</Term>
 						<Name>Address line 1</Name>
@@ -213,7 +214,7 @@
 								<Reference type="BUSINESS_TERM">tir81-014</Reference>
 								<Attribute>
 									<Term>listID</Term>
-									<Name> List ID</Name>
+									<Name>List ID</Name>
 									<Reference type="RULE">eSENS-T001-R019</Reference>
 									<Reference type="RULE">eSENS-T001-R020</Reference>
 									<Value type="FIXED">ISO3166-1:Alpha2</Value>
@@ -224,8 +225,9 @@
 				</Element>
 				<Element>
 					<Term>cac:Contact</Term>
+					<Name>Contacting details</Name>
 					<Reference type="RULE">eSENS-T001-R031</Reference>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Contact point</Name>
 						<Description>The name of the contact point.</Description>
@@ -260,13 +262,13 @@
 				</Element>
 			</Element>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cac:ContractingParty</Term>
 			<Name>Contracting body</Name>
-			<Element cardinality="1..1">
+			<Element>
 				<Term>cac:Party</Term>
 				<Name>Contracting party</Name>
-				<Element cardinality="1..1">
+				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
@@ -284,7 +286,7 @@
 					<Term>cac:PartyIdentification</Term>
 					<Name>Contracting body identifier</Name>
 					<Reference type="RULE">eSENS-T001-R013</Reference>
-					<Element cardinality="1..1">
+					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
@@ -303,7 +305,8 @@
 		</Element>
 		<Element cardinality="0..n">
 			<Term>cac:ProcurementProjectLotReference</Term>
-			<Element cardinality="1..1">
+			<Name>Requested lot</Name>
+			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>

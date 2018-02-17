@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:fdc:difi.no:2017:vefa:structure-1 file:///C:/BAB/Jobb/Prosjekter/Difi/Transition%20In/ErlendDok/structure-1.xsd">
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>ExpressionOfInterestResponse</Term>
-	<Name>ExpressionOfInterestResponse</Name>
+	<Name>ExpressionOfInterestResponse (T002)</Name>
 	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestResponse-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
 		<Term>ubl:ExpressionOfInterestResponse</Term>
-		<Name>Expression Of Interest Response</Name>
+		<Name>Expression Of Interest Response, root element</Name>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
 			<Name>Customization identifier</Name>
@@ -83,48 +83,7 @@
 				<Value type="FIXED">ISO639-1</Value>
 			</Attribute>
 		</Element>
-		<Element cardinality="0..1">
-			<Element cardinality="1..1">
-				<Term>cac:EconomicOperatorParty</Term>
-				<Name>Economic operator</Name>
-				<Element cardinality="1..1">
-					<Term>cac:Party</Term>
-					<Name>Economic operator</Name>
-					<Element cardinality="1..1">
-						<Term>cac:PartyIdentification</Term>
-						<Name>Party Identification</Name>
-						<Reference type="RULE">eSENS-T002-R015</Reference>
-						<Element cardinality="1..1">
-							<Term>cbc:ID</Term>
-							<Name>Economic operator identifier</Name>
-							<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
-							<DataType>Identifier</DataType>
-							<Reference type="RULE">eSENS-T002-R017</Reference>
-							<Reference type="BUSINESS_TERM">tir82-012</Reference>
-							<Attribute>
-								<Term>schemeID</Term>
-								<Name>Economic operator identifier</Name>
-								<Reference type="RULE">eSENS-T002-R016</Reference>
-								<Value type="FIXED">SchemeID</Value>
-							</Attribute>
-						</Element>
-					</Element>
-					<Element cardinality="1..1">
-						<Term>cbc:EndpointID</Term>
-						<Name>Economic operator electronic address identifier</Name>
-						<Description>Electronic address of the economic operato</Description>
-						<DataType>Identifier</DataType>
-						<Reference type="RULE">eSENS-T002-R022</Reference>
-						<Reference type="BUSINESS_TERM">tir82-0xx</Reference>
-						<Attribute>
-							<Term>schemeID</Term>
-							<Name>Electronic address identifier</Name>
-							<Reference type="RULE">eSENS-T002-R021</Reference>
-							<Value type="FIXED">SchemeID</Value>
-						</Attribute>
-					</Element>
-				</Element>
-			</Element>
+			<Element cardinality="0..1">
 			<Term>cac:ExpressionOfInterestDocumentReference</Term>
 			<Name>Expression of interest identifier</Name>
 			<Description>An identifier that is suitable for identifying or referencing an expression of interest.</Description>
@@ -143,31 +102,53 @@
 				</Attribute>
 			</Element>
 		</Element>
-		<Element cardinality="1..1">
-			<Term>cac:ContractingParty</Term>
-			<Name>Contracting body</Name>
-			<Element cardinality="1..1">
+		<Element>
+			<Term>cac:EconomicOperatorParty</Term>
+			<Name>Economic operator</Name>
+			<Element>
 				<Term>cac:Party</Term>
-				<Name>Contracting party</Name>
+				<Name>Economic operator</Name>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Economic operator electronic address identifier</Name>
+					<Description>Electronic address of the economic operato</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">eSENS-T002-R022</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T002-R021</Reference>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Contracting body identifier</Name>
-					<Reference type="RULE">eSENS-T002-R014</Reference>
-					<Element cardinality="1..1">
+					<Name>Party Identification</Name>
+					<Reference type="RULE">eSENS-T002-R015</Reference>
+					<Element>
 						<Term>cbc:ID</Term>
-						<Name>Contracting body identifier</Name>
-						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+						<Name>Economic operator identifier</Name>
+						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"/>
-						<Reference type="BUSINESS_TERM">tir82-009</Reference>
+						<Reference type="RULE">eSENS-T002-R017</Reference>
+						<Reference type="BUSINESS_TERM">tir82-012</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
-							<Name>Contracting body identifier</Name>
+							<Name>Economic operator identifier</Name>
+							<Reference type="RULE">eSENS-T002-R016</Reference>
 							<Value type="FIXED">SchemeID</Value>
 						</Attribute>
 					</Element>
 				</Element>
-				<Element cardinality="1..1">
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:ContractingParty</Term>
+			<Name>Contracting body</Name>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Contracting party</Name>
+				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
@@ -181,6 +162,24 @@
 						<Reference type="RULE">eSENS-T002-R021</Reference>
 						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
+				</Element>
+				<Element>
+					<Term>cac:PartyIdentification</Term>
+					<Name>Contracting body identifier</Name>
+					<Reference type="RULE">eSENS-T002-R014</Reference>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE"/>
+						<Reference type="BUSINESS_TERM">tir82-009</Reference>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Contracting body identifier</Name>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
+					</Element>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
@@ -199,7 +198,7 @@
 		<Element cardinality="0..n">
 			<Term>cac:ProcurementProjectLotReference</Term>
 			<Name>Requested lot</Name>
-			<Element cardinality="1..n">
+			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
