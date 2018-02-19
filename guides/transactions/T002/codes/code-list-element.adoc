@@ -12,18 +12,7 @@ h| Document location
 h| Source codelist
 | link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
 |===
-////
-== Economic operator preferred language
-[cols="1,4"]
-|===
-h| Qualifier
-| `ISO639-1` (listID)
-h| Document location
-| `ExpressionOfInterestRequest/cbc:PreferredLocaleCode`
-h| Source codelist
-| link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
-|===
-////
+
 
 == Economic operator registration country code
 [cols="1,4"]

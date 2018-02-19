@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+	<Term>TenderStatusRequest</Term>
+	<Name>Tender Status Request (T003)</Name>
+	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TenderStatusRequest-2</Namespace>
+	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	<Document>
+		<Term>ubl:TenderStatusRequest</Term>
+		<Name>Tender Status Request, root element</Name>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Specification identification</Name>
+			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. The identification may include the version of the specification as well as any customizations applied.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T003-R001</Reference>
+			<Reference type="RULE">eSENS-T003-R010</Reference>
+			<Reference type="BUSINESS_TERM">tir97-007</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Business process type identifier</Name>
+			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T003-R002</Reference>
+			<Reference type="RULE">eSENS-T003-R011</Reference>
+			<Reference type="BUSINESS_TERM">tir97-006</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:ID</Term>
+			<Name>Document identifier</Name>
+			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T003-R003</Reference>
+			<Reference type="RULE">eSENS-T003-R014</Reference>
+			<Reference type="BUSINESS_TERM">tir97-001</Reference>
+			<Attribute>
+				<Term>schemeURI</Term>
+				<Name>Scheme URI</Name>
+				<Reference type="RULE">eSENS-T003-R012</Reference>
+				<Reference type="RULE">eSENS-T003-R013</Reference>
+				<Value type="FIXED">urn:uuid</Value>
+			</Attribute>
+		</Element>
+		<Element>
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T003-R004</Reference>
+			<Reference type="BUSINESS_TERM">tir97-034</Reference>
+		</Element>
+		<Element>
+			<Term>cbc:IssueDate</Term>
+			<Name>Document issue date</Name>
+			<Description>Date when the referred document was issued.</Description>
+			<DataType>Date</DataType>
+			<Reference type="RULE">eSENS-T003-R005</Reference>
+			<Reference type="BUSINESS_TERM">tir97-002</Reference>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:IssueTime</Term>
+			<Name>Document issue time</Name>
+			<Description>Time when the document was issued.</Description>
+			<DataType>Time</DataType>
+			<Reference type="RULE">eSENS-T003-R015</Reference>
+			<Reference type="RULE">eSENS-T003-R016</Reference>
+			<Reference type="RULE">eSENS-T003-R017</Reference>
+			<Reference type="BUSINESS_TERM">tir97-003</Reference>
+		</Element>
+		<Element>
+			<Term>cac:ContractingParty</Term>
+			<Name>Contracting body</Name>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Contracting party</Name>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Contracting body electronic address identifier</Name>
+					<Description>Electronic address of the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">eSENS-T003-R007</Reference>
+					<Reference type="BUSINESS_TERM">tir97-010</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T003-R020</Reference>
+						<Reference type="RULE">eSENS-T003-R021</Reference>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
+				<Element>
+					<Term>cac:PartyIdentification</Term>
+					<Name>Contracting body identifier</Name>
+					<Reference type="RULE">eSENS-T003-R007</Reference>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="RULE"/>
+						<Reference type="BUSINESS_TERM">tir97-009</Reference>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Contracting body identifier</Name>
+							<Reference type="RULE">eSENS-T003-R018</Reference>
+							<Reference type="RULE">eSENS-T003-R019</Reference>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
+					</Element>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Contracting body identifier</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Contracting body name</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Text</DataType>
+						<Reference type="RULE"/>
+						<Reference type="BUSINESS_TERM">tir97-008</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:EconomicOperatorParty</Term>
+			<Name>Economic operator</Name>
+			<Element>
+				<Term>cac:Party</Term>
+				<Name>Economic operator</Name>
+				<Element>
+					<Term>cbc:EndpointID</Term>
+					<Name>Economic operator electronic address identifier</Name>
+					<Description>Electronic address of the economic operato</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">eSENS-T003-R008</Reference>
+					<Reference type="BUSINESS_TERM">tir97-023</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Electronic address identifier</Name>
+						<Reference type="RULE">eSENS-T003-R020</Reference>
+						<Reference type="RULE">eSENS-T003-R021</Reference>
+						<Value type="FIXED">SchemeID</Value>
+					</Attribute>
+				</Element>
+				<Element>
+					<Term>cac:PartyIdentification</Term>
+					<Name>Party Identification</Name>
+					<Reference type="RULE">eSENS-T003-R008</Reference>
+					<Element>
+						<Term>cbc:ID</Term>
+						<Name>Economic operator identifier</Name>
+						<Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
+						<DataType>Identifier</DataType>
+						<Reference type="BUSINESS_TERM">tir97-021</Reference>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Economic operator identifier</Name>
+							<Reference type="RULE">eSENS-T003-R018</Reference>
+							<Reference type="RULE">eSENS-T003-R019</Reference>
+							<Value type="FIXED">SchemeID</Value>
+						</Attribute>
+					</Element>
+				</Element>
+				<Element cardinality="1..1">
+					<Term>cac:PartyName</Term>
+					<Name>Contracting body identifier</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Contracting body name</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Text</DataType>
+						<Reference type="RULE">eSENS-T003-R009</Reference>
+						<Reference type="BUSINESS_TERM">tir97-022</Reference>
+					</Element>
+				</Element>
+			</Element>
+		</Element>
+		<Element cardinality="0..n">
+			<Term>cac:ProcurementProjectLotReference</Term>
+			<Name>Requested lot</Name>
+			<Element cardinality="1..1">
+				<Term>cbc:ID</Term>
+				<Name>Lot identifier</Name>
+				<Description>An identifier for the lot.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="RULE">eSENS-T003-R022</Reference>
+				<Reference type="BUSINESS_TERM">tir97-035</Reference>
+			</Element>
+		</Element>
+	</Document>
+</Structure>
