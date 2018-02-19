@@ -3,32 +3,34 @@
 
 	<Name>PEPPOL BIS Pre-Award e-Sens Transition-In</Name>
 
+	  <Documentation path="remark/">Syntax mapping remarks</Documentation>
+
 	<!-- Syntax -->
 
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/SubmitTender.xml</Path>
-		<Title>Tender</Title>
+		<Title>Tender (T005)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/TenderReceipt.xml</Path>
-		<Title>Tender Receipt</Title>
+		<Title>Tender Receipt (T006)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/CallForTenders.xml</Path>
-		<Title>Call for Tender</Title>
+		<Title>Call for Tender (T004)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
-		<Title>Expression Of Interest Request</Title>
+		<Title>Expression Of Interest Request (T001)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
-		<Title>Expression Of Interest Response</Title>
+		<Title>Expression Of Interest Response (T002)</Title>
 	</Resource>
 
 	<!-- Rules -->
