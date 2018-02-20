@@ -24,6 +24,17 @@ h| Source codelist
 | link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
 |===
 
+== Economic operator type code
+[cols="1,4"]
+|===
+h| Qualifier
+| `TendererRole` (listID)
+h| Document location
+| `ExpressionOfInterestRequest/cac:EconomicParty/cac:Party/cbc:IndustryClassificationCode`
+h| Source codelist
+| http://wiki.ds.unipi.gr/download/attachments/31424661/TendererRole.pdf?version=1&modificationDate=1478593740000&api=v2[TendererRole.pdf]
+|===
+
 
 == Country code
 [cols="1,4"]
