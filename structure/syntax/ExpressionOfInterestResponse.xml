@@ -16,6 +16,7 @@
 			<Reference type="RULE">eSENS-T002-R001</Reference>
 			<Reference type="RULE">eSENS-T002-R002</Reference>
 			<Reference type="BUSINESS_TERM">tir82-007</Reference>
+			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm082:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -25,6 +26,7 @@
 			<Reference type="RULE">eSENS-T002-R003</Reference>
 			<Reference type="RULE">eSENS-T002-R004</Reference>
 			<Reference type="BUSINESS_TERM">tir82-006</Reference>
+			<Value type="FIXED">urn:www.cenbii.eu:profile:bii46:ver3.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -61,7 +63,7 @@
 		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Response issue time</Name>
-			<Description>The time at which the transaction instance was issued.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<Description>The time at which the transaction instance was issued.The issue time must have granularity of seconds, and include time zone information.</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">eSENS-T002-R011</Reference>
 			<Reference type="RULE">eSENS-T002-R012</Reference>
@@ -85,16 +87,19 @@
 		</Element>
 			<Element cardinality="0..1">
 			<Term>cac:ExpressionOfInterestDocumentReference</Term>
-			<Name>Expression of interest identifier</Name>
-			<Description>An identifier that is suitable for identifying or referencing an expression of interest.</Description>
-			<DataType>Identifier</DataType>
-			<Reference type="BUSINESS_TERM">tir82-004</Reference>
-			<Element cardinality="0..1">
+			<Name>Expression of interest document reference</Name>
+			<Element>
+				
 				<Term>cbc:ID</Term>
+				<Name>Expression of interest identifier</Name>
+				<Description>An identifier that is suitable for identifying or referencing an expression of interest. Use the UUID of the received expression of interest.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">tir82-004</Reference>
 				<Reference type="RULE">eSENS-T002-R027</Reference>
+				
 				<Attribute>
 					<Term>schemeURI</Term>
-					<Name>schemeURI must be 'urn:uuid'.</Name>
+					<Name>Scheme URI</Name>
 					<Reference type="RULE">eSENS-T002-R025</Reference>
 					<Reference type="RULE">eSENS-T002-R026</Reference>
 					<Value type="FIXED">urn:uuid</Value>
@@ -117,7 +122,6 @@
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">eSENS-T002-R021</Reference>
-						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
 				<Element>
@@ -135,7 +139,6 @@
 							<Term>schemeID</Term>
 							<Name>Economic operator identifier</Name>
 							<Reference type="RULE">eSENS-T002-R016</Reference>
-							<Value type="FIXED">SchemeID</Value>
 						</Attribute>
 					</Element>
 				</Element>
@@ -159,7 +162,6 @@
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">eSENS-T002-R021</Reference>
-						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
 				<Element>
@@ -175,7 +177,6 @@
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Contracting body identifier</Name>
-							<Value type="FIXED">SchemeID</Value>
 						</Attribute>
 					</Element>
 				</Element>

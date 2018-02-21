@@ -16,6 +16,7 @@
 			<Reference type="RULE">eSENS-T001-R001</Reference>
 			<Reference type="RULE">eSENS-T001-R002</Reference>
 			<Reference type="BUSINESS_TERM">tir81-007</Reference>
+			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.esens.eu:bis:esens46:ver1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -25,6 +26,7 @@
 			<Reference type="RULE">eSENS-T001-R003</Reference>
 			<Reference type="RULE">eSENS-T001-R004</Reference>
 			<Reference type="BUSINESS_TERM">tir81-006</Reference>
+			<Value type="FIXED">urn:www.cenbii.eu:profile:bii46:ver3.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
@@ -61,7 +63,7 @@
 		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Express of interest issue time</Name>
-			<Description>Time of issue of Transaction.The time zone has to be informed  following the BII Guideline on Data Formats.</Description>
+			<Description>Time of issue of Transaction.The issue time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
 			<Reference type="RULE">eSENS-T001-R011</Reference>
 			<Reference type="RULE">eSENS-T001-R012</Reference>
@@ -99,9 +101,8 @@
 					<Reference type="BUSINESS_TERM">tir81-030</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
-						<Name>Scheme ID</Name>
+						<Name>Scheme Identifier</Name>
 						<Reference type="RULE">eSENS-T001-R024</Reference>
-						<Value type="FIXED">SchemeID</Value>
 					</Attribute>
 				</Element>
 				<Element cardinality="0..1">
@@ -131,9 +132,9 @@
 						<Reference type="BUSINESS_TERM">tir81-012</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
-							<Name>Scheme ID</Name>
+							<Name>Scheme Identifier</Name>
 							<Reference type="RULE">eSENS-T001-R015</Reference>
-							<Value type="FIXED">SchemeID</Value>
+
 						</Attribute>
 					</Element>
 				</Element>
@@ -279,7 +280,7 @@
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">eSENS-T001-R024</Reference>
-						<Value type="FIXED">SchemeID</Value>
+
 					</Attribute>
 				</Element>
 				<Element>
@@ -297,7 +298,6 @@
 							<Term>schemeID</Term>
 							<Name>Contracting body identifier</Name>
 							<Reference type="RULE">eSENS-T001-R015</Reference>
-							<Value type="FIXED">SchemeID</Value>
 						</Attribute>
 					</Element>
 				</Element>
