@@ -24,7 +24,7 @@
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/CallForTenders.xml</Path>
-		<Title>Call for Tender (T004)</Title>
+		<Title>Call for Tenders (T004)</Title>
 	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
@@ -94,6 +94,6 @@
 		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
 		<Title>CENBII T006 rules</Title>
 	</Resource>
-	
+
 
 </Project>
