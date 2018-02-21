@@ -63,12 +63,14 @@
 |Suggested change
 
 |UBLVersionID
-|Value 2.2 not validated
-|Add validation to ensure value 2.2
+|UBLVersionID and Value 2.2 should not be used according to validation.
+|Add element and validation to ensure value 2.2
 
 |===
 
 == Expression Of Interest Response (T002)
+
+* Code list for elements: Corrected element name from cbc:TenderLocaleCode to cbc:TenderLanguageLocaleCode.
 
 [cols="1s,2,3", options="header"]
 |===
@@ -77,8 +79,22 @@
 |Suggested change
 
 |UBLVersionID
-|Value 2.2 not validated
-|Add validation to ensure value 2.2
+|UBLVersionID and Value 2.2 should not be used according to validation.
+|Add element and validation to ensure value 2.2
 
+
+|===
+
+== Tender Status Request (T003)
+
+[cols="1s,2,3", options="header"]
+|===
+|Element/attribute
+|Issue
+|Suggested change
+
+|UBLVersionID
+|UBLVersionID and Value 2.2 should not be used according to validation.
+|Add element and validation to ensure value 2.2
 
 |===
