@@ -15,12 +15,12 @@
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
 		<Title>Expression Of Interest Response (T002)</Title>
-	</Resource>-->
+	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/TenderStatusRequest.xml</Path>
 		<Title>Tender Status Request (T003)</Title>
-	</Resource>
+	</Resource>-->
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/CallForTenders.xml</Path>
