@@ -422,19 +422,51 @@
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
+					<Reference type="RULE">BII3-T82-R021</Reference>
 					<Value type="FIXED">PR_PROC</Value>
+					
 				</Attribute>
 			</Element>
 			
-			<Element cardinality="1..1">
+			<Element cardinality="0..1">
+				<Term>cbc:ContractingSystemCode</Term>
+				<Name>Type of contract to establish</Name>
+				<Description>Specifies that the aim of the awarding process is to establish a public contract or to setup a framework agreement or a dynamic purchasing system. For framework agreement and DPS,  indicates whether the new contract will be based on an already established framework agreement or dynamic purchasing system or not.</Description>
+				<DataType>Code</DataType>
+				<Reference type="RULE">CL-T83-R006</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Name>List identifier</Name>
+					<Reference type="RULE">BII3-T83-R022</Reference>
+					<Value type="FIXED">CONTRACT_TYPE</Value>
+				</Attribute>
+			</Element>
+			
+			<Element cardinality="0..1">
+				<Term>cbc:SubmissionMethodCode</Term>
+				<Name>Backup for electronic submission indicator</Name>
+				<Description>Indicator whether postal submission of the tender is merely a backup for the electronic submission</Description>
+				<DataType>Indicator</DataType>
+				<Reference type="RULE">CL-T83-R007</Reference>
+				<Attribute>
+					<Term>listID</Term>
+					<Name>List identifier</Name>
+					<Reference type="RULE">BII3-T83-R023</Reference>
+					<Value type="FIXED">BII_SUBMISSION</Value>
+				</Attribute>
+			</Element>
+			
+			<Element>
 				<Term>cac:TenderSubmissionDeadlinePeriod</Term>
+				<Name>Tender submission deadline period</Name>
+				
 				<Element cardinality="1..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Tender submission deadline</Name>
 					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
 					<DataType>Date</DataType>
 					<Reference type="RULE">BII3-T83-R010</Reference>
-					<Reference type="BUSINESS_TERM">tir83-034</Reference>
+
 				</Element>
 				
 				<Element cardinality="0..1">
@@ -442,7 +474,7 @@
 					<Name>Tender submission deadline</Name>
 					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
 					<DataType>Date</DataType>
-					<Reference type="BUSINESS_TERM">tir83-034</Reference>
+					<Reference type="RULE">eSENS-T004-R028</Reference>
 				</Element>
 			</Element>
 			
@@ -451,127 +483,115 @@
 				<Name>Participation request reception period</Name>
 				<Reference type="RULE">eSENS-T004-R037</Reference>
 				
-				<Element cardinality="1..1">
+				<Element>
 					<Term>cbc:EndDate</Term>
 					<Name>Request for participation deadline</Name>
 					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
 					<DataType>Date</DataType>
 					<Reference type="RULE">BII3-T83-R011</Reference>
-					<Reference type="BUSINESS_TERM">tir83-036</Reference>
+
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:EndTime</Term>
 					<Name>Request for participation deadline</Name>
 					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
 					<DataType>Date</DataType>
-					<Reference type="BUSINESS_TERM">tir83-036</Reference>
+					<Reference type="RULE">eSENS-T004-R028</Reference>
 				</Element>
 			</Element>
-			<Element cardinality="0..1">
-				<Term>cbc:ContractingSystemCode</Term>
-				<Name>Type of contract to establish</Name>
-				<Description>Specifies that the aim of the awarding process is to establish a public contract or to setup a framework agreement or a dynamic purchasing system. For framework agreement and DPS,  indicates whether the new contract will be based on an already established framework agreement or dynamic purchasing system or not.</Description>
-				<DataType>Code</DataType>
-				<Reference type="RULE">CL-T83-R006</Reference>
-				<Reference type="BUSINESS_TERM">tir83-040</Reference>
-				<Attribute>
-					<Term>listID</Term>
-					<Value type="FIXED">CONTRACT_TYPE</Value>
-				</Attribute>
-			</Element>
-			<Element cardinality="0..1">
-				<Term>cbc:SubmissionMethodCode</Term>
-				<Name>Backup for electronic submission indicator</Name>
-				<Description>Indicator whether postal submission of the tender is merely a backup for the electronic submission</Description>
-				<DataType>Indicator</DataType>
-				<Reference type="RULE">CL-T83-R007</Reference>
-				<Reference type="BUSINESS_TERM">tir83-364</Reference>
-				<Attribute>
-					<Term>listID</Term>
-					<Value type="FIXED">BII_SUBMISSION</Value>
-				</Attribute>
-			</Element>
+		
+	
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cac:ProcurementProject</Term>
-			<Element cardinality="1..1">
+			<Name>Procurement project</Name>
+			
+			<Element>
 				<Term>cbc:Name</Term>
 				<Name>Procurement project name</Name>
 				<Description>Title attributed to the contract by the contracting body.</Description>
 				<DataType>Text</DataType>
 				<Reference type="RULE">BII3-T83-R013</Reference>
-				<Reference type="BUSINESS_TERM">tir83-044</Reference>
 			</Element>
-			<Element cardinality="1..1">
+			
+			<Element>
 				<Term>cbc:Description</Term>
 				<Name>Procurement project description</Name>
 				<Description>A  textual description of this Procurement project.</Description>
 				<DataType>Text</DataType>
 				<Reference type="RULE">BII3-T83-R014</Reference>
-				<Reference type="BUSINESS_TERM">tir83-045</Reference>
 			</Element>
-			<Element cardinality="1..1">
+			
+			<Element>
 				<Term>cbc:ProcurementTypeCode</Term>
 				<Name>Procurement project type</Name>
 				<Description>Type of contract (Works, Supplies or Services).</Description>
 				<DataType>Code</DataType>
 				<Reference type="RULE">BII3-T83-R015</Reference>
 				<Reference type="RULE">CL-T83-R002</Reference>
-				<Reference type="BUSINESS_TERM">tir83-046</Reference>
+
 				<Attribute>
 					<Term>listID</Term>
+					<Name>List identifier</Name>
+					<Reference type="RULE">BII3-T83-R024</Reference>
 					<Value type="FIXED">PROJECT_TYPE</Value>
 				</Attribute>
 			</Element>
-			<Element cardinality="1..1">
+			
+			<Element>
 				<Term>cac:MainCommodityClassification</Term>
-				<Element cardinality="1..1">
+				<Name>Main commodity classification</Name>
+				
+				<Element>
 					<Term>cbc:ItemClassificationCode</Term>
 					<Name>CPV</Name>
 					<Description>Classification code of goods, works and services commonly used in procurement.</Description>
 					<DataType>Code</DataType>
 					<Reference type="RULE">BII3-T83-R016</Reference>
-					<Reference type="BUSINESS_TERM">tir83-049</Reference>
 					<Attribute>
 						<Term>listID</Term>
+						<Name>List identifier</Name>
+						<Reference type="RULE">BII3-T83-R19</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
 				</Element>
 			</Element>
+			
 			<Element cardinality="0..n">
 				<Term>cac:AdditionalCommodityClassification</Term>
-				<Element cardinality="0..1">
+				<Name>Additional Document Classification</Name>
+				
+				<Element>
 					<Term>cbc:ItemClassificationCode</Term>
 					<Name>CPV supplementary</Name>
 					<Description>A supplementary code to help contracting bodies describe the subject matter of contracts comprehensively.</Description>
 					<DataType>Code</DataType>
-					<Reference type="BUSINESS_TERM">tir83-350</Reference>
 					<Attribute>
 						<Term>listID</Term>
+						<Name>List identifier</Name>
+						<Reference type="RULE">BII3-T83-R19</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
 				</Element>
 			</Element>
+			
 			<Element cardinality="1..n">
 				<Term>cac:RealizedLocation</Term>
-				<Element cardinality="1..1">
+				<Name>Realized location</Name>
+				
+				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Procurement project location NUTS code</Name>
 					<Description>The identification with the NUTS code of the project location.</Description>
 					<DataType>Code</DataType>
 					<Reference type="RULE">BII3-T83-R017</Reference>
-					<Reference type="BUSINESS_TERM">tir83-052</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
+						<Name>Scheme Identifier</Name>
+						<Reference type="RULE">BII3-T83-R020</Reference>
 						<Value type="FIXED">NUTS</Value>
 					</Attribute>
 				</Element>
-			</Element>
-			<Element>
-				<Term>cbc:ID</Term>
-			</Element>
-			<Element>
-				<Term>cac:ProcurementProject</Term>
 			</Element>
 		</Element>
 	
