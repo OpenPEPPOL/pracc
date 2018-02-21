@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>CallForTenders</Term>
+	
 	<Name>Call For Tenders (T004)</Name>
 	<Namespace prefix="t004">urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
+		
 		<Term>t004:CallForTenders</Term>
 		<Name>Call For Tenders, root element</Name>
 		
@@ -33,7 +35,7 @@
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R002</Reference>
-			<Reference type="RULE">eSENS-T004-R00</Reference>
+			<Reference type="RULE">eSENS-T004-R003</Reference>
 			<Value type="FIXED">urn:www.cenbii.eu:profile:bii47:ver3.0</Value>
 		</Element>
 
@@ -209,91 +211,93 @@
 				</Element>
 			</Element>
 
+	
+		</Element>
+		
+		<Element>
+			<Term>cac:ContractingParty</Term>
+			<Name>Contracting body</Name>
+			
 			<Element>
-				<Term>cac:ContractingParty</Term>
-				<Name>Contracting body</Name>
+				<Term>cac:Party</Term>
+				<Name>Party information</Name>
 				
 				<Element>
-					<Term>cac:Party</Term>
-					<Name>Party information</Name>
+					<Term>cbc:EndpointID</Term>
+					<Name>Contracting body electronic address identifier</Name>
+					<Description>Electronic address of the contracting body.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">eSENS-T004-R034</Reference>
+					
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier</Name>
+						<Reference type="RULE">eSENS-T004-R012</Reference>
+						<Reference type="RULE">eSENS-T004-R013</Reference>
+					</Attribute>
+				</Element>
+				
+				
+				<Element>
+					<Term>cac:PartyIdentification</Term>
+					<Name>Party identification</Name>
+					<Reference type="RULE">eSENS-T004-R034</Reference>
 					
 					<Element>
-						<Term>cbc:EndpointID</Term>
-						<Name>Contracting body electronic address identifier</Name>
-						<Description>Electronic address of the contracting body.</Description>
+						<Term>cbc:ID</Term>
+						<Name>Contracting body identifier</Name>
+						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE">eSENS-T004-R034</Reference>
-					
+						
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
-							<Reference type="RULE">eSENS-T004-R012</Reference>
-							<Reference type="RULE">eSENS-T004-R013</Reference>
+							<Reference type="RULE">eSENS-T004-R010</Reference>
+							<Reference type="RULE">eSENS-T004-R011</Reference>
 						</Attribute>
 					</Element>
-					
-	
+				</Element>
+				
+				<Element cardinality="0..1">
+					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
 					<Element>
-						<Term>cac:PartyIdentification</Term>
-						<Name>Party identification</Name>
-						<Reference type="RULE">eSENS-T004-R034</Reference>
-						
-						<Element>
-							<Term>cbc:ID</Term>
-							<Name>Contracting body identifier</Name>
-							<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
-							<DataType>Identifier</DataType>
-
-							<Attribute>
-								<Term>schemeID</Term>
-								<Name>Scheme identifier</Name>
-								<Reference type="RULE">eSENS-T004-R010</Reference>
-								<Reference type="RULE">eSENS-T004-R011</Reference>
-							</Attribute>
-						</Element>
+						<Term>cbc:Name</Term>
+						<Name>Contracting body name</Name>
+						<Description>The name of the contracting body as it is registered.</Description>
+						<DataType>Text</DataType>
 					</Element>
-
-					<Element cardinality="0..1">
-						<Term>cac:PartyName</Term>
-						<Name>Party name</Name>
-						<Element>
-							<Term>cbc:Name</Term>
-							<Name>Contracting body name</Name>
-							<Description>The name of the contracting body as it is registered.</Description>
-							<DataType>Text</DataType>
-						</Element>
-					</Element>
+				</Element>
+				
+				<Element cardinality="0..1">
+					<Term>cac:PartyLegalEntity</Term>
+					<Name>Party legal entity</Name>
 					
 					<Element cardinality="0..1">
-						<Term>cac:PartyLegalEntity</Term>
-						<Name>Party legal entity</Name>
+						<Term>cac:RegistrationAddress</Term>
+						<Name>Registration address</Name>
 						
 						<Element cardinality="0..1">
-							<Term>cac:RegistrationAddress</Term>
-							<Name>Registration address</Name>
-							
-							<Element cardinality="0..1">
-								<Term>cac:Country</Term>
-								<Name>Country</Name>
-								<Element>
-									<Term>cbc:IdentificationCode</Term>
-									<Name>Country of registration</Name>
-									<Description>The country where the party is registered. The country should always be given by using ISO code 3166 alpha 2</Description>
-									<DataType>Code</DataType>
-									<Reference type="RULE">CL-T83-R005</Reference>
-									<Attribute>
-										<Term>listID</Term>
-										<Name>List identifier</Name>
-										<Value type="FIXED">ISO3166-1:Alpha2</Value>
-									</Attribute>
-								</Element>
+							<Term>cac:Country</Term>
+							<Name>Country</Name>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country of registration</Name>
+								<Description>The country where the party is registered. The country should always be given by using ISO code 3166 alpha 2</Description>
+								<DataType>Code</DataType>
+								<Reference type="RULE">CL-T83-R005</Reference>
+								<Attribute>
+									<Term>listID</Term>
+									<Name>List identifier</Name>
+									<Value type="FIXED">ISO3166-1:Alpha2</Value>
+								</Attribute>
 							</Element>
 						</Element>
 					</Element>
 				</Element>
 			</Element>
-
 		</Element>
+		
 		<Element>
 			<Term>cac:TenderingTerms</Term>
 			<Name>Tendering terms</Name>
@@ -403,21 +407,25 @@
 		</Element>
 
 		
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cac:TenderingProcess</Term>
-			<Element cardinality="1..1">
+			<Name>Tendering process</Name>
+			
+			<Element>
 				<Term>cbc:ProcedureCode</Term>
 				<Name>Procedure type</Name>
 				<Description>A code specifying the type of this tendering process. The coded version of the description of procedure. (E.g.) Open procedure, negotiated etc.</Description>
 				<DataType>Code</DataType>
 				<Reference type="RULE">BII3-T83-R009</Reference>
 				<Reference type="RULE">CL-T83-R001</Reference>
-				<Reference type="BUSINESS_TERM">tir83-032</Reference>
+				
 				<Attribute>
 					<Term>listID</Term>
+					<Name>List identifier</Name>
 					<Value type="FIXED">PR_PROC</Value>
 				</Attribute>
 			</Element>
+			
 			<Element cardinality="1..1">
 				<Term>cac:TenderSubmissionDeadlinePeriod</Term>
 				<Element cardinality="1..1">
@@ -428,6 +436,7 @@
 					<Reference type="RULE">BII3-T83-R010</Reference>
 					<Reference type="BUSINESS_TERM">tir83-034</Reference>
 				</Element>
+				
 				<Element cardinality="0..1">
 					<Term>cbc:EndTime</Term>
 					<Name>Tender submission deadline</Name>
@@ -436,8 +445,12 @@
 					<Reference type="BUSINESS_TERM">tir83-034</Reference>
 				</Element>
 			</Element>
+			
 			<Element cardinality="0..1">
 				<Term>cac:ParticipationRequestReceptionPeriod</Term>
+				<Name>Participation request reception period</Name>
+				<Reference type="RULE">eSENS-T004-R037</Reference>
+				
 				<Element cardinality="1..1">
 					<Term>cbc:EndDate</Term>
 					<Name>Request for participation deadline</Name>
@@ -564,21 +577,24 @@
 	
 		<Element cardinality="0..n">
 			<Term>cac:ProcurementProjectLot</Term>
-			<Element cardinality="1..1">
+			<Name>Procurement project lot</Name>
+			
+			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
 				<DataType>Identifier</DataType>
-				<Reference type="BUSINESS_TERM">tir83-187</Reference>
 			</Element>
+			
 			<Element cardinality="0..1">
 				<Term>cac:ProcurementProject</Term>
-				<Element cardinality="1..1">
+				<Name>Procurement project</Name>
+				
+				<Element>
 					<Term>cbc:Name</Term>
 					<Name>Lot name</Name>
 					<Description>The title of the lot</Description>
 					<DataType>Text</DataType>
-					<Reference type="BUSINESS_TERM">tir83-188</Reference>
 				</Element>
 			</Element>
 		</Element>

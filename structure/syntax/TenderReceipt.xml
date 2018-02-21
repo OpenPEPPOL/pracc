@@ -175,7 +175,7 @@
 				<Name>Contracting body electronic address identifier</Name>
 				<Description>Electronic address of the contracting body.</Description>
 				<DataType>Identifier</DataType>
-				<Reference type="RULE">"eSENS-T006-R017</Reference>
+				<Reference type="RULE">eSENS-T006-R017</Reference>
 
 				<Attribute>
 					<Term>schemeID</Term>
@@ -187,7 +187,7 @@
 			<Element>
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party identification</Name>
-				<Reference type="RULE">"eSENS-T006-R017</Reference>
+				<Reference type="RULE">eSENS-T006-R017</Reference>
 				
 				<Element>
 					<Term>cbc:ID</Term>
@@ -224,7 +224,7 @@
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
 				<DataType>Identifier</DataType>
-				<Reference type="RULE">"eSENS-T006-R018</Reference>
+				<Reference type="RULE">eSENS-T006-R018</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
@@ -235,7 +235,7 @@
 			<Element>
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party identification</Name>
-				<Reference type="RULE">"eSENS-T006-R018</Reference>
+				<Reference type="RULE">eSENS-T006-R018</Reference>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
