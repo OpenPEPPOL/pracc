@@ -94,6 +94,10 @@
 |Issue
 |Suggested change
 
+|CustomizationID
+|Wrong value validated?
+|Review validation
+
 |UBLVersionID
 |Value 2.2 not validated
 |Add validation to ensure value 2.2
