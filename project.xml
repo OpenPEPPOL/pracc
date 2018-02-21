@@ -6,7 +6,7 @@
 	<Documentation path="remark/">Syntax mapping remarks</Documentation>
 
 	<!-- Syntax -->
-<!--	<Resource>
+	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
 		<Title>Expression Of Interest Request (T001)</Title>
@@ -20,7 +20,7 @@
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/TenderStatusRequest.xml</Path>
 		<Title>Tender Status Request (T003)</Title>
-	</Resource>-->
+	</Resource>
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/CallForTenders.xml</Path>
@@ -82,5 +82,6 @@
 		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
 		<Title>CENBII T006 rules</Title>
 	</Resource>
+	
 
 </Project>
