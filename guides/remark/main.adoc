@@ -20,6 +20,8 @@
 
 == Submit Tender (T005)
 
+* Code list for elements chapter: Added Country code and DocumentTypeCode.
+
 [cols="1s,2,3", options="header"]
 |===
 |Element/attribute
@@ -41,6 +43,8 @@
 |===
 
 == Tender Receipt (T006)
+
+* Code list for elements chapter: Added DocumentTypeCode.
 
 [cols="1s,2,3", options="header"]
 |===
@@ -70,7 +74,7 @@
 
 == Expression Of Interest Response (T002)
 
-* Code list for elements: Corrected element name from cbc:TenderLocaleCode to cbc:TenderLanguageLocaleCode.
+* Code list for elements chapter: Corrected element name from cbc:TenderLocaleCode to cbc:TenderLanguageLocaleCode.
 
 [cols="1s,2,3", options="header"]
 |===
