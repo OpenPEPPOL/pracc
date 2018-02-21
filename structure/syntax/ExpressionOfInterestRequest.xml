@@ -31,7 +31,7 @@
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Express of interest identifier</Name>
-			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
+			<Description>An identifier that is suitable for identifying or referencing a document, MUST be expressed in a UUID syntax (RFC 4122).</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T001-R005</Reference>
 			<Reference type="RULE">eSENS-T001-R008</Reference>
@@ -90,7 +90,7 @@
 			<Name>Economic operator</Name>
 			<Element>
 				<Term>cac:Party</Term>
-				<Name>Economic operator party</Name>
+				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Economic operator electronic address identifier</Name>
@@ -113,7 +113,7 @@
 					<Reference type="BUSINESS_TERM">tir81-028</Reference>
 					<Attribute>
 						<Term>listID</Term>
-						<Name>List ID</Name>
+						<Name>List Identifier</Name>
 						<Reference type="RULE">eSENS-T001-R027</Reference>
 						<Reference type="RULE">eSENS-T001-R028</Reference>
 						<Value type="FIXED">TendererRole</Value>
@@ -121,7 +121,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Economic operator identification</Name>
+					<Name>Party identification</Name>
 					<Reference type="RULE">eSENS-T001-R014</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
@@ -140,6 +140,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyName</Term>
+					<Name>Party name</Name>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Economic operator name</Name>
@@ -191,7 +192,7 @@
 							<Reference type="BUSINESS_TERM">tir81-020</Reference>
 							<Attribute>
 								<Term>listID</Term>
-								<Name>List ID</Name>
+								<Name>List Identifier</Name>
 								<Reference type="RULE">eSENS-T001-R019</Reference>
 								<Reference type="RULE">eSENS-T001-R020</Reference>
 								<Value type="FIXED">ISO3166-1:Alpha2</Value>
@@ -204,8 +205,10 @@
 					<Name>Economic operator legal Entity</Name>
 					<Element cardinality="0..1">
 						<Term>cac:RegistrationAddress</Term>
+						<Name>Registration address</Name>
 						<Element cardinality="0..1">
 							<Term>cac:Country</Term>
+							<Name>Country</Name>
 							<Element>
 								<Term>cbc:IdentificationCode</Term>
 								<Name>Economic operator registration country code</Name>
@@ -215,7 +218,7 @@
 								<Reference type="BUSINESS_TERM">tir81-014</Reference>
 								<Attribute>
 									<Term>listID</Term>
-									<Name>List ID</Name>
+									<Name>List Identifier</Name>
 									<Reference type="RULE">eSENS-T001-R019</Reference>
 									<Reference type="RULE">eSENS-T001-R020</Reference>
 									<Value type="FIXED">ISO3166-1:Alpha2</Value>
@@ -268,7 +271,7 @@
 			<Name>Contracting body</Name>
 			<Element>
 				<Term>cac:Party</Term>
-				<Name>Contracting party</Name>
+				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
@@ -285,7 +288,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Contracting body identifier</Name>
+					<Name>Party identification</Name>
 					<Reference type="RULE">eSENS-T001-R013</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
@@ -296,7 +299,7 @@
 						<Reference type="BUSINESS_TERM">tir81-009</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
-							<Name>Contracting body identifier</Name>
+							<Name>Scheme identifier</Name>
 							<Reference type="RULE">eSENS-T001-R015</Reference>
 						</Attribute>
 					</Element>

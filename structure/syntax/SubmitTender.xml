@@ -42,11 +42,11 @@
 			<Description>Identifier of the tender document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R008</Reference>
-			<Reference type="RULE">eSENS-T005-R004</Reference>
 			<Reference type="RULE">eSENS-T005-R006</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme URI</Name>
+				<Reference type="RULE">eSENS-T005-R004</Reference>
 				<Reference type="RULE">eSENS-T005-R005</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>

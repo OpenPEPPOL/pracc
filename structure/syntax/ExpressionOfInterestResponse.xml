@@ -31,7 +31,7 @@
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Response identifier</Name>
-			<Description>An identifier that is suitable for identifying or referencing a document.</Description>
+			<Description>An identifier that is suitable for identifying or referencing a document, MUST be expressed in a UUID syntax (RFC 4122).</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T002-R005</Reference>
 			<Reference type="RULE">eSENS-T002-R008</Reference>
@@ -111,7 +111,7 @@
 			<Name>Economic operator</Name>
 			<Element>
 				<Term>cac:Party</Term>
-				<Name>Economic operator</Name>
+				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Economic operator electronic address identifier</Name>
@@ -149,7 +149,7 @@
 			<Name>Contracting body</Name>
 			<Element>
 				<Term>cac:Party</Term>
-				<Name>Contracting party</Name>
+				<Name>Party information</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
@@ -166,7 +166,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Contracting body identifier</Name>
+					<Name>Party identification</Name>
 					<Reference type="RULE">eSENS-T002-R014</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
@@ -182,7 +182,7 @@
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cac:PartyName</Term>
-					<Name>Contracting body identifier</Name>
+					<Name>Party name</Name>
 					<Element>
 						<Term>cbc:Name</Term>
 						<Name>Contracting body name</Name>
