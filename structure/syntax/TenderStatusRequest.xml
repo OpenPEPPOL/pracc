@@ -2,11 +2,11 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>TenderStatusRequest</Term>
 	<Name>Tender Status Request (T003)</Name>
-	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TenderStatusRequest-2</Namespace>
+	<Namespace prefix="t003">urn:oasis:names:specification:ubl:schema:xsd:TenderStatusRequest-2</Namespace>
 	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
 	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	<Document>
-		<Term>ubl:TenderStatusRequest</Term>
+		<Term>t003:TenderStatusRequest</Term>
 		<Name>Tender Status Request, root element</Name>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
