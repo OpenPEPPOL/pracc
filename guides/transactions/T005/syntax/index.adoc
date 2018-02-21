@@ -1,8 +1,6 @@
 
 = Syntax Mapping
 
-:leveloffset: +1
+Syntax mapping of T005:
 
-https://vefa.difi.no/ehf/gefeg/submittender/1.0/[Message and structure table].
-
-:leveloffset: -1
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/Tender/tree/[T005 - Tender]

@@ -7,6 +7,4 @@ The following tables describe the transaction business and information requireme
 
 include::transaction-business-requirements.adoc[]
 
-include::tender-receipt-notification.adoc[]
-
 :leveloffset: -1

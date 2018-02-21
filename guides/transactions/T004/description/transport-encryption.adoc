@@ -16,17 +16,17 @@ To identify the encryption certificate, the UBL MUST contain exactly one Additio
 [cols="3,2,3,4", options="header"]
 |===
 | Business term | Card. | XPath within +
- //cac:AdditionalDocumentReference | Value / Description
-| Required document reference identifier | 1..1 | ./cbc:ID | Reference identifier of a document that is provided as part of a tender or call for tender.
+ cac:AdditionalDocumentReference | Value / Description
+| Required document reference identifier | 1..1 | cbc:ID | Reference identifier of a document that is provided as part of a tender or call for tenders.
 Value supplied by tendering system of the CA. Is not necessarily populated with the filename but rather an internal identifier.
-| Document issue date | 0..1 |./cbc:IssueDate |The date on which the tender encryption key has been issued.
-| Document type code | 1..1 | ./cbc:DocumentTypeCode | Fixed value of “PROVIDED”
-| | | ./cbc:DocumentTypeCode/@listID | Fixed value of "urn:eu:esens:cenbii:documentType"
-| Provided document version | 0..1 | ./cbc:VersionID | Version of a document that is provided as part of a tender or call for tender.
-| Provided document to be returned indicator | 1..1 | ./cbc:DocumentStatusCode| Fixed value of “NO RETURN”
-| | | ./cbc:DocumentStatusCode/@listID | Fiexd value of "urn:eu:esens:cenbii:documentStatusType"
-| Document mime type code | 1..1 | ./cac:Attachment/cac:ExternalReference/cbc:MimeCode | Fixed value of "application/pkix-cert".
-| Provided document name | 1..1 | ./cac:Attachment/cac:ExternalReference/cbc:FileName | Name of a document that is provided as part of a tender or call for tender. The extension of the file MUST be  “cer”.
+| Document issue date | 0..1 | cbc:IssueDate |The date on which the tender encryption key has been issued.
+| Document type code | 1..1 | cbc:DocumentTypeCode | Fixed value of “PROVIDED”
+| | | cbc:DocumentTypeCode/@listID | Fixed value of "urn:eu:esens:cenbii:documentType"
+| Provided document version | 0..1 | cbc:VersionID | Version of a document that is provided as part of a tender or call for tenders.
+| Provided document to be returned indicator | 1..1 | cbc:DocumentStatusCode | Fixed value of “NO RETURN”
+| | | cbc:DocumentStatusCode/@listID | Fiexd value of "urn:eu:esens:cenbii:documentStatusType"
+| Document mime type code | 1..1 | cac:Attachment/cac:ExternalReference/cbc:MimeCode | Fixed value of "application/pkix-cert".
+| Provided document name | 1..1 | cac:Attachment/cac:ExternalReference/cbc:FileName | Name of a document that is provided as part of a tender or call for tenders. The extension of the file MUST be  “cer”.
 |===
 
 

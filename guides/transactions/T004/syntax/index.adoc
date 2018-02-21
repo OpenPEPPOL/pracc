@@ -1,8 +1,6 @@
 
 = Syntax Mapping
 
-:leveloffset: +1
+Syntax mapping of T004:
 
-https://vefa.difi.no/ehf/gefeg/callfortenders/1.0/[Message and structure table].
-
-:leveloffset: -1
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/CallForTenders/tree/[T004 - Call for Tenders]
