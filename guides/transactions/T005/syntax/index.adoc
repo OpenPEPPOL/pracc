@@ -3,4 +3,4 @@
 
 Syntax mapping of T005:
 
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/Tender/tree/[T005 - Tender]
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/Tender/tree/[{name-transaction}]

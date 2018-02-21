@@ -5,4 +5,4 @@ The following tables describe the mapping of the information requirement element
 
 Syntax mapping of T002:
 
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/ExpressionOfInterestResponse/tree/[T002 - Expression Of Interest Response]
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/ExpressionOfInterestResponse/tree/[{name-transaction}]

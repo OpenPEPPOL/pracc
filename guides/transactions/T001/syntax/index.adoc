@@ -6,4 +6,4 @@ The following tables describe the mapping of the information requirement element
 
 Syntax mapping of T001:
 
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/ExpressionOfInterestRequest/tree/[T001 - Expression Of Interest Request]
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/ExpressionOfInterestRequest/tree/[{name-transaction}]

@@ -5,4 +5,4 @@ The following table describes the mapping of the information requirement element
 
 Syntax mapping of T003:
 
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/TenderStatusRequest/tree/[T003 - Tender Status Inquiry]
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/TenderStatusRequest/tree/[{name-transaction}]

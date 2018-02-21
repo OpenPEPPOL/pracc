@@ -3,4 +3,4 @@
 
 Syntax mapping of T004:
 
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/CallForTenders/tree/[T004 - Call for Tenders]
+* https://test-vefa.difi.no/peppolbis/pracc/syntax/CallForTenders/tree/[{name-transaction}]
