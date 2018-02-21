@@ -79,7 +79,7 @@
 				<Term>listID</Term>
 				<Name>listID for TenderLanguageLocaleCode</Name>
 				<Reference type="RULE">eSENS-T002-R019</Reference>
-				<Reference type="RULE">eSENS-T82-R020</Reference>
+				<Reference type="RULE">eSENS-T002-R020</Reference>
 				<Value type="FIXED">ISO639-1</Value>
 			</Attribute>
 		</Element>
@@ -88,7 +88,6 @@
 			<Name>Expression of interest identifier</Name>
 			<Description>An identifier that is suitable for identifying or referencing an expression of interest.</Description>
 			<DataType>Identifier</DataType>
-			<Reference type="RULE"/>
 			<Reference type="BUSINESS_TERM">tir82-004</Reference>
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
@@ -172,7 +171,6 @@
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
 						<DataType>Identifier</DataType>
-						<Reference type="RULE"/>
 						<Reference type="BUSINESS_TERM">tir82-009</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
@@ -189,7 +187,6 @@
 						<Name>Contracting body name</Name>
 						<Description>The name of the contracting body as it is registered.</Description>
 						<DataType>Text</DataType>
-						<Reference type="RULE"/>
 						<Reference type="BUSINESS_TERM">tir82-008</Reference>
 					</Element>
 				</Element>
