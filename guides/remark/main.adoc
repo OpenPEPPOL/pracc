@@ -17,6 +17,48 @@
 * Where there are mismatches between BII or eSens validation rules and cardinality in the model, the validation rule is used.
 ** Example is DocumentHash and method for Submit tender (T005)
 
+== Call For Tenders (T004)
+
+[cols="1s,2,3", options="header"]
+|===
+|Element/attribute
+|Issue
+|Suggested change
+
+|UBLVersionID
+|Value 2.2 not validated
+|Add validation to ensure value 2.2
+
+| Tendering terms/additional conditions
+| Code list not mentioned
+| Specify code list
+
+| Document type code
+|Link to general BII codes
+|Create correct subset values
+
+| Document status code
+|Link to general BII codes
+|Create correct subset values
+
+| Procedure type
+|Link to general BII codes
+|Create correct subset values
+
+| Procedure type
+|BII code list rule unclear
+|Review/fix code list rule CL-T83-R001
+
+| ContractingSystemCode
+|BII code list rule unclear
+|Review/fix code list rule CL-T83-R006
+
+|ProcurementTypeCode
+|BII code list rule unclear
+|Review/fix code list rule CL-T83-R002
+
+|===
+
 
 == Submit Tender (T005)
 

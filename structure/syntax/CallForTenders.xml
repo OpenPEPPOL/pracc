@@ -26,7 +26,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R001</Reference>
 			<Reference type="RULE">eSENS-T004-R002</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:www.peppol.eu:bis:peppol47x:ver1.</Value>
+			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:www.peppol.eu:bis:peppol47x:ver1</Value>
 		</Element>
 		
 		<Element>
@@ -52,7 +52,7 @@
 				<Name>Scheme URI</Name>
 				<Reference type="RULE">eSENS-T004-R004</Reference>
 				<Reference type="RULE">eSENS-T004-R005</Reference>
-				<Value type="FIXED">unr:uuid</Value>
+				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
 		</Element>
 		
@@ -81,12 +81,12 @@
 			<Reference type="RULE">eSENS-T004-R009</Reference>
 		</Element>
 
-		<Element cardinality="0..1">
+		<Element>
 			<Term>cbc:VersionID</Term>
 			<Name>Call for tender version</Name>
 			<Description>Identifies the version of the call for tenders.</Description>
 			<DataType>Identifier</DataType>
-			<Reference type="BUSINESS_TERM">tir83-001</Reference>
+			<Reference type="RULE">eSENS-T004-R038</Reference>
 		</Element>
 		
 		<Element cardinality="0..n">
@@ -273,11 +273,11 @@
 					<Term>cac:PartyLegalEntity</Term>
 					<Name>Party legal entity</Name>
 					
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cac:RegistrationAddress</Term>
 						<Name>Registration address</Name>
 						
-						<Element cardinality="0..1">
+						<Element>
 							<Term>cac:Country</Term>
 							<Name>Country</Name>
 							<Element>
@@ -312,7 +312,7 @@
 			</Element>
 			
 			
-			<Element cardinality="1..1">
+			<Element>
 				<Term>cbc:VariantConstraintIndicator</Term>
 				<Name>Variants indicator</Name>
 				<Description>Indicates if variants are accepted in the tender. Use true when variants are allowed.</Description>

@@ -39,7 +39,7 @@ h| Source codelist
 [cols="1,4"]
 |===
 h| Qualifier
-| `documentType` (listID)
+| `urn:eu:esens:cenbii:documentType` (listID)
 h| Document location
 | `cbc:DocumentTypeCode`
 h| Source codelist
@@ -51,7 +51,7 @@ h| Source codelist
 [cols="1,4"]
 |===
 h| Qualifier
-| `documentStatusType` (listID)
+| `urn:eu:esens:cenbii:documentStatusType` (listID)
 h| Document location
 | `cbc:DocumentStatusCode`
 h| Source codelist
