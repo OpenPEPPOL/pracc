@@ -6,7 +6,7 @@
 	<Documentation path="remark/">Syntax mapping remarks</Documentation>
 
 	<!-- Syntax -->
-	<Resource>
+<!--	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
 		<Title>Expression Of Interest Request (T001)</Title>
@@ -15,7 +15,7 @@
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
 		<Title>Expression Of Interest Response (T002)</Title>
-	</Resource>
+	</Resource>-->
 	<Resource>
 		<Type>Structure-1</Type>
 		<Path>structure/syntax/TenderStatusRequest.xml</Path>
