@@ -1,8 +1,7 @@
 
 = Business and syntax rules
 
-
-The below listed business and syntax rules are additional rules added by the e-SENS pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the PEPPOL Transport infrastructure are present.
+The below listed business rules derived from the CEN/BII profile and additional rules added by the {link-esens} pilot project, to ensure valid instance documents, and to ensure that identifiers needed in the {link-peppol-transp}[PEPPOL Transport infrastructure] is present.
 
 [IMPORTANT]
 ====
