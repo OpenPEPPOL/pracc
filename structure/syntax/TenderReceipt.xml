@@ -3,12 +3,12 @@
 	<Term>TenderReceipt</Term>
 	<Name>Tender Receipt (T006)</Name>
 	
-	<Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
+	<Namespace prefix="t006">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	
 	<Document>
-		<Term>ubl:TenderReceipt</Term>
+		<Term>t006:TenderReceipt</Term>
 		<Name>Tender receipt, root element</Name>
 		
 		<Element>
