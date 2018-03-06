@@ -17,7 +17,7 @@ The procurement project in does not describe the tender deliverables.
 .Procurement project
 
 ----
-include::../{xml-doc-fil}[tags=ProcurementProject]
+include::../{xml-doc-file}[tags=ProcurementProject]
 
 ----
 
@@ -33,6 +33,6 @@ The details of each lot are described using unstructured documents referred into
 .{name-trans-short} with lots
 
 ----
-include::../{xml-doc-fil}[tags=ProcurementProjectLot]
+include::../{xml-doc-file}[tags=ProcurementProjectLot]
 
 ----

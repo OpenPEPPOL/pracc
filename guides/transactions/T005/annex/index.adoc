@@ -1,11 +1,13 @@
 [appendix]
 = Key examples/use cases
 
-:leveloffset: +1
+link:files/tender-instance-download.xml[Link to example file]
 
 
-include::examples.adoc[]
+[source,xml,indent=0]
+.Example used in document
+----
 
+include::../{xml-doc-file}[tags=**]
 
-
-:leveloffset: -1
+----

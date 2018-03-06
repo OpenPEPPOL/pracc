@@ -14,7 +14,7 @@ v{revision}
 :sectnums:
 :imagesdir: ../../shared/images
 :title-logo-image: {imagesdir}/peppol.png
-:xml-doc-fil: files/call-for-tenders-instance-doc.xml
+:xml-doc-file: files/call-for-tenders-instance-doc.xml
 
 {description}
 include::{shared-dir}/copyright.adoc[]
@@ -35,6 +35,6 @@ include::description/index.adoc[]
 
 include::syntax/index.adoc[]
 
-include::examples-usecase/index.adoc[]
+include::annex/index.adoc[]
 
 :leveloffset: -1

@@ -7,7 +7,7 @@ The identifier specified by the buyer as a reference number for all documents in
 
 [source,xml,indent=0]
 ----
-include::../{xml-doc-fil}[tags=ContractFolderID]
+include::../{xml-doc-file}[tags=ContractFolderID]
 ----
 
 
@@ -16,7 +16,7 @@ include::../{xml-doc-fil}[tags=ContractFolderID]
 A reference to the call for tender as issued by the contracting body. Creates a link between the tender and its call for tender. In the UBL mapping this is represented using the cac:DocumentReference class.
 [source,xml,indent=0]
 ----
-include::../{xml-doc-fil}[tags=DocumentReference1]
+include::../{xml-doc-file}[tags=DocumentReference1]
 ----
 
 == Attached documents
@@ -27,7 +27,7 @@ Example below shows the attached tender document and its hash and algorithm. The
 
 [source,xml,indent=0]
 ----
-include::../{xml-doc-fil}[tags=DocumentReference2]
+include::../{xml-doc-file}[tags=DocumentReference2]
 ----
 
 == Document Type Code
@@ -39,7 +39,7 @@ the document types, see {un-ece-1001}.
 [source,xml,indent=0]
 .Document Type Code
 ----
-include::../{xml-doc-fil}[tags=DocumentTypeCode]
+include::../{xml-doc-file}[tags=DocumentTypeCode]
 ----
 
 
@@ -50,7 +50,7 @@ ESPD response can be given as either structured or unstructured information, bas
 [source,xml]
 .Example provided ESPD response (structured)
 ----
-include::../{xml-doc-fil}[tags=Provided_ESPD]
+include::../{xml-doc-file}[tags=Provided_ESPD]
 ----
 <1>  Codevalue used for ESPD response
 <2>  DocumentDescription should be "ESPD Response"

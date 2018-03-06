@@ -2,11 +2,11 @@
 
 = Key examples/use cases
 
-link:{xml-doc-fil}[Example file]
+link:files/ExpressionOfInterestRequest-instance.xml[Link to example file]
 
 [source,xml,indent=0]
 ----
 
-include::../{xml-doc-fil}[]
+include::../{xml-doc-file}[]
 
 ----

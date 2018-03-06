@@ -15,7 +15,7 @@ v{revision}
 :sectnums:
 :imagesdir: ../../shared/images
 :title-logo-image: {imagesdir}/peppol.png
-:xml-doc-fil: files/tender-instance.xml
+:xml-doc-file: files/tender-instance.xml
 
 {description}
 include::{shared-dir}/copyright.adoc[]

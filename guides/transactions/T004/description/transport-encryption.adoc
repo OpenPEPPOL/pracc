@@ -34,7 +34,7 @@ Value supplied by tendering system of the CA. Is not necessarily populated with 
 .Example of the CfT (partly) for transporting the encryption certificate
 
 ----
-include::../{xml-doc-fil}[tags=AdditionalDocumentReference1]
+include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
 
 ----
 

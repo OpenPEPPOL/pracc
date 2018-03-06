@@ -12,7 +12,7 @@ DocumentReference Identifier for a Call for Tender Reference must be expressed i
 .DocumentHash
 
 ----
-include::../{xml-doc-fil}[tags=DocumentHash]
+include::../{xml-doc-file}[tags=DocumentHash]
 ----
 ////
 Document hash algorithm must be http://www.w3.org/2001/04/xmlenc#sha256[SHA-256].
@@ -21,7 +21,7 @@ Document hash algorithm must be http://www.w3.org/2001/04/xmlenc#sha256[SHA-256]
 .Document hash algorithm
 
 ----
-include::../{xml-doc-fil}[tags=HashAlgorithmMethod]
+include::../{xml-doc-file}[tags=HashAlgorithmMethod]
 ----
 
 ////
@@ -30,7 +30,7 @@ include::../{xml-doc-fil}[tags=HashAlgorithmMethod]
 .Tender document reference
 
 ----
-include::../{xml-doc-fil}[tags=TenderDocumentReference]
+include::../{xml-doc-file}[tags=TenderDocumentReference]
 ----
 
 
@@ -43,5 +43,5 @@ the document types, see {un-ece-1001}.
 [source,xml,indent=0]
 .Document Type Code
 ----
-include::../{xml-doc-fil}[tags=DocumentTypeCode]
+include::../{xml-doc-file}[tags=DocumentTypeCode]
 ----

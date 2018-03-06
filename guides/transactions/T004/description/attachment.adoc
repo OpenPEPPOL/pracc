@@ -13,6 +13,6 @@ In this example, the contents of the coded elements DocumentTypeCode and Documen
 .Additional document reference
 
 ----
-include::../{xml-doc-fil}[tags=AdditionalDocumentReference2]
+include::../{xml-doc-file}[tags=AdditionalDocumentReference2]
 
 ----

@@ -24,7 +24,7 @@ NOTE: The issue time and registered time must specify the time zone.
 .Example of Issue date/time and Registered date/time
 
 ----
-include::../{xml-doc-fil}[tags=IssueDateTime]
+include::../{xml-doc-file}[tags=IssueDateTime]
 
-include::../{xml-doc-fil}[tags=RegisteredDateTime]
+include::../{xml-doc-file}[tags=RegisteredDateTime]
 ----
