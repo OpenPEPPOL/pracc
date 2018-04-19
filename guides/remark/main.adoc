@@ -13,6 +13,9 @@
 == General
 
 * CustomizationID and profileID values must be changed
+
+include::cust-profile-id.adoc[]
+
 * For complex elements where there is only one child element, the child element is set to mandatory
 * Where there are mismatches between BII or eSens validation rules and cardinality in the model, the validation rule is used.
 ** Example is DocumentHash and method for Submit tender (T005)

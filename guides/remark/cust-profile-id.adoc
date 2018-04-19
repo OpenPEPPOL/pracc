@@ -1,0 +1,51 @@
+.Suggested values
+[cols="1,2,1,2,2,2", options="header"]
+|===
+| Profile ID
+| Profile name
+| Transaction id
+| Transaction name
+| `cbc:ProfileID`
+| `cbc:CustomizationID`
+
+.2+.^s| P001
+.2+.^s| Procurement procedure subscription
+| T001
+| Subscribe to procedure
+.2+.^|urn:fdc:peppol.eu:2017:pracc:p001:01:1.0
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t001:ver1.0
+
+| T002
+| Expression of interest response
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t002:ver1.0
+
+.2+.^s| P002
+.2+.^s| Procurement document access
+| T003
+| Tender Status inquiry
+.2+.^|urn:fdc:peppol.eu:2017:pracc:p002:01:1.0
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t003:ver1.0
+
+| T004
+| Call for Tenders
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t004:ver1.0
+
+
+.2+.^s| P003
+.2+.^s| Tender Submission
+| T005
+| Tender
+.2+.^|urn:fdc:peppol.eu:2017:pracc:p003:01:1.0
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t005:ver1.0
+
+| T006
+| Tender Receipt
+| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
+urn:www.peppol.eu:bis:t006:ver1.0
+
+|===
