@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CallForTenders xmlns="urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+<CallForTenders xmlns="urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
 	<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:www.peppol.eu:bis:t004:ver1.0</cbc:CustomizationID>
-	<cbc:ProfileID>urn:www.peppol.eu:profile:p002:ver1.0</cbc:ProfileID>
+	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t004:ver1.0</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p002:01:1.0</cbc:ProfileID>
 	<cbc:ID schemeURI="urn:uuid">be8943ce-9d65-4eed-93c5-fa4748148c8f</cbc:ID>
 	<cbc:ContractFolderID>3dab5e45-2bb3-4dbf-bc1f-0b812d8b9a58</cbc:ContractFolderID>
 	<cbc:IssueDate>2016-10-20</cbc:IssueDate>
 	<cbc:IssueTime>13:32:12+02:00</cbc:IssueTime>
 	<cbc:VersionID>1</cbc:VersionID>
-  <!-- tag::AdditionalDocumentReference1[] -->
+	<!-- tag::AdditionalDocumentReference1[] -->
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>tenderenckey.cer</cbc:ID>
 		<cbc:IssueDate>2016-06-27+02:00</cbc:IssueDate>
 		<cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PROVIDED</cbc:DocumentTypeCode>
 		<cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NO RETURN</cbc:DocumentStatusCode>
 		<cac:Attachment>
-			<MimeCode>application/pkix-cert</MimeCode>
-  		<FileName>tenderenckey.cer</FileName>
+			<cac:ExternalReference>
+				<cbc:MimeCode>application/pkix-cert</cbc:MimeCode>
+				<cbc:FileName>tenderenckey.cer</cbc:FileName>
+			</cac:ExternalReference>		
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
-  <!-- end::AdditionalDocumentReference1[] -->
-  <!-- tag::AdditionalDocumentReference2[] -->
+	<!-- end::AdditionalDocumentReference1[] -->
+	<!-- tag::AdditionalDocumentReference2[] -->
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>Bekanntmachung</cbc:ID>
 		<cbc:IssueDate>2016-10-20+02:00</cbc:IssueDate>
@@ -32,7 +36,7 @@
 			</cac:ExternalReference>
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
-  <!-- end::AdditionalDocumentReference2[] -->
+	<!-- end::AdditionalDocumentReference2[] -->
 	<cac:ContractingParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID>
@@ -58,7 +62,7 @@
 			<cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID>
 		</cac:TenderRecipientParty>
 	</cac:TenderingTerms>
-  <!-- tag::TenderingProcess[] -->
+	<!-- tag::TenderingProcess[] -->
 	<cac:TenderingProcess>
 		<cbc:ProcedureCode listID="PR_PROC">1</cbc:ProcedureCode>
 		<cbc:SubmissionMethodCode listID="BII_SUBMISSION">ELECTRONIC</cbc:SubmissionMethodCode>
@@ -67,7 +71,7 @@
 			<cbc:EndTime>13:32:11.891+02:00</cbc:EndTime>
 		</cac:TenderSubmissionDeadlinePeriod>
 	</cac:TenderingProcess>
-  <!-- end::TenderingProcess[] -->
+	<!-- end::TenderingProcess[] -->
 	<!-- tag::ProcurementProject[] -->
 	<cac:ProcurementProject>
 		<cbc:Name>Laptops</cbc:Name>

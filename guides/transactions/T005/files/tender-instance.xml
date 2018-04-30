@@ -4,10 +4,10 @@
      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <!-- tag::CustomizationID[] -->
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:t005:ver1.0</cbc:CustomizationID>
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0</cbc:CustomizationID>
     <!-- end::CustomizationID[] -->
     <!-- tag::ProfileID[] -->
-    <cbc:ProfileID>urn:www.peppol.eu:profile:p003:ver1.0</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p003:01:1.0</cbc:ProfileID>
     <!-- end::ProfileID[] -->
     <cbc:ID schemeURI="urn:uuid">243a177f-e4e9-4fc8-b97e-bb1a950dd8f8</cbc:ID>
     <!-- tag::ContractFolderID[] -->

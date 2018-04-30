@@ -2,10 +2,10 @@
 <ExpressionOfInterestRequest
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"    
+    xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:www.peppol.eu:bis:t001:ver1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:www.peppol.eu:profile:p001:ver1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t001:ver1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p001:01:1.0</cbc:ProfileID>
     <cbc:ID schemeURI="urn:uuid">f81d4fae-7dec-11d0-a765-00a0c91e6bF6</cbc:ID>
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
     <cbc:IssueDate>2015-05-28</cbc:IssueDate>
@@ -29,7 +29,7 @@
                 <cac:Country>
                     <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
                 </cac:Country>
-            </cac:PostalAddress>            
+            </cac:PostalAddress>
             <cac:PartyLegalEntity>
                 <cac:RegistrationAddress>
                     <cac:Country>

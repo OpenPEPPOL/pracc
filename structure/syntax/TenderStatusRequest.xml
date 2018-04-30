@@ -16,7 +16,7 @@
 			<Reference type="RULE">eSENS-T003-R001</Reference>
 			<Reference type="RULE">eSENS-T003-R010</Reference>
 			<Reference type="BUSINESS_TERM">tir97-007</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended:urn:www.esens.eu:bis:esens60a:ver1.0</Value>
+			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t003:ver1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
@@ -26,7 +26,7 @@
 			<Reference type="RULE">eSENS-T003-R002</Reference>
 			<Reference type="RULE">eSENS-T003-R011</Reference>
 			<Reference type="BUSINESS_TERM">tir97-006</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii60:ver3.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p002:01:1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

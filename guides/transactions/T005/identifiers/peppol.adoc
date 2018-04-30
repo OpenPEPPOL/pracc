@@ -48,9 +48,17 @@ Which customization identification should be used, is based on which transaction
 [cols="2,2,3,5", options="header"]
 .The table below shows an overview of  the values to be used for the Customization ID per transaction.
 |===
-| TransactionID | Transaction name | Short Description |  CustomizationId
-| BiiTrdm090 | Tender | EO sends his tender for the procurement project to CA  | urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0
-| T005 | Tender | EO sends his tender for the procurement project to CA  | #**urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:t005:ver1.0**#
+
+| TransactionID
+| Transaction name
+| Short Description
+|  CustomizationId
+
+| T005
+| Tender
+| EO sends his tender for the procurement project to CA
+| urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended: +
+urn:fdc:peppol.eu:2017:pracc:t005:ver1.0
 |===
 
 Note:: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

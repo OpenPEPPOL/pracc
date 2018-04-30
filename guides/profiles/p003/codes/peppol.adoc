@@ -7,12 +7,24 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 
 [cols="2,2,4,4", options="header"]
 .The table below shows values to be used for the Profile ID per transaction.
+
 |===
-| TransactionID | Transaction name | Short Description | Profile ID
-| BiiTrdm045 | TenderReceipt | CA receives the tender and sends acknowledgement to EO | urn:www.cenbii.eu:profile:bii54:ver3.0
-| BiiTrdm090 | Tender | EO sends his tender for the procurement project to CA | urn:www.cenbii.eu:profile:bii54:ver3.0
-| T006 | TenderReceipt | CA receives the tender and sends acknowledgement to EO | #**urn:www.peppol.eu:profile:p003:ver1.0**#
-| T005 | Tender | EO sends his tender for the procurement project to CA | #**urn:www.peppol.eu:profile:p003:ver1.0**#
+
+| TransactionID
+| Transaction name
+| Short Description
+| Profile ID
+
+| T005
+| Tender
+| EO sends his tender for the procurement project to CA
+| urn:fdc:peppol.eu:2017:pracc:p003:01:1.0
+
+| T006
+| TenderReceipt
+| CA receives the tender and sends acknowledgement to EO
+| urn:fdc:peppol.eu:2017:pracc:p003:01:1.0
+
 |===
 
 Note:: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

@@ -7,12 +7,24 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 
 [cols="2,2,4,4", options="header"]
 .The table below shows values to be used for the Profile ID per transaction.
+
 |===
-| TransactionID | Transaction name | Short Description | Profile ID
-| BiiTrdm081 | ExpressionOfInterestRequest  | CEO shows his interest in the procurement project | urn:www.cenbii.eu:profile:bii46:ver3.0
-| BiiTrdm082 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | urn:www.cenbii.eu:profile:bii46:ver3.0
-| T001 | ExpressionOfInterestRequest | CEO shows his interest in the procurement project | #**urn:www.peppol.eu:profile:p001:ver1.0**#
-| T002 | ExpressionOfInterestResponse | CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents | #**urn:www.peppol.eu:profile:p001:ver1.0**#
+
+| TransactionID
+| Transaction name
+| Short Description
+| Profile ID
+
+| T001
+| ExpressionOfInterestRequest
+| CEO shows his interest in the procurement project
+| urn:fdc:peppol.eu:2017:pracc:p001:01:1.0
+
+| T002
+| ExpressionOfInterestResponse
+| CA SubscibeInterestConfirmations interest EO and sends acknowledgement to EO including all documents
+| urn:fdc:peppol.eu:2017:pracc:p001:01:1.0
+
 |===
 
 Note:: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

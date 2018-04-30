@@ -33,12 +33,12 @@
         </rule>
         
         <rule context="ubl:TenderReceipt/cbc:CustomizationID">
-            <assert id="eSENS-T006-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0'">[eSENS-T006-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:www.peppol.eu:bis:peppol54a:ver1.0'</assert>
+            <assert id="eSENS-T006-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t006:ver1.0'">[eSENS-T006-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t006:ver1.0'</assert>
             <report id="eSENS-T006-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T006-S303] CustomizationID SHOULD NOT contain any attributes.</report>
         </rule>
         
         <rule context="ubl:TenderReceipt/cbc:ProfileID">
-            <assert id="eSENS-T006-R003" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:profile:bii54:ver3.0'">[eSENS-T006-R003] ProfileID value MUST be 'urn:www.cenbii.eu:profile:bii54:ver3.0'</assert>
+            <assert id="eSENS-T006-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:2017:pracc:p003:01:1.0'">[eSENS-T006-R003] ProfileID value MUST be 'urn:fdc:peppol.eu:2017:pracc:p003:01:1.0'</assert>
             <report id="eSENS-T006-S304" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T006-S304] ProfileID SHOULD NOT contain any attributes.</report>
         </rule>
         

@@ -7,10 +7,10 @@
 	<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
 	<!-- end::UBL[] -->
 	<!-- tag::CustomizationID[] -->
-	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:www.peppol.eu:bis:t006:ver1.0</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t006:ver1.0</cbc:CustomizationID>
 	<!-- end::CustomizationID[] -->
 	<!-- tag::ProfileID[] -->
-	<cbc:ProfileID>urn:www.peppol.eu:p003:ver1.0</cbc:ProfileID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p003:01:1.0</cbc:ProfileID>
 	<!-- end::ProfileID[] -->
 	<cbc:ID schemeURI="urn:uuid">49af1fe0-c0af-4a98-8ffa-309408f9cfac</cbc:ID>
 	<cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>

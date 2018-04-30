@@ -45,7 +45,7 @@ Which customization identification should be used, is based on which transaction
 
 | T001
 | ExpressionOfInterestRequest
-| EO shows his interest in the procurement project
+| EO subscribe to a procedure 
 | urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
 urn:fdc:peppol.eu:2017:pracc:t001:ver1.0
 |===

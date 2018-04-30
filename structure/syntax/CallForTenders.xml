@@ -26,7 +26,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R001</Reference>
 			<Reference type="RULE">eSENS-T004-R002</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:www.peppol.eu:bis:peppol47x:ver1</Value>
+			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t004:ver1.0</Value>
 		</Element>
 		
 		<Element>
@@ -36,7 +36,7 @@
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R002</Reference>
 			<Reference type="RULE">eSENS-T004-R003</Reference>
-			<Value type="FIXED">urn:www.cenbii.eu:profile:bii47:ver3.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p002:01:1.0</Value>
 		</Element>
 
 		<Element>
