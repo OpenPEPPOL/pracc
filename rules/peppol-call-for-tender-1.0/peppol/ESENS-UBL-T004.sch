@@ -17,10 +17,10 @@
         <let name="syntaxError" value="string('[eSENS-T004-S003] A Call For Tenders document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
         <rule context="ubl:CallForTenders">
             <report id="eSENS-T004-S301" flag="warning" test="(ext:UBLExtensions)"><value-of select="$syntaxError"/>[eSENS-T004-S301] UBLExtensions SHOULD NOT be used.</report>
-            <assert id="eSENS-T004-R001" flag="fatal" test="(cbc:UBLVersionID)">[eSENS-T004-R001] A Call For Tenders MUST have a syntax identifier.</assert>
             <report id="eSENS-T004-S305" flag="warning" test="(cbc:ProfileExectuionID)"><value-of select="$syntaxError"/>[eSENS-T004-S305] ProfileExecutionID SHOULD NOT be used.</report>
             <report id="eSENS-T004-S307" flag="warning" test="(cbc:CopyIndicator)"><value-of select="$syntaxError"/>[eSENS-T004-S307] CopyIndicator SHOULD NOT be used.</report>
             <report id="eSENS-T004-S308" flag="warning" test="(cbc:UUID)"><value-of select="$syntaxError"/>[eSENS-T004-S308] UUID SHOULD NOT be used.</report>
+            <assert id="eSENS-T004-R001" flag="fatal" test="exists(cbc:UBLVersionID)">[eSENS-T004-R001] A Call For Tenders MUST have a syntax identifier.</assert>
             <report id="eSENS-T004-S310" flag="warning" test="(cbc:ApprovalDate)"><value-of select="$syntaxError"/>[eSENS-T004-S310] ApprovalDate SHOULD NOT be used.</report>
             <assert id="eSENS-T004-R007" flag="fatal" test="(cbc:IssueTime)">[eSENS-T004-R007] A Call For Tenders MUST have an issue time.</assert>
             <assert id="eSENS-T004-R024" flag="fatal" test="count(distinct-values(cac:AdditionalDocumentReference/cbc:ID)) = count(cac:AdditionalDocumentReference/cbc:ID)">[eSENS-T004-R024] Additional Document Reference Identifiers MUST be unique.</assert>
@@ -39,8 +39,11 @@
         </rule>
         
         <rule context="ubl:CallForTenders/cbc:UBLVersionID">
+           
+            <assert id="eSENS-T004-R039" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T004-R039] UBLVersionID value MUST be '2.2'</assert>
             <report id="eSENS-T004-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T004-S302] UBLVersionID SHOULD NOT contain any attributes.</report>
         </rule>
+       
         <rule context="ubl:CallForTenders/cbc:CustomizationID">
             <assert id="eSENS-T004-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t004:ver1.0'">[eSENS-T004-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t004:ver1.0'</assert>
             <report id="eSENS-T004-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T004-S303] CustomizationID SHOULD NOT have any attributes.</report>

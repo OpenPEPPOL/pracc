@@ -9,6 +9,14 @@
 		<Term>t003:TenderStatusRequest</Term>
 		<Name>Tender Status Request, root element</Name>
 		<Element>
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL Verison identifier</Name>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T003-R023</Reference>
+			<Reference type="RULE">eSENS-T003-R024</Reference>
+			<Value type="FIXED">2.2</Value>	
+		</Element>
+		<Element>
 			<Term>cbc:CustomizationID</Term>
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms. The identification may include the version of the specification as well as any customizations applied.</Description>

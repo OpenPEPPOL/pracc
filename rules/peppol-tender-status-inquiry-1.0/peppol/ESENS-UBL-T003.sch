@@ -16,6 +16,7 @@
     <pattern>
         <let name="syntaxError" value="string('[eSENS-T003-S003] A Tender Status Inquiry document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
         <rule context="ubl:TenderStatusRequest">
+            <assert id="eSENS-T003-R024" flag="fatal" test="(cbc:UBLVersionID)">[eSENS-T003-R024] A Tender Status Inquiry MUST have a syntax identifier.</assert>
             <assert id="eSENS-T003-R001" flag="fatal" test="(cbc:CustomizationID)">[eSENS-T003-R001] A Tender Status Inquiry MUST have a specification (customization) identifier.</assert>
             <assert id="eSENS-T003-R002" flag="fatal" test="(cbc:ProfileID)">[eSENS-T003-R002] A Tender Status Inquiry MUST have a business process (profile) identifier.</assert>
             <assert id="eSENS-T003-R003" flag="fatal" test="(cbc:ID)">[eSENS-T003-R003] A Tender Status Inquiry MUST have a Tender Status Inquiry identifier.</assert>
@@ -24,7 +25,6 @@
             <assert id="eSENS-T003-R015" flag="fatal" test="(cbc:IssueTime)">[eSENS-T003-R015] A Tender Status Inquiry MUST have an issue time.</assert>
             <assert id="eSENS-T003-R022" flag="fatal" test="count(distinct-values(cac:ProcurementProjectLot/cbc:ID)) = count(cac:ProcurementProjectLot/cbc:ID)">[eSENS-T003-R022] Lot identifiers MUST be unique.</assert>
             <report id="eSENS-T003-S301" flag="warning" test="(ext:UBLExtensions)"><value-of select="$syntaxError"/>[eSENS-T003-S301] UBLExtensions SHOULD NOT be used.</report>
-            <report id="eSENS-T003-S302" flag="warning" test="(cbc:UBLVersionID)">[eSENS-T003-S302] UBLVersionID SHOULD NOT be used.</report>
             <report id="eSENS-T003-S305" flag="warning" test="(cbc:ProfileExectuionID)"><value-of select="$syntaxError"/>[eSENS-T003-S305] ProfileExecutionID SHOULD NOT be used.</report>
             <report id="eSENS-T003-S307" flag="warning" test="(cbc:CopyIndicator)"><value-of select="$syntaxError"/>[eSENS-T003-S307] CopyIndicator SHOULD NOT be used.</report>
             <report id="eSENS-T003-S308" flag="warning" test="(cbc:UUID)"><value-of select="$syntaxError"/>[eSENS-T003-S308] UUID SHOULD NOT be used.</report>
@@ -33,6 +33,11 @@
             <report id="eSENS-T003-S312" flag="warning" test="(cac:Signature)"><value-of select="$syntaxError"/>[eSENS-T003-S312] Signature SHOULD NOT be used.</report>
             <assert id="eSENS-T003-S313" flag="warning" test="count(cac:ContractingParty) = 1"><value-of select="$syntaxError"/>[eSENS-T003-S313] ContractingParty SHOULD be used exactly once.</assert>
             <report id="eSENS-T003-S321" flag="warning" test="(cac:ProcurementProject)"><value-of select="$syntaxError"/>[eSENS-T003-S321] ProcurementProject SHOULD NOT be used.</report>
+        </rule>
+        
+        <rule context="ubl:TenderStatusRequest/cbc:UBLVersionID">
+            <assert id="eSENS-T003-R023" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T003-R023] UBLVersionID value MUST be '2.2'</assert>
+            <report id="eSENS-T003-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T003-S302] UBLVersionID SHOULD NOT contain any attributes.</report>
         </rule>
         
          <rule context="ubl:TenderStatusRequest/cbc:CustomizationID">

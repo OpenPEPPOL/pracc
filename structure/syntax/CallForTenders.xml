@@ -16,6 +16,7 @@
 			<Name>UBL Version identifier</Name>
 			<Description>Requires UBL version 2.2</Description>
 			<Reference type="RULE">eSENS-T004-R001</Reference>
+			<Reference type="RULE">	eSENS-T004-R039</Reference>
 			<Value type="FIXED">2.2</Value>
 		</Element>
 		

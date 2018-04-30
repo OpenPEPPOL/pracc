@@ -17,6 +17,7 @@
 			<Description>The UBLversion identifier</Description>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T006-R001</Reference>
+			<Reference type="RULE">eSENS-T006-R019</Reference>
 			<Value type="FIXED">2.2</Value>
 
 		</Element>

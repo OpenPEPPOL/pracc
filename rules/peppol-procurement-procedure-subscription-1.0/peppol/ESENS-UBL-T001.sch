@@ -33,11 +33,13 @@
             <assert id="eSENS-T001-R029" flag="fatal"
                 test="count(distinct-values(cac:ProcurementProjectLotReference/cbc:ID)) = count(cac:ProcurementProjectLotReference/cbc:ID)"
                 >[eSENS-T001-R029] Lot identifiers MUST be unique.</assert>
+            <assert id="eSENS-T001-R034" flag="fatal" test="(cbc:UBLVersionID)">[eSENS-T001-R034] An Expression of Interestx' MUST have a syntax identifier.</assert>
+            
             <report id="eSENS-T001-S301" flag="warning" test="(ext:UBLExtensions)"><value-of
                     select="$syntaxError"/>[eSENS-T001-S301] UBLExtensions SHOULD NOT be
                 used.</report>
-            <report id="eSENS-T001-S302" flag="warning" test="(cbc:UBLVersionID)">[<value-of
-                    select="$syntaxError"/>eSENS-T001-S302] UBLVersionID SHOULD NOT be used</report>
+            
+       
             <report id="eSENS-T001-S305" flag="warning" test="(cbc:ProfileExectuionID)"><value-of
                     select="$syntaxError"/>[eSENS-T001-S305] ProfileExecutionID SHOULD NOT be
                 used.</report>
@@ -65,6 +67,11 @@
             <report id="eSENS-T001-S344" flag="warning" test="(cac:ProcurementProject)"><value-of
                     select="$syntaxError"/>[eSENS-T001-S344] ProcurementProject SHOULD NOT be
                 used.</report>
+        </rule>
+        
+        <rule context="ubl:ExpressionOfInterestRequest/cbc:UBLVersionID">
+            <assert id="eSENS-T001-R033" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T001-R033] UBLVersionID value MUST be '2.2'</assert>
+            <report id="eSENS-T001-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T001-S302] UBLVersionID SHOULD NOT contain any attributes.</report>
         </rule>
         <rule context="ubl:ExpressionOfInterestRequest/cbc:CustomizationID">
             <assert id="eSENS-T001-R002" flag="fatal"

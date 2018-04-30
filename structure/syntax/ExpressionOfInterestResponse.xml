@@ -9,6 +9,14 @@
 		<Term>t002:ExpressionOfInterestResponse</Term>
 		<Name>Expression Of Interest Response, root element</Name>
 		<Element>
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL Verison identifier</Name>
+			<DataType>Identifier</DataType>
+			<Reference type="RULE">eSENS-T002-R024</Reference>
+			<Reference type="RULE">eSENS-T002-R029</Reference>
+			<Value type="FIXED">2.2</Value>	
+		</Element>
+		<Element>
 			<Term>cbc:CustomizationID</Term>
 			<Name>Customization identifier</Name>
 			<Description>Identifies the specification of content and rules that apply to the transaction.</Description>

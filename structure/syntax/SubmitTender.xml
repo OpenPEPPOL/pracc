@@ -15,8 +15,8 @@
 			<Name>UBL Verison identifier</Name>
 			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T005-R001</Reference>
-			<Value type="FIXED">2.2</Value>
-		
+			<Reference type="RULE">eSENS-T005-R021</Reference>
+			<Value type="FIXED">2.2</Value>	
 		</Element>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
@@ -172,7 +172,7 @@
 				</Element>
 			</Element>
 		</Element>
-		<Element cardinality="0..n">
+		<Element cardinality="1..n">
 			<Term>cac:TendererParty</Term>
 			<Name>Economic operator</Name>
 			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
@@ -332,7 +332,7 @@
 				</Element>
 			</Element>
 		</Element>
-		<Element cardinality="0..1">
+		<Element>
 			<Term>cac:ContractingParty</Term>
 			<Name>Contracting body</Name>
 			<Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>

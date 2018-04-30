@@ -35,6 +35,11 @@
             <report id="eSENS-T005-S356" flag="warning" test="(cac:OriginatorCustomerParty)"><value-of select="$syntaxError"/>[eSENS-T005-S356] OriginatorCustomerParty SHOULD NOT be used.</report>
         </rule>
         
+        <rule context="ubl:Tender/cbc:UBLVersionID">
+            <assert id="eSENS-T005-R021" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T005-R021] UBLVersionID value MUST be '2.2'</assert>
+            <report id="eSENS-T005-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T005-S302] UBLVersionID SHOULD NOT contain any attributes.</report>
+        </rule>
+        
         <rule context="ubl:Tender/cbc:CustomizationID">
             <assert id="eSENS-T005-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0'">[eSENS-T005-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0'</assert>
             <report id="eSENS-T005-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T005-S303] CustomizationID SHOULD NOT contain any attributes.</report>
@@ -56,9 +61,6 @@
             <assert id="eSENS-T005-R007" flag="fatal" test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">[eSENS-T005-R007] IssueTime MUST have a granularity of seconds</assert>
         </rule>
         
-        <rule context="ubl:Tender/cbc:UBLVersionID">
-            <report id="eSENS-T005-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T005-S302] UBLVersionID SHOULD NOT contain any attributes.</report>
-        </rule>
         
         <rule context="ubl:Tender/cbc:ContractFolderID">
             <report id="eSENS-T005-S310" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T005-S310] ContractFolderID SHOULD NOT contain any attributes.</report>

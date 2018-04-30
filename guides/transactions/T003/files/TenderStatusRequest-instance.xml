@@ -3,6 +3,7 @@
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t003:ver1.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p002:01:1.0</cbc:ProfileID>
     <cbc:ID schemeURI="urn:uuid">562a35d2-504d-4670-a07f-46d4ca0443e6</cbc:ID>
