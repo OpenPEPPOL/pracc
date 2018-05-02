@@ -8,8 +8,8 @@
 
 
 //CEN BII3
-:bii3: http://www.cenbii.eu/cen-wsbii-3/[CEN WS/BII 3]
-:bii: http://www.cenbii.eu/[CEN WS/BII]
+:bii3: hhttp://cenbii.eu/activities/cen-wsbii-3/[CEN WS/BII 3]
+:bii: http://cenbii.eu/[CEN WS/BII]
 
 :link-esens: https://www.esens.eu/[e-SENS]
 :un-ece-1001: http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001]

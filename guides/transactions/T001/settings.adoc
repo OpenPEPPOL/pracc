@@ -16,5 +16,5 @@ include::../shared/links.adoc[]
 :name-transaction-org: "Trdm081 Subscribe to Procedure"
 :name-transaction: T001 - Subscribe to Procedure
 :name-trans-short: Subscribe to Procedure
-:name-syntax: ExpressionOfInterest
+:name-syntax: ExpressionOfInterestRequest
 :link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
