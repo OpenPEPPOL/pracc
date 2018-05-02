@@ -1,6 +1,0 @@
-
-= Syntax Mapping
-
-Syntax mapping of T004:
-
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/CallForTenders/tree/[{name-transaction}]

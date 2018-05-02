@@ -1,4 +1,4 @@
-include::links.adoc[]
+include::../shared/links.adoc[]
 
 :lang: en
 
@@ -17,3 +17,5 @@ include::links.adoc[]
 :name-transaction-org: "Trdm045 Tender Reception Notification"(CWA 17027-205)
 :name-transaction: T006 - Tender Reception Notification
 :name-trans-short: Tender Reception Notification
+:name-syntax: TenderReceipt
+:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]

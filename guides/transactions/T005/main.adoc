@@ -28,13 +28,13 @@ include::requirements/index.adoc[]
 
 include::codes/index.adoc[]
 
-include::identifiers/cust-id.adoc[]
+include::identifiers/index.adoc[]
 
 include::validation-transaction-rules/index.adoc[]
 
 include::descriptions/index.adoc[]
 
-include::syntax/index.adoc[]
+include::../shared/syntax-mapping.adoc[]
 
 include::annex/index.adoc[]
 

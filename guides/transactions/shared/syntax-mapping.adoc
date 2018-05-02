@@ -1,0 +1,6 @@
+
+= Syntax Mapping
+
+Syntax mapping for {name-trans-short}:
+
+* {link-mapping}

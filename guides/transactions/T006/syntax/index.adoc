@@ -1,6 +1,0 @@
-
-= Syntax Mapping
-
-Syntax mapping of T006:
-
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/TenderReceipt/tree/[{name-transaction}]

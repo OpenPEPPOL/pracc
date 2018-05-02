@@ -1,4 +1,4 @@
-include::links.adoc[]
+include::../shared/links.adoc[]
 
 :lang: en
 
@@ -16,3 +16,5 @@ include::links.adoc[]
 :name-transaction-org: "Trdm090 Tender"(CWA 17027-218)
 :name-transaction: T005 - Tender
 :name-trans-short: Tender
+:name-syntax: Tender
+:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
