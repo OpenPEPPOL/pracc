@@ -9,7 +9,7 @@ include::../../shared/peppol.adoc[]
 | TransactionID
 | Transaction name
 | Short Description
-|  CustomizationId
+| `cbc:CustomizationID`
 
 | T005
 | Tender

@@ -1,13 +1,15 @@
+
+
 include::../../shared/peppol.adoc[]
 
 [cols="2,2,3,5", options="header"]
 .Customization ID to be used for this transaction.
 |===
 
-| Transaction ID
+| TransactionID
 | Transaction name
 | Short Description
-| `cbc:CustomizationId
+| `cbc:CustomizationID`
 
 | T004
 | CallForTenders
