@@ -423,7 +423,7 @@
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
-					<Reference type="RULE">BII3-T82-R021</Reference>
+					<Reference type="RULE">BII3-T83-R021</Reference>
 					<Value type="FIXED">PR_PROC</Value>
 					
 				</Attribute>
@@ -552,7 +552,7 @@
 					<Attribute>
 						<Term>listID</Term>
 						<Name>List identifier</Name>
-						<Reference type="RULE">BII3-T83-R19</Reference>
+						<Reference type="RULE">BII3-T83-R019</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
 				</Element>
@@ -570,7 +570,7 @@
 					<Attribute>
 						<Term>listID</Term>
 						<Name>List identifier</Name>
-						<Reference type="RULE">BII3-T83-R19</Reference>
+						<Reference type="RULE">BII3-T83-R019</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
 				</Element>
