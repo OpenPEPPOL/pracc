@@ -1,0 +1,20 @@
+
+
+include::../../shared/peppol.adoc[]
+
+[cols="2,2,3,5", options="header"]
+.Customization ID to be used for this transaction.
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+| `cbc:CustomizationID`
+
+| T006
+| TenderReceipt
+| CA receives the tender and sends acknowledgement to EO
+| urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended: +
+urn:fdc:peppol.eu:2017:pracc:t006:ver1.0
+
+|===

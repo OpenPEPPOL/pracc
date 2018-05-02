@@ -4,6 +4,7 @@
 :toclevels: 2
 :sectnums:
 :sectanchors:
+:icons: font
 :source-highlighter: coderay
 :sourcedir: .
 :gendoc:
@@ -14,17 +15,17 @@
 
 * CustomizationID and profileID values must be changed
 ** Should be approved by TiCC code list team
-** Correct chapters on profileID and CustomizationID
-** Validation artefacts
-** Syntax mapping
+** icon:check-circle[role="green"] Correct chapters on profileID and CustomizationID
+** icon:check-circle[role="green"] Validation artefacts
+** icon:check-circle[role="green"] Syntax mapping
 
 include::cust-profile-id.adoc[]
 
-* For complex elements where there is only one child element, the child element is set to mandatory
-* Where there are mismatches between BII or eSens validation rules and cardinality in the model, the validation rule is used.
+* icon:check-circle[role="green"]For complex elements where there is only one child element, the child element is set to mandatory
+* icon:check-circle[role="green"]Where there are mismatches between BII or eSens validation rules and cardinality in the model, the validation rule is used.
 ** Example is DocumentHash and method for Submit tender (T005)
 * Copyright statement - should be removed or changed?
-* Introduction chapter, figure 1, change to show eSens -> PEPPOL?
+* icon:check-circle[role="green"] Introduction chapter, figure 1, change to show eSens -> PEPPOL?
 
 == Call For Tenders (T004)
 
@@ -36,7 +37,7 @@ include::cust-profile-id.adoc[]
 
 |UBLVersionID
 |Value 2.2 not validated
-|Add validation to ensure value 2.2
+| icon:check-circle[role="green"] Add validation to ensure value 2.2
 
 | Tendering terms/additional conditions
 | Code list not mentioned
@@ -81,15 +82,15 @@ include::cust-profile-id.adoc[]
 
 |UBLVersionID
 |Value 2.2 not validated
-|Add validation to ensure value 2.2
+|icon:check-circle[role="green"] Add validation to ensure value 2.2
 
 |Economic operator
 | Cardinality 0..n
-| Change to 1..1
+| icon:check-circle[role="green"] Change to 1..n
 
 |Contracting body
 |Cardinality 0..1
-|Change to 1..1
+|icon:check-circle[role="green"] Change to 1..1
 
 |===
 
@@ -105,11 +106,11 @@ include::cust-profile-id.adoc[]
 
 |CustomizationID
 |Wrong value validated?
-|Review validation
+|icon:check-circle[role="green"] Review validation
 
 |UBLVersionID
 |Value 2.2 not validated
-|Add validation to ensure value 2.2
+|icon:check-circle[role="green"] Add validation to ensure value 2.2
 
 |===
 
@@ -123,7 +124,7 @@ include::cust-profile-id.adoc[]
 
 |UBLVersionID
 |UBLVersionID and Value 2.2 should not be used according to validation.
-|Add element and validation to ensure value 2.2
+|icon:check-circle[role="green"] Add element and validation to ensure value 2.2
 
 |===
 
@@ -139,7 +140,7 @@ include::cust-profile-id.adoc[]
 
 |UBLVersionID
 |UBLVersionID and Value 2.2 should not be used according to validation.
-|Add element and validation to ensure value 2.2
+|icon:check-circle[role="green"] Add element and validation to ensure value 2.2
 
 
 |===
@@ -154,6 +155,6 @@ include::cust-profile-id.adoc[]
 
 |UBLVersionID
 |UBLVersionID and Value 2.2 should not be used according to validation.
-|Add element and validation to ensure value 2.2
+|icon:check-circle[role="green"] Add element and validation to ensure value 2.2
 
 |===

@@ -1,0 +1,19 @@
+
+
+include::../../shared/peppol.adoc[]
+
+[cols="2,2,3,5", options="header"]
+.Customization ID to be used for this transaction.
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+|  CustomizationId
+
+| T005
+| Tender
+| EO sends his tender for the procurement project to CA
+| urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended: +
+urn:fdc:peppol.eu:2017:pracc:t005:ver1.0
+|===

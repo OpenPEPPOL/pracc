@@ -40,3 +40,5 @@
 :Profile54x: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/039.htm[ProfileID54x]
 :T90_DocRef: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/0314.htm[Document_Reference]
 :T90_DocTypeCode: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/0317.htm
+
+:link-main-site: http://test-docs.peppol.eu/pracc/[Main documentation site]

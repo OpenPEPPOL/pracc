@@ -1,22 +1,23 @@
 
 = PEPPOL Identifiers
 
-PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment. The e-Tendering pilot adopts and extends the PEPPOL Policy in the following ways:
+PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment.
 
 == Profile ID
 
+IMPORTANT:: All transactions within this profile uses the same profile identifier.
+
 [cols="2,2,4,4", options="header"]
-.The table below shows values to be used for the Profile ID per transaction.
+.The table below shows values to be used for the Profile ID
 |===
 
 | TransactionID
 | Transaction name
 | Short Description
-| Profile ID
-
+| `cbc:ProfileID`
 
 | T004
-| 	CallForTenders
+| CallForTenders
 | CA sends all procurement project documents to EO
 | urn:fdc:peppol.eu:2017:pracc:p002:01:1.0
 |===

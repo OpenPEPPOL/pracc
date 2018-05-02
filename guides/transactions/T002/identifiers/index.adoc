@@ -1,0 +1,16 @@
+include::../../shared/peppol.adoc[]
+
+[cols="2,2,3,5", options="header"]
+.Customization ID to be used for this transaction.
+|===
+| TransactionID
+| Transaction name
+| Short Description
+|  CustomizationId
+
+| T002
+| ExpressionOfInterestResponse
+| CA responds to the subscribe to procedure
+| urn:www.cenbii.eu:transaction:biitrdm082:ver3.0:extended: +
+urn:fdc:peppol.eu:2017:pracc:t002:ver1.0
+|===

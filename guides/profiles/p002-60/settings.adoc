@@ -10,4 +10,4 @@ include::links.adoc[]
 
 :name-op-en:  pre-award OpenPEPPOL AISBL
 :name-profile-org: "Profile BII60 Tender Status Inquiry" (CWA 17027-123)
-:name-profile: Profile P002/60 - "Procurement document access"
+:name-profile: Profile P002 - "Procurement document access"

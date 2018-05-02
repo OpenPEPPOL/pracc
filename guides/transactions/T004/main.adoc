@@ -27,7 +27,7 @@ include::requirements/index.adoc[]
 
 include::codes/index.adoc[]
 
-include::identifiers/peppol.adoc[]
+include::identifiers/index.adoc[]
 
 include::validation-transaction-rules/index.adoc[]
 
