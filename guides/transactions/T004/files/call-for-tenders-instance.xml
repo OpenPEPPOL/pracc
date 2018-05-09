@@ -14,8 +14,8 @@
     <cac:AdditionalDocumentReference>
         <cbc:ID>tenderenckey.cer</cbc:ID>
         <cbc:IssueDate>2016-06-27+02:00</cbc:IssueDate>
-        <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PROVIDED</cbc:DocumentTypeCode>
-        <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NO RETURN</cbc:DocumentStatusCode>
+        <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
+        <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
         <cac:Attachment>
             <cac:ExternalReference>
                 <cbc:URI>cid:tenderenckey.cer</cbc:URI>
@@ -25,8 +25,8 @@
     <cac:AdditionalDocumentReference>
         <cbc:ID>Bekanntmachung</cbc:ID>
         <cbc:IssueDate>2016-10-20+02:00</cbc:IssueDate>
-        <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PROVIDED</cbc:DocumentTypeCode>
-        <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NO RETURN</cbc:DocumentStatusCode>
+        <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
+        <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
         <cac:Attachment>
             <cac:ExternalReference>
                 <cbc:FileName>bekanntmachung.html</cbc:FileName>
@@ -53,7 +53,7 @@
     </cac:ContractingParty>
     <cac:TenderingTerms>
         <cbc:VariantConstraintIndicator>false</cbc:VariantConstraintIndicator>
-        <cbc:AdditionalConditions>RETURN W/O SIGNATURE</cbc:AdditionalConditions>
+        <cbc:AdditionalConditions>WOS</cbc:AdditionalConditions>
         <cac:TenderRecipientParty>
             <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID>
         </cac:TenderRecipientParty>

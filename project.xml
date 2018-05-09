@@ -97,6 +97,31 @@
 		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
 		<Title>CENBII T006 rules</Title>
 	</Resource>
-
+	
+	<!-- Code lists -->
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/addCond.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/contractType.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/docStatus.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/docType.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/procedureType.xml</Path>
+	</Resource>
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/procurementType.xml</Path>
+	</Resource>
 
 </Project>

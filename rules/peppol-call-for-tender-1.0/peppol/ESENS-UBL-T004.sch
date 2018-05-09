@@ -74,17 +74,17 @@
             <report id="eSENS-T004-S312" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T004-S312] VersionID SHOULD NOT have any attributes.</report>
         </rule>
         
-        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='REQUIRED']">
-            <assert id="eSENS-T004-S317" flag="warning" test="count(./*)-count(./cbc:ID)-count(./cbc:DocumentTypeCode)-count(./cbc:DocumentStatusCode)=0"><value-of select="$syntaxError"/>[eSENS-T004-S317] AdditionalDocumentReference for a Document with DocumentTypeCode='REQUIRED' SHOULD NOT contain any elements but ID, DocumentTypeCode, DocumentStatusCode</assert>
-            <report id="eSENS-T004-R023" flag="fatal" test="normalize-space(./cbc:DocumentStatusCode)='NO RETURN'">[eSENS-T004-R023] DocumentStatusCode 'NO RETURN' is NOT valid for an AdditionalDocumentReference with DocumentType 'REQUIRED'</report>
-            <report id="eSENS-T004-S326" flag="warning" test="count(./cbc:DocumentDescription) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S326] DocumentDescription SHOULD NOT be used more than once when DocumentTypeCode = 'REQUIRED'.</report>
+        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='REQ']">
+            <assert id="eSENS-T004-S317" flag="warning" test="count(./*)-count(./cbc:ID)-count(./cbc:DocumentTypeCode)-count(./cbc:DocumentStatusCode)=0"><value-of select="$syntaxError"/>[eSENS-T004-S317] AdditionalDocumentReference for a Document with DocumentTypeCode='REQ' SHOULD NOT contain any elements but ID, DocumentTypeCode, DocumentStatusCode</assert>
+            <report id="eSENS-T004-R023" flag="fatal" test="normalize-space(./cbc:DocumentStatusCode)='NR'">[eSENS-T004-R023] DocumentStatusCode 'NR' is NOT valid for an AdditionalDocumentReference with DocumentType 'REQ'</report>
+            <report id="eSENS-T004-S326" flag="warning" test="count(./cbc:DocumentDescription) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S326] DocumentDescription SHOULD NOT be used more than once when DocumentTypeCode = 'REQ'.</report>
         </rule>
 
-        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='PROVIDED']">
+        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='PRO']">
             <assert id="eSENS-T004-R036" flag="fatal" test="(./cac:Attachment)">[eSENS-T004-R036] A Provided Document Referernce MUST reference the provided document.</assert>
         </rule>
 
-        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='PROVIDED']/cbc:DocumentDescription">
+        <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='PRO']/cbc:DocumentDescription">
             <report id="eSENS-T004-R030" flag="fatal" test="/ubl:CallForTenders/cac:ProcurementProjectLot[cbc:ID=normalize-space(.)]/cbc:ID != normalize-space(.)">[eSENS-T004-R030] DocumentDescription MUST be a valid Procurement Project Lot Identifier"/></report>
         </rule>
         
@@ -101,7 +101,7 @@
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference/cbc:DocumentTypeCode">
             <assert id="eSENS-T004-R017" flag="fatal" test="./@listID">[eSENS-T004-R017] DocumentTypeCode MUST have a list Identifier.</assert>
             <assert id="eSENS-T004-R018" flag="fatal" test="normalize-space(./@listID)='urn:eu:esens:cenbii:documentType'">[eSENS-T004-R018] listID for DocumentTypeCode MUST be 'urn:eu:esens:cenbii:documentType'.</assert>
-            <assert id="eSENS-T004-R019" flag="fatal" test="matches(normalize-space(.),'^(PROVIDED|REQUIRED)$')">[eSENS-T004-R019] DocumentTypeCode MUST be one of 'PROVIDED' or 'REQUIRED'.</assert>
+            <assert id="eSENS-T004-R019" flag="fatal" test="matches(normalize-space(.),'^(PRO|REQ)$')">[eSENS-T004-R019] DocumentTypeCode MUST be one of 'PRO' or 'REQ'.</assert>
             <report id="eSENS-T004-S320" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[eSENS-T004-S320] DocumentTypeCode SHOULD NOT have any attributes but listID.</report>
         </rule>
         
@@ -119,7 +119,7 @@
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference/cbc:DocumentStatusCode">
             <assert id="eSENS-T004-R020" flag="fatal" test="./@listID">[eSENS-T004-R020] DocumentStatusCode MUST have a list Identifier.</assert>
             <assert id="eSENS-T004-R021" flag="fatal" test="normalize-space(./@listID)='urn:eu:esens:cenbii:documentStatusType'">[eSENS-T004-R021] listID for DocumentStatusCode MUST be 'urn:eu:esens:cenbii:documentStatusType'.</assert>
-            <assert id="eSENS-T004-R022" flag="fatal" test="matches(normalize-space(.),'^(NO RETURN|RETURN W/O SIGNATURE|RETURN WITH ADVANCED SIGNATURE|RETURN WITH QUALIFIED SIGNATURE)$')">[eSENS-T004-R022] DocumentStatusCode MUST be one of 'NO RETURN', 'RETURN W/O SIGNATURE', 'RETURN WITH ADVANCED SIGNATURE' or 'RETURN WITH QUALIFIED SIGNATURE'</assert>
+            <assert id="eSENS-T004-R022" flag="fatal" test="matches(normalize-space(.),'^(NR|RWOS|RWAS|RWQS)$')">[eSENS-T004-R022] DocumentStatusCode MUST be one of NR,RWOS, RWAS ,RWQS</assert>
             <report id="eSENS-T004-S324" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[eSENS-T004-S324] DocumentStatusCode SHOULD NOT have any attributes but listID.</report>
         </rule>
         
@@ -218,7 +218,7 @@
         </rule>
         
         <rule context="ubl:CallForTenders/cac:TenderingTerms/cbc:AdditionalConditions">
-            <assert id="eSENS-T004-R033" flag="fatal" test="matches(normalize-space(.),'^RETURN (W/O SIGNATURE|WITH (ADVANCED|QUALIFIED) SIGNATURE)$')">[eSENS-T004-R033] AdditionalConditions value MUST be one of 'RETURN W/O SIGNATURE', 'RETURN WITH ADVANCED SIGNATURE, 'RETURN WITH QUALIFIED SIGNATURE'.</assert>
+            <assert id="eSENS-T004-R033" flag="fatal" test="matches(normalize-space(.),'^(WOS|WAS|WQS)$')">[eSENS-T004-R033] AdditionalConditions value MUST be one of 'WOS', 'WAS, 'WQS'.</assert>
             <report id="eSENS-T004-S360" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T004-S360] AdditionalConditions SHOULD NOT contain any attributes.</report>
         </rule>
         

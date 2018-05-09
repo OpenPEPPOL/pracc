@@ -36,19 +36,6 @@
 :link-syntax: http://test-docs.peppol.eu/pracc/syntax
 :link-main-site: http://test-docs.peppol.eu/pracc/[Main documentation site]
 
-////
-
-//Schematrons
-
-:Trdm090_sch: https://github.com/difi/vefa-preaward/tree/master/rules/esens-trdm090-1.0[ESENS-UBL-T90.sch]
-:Trdm045_sch: https://github.com/difi/vefa-preaward/tree/master/rules/esens-trdm045-1.0[ESENS-UBL-T45.sch]
-
-// Old profiles
-:link-profil47: https://test-vefa.difi.no/esens/gefeg/callfortenders/1.0/
-:link-profil54-90: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/
-:link-profil54-45: https://test-vefa.difi.no/esens/gefeg/tenderreceipt/1.0/
-:Profile54x: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/039.htm[ProfileID54x]
-:T90_DocRef: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/0314.htm[Document_Reference]
-:T90_DocTypeCode: https://test-vefa.difi.no/esens/gefeg/submittender/1.0/0317.htm
-
-////
+// code list links
+:link-iso3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]
+:link-addCond: http://test-docs.peppol.eu/pracc/[Main documentation site]

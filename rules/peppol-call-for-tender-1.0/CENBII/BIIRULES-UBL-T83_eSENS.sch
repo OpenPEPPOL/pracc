@@ -93,27 +93,13 @@
 
 
       <rule context="cbc:ProcedureCode" flag="fatal">
-         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 C 4 6 T V 8 9 Z A B E F G ',concat(' ',normalize-space(.),' ') ) ) )"
-                 flag="fatal" id="CL-T83-R001">[CL-T83-R001]-A procedure type MUST be one of the following:
-- Open
-- Restricted
-- Accelerated restricted
-- Competitive dialogue
-- Negotiated with a call for competition
-- Accelerated negotiated
-- Negotiated without a call for competition
-- Award of a contract without prior publication of a contract notice
-- Direct award</assert>
+         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 C 4 6 T V 8 9 Z A ',concat(' ',normalize-space(.),' ') ) ) )"
+                 flag="fatal" id="CL-T83-R001">[CL-T83-R001]-A procedure type MUST be one of the following:  1, 2, 3, C, 4, 6, T, V, 8, 9, Z, A</assert>
       </rule>
 
       <rule context="cbc:ProcurementTypeCode" flag="fatal">
-         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 4 5 6 9 Z 3 ',concat(' ',normalize-space(.),' ') ) ) )"
-                 flag="fatal" id="CL-T83-R002">[CL-T83-R002]-A procurement project type MUST be one of the following:
-- Works
-- Goods
-- Services
-- Public Works Concession
-- Service Concession</assert>
+         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 4 5 6 9 Z ',concat(' ',normalize-space(.),' ') ) ) )"
+                 flag="fatal" id="CL-T83-R002">[CL-T83-R002]-A procurement project type MUST be one of the following: 1, 2, 4, 5, 6, 9, Z</assert>
       </rule>
 
       <rule context="cbc:MimeCode" flag="fatal">
@@ -127,23 +113,13 @@
       </rule>
 
       <rule context="cbc:ContractingSystemCode" flag="fatal">
-         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 ',concat(' ',normalize-space(.),' ') ) ) )"
-                 flag="fatal" id="CL-T83-R006">[CL-T83-R006]-A procurement contract type MUST be one of the following:
-- Public Contract
-- Establishment of a Framework agreement
-- Setting up a Dynamic Purchasing System
-- Public contract based on a Framework agreement
-- Public contract based on a Dynamic Purchasing System
-
-</assert>
+         <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 ',concat(' ',normalize-space(.),' ') ) ) )"
+                 flag="fatal" id="CL-T83-R006">[CL-T83-R006]-A procurement contract type MUST be one of the following: 1, 2. 3, 4, 5, 6</assert>
       </rule>
 
       <rule context="cbc:SubmissionMethodCode" flag="fatal">
          <assert test="( ( not(contains(normalize-space(.),' ')) and contains( ' ELECTRONIC POSTAL ',concat(' ',normalize-space(.),' ') ) ) )"
-                 flag="fatal" id="CL-T83-R007">[CL-T83-R007]-The submission of the tender MUST be one of the following:
-
-Electronic
-Postal</assert>
+                 flag="fatal" id="CL-T83-R007">[CL-T83-R007]-The submission of the tender MUST be one of the following: ELECTRONIC or  POSTAL</assert>
       </rule>
 
    </pattern>

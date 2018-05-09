@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+    <Title>documentTypeCode</Title>
+    <Identifier>docType</Identifier>
+    <Version>2018-05-04</Version>
+    <Agency>eSENS</Agency>
+    <Code>
+        <Id>PRO</Id>
+        <Name>Provided</Name>
+    </Code>
+    <Code>
+        <Id>REQ</Id>
+        <Name>Required</Name>
+    </Code>
+</Codelist>

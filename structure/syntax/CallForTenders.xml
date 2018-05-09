@@ -117,6 +117,7 @@
 				<Description>A code specifying the type of the document, valid codes are PROVIDED or REQUIRED</Description>
 				<DataType>Code</DataType>
 				<Reference type="RULE">eSENS-T004-R019</Reference>
+				<Reference type="CODE_LIST">docType</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
@@ -156,6 +157,7 @@
 				<DataType>Indicator</DataType>
 				<Reference type="RULE">eSENS-T004-R023</Reference>
 				<Reference type="RULE">eSENS-T004-R022</Reference>
+				<Reference type="CODE_LIST">docStatus</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
@@ -335,6 +337,7 @@
 				<Description>Expected level of signature to be used by the tenderer when submitting the tenders.</Description>
 				<DataType>Text</DataType>
 				<Reference type="RULE">eSENS-T004-R033</Reference>
+				<Reference type="CODE_LIST">addCond</Reference>
 			</Element>
 			
 			<Element cardinality="0..1">
@@ -417,6 +420,7 @@
 				<Name>Procedure type</Name>
 				<Description>A code specifying the type of this tendering process. The coded version of the description of procedure. (E.g.) Open procedure, negotiated etc.</Description>
 				<DataType>Code</DataType>
+				<Reference type="CODE_LIST">procedureType</Reference>
 				<Reference type="RULE">BII3-T83-R009</Reference>
 				<Reference type="RULE">CL-T83-R001</Reference>
 				
@@ -435,6 +439,7 @@
 				<Description>Specifies that the aim of the awarding process is to establish a public contract or to setup a framework agreement or a dynamic purchasing system. For framework agreement and DPS,  indicates whether the new contract will be based on an already established framework agreement or dynamic purchasing system or not.</Description>
 				<DataType>Code</DataType>
 				<Reference type="RULE">CL-T83-R006</Reference>
+				<Reference type="CODE_LIST">contractType</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
@@ -528,6 +533,7 @@
 				<Name>Procurement project type</Name>
 				<Description>Type of contract (Works, Supplies or Services).</Description>
 				<DataType>Code</DataType>
+				<Reference type="CODE_LIST">procurementType</Reference>
 				<Reference type="RULE">BII3-T83-R015</Reference>
 				<Reference type="RULE">CL-T83-R002</Reference>
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+    <Title>AdditionalConditionsCode</Title>
+    <Identifier>addCond</Identifier>
+    <Version>2018-05-04</Version>
+    <Agency>eSENS</Agency>
+    <Code>
+        <Id>WOS</Id>
+        <Name>Return without signature</Name>
+    </Code>
+    <Code>
+        <Id>WAS</Id>
+        <Name>Return with advanced signature</Name>
+    </Code>
+    <Code>
+        <Id>WQS</Id>
+        <Name>Return with qualified signature</Name>
+    </Code>
+</Codelist>
