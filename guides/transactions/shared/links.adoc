@@ -38,4 +38,3 @@
 
 // code list links
 :link-iso3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]
-:link-addCond: http://test-docs.peppol.eu/pracc/[Main documentation site]

@@ -123,5 +123,8 @@
 		<Type>CodeList-1</Type>
 		<Path>structure/codelist/procurementType.xml</Path>
 	</Resource>
-
+	<Resource>
+		<Type>CodeList-1</Type>
+		<Path>structure/codelist/submissionMethod.xml</Path>
+	</Resource>
 </Project>

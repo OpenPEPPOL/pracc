@@ -21,7 +21,7 @@ h| Qualifier
 h| Document location
 | `cbc:ProcedureCode`
 h| Source codelist
-| link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[OJEU]
+| See codelist section on {link-main-site}
 |===
 
 == Procurement project type
@@ -32,7 +32,7 @@ h| Qualifier
 h| Document location
 | `cbc:ProcurementTypeCode`
 h| Source codelist
-| link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[OJEU]
+| See codelist section on {link-main-site}
 |===
 
 == Document Type Code
@@ -43,7 +43,7 @@ h| Qualifier
 h| Document location
 | `cbc:DocumentTypeCode`
 h| Source codelist
-|   link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[eSENS]
+|  See codelist section on {link-main-site}
 |===
 
 
@@ -55,7 +55,7 @@ h| Qualifier
 h| Document location
 | `cbc:DocumentStatusCode`
 h| Source codelist
-|  link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[eSENS]
+| See codelist section on {link-main-site}
 |===
 
 
@@ -90,7 +90,7 @@ h| Qualifier
 h| Document location
 | `cbc:ContractingSystemCode`
 h| Source codelist
-| CEN BII
+| See codelist section on {link-main-site}
 |===
 
 == Backup for electronic submission indicator /Electronic submission required indicator
@@ -101,30 +101,5 @@ h| Qualifier
 h| Document location
 | `cbc:SubmissionMethodCode`
 h| Source codelist
-| CEN BII
+| See codelist section on {link-main-site}
 |===
-
-////
-== #Realized Location#
-[cols="1,4"]
-|===
-h| Qualifier
-| NUTS (ID)
-h| Document location
-| `cac:RealizedLocation/cbc:ID`
-h| Source codelist
-| CEN BII
-|===
-
-== #Item Classification Code#
-[cols="1,4"]
-|===
-h| Qualifier
-| CPV (listID)
-h| Document location
-| `cbc:ItemClassificationCode/@listID`
-h| Source codelist
-| CEN BII
-|===
-
-////

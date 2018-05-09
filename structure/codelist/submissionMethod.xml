@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Codelist xmlns="urn:fdc:difi.no:2017:vefa:CodeList-1">
+    <Title>SubmissionMethodCode</Title>
+    <Identifier>submissionMethod</Identifier>
+    <Version>2018-05-04</Version>
+    <Agency>eSENS</Agency>
+    <Code>
+        <Id>POSTAL</Id>
+        <Name>Paper submission</Name>
+    </Code>
+    <Code>
+        <Id>ELECTRONIC</Id>
+        <Name>Electronic submission</Name>
+    </Code>
+</Codelist>
+
+
+

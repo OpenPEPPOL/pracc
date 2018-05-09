@@ -454,6 +454,7 @@
 				<Description>Indicator whether postal submission of the tender is merely a backup for the electronic submission</Description>
 				<DataType>Indicator</DataType>
 				<Reference type="RULE">CL-T83-R007</Reference>
+				<Reference type="CODE_LIST">submissionMethod</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
