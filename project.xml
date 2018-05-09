@@ -3,7 +3,7 @@
 
 	<Name>PEPPOL BIS Pre-Award e-Sens Transition-In</Name>
 
-	<Documentation path="remark/">Syntax mapping remarks</Documentation>
+	
 	<Documentation path="profiles/p001/">P001 - Procurement procedure subscription</Documentation>
 	<Documentation path="profiles/p002-60/">P002 - Procurement document access</Documentation>
 	<Documentation path="profiles/p003/">P003 - Tender Submission</Documentation>
