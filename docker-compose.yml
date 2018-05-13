@@ -8,7 +8,7 @@ services:
      - ./target:/target
 
   structure:
-    image: "difi/vefa-structure:0.5"
+    image: "difi/vefa-structure:0.6"
     volumes:
      - .:/src
      - ./target:/target
