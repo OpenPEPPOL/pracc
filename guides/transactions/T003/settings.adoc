@@ -6,7 +6,7 @@ include::../shared/links.adoc[]
 :minor: 0.1
 :revision: 0.1.0
 :shared-dir: ../../shared
-:rules-dir: ../../../../rules/peppol-call-for-tender-1.0/peppol-res
+:rules-dir: ../rules/peppol-tender-status-inquiry-1.0/peppol-res
 
 :name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 
@@ -18,3 +18,7 @@ include::../shared/links.adoc[]
 :name-trans-short: Tender Status Inquiry
 :name-syntax: TenderStatusRequest
 :link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
+
+
+rules/peppol-call-for-tender-1.0
+guides/shared
