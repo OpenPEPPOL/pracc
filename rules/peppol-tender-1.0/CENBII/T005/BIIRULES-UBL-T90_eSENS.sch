@@ -3,11 +3,8 @@
         xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate"
         xmlns:UBL="urn:X-test:UBL:Pre-award:Tender"
         queryBinding="xslt2">
-  <title>BIIRULES  T90 bound to UBL</title>
-  <title>
-    Modified by eSENS:
-    * fixed test conditions in BII3-T90-R010 and R11: wrong documentTypeCode (310 instead of 311) and typo in the elements' name 
-  </title>
+  <title>BIIRULES  T90 bound to UBL, modified by eSens</title>
+
   <ns prefix="cbc"
        uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
   <ns prefix="cac"

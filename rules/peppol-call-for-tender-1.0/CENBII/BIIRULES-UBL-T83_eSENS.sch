@@ -3,11 +3,8 @@
         xmlns:cac="urn:X-test:UBL:Pre-award:CommonAggregate"
         xmlns:UBL="urn:X-test:UBL:Pre-award:CallForTenders"
         queryBinding="xslt2">
-  <title>BIIRULES  T83 bound to UBL</title>
-  <title>
-         Modified by eSENS
-         * fixed BII3-T83-R011 since the business rule is wrong for open procedures (not having a participation phase) 
-  </title>
+  <title>BIIRULES  T83 bound to UBL, modified by eSens</title>
+
   
   <ns prefix="cbc"
        uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
