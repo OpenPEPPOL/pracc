@@ -34,5 +34,3 @@
 :link-identifier-policy: http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Identifier+Policies
 
 :link-espd: https://en.wikipedia.org/wiki/European_Single_Procurement_Document
-
-:link-transaction1: ../../transactions/t004/main.html[T004 - Call for Tenders]

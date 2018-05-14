@@ -15,14 +15,12 @@ It applies the Framework as follows:
 * Organization (Organization/Business):
 ** This {peppol} eTendering BIS supports only B2G
 ** This {peppol} eTendering BIS supports cross border, regional and domestic tendering procedures in EU and EEA
-** This {peppol} eTendering BIS can function as a standardized EDI agreement within a trading community
-** This {peppol} eTendering BIS supports linking of business processes within the sending and receiving organization.
-** Organization (Process):
-*** This {peppol} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
+** This  {peppol} eTendering BIS can function as a standardized EDI agreement within a trading community
+** This  {peppol} eTendering BIS supports linking of business processes within the sending and receiving organization.
+* Organization (Process):
+** This  {peppol} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
 
 . Technical interoperability
 * Technical Interaction (Process and semantic implementation):
 ** Binding to {link-e-SENS-SBDH}[e-SENS-SBDH]
 ** {link-e-SENS-SBDH}[ASiC-E container with CAdES signature]
-** link:https://github.com/espd[ESPD Github Account]
-

@@ -1,16 +1,13 @@
-
 = Implementation guidelines
 
 {name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
 
+* UBL Syntax Implementation Guideline for Trdm083 Call for Tenders (CWA 17027-216)
+* Profile BII60 Tender Status Inquiry (CWA 17027-123)
 
-* Profile BII47  Call for Tenders (CWA 17027-112)
-* UBL Syntax Implementation Guideline for Trdm083 Call for Tenders (CWA 17027-212)
-* https://espd.github.io/ESPD-EDM/[ESPD Exchange Data Model]
-
-
+Transaction description for Trdm097 Tender Status Inquiry is based on work done by {link-esens}
 
 {peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T004\[T004 - Call for Tenders]
-* link:https://github.com/espd/[ESPD Github Account]
+* link:..\..\transactions\T003\[T003 Tender Status Inquiry]
+* link:..\..\transactions\T004\[T004 Call for Tenders]

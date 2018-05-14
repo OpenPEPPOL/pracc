@@ -16,16 +16,10 @@ IMPORTANT: All transactions within this profile uses the same profile identifier
 | Short Description
 | `cbc:ProfileID`
 
-| T003
-| TenderStatusRequest
-| EO requests CA for the procurement project documents
-.2+.^| urn:fdc:peppol.eu:2017:pracc:p002:01:1.0
-
 | T004
 | CallForTenders
 | CA sends all procurement project documents to EO
-
-
+| urn:fdc:peppol.eu:2017:pracc:p002:01:1.0
 |===
 
 NOTE: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

@@ -18,6 +18,7 @@ v{revision}
 {description}
 include::{shared-dir}/copyright.adoc[]
 
+
 :leveloffset: +1
 
 include::introduction.adoc[]
@@ -26,14 +27,11 @@ include::principles/index.adoc[]
 
 include::process/index.adoc[]
 
-include::codes/espd.adoc[]
-
 include::codes/peppol.adoc[]
 
 include::revision/index.adoc[]
 
 include::contributors/index.adoc[]
-
 
 
 :leveloffset: -1

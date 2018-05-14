@@ -11,7 +11,7 @@ include::../shared/links.adoc[]
 :name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 
 :name-profile-org: {bii3} “Profile 60 Tender Status Inquiry" (CWA 17027-123)
-:name-profile: Profile P002-60 - "Procurement document access"
+:name-profile: Profile P002 - "Procurement document access"
 
 :name-transaction-org: "Trdm097 Tender Status Inquiry transaction"
 :name-transaction: T003 - Tender Status Inquiry

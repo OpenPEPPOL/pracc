@@ -1,30 +1,43 @@
 
 = Business process
+
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 
-image::../images/procurement-document-access.png[align="center", width=800]
+image::../images/tender-status-inquiry.png[align="center", width=800]
 
 
-[cols="2,10", options="header"]
-.Business process
+
+[cols="3,9", options="header"]
 |===
-| Category | Description
-| Description | The contracting body sends an electronic call for tenders document containing the information required for the economic operator to participate in a tendering process. The call for tenders may also be made available on the web-site and/or the procurement platform of the contracting body. +
-The economic operator assesses the call for tenders information and decides whether to participate in the procurement project or to ignore it. +
-If the economic operator participates, the business process follows through an external process that is not described in this document. +
-If the economic operator ignores the procurement project no notification needs to be sent back to the contracting body.
-| Pre-conditions | The contracting body has decided to use an applicable tendering procedure. +
-In an open procedure all economic operators are given access to the procurement documents. In a restricted procedure economic operators may have access in order to qualify themselves.
-| Post-conditions | The economic operator can proceed to prepare and submit the qualification document/ESPD and/or tender.
+| Category
+| Description
+| Description
+| An economic operator requests the status of a procurement project from the Contracting body, who provides the economic operator with the latest procurement project metadata.
+| Pre-conditions
+| An economic operator has found an interesting business opportunity in a long list of published notices. The economic operator knows the procurement project ID of this business opportunity.
+| Post-conditions
+| The economic operator is aware of the latest information about the procurement project.
 |===
+
 
 [cols="3,2,7", options="header"]
-.Role description
 |===
-| Activity | Role involved | Description
-| Send Call for tenders | Contracting body | The contracting body sends an electronic call for tenders document containing the information required for the economic operator to participate in a tendering process. The call for tenders may also be made available on the web-site and/or the procurement platform of the contracting body.
-| Receive Call for tenders | Economic operator | The economic operator received the call for tenders or has accessed it. If the economic operator complies with the requirements and finds it to be an interesting business proposition, he can proceed to prepare his tender.
+| Activity
+| Role involved
+| Description
+| Send Tender Status Inquiry
+| Economic operator
+| An economic operator has found an interesting business opportunity in a long list of published notices. He would like to know the actual status for this procurement project and sends the tender status inquiry.
+| Receive Tender Status Inquiry
+| Contracting body
+| The contracting body receives the request.
+| Send Call for Tenders
+| Contracting body
+| The contracting body sends the economic operator the latest procurement project meta data.
+| Receive Call for Tenders
+| Economic operator
+| The economic operator receives the latest information about the procurement project.
 |===
 
 :leveloffset: +1
