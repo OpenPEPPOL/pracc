@@ -5,8 +5,8 @@ include::../shared/links.adoc[]
 :doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
 :minor: 0.1
 :revision: 0.1.0
-:shared-dir: ..\..\shared
-:rules-dir: ..\..\..\..\rules\peppol-tender-1.0\peppol-res
+:shared-dir: ../../shared
+:rules-dir: ../../../../rules/peppol-call-for-tender-1.0/peppol-res
 
 :name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 
