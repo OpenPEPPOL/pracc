@@ -18,7 +18,3 @@ include::../shared/links.adoc[]
 :name-trans-short: Tender Status Inquiry
 :name-syntax: TenderStatusRequest
 :link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
-
-
-rules/peppol-call-for-tender-1.0
-guides/shared

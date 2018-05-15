@@ -4,9 +4,9 @@
 
 link:files/TenderStatusRequest-instance.xml[Link to example file]
 
+
+.Example
 [source,xml,indent=0]
 ----
-
-include::../{xml-doc-file}[]
-
+include::../files/TenderStatusRequest-instance.xml[]
 ----
