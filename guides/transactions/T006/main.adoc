@@ -29,8 +29,6 @@ include::codes/index.adoc[]
 
 include::identifiers/index.adoc[]
 
-include::validation-transaction-rules/index.adoc[]
-
 include::descriptions/index.adoc[]
 
 include::../shared/syntax-mapping.adoc[]

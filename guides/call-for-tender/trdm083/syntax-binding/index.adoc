@@ -1,8 +1,0 @@
-
-= Syntax binding
-
-:leveloffset: +1
-
-https://vefa.difi.no/ehf/gefeg/callfortenders/1.0/[Message and structure table].
-
-:leveloffset: -1

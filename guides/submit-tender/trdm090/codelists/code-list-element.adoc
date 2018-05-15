@@ -1,9 +1,0 @@
-
-= Code list for elements
-
-[cols="3,2,2,3,2", options="header"]
-.Code list for coded elements
-|===
-| Business Term | Source | Subset |  Xpath | listId
-| Tender language | ISO639-1 |  |  //cac:DocumentReference/cbc:LocaleCode | ISO639-1
-|===

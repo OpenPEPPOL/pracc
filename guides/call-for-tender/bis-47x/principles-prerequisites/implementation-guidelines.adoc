@@ -1,7 +1,0 @@
-
-= Implementation guidelines
-
-Detailed implementation guidelines for each transaction, can be found here:
-
-*  {link-profil47}[Call for Tenders]
-* ESPD Github Account

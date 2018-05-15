@@ -1,4 +1,0 @@
-
-= Non-functional requirements
-
-For the {link-esens} eTendering BIS all {link-esens} non-functional requirements are applicable as mentioned in CWA3456 Part 119 Profile 54 - Tendering and 35 Advanced Tendering with PreAward Catalogue. When adopting the {link-esens} eTendering BIS implementers must comply to these requirements.

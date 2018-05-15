@@ -1,8 +1,0 @@
-
-= Code lists
-
-:leveloffset: +1
-
-include::code-list-identifers-scheme.adoc[]
-
-:leveloffset: -1

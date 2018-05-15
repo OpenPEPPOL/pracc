@@ -1,5 +1,0 @@
-
-
-= Non-functional requirements
-
-For the {link-esens} eTendering BIS all {link-esens} non-functional requirements are applicable as mentioned in CWA 17027-112 Profile 47 - Call for Tenders. When adopting the {link-esens} eTendering BIS implementers must comply to these requirements.

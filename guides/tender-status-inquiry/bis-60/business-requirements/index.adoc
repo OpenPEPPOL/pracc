@@ -1,7 +1,0 @@
-
-= Business requirements
-
-The Tender Status Inquiry business process includes 2 transactions:
-
-* Trdm097 Tender Status Inquiry
-* Trdm083 Call For Tenders

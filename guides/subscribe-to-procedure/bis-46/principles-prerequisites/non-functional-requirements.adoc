@@ -1,4 +1,0 @@
-
-= Non-functional requirements
-
-For the {link-esens} eTendering BIS all {link-esens} non-functional requirements are applicable as mentioned on link:http://wiki.ds.unipi.gr/display/ESENSPILOTS/D5.7b-1+Pilot+Blueprint+for+Use+Case+5.1.1+-+eTendering[Non Functional Requirement]. When adopting the {link-esens} eTendering BIS implementers must comply to these requirements.

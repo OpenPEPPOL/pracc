@@ -1,8 +1,0 @@
-
-include::peppol.adoc[]
-
-include::asic-e.adoc[]
-
-include::sbdh.adoc[]
-
-include::references.adoc[]
