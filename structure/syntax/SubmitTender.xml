@@ -137,6 +137,14 @@
 				<Element>
 					<Term>cac:ExternalReference</Term>
 					<Name>External reference</Name>
+					
+					<Element cardinality="0..1">
+						<Term>cbc:URI</Term>
+						<Name>Provided document url</Name>
+						<Description>URL where a document that is provided as part of a call for tender can be downloaded.</Description>
+						<DataType>Identifier</DataType>
+					</Element>
+					
 					<Element>
 						<Term>cbc:DocumentHash</Term>
 						<Name>Document digest</Name>
@@ -392,7 +400,7 @@
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Lot identifier</Name>
-					<Description>An identifier for the lot.</Description>
+					<Description>An identifier for the lot, if no division into lots exist, use value 0 (zero) for the identifier.</Description>
 					<DataType>Identifier</DataType>
 				</Element>
 			</Element>

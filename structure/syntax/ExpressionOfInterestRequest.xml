@@ -169,6 +169,12 @@
 						<Reference type="BUSINESS_TERM">tir81-015</Reference>
 					</Element>
 					<Element cardinality="0..1">
+						<Term>cbc:AdditionalStreetName</Term>
+						<Name>Address line 2</Name>
+						<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+						<DataType>Text</DataType>
+					</Element>
+					<Element cardinality="0..1">
 						<Term>cbc:CityName</Term>
 						<Name>City</Name>
 						<Description>The common name of a city where the address is located.</Description>
@@ -263,7 +269,7 @@
 						<Reference type="RULE">eSENS-T001-R032</Reference>
 						<Reference type="BUSINESS_TERM">tir81-022</Reference>
 					</Element>
-					<Element cardinality="0..1">
+					<Element>
 						<Term>cbc:ElectronicMail</Term>
 						<Name>Contact email address</Name>
 						<Description>An e-mail address for the contact point.</Description>
