@@ -12,4 +12,8 @@
         <Id>REQ</Id>
         <Name>Required</Name>
     </Code>
+    <Code>
+        <Id>916</Id>
+        <Name>Related document</Name>
+    </Code>
 </CodeList>
