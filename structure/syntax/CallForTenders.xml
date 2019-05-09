@@ -343,7 +343,14 @@
 			<Element cardinality="0..1">
 				<Term>cac:ProcurementLegislationDocumentReference</Term>
 				<Name>Procurement legislation information</Name>
-				
+
+        <Element>
+          <Term>cbc:ID</Term>
+          <Name>Procurement legislation information document reference identifier</Name>
+          <Description>An identifier for the document reference</Description>
+          <DataType>Identifier</DataType>
+        </Element>
+
 				<Element>
 					<Term>cbc:DocumentDescription</Term>
 					<Name>Legal references</Name>
