@@ -386,7 +386,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Tender procurement documents URI</Name>
-					<Description>URI from where tenderers and interested economic operators can access procurement documents.</Description>
+					<Description>Endpoint ID of the contracting body in four corner model.</Description>
 					<DataType>Identifier</DataType>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -405,7 +405,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Submission of tenders and requests to participate URI</Name>
-					<Description>The URI where the tenderer provides the submission.</Description>
+					<Description>Endpoint ID of the contracting body in four corner model.</Description>
 					<DataType>Identifier</DataType>
 					<Attribute>
 						<Term>schemeID</Term>
