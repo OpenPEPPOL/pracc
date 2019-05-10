@@ -11,7 +11,7 @@ image::bpmn003.png[align="center", width=800]
 | Category | Description
 | Description | An economic operator prepares and then submits a tender to a contracting body, as a response to a call for tender. The tender is to be encrypted according to defined business needs, as specified in thhe Call for Tender. The process of encryption and decryption has to be considered as conformant to the profile. +
 
-If the call for tender was issued as part of an open procedure, an (unstructured) ESPD or other qualification document needs to be sent as an attachment to the tender. The contracting body notifies the economic operator of having received the Tender. +
+The Tender must contain documents as defined by the procedure, e.g. an ESPD, Pre-award catalogue and other structured and unstructured document that the contracting authority requires in the Tender. The contracting body notifies the economic operator of having received the Tender. +
 
 The contracting body notifies the economic operator of having received the Tender.
 
