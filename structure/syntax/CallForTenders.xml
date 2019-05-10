@@ -190,7 +190,8 @@
 					<Element cardinality="0..1">
 						<Term>cbc:URI</Term>
 						<Name>Provided document url</Name>
-						<Description>URL where a document that is provided as part of a call for tender can be downloaded.</Description>
+						<Description>A public URL where a document provided in a Call for tender can be downloaded
+              or a URI to the document provided inside the ASIC-E package or any other type of package.</Description>
 						<DataType>Identifier</DataType>
 						<Reference type="RULE">eSENS-T004-R035</Reference>
 					</Element>
