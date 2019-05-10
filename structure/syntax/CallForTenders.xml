@@ -173,7 +173,7 @@
 				<Description>A description of the required or provided document, or if DocumentTypeCode ="PROVIDED" the description should reference to one or more lots the economic operator is applying for. 
 					The original lot definition is part of the call for tender document. 
 					The Qualification instance only references the corresponding IDs in order to establish the connection to the call for tender information.</Description>
-				<DataType>Identifier</DataType>
+				<DataType>Text</DataType>
 				<Reference type="RULE">eSENS-T004-R030</Reference>
 			
 			</Element>
