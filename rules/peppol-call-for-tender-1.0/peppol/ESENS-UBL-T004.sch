@@ -101,7 +101,7 @@
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference/cbc:DocumentTypeCode">
             <assert id="eSENS-T004-R017" flag="fatal" test="./@listID">[eSENS-T004-R017] DocumentTypeCode MUST have a list Identifier.</assert>
             <assert id="eSENS-T004-R018" flag="fatal" test="normalize-space(./@listID)='urn:eu:esens:cenbii:documentType'">[eSENS-T004-R018] listID for DocumentTypeCode MUST be 'urn:eu:esens:cenbii:documentType'.</assert>
-            <assert id="eSENS-T004-R019" flag="fatal" test="matches(normalize-space(.),'^(PRO|REQ)$')">[eSENS-T004-R019] DocumentTypeCode MUST be one of 'PRO' or 'REQ'.</assert>
+            <assert id="eSENS-T004-R019" flag="fatal" test="matches(normalize-space(.),'^(PRO|REQ|916)$')">[eSENS-T004-R019] DocumentTypeCode MUST be one of 'PRO' or 'REQ' or '916'.</assert>
             <report id="eSENS-T004-S320" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[eSENS-T004-S320] DocumentTypeCode SHOULD NOT have any attributes but listID.</report>
         </rule>
         
