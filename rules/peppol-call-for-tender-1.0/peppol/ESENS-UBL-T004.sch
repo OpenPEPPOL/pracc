@@ -160,11 +160,11 @@
         </rule>
 
         <rule context="ubl:CallForTenders/cac:ReceiverParty">
-            <assert id="eSENS-T004-S334" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)-count(./cac:PartyLegalEntity)= 0"><value-of select="$syntaxError"/>[eSENS-T004-S334] A ContractingParty/cac:Party SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName, PartyLegalEntity</assert>
-            <assert id="eSENS-T004-S336" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of select="$syntaxError"/>[eSENS-T004-S336] PartyIdentification SHOULD be used exactly once.</assert>
-            <report id="eSENS-T004-S338" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S338] PartyName SHOULD NOT be used more than once.</report>
-            <report id="eSENS-T004-S340" flag="warning" test="count(./cac:PartyLegalEntity) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S340] PartyLegalEntity SHOULD NOT be used more than once.</report>
-            <assert id="eSENS-T004-R034" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[eSENS-T004-R034] A Call for Tenders MUST identify the Contracting Body by its party and endpoint identifiers.</assert>
+            <assert id="eSENS-T004-S500" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)-count(./cac:PartyLegalEntity)= 0"><value-of select="$syntaxError"/>[eSENS-T004-S334] A cac:ReceivingParty SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName, PartyLegalEntity</assert>
+            <assert id="eSENS-T004-S501" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of select="$syntaxError"/>[eSENS-T004-500] PartyIdentification SHOULD be used exactly once.</assert>
+            <report id="eSENS-T004-S502" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S501] PartyName SHOULD NOT be used more than once.</report>
+            <report id="eSENS-T004-S503" flag="warning" test="count(./cac:PartyLegalEntity) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S502] PartyLegalEntity SHOULD NOT be used more than once.</report>
+            <assert id="eSENS-T004-R534" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[eSENS-T004-R534] A Call for Tenders MUST identify the Economic Operator / Receiving Party by its party and endpoint identifiers.</assert>
         </rule>
         
         <rule context="cbc:EndpointID">

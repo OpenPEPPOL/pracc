@@ -311,18 +311,18 @@
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
 				<DataType>Identifier</DataType>
-				<Reference type="RULE">eSENS-T004-R012</Reference>
+				<Reference type="RULE">eSENS-T004-R534</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier for electronic address identifier</Name>
-					<Reference type="RULE">eSENS-T005-R010</Reference>
-					<Reference type="RULE">eSENS-T005-R011</Reference>
+					<Reference type="RULE">eSENS-T004-R012</Reference>
+					<Reference type="RULE">eSENS-T004-R013</Reference>
 				</Attribute>
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party identification</Name>
-				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Reference type="RULE">eSENS-T004-R534</Reference>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
@@ -332,8 +332,8 @@
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier for party identifier</Name>
-						<Reference type="RULE">eSENS-T005-R008</Reference>
-						<Reference type="RULE">eSENS-T005-R009</Reference>
+						<Reference type="RULE">eSENS-T004-R010</Reference>
+						<Reference type="RULE">eSENS-T004-R011</Reference>
 					</Attribute>
 				</Element>
 			</Element>
@@ -460,8 +460,6 @@
 				</Element>
 			</Element>
 		</Element>
-
-
 
 		<Element>
 			<Term>cac:TenderingTerms</Term>
