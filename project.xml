@@ -7,7 +7,7 @@
 	<Documentation path="profiles/p001/">P001 - Procurement procedure subscription</Documentation>
 	<Documentation path="profiles/p002/">P002 - Procurement document access</Documentation>
 	<Documentation path="profiles/p003/">P003 - Tender Submission</Documentation>
-	<Documentation path="changelog/">Change log</Documentation>
+	<Documentation path="changelog/">Changelog</Documentation>
 
 	<!-- Syntax -->
 	<Resource>
