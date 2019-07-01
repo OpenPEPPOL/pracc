@@ -1,6 +1,6 @@
 = Changelog for #version 1.0 - RC-1#
 
-[cols="1,9,2", options="header"]
+[cols="2,8,2", options="header"]
 |===
 | Issue | Description | Type
 
