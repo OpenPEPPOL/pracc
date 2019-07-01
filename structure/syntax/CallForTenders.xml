@@ -311,7 +311,7 @@
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
 				<DataType>Identifier</DataType>
-				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Reference type="RULE">eSENS-T004-R012</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier for electronic address identifier</Name>
