@@ -193,7 +193,7 @@
         </rule>
         
         <rule context="ubl:CallForTenders/cac:TenderingTerms">
-            <assert id="eSENS-T004-S348" flag="warning" test="count(./*)-count(./cbc:MaximumVariantQuantity)-count(./cbc:VariantConstraintIndicator)-count(./cbc:Note)-count(./cbc:AdditionalConditions)-count(./cac:ProcurementLegislationDocumentReference)-count(./cac:CallForTendersDocumentReference)-count(./cac:DocumentProviderParty)-count(./cac:TenderRecipientParty)=0"><value-of select="$syntaxError"/>[eSENS-T004-S348] TenderingTerms SHOULD NOT contain any element but MaximumVariantQuantity, VariantConstraintIndicator, Note, AdditionalConditions, ProcurementLegislationDocumentReference, CallForTendersDocumentReference, DocumentProviderParty, TenderRecipientParty.</assert>
+            <assert id="eSENS-T004-S348" flag="warning" test="count(./*)-count(./cbc:MaximumVariantQuantity)-count(./cbc:VariantConstraintIndicator)-count(./cbc:Note)-count(./cbc:AdditionalConditions)-count(./cac:ProcurementLegislationDocumentReference)-count(./cac:CallForTendersDocumentReference)-count(./cac:TenderRecipientParty)=0"><value-of select="$syntaxError"/>[eSENS-T004-S348] TenderingTerms SHOULD NOT contain any element but MaximumVariantQuantity, VariantConstraintIndicator, Note, AdditionalConditions, ProcurementLegislationDocumentReference, CallForTendersDocumentReference, TenderRecipientParty.</assert>
             <assert id="eSENS-T004-S353" flag="warning" test="(./cbc:VariantConstraintIndicator)"><value-of select="$syntaxError"/>[eSENS-T004-S353] VariantConstraintIndicator SHOULD be used.</assert>
             <report id="eSENS-T004-S354" flag="warning" test="count(./cbc:Note) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S354] Note SHOULD NOT be used more than once</report>
             <report id="eSENS-T004-R031" flag="fatal" test="(./cbc:Note) and normalize-space(/ubl:CallForTenders/cac:TenderingProcess/cbc:SubmissionMethodCode)!='POSTAL'">[eSENS-T004-R031] Note MUST only be used when Submission Method Code equals to POSTAL</report>
@@ -244,16 +244,11 @@
             <assert id="eSENS-T004-R027" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">[eSENS-T004-R027] A Call For Tenders Document Reference Identifier value MUST be expressed in a UUID syntax (RFC 4122)</assert>
             <report id="eSENS-T004-S365" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>[eSENS-T004-S365] A Call For Tenders Document Reference Identifier SHOULD NOT have any attributes but schemeURI</report>
         </rule>
-        
-        <rule context="ubl:CallForTenders/cac:TenderingTerms/cac:DocumentProviderParty">
-            <assert id="eSENS-T004-S366" flag="warning" test="count(./*)-count(./cbc:EndpointID)=0"><value-of select="$syntaxError"/>[eSENS-T004-S366] DocumentProviderParty SHOULD NOT contain any elements but EndpointID</assert>
-        </rule>
-        
+
         <rule context="ubl:CallForTenders/cac:TenderingTerms/cac:TenderRecipientParty">
             <assert id="eSENS-T004-S367" flag="warning" test="count(./*)-count(./cbc:EndpointID)=0"><value-of select="$syntaxError"/>[eSENS-T004-S367] TenderRecipientParty SHOULD NOT contain any elements but EndpointID</assert>
         </rule>
-        
-        
+
         <rule context="ubl:CallForTenders/cac:TenderingProcess">
             <assert id="eSENS-T004-S369" flag="warning" test="count(./*)-count(./cbc:ProcedureCode)-count(./cbc:ContractingSystemCode)-count(./cbc:SubmissionMethodCode)-count(./cac:TenderSubmissionDeadlinePeriod)-count(./cac:ParticipationRequestReceptionPeriod)=0"><value-of select="$syntaxError"/>[eSENS-T004-S369] TenderingProcess SHOULD NOT contain any elements but ProcedureCode, ContractingSystemCode, SubmissionMethodCode, TenderSubmissionDeadlinePeriod, ParticipationRequestReceptionPeriod.</assert>
             <assert id="eSENS-T004-S370" flag="warning" test="(./cbc:ProcedureCode)"><value-of select="$syntaxError"/>[eSENS-T004-S370] ProcedureCode SHOULD be used.</assert>
