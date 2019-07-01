@@ -90,7 +90,7 @@
 			<Reference type="RULE">eSENS-T004-R038</Reference>
 		</Element>
 		
-		<Element cardinality="1..n">
+		<Element cardinality="0..n">
 			<Term>cac:AdditionalDocumentReference</Term>
 			<Name>Additional document reference</Name>
 			<Description>Additional document reference are used for different document references, required document, provided document.
