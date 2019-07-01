@@ -33,7 +33,6 @@
             <report id="eSENS-T004-S331" flag="warning" test="(cac:Signature)"><value-of select="$syntaxError"/>[eSENS-T004-S331] Signature SHOULD NOT be used.</report>
             <report id="eSENS-T004-S332" flag="warning" test="count(cac:ContractingParty) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S332] ContractingParty SHOULD NOT be used more than once.</report>
             <report id="eSENS-T004-S345" flag="warning" test="(cac:OriginatorCustomerParty)"><value-of select="$syntaxError"/>[eSENS-T004-S345] OriginatorCustomerParty SHOULD NOT be used.</report>
-            <report id="eSENS-T004-S346" flag="warning" test="(cac:ReceiverParty)"><value-of select="$syntaxError"/>[eSENS-T004-S346] Receiver Party SHOULD NOT be used.</report>
             <assert id="eSENS-T004-S347" flag="warning" test="(cac:TenderingTerms)"><value-of select="$syntaxError"/>[eSENS-T004-S347] TenderingTerms SHOULD be used.</assert>
             <assert id="eSENS-T004-S368" flag="warning" test="(cac:TenderingProcess)"><value-of select="$syntaxError"/>[eSENS-T004-S368] TenderingProcess SHOULD be used.</assert>
         </rule>
