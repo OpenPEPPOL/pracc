@@ -379,26 +379,7 @@
 					</Attribute>
 				</Element>
 			</Element>
-			
-			<Element cardinality="0..1">
-				<Term>cac:DocumentProviderParty</Term>
-				<Name>Document provider party</Name>
-				
-				<Element>
-					<Term>cbc:EndpointID</Term>
-					<Name>Tender procurement documents URI</Name>
-					<Description>Endpoint ID of the contracting body in four corner model.</Description>
-					<DataType>Identifier</DataType>
-					<Attribute>
-						<Term>schemeID</Term>
-						<Name>Scheme identifier</Name>
-						<Reference type="RULE">eSENS-T004-R012</Reference>
-						<Reference type="RULE">eSENS-T004-R013</Reference>
-					</Attribute>
 
-				</Element>
-			</Element>
-			
 			<Element cardinality="0..1">
 				<Term>cac:TenderRecipientParty</Term>
 				<Name>Tender recipient party</Name>
