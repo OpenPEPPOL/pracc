@@ -301,7 +301,168 @@
 				</Element>
 			</Element>
 		</Element>
-		
+
+		<Element cardinality="0..1">
+			<Term>cac:ReceiverParty</Term>
+			<Name>Economic operator</Name>
+			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
+			<Element>
+				<Term>cbc:EndpointID</Term>
+				<Name>Economic operator electronic address identifier</Name>
+				<Description>Electronic address of the economic operator.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Attribute>
+					<Term>schemeID</Term>
+					<Name>Scheme identifier for electronic address identifier</Name>
+					<Reference type="RULE">eSENS-T005-R010</Reference>
+					<Reference type="RULE">eSENS-T005-R011</Reference>
+				</Attribute>
+			</Element>
+			<Element>
+				<Term>cac:PartyIdentification</Term>
+				<Name>Party identification</Name>
+				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Economic operator identifier</Name>
+					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+					<DataType>Identifier</DataType>
+					<Reference type="RULE">BII3-T90-R003</Reference>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier for party identifier</Name>
+						<Reference type="RULE">eSENS-T005-R008</Reference>
+						<Reference type="RULE">eSENS-T005-R009</Reference>
+					</Attribute>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PartyName</Term>
+				<Name>Party name</Name>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Economic operator name</Name>
+					<Description>The name of the economic operator.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PostalAddress</Term>
+				<Name>Postal address</Name>
+				<Element cardinality="0..1">
+					<Term>cbc:StreetName</Term>
+					<Name>Address line 1</Name>
+					<Description>The main address line in an address.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:AdditionalStreetName</Term>
+					<Name>Address line 2</Name>
+					<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:CityName</Term>
+					<Name>City</Name>
+					<Description>The common name of a city where the address is located.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:PostalZone</Term>
+					<Name>Post code</Name>
+					<Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:CountrySubentity</Term>
+					<Name>Country subdivision</Name>
+					<Description>The subdivision of a country such as region, county, state, province etc.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cac:Country</Term>
+					<Name>Country</Name>
+					<Element>
+						<Term>cbc:IdentificationCode</Term>
+						<Name>Country code</Name>
+						<Description>A code that identifies the country.</Description>
+						<DataType>Code</DataType>
+						<Reference type="RULE">CL-T90-R001</Reference>
+						<Attribute>
+							<Term>listID</Term>
+							<Name>List identifier for country code</Name>
+							<Reference type="RULE">BII3-T90-R020</Reference>
+						</Attribute>
+					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PartyLegalEntity</Term>
+				<Name>Party legal entity</Name>
+
+				<Element cardinality="0..1">
+					<Term>cbc:CompanyLegalForm</Term>
+					<Name>Economic operator legal form</Name>
+					<Description>A textual description of the legal form of the economic operator.</Description>
+					<DataType>Text</DataType>
+				</Element>
+
+				<Element cardinality="0..1">
+					<Term>cac:RegistrationAddress</Term>
+					<Name>Legal registration address</Name>
+
+					<Element cardinality="0..1">
+						<Term>cac:Country</Term>
+						<Name>Country</Name>
+						<Element>
+							<Term>cbc:IdentificationCode</Term>
+							<Name>Economic operator registration country code</Name>
+							<Description>The registration country code of the economic operator.</Description>
+							<DataType>Code</DataType>
+							<Reference type="RULE">CL-T90-R001</Reference>
+							<Attribute>
+								<Term>listID</Term>
+								<Name>List identifier for country code</Name>
+								<Reference type="RULE">BII3-T90-R020</Reference>
+							</Attribute>
+						</Element>
+					</Element>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:Contact</Term>
+				<Name>Contact information</Name>
+
+				<Element cardinality="0..1">
+					<Term>cbc:Name</Term>
+					<Name>Contact point</Name>
+					<Description>The name of the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:Telephone</Term>
+					<Name>Contact telephone number</Name>
+					<Description>A phone number for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:Telefax</Term>
+					<Name>Contact fax number</Name>
+					<Description>A fax number for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+				<Element cardinality="0..1">
+					<Term>cbc:ElectronicMail</Term>
+					<Name>Contact email address</Name>
+					<Description>An e-mail address for the contact point.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+		</Element>
+
+
+
 		<Element>
 			<Term>cac:TenderingTerms</Term>
 			<Name>Tendering terms</Name>

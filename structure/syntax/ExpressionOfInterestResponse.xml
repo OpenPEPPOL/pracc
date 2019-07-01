@@ -123,7 +123,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Economic operator electronic address identifier</Name>
-					<Description>Electronic address of the economic operato</Description>
+					<Description>Electronic address of the economic operator</Description>
 					<DataType>Identifier</DataType>
 					<Reference type="RULE">eSENS-T002-R022</Reference>
 					<Attribute>

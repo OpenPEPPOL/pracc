@@ -184,8 +184,6 @@
 			<Term>cac:TendererParty</Term>
 			<Name>Economic operator</Name>
 			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
-			
-			
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
