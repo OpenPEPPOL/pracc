@@ -1,4 +1,4 @@
-= Changes for #version 1.0#
+= Changelog for #version 1.0 - RC-1#
 
 [cols="1,9,2", options="header"]
 |===
@@ -13,7 +13,7 @@
 | Syntax mapping and rules
 
 | link:https://openpeppol.atlassian.net/browse/PRACC-12[#PRACC-12]
-| Added code value `916 (Related document) to code list for document type, also updating rule "eSENS-T004-R019" to allow for the new code.
+| Added code value `916` (Related document) to code list for document type, also updating rule "eSENS-T004-R019" to allow for the new code.
 | Code lists and rules
 
 | link:https://openpeppol.atlassian.net/browse/PRACC-13[#PRACC-13]
