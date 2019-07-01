@@ -17,7 +17,7 @@
         <let name="syntaxError" value="string('[eSENS-T004-S003] A Call For Tenders document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
         <rule context="ubl:CallForTenders">
             <report id="eSENS-T004-S301" flag="warning" test="(ext:UBLExtensions)"><value-of select="$syntaxError"/>[eSENS-T004-S301] UBLExtensions SHOULD NOT be used.</report>
-            <report id="eSENS-T004-S305" flag="warning" test="(cbc:ProfileExectuionID)"><value-of select="$syntaxError"/>[eSENS-T004-S305] ProfileExecutionID SHOULD NOT be used.</report>
+            <report id="eSENS-T004-S305" flag="warning" test="(cbc:ProfileExecutionID)"><value-of select="$syntaxError"/>[eSENS-T004-S305] ProfileExecutionID SHOULD NOT be used.</report>
             <report id="eSENS-T004-S307" flag="warning" test="(cbc:CopyIndicator)"><value-of select="$syntaxError"/>[eSENS-T004-S307] CopyIndicator SHOULD NOT be used.</report>
             <report id="eSENS-T004-S308" flag="warning" test="(cbc:UUID)"><value-of select="$syntaxError"/>[eSENS-T004-S308] UUID SHOULD NOT be used.</report>
             <assert id="eSENS-T004-R001" flag="fatal" test="exists(cbc:UBLVersionID)">[eSENS-T004-R001] A Call For Tenders MUST have a syntax identifier.</assert>
