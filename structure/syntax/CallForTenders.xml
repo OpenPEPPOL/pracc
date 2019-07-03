@@ -157,7 +157,7 @@
 				<DataType>Indicator</DataType>
 			
 				<Reference type="RULE">eSENS-T004-R022</Reference>
-				<Reference type="CODE_LIST">eSENS-T004-R023</Reference>
+				<Reference type="RULE">eSENS-T004-R023</Reference>
 				<Reference type="CODE_LIST">docStatus</Reference>
 				<Attribute>
 					<Term>listID</Term>
@@ -175,7 +175,9 @@
 					The original lot definition is part of the call for tender document. 
 					The Qualification instance only references the corresponding IDs in order to establish the connection to the call for tender information.</Description>
 				<DataType>Text</DataType>
+				
 				<Reference type="RULE">eSENS-T004-R030</Reference>
+			
 			
 			</Element>
 			
