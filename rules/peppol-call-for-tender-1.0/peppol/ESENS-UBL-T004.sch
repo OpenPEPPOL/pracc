@@ -17,7 +17,7 @@
         <let name="syntaxError" value="string('[eSENS-T004-S003] A Call For Tenders document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
         <rule context="ubl:CallForTenders">
             <report id="eSENS-T004-S301" flag="warning" test="(ext:UBLExtensions)"><value-of select="$syntaxError"/>[eSENS-T004-S301] UBLExtensions SHOULD NOT be used.</report>
-            <report id="eSENS-T004-S305" flag="warning" test="(cbc:ProfileExectuionID)"><value-of select="$syntaxError"/>[eSENS-T004-S305] ProfileExecutionID SHOULD NOT be used.</report>
+            <report id="eSENS-T004-S305" flag="warning" test="(cbc:ProfileExecutionID)"><value-of select="$syntaxError"/>[eSENS-T004-S305] ProfileExecutionID SHOULD NOT be used.</report>
             <report id="eSENS-T004-S307" flag="warning" test="(cbc:CopyIndicator)"><value-of select="$syntaxError"/>[eSENS-T004-S307] CopyIndicator SHOULD NOT be used.</report>
             <report id="eSENS-T004-S308" flag="warning" test="(cbc:UUID)"><value-of select="$syntaxError"/>[eSENS-T004-S308] UUID SHOULD NOT be used.</report>
             <assert id="eSENS-T004-R001" flag="fatal" test="exists(cbc:UBLVersionID)">[eSENS-T004-R001] A Call For Tenders MUST have a syntax identifier.</assert>
@@ -33,7 +33,6 @@
             <report id="eSENS-T004-S331" flag="warning" test="(cac:Signature)"><value-of select="$syntaxError"/>[eSENS-T004-S331] Signature SHOULD NOT be used.</report>
             <report id="eSENS-T004-S332" flag="warning" test="count(cac:ContractingParty) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S332] ContractingParty SHOULD NOT be used more than once.</report>
             <report id="eSENS-T004-S345" flag="warning" test="(cac:OriginatorCustomerParty)"><value-of select="$syntaxError"/>[eSENS-T004-S345] OriginatorCustomerParty SHOULD NOT be used.</report>
-            <report id="eSENS-T004-S346" flag="warning" test="(cac:ReceiverParty)"><value-of select="$syntaxError"/>[eSENS-T004-S346] Receiver Party SHOULD NOT be used.</report>
             <assert id="eSENS-T004-S347" flag="warning" test="(cac:TenderingTerms)"><value-of select="$syntaxError"/>[eSENS-T004-S347] TenderingTerms SHOULD be used.</assert>
             <assert id="eSENS-T004-S368" flag="warning" test="(cac:TenderingProcess)"><value-of select="$syntaxError"/>[eSENS-T004-S368] TenderingProcess SHOULD be used.</assert>
         </rule>
@@ -158,6 +157,14 @@
             <report id="eSENS-T004-S338" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S338] PartyName SHOULD NOT be used more than once.</report>
             <report id="eSENS-T004-S340" flag="warning" test="count(./cac:PartyLegalEntity) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S340] PartyLegalEntity SHOULD NOT be used more than once.</report>
             <assert id="eSENS-T004-R034" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[eSENS-T004-R034] A Call for Tenders MUST identify the Contracting Body by its party and endpoint identifiers.</assert>
+        </rule>
+
+        <rule context="ubl:CallForTenders/cac:ReceiverParty">
+            <assert id="eSENS-T004-S500" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)-count(./cac:PartyLegalEntity)= 0"><value-of select="$syntaxError"/>[eSENS-T004-S334] A cac:ReceivingParty SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName, PartyLegalEntity</assert>
+            <assert id="eSENS-T004-S501" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of select="$syntaxError"/>[eSENS-T004-500] PartyIdentification SHOULD be used exactly once.</assert>
+            <report id="eSENS-T004-S502" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S501] PartyName SHOULD NOT be used more than once.</report>
+            <report id="eSENS-T004-S503" flag="warning" test="count(./cac:PartyLegalEntity) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S502] PartyLegalEntity SHOULD NOT be used more than once.</report>
+            <assert id="eSENS-T004-R534" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[eSENS-T004-R534] A Call for Tenders MUST identify the Economic Operator / Receiving Party by its party and endpoint identifiers.</assert>
         </rule>
         
         <rule context="cbc:EndpointID">
