@@ -75,7 +75,7 @@
         
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='REQ']">
             <assert id="eSENS-T004-S317" flag="warning" test="count(./*)-count(./cbc:ID)-count(./cbc:DocumentTypeCode)-count(./cbc:DocumentStatusCode)=0"><value-of select="$syntaxError"/>[eSENS-T004-S317] AdditionalDocumentReference for a Document with DocumentTypeCode='REQ' SHOULD NOT contain any elements but ID, DocumentTypeCode, DocumentStatusCode</assert>
-            <report id="eSENS-T004-R023" flag="fatal" test="normalize-space(./cbc:DocumentStatusCode)='NR'">[eSENS-T004-R023] DocumentStatusCode 'NR' is NOT valid for an AdditionalDocumentReference with DocumentType 'REQ'</report>
+            <assert id="eSENS-T004-R023" flag="fatal" test="normalize-space(./cbc:DocumentStatusCode) !='NR'">[eSENS-T004-R023] DocumentStatusCode 'NR' is NOT valid for an AdditionalDocumentReference with DocumentType 'REQ'</assert>
             <report id="eSENS-T004-S326" flag="warning" test="count(./cbc:DocumentDescription) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S326] DocumentDescription SHOULD NOT be used more than once when DocumentTypeCode = 'REQ'.</report>
         </rule>
 

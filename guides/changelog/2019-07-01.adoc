@@ -17,8 +17,8 @@
 | Code lists and rules
 
 | link:https://openpeppol.atlassian.net/browse/PRACC-13[#PRACC-13]
-| #??#
-| #??#
+| Removed element Document Provider Party, and changed description of Tender Recipent Party/Endpoint ID to give better guidance on usage of the element
+| Syntax mapping, rules and code lists
 
 | link:https://openpeppol.atlassian.net/browse/PRACC-14[#PRACC-14]
 | Change data type for element "Additional document reference/Document description" from `Identifier` to `Text`
@@ -53,6 +53,6 @@
 | Syntax mapping
 
 | link:https://openpeppol.atlassian.net/browse/PRACC-25[#PRACC-25]
-| #Add element for Economic Operator as optional to the Call for Tender (Technically done by adding the `cac:ProviderParty`)#
-| Syntax mapping
+| Added element for Economic Operator as optional to the Call for Tender (Technically done by adding the `cac:ProviderParty`
+| Syntax mapping, rules and code lists
 |===
