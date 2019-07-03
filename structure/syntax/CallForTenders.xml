@@ -379,34 +379,15 @@
 					</Attribute>
 				</Element>
 			</Element>
-			
-			<Element cardinality="0..1">
-				<Term>cac:DocumentProviderParty</Term>
-				<Name>Document provider party</Name>
-				
-				<Element>
-					<Term>cbc:EndpointID</Term>
-					<Name>Tender procurement documents URI</Name>
-					<Description>Endpoint ID of the contracting body in four corner model.</Description>
-					<DataType>Identifier</DataType>
-					<Attribute>
-						<Term>schemeID</Term>
-						<Name>Scheme identifier</Name>
-						<Reference type="RULE">eSENS-T004-R012</Reference>
-						<Reference type="RULE">eSENS-T004-R013</Reference>
-					</Attribute>
 
-				</Element>
-			</Element>
-			
 			<Element cardinality="0..1">
 				<Term>cac:TenderRecipientParty</Term>
 				<Name>Tender recipient party</Name>
 				
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Submission of tenders and requests to participate URI</Name>
-					<Description>Endpoint ID of the contracting body in four corner model.</Description>
+					<Name>PEPPOL Address for Submission of Tenders</Name>
+					<Description>The PEPPOL Address (Participant Identifier) that the call for tenders to which tenders or requests to participate shall be submitted. This endpoint ID MUST be used only when different from the Contracting Authority Endpoint ID</Description>
 					<DataType>Identifier</DataType>
 					<Attribute>
 						<Term>schemeID</Term>
