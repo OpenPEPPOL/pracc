@@ -155,8 +155,9 @@
 				<Name>Provided document to be returned indicator</Name>
 				<Description>Indicates that the provided document in the call for tender has to be returned as part of the tender.</Description>
 				<DataType>Indicator</DataType>
-				<Reference type="RULE">eSENS-T004-R023</Reference>
+			
 				<Reference type="RULE">eSENS-T004-R022</Reference>
+				<Reference type="CODE_LIST">eSENS-T004-R023</Reference>
 				<Reference type="CODE_LIST">docStatus</Reference>
 				<Attribute>
 					<Term>listID</Term>

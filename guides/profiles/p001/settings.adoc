@@ -3,8 +3,6 @@ include::links.adoc[]
 :lang: en
 
 :doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-profile}
-:minor: 0.8
-:revision: 0.8.0
 :shared-dir: ../../shared
 :rules-dir: /tmp/rules
 
