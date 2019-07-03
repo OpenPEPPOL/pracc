@@ -84,7 +84,7 @@
         </rule>
 
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference[normalize-space(./cbc:DocumentTypeCode)='PRO']/cbc:DocumentDescription">
-            <report id="eSENS-T004-R030" flag="fatal" test="/ubl:CallForTenders/cac:ProcurementProjectLot[cbc:ID=normalize-space(.)]/cbc:ID != normalize-space(.)">[eSENS-T004-R030] DocumentDescription MUST be a valid Procurement Project Lot Identifier"/></report>
+            <assert id="eSENS-T004-R030" flag="fatal" test="/ubl:CallForTenders/cac:ProcurementProjectLot/cbc:ID = normalize-space(.)">[eSENS-T004-R030] DocumentDescription MUST be a valid Procurement Project Lot Identifier"/></assert>
         </rule>
         
         <rule context="ubl:CallForTenders/cac:AdditionalDocumentReference">
@@ -203,7 +203,6 @@
             <assert id="eSENS-T004-S348" flag="warning" test="count(./*)-count(./cbc:MaximumVariantQuantity)-count(./cbc:VariantConstraintIndicator)-count(./cbc:Note)-count(./cbc:AdditionalConditions)-count(./cac:ProcurementLegislationDocumentReference)-count(./cac:CallForTendersDocumentReference)-count(./cac:TenderRecipientParty)=0"><value-of select="$syntaxError"/>[eSENS-T004-S348] TenderingTerms SHOULD NOT contain any element but MaximumVariantQuantity, VariantConstraintIndicator, Note, AdditionalConditions, ProcurementLegislationDocumentReference, CallForTendersDocumentReference, TenderRecipientParty.</assert>
             <assert id="eSENS-T004-S353" flag="warning" test="(./cbc:VariantConstraintIndicator)"><value-of select="$syntaxError"/>[eSENS-T004-S353] VariantConstraintIndicator SHOULD be used.</assert>
             <report id="eSENS-T004-S354" flag="warning" test="count(./cbc:Note) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S354] Note SHOULD NOT be used more than once</report>
-            <report id="eSENS-T004-R031" flag="fatal" test="(./cbc:Note) and normalize-space(/ubl:CallForTenders/cac:TenderingProcess/cbc:SubmissionMethodCode)!='POSTAL'">[eSENS-T004-R031] Note MUST only be used when Submission Method Code equals to POSTAL</report>
             <report id="eSENS-T004-S358" flag="warning" test="count(./cbc:AdditionalConditions) &gt; 1"><value-of select="$syntaxError"/>[eSENS-T004-S358] AdditionalConditions SHOULD NOT be used more than once</report>
         </rule>
         
@@ -222,6 +221,7 @@
         <rule context="ubl:CallForTenders/cac:TenderingTerms/cbc:Note">
             <assert id="eSENS-T004-S355" flag="warning" test="matches(normalize-space(.),'^\d+$')"><value-of select="$syntaxError"/>[eSENS-T004-S355] Note SHOULD be expressed as an integer value when used.</assert>
             <report id="eSENS-T004-S357" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T004-S357] Note SHOULD NOT contain any attributes.</report>
+            <assert id="eSENS-T004-R031" flag="fatal" test="normalize-space(/ubl:CallForTenders/cac:TenderingProcess/cbc:SubmissionMethodCode)='POSTAL'">[eSENS-T004-R031] Note MUST only be used when Submission Method Code equals to POSTAL</assert>
         </rule>
         
         <rule context="ubl:CallForTenders/cac:TenderingTerms/cbc:AdditionalConditions">
@@ -260,7 +260,7 @@
             <assert id="eSENS-T004-S369" flag="warning" test="count(./*)-count(./cbc:ProcedureCode)-count(./cbc:ContractingSystemCode)-count(./cbc:SubmissionMethodCode)-count(./cac:TenderSubmissionDeadlinePeriod)-count(./cac:ParticipationRequestReceptionPeriod)=0"><value-of select="$syntaxError"/>[eSENS-T004-S369] TenderingProcess SHOULD NOT contain any elements but ProcedureCode, ContractingSystemCode, SubmissionMethodCode, TenderSubmissionDeadlinePeriod, ParticipationRequestReceptionPeriod.</assert>
             <assert id="eSENS-T004-S370" flag="warning" test="(./cbc:ProcedureCode)"><value-of select="$syntaxError"/>[eSENS-T004-S370] ProcedureCode SHOULD be used.</assert>
             <assert id="eSENS-T004-S373" flag="warning" test="(./cac:TenderSubmissionDeadlinePeriod)"><value-of select="$syntaxError"/>[eSENS-T004-S373] TenderSubmissionDeadlinePeriod SHOULD be used.</assert>
-            <report id="eSENS-T004-R037" flag="fatal" test="(./cbc:ProcedureCode = '1') and (./cac:ParticipationRequestReceptionPeriod)">[eSENS-T004-R037] Participation Request Reception Period MUST not be given for proceduretypes without participation contest.</report> 
+            <assert id="eSENS-T004-R037" flag="fatal" test="(cbc:ProcedureCode = '1' and not(exists(cac:ParticipationRequestReceptionPeriod))) or (cbc:ProcedureCode!='1')">[eSENS-T004-R037] Participation Request Reception Period MUST not be given for proceduretypes without participation contest.</assert> 
         </rule>
         
         <rule context="ubl:CallForTenders/cac:TenderingProcess/cbc:ProcedureCode">
