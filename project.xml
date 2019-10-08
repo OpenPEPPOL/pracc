@@ -47,19 +47,19 @@
 	<Resource>
 		<Identifier>T001</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T001.sch</Path>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T001.sch</Path>
 		<Title>PEPPOL T001 rules</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T002</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T002.sch</Path>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T002.sch</Path>
 		<Title>PEPPOL T002 rules</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T003</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-status-inquiry-1.0/peppol/ESENS-UBL-T003.sch</Path>
+		<Path>rules/peppol-tender-status-inquiry-1.0/ESENS-UBL-T003.sch</Path>
 		<Title>PEPPOL T003 rules</Title>
 	</Resource>
 	<Resource>
@@ -89,7 +89,7 @@
 	<Resource>
 		<Identifier>BIIT005</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90_eSENS.sch</Path>
+		<Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90.sch</Path>
 		<Title>CENBII T005 rules</Title>
 	</Resource>
 	<Resource>
