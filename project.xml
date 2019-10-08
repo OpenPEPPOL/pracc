@@ -89,7 +89,7 @@
 	<Resource>
 		<Identifier>BIIT005</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90_eSENS.sch</Path>
+		<Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90.sch</Path>
 		<Title>CENBII T005 rules</Title>
 	</Resource>
 	<Resource>
