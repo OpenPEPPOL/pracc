@@ -59,7 +59,7 @@
 	<Resource>
 		<Identifier>T003</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-status-inquiry-1.0/peppol/ESENS-UBL-T003.sch</Path>
+		<Path>rules/peppol-tender-status-inquiry-1.0/ESENS-UBL-T003.sch</Path>
 		<Title>PEPPOL T003 rules</Title>
 	</Resource>
 	<Resource>
