@@ -47,13 +47,13 @@
 	<Resource>
 		<Identifier>T001</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T001.sch</Path>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T001.sch</Path>
 		<Title>PEPPOL T001 rules</Title>
 	</Resource>
 	<Resource>
 		<Identifier>T002</Identifier>
 		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/peppol/ESENS-UBL-T002.sch</Path>
+		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T002.sch</Path>
 		<Title>PEPPOL T002 rules</Title>
 	</Resource>
 	<Resource>
