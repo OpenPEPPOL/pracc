@@ -32,7 +32,7 @@ info "Run vefa-structure"
 dc structure
 
 
-info "Build and verify validation artifacts"
+#info "Build and verify validation artifacts"
 
 dc validator
 
@@ -41,10 +41,10 @@ info "Generate Asciidoctor documents"
 
 dc asciidoctor
 
-info "Create ZIP file with schematrons"
-
-zip -9 -r $FOLDER/target/site/files/peppol-preaward-schematrons-1.0-RC2.zip $FOLDER/rules/*
 
 info "Fix ownership"
 
 docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
+
+info "Create ZIP file with schematrons"
+zip -9 -r $FOLDER/target/site/files/peppol-preaward-schematrons-1.0-RC2.zip $FOLDER/rules
