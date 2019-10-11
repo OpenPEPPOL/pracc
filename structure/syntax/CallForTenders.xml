@@ -73,11 +73,12 @@
 			<Reference type="RULE">BII3-T83-R005</Reference>
 		</Element>
 		
-		<Element cardinality="0..1">
+		<Element cardinality="1..1">
 			<Term>cbc:IssueTime</Term>
 			<Name>Call for tender issue time</Name>
-			<Description>The time when the call for thender is issued. The issue time must have granularity of seconds, and include time zone information</Description>
+			<Description>The time when the call for tender is issued. The issue time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
+			<Reference type="RULE">eSENS-T004-R007</Reference>
 			<Reference type="RULE">eSENS-T004-R008</Reference>
 			<Reference type="RULE">eSENS-T004-R009</Reference>
 		</Element>
@@ -98,9 +99,10 @@
 			
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Document identifier </Name>
+				<Name>Document identifier</Name>
 				<Description>Identification of the document reference</Description>
 				<DataType>Identifier</DataType>
+        <Reference type="RULE">eSENS-T004-R024</Reference>
 
 			</Element>
 			
@@ -565,6 +567,7 @@
 		<Element>
 			<Term>cac:TenderingProcess</Term>
 			<Name>Tendering process</Name>
+			<Reference type="RULE">BII3-T83-R008</Reference>
 			
 			<Element>
 				<Term>cbc:ProcedureCode</Term>
@@ -763,6 +766,7 @@
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
 				<DataType>Identifier</DataType>
+				<Reference type="RULE">eSENS-T004-R029</Reference>
 			</Element>
 			
 			<Element cardinality="0..1">
