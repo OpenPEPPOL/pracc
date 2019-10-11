@@ -99,9 +99,10 @@
 			
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Document identifier </Name>
+				<Name>Document identifier</Name>
 				<Description>Identification of the document reference</Description>
 				<DataType>Identifier</DataType>
+        <Reference type="RULE">eSENS-T004-R024</Reference>
 
 			</Element>
 			
