@@ -393,11 +393,11 @@
 						<Name>Country code</Name>
 						<Description>A code that identifies the country.</Description>
 						<DataType>Code</DataType>
-						<Reference type="RULE">CL-T90-R001</Reference>
+						<Reference type="RULE">CL-T83-R005</Reference>
 						<Attribute>
 							<Term>listID</Term>
 							<Name>List identifier for country code</Name>
-							<Reference type="RULE">BII3-T90-R020</Reference>
+							<Reference type="RULE">BII3-T83-R018</Reference>
 						</Attribute>
 					</Element>
 				</Element>
@@ -425,11 +425,11 @@
 							<Name>Economic operator registration country code</Name>
 							<Description>The registration country code of the economic operator.</Description>
 							<DataType>Code</DataType>
-							<Reference type="RULE">CL-T90-R001</Reference>
+							<Reference type="RULE">CL-T83-R005</Reference>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>List identifier for country code</Name>
-								<Reference type="RULE">BII3-T90-R020</Reference>
+								<Reference type="RULE">BII3-T83-R018</Reference>
 							</Attribute>
 						</Element>
 					</Element>
