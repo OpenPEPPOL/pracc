@@ -31,6 +31,13 @@ info "Run vefa-structure"
 
 dc structure
 
+info "Fix ownership"
+
+docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
+
+info "Create ZIP file with schematrons"
+mkdir "$FOLDER/target/site/files"
+zip -9 -r $FOLDER/target/site/files/schematrons-v10-RC2.zip $FOLDER/rules
 
 #info "Build and verify validation artifacts"
 
@@ -46,5 +53,3 @@ info "Fix ownership"
 
 docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
 
-info "Create ZIP file with schematrons"
-zip -9 -r $FOLDER/target/site/files/schematrons-v10-RC2.zip $FOLDER/rules
