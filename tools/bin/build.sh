@@ -37,6 +37,7 @@ docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $U
 
 info "Create ZIP file with schematrons"
 zip -r "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
+mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
 
 #info "Build and verify validation artifacts"
 
