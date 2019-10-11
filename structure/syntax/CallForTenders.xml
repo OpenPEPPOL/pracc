@@ -567,6 +567,7 @@
 		<Element>
 			<Term>cac:TenderingProcess</Term>
 			<Name>Tendering process</Name>
+			<Reference type="RULE">BII3-T83-R008</Reference>
 			
 			<Element>
 				<Term>cbc:ProcedureCode</Term>
