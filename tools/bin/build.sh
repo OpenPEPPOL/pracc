@@ -47,4 +47,4 @@ info "Fix ownership"
 docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
 
 info "Create ZIP file with schematrons"
-zip -9 -r $FOLDER/target/site/files/peppol-preaward-schematrons-1.0-RC2.zip $FOLDER/rules
+zip -9 -r $FOLDER/target/site/files/schematrons-v10-RC2.zip $FOLDER/rules
