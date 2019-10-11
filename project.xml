@@ -145,4 +145,12 @@
 		<Property key="download">BIS-eDocuments-guide-for-pre-award-v1.2.docx</Property>
 	</Resource>
 
+	<Resource>
+		<Type>native:File</Type>
+		<Path>project.xml</Path>
+		<Title>Schematron files</Title>
+		<Property key="download">peppol-preaward-schematrons-1.0-RC2.zip</Property>
+		<Property key="filename">peppol-preaward-schematrons-1.0-RC2.zip</Property>
+	</Resource>
+
 </Project>

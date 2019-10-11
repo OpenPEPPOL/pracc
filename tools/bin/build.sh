@@ -27,7 +27,6 @@ info "Delete existing target folder"
 
 dc target-rm
 
-
 info "Run vefa-structure"
 
 dc structure
@@ -42,6 +41,9 @@ info "Generate Asciidoctor documents"
 
 dc asciidoctor
 
+info "Create ZIP file with schematrons"
+
+zip -9 -r $FOLDER/target/site/files/peppol-preaward-schematrons-1.0-RC2.zip $FOLDER/rules/*
 
 info "Fix ownership"
 
