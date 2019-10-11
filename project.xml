@@ -149,8 +149,8 @@
 		<Type>native:File</Type>
 		<Path>project.xml</Path>
 		<Title>Schematron files</Title>
-		<Property key="download">schematrons-v10-RC2.zip</Property>
-		<Property key="filename">schematrons-v10-RC2.zip</Property>
+		<Property key="download">schematrons.zip</Property>
+		<Property key="filename">schematrons.zip</Property>
 	</Resource>
 
 </Project>
