@@ -765,6 +765,7 @@
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
 				<DataType>Identifier</DataType>
+				<Reference type="RULE">eSENS-T004-R029</Reference>
 			</Element>
 			
 			<Element cardinality="0..1">
