@@ -333,7 +333,7 @@
 					<Name>Economic operator identifier</Name>
 					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
 					<DataType>Identifier</DataType>
-					<Reference type="RULE">BII3-T90-R003</Reference>
+
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier for party identifier</Name>
