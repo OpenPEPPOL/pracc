@@ -1,9 +1,12 @@
 sudo: required
+dist: bionic
+addons:
+  apt:
+    packages:
+      - zip
+
 services:
 - docker
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y zip
 script:
 - sh tools/bin/build.sh
 deploy:
