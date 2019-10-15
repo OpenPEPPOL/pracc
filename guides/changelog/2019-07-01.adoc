@@ -1,8 +1,3 @@
-= Changelog for version 1.0 - RC2
-
- * Added the Pre-Award eDelivery Guide and Pre-Award eDocuments Guide
-
-| Issue | Description | Type
 = Changelog for version 1.0 - RC1
 
 [cols="2,8,2", options="header"]
