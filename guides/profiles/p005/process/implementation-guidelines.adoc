@@ -1,0 +1,16 @@
+
+= Implementation guidelines
+
+{name-profile} is based on work done by {bii3}[CEN BII], and business rules and code lists used are inherited from the following {bii3}[CEN BII] and {link-ubl}[UBL 2.3] documents:
+
+urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2
+urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
+
+* {ubl-enquiry}[UBL Enquiry Schema] sent by a requestor to a responder requesting information about a particular business process.
+* {ubl-enquiry-response}[UBL Enquiry Response Schema] sent by a responder to a requester answering a particular enquiry.
+* {link-profile48}[BII48 — Call for Tenders Questions and Answers] (CWA 17027-113:2016)
+
+{peppol} {name-profile} business process includes 2 transactions:
+
+* link:..\..\transactions\T007\[T005 - Tendering Questions]
+* link:..\..\transactions\T008\[T006 - Tendering Answers]

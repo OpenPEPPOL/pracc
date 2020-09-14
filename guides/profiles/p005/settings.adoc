@@ -1,0 +1,13 @@
+include::links.adoc[]
+
+include::../../shared/settings.adoc[]
+
+:lang: en
+
+:doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-profile}
+:shared-dir: ../../shared
+:rules-dir: /tmp/rules
+
+:name-op-en:  pre-award OpenPEPPOL AISBL
+:name-profile-org: “BII48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
+:name-profile: Profile P004 - "Call for Tender Question and Answers"
