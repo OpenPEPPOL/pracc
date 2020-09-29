@@ -16,14 +16,14 @@ IMPORTANT: All transactions within this profile uses the same profile identifier
 | Short Description
 | `cbc:ProfileID`
 
-| T005
-| Tender
-| EO sends his tender for the procurement project to CA
-.2+.^| urn:fdc:peppol.eu:2017:pracc:p003:01:1.0
+| T007
+| Tendering Questions
+| The EO sends questions for the Call for Tender to the CA.
+.2+.^| urn:fdc:peppol.eu:2020:pracc:p004:01:1.0
 
-| T006
-| TenderReceipt
-| CA sends acknowledgement to EO
+| T008
+| Tender Answers
+| The CA sends answers to all subscribed EOs.
 
 
 |===
