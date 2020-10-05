@@ -1,0 +1,12 @@
+[appendix]
+
+= Key examples/use cases
+
+link:files/TenderingQuestions.xml[Link to example file]
+
+
+.Example
+[source,xml,indent=0]
+----
+include::../files/TenderingQuestions.xml[]
+----
