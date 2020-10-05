@@ -13,7 +13,7 @@ include::../../shared/peppol.adoc[]
 
 | T007
 | TenderingQuestions
-| EO requests CA for the procurement project documents
+| The EO sends questions to the CA.
 | urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended: +
 urn:fdc:peppol.eu:2020:pracc:t007:ver1.0
 |===

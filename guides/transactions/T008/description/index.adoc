@@ -1,18 +1,10 @@
 
 = Description of selected parts of the transaction
 
-In this chapter you will find descriptions and examples of parts of the documents, in addition to the description and examples given in the related {link-cenbii}[CEN BII] and {link-esp-doc}[ESPD Documentation].
+Limited support for this, see link:https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62030&cs=1299CBAFF9E6A7D4FF75F6917E146F7EB[BII Profile 48].
 
 :leveloffset: +1
 
-include::procurement-project.adoc[]
 
-include::tendering-process.adoc[]
-
-include::attachment.adoc[]
-
-include::espd.adoc[]
-
-include::transport-encryption.adoc[]
 
 :leveloffset: -1

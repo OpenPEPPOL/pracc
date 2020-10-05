@@ -11,9 +11,9 @@ include::../../shared/peppol.adoc[]
 | Short Description
 | `cbc:CustomizationID`
 
-| T004
-| CallForTenders
-| CA sends all procurement project documents to EO
-| urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t004:ver1.0
+| T008
+| TenderingAnswers
+| The CA sends answers to all subscribed EOs.
+| urn:www.cenbii.eu:transaction:biitrdm085:ver3.0:extended: +
+urn:fdc:peppol.eu:2020:pracc:t008:ver1.0
 |===

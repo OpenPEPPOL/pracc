@@ -5,8 +5,7 @@
 [cols="1,2,3,2,4", options="header"]
 |===
 | Version | Date | Author | Organization | Description
-| 0.1 | 29-09-2020 | Ansgar Mondorf | University of Koblenz-Landau | First draft for review
-| 0.2 | 29-09-2020 | Ansgar Mondorf | University of Koblenz-Landau | First draft for review
-| 0.3 | 29-09-2020 | Ansgar Mondorf | University of Koblenz-Landau | First draft for review
-
+| 0.1 | 21-09-2020 | Ansgar Mondorf | University of Koblenz-Landau | First draft for review
+| 0.2 | 29-09-2020 | Ansgar Mondorf | University of Koblenz-Landau | Revisions and Formatting
+| 0.3 | 05-10-2020 | Ansgar Mondorf | University of Koblenz-Landau | Included T007 & T008
 |===

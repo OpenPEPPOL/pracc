@@ -15,6 +15,7 @@ v{version}
 :sectnums:
 :imagesdir: ../../shared/images
 :title-logo-image: {imagesdir}/peppol.png
+:xml-doc-file: files/TenderingQuestions.xml
 
 
 {description}
