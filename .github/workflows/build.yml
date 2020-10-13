@@ -11,10 +11,17 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: build
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: crate target
+        run: mkdir -p ./target/site
+      - name: build target
         run: |
           pwd
           ls -alh
           ./tools/bin/build.sh
-          zip target.zip ./target
+          zip -R site.zip ./target/site/*
+      - uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: site.zip
