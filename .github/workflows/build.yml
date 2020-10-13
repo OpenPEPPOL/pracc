@@ -18,7 +18,7 @@ jobs:
       - name: build target
         run: ./tools/bin/build.sh
       - name: create site.zip
-        run: zip -r ./target/site.zip ./target/site/
+        run: zip -qr ./target/site.zip ./target/site/
       - uses: actions/upload-artifact@v2
         with:
           name: site.zip
