@@ -22,7 +22,7 @@ jobs:
         - ./target:/target
     steps:
       - name: create structure
-        run: echo "Hello World"
+        run: echo "create structure"
   validator:
     runs-on: ubuntu-latest
     needs: [structure]
@@ -43,3 +43,4 @@ jobs:
         - ./target:/target
     steps:
         - name: creat asciidoctor
+          run: echo "creat asciidoctor"
