@@ -35,9 +35,8 @@ dc structure
 fix_owner
 
 info "Create ZIP file with schematrons"
-find target
-zip -r "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
-mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
+mkdir -p "$FOLDER/target/site/files"
+zip -r "$FOLDER/target/site/files/schematrons.zip" "$FOLDER/rules/"
 
 info "Build and verify validation artifacts"
 dc validator
