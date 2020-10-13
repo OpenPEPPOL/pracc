@@ -14,14 +14,14 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: crate target
-        run: mkdir -p ./target/site
-      - name: build target
         run: |
-          pwd
-          ls -alh
-          ./tools/bin/build.sh
-          zip -r site.zip ./target/site/*
+          mkdir -p ./target/site
+          find target
+      - name: build target
+        run: ./tools/bin/build.sh
+      - name: create site.zip
+        run: zip -r ./target/site.zip ./target/site/*
       - uses: actions/upload-artifact@v2
         with:
           name: site
-          path: site.zip
+          path: ./target/site.zip
