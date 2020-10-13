@@ -20,7 +20,7 @@ jobs:
           pwd
           ls -alh
           ./tools/bin/build.sh
-          zip -R site.zip ./target/site/*
+          zip -r site.zip ./target/site/*
       - uses: actions/upload-artifact@v2
         with:
           name: site
