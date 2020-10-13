@@ -7,6 +7,7 @@
 	<Documentation path="profiles/p001/">P001 - Procurement procedure subscription</Documentation>
 	<Documentation path="profiles/p002/">P002 - Procurement document access</Documentation>
 	<Documentation path="profiles/p003/">P003 - Tender Submission</Documentation>
+	<Documentation path="profiles/p005/">P004 - Call for Tender Question and Answers</Documentation>
 	<Documentation path="changelog/">Changelog</Documentation>
 
 	<!-- Syntax -->
@@ -40,7 +41,11 @@
 		<Path>structure/syntax/TenderReceipt.xml</Path>
 		<Title>Tender Receipt (T006)</Title>
 	</Resource>
-
+	<Resource>
+		<Type>Structure-1</Type>
+		<Path>structure/syntax/CallForTenderQuestionAndAnswers.xml</Path>
+		<Title>Call For Tender Question And Answers (T007)</Title>
+	</Resource>
 
 
 	<!-- Rules -->
