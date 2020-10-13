@@ -16,7 +16,7 @@ jobs:
       - name: crate target
         run: |
           mkdir -p ./target/site
-          find target
+          find target -ls
       - name: build target
         run: ./tools/bin/build.sh
       - name: create site.zip
