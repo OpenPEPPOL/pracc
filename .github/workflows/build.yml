@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: build
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  - scm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+  - structure:
+    container: 
+      image: difi/vefa-structure:0.6
+      volumes: 
+        - .:/src
+        - ./target:/target
+    needs: [scm]
+  - validator:
+    container: 
+      image: anskaffelser/validator:2.1.0
+      volumes: 
+        - .:/src
+    steps:
+      - run: build -x -t /src -target target/validator -n eu.peppol.pracc.catalogue
+    needs: [structure]
+  - asciidoctor:
+    container: 
+      image: difi/asciidoctor:latest
+      volumes: 
+        - .:/documents
+        - ./target:/target
+    needs: [validator]
+  
