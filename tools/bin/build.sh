@@ -1,9 +1,9 @@
 #!/bin/sh
 
-FOLDER=$(echo $(dirname $(readlink -f "$0")) | sed "s:/tools/bin::")
+FOLDER=$(cd $(dirname "$0") && pwd | sed "s:/tools/bin::")
 
 info() {
-    echo "\n *** $1 ***\n"
+    echo "\n $(date "+%Y-%m-%dT%H:%M") *** $1 ***\n"
 }
 
 dc () {
