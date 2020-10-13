@@ -22,10 +22,8 @@ jobs:
     needs: [scm]
     container: 
       image: difi/vefa-structure:0.6
-      volumes: 
-        - .:/src
-        - ./target:/target
     steps:
+      - uses: actions/checkout@v1
       - name: create structure
         run: echo "create structure"
   validator:
