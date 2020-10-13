@@ -8,18 +8,18 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  - scm:
+  scm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-  - structure:
+  structure:
     container: 
       image: difi/vefa-structure:0.6
       volumes: 
         - .:/src
         - ./target:/target
     needs: [scm]
-  - validator:
+  validator:
     container: 
       image: anskaffelser/validator:2.1.0
       volumes: 
@@ -27,7 +27,7 @@ jobs:
     steps:
       - run: build -x -t /src -target target/validator -n eu.peppol.pracc.catalogue
     needs: [structure]
-  - asciidoctor:
+  asciidoctor:
     container: 
       image: difi/asciidoctor:latest
       volumes: 
