@@ -3,7 +3,7 @@
 FOLDER=$(cd $(dirname "$0") && pwd | sed "s:/tools/bin::")
 
 info() {
-    echo "\n $(date "+%Y-%m-%dT%H:%M") *** $1 ***\n"
+    echo "$(date "+%Y-%m-%dT%H:%M:%S") *** $1 ***"
 }
 
 dc () {
@@ -22,34 +22,26 @@ dc () {
     fi
 }
 
+fix_owner() {
+  info "Fix ownership"
+  docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
+}
 
 info "Delete existing target folder"
-
 dc target-rm
 
 info "Run vefa-structure"
-
 dc structure
-
-info "Fix ownership"
-
-docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
+fix_owner
 
 info "Create ZIP file with schematrons"
+find target
 zip -r "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
 mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
 
-#info "Build and verify validation artifacts"
-
+info "Build and verify validation artifacts"
 dc validator
 
-
 info "Generate Asciidoctor documents"
-
 dc asciidoctor
-
-
-info "Fix ownership"
-
-docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
-
+fix_owner
