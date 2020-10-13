@@ -30,9 +30,10 @@ info "Run vefa-structure"
 dc structure
 
 info "Create ZIP file with schematrons"
-find "$FOLDER/target/site/files"
-mkdir -p "$FOLDER/target/site/files"
-zip -r "$FOLDER/target/site/files/schematrons.zip" "$FOLDER/rules/"
+find "$FOLDER/target/site/files" -ls
+zipinfo "$FOLDER/target/site/files/schematrons.zip"
+zip -r "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
+mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
 
 info "Build and verify validation artifacts"
 dc validator
