@@ -16,6 +16,7 @@ jobs:
         run: |
           mkdir ./target
           ls -alh
+          pwd
   structure:
     runs-on: ubuntu-latest
     needs: [scm]
