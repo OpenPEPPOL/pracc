@@ -22,17 +22,12 @@ dc () {
     fi
 }
 
-fix_owner() {
-  info "Fix ownership"
-  docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
-}
 
 info "Delete existing target folder"
 dc target-rm
 
 info "Run vefa-structure"
 dc structure
-fix_owner
 
 info "Create ZIP file with schematrons"
 find "$FOLDER/target/site/files"
@@ -44,4 +39,3 @@ dc validator
 
 info "Generate Asciidoctor documents"
 dc asciidoctor
-fix_owner
