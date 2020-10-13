@@ -13,4 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build
-        run: sh -c 'tools/bin/build.sh'
+        run: |
+          pwd
+          ls -alh
+          ./tools/bin/build.sh
+          zip target.zip ./target
