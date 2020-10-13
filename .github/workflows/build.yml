@@ -8,42 +8,9 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  scm:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: create target
-        run: |
-          mkdir ./target
-          ls -alh
-          pwd
   structure:
     runs-on: ubuntu-latest
-    needs: [scm]
-    container: 
-      image: difi/vefa-structure:0.6
     steps:
-      - uses: actions/checkout@v1
-      - name: create structure
-        run: echo "create structure"
-  validator:
-    runs-on: ubuntu-latest
-    needs: [structure]
-    container: 
-      image: anskaffelser/validator:2.1.0
-      volumes: 
-        - .:/src
-    steps:
-      - name: validate
-        run: build -x -t /src -target target/validator -n eu.peppol.pracc.catalogue
-  asciidoctor:
-    runs-on: ubuntu-latest
-    needs: [validator]
-    container: 
-      image: difi/asciidoctor:latest
-      volumes: 
-        - .:/documents
-        - ./target:/target
-    steps:
-        - name: creat asciidoctor
-          run: echo "creat asciidoctor"
+      - uses: actions/checkout@v2
+      - name: build
+        run: sh -c 'tools/bin/build.sh'
