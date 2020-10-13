@@ -35,6 +35,7 @@ dc structure
 fix_owner
 
 info "Create ZIP file with schematrons"
+find "$FOLDER/target/site/files"
 mkdir -p "$FOLDER/target/site/files"
 zip -r "$FOLDER/target/site/files/schematrons.zip" "$FOLDER/rules/"
 
