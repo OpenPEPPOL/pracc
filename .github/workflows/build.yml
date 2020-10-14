@@ -17,12 +17,6 @@ jobs:
         run: mkdir -p ./target/site/files
       - name: build target
         run: ./tools/bin/build.sh
-      - name: create site.zip
-        run: zip -qr ./target/site.zip ./target/site/
-      - uses: actions/upload-artifact@v2
-        with:
-          name: site
-          path: ./target/site.zip
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
