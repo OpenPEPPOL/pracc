@@ -2,11 +2,11 @@
 
 = Key examples/use cases
 
-link:files/tendering-questions-instance.xml[Link to example file]
+link:../files/Enquiry-instance.xml[Link to example file]
 
 
 .Example
 [source,xml,indent=0]
 ----
-include::../files/tendering-questions-instance.xml[]
+include::../files/Enquiry-instance.xml[]
 ----

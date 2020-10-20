@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>CallForTenderQuestionAndAnswers</Term>
+    <Term>EnquiryResponse</Term>
 
-    <Name>Call For Tender Question And Answers (T007)</Name>
-    <Namespace prefix="t007">urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2</Namespace>
-    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Name>Enquiry Response (T008)</Name>
+    <Namespace prefix="t008">urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Document>
 
-        <Term>t007:CallForTenderQuestionAndAnswers</Term>
-        <Name>Call For Tender Question And Answers, root element</Name>
+        <Term>t008:EnquiryResponse</Term>
+        <Name>Call For Tender Question And Answers, root element for Enquiry Response</Name>
 
         <Element>
             <Term>cbc:UBLVersionID</Term>
@@ -68,9 +68,6 @@
             <Name>Call for tender issue time</Name>
             <Description>The time when the call for tender is issued. The issue time must have granularity of seconds, and include time zone information</Description>
             <DataType>Time</DataType>
-            <Reference type="RULE">eSENS-T004-R007</Reference>
-            <Reference type="RULE">eSENS-T004-R008</Reference>
-            <Reference type="RULE">eSENS-T004-R009</Reference>
         </Element>
 
         <Element>
@@ -78,7 +75,6 @@
             <Name>Call for tender version</Name>
             <Description>Identifies the version of the call for tenders.</Description>
             <DataType>Identifier</DataType>
-            <Reference type="RULE">eSENS-T004-R038</Reference>
         </Element>
 
         <Element>

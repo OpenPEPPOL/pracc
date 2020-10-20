@@ -1,161 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-	<Name>PEPPOL Pre-Award</Name>
+    <Name>PEPPOL Pre-Award</Name>
 
-	
-	<Documentation path="profiles/p001/">P001 - Procurement procedure subscription</Documentation>
-	<Documentation path="profiles/p002/">P002 - Procurement document access</Documentation>
-	<Documentation path="profiles/p003/">P003 - Tender Submission</Documentation>
-	<Documentation path="profiles/p004/">P004 - Call for Tender Question and Answers</Documentation>
-	<Documentation path="changelog/">Changelog</Documentation>
+    <Documentation path="profiles/p001/">P001 - Procurement procedure subscription</Documentation>
+    <Documentation path="profiles/p002/">P002 - Procurement document access</Documentation>
+    <Documentation path="profiles/p003/">P003 - Tender Submission</Documentation>
+    <Documentation path="profiles/p004/">P004 - Call for Tender Question and Answers</Documentation>
+    <Documentation path="changelog/">Changelog</Documentation>
 
-	<!-- Syntax -->
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
-		<Title>Expression Of Interest Request (T001)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
-		<Title>Expression Of Interest Response (T002)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/TenderStatusRequest.xml</Path>
-		<Title>Tender Status Request (T003)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/CallForTenders.xml</Path>
-		<Title>Call for Tenders (T004)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/SubmitTender.xml</Path>
-		<Title>Tender (T005)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/TenderReceipt.xml</Path>
-		<Title>Tender Receipt (T006)</Title>
-	</Resource>
-	<Resource>
-		<Type>Structure-1</Type>
-		<Path>structure/syntax/CallForTenderQuestionAndAnswers.xml</Path>
-		<Title>Call For Tender Question And Answers (T007)</Title>
-	</Resource>
+    <!-- Syntax -->
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ExpressionOfInterestRequest.xml</Path>
+        <Title>Expression Of Interest Request (T001)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/ExpressionOfInterestResponse.xml</Path>
+        <Title>Expression Of Interest Response (T002)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/TenderStatusRequest.xml</Path>
+        <Title>Tender Status Request (T003)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/CallForTenders.xml</Path>
+        <Title>Call for Tenders (T004)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/SubmitTender.xml</Path>
+        <Title>Tender (T005)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/TenderReceipt.xml</Path>
+        <Title>Tender Receipt (T006)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/Enquiry.xml</Path>
+        <Title>Enquiry (T007)</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/EnquiryResponse.xml</Path>
+        <Title>Enquiry Response (T008)</Title>
+    </Resource>
 
 
-	<!-- Rules -->
-	<Resource>
-		<Identifier>T001</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T001.sch</Path>
-		<Title>PEPPOL T001 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>T002</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T002.sch</Path>
-		<Title>PEPPOL T002 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>T003</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-status-inquiry-1.0/ESENS-UBL-T003.sch</Path>
-		<Title>PEPPOL T003 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>T004</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-call-for-tender-1.0/peppol/ESENS-UBL-T004.sch</Path>
-		<Title>PEPPOL T004 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>T005</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch</Path>
-		<Title>PEPPOL T005 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>T006</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
-		<Title>PEPPOL T006 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>BIIT004</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-call-for-tender-1.0/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
-		<Title>CENBII T004 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>BIIT005</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90.sch</Path>
-		<Title>CENBII T005 rules</Title>
-	</Resource>
-	<Resource>
-		<Identifier>BIIT006</Identifier>
-		<Type>native:Schematron</Type>
-		<Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
-		<Title>CENBII T006 rules</Title>
-	</Resource>
-	
-	<!-- Code lists -->
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/addCond.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/contractType.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/docStatus.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/docType.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/procedureType.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/procurementType.xml</Path>
-	</Resource>
-	<Resource>
-		<Type>CodeList-1</Type>
-		<Path>structure/codelist/submissionMethod.xml</Path>
-	</Resource>
+    <!-- Rules -->
+    <Resource>
+        <Identifier>T001</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T001.sch</Path>
+        <Title>PEPPOL T001 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T002</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T002.sch</Path>
+        <Title>PEPPOL T002 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T003</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-status-inquiry-1.0/ESENS-UBL-T003.sch</Path>
+        <Title>PEPPOL T003 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T004</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender-1.0/peppol/ESENS-UBL-T004.sch</Path>
+        <Title>PEPPOL T004 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T005</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch</Path>
+        <Title>PEPPOL T005 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T006</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
+        <Title>PEPPOL T006 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>BIIT004</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender-1.0/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
+        <Title>CENBII T004 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>BIIT005</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-1.0/CENBII/T005/BIIRULES-UBL-T90.sch</Path>
+        <Title>CENBII T005 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>BIIT006</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-1.0/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
+        <Title>CENBII T006 rules</Title>
+    </Resource>
 
-	<Resource>
-		<Type>native:File</Type>
-		<Path>guides/BIS-eDelivery-guide-for-pre-award-v1.2.docx</Path>
-		<Title>eDelivery Guide For Pre-award</Title>
-		<Description>The eDelivery Guide for Pre-award</Description>
-		<Property key="download">BIS-eDelivery-guide-for-pre-award-v1.2.docx</Property>
-	</Resource>
+    <!-- Code lists -->
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/addCond.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/contractType.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/docStatus.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/docType.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/procedureType.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/procurementType.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/submissionMethod.xml</Path>
+    </Resource>
 
-	<Resource>
-		<Type>native:File</Type>
-		<Path>guides/BIS-eDocuments-guide-for-pre-award-v1.2.docx</Path>
-		<Title>eDocuments Guide For Pre-award</Title>
-		<Description>The eDocuments Guide for Pre-award</Description>
-		<Property key="download">BIS-eDocuments-guide-for-pre-award-v1.2.docx</Property>
-	</Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>guides/BIS-eDelivery-guide-for-pre-award-v1.2.docx</Path>
+        <Title>eDelivery Guide For Pre-award</Title>
+        <Description>The eDelivery Guide for Pre-award</Description>
+        <Property key="download">BIS-eDelivery-guide-for-pre-award-v1.2.docx</Property>
+    </Resource>
 
-	<Resource>
-		<Type>native:File</Type>
-		<Path>project.xml</Path>
-		<Title>Schematron files</Title>
-		<Property key="download">schematrons.zip</Property>
-		<Property key="filename">schematrons.zip</Property>
-	</Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>guides/BIS-eDocuments-guide-for-pre-award-v1.2.docx</Path>
+        <Title>eDocuments Guide For Pre-award</Title>
+        <Description>The eDocuments Guide for Pre-award</Description>
+        <Property key="download">BIS-eDocuments-guide-for-pre-award-v1.2.docx</Property>
+    </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Schematron files</Title>
+        <Property key="download">schematrons.zip</Property>
+        <Property key="filename">schematrons.zip</Property>
+    </Resource>
 
 </Project>
