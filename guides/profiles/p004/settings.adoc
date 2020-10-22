@@ -9,5 +9,5 @@ include::../../shared/settings.adoc[]
 :rules-dir: /tmp/rules
 
 :name-op-en:  pre-award OpenPEPPOL AISBL
-:name-profile-org: “BII48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
+:name-profile-org: “Profile BII48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
 :name-profile: Profile P004 - "Call for Tender Question and Answers"

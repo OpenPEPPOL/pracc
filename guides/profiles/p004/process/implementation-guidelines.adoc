@@ -1,7 +1,7 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {bii3}[CEN BII], and business rules and code lists used are inherited from the following {bii3}[CEN BII] and {link-ubl}[UBL 2.3] documents:
+{name-profile} is based on work done by {bii3}, and business rules and code lists used are inherited from the following {bii3} and {link-ubl}[UBL 2.3] documents:
 
 urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2
 urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
@@ -12,5 +12,5 @@ urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
 
 {peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T007\[T007 - Tendering Questions]
-* link:..\..\transactions\T008\[T008 - Tendering Answers]
+* link:../../transactions/T007[T007 - Tendering Questions]
+* link:../../transactions/T008[T008 - Tendering Answers]

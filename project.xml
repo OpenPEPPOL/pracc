@@ -43,12 +43,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/Enquiry.xml</Path>
-        <Title>Enquiry (T007)</Title>
+        <Title>Tendering Questions (T007)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/EnquiryResponse.xml</Path>
-        <Title>Enquiry Response (T008)</Title>
+        <Title>Tendering Answers (T008)</Title>
     </Resource>
 
 
