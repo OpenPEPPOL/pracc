@@ -24,7 +24,6 @@ dc () {
 
 info "Run vefa-structure"
 dc structure
-cp -r target target-1
 
 info "Create ZIP file with schematrons"
 zip -qr "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
