@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 FOLDER=$(cd $(dirname "$0") && pwd | sed "s:/tools/bin::")
 
-info() {
-    echo "$(date "+%Y-%m-%dT%H:%M:%S") *** $1 ***"
-}
+script_dir=$(cd $(dirname $0) && pwd)
+
+source ${script_dir}/functions.sh
 
 dc () {
     if [ $(command -v docker-compose | wc -l) = "1" ]; then
@@ -24,6 +24,7 @@ dc () {
 
 info "Run vefa-structure"
 dc structure
+cp -r target target-1
 
 info "Create ZIP file with schematrons"
 zip -qr "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
