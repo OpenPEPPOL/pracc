@@ -1,6 +1,6 @@
 FROM python:3-alpine
 
-COPY target/site /site
+COPY target/site/ /site/pracc/
 
 EXPOSE 8000
 
