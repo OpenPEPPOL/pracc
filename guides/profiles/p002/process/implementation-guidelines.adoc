@@ -7,7 +7,7 @@
 
 Transaction description for Trdm097 Tender Status Inquiry is based on work done by {link-esens}
 
-{peppol} {name-profile} business process includes 2 transactions:
+{link-peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T003\[T003 Tender Status Inquiry]
-* link:..\..\transactions\T004\[T004 Call for Tenders]
+* link:../../transactions/T003/index.html[T003 Tender Status Inquiry]
+* link:../../transactions/T004/index.html[T004 Call for Tenders]

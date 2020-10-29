@@ -1,12 +1,10 @@
 [appendix]
-
 = Key examples/use cases
 
 link:../files/Enquiry-instance.xml[Link to example file]
 
-
-.Example
 [source,xml,indent=0]
+.Example
 ----
 include::../files/Enquiry-instance.xml[]
 ----

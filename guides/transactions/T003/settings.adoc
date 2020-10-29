@@ -1,20 +1,18 @@
-include::../shared/links.adoc[]
-
 include::../../shared/settings.adoc[]
 
-:lang: en
-
-:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
+:doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-transaction}
 :shared-dir: ../../shared
-:rules-dir: ../rules/peppol-tender-status-inquiry-1.0/peppol-res
+:rules-dir: ../../rules/peppol-tender-status-inquiry-1.0/peppol-res
 
 :name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 
-:name-profile-org: {bii3} “Profile 60 Tender Status Inquiry" (CWA 17027-123)
 :name-profile: Profile P002 - "Procurement document access"
 
 :name-transaction-org: "Trdm097 Tender Status Inquiry transaction"
 :name-transaction: T003 - Tender Status Inquiry
 :name-trans-short: Tender Status Inquiry
 :name-syntax: TenderStatusRequest
-:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
+
+include::../shared/links.adoc[]
+
+:name-profile-org: {link-bii3} “Profile 60 Tender Status Inquiry" (CWA 17027-123)

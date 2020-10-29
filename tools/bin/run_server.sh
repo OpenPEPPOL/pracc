@@ -12,6 +12,17 @@ script_dir=$(cd $(dirname $0) && pwd)
 
 source ${script_dir}/functions.sh
 
+# change to project root
+pushd ${script_dir}/../.. > /dev/null
+
+# clean target
+info "clean target"
+rm -rf target
+
+# build target
+info "running build.sh"
+${script_dir}/build.sh
+
 container_id=$(docker ps -q --filter "ancestor=pracc")
 
 if [[ -n "$container_id" ]]; then
@@ -23,17 +34,6 @@ fi
 # remove image
 info "remove pracc images"
 docker image rm -f pracc
-
-# change to project root
-pushd ${script_dir}/../.. > /dev/null
-
-# clean target
-info "clean target"
-rm -rf target
-
-# build target
-info "running build.sh"
-${script_dir}/build.sh
 
 # build docker image
 info "building pracc image"

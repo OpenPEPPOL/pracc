@@ -1,1 +1,14 @@
 :version: 1.0.0
+
+:lang: en
+
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:imagesdir: ./images
+:title-logo-image: {imagesdir}/peppol.png

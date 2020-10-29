@@ -1,7 +1,7 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {bii3}, and business rules and code lists used are inherited from the following {bii3} and {link-ubl}[UBL 2.3] documents:
+{name-profile} is based on work done by {link-bii3}, and business rules and code lists used are inherited from the following {link-bii3} and {link-ubl}[UBL 2.3] documents:
 
 urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2
 urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
@@ -10,7 +10,7 @@ urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
 * {ubl-enquiry-response}[UBL Enquiry Response Schema] sent by a responder to a requester answering a particular enquiry.
 * {link-profile48} (CWA 17027-113:2016) describing a process providing electronic messaging support for the business process of answering questions of economic operators about a call for tenders.
 
-{peppol} {name-profile} business process includes 2 transactions:
+{link-peppol} {name-profile} business process includes 2 transactions:
 
-* link:../../transactions/T007[T007 - Tendering Questions]
-* link:../../transactions/T008[T008 - Tendering Answers]
+* link:../../transactions/T007/index.html[T007 - Tendering Questions]
+* link:../../transactions/T008/index.html[T008 - Tendering Answers]

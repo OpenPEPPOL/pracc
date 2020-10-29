@@ -3,7 +3,6 @@
 
 :leveloffset: +1
 
-
 include::parties.adoc[]
 include::document-reference.adoc[]
 include::date-time.adoc[]
