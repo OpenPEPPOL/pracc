@@ -7,7 +7,7 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 
 IMPORTANT: All transactions within this profile uses the same profile identifier.
 
-[cols="2,2,4,4", options="header"]
+[cols="2*2,2*4", options="header"]
 .The table below shows values to be used for the Profile ID
 |===
 
@@ -24,7 +24,6 @@ IMPORTANT: All transactions within this profile uses the same profile identifier
 | T008
 | Tender Answers
 | The CA sends answers to all subscribed EOs.
-
 
 |===
 

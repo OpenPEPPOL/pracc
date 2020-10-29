@@ -1,7 +1,7 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
+{name-profile} is based on work done by {link-cenbii}, and business rules and code lists used are inherited from the follwing {link-cenbii} documents: +
 
 * UBL Syntax Implementation Guideline for Trdm090 Tender (CWA 17027-218)
 * UBL Syntax Implementation Guideline for Trdm045 Tender Reception Notification (CWA 17027-205)

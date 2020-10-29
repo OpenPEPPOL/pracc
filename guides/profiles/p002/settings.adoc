@@ -1,11 +1,8 @@
 include::links.adoc[]
 
-include::../../shared/settings.adoc[]
+include::../shared/settings.adoc[]
 
-:doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-profile}
 :shared-dir: ../../shared
-:rules-dir: /tmp/rules
 
-:name-op-en:  pre-award OpenPEPPOL AISBL
 :name-profile-org: "Profile BII60 Tender Status Inquiry" (CWA 17027-123)
 :name-profile: Profile P002 - "Procurement document access"

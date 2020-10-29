@@ -1,7 +1,7 @@
 
 = Description of selected parts of the transaction
 
-In this chapter you will find descriptions and examples of parts of the documents, in addition to the description and examples given in the related {link-cenbii}[CEN BII] and {link-esp-doc}[ESPD Documentation].
+In this chapter you will find descriptions and examples of parts of the documents, in addition to the description and examples given in the related {link-cenbii} and {link-esp-doc}[ESPD Documentation].
 
 :leveloffset: +1
 

@@ -1,10 +1,6 @@
-include::../../shared/settings.adoc[]
+include::../shared/settings.adoc[]
 
-:doctitle: image:../../../shared/images/peppol.png[float="right"] PEPPOL BIS {name-transaction}
 :shared-dir: ../../shared
-:rules-dir: ../../rules/peppol-call-for-tender-1.0/peppol-res
-
-:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
 
 :name-profile: Profile P002 - "Call for Tenders"
 

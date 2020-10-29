@@ -2,7 +2,7 @@
 =	Principles and prerequisites
 
 This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award. It is
-based on the {link-cenbii}[CEN BII] and the work done by {link-esens} eTendering:
+based on the {link-cenbii} and the work done by {link-esens} eTendering:
 
 * {link-bii3} {name-profile-org}
 * link:https://espd.github.io/ESPD-EDM[ESPD Exchange Data Model]
