@@ -1,7 +1,5 @@
 include::../shared/settings.adoc[]
 
-:shared-dir: ../../shared
-
 :name-profile: Profile P003 - "Tender Submission"
 
 :name-transaction-org: "Trdm090 Tender"(CWA 17027-218)

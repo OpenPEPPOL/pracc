@@ -5,7 +5,7 @@ include::settings.adoc[]
 v{version}
 
 {description}
-include::{shared-dir}/copyright.adoc[]
+include::../../shared/copyright.adoc[]
 
 :leveloffset: +1
 

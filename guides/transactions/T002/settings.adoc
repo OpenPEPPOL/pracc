@@ -1,7 +1,5 @@
 include::../shared/settings.adoc[]
 
-:shared-dir: ../../shared
-
 :name-profile: Profile P001 - "Procurement procedure subscription"
 
 :name-transaction-org: "Trdm082  Subscribe to Procedure Confirmation"({link-esens})

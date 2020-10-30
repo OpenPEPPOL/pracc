@@ -3,7 +3,8 @@
 
 The Subscribe to procedure business process includes 4 transactions:
 
-NOTE:: The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any mapping information based on UBL 2.2.
+[NOTE]
+The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any mapping information based on UBL 2.2.
 
 * Trdm081 Subscribe to Procedure
 * Trdm082 Subscribe to Procedure Confirmation

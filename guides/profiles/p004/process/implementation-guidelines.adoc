@@ -3,8 +3,8 @@
 
 {name-profile} is based on work done by {link-bii3}, and business rules and code lists used are inherited from the following {link-bii3} and {link-ubl}[UBL 2.3] documents:
 
-urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2
-urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
+ urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2
+ urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
 
 * {ubl-enquiry}[UBL Enquiry Schema] sent by a requestor to a responder requesting information about a particular business process.
 * {ubl-enquiry-response}[UBL Enquiry Response Schema] sent by a responder to a requester answering a particular enquiry.

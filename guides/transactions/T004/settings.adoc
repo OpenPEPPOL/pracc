@@ -1,7 +1,5 @@
 include::../shared/settings.adoc[]
 
-:shared-dir: ../../shared
-
 :name-profile: Profile P002 - "Call for Tenders"
 
 :name-transaction-org: "Trdm083 Call for Tenders"(CWA 17027-212)

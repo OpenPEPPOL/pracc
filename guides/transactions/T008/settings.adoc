@@ -1,7 +1,5 @@
 include::../shared/settings.adoc[]
 
-:shared-dir: ../../shared
-
 :name-profile: Profile P004 - "Call for Tender Question and Answers"
 
 :name-transaction-org: "Trdm085 Tendering Answers transaction"
