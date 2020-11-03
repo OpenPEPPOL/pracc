@@ -8,12 +8,17 @@
     <Document>
         <Term>t007:Enquiry</Term>
         <Name>Call For Tender Question And Answers, root element for Enquiry</Name>
+        <Reference type="RULE">PEPPOL-T007-R001</Reference>
+        <Reference type="RULE">PEPPOL-T007-R003</Reference>
+        <Reference type="RULE">PEPPOL-T007-R005</Reference>
+        <Reference type="RULE">PEPPOL-T007-R007</Reference>
+        <Reference type="RULE">PEPPOL-T007-R010</Reference>
+        <Reference type="RULE">PEPPOL-T007-R013</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL Version identifier</Name>
             <Description>Requires UBL version 2.3</Description>
             <Value type="FIXED">2.3</Value>
-            <Reference type="RULE">PEPPOL-T007-R001</Reference>
             <Reference type="RULE">PEPPOL-T007-R002</Reference>
         </Element>
         <Element>
@@ -26,7 +31,6 @@
             <Value type="FIXED">
                 urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0
             </Value>
-            <Reference type="RULE">PEPPOL-T007-R003</Reference>
             <Reference type="RULE">PEPPOL-T007-R004</Reference>
         </Element>
         <Element>
@@ -37,7 +41,6 @@
             </Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p004:01:1.0</Value>
-            <Reference type="RULE">PEPPOL-T007-R005</Reference>
             <Reference type="RULE">PEPPOL-T007-R006</Reference>
         </Element>
         <Element>
@@ -46,23 +49,21 @@
             <Description>Identifies the call for tender as issued by the contracting body. Must be expressed as a UUID
             </Description>
             <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T007-R008</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
                 <Name>Scheme URI</Name>
                 <Value type="FIXED">urn:uuid</Value>
                 <Reference type="RULE">PEPPOL-T007-R009</Reference>
             </Attribute>
-            <Reference type="RULE">PEPPOL-T007-R007</Reference>
-            <Reference type="RULE">PEPPOL-T007-R008</Reference>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Document issue date</Name>
             <Description>The date on which the tendering question is issued.</Description>
             <DataType>Date</DataType>
-            <Reference type="RULE">PEPPOL-T007-R010</Reference>
         </Element>
-        <Element cardinality="1..1">
+        <Element>
             <Term>cbc:IssueTime</Term>
             <Name>Document issue time</Name>
             <Description>The time when the tendering question is issued. The issue time must have granularity of
@@ -71,29 +72,28 @@
             <DataType>Time</DataType>
             <Reference type="RULE">PEPPOL-T007-R011</Reference>
             <Reference type="RULE">PEPPOL-T007-R012</Reference>
-            <Reference type="RULE">PEPPOL-T007-R013</Reference>
         </Element>
-        <Element>
+        <Element cardinality="1..n">
             <Term>cbc:Description</Term>
             <Name>Tendering request</Name>
             <Description>The tendering questions that are send to the contracting body.</Description>
             <DataType>Text</DataType>
-            <Reference type="RULE">PEPPOL-T007-R014</Reference>
         </Element>
         <Element>
             <Term>cac:RequestorParty</Term>
-            <Name>Requestor body</Name>
-            <Reference type="RULE">PEPPOL-T007-R015</Reference>
+            <Name>The Economic operator</Name>
+            <Reference type="RULE">PEPPOL-T007-R014</Reference>
+            <Reference type="RULE">PEPPOL-T007-R019</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>The economic operator electronic address identifier</Name>
                 <Description>Electronic address of the economic operator.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="RULE">PEPPOL-T007-R016</Reference>
+                <Reference type="RULE">PEPPOL-T007-R015</Reference>
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
-                    <Reference type="RULE">PEPPOL-T007-R017</Reference>
+                    <Reference type="RULE">PEPPOL-T007-R016</Reference>
                 </Attribute>
             </Element>
             <Element>
@@ -106,12 +106,12 @@
                         identifier. Can be the registration number in the professional registry.
                     </Description>
                     <DataType>Identifier</DataType>
-                    <Reference type="RULE">PEPPOL-T007-R018</Reference>
+                    <Reference type="RULE">PEPPOL-T007-R017</Reference>
 
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Reference type="RULE">PEPPOL-T007-R019</Reference>
+                        <Reference type="RULE">PEPPOL-T007-R018</Reference>
                     </Attribute>
                 </Element>
             </Element>
@@ -123,24 +123,23 @@
                     <Name>Economic operator name</Name>
                     <Description>The name of the economic operator.</Description>
                     <DataType>Text</DataType>
-                    <Reference type="RULE">PEPPOL-T007-R020</Reference>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>cac:ResponderParty</Term>
-            <Name>Responder body</Name>
-            <Reference type="RULE">PEPPOL-T007-R021</Reference>
+            <Name>The Contracting body</Name>
+            <Reference type="RULE">PEPPOL-T007-R020</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the contracting body.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="RULE">PEPPOL-T007-R022</Reference>
+                <Reference type="RULE">PEPPOL-T007-R021</Reference>
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
-                    <Reference type="RULE">PEPPOL-T007-R023</Reference>
+                    <Reference type="RULE">PEPPOL-T007-R022</Reference>
                 </Attribute>
             </Element>
             <Element>
@@ -151,11 +150,11 @@
                     <Name>Contracting body identifier</Name>
                     <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
                     <DataType>Identifier</DataType>
-                    <Reference type="RULE">PEPPOL-T007-R024</Reference>
+                    <Reference type="RULE">PEPPOL-T007-R023</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Reference type="RULE">PEPPOL-T007-R025</Reference>
+                        <Reference type="RULE">PEPPOL-T007-R024</Reference>
                     </Attribute>
                 </Element>
             </Element>
@@ -170,7 +169,7 @@
                 </Element>
             </Element>
         </Element>
-        <Element cardinality="2..2">
+        <Element cardinality="1..1">
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document reference</Name>
             <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
