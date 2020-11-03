@@ -96,6 +96,12 @@
         <Title>PEPPOL T007 rules</Title>
     </Resource>
     <Resource>
+        <Identifier>T008</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch</Path>
+        <Title>PEPPOL T008 rules</Title>
+    </Resource>
+    <Resource>
         <Identifier>BIIT004</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender-1.0/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
