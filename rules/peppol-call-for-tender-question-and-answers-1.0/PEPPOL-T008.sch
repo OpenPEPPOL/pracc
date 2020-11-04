@@ -37,7 +37,7 @@
         </rule>
 
         <rule context="ubl:Enquiry/cbc:CustomizationID">
-            <assert id="PEPPOL-T008-R004" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0'">[PEPPOL-T008-R004] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0'</assert>
+            <assert id="PEPPOL-T008-R004" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0'">[PEPPOL-T008-R004] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0'</assert>
             <report id="PEPPOL-T008-S307" flag="warning" test="./@*"><value-of select="$syntaxError" />[PEPPOL-T008-S307] CustomizationID SHOULD NOT have any attributes.</report>
         </rule>
 
