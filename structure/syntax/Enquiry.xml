@@ -82,6 +82,7 @@
         <Element>
             <Term>cac:RequestorParty</Term>
             <Name>The Economic operator</Name>
+            <Description>Party information of the economic operator</Description>
             <Reference type="RULE">PEPPOL-T007-R014</Reference>
             <Reference type="RULE">PEPPOL-T007-R019</Reference>
             <Element>
@@ -102,9 +103,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Economic operator identifier</Name>
-                    <Description>An identifier that identifies the economic operator, such as a legal registration
-                        identifier. Can be the registration number in the professional registry.
-                    </Description>
+                    <Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="RULE">PEPPOL-T007-R017</Reference>
 
@@ -129,6 +128,7 @@
         <Element>
             <Term>cac:ResponderParty</Term>
             <Name>The Contracting body</Name>
+            <Description>Party information of the contracting body</Description>
             <Reference type="RULE">PEPPOL-T007-R020</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
@@ -169,11 +169,17 @@
                 </Element>
             </Element>
         </Element>
-        <Element cardinality="1..1">
+        <Element>
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document reference</Name>
             <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
             <DataType>cbc:DocumentReference</DataType>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Document identifier</Name>
+                <Description>Identification of the document reference</Description>
+                <DataType>Identifier</DataType>
+            </Element>
         </Element>
     </Document>
 </Structure>
