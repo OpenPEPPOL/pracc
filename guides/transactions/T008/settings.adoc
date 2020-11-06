@@ -1,20 +1,14 @@
-include::../shared/links.adoc[]
+include::../shared/settings.adoc[]
 
-include::../../shared/settings.adoc[]
-
-:lang: en
-
-:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
-:shared-dir: ../../shared
-:rules-dir: ../../../../rules/peppol-call-for-tender-question-and-answers-1.0/peppol-res
-
-:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
-
-:name-profile-org: {bii3} “Profile 48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
 :name-profile: Profile P004 - "Call for Tender Question and Answers"
 
 :name-transaction-org: "Trdm085 Tendering Answers transaction"
 :name-transaction: T008 - Tendering Answers
 :name-trans-short: Tendering Answers
 :name-syntax: EnquiryResponse
-:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]
+
+include::../shared/links.adoc[]
+
+:name-profile-org: {link-bii3} "Profile 48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
+
+:xml-doc-file: files/call-for-tenders-instance-doc.xml

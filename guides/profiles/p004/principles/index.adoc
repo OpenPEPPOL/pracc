@@ -1,8 +1,8 @@
 
 =	Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of {peppol} Pre-award. It is
-based on the {bii3}[CEN BII] and the work done by {link-esens} eTendering:
+This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award. It is
+based on the {link-bii3}[CEN BII] and the work done by {link-esens} eTendering:
 
 * {link-profile48} {name-profile-org}
 

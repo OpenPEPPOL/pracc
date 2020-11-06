@@ -3,7 +3,8 @@
 
 The Subscribe to procedure business process includes 4 transactions:
 
-NOTE:: The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any mapping information based on UBL 2.2.
+[NOTE]
+The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any mapping information based on UBL 2.2.
 
 * Trdm081 Subscribe to Procedure
 * Trdm082 Subscribe to Procedure Confirmation
@@ -17,7 +18,7 @@ Trdm083, Trdm084, Trdm106 and Trdm107 are out-of-scope of the e-SENS pilot.
 Subscribe to Procedure is also called Expression of Interest.
 ====
 
-{peppol} {name-profile} business process includes 2 transactions:
+{link-peppol} {name-profile} business process includes 2 transactions:
 
-* link:..\..\transactions\T001\[T001 Subscribe to Procedure]
-* link:..\..\transactions\T002\[T002 Subscribe to Procedure Confirmation]
+* link:../../transactions/T001/index.html[T001 Subscribe to Procedure]
+* link:../../transactions/T002/index.html[T002 Subscribe to Procedure Confirmation]
