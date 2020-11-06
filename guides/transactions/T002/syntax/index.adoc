@@ -1,8 +1,0 @@
-
-= Syntax Mapping
-
-The following tables describe the mapping of the information requirement elements to UBL 2.2. The syntax mapping has been added during the eSENS pilot since CEN/BII did not provide any.
-
-Syntax mapping of T002:
-
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/ExpressionOfInterestResponse/tree/[{name-transaction}]

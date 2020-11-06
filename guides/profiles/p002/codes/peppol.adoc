@@ -5,9 +5,10 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 
 == Profile ID
 
-IMPORTANT: All transactions within this profile uses the same profile identifier.
+[IMPORTANT]
+All transactions within this profile uses the same profile identifier.
 
-[cols="2,2,4,4", options="header"]
+[cols="2*2,2*4", options="header"]
 .The table below shows values to be used for the Profile ID
 |===
 
@@ -25,7 +26,7 @@ IMPORTANT: All transactions within this profile uses the same profile identifier
 | CallForTenders
 | CA sends all procurement project documents to EO
 
-
 |===
 
-NOTE: For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.
+[NOTE]
+For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.

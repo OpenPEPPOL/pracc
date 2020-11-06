@@ -10,7 +10,7 @@ h| Qualifier
 h| Document location
 | `cac:Country/cbc:IdentificationCode`
 h| Source codelist
-| Use Alpha-2 codes from {iso3166}
+| Use Alpha-2 codes from {link-iso3166}
 |===
 
 == Procedure type

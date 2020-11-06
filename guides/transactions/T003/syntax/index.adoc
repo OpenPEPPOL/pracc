@@ -1,8 +1,0 @@
-
-= Syntax Mapping
-
-The following table describes the mapping of the information requirement elements to UBL.
-
-Syntax mapping of T003:
-
-* https://test-vefa.difi.no/peppolbis/pracc/syntax/TenderStatusRequest/tree/[{name-transaction}]

@@ -1,7 +1,7 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
+{name-profile} is based on work done by {link-cenbii}, and business rules and code lists used are inherited from the follwing {link-cenbii} documents: +
 
 
 * Profile BII47  Call for Tenders (CWA 17027-112)
@@ -10,7 +10,7 @@
 
 
 
-{peppol} {name-profile} business process includes 2 transactions:
+{link-peppol} {name-profile} business process includes 2 transactions:
 
 * link:..\..\transactions\T004\[T004 - Call for Tenders]
 * link:https://github.com/espd/[ESPD Github Account]
