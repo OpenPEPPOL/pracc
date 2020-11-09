@@ -3,12 +3,12 @@
 
 
 == Tender document language
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `ISO639-1` (listID)
-h| Document location
+| Document location
 | `cbc:TenderLanguageLocaleCode`
-h| Source codelist
+| Source codelist
 | link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
 |===

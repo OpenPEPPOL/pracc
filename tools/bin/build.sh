@@ -29,8 +29,10 @@ info "Create ZIP file with schematrons"
 zip -qr "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
 mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
 
+(
 info "Build and verify validation artifacts"
 dc validator
+)&
 
 info "Generate Asciidoctor documents"
 dc asciidoctor

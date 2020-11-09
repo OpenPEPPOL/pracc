@@ -1,7 +1,8 @@
 #!/bin/sh
 
 if [ -e /target/site ]; then
-    mv /target/guides/* /target/site
+  mv /target/guides/* /target/site
+  rm -r /target/guides
 fi
 
-find /target/site -name .adocassets -exec rm '{}' \;
+find /target/site -name ".adocassets" -delete

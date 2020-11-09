@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
-      - name: crate target
+      - name: create target
         run: mkdir -p ./target/site/files
       - name: build target
         run: ./tools/bin/build.sh
