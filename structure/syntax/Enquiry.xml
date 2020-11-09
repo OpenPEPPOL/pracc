@@ -45,8 +45,8 @@
         </Element>
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Call for tender identifier</Name>
-            <Description>Identifies the call for tender as issued by the contracting body. Must be expressed as a UUID
+            <Name>Tendering question identifier</Name>
+            <Description>Identifies the tendering question as issued by the economic operator. Must be expressed as a UUID
             </Description>
             <DataType>Identifier</DataType>
             <Reference type="RULE">PEPPOL-T007-R008</Reference>
@@ -59,13 +59,13 @@
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name>Document issue date</Name>
+            <Name>Tendering question issue date</Name>
             <Description>The date on which the tendering question is issued.</Description>
             <DataType>Date</DataType>
         </Element>
         <Element>
             <Term>cbc:IssueTime</Term>
-            <Name>Document issue time</Name>
+            <Name>Tendering question issue time</Name>
             <Description>The time when the tendering question is issued. The issue time must have granularity of
                 seconds, and include time zone information.
             </Description>

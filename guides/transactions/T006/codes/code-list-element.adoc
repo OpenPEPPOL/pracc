@@ -3,12 +3,12 @@
 
 == DocumentTypeCode
 
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `UNCL1001` (listID)
-h| Document location
+| Document location
 | `cac:DocumentReference/cbc:DocumentTypeCode`
-h| Source codelist
+| Source codelist
 |  http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001 (Subset by CEN BII2)]
 |===
