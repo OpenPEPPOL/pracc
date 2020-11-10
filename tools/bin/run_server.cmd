@@ -23,3 +23,5 @@ ECHO running pracc image
 docker run --rm -p 80:8000 -d pracc:latest
 
 POPD
+
+PAUSE
