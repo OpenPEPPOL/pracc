@@ -3,22 +3,22 @@
 	<cbc:UBLVersionID>2.3</cbc:UBLVersionID> 
 	<cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm085:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0</cbc:CustomizationID>
 	<cbc:ProfileID>urn:fdc:peppol.eu:2020:pracc:p004:01:1.0</cbc:ProfileID> 
-	<cbc:ID schemeID="urn:uuid">432a35d2-756a-4670-a07f-46d4ca0433e6</cbc:ID>
+	<cbc:ID schemeURI="urn:uuid">432a35d2-756a-4670-a07f-46d4ca0433e6</cbc:ID>
 	<cbc:IssueDate>2020-05-10</cbc:IssueDate>
 	<cbc:IssueTime>15:28:27+01:00</cbc:IssueTime>
 	<cbc:Description>Place your first Tendering Answer here</cbc:Description>
 	<cbc:Description>Place your second Tendering Answer here</cbc:Description>
 	<cac:RequestorParty>
-		<cbc:EndpointID schemeID="0088">1234567890128</cbc:EndpointID>
+		<cbc:EndpointID schemeID="PT:VAT">4711</cbc:EndpointID>
 		<cac:PartyIdentification>
-			<cbc:ID schemeID="VAT">DE63276154</cbc:ID>
+			<cbc:ID schemeID="PT:VAT">1234:4711</cbc:ID>
 		</cac:PartyIdentification>
 		<cac:PartyName>
 			<cbc:Name>The Economic Operator</cbc:Name>
 		</cac:PartyName>
 	</cac:RequestorParty>
 	<cac:ResponderParty>
-		<cbc:EndpointID schemeID="0088">7300010000001</cbc:EndpointID>
+		<cbc:EndpointID schemeID="DE:VAT">DE89769595</cbc:EndpointID>
 		<cac:PartyIdentification>
 			<cbc:ID schemeID="DE:VAT">DE89769595</cbc:ID>
 		</cac:PartyIdentification>
