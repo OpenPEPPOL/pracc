@@ -30,9 +30,7 @@
 		<cbc:ID schemeID="urn:uuid">562a35d2-504d-4670-a07f-46d4ca0433e6</cbc:ID>
 	</cac:ParentDocumentReference>
 	<cac:AdditionalDocumentReference>
-		<cbc:ID schemeID="CFT">http://www.evergabe-online.de/tenderdetails.html?id=355046</cbc:ID>
-	</cac:AdditionalDocumentReference>
-	<cac:AdditionalDocumentReference>
-		<cbc:ID schemeID="LOT">1</cbc:ID>
+		<!-- the contract folder id -->
+		<cbc:ID schemeID="urn:uuid">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
 	</cac:AdditionalDocumentReference>
 </EnquiryResponse>

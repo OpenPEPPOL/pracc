@@ -24,21 +24,15 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic
-                content, cardinalities and business rules to which the data contained in the instance document conforms.
-            </Description>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0
-            </Value>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0</Value>
             <Reference type="RULE">PEPPOL-T007-R004</Reference>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
-                to process the document in an appropriate way.
-            </Description>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p004:01:1.0</Value>
             <Reference type="RULE">PEPPOL-T007-R006</Reference>
@@ -66,9 +60,7 @@
         <Element>
             <Term>cbc:IssueTime</Term>
             <Name>Tendering question issue time</Name>
-            <Description>The time when the tendering question is issued. The issue time must have granularity of
-                seconds, and include time zone information.
-            </Description>
+            <Description>The time when the tendering question is issued. The issue time must have granularity of seconds, and include time zone information.</Description>
             <DataType>Time</DataType>
             <Reference type="RULE">PEPPOL-T007-R011</Reference>
             <Reference type="RULE">PEPPOL-T007-R012</Reference>
@@ -106,7 +98,6 @@
                     <Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="RULE">PEPPOL-T007-R017</Reference>
-
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>

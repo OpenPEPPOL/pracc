@@ -24,21 +24,16 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic
-                content, cardinalities and business rules to which the data contained in the instance document conforms.
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.
             </Description>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0
-            </Value>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0</Value>
             <Reference type="RULE">PEPPOL-T008-R004</Reference>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
-                to process the document in an appropriate way.
-            </Description>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p004:01:1.0</Value>
             <Reference type="RULE">PEPPOL-T008-R006</Reference>
@@ -66,9 +61,7 @@
         <Element>
             <Term>cbc:IssueTime</Term>
             <Name>Tendering answer issue time</Name>
-            <Description>The time when the tendering answer is issued. The issue time must have granularity of seconds,
-                and include time zone information
-            </Description>
+            <Description>The time when the tendering answer is issued. The issue time must have granularity of seconds, and include time zone information</Description>
             <DataType>Time</DataType>
             <Reference type="RULE">PEPPOL-T008-R011</Reference>
             <Reference type="RULE">PEPPOL-T008-R012</Reference>
@@ -76,7 +69,7 @@
         <Element cardinality="1..n">
             <Term>cbc:Description</Term>
             <Name>Tendering response</Name>
-            <Description>The tendering answer that is sent to the economic operator.</Description>
+            <Description>The tendering answers that are send to the economic operator.</Description>
             <DataType>Text</DataType>
         </Element>
         <Element>
@@ -103,10 +96,9 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Economic operator identifier</Name>
-                    <Description>The economic operator</Description>
+                    <Description>An identifier that identifies the economic operator, such as a legal registration identifier. Can be the registration number in the professional registry.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="RULE">PEPPOL-T008-R017</Reference>
-
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -172,10 +164,7 @@
         <Element>
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document reference</Name>
-            <Description>Additional document reference are used for different document references, required document,
-                provided document.
-                To reference several types, the additional document should be repeated for each type.
-            </Description>
+            <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
             <DataType>cbc:DocumentReference</DataType>
             <Element>
                 <Term>cbc:ID</Term>
