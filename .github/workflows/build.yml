@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: check schematron
+        run: test -x ./gradlew && ./gradlew check
       - name: create target
         run: mkdir -p ./target/site/files
       - name: build target
