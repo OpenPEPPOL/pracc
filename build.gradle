@@ -36,3 +36,7 @@ dependencies {
     testImplementation 'com.helger:ph-schematron:4.1.0'
     testImplementation 'ch.qos.logback:logback-classic:1.2.3'
 }
+
+test {
+    testLogging.showStandardStreams = true
+}

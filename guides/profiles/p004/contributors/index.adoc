@@ -6,9 +6,6 @@
 |===
 | Country | Name | Organization
 | DE | Ansgar Mondorf | University of Koblenz-Landau
-| DE | Jörg Schömer | Adesso
 | DE | Rolf Kewitz | Beschaffungsamt des BMI
-
-
-
+| DE | Jörg Schömer | adesso SE
 |===

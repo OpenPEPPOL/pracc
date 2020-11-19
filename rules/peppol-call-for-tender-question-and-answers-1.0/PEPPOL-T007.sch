@@ -9,19 +9,19 @@
 
     <pattern>
         <rule context="*">
-            <report id="PEPPOL-T007-S001" flag="fatal" test="normalize-space(.) = '' and not(*)">[PEPPOL-T007-S001] A Tendering Question document MUST NOT contain empty elements.</report>
+            <report id="PEPPOL-T007-S001" flag="fatal" test="normalize-space(.) = '' and not(*)">[PEPPOL-T007-S001] A Tendering Questions document MUST NOT contain empty elements.</report>
         </rule>
     </pattern>
 
     <pattern>
-        <let name="syntaxError" value="string('[PEPPOL-T007-S002] A Tendering Question document SHOULD only contain elements and attributes described in the syntax mapping. - ')" />
+        <let name="syntaxError" value="string('[PEPPOL-T007-S002] A Tendering Questions document SHOULD only contain elements and attributes described in the syntax mapping. - ')" />
         <rule context="ubl:Enquiry">
-            <assert id="PEPPOL-T007-R001" flag="fatal" test="(cbc:UBLVersionID)">[PEPPOL-T007-R001] A Tendering Question MUST have a syntax identifier.</assert>
-            <assert id="PEPPOL-T007-R003" flag="fatal" test="(cbc:CustomizationID)">[PEPPOL-T007-R003] A Tendering Question MUST have a specification (customization) identifier.</assert>
-            <assert id="PEPPOL-T007-R005" flag="fatal" test="(cbc:ProfileID)">[PEPPOL-T007-R005] A Tendering Question MUST have a business process (profile) identifier.</assert>
-            <assert id="PEPPOL-T007-R007" flag="fatal" test="(cbc:ID)">[PEPPOL-T007-R007] A Tendering Question MUST have a Tendering Question identifier.</assert>
-            <assert id="PEPPOL-T007-R010" flag="fatal" test="(cbc:IssueTime)">[PEPPOL-T007-R010] A Tendering Question MUST have an issue time.</assert>
-            <assert id="PEPPOL-T007-R013" flag="fatal" test="count(cbc:Description) > 0">[PEPPOL-T007-R013] A Tendering Question MUST have a Tendering request.</assert>
+            <assert id="PEPPOL-T007-R001" flag="fatal" test="(cbc:UBLVersionID)">[PEPPOL-T007-R001] A Tendering Questions MUST have a syntax identifier.</assert>
+            <assert id="PEPPOL-T007-R003" flag="fatal" test="(cbc:CustomizationID)">[PEPPOL-T007-R003] A Tendering Questions MUST have a specification (customization) identifier.</assert>
+            <assert id="PEPPOL-T007-R005" flag="fatal" test="(cbc:ProfileID)">[PEPPOL-T007-R005] A Tendering Questions MUST have a business process (profile) identifier.</assert>
+            <assert id="PEPPOL-T007-R007" flag="fatal" test="(cbc:ID)">[PEPPOL-T007-R007] A Tendering Questions MUST have a identifier.</assert>
+            <assert id="PEPPOL-T007-R010" flag="fatal" test="(cbc:IssueTime)">[PEPPOL-T007-R010] A Tendering Questions MUST have an issue time.</assert>
+            <assert id="PEPPOL-T007-R013" flag="fatal" test="count(cbc:Description) > 0">[PEPPOL-T007-R013] A Tendering Questions MUST have a request.</assert>
 
             <!-- disallowed elements from ubl:Enquiry -->
             <report id="PEPPOL-T007-S301" flag="warning" test="(cbc:LatestReplyDate)"><value-of select="$syntaxError" />[PEPPOL-T007-S301] LatestReplyDate SHOULD NOT be used.</report>
@@ -47,8 +47,8 @@
         </rule>
 
         <rule context="ubl:Enquiry/cbc:ID">
-            <assert id="PEPPOL-T007-R008" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">[PEPPOL-T007-R008] A Tendering Question Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
-            <assert id="PEPPOL-T007-R009" flag="fatal" test="./@schemeURI">[PEPPOL-T007-R009] A Tendering Question Identifier MUST have a schemeURI attribute.</assert>
+            <assert id="PEPPOL-T007-R008" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">[PEPPOL-T007-R008] A Tendering Questions Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
+            <assert id="PEPPOL-T007-R009" flag="fatal" test="./@schemeURI">[PEPPOL-T007-R009] A Tendering Questions Identifier MUST have a schemeURI attribute.</assert>
             <report id="PEPPOL-T007-S309" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError" />[PEPPOL-T007-S309] ID SHOULD NOT have any further attributes but schemeURI</report>
         </rule>
 
@@ -58,8 +58,8 @@
         </rule>
 
         <rule context="ubl:Enquiry/cac:RequestorParty">
-            <assert id="PEPPOL-T007-R014" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[PEPPOL-T007-R014] A Tendering Question MUST identify the Economic Operator by its party identifier and its endpoint identifier.</assert>
-            <assert id="PEPPOL-T007-R019" flag="warning" test="(./cac:PartyName)">[PEPPOL-T007-R019] A Tendering Question SHOULD include the name of the Economic Operator.</assert>
+            <assert id="PEPPOL-T007-R014" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[PEPPOL-T007-R014] A Tendering Questions MUST identify the Economic Operator by its party identifier and its endpoint identifier.</assert>
+            <assert id="PEPPOL-T007-R019" flag="warning" test="(./cac:PartyName)">[PEPPOL-T007-R019] A Tendering Questions SHOULD include the name of the Economic Operator.</assert>
 
             <assert id="PEPPOL-T007-S310" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0"><value-of select="$syntaxError" />[PEPPOL-T007-S310] Party SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName</assert>
             <report id="PEPPOL-T007-S311" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError" />[PEPPOL-T007-S311] PartyName SHOULD NOT be used more than once</report>
@@ -81,7 +81,7 @@
         </rule>
 
         <rule context="ubl:Enquiry/cac:ResponderParty">
-            <assert id="PEPPOL-T007-R020" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[PEPPOL-T007-R020] A Tendering Question MUST identify the contracting body by its party identifier and its endpoint identifier.</assert>
+            <assert id="PEPPOL-T007-R020" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[PEPPOL-T007-R020] A Tendering Questions MUST identify the contracting body by its party identifier and its endpoint identifier.</assert>
             <assert id="PEPPOL-T007-S315" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0"><value-of select="$syntaxError" />[PEPPOL-T007-S315] Party SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName</assert>
 
             <report id="PEPPOL-T007-S316" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError" />[PEPPOL-T007-S316] PartyName SHOULD NOT be used more than once</report>
