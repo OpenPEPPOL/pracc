@@ -25,12 +25,16 @@ dc () {
 info "Run vefa-structure"
 dc structure
 
+pushd $FOLDER > /dev/null
 info "Create ZIP file with schematrons"
-zip -qr "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
-mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
+zip -qr "target/site/files/schematrons-1.zip" "rules/"
+mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
+popd > /dev/null
 
+(
 info "Build and verify validation artifacts"
 dc validator
+)&
 
 info "Generate Asciidoctor documents"
 dc asciidoctor

@@ -5,7 +5,7 @@ include::../shared/settings.adoc[]
 :name-transaction-org: "Trdm085 Tendering Answers transaction"
 :name-transaction: T008 - Tendering Answers
 :name-trans-short: Tendering Answers
-:name-syntax: EnquiryResponse
+:name-syntax: TenderingAnswers
 
 include::../shared/links.adoc[]
 

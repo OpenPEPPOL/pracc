@@ -1,5 +1,8 @@
 :version: 1.0.0
 
+:linkcss:
+:stylesdir: ../../styles
+
 :lang: en
 
 :doctype: book

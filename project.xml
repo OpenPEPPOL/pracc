@@ -42,12 +42,12 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/Enquiry.xml</Path>
+        <Path>structure/syntax/TenderingQuestions.xml</Path>
         <Title>Tendering Questions (T007)</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/EnquiryResponse.xml</Path>
+        <Path>structure/syntax/TenderingAnswers.xml</Path>
         <Title>Tendering Answers (T008)</Title>
     </Resource>
 
@@ -88,6 +88,18 @@
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
         <Title>PEPPOL T006 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T007</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch</Path>
+        <Title>PEPPOL T007 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T008</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch</Path>
+        <Title>PEPPOL T008 rules</Title>
     </Resource>
     <Resource>
         <Identifier>BIIT004</Identifier>

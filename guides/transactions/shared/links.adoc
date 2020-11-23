@@ -5,4 +5,4 @@ include::../../shared/links.adoc[]
 :link-mapping: link:/pracc/syntax/{name-syntax}/tree/[Syntax mapping for {name-transaction}]
 
 // code list links
-:link-iso3166: http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]
+:link-iso3166: link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]

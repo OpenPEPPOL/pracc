@@ -1,13 +1,8 @@
-*.html
-*.log
 *.iml
-*.jar
-*.zip
-target
-/target-core
-*.html
-*.pdf
-*.epub
-tmp*
+target/
 .idea
-*.iml
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
