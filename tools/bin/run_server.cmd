@@ -12,6 +12,7 @@ docker image rm -f pracc
 
 ECHO clean target
 rmdir /S /Q target
+mkdir target
 
 ECHO running build.cmd
 call tools\bin\build.cmd
