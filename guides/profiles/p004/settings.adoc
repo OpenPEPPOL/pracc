@@ -3,4 +3,4 @@ include::links.adoc[]
 include::../shared/settings.adoc[]
 
 :name-profile-org: “Profile BII48 — Call for Tenders Questions and Answers" (CWA 17027-113:2016)
-:name-profile: Profile P004 - "Call for Tender Question and Answers"
+:name-profile: Profile P004 - "Call for Tender Questions and Answers"
