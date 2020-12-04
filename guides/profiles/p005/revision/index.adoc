@@ -1,0 +1,23 @@
+= Revision history
+
+[cols="1,2,3,2,4", options="header"]
+|===
+| Version
+| Date
+| Author
+| Organization
+| Description
+
+| 0.1
+| 2020-11-23
+| Jörg Schömer
+| adesso SE
+| First draft
+
+| 0.2
+| 2020-12-02
+| Ansgar Mondorf
+| University of Koblenz-Landau
+| Profile description, revisions and formatting
+
+|===

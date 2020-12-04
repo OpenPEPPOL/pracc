@@ -1,0 +1,20 @@
+
+
+include::../../shared/peppol.adoc[]
+
+[cols="2,2,3,5", options="header"]
+.Customization ID to be used for this transaction.
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+| `cbc:CustomizationID`
+
+| T009
+| Tender Clarification Request
+| The CA sends clarification request to the EO.
+| urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended +
+:urn:fdc:peppol.eu:2020:pracc:t009:ver1.0
+
+|===

@@ -1,6 +1,11 @@
 .git
+.github/
+.gradle/
 .idea
-.github
-/guides
-/tools
-/structure
+build/
+gradle/
+guides/
+rules/
+src/
+structure
+tools/

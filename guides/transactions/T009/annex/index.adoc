@@ -1,0 +1,10 @@
+[appendix]
+= Key examples/use cases
+
+link:../files/TenderClarificationRequest-instance.xml[Link to example file]
+
+[source,xml,indent=0]
+.Example
+----
+include::../files/TenderClarificationRequest-instance.xml[]
+----

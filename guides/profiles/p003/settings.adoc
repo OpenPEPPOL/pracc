@@ -2,5 +2,5 @@ include::links.adoc[]
 
 include::../shared/settings.adoc[]
 
-:name-profile-org: “Profile BII54  Tendering" (CWA 17027-119)
+:name-profile-org: "Profile BII54  Tendering" (CWA 17027-119)
 :name-profile: Profile P003 - "Tender Submission"

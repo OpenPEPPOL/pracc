@@ -1,0 +1,10 @@
+
+= Description of selected parts of the transaction
+
+Limited support for this, see link:https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62032&cs=1605295EF37255C56EA0FDCA8C8362709[BII Profile 50].
+
+:leveloffset: +1
+
+
+
+:leveloffset: -1

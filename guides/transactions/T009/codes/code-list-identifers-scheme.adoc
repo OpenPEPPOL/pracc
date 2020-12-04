@@ -1,0 +1,12 @@
+
+= Code list for identifier schemes
+
+[cols="4,4,4", options="header"]
+.Code list for identifier schemes
+|===
+| Business Term | Allowed Scheme | Applicable Xpath
+| Economic operator electronic address identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers] (policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | cac:RequestorParty/cbc:EndpointID/@schemeID
+| Contracting body electronic address identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers](policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | cac:ResponderParty/cbc:EndpointID/@schemeID
+| Economic operator identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers](policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | cac:RequestorParty/cac:PartyIdentification/cbc:ID/@schemeID
+| Contracting body identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers](policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | cac:ResponderParty/cac:PartyIdentification/cbc:ID/@schemeID
+|===
