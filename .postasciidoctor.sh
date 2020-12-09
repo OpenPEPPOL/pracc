@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ -e /target/site ]; then
   mv /target/guides/* /target/site
