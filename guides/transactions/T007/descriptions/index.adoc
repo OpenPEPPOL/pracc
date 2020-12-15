@@ -4,11 +4,34 @@
 Limited support for this, see {link-bii3}.
 
 :leveloffset: +1
-////
-include::parties.adoc[]
 
-include::document-references.adoc[]
+== Tendering Request
 
-include::date-time.adoc[]
-////
+How to combine questions in the Transaction
+
+=== Question on procurment procedure
+
+[NOTE]
+TODO: Beispiel
+
+=== Question to a lot
+
+[NOTE]
+TODO: Beispiel
+
+=== Question for multiple lots
+
+[NOTE]
+TODO: Beispiel
+
+=== Question to a lot group
+
+[NOTE]
+TODO: Beispiel
+
+=== Attachment
+
+[NOTE]
+TODO: Beispiel für einen Anhang zu einer Frage
+
 :leveloffset: -1

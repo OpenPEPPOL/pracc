@@ -17,8 +17,8 @@
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL Version identifier</Name>
-            <Description>Requires UBL version 2.3</Description>
-            <Value type="FIXED">2.3</Value>
+            <Description>Requires UBL version 2.2</Description>
+            <Value type="FIXED">2.2</Value>
             <Reference type="RULE">PEPPOL-T010-R002</Reference>
         </Element>
         <Element>

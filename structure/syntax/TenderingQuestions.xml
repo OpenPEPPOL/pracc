@@ -23,8 +23,8 @@
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL Version identifier</Name>
-            <Description>Requires UBL version 2.3</Description>
-            <Value type="FIXED">2.3</Value>
+            <Description>Requires UBL version 2.2</Description>
+            <Value type="FIXED">2.2</Value>
             <Reference type="RULE">PEPPOL-T007-R002</Reference>
             <Reference type="RULE">PEPPOL-T007-S307</Reference>
         </Element>
@@ -75,7 +75,7 @@
             <Reference type="RULE">PEPPOL-T007-R012</Reference>
             <Reference type="RULE">PEPPOL-T007-R013</Reference>
         </Element>
-        <Element cardinality="1..n">
+        <Element cardinality="0..n">
             <Term>cbc:Description</Term>
             <Name>Tendering request</Name>
             <Description>The tendering questions that are send to the contracting body.</Description>
@@ -185,6 +185,36 @@
                 <Name>Document identifier</Name>
                 <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
                 <DataType>Identifier</DataType>
+            </Element>
+        </Element>
+        <Element cardinality="0..n">
+            <Term>cac:Attachment</Term>
+            <Name>Attachment</Name>
+            <Description>Attached Questions depending on lots or an attached file to express the questions in more detail.</Description>
+            <DataType>cac:AttachmentType</DataType>
+            <Element>
+                <Term>cac:ExternalReference</Term>
+                <Name>ExternalReference</Name>
+                <Description>An external reference to place questions depending on a lot or an attachment to express questions in more detail.</Description>
+                <DataType>cac:ExternalReferenceType</DataType>
+                <Element cardinality="0..1">
+                    <Term>cbc:URI</Term>
+                    <Name>A reference to the ASiC-e attachment.</Name>
+                    <Description>A file reference within the ASiC-e which may contain additional information to express questions in more detail.</Description>
+                    <DataType>cbc:URIType</DataType>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:FileName</Term>
+                    <Name>Lot identifier</Name>
+                    <Description>An identifier that refer a lot of the procurement.</Description>
+                    <DataType>cbc:FileNameType</DataType>
+                </Element>
+                <Element cardinality="0..n">
+                    <Term>cbc:Description</Term>
+                    <Name>Question</Name>
+                    <Description>The Question about a specific lot</Description>
+                    <DataType>cbc:DescriptionType</DataType>
+                </Element>
             </Element>
         </Element>
     </Document>

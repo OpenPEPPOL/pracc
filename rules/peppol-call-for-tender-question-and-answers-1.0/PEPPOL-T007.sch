@@ -33,7 +33,7 @@
         </rule>
 
         <rule context="ubl:Enquiry/cbc:UBLVersionID">
-            <assert id="PEPPOL-T007-R002" flag="fatal" test="normalize-space(.) = '2.3'">UBLVersionID value MUST be '2.3'</assert>
+            <assert id="PEPPOL-T007-R002" flag="fatal" test="normalize-space(.) = '2.2'">UBLVersionID value MUST be '2.2'</assert>
             <report id="PEPPOL-T007-S307" flag="warning" test="./@*"><value-of select="$syntaxError" />UBLVersionID SHOULD NOT contain any attributes.</report>
         </rule>
 
