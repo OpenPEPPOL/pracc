@@ -77,9 +77,8 @@
     </cac:Attachment>
     <cac:Attachment>
         <cac:ExternalReference>
-            <!--4-->
             <cbc:MimeCode>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</cbc:MimeCode>
-            <cbc:FileName>CalcSheet.odc</cbc:FileName>
+            <cbc:FileName>CalcSheet.odc</cbc:FileName> <!--4-->
         </cac:ExternalReference>
     </cac:Attachment>
     <!-- end::question-group-of-lots[] -->
