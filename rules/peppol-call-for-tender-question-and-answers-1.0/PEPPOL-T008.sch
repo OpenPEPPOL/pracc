@@ -21,7 +21,7 @@
             <assert id="PEPPOL-T008-R005" flag="fatal" test="(cbc:ProfileID)">A tendering answers MUST have a business process (profile) identifier.</assert>
             <assert id="PEPPOL-T008-R007" flag="fatal" test="(cbc:ID)">A tendering answers MUST have a tendering answers identifier.</assert>
             <assert id="PEPPOL-T008-R011" flag="fatal" test="(cbc:IssueTime)">A tendering answers MUST have an issue time.</assert>
-            <assert id="PEPPOL-T008-R014" flag="fatal" test="count(cbc:Description) > 0">A tendering answers MUST have a Tendering response.</assert>
+            <assert id="PEPPOL-T008-R014" flag="fatal" test="count(cac:Attachment/cac:ExternalReference/cbc:Description) > 0">A tendering answers MUST have a Tendering response.</assert>
 
             <!-- disallowed elements from ubl:Enquiry -->
             <report id="PEPPOL-T008-S301" flag="warning" test="(cbc:LatestReplyDate)"><value-of select="$syntaxError" />LatestReplyDate SHOULD NOT be used.</report>

@@ -21,7 +21,7 @@
             <assert id="PEPPOL-T007-R005" flag="fatal" test="(cbc:ProfileID)">A tendering questions MUST have a business process (profile) identifier.</assert>
             <assert id="PEPPOL-T007-R007" flag="fatal" test="(cbc:ID)">A tendering questions MUST have an identifier.</assert>
             <assert id="PEPPOL-T007-R011" flag="fatal" test="(cbc:IssueTime)">A tendering questions MUST have an issue time.</assert>
-            <assert id="PEPPOL-T007-R014" flag="fatal" test="count(cbc:Description) > 0">A tendering questions MUST have a request (Description).</assert>
+            <assert id="PEPPOL-T007-R014" flag="fatal" test="count(cac:Attachment/cac:ExternalReference/cbc:Description) > 0">A tendering questions MUST have a request (Description).</assert>
 
             <!-- disallowed elements from ubl:Enquiry -->
             <report id="PEPPOL-T007-S301" flag="warning" test="(cbc:LatestReplyDate)"><value-of select="$syntaxError" />LatestReplyDate SHOULD NOT be used.</report>
@@ -103,6 +103,10 @@
             <assert id="PEPPOL-T007-R025" flag="fatal" test="matches(normalize-space(./@schemeID),'^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
 
             <report id="PEPPOL-T007-S320" flag="warning" test="./@*[not(name()='schemeID')]"><value-of select="$syntaxError" />cac:PartyIdentification/cbc:ID SHOULD NOT have any attributes but schemeID</report>
+        </rule>
+        
+        <rule context="ubl:Enquiry/cac:AdditionalDocumentReference/cbc:XPath">
+            <assert id="PEPPOL-T007-R026" test="matches(./text(), '^/Enquiry/([a-zA-Z]+:)?Attachment\[\d?\]')">Only references to an attachment are allowed.</assert>
         </rule>
     </pattern>
 </schema>

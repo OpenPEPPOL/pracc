@@ -15,8 +15,6 @@
     <cbc:ID schemeURI="urn:uuid">432a35d2-756a-4670-a07f-46d4ca0433e6</cbc:ID>
     <cbc:IssueDate>2020-05-10</cbc:IssueDate>
     <cbc:IssueTime>15:28:27+01:00</cbc:IssueTime>
-    <cbc:Description>Place your first Tendering Answer here</cbc:Description>
-    <cbc:Description>Place your second Tendering Answer here</cbc:Description>
     <cac:RequestorParty>
         <cbc:EndpointID schemeID="PT:VAT">4711</cbc:EndpointID>
         <cac:PartyIdentification>
@@ -42,6 +40,7 @@
     <cac:AdditionalDocumentReference>
         <!-- without lot reference -->
         <cbc:ID schemeURI="urn:uuid" schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
+        <!-- points to the answer within this EnquiryResponse as an attachment -->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath>
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>

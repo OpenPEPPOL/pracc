@@ -21,7 +21,7 @@
             <assert id="PEPPOL-T009-R005" flag="fatal" test="(cbc:ProfileID)">A tender clarification request MUST have a business process (profile) identifier.</assert>
             <assert id="PEPPOL-T009-R007" flag="fatal" test="(cbc:ID)">A tender clarification request MUST have an identifier.</assert>
             <assert id="PEPPOL-T009-R011" flag="fatal" test="(cbc:IssueTime)">A tender clarification request MUST have an issue time.</assert>
-            <assert id="PEPPOL-T009-R014" flag="fatal" test="count(cbc:Description) > 0">A tender clarification request MUST have a request.</assert>
+            <assert id="PEPPOL-T009-R014" flag="fatal" test="count(cac:AdditionalDocumentReference/cac:Attachment/cac:ExternalReference/cbc:Description) > 0">A tender clarification request MUST have at least one request.</assert>
 
             <!-- disallowed elements from ubl:Enquiry -->
             <report id="PEPPOL-T009-S301" flag="warning" test="(cbc:LatestReplyDate)"><value-of select="$syntaxError" />LatestReplyDate SHOULD NOT be used.</report>

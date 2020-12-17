@@ -7,7 +7,7 @@
             urn:oasis:names:specification:ubl:schema:xsd:Enquiry-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/maindoc/UBL-Enquiry-2.2.xsd
             urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonBasicComponents-2.2.xsd
             urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
-    <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>
         urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t009:ver1.0
     </cbc:CustomizationID>
