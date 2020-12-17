@@ -4,7 +4,7 @@
 link:../files/TenderingQuestions-instance.xml[Link to example file]
 
 [source,xml,indent=0]
-.Example
+.Example file for {name-transaction}
 ----
 include::../files/TenderingQuestions-instance.xml[]
 ----

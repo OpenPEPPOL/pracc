@@ -3,35 +3,36 @@
 
 Limited support for this, see {link-bii3}.
 
-:leveloffset: +1
+== AdditionalDocumentReferences and Attachments
 
-== Tendering Request
+How to combine questions in a transaction.
 
-How to combine questions in the Transaction
+=== Question about a procurement procedure
 
-=== Question on procurment procedure
+[source,xml,indent=0]
+....
+include::../files/TenderingQuestions-doc.xml[tags=contract-folder-id;question-contract-folder-id]
+....
+<1> The Contract Folder ID of the procedure
+<2> A reference to an element where one or more questions are located. The number in square brackets is the position in the list of Attachment. The position starts with 1 (1-based indexing).
 
-[NOTE]
-TODO: Beispiel
+=== Questions about a group of lots of a procurement procedure
 
-=== Question to a lot
+[source,xml,indent=0]
+....
+include::../files/TenderingQuestions-doc.xml[tags=multiple-questions-group-of-lots;question-group-of-lots]
+....
+<1> The ID of the group of lots.
+<2> A reference to a question.
+<3> A reference to an attachment.
+<4> Refers to a file within the ASiC-e.
 
-[NOTE]
-TODO: Beispiel
+=== A question about several lots in a procurement procedure
 
-=== Question for multiple lots
-
-[NOTE]
-TODO: Beispiel
-
-=== Question to a lot group
-
-[NOTE]
-TODO: Beispiel
-
-=== Attachment
-
-[NOTE]
-TODO: Beispiel für einen Anhang zu einer Frage
-
-:leveloffset: -1
+[source,xml,indent=0]
+....
+include::../files/TenderingQuestions-doc.xml[tags=one-question-for-multiple-lots;question-for-multiple-lots]
+....
+<1> A lot reference.
+<2> An other lot reference.
+<3> Reference to the same question.
