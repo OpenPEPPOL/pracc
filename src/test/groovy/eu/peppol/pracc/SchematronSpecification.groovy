@@ -3,10 +3,10 @@
  */
 package eu.peppol.pracc
 
-import com.helger.schematron.xslt.SchematronResourceSCH
+import com.helger.schematron.sch.SchematronResourceSCH
 import groovy.util.logging.Slf4j
-import org.oclc.purl.dsdl.svrl.FailedAssert
-import org.oclc.purl.dsdl.svrl.SchematronOutputType
+import com.helger.schematron.svrl.jaxb.FailedAssert
+import com.helger.schematron.svrl.jaxb.SchematronOutputType
 import spock.lang.Specification
 
 import javax.xml.transform.stream.StreamSource
@@ -16,23 +16,26 @@ class SchematronSpecification extends Specification {
 
     def 'run schematron on instances'() {
 
-        def schematronFile = new File(schematronFileName)
+
         given:
+        def schematronFile = new File(schematronFileName)
         def schematronResource = SchematronResourceSCH.fromFile(schematronFile)
-        def xmlFile = new File(xmlFileName)
 
         when:
+        def xmlFile = new File(xmlFileName)
         log.info("running validation on ${xmlFile.name} with schematron ${schematronFile.name}")
 
-        SchematronOutputType result
-        xmlFile.withInputStream {
-            result = schematronResource.applySchematronValidationToSVRL(new StreamSource(it))
+        SchematronOutputType result = null
+        schematronResource.setAllowForeignElements(true)
+        xmlFile.withInputStream { InputStream is ->
+            result = schematronResource.applySchematronValidationToSVRL(new StreamSource(is))
         }
+
         def failedAsserts = result?.getActivePatternAndFiredRuleAndFailedAssert()?.findAll { it instanceof FailedAssert }
-        failedAsserts?.each { log.info("found ${it}") }
+        failedAsserts?.each { log.error("found ${it}") }
 
         then:
-        failedAsserts?.isEmpty()
+        failedAsserts?.isEmpty() && result != null
 
         where:
         schematronFileName                                                       | xmlFileName
