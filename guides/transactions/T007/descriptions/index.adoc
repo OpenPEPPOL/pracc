@@ -5,13 +5,13 @@ Limited support for this, see {link-bii3}.
 
 == AdditionalDocumentReferences and Attachments
 
-The `ubl:Enquiry` element should be build as follows:
+The `Enquiry` element should be build as follows:
 
-. The first `cac:AdditionalDocumentReferences` within the `ubl:Enquiry` should always have an `cbc:ID` containing the `schemaName="ContractFolderID"`.
+. The first `cac:AdditionalDocumentReferences` within the `Enquiry` must have an `cbc:ID` containing the `schemaName="ContractFolderID"` and as value the contract folder id.
 . An `Enquiry` element can have multiple `cac:AdditionalDocumentReferences` refer to a LotsGroup, a lot or a part.
-. All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions in the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
+. All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions within the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . The relation between `cac:AdditionalDocumentReferences` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReferences`
-. The `cbc:XPath` can only contain references to an `cac:Attachment`.
+. The `cbc:XPath` can only contain references to an `cac:Attachment` and must match the following expression: `/Enquiry/cac:Attachment[number]`.
 
 The following are examples of combining questions in a transaction with different parts of the procurement procedure.
 
