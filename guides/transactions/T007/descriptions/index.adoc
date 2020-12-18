@@ -5,16 +5,26 @@ Limited support for this, see {link-bii3}.
 
 == AdditionalDocumentReferences and Attachments
 
-How to combine questions in a transaction.
+The `ubl:Enquiry` element should be build as follows:
+
+. The first `cac:AdditionalDocumentReferences` within the `ubl:Enquiry` should always have an `cbc:ID` containing the `schemaName="ContractFolderID"`.
+. An `Enquiry` element can have multiple `cac:AdditionalDocumentReferences` refer to a LotsGroup, a lot or a part.
+. All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions in the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
+. The relation between `cac:AdditionalDocumentReferences` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReferences`
+. The `cbc:XPath` can only contain references to an `cac:Attachment`.
+
+The following are examples of combining questions in a transaction with different parts of the procurement procedure.
 
 === Question about a procurement procedure
+
+If there are questions only about the procurement procedure, a reference to the question in the attachments can be created directly in the `cac:AdditionalDocumentReferences` with the `schemaName="ContractFolderID"`.
 
 [source,xml,indent=0]
 ....
 include::../files/TenderingQuestions-doc.xml[tags=contract-folder-id;question-contract-folder-id]
 ....
-<1> The Contract Folder ID of the procedure
-<2> A reference to an element where one or more questions are located. The number in square brackets is the position in the list of Attachment. The position starts with 1 (1-based indexing).
+<.> The Contract Folder ID of the procurement procedure.
+<.> A reference to an element where one or more questions are located. The number in square brackets is the position in the list of Attachment. The position starts with 1 (1-based indexing).
 
 === Questions about a group of lots of a procurement procedure
 
@@ -22,10 +32,10 @@ include::../files/TenderingQuestions-doc.xml[tags=contract-folder-id;question-co
 ....
 include::../files/TenderingQuestions-doc.xml[tags=multiple-questions-group-of-lots;question-group-of-lots]
 ....
-<1> The ID of the group of lots.
-<2> A reference to a question.
-<3> A reference to an attachment.
-<4> Refers to a file within the ASiC-e.
+<.> The ID of the group of lots.
+<.> A reference to a question.
+<.> Another reference to an attachment.
+<.> Refers to a file within the ASiC-e.
 
 === A question about several lots in a procurement procedure
 
@@ -33,6 +43,6 @@ include::../files/TenderingQuestions-doc.xml[tags=multiple-questions-group-of-lo
 ....
 include::../files/TenderingQuestions-doc.xml[tags=one-question-for-multiple-lots;question-for-multiple-lots]
 ....
-<1> A lot reference.
-<2> An other lot reference.
-<3> Reference to the same question.
+<1> A reference to a lot.
+<2> Another reference to a lot.
+<3> A reference to the same question.
