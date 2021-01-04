@@ -35,11 +35,11 @@
     </cac:ResponderParty>
     <cac:ParentDocumentReference>
         <!-- references always the procurement -->
-        <cbc:ID schemeURI="urn:uuid" schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
     </cac:ParentDocumentReference>
     <cac:AdditionalDocumentReference>
         <!-- without lot reference -->
-        <cbc:ID schemeURI="urn:uuid" schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
         <!-- points to the answer within this EnquiryResponse as an attachment -->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath>
     </cac:AdditionalDocumentReference>
