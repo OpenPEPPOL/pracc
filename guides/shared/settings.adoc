@@ -2,6 +2,7 @@
 
 :linkcss:
 :stylesdir: ../../styles
+:stylesheet: peppol.css
 
 :lang: en
 

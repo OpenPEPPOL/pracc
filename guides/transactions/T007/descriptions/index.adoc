@@ -7,11 +7,11 @@ Limited support for this, see {link-bii3}.
 
 The `Enquiry` element should be build as follows:
 
-. The first `cac:AdditionalDocumentReference` within the `Enquiry` must have an `cbc:ID` having the attribute `schemeName` set to `ContractFolderID` and as value the contract folder id.
+. The first `cac:AdditionalDocumentReference` within the `Enquiry` must have an `cbc:ID` having the attribute `schemeName` set to `ContractFolderID` and the value has to be the contract folder id.
 . An `Enquiry` element can have multiple `cac:AdditionalDocumentReference` refer to a LotsGroup, a lot or a part.
 . All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions within the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . The relation between `cac:AdditionalDocumentReference` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReference`
-. The `cbc:XPath` can only contain references to an `cac:Attachment` and must match the following expression: `/Enquiry/cac:Attachment[number]`.
+. The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/Enquiry/cac:Attachment[number]`.
 
 The following are examples of combining questions in a transaction with different parts of the procurement procedure.
 
@@ -44,7 +44,7 @@ include::../files/TenderingQuestions-doc.xml[tags=multiple-questions-group-of-lo
 === A question about several lots in a procurement procedure
 
 If you have one question regarding several lots, you have to add an `cac:AdditionalDocumentReference` for each lot containing an `cbc:ID` with an attribute `schemeName` set to `Lot` and a value representing the Lot ID.
-Add an `cac:Attachment` with a question and refer with a `cbc:XPath` element in each `cac:AdditionalDocumentReference` element.
+Add an `cac:Attachment` with a question and refer this attachment with a `cbc:XPath` element in each `cac:AdditionalDocumentReference` element.
 
 [source,xml,indent=0]
 ....
