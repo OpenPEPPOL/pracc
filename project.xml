@@ -53,22 +53,22 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderingQuestions.xml</Path>
-        <Title>T007 - Tendering Questions</Title>
+        <Title>Syntax Mapping T007 - Tendering Questions</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderingAnswers.xml</Path>
-        <Title>T008 - Tendering Answers</Title>
+        <Title>Syntax Mapping T008 - Tendering Answers</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderClarificationRequest.xml</Path>
-        <Title>T009 - Tender Clarification Request</Title>
+        <Title>Syntax Mapping T009 - Tender Clarification Request</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderClarification.xml</Path>
-        <Title>T010 - Tender Clarification</Title>
+        <Title>Syntax Mapping T010 - Tender Clarification</Title>
     </Resource>
 
 
