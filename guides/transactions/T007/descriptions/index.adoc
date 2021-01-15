@@ -11,7 +11,7 @@ The `Enquiry` element should be build as follows:
 . An `Enquiry` element can have multiple `cac:AdditionalDocumentReference` refer to a LotsGroup, a lot or a part.
 . All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions within the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . The relation between `cac:AdditionalDocumentReference` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReference`
-. The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/Enquiry/cac:Attachment[number]`.
+. The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/Enquiry/cac:Attachment[number]` where number represents a 1-base index in the list of the attachments.
 
 The following are examples of combining questions in a transaction with different parts of the procurement procedure.
 
