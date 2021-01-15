@@ -22,9 +22,9 @@
             <assert id="PEPPOL-T009-R004" flag="fatal" test="(cbc:ID)">A tender clarification request MUST have an identifier.</assert>
             <assert id="PEPPOL-T009-R005" flag="fatal" test="(cbc:IssueTime)">A tender clarification request MUST have an issue time.</assert>
             <assert id="PEPPOL-T009-R006" flag="fatal" test="cac:AdditionalDocumentReference[1]/cbc:ID[@schemeName='ContractFolderID']/text()">A tender clarification request MUST have an AdditionalDocumentReference containing an cbc:ID with an schemeName set to 'ContractFolderID' as the first element of AdditionalDocumentReference</assert>
-            <assert id="PEPPOL-T009-R007" flag="fatal" test="count(cac:AdditionalDocumentReference) >= 1">A tender clarification request MUST have at least one AdditionalDocumentReference</assert>
-            <assert id="PEPPOL-T009-R008" flag="fatal" test="count(cac:AdditionalDocumentReference/cbc:XPath) > 0">At least one XPath MUST be given.</assert>
-            <assert id="PEPPOL-T009-R009" flag="fatal" test="count(cac:AdditionalDocumentReference/cbc:ID[@schemeName='ContractFolderID']) = 1">A tender clarification request MUST have only one AdditionalDocumentReference containing an cbc:ID with an schemeName set to 'ContractFolderID'</assert>
+            <assert id="PEPPOL-T009-R007" flag="fatal" test="count(cac:AdditionalDocumentReference/cbc:ID[@schemeName='ContractFolderID']) = 1">A tender clarification request MUST have only one AdditionalDocumentReference containing an cbc:ID with an schemeName set to 'ContractFolderID'</assert>
+            <assert id="PEPPOL-T009-R008" flag="fatal" test="count(cac:AdditionalDocumentReference) >= 1">A tender clarification request MUST have at least one AdditionalDocumentReference</assert>
+            <assert id="PEPPOL-T009-R009" flag="fatal" test="count(cac:AdditionalDocumentReference/cbc:XPath) > 0">A tender clarification request MUST have at least one XPath.</assert>
             <assert id="PEPPOL-T009-R010" flag="fatal" test="count(cac:Attachment/cac:ExternalReference/cbc:Description) >= 1">A tender clarification request MUST have a request (Description).</assert>
 
             <!-- disallowed elements from ubl:Enquiry -->

@@ -7,7 +7,7 @@
     <Name>Tender Clarification Request (T009)</Name>
     <Document>
         <Term>t009:Enquiry</Term>
-        <Name>Root element for tender clarification request</Name>
+        <Name>The tender clarification request transaction model.</Name>
         <Reference type="RULE">PEPPOL-T009-R001</Reference>
         <Reference type="RULE">PEPPOL-T009-R002</Reference>
         <Reference type="RULE">PEPPOL-T009-R003</Reference>
@@ -19,6 +19,7 @@
         <Reference type="RULE">PEPPOL-T009-R009</Reference>
         <Reference type="RULE">PEPPOL-T009-R010</Reference>
 
+        <Reference type="RULE">PEPPOL-T009-S001</Reference>
         <Reference type="RULE">PEPPOL-T009-S002</Reference>
         <Reference type="RULE">PEPPOL-T009-S003</Reference>
         <Reference type="RULE">PEPPOL-T009-S004</Reference>
@@ -38,6 +39,7 @@
             <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.
+                The identification may include the version of the specification as well as any customizations applied.
             </Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
@@ -213,7 +215,9 @@
             <Element cardinality="1..n">
                 <Term>cbc:XPath</Term>
                 <Name>Reference to an cac:Attachment</Name>
-                <Description>An xpath expression to reference an cac:Attachment where questions can be asked or refer a file within the ASiC-e.</Description>
+                <Description>An xpath expression to reference an cac:Attachment where questions can be asked or refer a
+                    file within the ASiC-e.
+                </Description>
                 <DataType>cbc:XPathType</DataType>
                 <Reference type="RULE">PEPPOL-T009-R030</Reference>
             </Element>
@@ -221,12 +225,15 @@
         <Element cardinality="1..n">
             <Term>cac:Attachment</Term>
             <Name>Attachment</Name>
-            <Description>Attached questions or files which must be referenced by an cac:AdditionalDocumentReference</Description>
+            <Description>Attached questions or files which must be referenced by an cac:AdditionalDocumentReference
+            </Description>
             <DataType>cac:AttachmentType</DataType>
             <Element>
                 <Term>cac:ExternalReference</Term>
                 <Name>ExternalReference</Name>
-                <Description>An external reference to place your questions or add an attachment to express questions in more detail. There must be only one kind of reference a file or questions.</Description>
+                <Description>An external reference to place your questions or add an attachment to express questions in
+                    more detail. There must be only one kind of reference a file or questions.
+                </Description>
                 <DataType>cac:ExternalReferenceType</DataType>
                 <Reference type="RULE">PEPPOL-T009-R031</Reference>
                 <Reference type="RULE">PEPPOL-T009-R032</Reference>
@@ -239,13 +246,15 @@
                 <Element cardinality="0..1">
                     <Term>cbc:FileName</Term>
                     <Name>A reference to an ASiC-e attachment.</Name>
-                    <Description>A file reference within the ASiC-e which may contain additional information to express questions in more detail.</Description>
+                    <Description>A file reference within the ASiC-e which may contain additional information to express
+                        questions in more detail.
+                    </Description>
                     <DataType>cbc:FileNameType</DataType>
                 </Element>
                 <Element cardinality="0..n">
                     <Term>cbc:Description</Term>
                     <Name>Question</Name>
-                    <Description>The Questions about the procurement procedure.</Description>
+                    <Description>The Questions about the tender.</Description>
                     <DataType>cbc:DescriptionType</DataType>
                 </Element>
             </Element>
