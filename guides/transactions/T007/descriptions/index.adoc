@@ -1,7 +1,7 @@
 [[descriptions]]
 = Descriptions of selected parts of the transaction
 
-Limited support for this, see {link-bii3}.
+Limited support for this, see link:https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62030&cs=1299CBAFF9E6A7D4FF75F6917E146F7EB[BII Profile 48].
 
 == AdditionalDocumentReferences and Attachments
 
@@ -9,7 +9,7 @@ The `Enquiry` element should be build as follows:
 
 . The first `cac:AdditionalDocumentReference` within the `Enquiry` must have an `cbc:ID` having the attribute `schemeName` set to `ContractFolderID` and the value has to be the contract folder id.
 . An `Enquiry` element can have multiple `cac:AdditionalDocumentReference` refer to a LotsGroup, a lot or a part.
-. All questions are placed in an `cac:Attachment` element. The attachment can have one or more questions within the `cbc:Description` element or refer to a file in the ASiC-e by using the `cbc:FileName` element.
+. All questions are placed in an `cac:Attachment` element. The attachment can have one or more `cbc:Description` elements to ask multiple questions or refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . The relation between `cac:AdditionalDocumentReference` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReference`
 . The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/Enquiry/cac:Attachment[number]` where number represents a 1-base index in the list of the attachments.
 
