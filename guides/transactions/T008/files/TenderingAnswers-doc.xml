@@ -33,48 +33,69 @@
             <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
         </cac:PartyName>
     </cac:ResponderParty>
+    <!-- tag::ref-contract-folder-id[] -->
     <cac:ParentDocumentReference>
-        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
     </cac:ParentDocumentReference>
+    <!-- end::ref-contract-folder-id[] -->
+    <!-- tag::questions-procurement-procedure[] -->
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath> <!--.-->
+    </cac:AdditionalDocumentReference>
+    <!-- end::questions-procurement-procedure[] -->
+    <!-- tag::multiple-questions-group-of-lots[] -->
+    <!--...-->
+    <cac:AdditionalDocumentReference>
+        <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[2]</cbc:XPath> <!--.-->
+    </cac:AdditionalDocumentReference>
+    <!-- end::multiple-questions-group-of-lots[] -->
+    <!-- tag::one-question-for-multiple-lots[] -->
+    <!--...-->
+    <cac:AdditionalDocumentReference>
+        <cbc:ID schemeName="Lot">LOT-0001</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath> <!--4-->
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[2]</cbc:XPath>
+        <cbc:ID schemeName="Lot">LOT-0007</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath> <!--4-->
     </cac:AdditionalDocumentReference>
+    <!-- end::one-question-for-multiple-lots[] -->
+    <!-- tag::refer-file-attachment[] -->
+    <!--...-->
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath>
+        <cbc:ID schemeName="Lot">LOT-0002</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[4]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
+    <!-- end::refer-file-attachment[] -->
+    <!-- tag::refer-multiple-attachments[] -->
+    <!--...-->
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="Lot">LOT-0007</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath>
-    </cac:AdditionalDocumentReference>
-    <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="Lot">LOT-0002</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[4]</cbc:XPath>
-    </cac:AdditionalDocumentReference>
-    <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="Lot">LOT-0006</cbc:ID>
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[5]</cbc:XPath>
+        <cbc:ID schemeName="Lot">LOT-0006</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[5]</cbc:XPath> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[6]</cbc:XPath>
     </cac:AdditionalDocumentReference>
+    <!-- end::refer-multiple-attachments[] -->
+    <!-- tag::question-contract-folder-id[] -->
+    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
-            <cbc:Description>
+            <cbc:Description> <!--.-->
                 Place the first Tendering Questions here?
 
-                Place your first Tendering Answer here.
+                Place your Tendering Answer to the first Tendering Question here.
             </cbc:Description>
             <cbc:Description>
                 Place the second Tendering Questions here?
 
-                Place your second Tendering Answer here.
+                Place your Tendering Answer to the second Tendering Question here.
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
+    <!-- end::question-contract-folder-id[] -->
+    <!-- tag::question-group-of-lots[] -->
+    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>
@@ -84,6 +105,9 @@
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
+    <!-- end::question-group-of-lots[] -->
+    <!-- tag::question-for-multiple-lots[] -->
+    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>
@@ -93,16 +117,22 @@
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
+    <!-- end::question-for-multiple-lots[] -->
+    <!-- tag::file-attachment[] -->
+    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:MimeCode>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</cbc:MimeCode>
-            <cbc:FileName>CalcSheet.odc</cbc:FileName>
+            <cbc:FileName>CalcSheet.odc</cbc:FileName> <!--.-->
         </cac:ExternalReference>
     </cac:Attachment>
+    <!-- end::file-attachment[] -->
+    <!-- tag::multiple-attachments[] -->
+    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:MimeCode>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</cbc:MimeCode>
-            <cbc:FileName>ExamplePriceSheet.odc</cbc:FileName>
+            <cbc:FileName>ExamplePriceSheet.odc</cbc:FileName> <!--.-->
         </cac:ExternalReference>
     </cac:Attachment>
     <cac:Attachment>
@@ -114,4 +144,5 @@
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
+    <!-- end::multiple-attachments[] -->
 </EnquiryResponse>

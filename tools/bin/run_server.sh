@@ -21,12 +21,12 @@ container_id=$(docker ps -q --filter "ancestor=pracc")
 if [[ -n "$container_id" ]]; then
   # stop running container
   info "stop running container ${container_id}"
-  docker container stop ${container_id}
+  docker container stop ${container_id} &> /dev/null
 fi
 
 # remove image
 info "remove pracc images"
-docker image rm -f pracc
+docker image rm -f pracc &> /dev/null
 ) &
 
 # clean target

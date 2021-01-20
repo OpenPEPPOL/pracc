@@ -187,9 +187,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
-                <Description>
-                    An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.
-                </Description>
+                <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
                 <DataType>Identifier</DataType>
                 <Attribute>
                     <Term>schemeName</Term>

@@ -79,11 +79,13 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T004/files/call-for-tenders-instance.xml' | 'xsdrt/maindoc/UBL-CallForTenders-2.2.xsd'
         'guides/transactions/T005/files/tender-instance.xml' | 'xsdrt/maindoc/UBL-Tender-2.2.xsd'
         'guides/transactions/T006/files/tender-receipt-instance.xml' | 'xsdrt/maindoc/UBL-TenderReceipt-2.2.xsd'
-        'guides/transactions/T007/files/TenderingQuestions-instance.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
         'guides/transactions/T007/files/TenderingQuestions-doc.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
+        'guides/transactions/T007/files/TenderingQuestions-instance.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
+        'guides/transactions/T008/files/TenderingAnswers-doc.xml' | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
         'guides/transactions/T008/files/TenderingAnswers-instance.xml' | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
-        'guides/transactions/T009/files/TenderClarificationRequest-instance.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
         'guides/transactions/T009/files/TenderClarificationRequest-doc.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
+        'guides/transactions/T009/files/TenderClarificationRequest-instance.xml' | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
+        'guides/transactions/T010/files/TenderClarification-doc.xml' | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
         'guides/transactions/T010/files/TenderClarification-instance.xml' | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
     }
 }
