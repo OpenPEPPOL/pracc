@@ -1,7 +1,7 @@
 [[descriptions]]
 = Descriptions of selected parts of the transaction
 
-Limited support for this, see link:https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62030&cs=1299CBAFF9E6A7D4FF75F6917E146F7EB[BII Profile 48].
+Limited support for this, see {name-profile-org}.
 
 == AdditionalDocumentReferences and Attachments
 

@@ -1,7 +1,7 @@
 
 = Description of selected parts of the transaction
 
-Limited support for this, see link:https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62030&cs=1299CBAFF9E6A7D4FF75F6917E146F7EB[BII Profile 48].
+Limited support for this, see {name-profile-org}.
 
 == AdditionalDocumentReferences and Attachments
 
@@ -9,7 +9,7 @@ The `EnquiryResponse` element should be build as follows to answering questions:
 
 . The ParentDocumentReference must have an `cbc:ID` having the attribute `schemeName` set to `ContractFolderID` and the value has to be the contract folder id.
 . An `EnquiryResponse` element can have multiple `cac:AdditionalDocumentReference` refer to the procurement procedure, a LotsGroup, a lot or a part.
-. All answers are placed in an `cac:Attachment` element. The question to be answered has to be placed at the beginning of the answer. The attachment can have one or more `cbc:Description` elements or refer to a file in the ASiC-e by using the `cbc:FileName` element.
+. Answers have to be put in an `cac:Attachment` element. The question to be answered has to be placed at the beginning of the answer. The attachment can have one or more `cbc:Description` elements or refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . Each `cbc:Description` element contains only a question with its answer.
 . The relation between `cac:AdditionalDocumentReference` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReference`
 . The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/EnquiryResponse/cac:Attachment[number]` where number represents a 1-base index in the list of the attachments.
