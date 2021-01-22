@@ -33,25 +33,38 @@
             <cbc:Name>The Economic Operator</cbc:Name>
         </cac:PartyName>
     </cac:ResponderParty>
+    <!-- tag::ref-contract-folder-id[] -->
     <cac:ParentDocumentReference>
-        <cbc:ID schemeID="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
     </cac:ParentDocumentReference>
+    <!-- end::ref-contract-folder-id[] -->
+    <!-- tag::ref-answer[] -->
     <cac:AdditionalDocumentReference>
-        <cbc:ID>32c39b09-05ef-4158-9842-51fac83d4b7d</cbc:ID>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:Description>Place your first tender clarification here.</cbc:Description>
-            </cac:ExternalReference>
-        </cac:Attachment>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
+    <!-- end::ref-answer[] -->
+    <!-- tag::ref-file[] -->
+    <!--...-->
     <cac:AdditionalDocumentReference>
-        <cbc:ID>639e8193-e3f6-4bd0-8faf-64a6550daf9f</cbc:ID>
-        <cac:Attachment>
-            <cac:ExternalReference>
-                <cbc:MimeCode>application/pdf</cbc:MimeCode>
-                <cbc:FileName>AdditionalInformation.pdf.p7</cbc:FileName>
-                <cbc:Description>Place your second tender clarification here.</cbc:Description>
-            </cac:ExternalReference>
-        </cac:Attachment>
+        <cbc:ID schemeName="ContractFolderId">639e8193-e3f6-4bd0-8faf-64a6550daf9f</cbc:ID>
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[2]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
+    <!-- end::ref-file[] -->
+    <!-- tag::answer[] -->
+    <cac:Attachment>
+        <cac:ExternalReference>
+            <cbc:Description>Place your first tender clarification here.</cbc:Description> <!--.-->
+        </cac:ExternalReference>
+    </cac:Attachment>
+    <!-- end::answer[] -->
+    <!-- tag::file[] -->
+    <cac:Attachment>
+        <cac:ExternalReference>
+            <cbc:MimeCode>application/pdf</cbc:MimeCode>
+            <cbc:FileName>AdditionalInformation.pdf.p7</cbc:FileName> <!--.-->
+            <cbc:Description>Place your second tender clarification here.</cbc:Description>
+        </cac:ExternalReference>
+    </cac:Attachment>
+    <!-- end::file[] -->
 </EnquiryResponse>
