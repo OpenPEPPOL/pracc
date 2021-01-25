@@ -47,7 +47,7 @@
     <!-- tag::ref-file[] -->
     <!--...-->
     <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="ContractFolderId">639e8193-e3f6-4bd0-8faf-64a6550daf9f</cbc:ID>
+        <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[2]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
     <!-- end::ref-file[] -->

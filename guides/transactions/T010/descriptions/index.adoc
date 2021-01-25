@@ -38,6 +38,6 @@ If an additional file should be sent to clarify an answer, it is possible to ref
 include::../files/TenderClarification-doc.xml[tags=ref-contract-folder-id;ref-file;file]
 ....
 
-<.> Indicate a reference to a lot from the procurement procedure
+<.> The Contract Folder ID of the procurement procedure.
 <.> Referencing to the attachment in the `EnquiryResponse`
 <.> Referencing to a file within the ASiC-e

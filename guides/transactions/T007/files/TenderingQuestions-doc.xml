@@ -37,7 +37,7 @@
     <!-- tag::contract-folder-id[] -->
     <cac:AdditionalDocumentReference>
         <!-- tag::contract-folder-id-ref[] -->
-        <cbc:ID schemeURI="urn:uuid" schemeName="ContractFolderID">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
+        <cbc:ID schemeName="ContractFolderID">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
         <cbc:XPath>/Enquiry/cac:Attachment[1]</cbc:XPath> <!--.-->
         <!-- end::contract-folder-id-ref[] -->
     </cac:AdditionalDocumentReference>
