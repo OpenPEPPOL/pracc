@@ -105,5 +105,10 @@
 
             <assert id="PEPPOL-T010-S021" flag="warning" test="not(./@*[not(name()='schemeID')])"><value-of select="$syntaxError" />cac:PartyIdentification/cbc:ID SHOULD NOT have any attributes but schemeID</assert>
         </rule>
+
+        <rule context="ubl:EnquiryResponse/cac:Attachment/cac:ExternalReference">
+            <assert id="PEPPOL-T010-R027" flag="fatal" test="count(./cbc:FileName) = 1 or count(./cbc:Description) > 0">At least one clarification or file reference MUST be given.</assert>
+            <assert id="PEPPOL-T010-R028" flag="fatal" test="not(count(./cbc:FileName) > 0 and count(./cbc:Description) > 0)">A combination of clarification and file reference is not allowed.</assert>
+        </rule>
     </pattern>
 </schema>

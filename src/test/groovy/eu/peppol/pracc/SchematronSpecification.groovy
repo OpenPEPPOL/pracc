@@ -50,10 +50,13 @@ class SchematronSpecification extends Specification {
         'rules/peppol-call-for-tender-1.0/peppol/ESENS-UBL-T004.sch'             | 'guides/transactions/T004/files/call-for-tenders-instance.xml'
         'rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch'                      | 'guides/transactions/T005/files/tender-instance.xml'
         'rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch'                      | 'guides/transactions/T006/files/tender-receipt-instance.xml'
-        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch'  | 'guides/transactions/T007/files/TenderingQuestions-instance.xml'
         'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch'  | 'guides/transactions/T007/files/TenderingQuestions-doc.xml'
+        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch'  | 'guides/transactions/T007/files/TenderingQuestions-instance.xml'
+        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch'  | 'guides/transactions/T008/files/TenderingAnswers-doc.xml'
         'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch'  | 'guides/transactions/T008/files/TenderingAnswers-instance.xml'
+        'rules/tender-clarification-1.0/PEPPOL-T009.sch'                         | 'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'
         'rules/tender-clarification-1.0/PEPPOL-T009.sch'                         | 'guides/transactions/T009/files/TenderClarificationRequest-instance.xml'
+        'rules/tender-clarification-1.0/PEPPOL-T010.sch'                         | 'guides/transactions/T010/files/TenderClarification-doc.xml'
         'rules/tender-clarification-1.0/PEPPOL-T010.sch'                         | 'guides/transactions/T010/files/TenderClarification-instance.xml'
     }
 

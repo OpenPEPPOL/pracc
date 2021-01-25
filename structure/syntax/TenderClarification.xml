@@ -201,8 +201,26 @@
             </Element>
         </Element>
         <Element>
+            <Term>cac:ParentDocumentReference</Term>
+            <Name>b</Name>
+            <Description>c</Description>
+            <DataType>cac:DocumentReferenceType</DataType>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Document identifier</Name>
+                <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+                <DataType>cbc:IDType</DataType>
+                <Attribute>
+                    <Term>schemeName</Term>
+                    <Name>Scheme Name</Name>
+                    <Description>Has to be ContractFolderID.</Description>
+                    <Value type="FIXED">ContractFolderID</Value>
+                </Attribute>
+            </Element>
+        </Element>
+        <Element cardinality="1..n">
             <Term>cac:AdditionalDocumentReference</Term>
-            <Name>Additional document reference</Name>
+            <Name>Additional document references.</Name>
             <Description>Additional document reference are used for different document references, required document,
                 provided document. To reference several types, the additional document should be repeated for each type.
             </Description>
@@ -215,6 +233,18 @@
                     procurement reference number or contract folder identifier.
                 </Description>
                 <DataType>Identifier</DataType>
+                <Attribute>
+                    <Term>schemeName</Term>
+                    <Name>Scheme Name</Name>
+                    <Description>Valid values are ContractFolderID, LotGroup or Lot.</Description>
+                </Attribute>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cbc:XPath</Term>
+                <Name>Reference to an cac:Attachment</Name>
+                <Description>An xpath expression to reference an cac:Attachment where questions can be asked or refer a file within the ASiC-e.</Description>
+                <DataType>cbc:XPathType</DataType>
+                <Reference type="RULE">PEPPOL-T010-R027</Reference>
             </Element>
         </Element>
         <Element cardinality="1..n">
@@ -231,8 +261,8 @@
                     more detail. There must be only one kind of reference a file or questions.
                 </Description>
                 <DataType>cac:ExternalReferenceType</DataType>
-                <Reference type="RULE">PEPPOL-T008-R029</Reference>
-                <Reference type="RULE">PEPPOL-T008-R030</Reference>
+                <Reference type="RULE">PEPPOL-T010-R028</Reference>
+                <Reference type="RULE">PEPPOL-T010-R029</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
                     <Name>Mime Code of the file</Name>

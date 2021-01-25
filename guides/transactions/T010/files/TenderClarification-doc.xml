@@ -63,7 +63,6 @@
         <cac:ExternalReference>
             <cbc:MimeCode>application/pdf</cbc:MimeCode>
             <cbc:FileName>AdditionalInformation.pdf.p7</cbc:FileName> <!--.-->
-            <cbc:Description>Place your second tender clarification here.</cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
     <!-- end::file[] -->
