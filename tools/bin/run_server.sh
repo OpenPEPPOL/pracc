@@ -33,6 +33,10 @@ docker image rm -f pracc &> /dev/null
 info "clean target"
 rm -rf target
 
+# check schematron
+info "check schematron and create xml instances"
+./gradlew check
+
 # build target
 info "running build.sh"
 ${script_dir}/build.sh
