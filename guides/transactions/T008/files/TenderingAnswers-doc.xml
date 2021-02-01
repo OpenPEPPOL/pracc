@@ -4,9 +4,12 @@
                  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
                  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                  xsi:schemaLocation="
-            urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd
-            urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonBasicComponents-2.2.xsd
-            urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
+            urn:oasis:names:specification:ubl:schema:xsd:EnquiryResponse-2
+            http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd
+            urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2
+            http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonBasicComponents-2.2.xsd
+            urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2
+            http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <cbc:CustomizationID>
         urn:www.cenbii.eu:transaction:biitrdm085:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t008:ver1.0
@@ -38,19 +41,19 @@
         <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
     </cac:ParentDocumentReference>
     <!-- end::ref-contract-folder-id[] -->
-    <!-- tag::questions-procurement-procedure[] -->
+    <!-- tag::refer-questions-procurement-procedure[] -->
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeName="ContractFolderId">6ebc4e19-eba6-4b0a-9155-b59471f20ea0</cbc:ID> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[1]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
-    <!-- end::questions-procurement-procedure[] -->
+    <!-- end::refer-questions-procurement-procedure[] -->
     <!-- tag::multiple-questions-group-of-lots[] -->
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeName="LotsGroup">GLO-0001</cbc:ID> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[2]</cbc:XPath> <!--.-->
     </cac:AdditionalDocumentReference>
     <!-- end::multiple-questions-group-of-lots[] -->
-    <!-- tag::one-question-for-multiple-lots[] -->
+    <!-- tag::refer-one-question-for-multiple-lots[] -->
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeName="Lot">LOT-0001</cbc:ID> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath> <!--4-->
@@ -59,21 +62,15 @@
         <cbc:ID schemeName="Lot">LOT-0007</cbc:ID> <!--.-->
         <cbc:XPath>/EnquiryResponse/cac:Attachment[3]</cbc:XPath> <!--4-->
     </cac:AdditionalDocumentReference>
-    <!-- end::one-question-for-multiple-lots[] -->
-    <!-- tag::refer-file-attachment[] -->
-    <cac:AdditionalDocumentReference>
-        <cbc:ID schemeName="Lot">LOT-0002</cbc:ID> <!--.-->
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[4]</cbc:XPath> <!--.-->
-    </cac:AdditionalDocumentReference>
-    <!-- end::refer-file-attachment[] -->
+    <!-- end::refer-one-question-for-multiple-lots[] -->
     <!-- tag::refer-multiple-attachments[] -->
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeName="Lot">LOT-0006</cbc:ID> <!--.-->
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[5]</cbc:XPath> <!--.-->
-        <cbc:XPath>/EnquiryResponse/cac:Attachment[6]</cbc:XPath>
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[4]</cbc:XPath> <!--.-->
+        <cbc:XPath>/EnquiryResponse/cac:Attachment[5]</cbc:XPath>
     </cac:AdditionalDocumentReference>
     <!-- end::refer-multiple-attachments[] -->
-    <!-- tag::question-contract-folder-id[] -->
+    <!-- tag::questions-procurement-procedure[] -->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description> <!--.-->
@@ -82,10 +79,12 @@
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
-    <!-- end::question-contract-folder-id[] -->
+    <!-- end::questions-procurement-procedure[] -->
     <!-- tag::question-group-of-lots[] -->
     <cac:Attachment>
         <cac:ExternalReference>
+            <cbc:MimeCode>application/vnd.oasis.opendocument.text</cbc:MimeCode>
+            <cbc:FileName>TextDocument.odt</cbc:FileName>
             <cbc:Description>
                 Place the Tendering Question regarding GLO-0001 here?
                 Place your Tendering Answer regarding GLO-0001 here.
@@ -93,7 +92,7 @@
         </cac:ExternalReference>
     </cac:Attachment>
     <!-- end::question-group-of-lots[] -->
-    <!-- tag::question-for-multiple-lots[] -->
+    <!-- tag::one-question-for-multiple-lots[] -->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>
@@ -102,35 +101,21 @@
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
-    <!-- end::question-for-multiple-lots[] -->
-    <!-- tag::file-attachment[] -->
-    <cac:Attachment>
-        <cac:ExternalReference>
-            <cbc:MimeCode>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</cbc:MimeCode>
-            <cbc:FileName>CalcSheet.odc</cbc:FileName> <!--.-->
-            <cbc:Description>
-                Place the question about lot 2 here?
-                Place your answer according to the question about lot 2 here.
-            </cbc:Description>
-        </cac:ExternalReference>
-    </cac:Attachment>
-    <!-- end::file-attachment[] -->
+    <!-- end::one-question-for-multiple-lots[] -->
     <!-- tag::multiple-attachments[] -->
     <cac:Attachment>
         <cac:ExternalReference>
-            <cbc:MimeCode>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</cbc:MimeCode>
-            <cbc:FileName>ExamplePriceSheet.odc</cbc:FileName> <!--.-->
             <cbc:Description>
-                Place the question about lot 6 here?
-                Place your answer according to the question about lot 6 here.
+                Place the first Tendering Question about lot LOT-0006 here?
+                Place your answer according to the question about lot LOT-0006 here.
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>
-                Place the another question about lot 6 here?
-                Place your answer according to the other question about lot 6 here.
+                Place the second Tendering Question about lot LOT-0006 here?
+                Place your answer according to the question about lot LOT-0006 here.
             </cbc:Description>
         </cac:ExternalReference>
     </cac:Attachment>
