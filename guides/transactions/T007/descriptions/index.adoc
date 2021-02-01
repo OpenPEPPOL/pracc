@@ -9,7 +9,7 @@ The `Enquiry` element should be build as follows:
 
 . The first `cac:AdditionalDocumentReference` within the `Enquiry` must have an `cbc:ID` having the attribute `schemeName` set to `ContractFolderID` and the value has to be the contract folder id.
 . An `Enquiry` element can have multiple `cac:AdditionalDocumentReference` refer to a LotsGroup, a lot or a part.
-. All questions are placed in an `cac:Attachment` element. The attachment can have one or more `cbc:Description` elements to ask multiple questions or refer to a file in the ASiC-e by using the `cbc:FileName` element.
+. All questions are placed in an `cac:Attachment` element. The attachment can have only one `cbc:Description` elements to ask a question and optionally refer to a file in the ASiC-e by using the `cbc:FileName` element.
 . The relation between `cac:AdditionalDocumentReference` and `cac:Attachment` is done by a `cbc:XPath` element in the `cac:AdditionalDocumentReference`
 . The `cbc:XPath` can only contain references to an `cac:Attachment` and has to match the following expression: `/Enquiry/cac:Attachment[number]` where number represents a 1-base index in the list of the attachments.
 
@@ -25,7 +25,7 @@ include::../files/TenderingQuestions-doc.xml[tags=contract-folder-id;question-co
 ....
 <.> The Contract Folder ID of the procurement procedure.
 <.> A reference to an element where one or more questions are located. The number in square brackets is the position in the list of attachments. The position starts with 1 (1-based indexing).
-<.> The Questions are placed in an `cac:Attachment` element.
+<.> The questions are placed in an `cac:Attachment` element.
 
 === Questions about a group of lots of a procurement procedure
 
@@ -38,8 +38,8 @@ include::../files/TenderingQuestions-doc.xml[tags=multiple-questions-group-of-lo
 ....
 <.> The ID of the group of lots.
 <.> A reference to a question.
-<.> Another reference to an attachment.
 <.> Refers to a file within the ASiC-e.
+<.> Each Attachment must have a question.
 
 === A question about several lots in a procurement procedure
 
@@ -50,6 +50,6 @@ Add an `cac:Attachment` with a question and refer this attachment with a `cbc:XP
 ....
 include::../files/TenderingQuestions-doc.xml[tags=one-question-for-multiple-lots;question-for-multiple-lots]
 ....
-<1> A reference to a lot.
-<2> Another reference to a lot.
-<3> A reference to the same question.
+<.> A reference to a lot.
+<.> Another reference to a lot.
+<.> References to the same question.

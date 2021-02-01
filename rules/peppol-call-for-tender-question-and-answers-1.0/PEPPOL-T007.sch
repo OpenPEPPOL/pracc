@@ -108,7 +108,7 @@
             <assert id="PEPPOL-T007-S021" flag="warning" test="not(./@*[not(name()='schemeID')])"><value-of select="$syntaxError" />cac:PartyIdentification/cbc:ID SHOULD NOT have any attributes but schemeID</assert>
         </rule>
 
-        <rule context="ubl:Enquiry/cac:AdditionalDocumentReference">
+        <rule context="ubl:Enquiry/cac:AdditionalDocumentReference[position() != 1]">
             <assert id="PEPPOL-T007-R029" flag="fatal" test="count(cbc:XPath) > 0">At least one XPath MUST be given.</assert>
         </rule>
 
@@ -117,8 +117,7 @@
         </rule>
 
         <rule context="ubl:Enquiry/cac:Attachment/cac:ExternalReference">
-            <assert id="PEPPOL-T007-R031" flag="fatal" test="count(./cbc:FileName) = 1 or count(./cbc:Description) > 0">At least one question or file reference MUST be given.</assert>
-            <assert id="PEPPOL-T007-R032" flag="fatal" test="not(count(./cbc:FileName) > 0 and count(./cbc:Description) > 0)">A combination of questions and file reference is not allowed.</assert>
+            <assert id="PEPPOL-T007-R031" flag="fatal" test="count(./cbc:Description) = 1">One question MUST be given.</assert>
         </rule>
     </pattern>
 </schema>

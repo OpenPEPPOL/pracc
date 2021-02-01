@@ -115,8 +115,7 @@
         </rule>
 
         <rule context="ubl:EnquiryResponse/cac:Attachment/cac:ExternalReference">
-            <assert id="PEPPOL-T008-R029" flag="fatal" test="count(./cbc:FileName) = 1 or count(./cbc:Description) > 0">At least one question or file reference MUST be given.</assert>
-            <assert id="PEPPOL-T008-R030" flag="fatal" test="not(count(./cbc:FileName) > 0 and count(./cbc:Description) > 0)">A combination of questions and file reference is not allowed.</assert>
+            <assert id="PEPPOL-T008-R029" flag="fatal" test="count(./cbc:Description) = 1">One question MUST be given.</assert>
         </rule>
     </pattern>
 </schema>

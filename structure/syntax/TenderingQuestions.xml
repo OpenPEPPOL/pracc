@@ -211,10 +211,9 @@
             <Element>
                 <Term>cac:ExternalReference</Term>
                 <Name>ExternalReference</Name>
-                <Description>An external reference to place your questions or add an attachment to express questions in more detail. There must be only one kind of reference a file or questions.</Description>
+                <Description>An external reference to place your questions or add an attachment to express questions in more detail.</Description>
                 <DataType>cac:ExternalReferenceType</DataType>
                 <Reference type="RULE">PEPPOL-T007-R031</Reference>
-                <Reference type="RULE">PEPPOL-T007-R032</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
                     <Name>Mime Code of the file</Name>
@@ -227,7 +226,7 @@
                     <Description>A file reference within the ASiC-e which may contain additional information to express questions in more detail.</Description>
                     <DataType>cbc:FileNameType</DataType>
                 </Element>
-                <Element cardinality="0..n">
+                <Element cardinality="1..1">
                     <Term>cbc:Description</Term>
                     <Name>Tendering Request</Name>
                     <Description>The tendering request about the procurement procedure.</Description>
