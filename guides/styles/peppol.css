@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic|Noto+Serif:400,400italic,700,700italic|Droid+Sans+Mono:400,700);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -782,12 +783,4 @@ body { background-image: url("../shared/images/Draft.svg"); }
 
 table { background: none; }
 
-.sidebarblock {
-  background-color: rgba(243, 243, 242, 0.5);
-}
-
-@media only screen and (min-width: 768px) { #toctitle { font-size: 1.375em; }
-  #toc.toc2 {
-    background: rgba(248, 248, 247, 0.5);
-  }
-}
+.hide-callouts .conum { display: none; }

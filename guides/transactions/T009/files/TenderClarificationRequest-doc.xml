@@ -38,7 +38,6 @@
     </cac:AdditionalDocumentReference>
     <!-- end::contract-folder-id[] -->
     <!-- tag::lot[] -->
-    <!--...-->
     <cac:AdditionalDocumentReference>
         <cbc:ID schemeName="Lot">LOT-0001</cbc:ID> <!--.-->
         <cbc:XPath>/Enquiry/cac:Attachment[2]</cbc:XPath> <!--.-->
@@ -46,7 +45,6 @@
     </cac:AdditionalDocumentReference>
     <!-- end::lot[] -->
     <!-- tag::question-contract-folder-id[] -->
-    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>Place your tender clarification request here?</cbc:Description> <!--.-->
@@ -54,7 +52,6 @@
     </cac:Attachment>
     <!-- end::question-contract-folder-id[] -->
     <!-- tag::question-lot[] -->
-    <!--...-->
     <cac:Attachment>
         <cac:ExternalReference>
             <cbc:Description>Place your tender clarification request for LOT-0001 here?</cbc:Description>

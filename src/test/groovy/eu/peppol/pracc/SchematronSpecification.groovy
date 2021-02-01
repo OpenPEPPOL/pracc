@@ -51,13 +51,9 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch'                      | 'guides/transactions/T005/files/tender-instance.xml'
         'rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch'                      | 'guides/transactions/T006/files/tender-receipt-instance.xml'
         'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch'  | 'guides/transactions/T007/files/TenderingQuestions-doc.xml'
-        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch'  | 'guides/transactions/T007/files/TenderingQuestions-instance.xml'
         'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch'  | 'guides/transactions/T008/files/TenderingAnswers-doc.xml'
-        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch'  | 'guides/transactions/T008/files/TenderingAnswers-instance.xml'
         'rules/tender-clarification-1.0/PEPPOL-T009.sch'                         | 'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'
-        'rules/tender-clarification-1.0/PEPPOL-T009.sch'                         | 'guides/transactions/T009/files/TenderClarificationRequest-instance.xml'
         'rules/tender-clarification-1.0/PEPPOL-T010.sch'                         | 'guides/transactions/T010/files/TenderClarification-doc.xml'
-        'rules/tender-clarification-1.0/PEPPOL-T010.sch'                         | 'guides/transactions/T010/files/TenderClarification-instance.xml'
     }
 
     def 'XSD schema validation'() {
@@ -83,12 +79,8 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T005/files/tender-instance.xml'                       | 'xsdrt/maindoc/UBL-Tender-2.2.xsd'
         'guides/transactions/T006/files/tender-receipt-instance.xml'               | 'xsdrt/maindoc/UBL-TenderReceipt-2.2.xsd'
         'guides/transactions/T007/files/TenderingQuestions-doc.xml'                | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
-        'guides/transactions/T007/files/TenderingQuestions-instance.xml'           | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
         'guides/transactions/T008/files/TenderingAnswers-doc.xml'                  | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
-        'guides/transactions/T008/files/TenderingAnswers-instance.xml'             | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
         'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'        | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
-        'guides/transactions/T009/files/TenderClarificationRequest-instance.xml'   | 'xsdrt/maindoc/UBL-Enquiry-2.2.xsd'
         'guides/transactions/T010/files/TenderClarification-doc.xml'               | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
-        'guides/transactions/T010/files/TenderClarification-instance.xml'          | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
     }
 }
