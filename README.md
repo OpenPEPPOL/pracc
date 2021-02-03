@@ -23,4 +23,4 @@ To build the Web-Pages you have to install the following tools:
 On a local environment you can run the script [run_server.sh](./tools/bin/run_server.sh) or [run_server.cmd](./tools/bin/run_server.cmd) depending on your operating system. This script creates a docker image build by the [Dockerfile](./Dockerfile) with an image name pracc.
 
 #### GitHub
-A GitHub-Action is triggered when pushing to github. Those actions are defined in [build.yml](./.github/workflows/build.yml). The action creates a docker image and pushes it to hub.docker.com to the repository beschaffungsamt/peppol-pracc-site. The version is set to the branch name.
+A GitHub-Action is triggered when pushing to github. Those actions are defined in [build.yml](./.github/workflows/build.yml). The action creates a docker image and pushes it to [beschaffungsamt/peppol-pracc-site](https://hub.docker.com/r/beschaffungsamt/peppol-pracc-site). The tag is set to the branch name.
