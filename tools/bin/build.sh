@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-FOLDER=$(echo $(dirname $(readlink -f "$0")) | sed "s:/tools/bin::")
+FOLDER=$(cd $(dirname "$0") && pwd | sed "s:/tools/bin::")
 
-info() {
-    echo "\n *** $1 ***\n"
-}
+script_dir=$(cd $(dirname $0) && pwd)
+
+source ${script_dir}/functions.sh
 
 dc () {
     if [ $(command -v docker-compose | wc -l) = "1" ]; then
@@ -22,34 +22,19 @@ dc () {
     fi
 }
 
-
-info "Delete existing target folder"
-
-dc target-rm
-
 info "Run vefa-structure"
-
 dc structure
 
-info "Fix ownership"
-
-docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
-
+pushd $FOLDER > /dev/null
 info "Create ZIP file with schematrons"
-zip -r "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/rules/"
-mv "$FOLDER/target/site/files/schematrons-1.zip" "$FOLDER/target/site/files/schematrons.zip"
+zip -qr "target/site/files/schematrons-1.zip" "rules/"
+mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
+popd > /dev/null
 
-#info "Build and verify validation artifacts"
-
+(
+info "Build and verify validation artifacts"
 dc validator
-
+)&
 
 info "Generate Asciidoctor documents"
-
 dc asciidoctor
-
-
-info "Fix ownership"
-
-docker run --rm -i -v $FOLDER:/src alpine:3.6 chown -R $(id -g $USER).$(id -g $USER) /src/target
-

@@ -1,7 +1,7 @@
 
 = Non-functional requirements
 
-For the {peppol} BIS all {peppol} non-functional requirements are applicable as documented in {bii3} {name-profile-org} and "Profile BII35  Advanced Tendering with Pre-award Catalogue"(CWA 17027-105). Implementers must comply to these requirements.
+For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as documented in {link-bii3} {name-profile-org} and "Profile BII35  Advanced Tendering with Pre-award Catalogue"(CWA 17027-105). Implementers must comply to these requirements.
 
 [cols="2,10", options="header"]
 |===

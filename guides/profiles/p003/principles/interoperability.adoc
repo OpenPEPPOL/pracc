@@ -1,7 +1,7 @@
 
 = Interoperability
 
-This {peppol} BIS structure is based on the link:https://ec.europa.eu/isa2/home_en[European Interoperability Framework 2.0].
+This {link-peppol} BIS structure is based on the link:https://ec.europa.eu/isa2/home_en[European Interoperability Framework 2.0].
 
 It applies the Framework as follows:
 
@@ -13,12 +13,12 @@ It applies the Framework as follows:
 
 . Organizational interoperability
 * Organization (Organization/Business):
-** This {peppol} eTendering BIS supports only B2G
-** This {peppol} eTendering BIS supports cross border, regional and domestic tendering procedures in EU and EEA
-** This {peppol} eTendering BIS can function as a standardized EDI agreement within a trading community
-** This {peppol} eTendering BIS supports linking of business processes within the sending and receiving organization.
+** This {link-peppol} eTendering BIS supports only B2G
+** This {link-peppol} eTendering BIS supports cross border, regional and domestic tendering procedures in EU and EEA
+** This {link-peppol} eTendering BIS can function as a standardized EDI agreement within a trading community
+** This {link-peppol} eTendering BIS supports linking of business processes within the sending and receiving organization.
 * Organization (Process):
-** This {peppol} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
+** This {link-peppol} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
 
 . Technical interoperability
 * Technical Interaction (Process and semantic implementation):

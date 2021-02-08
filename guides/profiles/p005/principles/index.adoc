@@ -1,0 +1,23 @@
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award.
+It is based on the {link-bii3} and the work done by {link-esens} eTendering:
+
+* {link-profile} {name-profile-org}
+
+
+NOTE: The {link-profile} profile document is available from your national standardization body.
+
+
+:leveloffset: +1
+
+
+include::scope.adoc[]
+
+include::interoperability.adoc[]
+
+include::non-functional-requirements.adoc[]
+
+
+
+:leveloffset: -1

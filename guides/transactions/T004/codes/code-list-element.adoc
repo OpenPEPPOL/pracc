@@ -1,105 +1,104 @@
 
 =  Code lists for coded elements
 
-
 == Country code
-[cols="1,4"]
+[cols="1h,4", colh]
 |===
-h| Qualifier
+| Qualifier
 | `ISO3166-1:Alpha2` (listID)
-h| Document location
+| Document location
 | `cac:Country/cbc:IdentificationCode`
-h| Source codelist
-| Use Alpha-2 codes from {iso3166}
+| Source codelist
+| Use Alpha-2 codes from {link-iso3166}
 |===
 
 == Procedure type
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `PR_PROC` (listID)
-h| Document location
+| Document location
 | `cbc:ProcedureCode`
-h| Source codelist
+| Source codelist
 | See codelist section on {link-main-site}
 |===
 
 == Procurement project type
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `PROJECT_TYPE` (listID)
-h| Document location
+| Document location
 | `cbc:ProcurementTypeCode`
-h| Source codelist
+| Source codelist
 | See codelist section on {link-main-site}
 |===
 
 == Document Type Code
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `urn:eu:esens:cenbii:documentType` (listID)
-h| Document location
+| Document location
 | `cbc:DocumentTypeCode`
-h| Source codelist
+| Source codelist
 |  See codelist section on {link-main-site}
 |===
 
 
 == Provided document to be returned indicator
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `urn:eu:esens:cenbii:documentStatusType` (listID)
-h| Document location
+| Document location
 | `cbc:DocumentStatusCode`
-h| Source codelist
+| Source codelist
 | See codelist section on {link-main-site}
 |===
 
 
 == Document mime type code
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 |
-h| Document location
+| Document location
 | `cbc:MimeCode`
-h| Source codelist
+| Source codelist
 | link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[IANA]
 |===
 
 
 == Document language
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | `ISO639-1` (listID)
-h| Document location
+| Document location
 | `cbc:LocaleCode`
-h| Source codelist
+| Source codelist
 | link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
 |===
 
 == Type of Contract to Establish
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | CONTRACT_TYPE (listID)
-h| Document location
+| Document location
 | `cbc:ContractingSystemCode`
-h| Source codelist
+| Source codelist
 | See codelist section on {link-main-site}
 |===
 
 == Backup for electronic submission indicator /Electronic submission required indicator
-[cols="1,4"]
+[cols="1h,4"]
 |===
-h| Qualifier
+| Qualifier
 | BII_SUBMISSION (listID)
-h| Document location
+| Document location
 | `cbc:SubmissionMethodCode`
-h| Source codelist
+| Source codelist
 | See codelist section on {link-main-site}
 |===

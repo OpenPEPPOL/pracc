@@ -1,0 +1,26 @@
+// all links shared in all files.
+
+//PEPPOL
+:link-peppol: https://peppol.eu[PEPPOL]
+:link-common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
+
+//CEN BII3
+:link-bii3: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID,FSP_LANG_ID:2073699,25&cs=15AF0C1A6E029E9FE6E07383C858E58B0[CEN WS/BII 3]
+:link-cenbii: http://www.cenbii.eu[CEN BII]
+
+// eSENS
+:link-esens: https://www.esens.eu/[e-SENS]
+:link-e-SENS-SBDH: http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Pilot+Specifications+-+eDelivery+guide+for+eTendering#id-5.1.1-PilotSpecifications-eDeliveryguideforeTendering-5.1.1-PilotSpecification-SBDH
+
+:link-un-ece-1001: http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001]
+
+// UBL
+:link-ubl: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
+
+:link-espd: https://en.wikipedia.org/wiki/European_Single_Procurement_Document
+:link-art43-50: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0025&from=EN
+:link-eu-directive: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=En
+:link-bpmn: https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
+
+:link-eDelivery: link:/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.2.docx[BIS eDelivery guide for pre-award]
+:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.docx[BIS eDocuments guide for pre-award]

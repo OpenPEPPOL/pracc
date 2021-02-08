@@ -1,13 +1,10 @@
-
 = Principle and prerequisites
 
 :leveloffset: +1
 
-include::../{shared-dir}/transaction/scope-transaction.adoc[]
+include::../../shared/scope-transaction.adoc[]
 
 include::parties-roles.adoc[]
-
-
 
 
 :leveloffset: -1

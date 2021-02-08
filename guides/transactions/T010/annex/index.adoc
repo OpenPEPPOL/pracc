@@ -1,0 +1,10 @@
+[appendix]
+= Key examples/use cases
+
+link:files/TenderClarification-doc.xml[Link to example file]
+
+[source,xml,role="hide-callouts"]
+.Example file for {name-transaction}
+----
+include::../files/TenderClarification-doc.xml[tag=**]
+----

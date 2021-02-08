@@ -1,7 +1,7 @@
 
 = Code list for identifier schemes
 
-[cols="4,4,4"options="header"]
+[cols="4,4,4", options="header"]
 .Code list for identifier schemes
 |===
 | Business Term | Allowed Scheme | Applicable Xpath

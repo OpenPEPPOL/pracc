@@ -1,0 +1,24 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+
+    // Apply the groovy plugin to also add support for Groovy (needed for Spock)
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation(
+            'org.spockframework:spock-core:2.0-M4-groovy-3.0',
+            'com.helger.schematron:ph-schematron-xslt:6.0.1',
+            'ch.qos.logback:logback-classic:1.2.3',
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
