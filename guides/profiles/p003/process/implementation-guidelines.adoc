@@ -1,13 +1,13 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {link-cenbii}, and business rules and code lists used are inherited from the follwing {link-cenbii} documents: +
+{name-profile} is based on work done by {link-cenbii}[CEN BII], and business rules and code lists used are inherited from the follwing {link-cenbii}[CEN BII] documents: +
 
 * UBL Syntax Implementation Guideline for Trdm090 Tender (CWA 17027-218)
 * UBL Syntax Implementation Guideline for Trdm045 Tender Reception Notification (CWA 17027-205)
 * Profile BII54  Tendering (CWA 17027-119)
 
-{link-peppol} {name-profile} business process includes 2 transactions:
+{peppol} {name-profile} business process includes 2 transactions:
 
-* link:../../transactions/T005/index.html[T005 - Tender]
-* link:../../transactions/T006/index.html[T006 - Tender Receipt Notification]
+* link:..\..\transactions\T005\[T005 - Tender]
+* link:..\..\transactions\T006\[T006 - Tender Receipt Notification]

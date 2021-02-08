@@ -1,14 +1,21 @@
-include::../shared/settings.adoc[]
+include::../shared/links.adoc[]
 
+include::../../shared/settings.adoc[]
+
+:lang: en
+
+:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
+:shared-dir: ../../shared
+:rules-dir: ../../../../rules/peppol-tender-1.0/peppol-res
+
+:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
+
+:name-profile-org: {bii3} "Profile 54 Tendering" (CWA 17027-119)
 :name-profile: Profile P003 - "Tender Submission"
 
+// :name-profile: Profile BII Profile 54 Tender Reception Notification
 :name-transaction-org: "Trdm045 Tender Reception Notification"(CWA 17027-205)
 :name-transaction: T006 - Tender Reception Notification
 :name-trans-short: Tender Reception Notification
 :name-syntax: TenderReceipt
-
-include::../shared/links.adoc[]
-
-:name-profile-org: {link-bii3} "Profile 54 Tendering" (CWA 17027-119)
-
-:xml-doc-file: files/tender-receipt-notification.xml
+:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]

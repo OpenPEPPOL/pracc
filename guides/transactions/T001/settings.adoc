@@ -1,14 +1,20 @@
-include::../shared/settings.adoc[]
+include::../shared/links.adoc[]
 
+include::../../shared/settings.adoc[]
+
+:lang: en
+
+:doctitle: image:peppol.png[float="right"] PEPPOL {name-transaction}
+:shared-dir: ../../shared
+:rules-dir: ../../../../rules/peppol-procurement-procedure-subscription-1.0/peppol-res
+
+:name-op-en: OpenPEPPOL AISBL, Pre-Award Coordinating Community
+
+:name-profile-org: {bii3} “Profile 46 Subscribe to Procedure" (CWA 17027-111)
 :name-profile: Profile P001 - "Procurement procedure subscription"
 
 :name-transaction-org: "Trdm081 Subscribe to Procedure"
 :name-transaction: T001 - Subscribe to Procedure
 :name-trans-short: Subscribe to Procedure
 :name-syntax: ExpressionOfInterestRequest
-
-include::../shared/links.adoc[]
-
-:name-profile-org: {link-bii3} “Profile 46 Subscribe to Procedure" (CWA 17027-111)
-
-:xml-doc-file: files/ExpressionOfInterestRequest-instance.xml
+:link-mapping: {link-syntax}{backslash}{name-syntax}{backslash}tree/[Syntax mapping for {name-transaction}]

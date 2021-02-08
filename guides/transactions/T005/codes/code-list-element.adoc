@@ -3,36 +3,36 @@
 
 
 == Document language
-[cols="1h,4"]
+[cols="1,4"]
 |===
-| Qualifier
+h| Qualifier
 | `ISO639-1` (listID)
-| Document location
+h| Document location
 | `cac:DocumentReference/cbc:LocaleCode`
-| Source codelist
+h| Source codelist
 | link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
 |===
 
 == Country code
 
-[cols="1h,4"]
+[cols="1,4"]
 |===
-| Qualifier
+h| Qualifier
 | `ISO3166-1:Alpha2` (listID)
-| Document location
+h| Document location
 | `cac:Country/cbc:IdentificationCode`
-| Source codelist
-| Use Alpha-2 codes from {link-iso3166}
+h| Source codelist
+| link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO 3166-1]
 |===
 
 == DocumentTypeCode
 
-[cols="1h,4"]
+[cols="1,4"]
 |===
-| Qualifier
+h| Qualifier
 | `UNCL1001` (listID)
-| Document location
+h| Document location
 | `cac:DocumentReference/cbc:DocumentTypeCode`
-| Source codelist
+h| Source codelist
 |  http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001 (Subset by CEN BII2)]
 |===
