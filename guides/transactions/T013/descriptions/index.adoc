@@ -1,0 +1,5 @@
+[[descriptions]]
+= Description of selected parts of the transaction
+
+Limited support for this, see {name-profile-org}.
+

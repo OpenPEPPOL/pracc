@@ -1,0 +1,7 @@
+:name-profile-org: "Profile 53 — Tender Withdrawal" (CWA 17027-118:2016)
+
+include::links.adoc[]
+
+include::../shared/settings.adoc[]
+
+:name-profile: Profile P005 - "Tender Withdrawal"
