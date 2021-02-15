@@ -27,6 +27,7 @@ jobs:
       - name: build target
         run: ./tools/bin/build.sh
       - name: Push to Docker Hub
+        if: github.repository_owner == 'Beschaffungsamt'
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
