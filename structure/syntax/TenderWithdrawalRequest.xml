@@ -35,12 +35,12 @@
 			<Term>cbc:ID</Term>
 			<Name>Document identifier</Name>
 			<Description>Identifier of a document, must be a UUID</Description>
-			<DataType>Identifier</DataType>
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme URI</Name>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
+			<DataType>Identifier</DataType>
 		</Element>
 		<Element>
 			<Term>cbc:ContractFolderID</Term>

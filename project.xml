@@ -18,6 +18,13 @@
     <Documentation path="profiles/p005/index.html">P005 - Tender Clarification - 1.0</Documentation>
     <Documentation path="transactions/T009/index.html">T009 - Tender Clarification Request</Documentation>
     <Documentation path="transactions/T010/index.html">T010 - Tender Clarification</Documentation>
+    <Documentation path="profiles/p006/index.html">P006 - Search Notices</Documentation>
+    <Documentation path="transactions/T011/index.html">T011 - Search Notice Request</Documentation>
+    <Documentation path="transactions/T012/index.html">T012 - Search Notice Response</Documentation>
+    <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal</Documentation>
+    <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
+    <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
+
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
@@ -70,6 +77,26 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderClarification.xml</Path>
         <Title>Syntax Mapping T010 - Tender Clarification</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/SearchNoticeRequest.xml</Path>
+        <Title>Syntax Mapping T011 - Search Notice Request</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/SearchNoticeResponse.xml</Path>
+        <Title>Syntax Mapping T012 - Search Notice Response</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/TenderWithdrawalRequest.xml</Path>
+        <Title>Syntax Mapping T013 - Tender Withdrawal</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/TenderWithdrawalResponse.xml</Path>
+        <Title>Syntax Mapping T014 - Tender Withdrawal Notification</Title>
     </Resource>
 
 
@@ -133,6 +160,30 @@
         <Type>native:Schematron</Type>
         <Path>rules/tender-clarification-1.0/PEPPOL-T010.sch</Path>
         <Title>PEPPOL T010 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T011</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-search-notice/PEPPOL-T011.sch</Path>
+        <Title>PEPPOL T011 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T012</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-search-notice/PEPPOL-T012.sch</Path>
+        <Title>PEPPOL T012 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T013</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-withdrawal/PEPPOL-T013.sch</Path>
+        <Title>PEPPOL T013 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T014</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tender-withdrawal/PEPPOL-T014.sch</Path>
+        <Title>PEPPOL T014 rules</Title>
     </Resource>
     <Resource>
         <Identifier>BIIT004</Identifier>
