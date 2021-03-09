@@ -2,5 +2,5 @@ include::../../shared/links.adoc[]
 
 //links only used in the BIS document
 :link-profile: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62030&cs=1299CBAFF9E6A7D4FF75F6917E146F7EB[BII Profile 48]
-:ubl-enquiry: https://docs.oasis-open.org/ubl/csprd02-UBL-2.3/UBL-2.3.html#S-ENQUIRY-SCHEMA
-:ubl-enquiry-response: https://docs.oasis-open.org/ubl/csprd02-UBL-2.3/UBL-2.3.html#S-ENQUIRY-RESPONSE-SCHEMA
+:ubl-enquiry: https://docs.oasis-open.org/ubl/csprd02-UBL-2.2/UBL-2.2.html#S-ENQUIRY-SCHEMA
+:ubl-enquiry-response: https://docs.oasis-open.org/ubl/csprd02-UBL-2.2/UBL-2.2.html#S-ENQUIRY-RESPONSE-SCHEMA

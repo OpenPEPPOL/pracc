@@ -13,34 +13,33 @@
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
 			<Name>UBL Verison identifier</Name>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T005-R001</Reference>
 			<Reference type="RULE">eSENS-T005-R021</Reference>
-			<Value type="FIXED">2.2</Value>	
+			<DataType>Identifier</DataType>
+			<Value type="FIXED">2.2</Value>
 		</Element>
 		<Element>
 			<Term>cbc:CustomizationID</Term>
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R001</Reference>
 			<Reference type="RULE">eSENS-T005-R002</Reference>
+			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R002</Reference>
 			<Reference type="RULE">eSENS-T005-R003</Reference>
+			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p003:01:1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Tender identifier</Name>
 			<Description>Identifier of the tender document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R008</Reference>
 			<Reference type="RULE">eSENS-T005-R006</Reference>
 			<Attribute>
@@ -50,30 +49,31 @@
 				<Reference type="RULE">eSENS-T005-R005</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
-			
+			<DataType>Identifier</DataType>
+
 		</Element>
 		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T90-R009</Reference>
+			<DataType>Identifier</DataType>
 		</Element>
 		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Tender issue date</Name>
 			<Description>The date when the tender is issued by the economic operator.</Description>
-			<DataType>Date</DataType>
 			<Reference type="RULE">BII3-T90-R005</Reference>
+			<DataType>Date</DataType>
 		</Element>
 		<Element>
 			<Term>cbc:IssueTime</Term>
 			<Name>Tender issue time</Name>
 			<Description>The time when the tender is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
-			<DataType>Time</DataType>
 			<Reference type="RULE">BII3-T90-R006</Reference>
 			<Reference type="RULE">BII3-T90-R007</Reference>
 			<Reference type="RULE">eSENS-T005-R007</Reference>
+			<DataType>Time</DataType>
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:DocumentReference</Term>
@@ -84,17 +84,16 @@
 				<Term>cbc:ID</Term>
 				<Name>Call for tender reference Document identifier</Name>
 				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
-				<DataType>Identifier</DataType>
 				<Reference type="RULE">BII3-T90-R010</Reference>
 				<Reference type="RULE">BII3-T90-R013</Reference>
 				<Reference type="RULE">eSENS-T005-R013</Reference>
 				<Reference type="RULE">eSENS-T005-R012</Reference>
+				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
 				<Description>A code specifying the type of the document.</Description>
-				<DataType>Code</DataType>
 				<Reference type="RULE">BII3-T90-R015</Reference>
 				<Reference type="RULE">CL-T90-R003</Reference>
 				<Attribute>
@@ -103,12 +102,12 @@
 					<Reference type="RULE">BII3-T90-R021</Reference>
 					<Value type="FIXED">UNCL1001</Value>
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:LocaleCode</Term>
 				<Name>Tender language</Name>
 				<Description>The language used to write the tender.</Description>
-				<DataType>Code</DataType>
 				<Reference type="RULE">eSENS-T005-R016</Reference>
 				<Attribute>
 					<Term>listID</Term>
@@ -116,20 +115,21 @@
 					<Reference type="RULE">eSENS-T005-R015</Reference>
 					<Value type="FIXED">ISO639-1</Value>
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:VersionID</Term>
 				<Name>Call for tender version</Name>
 				<Description>Identifies the version of the call for tenders.</Description>
-				<DataType>Identifier</DataType>
 				<Reference type="RULE">BII3-T90-R011</Reference>
+				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cbc:DocumentDescription</Term>
 				<Name>Document description</Name>
 				<Description>Textual description of the document.</Description>
-				<DataType>Text</DataType>
 				<Reference type="RULE">BII3-T90-R014</Reference>
+				<DataType>Text</DataType>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:Attachment</Term>
@@ -149,33 +149,33 @@
 						<Term>cbc:DocumentHash</Term>
 						<Name>Document digest</Name>
 						<Description>Digest of the document, must be a SHA-256 value</Description>
-						<DataType>Text</DataType>
 						<Reference type="RULE">BII3-T90-R017</Reference>
 						<Reference type="RULE">eSENS-T005-R017</Reference>
+						<DataType>Text</DataType>
 					</Element>
 					<Element>
 						<Term>cbc:HashAlgorithmMethod</Term>
 						<Name>Document digest method code</Name>
 						<Description>Code that indicates the algorithm used to calculate the hash.</Description>
-						<DataType>Code</DataType>
 						<Reference type="RULE">BII3-T90-R018</Reference>
 						<Reference type="RULE">eSENS-T005-R018</Reference>
+						<DataType>Code</DataType>
 						<Value type="FIXED">http://www.w3.org/2001/04/xmlenc#sha256</Value>
 					</Element>
 					<Element cardinality="0..1">
 						<Term>cbc:MimeCode</Term>
 						<Name>Document mime type code</Name>
 						<Description>Mime code of the attached document (IANA)</Description>
-						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T90-R002</Reference>
+						<DataType>Code</DataType>
 					</Element>
 					<Element>
 						<Term>cbc:FileName</Term>
 						<Name>Document name</Name>
 						<Description>The file name of the document.</Description>
-						<DataType>Text</DataType>
 						<Reference type="RULE">BII3-T90-R016</Reference>
 						<Reference type="RULE">eSENS-T005-R014</Reference>
+						<DataType>Text</DataType>
 					</Element>
 				</Element>
 			</Element>
@@ -188,7 +188,6 @@
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
-				<DataType>Identifier</DataType>
 				<Reference type="RULE">eSENS-T005-R020</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
@@ -196,6 +195,7 @@
 					<Reference type="RULE">eSENS-T005-R010</Reference>
 					<Reference type="RULE">eSENS-T005-R011</Reference>
 				</Attribute>
+				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
@@ -205,7 +205,6 @@
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
 					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
-					<DataType>Identifier</DataType>
 					<Reference type="RULE">BII3-T90-R003</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -213,6 +212,7 @@
 						<Reference type="RULE">eSENS-T005-R008</Reference>
 						<Reference type="RULE">eSENS-T005-R009</Reference>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
@@ -265,13 +265,13 @@
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Country code</Name>
 						<Description>A code that identifies the country.</Description>
-						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T90-R001</Reference>
 						<Attribute>
 							<Term>listID</Term>
 							<Name>List identifier for country code</Name>
 							<Reference type="RULE">BII3-T90-R020</Reference>
 						</Attribute>
+						<DataType>Code</DataType>
 					</Element>
 				</Element>
 			</Element>
@@ -297,13 +297,13 @@
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Economic operator registration country code</Name>
 							<Description>The registration country code of the economic operator.</Description>
-							<DataType>Code</DataType>
 							<Reference type="RULE">CL-T90-R001</Reference>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>List identifier for country code</Name>
 								<Reference type="RULE">BII3-T90-R020</Reference>
 							</Attribute>
+							<DataType>Code</DataType>
 						</Element>
 					</Element>
 				</Element>
@@ -350,7 +350,6 @@
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
-					<DataType>Identifier</DataType>
 					<Reference type="RULE">eSENS-T005-R019</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -358,6 +357,7 @@
 						<Reference type="RULE">eSENS-T005-R010</Reference>
 						<Reference type="RULE">eSENS-T005-R011</Reference>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
@@ -367,7 +367,6 @@
 						<Term>cbc:ID</Term>
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
-						<DataType>Identifier</DataType>
 						<Reference type="RULE">BII3-T90-R004</Reference>
 						<Attribute>
 							<Term>schemeID</Term>
@@ -375,6 +374,7 @@
 							<Reference type="RULE">eSENS-T005-R008</Reference>
 							<Reference type="RULE">eSENS-T005-R009</Reference>
 						</Attribute>
+						<DataType>Identifier</DataType>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">

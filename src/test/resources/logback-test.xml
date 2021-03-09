@@ -8,9 +8,7 @@
         </encoder>
     </appender>
 
-    <logger name="eu.peppol.pracc.SchematronSpecification" level="INFO"/>
-
-    <root level="warn">
+    <root level="INFO">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>

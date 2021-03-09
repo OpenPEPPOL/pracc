@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>SearchNoticeResponse</Term>
+    <Name>Search Notice Response (T012)</Name>
+
+    <Namespace prefix="query">urn:oasis:names:tc:ebxml-regrep:xsd:query:4.0</Namespace>
+    <Namespace prefix="rim">urn:oasis:names:tc:ebxml-regrep:xsd:rim:4.0</Namespace>
+    <Namespace prefix="xsi">http://www.w3.org/2001/XMLSchema-instance</Namespace>
+
+    <Document>
+        <Term>query:QueryResponse</Term>
+        <Name>Search Notice Response root element</Name>
+        <Description>The Search Notice Response contains a package with the information on zero or more notices. Both
+            the metadata of the notices are included and the full text of the notices in xml.
+        </Description>
+        <Attribute usage="OPTIONAL">
+            <Term>totalResultCount</Term>
+            <Name>Total Result Count</Name>
+            <Description>This parameter specifies the size of the complete result set matching the query within the
+                server. When this value is unspecified, the client should assume it is the size of the result set
+                contained within the result. When this value is -1, the client should assume that the number of total
+                results is unknown. In this case the client should keep iterating through the remaining result set for
+                the query until no more results are returned. This attribute is described further in the Iterative
+                Queries section.
+            </Description>
+        </Attribute>
+        <Attribute usage="OPTIONAL">
+            <Term>startIndex</Term>
+            <Name>Start Index</Name>
+            <Description>This integer value is used to indicate the index for the first result in the result set
+                returned by the query, within the complete result set matching the query. By default, this value is 0.
+            </Description>
+            <Value type="DEFAULT">0</Value>
+        </Attribute>
+        <Attribute>
+            <Term>@requestId</Term>
+            <Name>Search Notice Request Identfier</Name>
+            <Description>Specifies the unique identifier for an Identifiable Search Notice Request. In case of different
+                start index for same QueryRequest the requester may use the same Search Notice Request Identfier.
+            </Description>
+        </Attribute>
+        <Element>
+            <Term>rim:Slot@name=SpecificationIdentification</Term>
+            <Name>Specification Identification</Name>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">SpecificationIdentification</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:t012:1.0</Value>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=BusinessProcessTypeIdentifier</Term>
+            <Name>Business Process Type Identifier</Name>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">BusinessProcessTypeIdentifier</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p006:1.0</Value>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=IssueDateTime</Term>
+            <Name>Issue Date Time</Name>
+            <Description>The issue date and time when the Serch Notice request is issued. The issue date time must have
+                granularity of seconds, and include time zone information.
+            </Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">IssueDateTime</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:DateTimeValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Description>The issue date and time of the response</Description>
+                    <DataType>rim:DateTimeValueType</DataType>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=SenderElectronicAddress</Term>
+            <Name>Sender Electronic Address Identifier</Name>
+            <Description>The electronic address of the sender.</Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">SenderElectronicAddress</Value>
+            </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Name>Scheme Identifier</Name>
+                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
+                    Identifiers" described in the "PEPPOL Policy for using Identifiers"
+                </Description>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotVlaue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <DataType>rim:StringValueType</DataType>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
+            <Name>Receiver Electronic Address Identifier</Name>
+            <Description>The electronic address of the receiver.</Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">ReceiverElectronicAddress</Value>
+            </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Name>Scheme Identifier</Name>
+                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
+                    Identifiers" described in the "PEPPOL Policy for using Identifiers"
+                </Description>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotVlaue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <DataType>rim:StringValueType</DataType>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:RegistryObjectList</Term>
+            <Name>Registry Object List</Name>
+            <Description>The Registry Object List returns the requested Information. It identifies the notice instances
+                that were affected by the Search Notices Request.
+            </Description>
+            <Element cardinality="0..n">
+                <Term>rim:RegistryObject</Term>
+                <Name>Registry Object</Name>
+                <Description>The Registery Object returns a notice instance that matches the Search Notice Request.
+                </Description>
+                <Attribute>
+                    <Term>lid</Term>
+                    <Name>Procedure Identifier</Name>
+                    <Description>The Procedure Identifier allows distinguishing procurement procedures and shall be
+                        globally unique. It identifies the procurement procedure the notice belongs to. In PEPPOL the
+                        Procedure Identifier is also named "Reference Number" or "ContractFolderID". In the later
+                        eTendering process the element is used to find the right procedure for a Procurement Procedure
+                        Subscription (P001).
+                    </Description>
+                </Attribute>
+                <Attribute>
+                    <Term>id</Term>
+                    <Name>Notice Identifier</Name>
+                    <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
+                        amongst all other existing ones contained within the query.
+                    </Description>
+                </Attribute>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:ExtrinsicObjectType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Slot@name=DocumentTypeCode</Term>
+                    <Name>Document Type Code</Name>
+                    <Description>Used to identify the UBL document type of the referenced notice which are associated to
+                        the corresponding UBL namespaces.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">DocumentTypeCode</Value>
+                    </Attribute>
+                    <Attribute>
+                        <Term>type</Term>
+                        <Description>The list has to be defined! TODO</Description>
+                        <Value type="FIXED">http://doc.peppol.eu/code-lists/document-type</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Value type="FIXED">rim:StringValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>rim:Slot@name=BuyerElectronicAddress</Term>
+                    <Name>Buyer Electronic Address Identifier</Name>
+                    <Description>The electronic address of the eTendering system or Organisation eDelivery Gateway
+                        (BT-509) which is used by the buyer, contracting authority or contracting entity who is buying
+                        supplies, services or public works using a tendering procedure as described in the applicable
+                        directive (Directives 2014/24/EU, 2014/25/EU). In the later eTendering process the element is
+                        used to find the right eTendering Platform for a Procurement Procedure Subscription (P001).
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">BuyerElectronicAddress</Value>
+                    </Attribute>
+                    <Attribute>
+                        <Term>type</Term>
+                        <Name>Scheme Identifier</Name>
+                        <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL
+                            Party Identifiers" described in the "PEPPOL Policy for using Identifiers"
+                        </Description>
+                        <Value type="EXAMPLE">DE:VAT</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Value type="FIXED">rim:StringValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term>rim:RepositoryItemRef</Term>
+                    <Name>Repository Item Reference</Name>
+                    <Description>The Repository Item Reference specifies a reference to the XML notice that is included
+                        to the local ASiC-E container (Associated Signature Container Extended) repository.
+                    </Description>
+                    <Attribute>
+                        <Term>xlink</Term>
+                        <Name>List Identifier</Name>
+                        <Description>This element uses xlink:href to specify local XML notices of the ASiC-E container
+                            as repository items.
+                        </Description>
+                    </Attribute>
+                </Element>
+            </Element>
+        </Element>
+    </Document>
+</Structure>

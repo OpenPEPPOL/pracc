@@ -1,0 +1,16 @@
+
+= Code list for elements
+
+
+== Notice Type Code
+[cols="1h,4"]
+|===
+| Qualifier (listID)
+| #NoticeTypeCode (tbd)#
+| Document location
+| `rim:Slot name="DocumentTypeCode"`
+| Issuer
+| {link-peppol}
+|===
+
+

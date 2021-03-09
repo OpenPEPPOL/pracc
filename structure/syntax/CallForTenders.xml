@@ -24,9 +24,9 @@
 			<Term>cbc:CustomizationID</Term>
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R001</Reference>
 			<Reference type="RULE">eSENS-T004-R002</Reference>
+			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t004:ver1.0</Value>
 		</Element>
 		
@@ -34,9 +34,9 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R002</Reference>
 			<Reference type="RULE">eSENS-T004-R003</Reference>
+			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p002:01:1.0</Value>
 		</Element>
 
@@ -44,10 +44,9 @@
 			<Term>cbc:ID</Term>
 			<Name>Call for tender identifier</Name>
 			<Description>Identifies the call for tender as issued by the contracting body. Must be expressed as a UUID</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R003</Reference>
 			<Reference type="RULE">eSENS-T004-R006</Reference>
-			
+
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme URI</Name>
@@ -55,40 +54,41 @@
 				<Reference type="RULE">eSENS-T004-R005</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
+			<DataType>Identifier</DataType>
 		</Element>
 		
 		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">BII3-T83-R004</Reference>
+			<DataType>Identifier</DataType>
 		</Element>
 		
 		<Element>
 			<Term>cbc:IssueDate</Term>
 			<Name>Call for tender issue date</Name>
 			<Description>The date on which the call for tender is issued.</Description>
-			<DataType>Date</DataType>
 			<Reference type="RULE">BII3-T83-R005</Reference>
+			<DataType>Date</DataType>
 		</Element>
 		
 		<Element cardinality="1..1">
 			<Term>cbc:IssueTime</Term>
 			<Name>Call for tender issue time</Name>
 			<Description>The time when the call for tender is issued. The issue time must have granularity of seconds, and include time zone information</Description>
-			<DataType>Time</DataType>
 			<Reference type="RULE">eSENS-T004-R007</Reference>
 			<Reference type="RULE">eSENS-T004-R008</Reference>
 			<Reference type="RULE">eSENS-T004-R009</Reference>
+			<DataType>Time</DataType>
 		</Element>
 
 		<Element>
 			<Term>cbc:VersionID</Term>
 			<Name>Call for tender version</Name>
 			<Description>Identifies the version of the call for tenders.</Description>
-			<DataType>Identifier</DataType>
 			<Reference type="RULE">eSENS-T004-R038</Reference>
+			<DataType>Identifier</DataType>
 		</Element>
 		
 		<Element cardinality="0..n">
@@ -101,8 +101,8 @@
 				<Term>cbc:ID</Term>
 				<Name>Document identifier</Name>
 				<Description>Identification of the document reference</Description>
+				<Reference type="RULE">eSENS-T004-R024</Reference>
 				<DataType>Identifier</DataType>
-        <Reference type="RULE">eSENS-T004-R024</Reference>
 
 			</Element>
 			
@@ -117,24 +117,23 @@
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
 				<Description>A code specifying the type of the document, valid codes are PROVIDED or REQUIRED</Description>
-				<DataType>Code</DataType>
 				<Reference type="RULE">eSENS-T004-R019</Reference>
 				<Reference type="CODE_LIST">docType</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
-					<Reference type="RULE">eSENS-T004-R017</Reference>	
-					<Reference type="RULE">eSENS-T004-R018</Reference>	
+					<Reference type="RULE">eSENS-T004-R017</Reference>
+					<Reference type="RULE">eSENS-T004-R018</Reference>
 					<Value type="FIXED">urn:eu:esens:cenbii:documentType</Value>
-					
+
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
 				<Term>cbc:LocaleCode</Term>
 				<Name>Provided document language</Name>
 				<Description>Language of a document that is provided as part of a call for tender.</Description>
-				<DataType>Code</DataType>
 				<Reference type="RULE">eSENS-T004-R016</Reference>
 				<Attribute>
 					<Term>listID</Term>
@@ -143,6 +142,7 @@
 					<Reference type="RULE">eSENS-T004-R015</Reference>
 					<Value type="FIXED">ISO639-1</Value>
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
@@ -156,8 +156,7 @@
 				<Term>cbc:DocumentStatusCode</Term>
 				<Name>Provided document to be returned indicator</Name>
 				<Description>Indicates that the provided document in the call for tender has to be returned as part of the tender.</Description>
-				<DataType>Indicator</DataType>
-			
+
 				<Reference type="RULE">eSENS-T004-R022</Reference>
 				<Reference type="RULE">eSENS-T004-R023</Reference>
 				<Reference type="CODE_LIST">docStatus</Reference>
@@ -168,6 +167,7 @@
 					<Reference type="RULE">eSENS-T004-R021</Reference>
 					<Value type="FIXED">urn:eu:esens:cenbii:documentStatusType</Value>
 				</Attribute>
+				<DataType>Indicator</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
@@ -176,10 +176,10 @@
 				<Description>A description of the required or provided document, or if DocumentTypeCode ="PROVIDED" the description should reference to one or more lots the economic operator is applying for. 
 					The original lot definition is part of the call for tender document. 
 					The Qualification instance only references the corresponding IDs in order to establish the connection to the call for tender information.</Description>
-				<DataType>Text</DataType>
-				
+
 				<Reference type="RULE">eSENS-T004-R030</Reference>
-			
+				<DataType>Text</DataType>
+
 			
 			</Element>
 			
@@ -197,24 +197,24 @@
 						<Name>Provided document url</Name>
 						<Description>A public URL where a document provided in a Call for tender can be downloaded
               or a URI to the document provided inside the ASIC-E package or any other type of package.</Description>
-						<DataType>Identifier</DataType>
 						<Reference type="RULE">eSENS-T004-R035</Reference>
+						<DataType>Identifier</DataType>
 					</Element>
 
 					<Element cardinality="0..1">
 						<Term>cbc:MimeCode</Term>
 						<Name>Document mime type code</Name>
 						<Description>Stands for </Description>
-						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T83-R004</Reference>
+						<DataType>Code</DataType>
 					</Element>
 					
 					<Element cardinality="0..1">
 						<Term>cbc:FileName</Term>
 						<Name>Provided document name</Name>
 						<Description>Name of a document that is provided as part of a tender or call for tender.</Description>
-						<DataType>Text</DataType>
 						<Reference type="RULE">eSENS-T004-R035</Reference>
+						<DataType>Text</DataType>
 					</Element>
 
 				</Element>
@@ -235,15 +235,15 @@
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
-					<DataType>Identifier</DataType>
 					<Reference type="RULE">eSENS-T004-R034</Reference>
-					
+
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Reference type="RULE">eSENS-T004-R012</Reference>
 						<Reference type="RULE">eSENS-T004-R013</Reference>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 				
 				
@@ -256,14 +256,14 @@
 						<Term>cbc:ID</Term>
 						<Name>Contracting body identifier</Name>
 						<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
-						<DataType>Identifier</DataType>
-						
+
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Scheme identifier</Name>
 							<Reference type="RULE">eSENS-T004-R010</Reference>
 							<Reference type="RULE">eSENS-T004-R011</Reference>
 						</Attribute>
+						<DataType>Identifier</DataType>
 					</Element>
 				</Element>
 				
@@ -293,13 +293,13 @@
 								<Term>cbc:IdentificationCode</Term>
 								<Name>Country of registration</Name>
 								<Description>The country where the party is registered. The country should always be given by using ISO code 3166 alpha 2</Description>
-								<DataType>Code</DataType>
 								<Reference type="RULE">CL-T83-R005</Reference>
 								<Attribute>
 									<Term>listID</Term>
 									<Name>List identifier</Name>
 									<Value type="FIXED">ISO3166-1:Alpha2</Value>
 								</Attribute>
+								<DataType>Code</DataType>
 							</Element>
 						</Element>
 					</Element>
@@ -315,7 +315,6 @@
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
-				<DataType>Identifier</DataType>
 				<Reference type="RULE">eSENS-T004-R534</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
@@ -323,6 +322,7 @@
 					<Reference type="RULE">eSENS-T004-R012</Reference>
 					<Reference type="RULE">eSENS-T004-R013</Reference>
 				</Attribute>
+				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
@@ -332,7 +332,6 @@
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
 					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
-					<DataType>Identifier</DataType>
 
 					<Attribute>
 						<Term>schemeID</Term>
@@ -340,6 +339,7 @@
 						<Reference type="RULE">eSENS-T004-R010</Reference>
 						<Reference type="RULE">eSENS-T004-R011</Reference>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
@@ -392,13 +392,13 @@
 						<Term>cbc:IdentificationCode</Term>
 						<Name>Country code</Name>
 						<Description>A code that identifies the country.</Description>
-						<DataType>Code</DataType>
 						<Reference type="RULE">CL-T83-R005</Reference>
 						<Attribute>
 							<Term>listID</Term>
 							<Name>List identifier for country code</Name>
 							<Reference type="RULE">BII3-T83-R018</Reference>
 						</Attribute>
+						<DataType>Code</DataType>
 					</Element>
 				</Element>
 			</Element>
@@ -424,13 +424,13 @@
 							<Term>cbc:IdentificationCode</Term>
 							<Name>Economic operator registration country code</Name>
 							<Description>The registration country code of the economic operator.</Description>
-							<DataType>Code</DataType>
 							<Reference type="RULE">CL-T83-R005</Reference>
 							<Attribute>
 								<Term>listID</Term>
 								<Name>List identifier for country code</Name>
 								<Reference type="RULE">BII3-T83-R018</Reference>
 							</Attribute>
+							<DataType>Code</DataType>
 						</Element>
 					</Element>
 				</Element>
@@ -475,8 +475,8 @@
 				<Term>cbc:MaximumVariantQuantity</Term>
 				<Name>Maximum number of variants to submit</Name>
 				<Description>Maximum number of variants a tenderer can submit.</Description>
-				<DataType>Numeric</DataType>
 				<Reference type="RULE">eSENS-T004-R032</Reference>
+				<DataType>Numeric</DataType>
 			</Element>
 			
 			
@@ -484,27 +484,27 @@
 				<Term>cbc:VariantConstraintIndicator</Term>
 				<Name>Variants indicator</Name>
 				<Description>Indicates if variants are accepted in the tender. Use true when variants are allowed.</Description>
-				<DataType>Indicator</DataType>
 				<Reference type="RULE">BII3-T83-R012</Reference>
+				<DataType>Indicator</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
 				<Term>cbc:Note</Term>
 				<Name>Required number of copies</Name>
 				<Description>Required number of paper copies to submit if using postal submission.</Description>
-				<DataType>Numeric</DataType>
 				<Reference type="RULE">eSENS-T004-R031</Reference>
+				<DataType>Numeric</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
 				<Term>cbc:AdditionalConditions</Term>
 				<Name>Overall expected level of tender signature</Name>
 				<Description>Expected level of signature to be used by the tenderer when submitting the tenders.</Description>
-				<DataType>Text</DataType>
 				<Reference type="RULE">eSENS-T004-R033</Reference>
 				<Reference type="CODE_LIST">addCond</Reference>
+				<DataType>Text</DataType>
 			</Element>
-			
+
 			<Element cardinality="0..1">
 				<Term>cac:ProcurementLegislationDocumentReference</Term>
 				<Name>Procurement legislation information</Name>
@@ -532,7 +532,6 @@
 					<Term>cbc:ID</Term>
 					<Name>Call for tender previous identifier</Name>
 					<Description>Identifies a previously issued call for tender when updated by the contracting body, expressed as a UUID</Description>
-					<DataType>Identifier</DataType>
 					<Reference type="RULE">eSENS-T004-R027</Reference>
 					<Attribute>
 						<Term>schemeURI</Term>
@@ -541,6 +540,7 @@
 						<Reference type="RULE">eSENS-T004-R026</Reference>
 						<Value type="FIXED">urn:uuid</Value>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 			</Element>
 
@@ -552,13 +552,13 @@
 					<Term>cbc:EndpointID</Term>
 					<Name>PEPPOL Address for Submission of Tenders</Name>
 					<Description>The PEPPOL Address (Participant Identifier) that the call for tenders to which tenders or requests to participate shall be submitted. This endpoint ID MUST be used only when different from the Contracting Authority Endpoint ID</Description>
-					<DataType>Identifier</DataType>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
 						<Reference type="RULE">eSENS-T004-R012</Reference>
 						<Reference type="RULE">eSENS-T004-R013</Reference>
 					</Attribute>
+					<DataType>Identifier</DataType>
 				</Element>
 			</Element>	
 		</Element>
@@ -573,25 +573,24 @@
 				<Term>cbc:ProcedureCode</Term>
 				<Name>Procedure type</Name>
 				<Description>A code specifying the type of this tendering process. The coded version of the description of procedure. (E.g.) Open procedure, negotiated etc.</Description>
-				<DataType>Code</DataType>
 				<Reference type="CODE_LIST">procedureType</Reference>
 				<Reference type="RULE">BII3-T83-R009</Reference>
 				<Reference type="RULE">CL-T83-R001</Reference>
-				
+
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier</Name>
 					<Reference type="RULE">BII3-T83-R021</Reference>
 					<Value type="FIXED">PR_PROC</Value>
-					
+
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
 				<Term>cbc:ContractingSystemCode</Term>
 				<Name>Type of contract to establish</Name>
 				<Description>Specifies that the aim of the awarding process is to establish a public contract or to setup a framework agreement or a dynamic purchasing system. For framework agreement and DPS,  indicates whether the new contract will be based on an already established framework agreement or dynamic purchasing system or not.</Description>
-				<DataType>Code</DataType>
 				<Reference type="RULE">CL-T83-R006</Reference>
 				<Reference type="CODE_LIST">contractType</Reference>
 				<Attribute>
@@ -600,13 +599,13 @@
 					<Reference type="RULE">BII3-T83-R022</Reference>
 					<Value type="FIXED">CONTRACT_TYPE</Value>
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">
 				<Term>cbc:SubmissionMethodCode</Term>
 				<Name>Backup for electronic submission indicator</Name>
 				<Description>Indicator whether postal submission of the tender is merely a backup for the electronic submission</Description>
-				<DataType>Indicator</DataType>
 				<Reference type="RULE">CL-T83-R007</Reference>
 				<Reference type="CODE_LIST">submissionMethod</Reference>
 				<Attribute>
@@ -615,6 +614,7 @@
 					<Reference type="RULE">BII3-T83-R023</Reference>
 					<Value type="FIXED">BII_SUBMISSION</Value>
 				</Attribute>
+				<DataType>Indicator</DataType>
 			</Element>
 			
 			<Element>
@@ -625,17 +625,16 @@
 					<Term>cbc:EndDate</Term>
 					<Name>Tender submission deadline</Name>
 					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
-					<DataType>Date</DataType>
 					<Reference type="RULE">BII3-T83-R010</Reference>
-
+					<DataType>Date</DataType>
 				</Element>
 				
 				<Element cardinality="0..1">
 					<Term>cbc:EndTime</Term>
 					<Name>Tender submission deadline</Name>
 					<Description>Time limit for receipt of tenders (open procedures) or requests to participate (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems, competitive dialogues, innovation partnerships)</Description>
-					<DataType>Date</DataType>
 					<Reference type="RULE">eSENS-T004-R028</Reference>
+					<DataType>Date</DataType>
 				</Element>
 			</Element>
 			
@@ -648,20 +647,18 @@
 					<Term>cbc:EndDate</Term>
 					<Name>Request for participation deadline</Name>
 					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
-					<DataType>Date</DataType>
 					<Reference type="RULE">BII3-T83-R011</Reference>
-
+					<DataType>Date</DataType>
 				</Element>
 				<Element cardinality="0..1">
 					<Term>cbc:EndTime</Term>
 					<Name>Request for participation deadline</Name>
 					<Description>The date and time before which documents are available for access or may be requested and before which requests to participate must be received.</Description>
-					<DataType>Date</DataType>
 					<Reference type="RULE">eSENS-T004-R028</Reference>
+					<DataType>Date</DataType>
 				</Element>
 			</Element>
-		
-	
+
 		</Element>
 		<Element>
 			<Term>cac:ProcurementProject</Term>
@@ -671,23 +668,22 @@
 				<Term>cbc:Name</Term>
 				<Name>Procurement project name</Name>
 				<Description>Title attributed to the contract by the contracting body.</Description>
-				<DataType>Text</DataType>
 				<Reference type="RULE">BII3-T83-R013</Reference>
+				<DataType>Text</DataType>
 			</Element>
 			
 			<Element>
 				<Term>cbc:Description</Term>
 				<Name>Procurement project description</Name>
 				<Description>A  textual description of this Procurement project.</Description>
-				<DataType>Text</DataType>
 				<Reference type="RULE">BII3-T83-R014</Reference>
+				<DataType>Text</DataType>
 			</Element>
 			
 			<Element>
 				<Term>cbc:ProcurementTypeCode</Term>
 				<Name>Procurement project type</Name>
 				<Description>Type of contract (Works, Supplies or Services).</Description>
-				<DataType>Code</DataType>
 				<Reference type="CODE_LIST">procurementType</Reference>
 				<Reference type="RULE">BII3-T83-R015</Reference>
 				<Reference type="RULE">CL-T83-R002</Reference>
@@ -698,6 +694,7 @@
 					<Reference type="RULE">BII3-T83-R024</Reference>
 					<Value type="FIXED">PROJECT_TYPE</Value>
 				</Attribute>
+				<DataType>Code</DataType>
 			</Element>
 			
 			<Element>
@@ -708,7 +705,6 @@
 					<Term>cbc:ItemClassificationCode</Term>
 					<Name>CPV</Name>
 					<Description>Classification code of goods, works and services commonly used in procurement.</Description>
-					<DataType>Code</DataType>
 					<Reference type="RULE">BII3-T83-R016</Reference>
 					<Attribute>
 						<Term>listID</Term>
@@ -716,6 +712,7 @@
 						<Reference type="RULE">BII3-T83-R019</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
+					<DataType>Code</DataType>
 				</Element>
 			</Element>
 			
@@ -727,13 +724,13 @@
 					<Term>cbc:ItemClassificationCode</Term>
 					<Name>CPV supplementary</Name>
 					<Description>A supplementary code to help contracting bodies describe the subject matter of contracts comprehensively.</Description>
-					<DataType>Code</DataType>
 					<Attribute>
 						<Term>listID</Term>
 						<Name>List identifier</Name>
 						<Reference type="RULE">BII3-T83-R019</Reference>
 						<Value type="FIXED">CPV</Value>
 					</Attribute>
+					<DataType>Code</DataType>
 				</Element>
 			</Element>
 			
@@ -745,7 +742,6 @@
 					<Term>cbc:ID</Term>
 					<Name>Procurement project location NUTS code</Name>
 					<Description>The identification with the NUTS code of the project location.</Description>
-					<DataType>Code</DataType>
 					<Reference type="RULE">BII3-T83-R017</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
@@ -753,6 +749,7 @@
 						<Reference type="RULE">BII3-T83-R020</Reference>
 						<Value type="FIXED">NUTS</Value>
 					</Attribute>
+					<DataType>Code</DataType>
 				</Element>
 			</Element>
 		</Element>
@@ -765,8 +762,8 @@
 				<Term>cbc:ID</Term>
 				<Name>Lot identifier</Name>
 				<Description>An identifier for the lot.</Description>
-				<DataType>Identifier</DataType>
 				<Reference type="RULE">eSENS-T004-R029</Reference>
+				<DataType>Identifier</DataType>
 			</Element>
 			
 			<Element cardinality="0..1">

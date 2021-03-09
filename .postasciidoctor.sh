@@ -29,3 +29,12 @@ body {
 EOF
   done
 fi
+
+cat >> /target/site/css/structure.css <<EOF
+
+a[href^="./transactions/"].list-group-item {
+    font-style: italic;
+    text-indent: 4em;
+}
+
+EOF
