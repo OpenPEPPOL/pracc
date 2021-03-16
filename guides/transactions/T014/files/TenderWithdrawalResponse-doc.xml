@@ -12,41 +12,41 @@
                 urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 
                 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <!--tag:specification-identification -->
+    <!--tag::specification-identification[] -->
     <cbc:CustomizationID>t014</cbc:CustomizationID> <!--.-->
-    <!--end:specification-identification -->
-    <!--tag:business-process-type-identifier -->
+    <!--end::specification-identification[] -->
+    <!--tag::business-process-type-identifier[] -->
     <cbc:ProfileID>urn:peppol:pracc:p007</cbc:ProfileID> <!--.-->
-    <!--end:business-process-type-identifier -->
-    <!--tag:document-identifier -->
+    <!--end::business-process-type-identifier[] -->
+    <!--tag::document-identifier[] -->
     <cbc:ID>191C084F-5CC0-4719-BE32-234DEF813B44</cbc:ID> <!--.-->
-    <!--end:document-identifier -->
-    <!--tag:reference-number -->
+    <!--end::document-identifier[] -->
+    <!--tag::reference-number[] -->
     <cbc:ContractFolderID>CA2B5B8C-61A5-4797-8E27-47D7D22EAC29</cbc:ContractFolderID> <!--.-->
-    <!--end:reference-number -->
-    <!--tag:document-issue-time-date -->
+    <!--end::reference-number[] -->
+    <!--tag::document-issue-time-date[] -->
     <cbc:IssueDate>2021-02-14</cbc:IssueDate> <!--.-->
     <cbc:IssueTime>00:00:00Z</cbc:IssueTime> <!--.-->
-    <!--end:document-issue-time-date -->
-    <!--tag:document-reception-time-date -->
+    <!--end::document-issue-time-date[] -->
+    <!--tag::document-reception-time-date[] -->
     <cbc:RegisteredDate>2021-02-14</cbc:RegisteredDate> <!--.-->
     <cbc:RegisteredTime>00:00:00Z</cbc:RegisteredTime> <!--.-->
-    <!--end:document-reception-time-date -->
-    <!--tag:contracting-body -->
+    <!--end::document-reception-time-date[] -->
+    <!--tag::contracting-body[] -->
     <cac:TenderDocumentReference>
         <cbc:ID>78068F50-6696-4F44-B6FB-A8A43DA04A53</cbc:ID> <!--.-->
         <cbc:DocumentTypeCode listID="UNCL1001">80</cbc:DocumentTypeCode> <!--.-->
-        <!--end:contracting-body -->
-        <!--tag:document-digest -->
+        <!--end::contracting-body[] -->
+        <!--tag::document-digest[] -->
         <cac:Attachment>
             <cac:ExternalReference>
                 <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.-->
                 <cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod> <!--.-->
             </cac:ExternalReference>
         </cac:Attachment>
-        <!--end:document-digest -->
+        <!--end::document-digest[] -->
     </cac:TenderDocumentReference>
-    <!--tag:contracting-body -->
+    <!--tag::contracting-body[] -->
     <cac:SenderParty> <!--.-->
         <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification> <!--.-->
@@ -56,8 +56,8 @@
             <cbc:Name>Aankoopbureau</cbc:Name>
         </cac:PartyName>
     </cac:SenderParty>
-    <!--end:contracting-body -->
-    <!--tag:economic-operator -->
+    <!--end::contracting-body[] -->
+    <!--tag::economic-operator[] -->
     <cac:ReceiverParty> <!--.-->
         <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification> <!--.-->
@@ -67,6 +67,6 @@
             <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
         </cac:PartyName>
     </cac:ReceiverParty>
-    <!--end:economic-operator -->
+    <!--end::economic-operator[] -->
 
 </TenderReceipt>
