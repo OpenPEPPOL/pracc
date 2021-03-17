@@ -45,6 +45,11 @@
             </cac:ExternalReference>
         </cac:Attachment>
         <!--end::document-digest[] -->
+        <!--tag::issuer-party[] -->
+        <cac:IssuerParty>
+            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID>
+        </cac:IssuerParty>
+        <!--end::issuer-party[] -->
     </cac:TenderDocumentReference>
     <!--tag::contracting-body[] -->
     <cac:SenderParty> <!--.-->
@@ -68,5 +73,4 @@
         </cac:PartyName>
     </cac:ReceiverParty>
     <!--end::economic-operator[] -->
-<!--Issuer Party has to be added-->
 </TenderReceipt>
