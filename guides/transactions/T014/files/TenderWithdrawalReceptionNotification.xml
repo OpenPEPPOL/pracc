@@ -35,8 +35,8 @@
     <!--tag::received-document-reference[] -->
     <cac:TenderDocumentReference>
         <cbc:ID>78068F50-6696-4F44-B6FB-A8A43DA04A53</cbc:ID> <!--.-->
-        <cbc:DocumentTypeCode listID="UNCL1001">23</cbc:DocumentTypeCode> <!--.-->
         <!--end::received-document-reference[] -->
+        <cbc:DocumentTypeCode listID="UNCL1001">23</cbc:DocumentTypeCode> <!--.-->
         <!--tag::document-digest[] -->
         <cac:Attachment>
             <cac:ExternalReference>
@@ -47,7 +47,7 @@
         <!--end::document-digest[] -->
         <!--tag::issuer-party[] -->
         <cac:IssuerParty>
-            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID>
+            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
         </cac:IssuerParty>
         <!--end::issuer-party[] -->
     </cac:TenderDocumentReference>

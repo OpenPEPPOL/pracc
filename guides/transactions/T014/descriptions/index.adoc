@@ -3,55 +3,94 @@
 
 Limited support for this, see {name-profile-org}.
 
+== Process control
+
+=== Specification identification
+
+Identifier for the set of rules and transactions for the Tender Withdrawal Reception Notification.
+
+[source,xml,indent=0]
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=specification-identification]
+....
+<.> The value for the specification identification is always "_urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0_".
+
+
+=== Business Process Type Identifier
+
+Identifier for the business process context of the Tender Withdrawal Reception Notification.
+
+[source,xml,indent=0]
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=business-process-type-identifier]
+....
+<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:2021:pracc:p007:01:1.0_".
+
 == Document References
 
-=== Tender document reference
+=== Document identifier
+
+Identifier of the Tender Withdrawal Reception Notification itself.
+
+[source,xml,indent=0]
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-identifier]
+....
+<.> The Document Identifier must be expressed in a UUID syntax (RFC 4122).
+
+== Reference Number
+
+An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.
+In UBL the reference number is represented by the ConractFolder ID.
+
+[source,xml,indent=0]
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=reference-number]
+....
+<.> The Reference Number must be expressed in a UUID syntax (RFC 4122).
+
+=== Tender Document Reference
 
 The tender reception notification contains the reference to the tender document sent by the economic operator. The contracting authority should refer to the tender by using the document hash and the hash algorithm method used.
 
-DocumentReference Identifier for a Call for Tender Reference must be expressed in a UUID syntax (RFC 4122).
+==== Tender document reference ID
 
-////
-[source,xml,indent=0]
-.DocumentHash
-
-----
-include::../{xml-doc-file}[tags=DocumentHash]
-----
-////
-Document hash algorithm must be http://www.w3.org/2001/04/xmlenc#sha256[SHA-256].
-////
-[source,xml,indent=0]
-.Document hash algorithm
-
-----
-include::../{xml-doc-file}[tags=HashAlgorithmMethod]
-----
-
-////
-
-[source,xml,indent=0]
-.Tender document reference
-
-----
+....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=received-document-reference]
-----
+....
 
+<.> DocumentReference Identifier for a Call for Tender Reference must be expressed in a UUID syntax (RFC 4122).
 
-=== Document Type Code
+==== Document Type Code
 
 The type of business document must also be included in the document reference element. Document Type
 Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
 the document types, see {link-un-ece-1001}.
 
-[source,xml,indent=0]
-.Document Type Code
-----
-include::../files/TenderWithdrawalReceptionNotification.xml[lines=38]
-----
-<.> The code "_23_" for status information has to be put into the tag. The listID has to be UNCL1001.
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[lines=39]
+....
+<.> The code "_23_" for status information has to be put into the tag. The listID is always UNCL1001.
+
+
+==== Document hash algorithm
+
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-digest]
+....
+<.> In this tag goes the digest of the document.
+<.> Document hash algorithm must be "_http://www.w3.org/2001/04/xmlenc#sha256_".
 
 == Parties
+
+=== Issuer Party
+
+Party, which issued the reception, not always the final receiving party of the message.
+
+....
+include::../files/TenderWithdrawalReceptionNotification.xml[tags=issuer-party]
+....
+<.> The EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
 
 === Economic operator
 
@@ -77,9 +116,9 @@ The contracting body is the contracting authority or contracting entity who is b
 [source,xml,indent=0]
 .The contracting body is represented in UBL 2.3 using the SenderParty:
 
-----
+....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=contracting-body]
-----
+....
 <.> As stated above, in UBL the Contracting Body is represented by the Sender Party.
 <.> At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
 <.> Following the EndpointID the Identification of the Party has to be given in the same manner.
@@ -110,8 +149,13 @@ NOTE: The issue time and registered time must specify the time zone.
 [source,xml,indent=0]
 .Example of Issue date/time and Registered date/time
 
-----
+....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-issue-time-date]
 
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-reception-time-date]
-----
+....
+
+<.> Date when the referred document was issued by the sending party.
+<.> Time when the referred document was issued by the sending party, granular to seconds and timezone.
+<.> Date when the referred document was received by the receiving party.
+<.> Time when the referred document was received by the receiving party, granular to seconds and timezone.
