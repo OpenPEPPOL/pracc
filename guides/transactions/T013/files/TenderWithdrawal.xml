@@ -34,7 +34,7 @@
     <!--tag::received-document-reference[] -->
     <cac:TenderDocumentReference>
         <cbc:ID>243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:ID> <!--.-->
-        <!--tag::received-document-reference[] -->
+        <!--end::received-document-reference[] -->
         <!--tag::document-digest[] -->
         <cac:Attachment>
             <cac:ExternalReference>
@@ -65,7 +65,7 @@
     <!--tag::tenderer-party[] -->
     <cac:TendererParty>
         <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
-        <cac:PartyIdentification> <!--.-->
+        <cac:PartyIdentification>
             <cbc:ID schemeID="NL:KVK">30058019</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName>

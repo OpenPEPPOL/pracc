@@ -41,7 +41,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-identi
 == Reference Number
 
 An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.
-In UBL the reference number is represented by the ConractFolder ID.
+In UBL the reference number is represented by the ContractFolder ID.
 
 [source,xml,indent=0]
 ....
@@ -78,7 +78,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[lines=39]
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-digest]
 ....
-<.> In this tag goes the digest of the document.
+<.> In this tag goes the digest of the document. Used as a reference to the tender document to be withdrawn.
 <.> Document hash algorithm must be "_http://www.w3.org/2001/04/xmlenc#sha256_".
 
 == Parties
