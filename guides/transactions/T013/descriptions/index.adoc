@@ -41,7 +41,7 @@ include::../files/TenderWithdrawal.xml[tags=document-identifier]
 === Reference Number
 
 An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.
-In UBL the reference number is represented by the ContractFolder ID.
+In UBL the reference number is represented by the ContractFolderID.
 
 [source,xml,indent=0]
 ....
@@ -66,7 +66,7 @@ include::../files/TenderWithdrawal.xml[tags=received-document-reference]
 ....
 include::../files/TenderWithdrawal.xml[tags=document-digest]
 ....
-<.> In this tag goes the digest of the document.
+<.> Document digest of a tender document. Used as a reference to the tender document to be withdrawn.
 <.> Document hash algorithm must be "_http://www.w3.org/2001/04/xmlenc#sha256_".
 
 === Tender Notification Document Reference
@@ -93,7 +93,7 @@ include::../files/TenderWithdrawal.xml[tags=contracting-party]
 <.> At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
 <.> Following the EndpointID the Identification of the Party has to be given in the same manner.
 <.> The same value as in the EndpointID also the EndpointID has to be given into the ID and the corresponding attribute for the schemeID.
-<.> Additional to the Party Identification the Party Name has to be given. It is put into the Name tag of the PartyName.
+<.> Additional to the Party Identification the Party Name has to be given, as it is registered.
 
 === Economic Operator
 
@@ -105,17 +105,17 @@ Any natural or legal person or public entity or group of such persons and/or ent
 ....
 include::../files/TenderWithdrawal.xml[tags=tenderer-party]
 ....
-<.> At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
+<.> Electronic address of the economic operator. At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
 <.> Following the EndpointID the Identification of the Party has to be given in the same manner.
-<.> Additional to the Party Identification the Party Name has to be given. It is put into the Name tag of the PartyName.
+<.> Additional to the Party Identification the Party Name has to be given.
 <.> Furthermore, the PostalAdress of the Economic operator can be given.
-<.> Address line 1
-<.> Address line 2
-<.> City
-<.> Post Code
-<.> Country Subdivision
+<.> The main address line in an address. Usually the street name and number or post office box.
+<.> An additional address line in an address that can be used to give further details supplementing the main line.
+<.> The common name of a city where the address is located.
+<.> The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.
+<.> The subdivision of a country such as region, county, state, province etc.
 <.> Country tag for the Country Code
-<.> Country Code
+<.> The registration country code of the economic operator. The country should always be given by using ISO code 3166 alpha 2. A code that identifies the country. The lists of valid countries are registered with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of countries and their subdivisions". It is recommended to use the alpha-2 representation.
 
 === Tenderer Party Contact
 
@@ -124,10 +124,10 @@ Used to provide contacting information for a party in general or a person. Optio
 include::../files/TenderWithdrawal.xml[tags=tenderer-party-contact]
 ....
 <.> Introduction to the contact. The contact consists of four additional elements.
-<.> Full name of the contact
-<.> Telephone number of the contact, as a String
-<.> Telefax number of the contact, as a String, if given
-<.> E-Mail address of the contact
+<.> The name of the contact point.
+<.> A phone number for the contact point.
+<.> A fax number for the contact point
+<.> An e-mail address for the contact point.
 
 == Additional Tags
 
