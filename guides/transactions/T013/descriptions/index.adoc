@@ -36,7 +36,7 @@ Identifier of the Tender Withdrawal Reception Notification itself.
 ....
 include::../files/TenderWithdrawal.xml[tags=document-identifier]
 ....
-<.> The Document Identifier must be expressed in a UUID syntax (RFC 4122).
+<.> The Document Identifier must be expressed in a UUID syntax (RFC 4122), as stated it has to be stated in the schemeURI.
 
 === Reference Number
 

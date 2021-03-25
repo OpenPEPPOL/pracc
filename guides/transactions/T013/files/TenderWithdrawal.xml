@@ -19,7 +19,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:2021:pracc:p007:01:1.0</cbc:ProfileID> <!--.-->
     <!--end::business-process-type-identifier[] -->
     <!--tag::document-identifier[] -->
-    <cbc:ID>78068F50-6696-4F44-B6FB-A8A43DA04A53</cbc:ID> <!--.-->
+    <cbc:ID schemeURI="urn:uuid">78068F50-6696-4F44-B6FB-A8A43DA04A53</cbc:ID> <!--.-->
     <!--end::document-identifier[] -->
     <!--tag::reference-number[] -->
     <cbc:ContractFolderID>CA2B5B8C-61A5-4797-8E27-47D7D22EAC29</cbc:ContractFolderID> <!--.-->
@@ -38,7 +38,7 @@
         <!--tag::document-digest[] -->
         <cac:Attachment>
             <cac:ExternalReference>
-                <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.-->
+                <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.--> <!-- Auf welches Dokument bezieht sich der Hash? Auf den Tender Receipt? -->
                 <cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod> <!--.-->
             </cac:ExternalReference>
         </cac:Attachment>
@@ -46,7 +46,7 @@
     </cac:TenderDocumentReference>
     <!--tag::tender-notification-document-reference[] -->
     <cac:TenderNotificationDocumentReference>
-        <cbc:ID>49AF1FE0-C0AF-4A98-8FFA-309408F9CFAC</cbc:ID> <!--.-->
+        <cbc:ID>49af1fe0-c0af-4a98-8ffa-309408f9cfac</cbc:ID> <!--.-->
     </cac:TenderNotificationDocumentReference>
     <!--end::tender-notification-document-reference[] -->
     <!--tag::contracting-party[] -->

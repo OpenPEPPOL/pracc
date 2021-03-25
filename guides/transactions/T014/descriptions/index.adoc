@@ -142,7 +142,7 @@ Issue time and received time are both xs:time data type, and the time is specifi
 * ss - two digits of second (00 to 59)
 * TZD - time zone designator (Z or +hh:mm or -hh:mm)
 
-The registered date and time are the times when the tender was actually received and its delivery was registered while the issue date and time refer to the issuance of the tender receipt notification.
+The registered date and time are the times when the registered tender withdrawal was  received and its delivery was registered while the issue date and time refer to the issuance of the tender withdrawal receipt notification. For a more detailed insight, take a look at the four-corner-model.
 
 NOTE: The issue time and registered time must specify the time zone.
 
@@ -155,7 +155,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-issue-
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-reception-time-date]
 ....
 
-<.> Date when the referred document was issued by the sending party.
-<.> Time when the referred document was issued by the sending party, granular to seconds and timezone.
-<.> Date when the referred document was received by the receiving party.
-<.> Time when the referred document was received by the receiving party, granular to seconds and timezone.
+<.> Date when the tender withdrawal reception notification was issued.
+<.> Time when the tender withdrawal reception notification was issued, granular to seconds and timezone.
+<.> Date when the tender withdrawal was received.
+<.> Time when the tender withdrawal document was received, granular to seconds and timezone.
