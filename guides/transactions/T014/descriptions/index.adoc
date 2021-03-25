@@ -123,7 +123,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=contracting-bod
 <.> At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
 <.> Following the EndpointID the Identification of the Party has to be given in the same manner.
 <.> The same value as in the EndpointID also the EndpointID has to be given into the ID and the corresponding attribute for the schemeID.
-<.> At last the Name of the Economic Operator has to filled into the Name tag of the tag PartyName.
+<.> At last the Name of the Contracting Body has to filled into the Name tag of the tag PartyName.
 
 == Date and time
 
