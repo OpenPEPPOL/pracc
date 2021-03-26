@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
-    <title>eSENS business and syntax rules for Tender Withdrawal Receipt Notifciation (TRDM045)</title>
+    <title>eSENS business and syntax rules for Tender Withdrawal Receipt Notification (TRDM045)</title>
 
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
     <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -22,8 +22,7 @@
 
         <rule context="ubl:TenderReceipt">
             <assert id="eSENS-T014-R001" flag="fatal" test="(cbc:UBLVersionID)">[eSENS-T014-R001] A Tender Withdrawal
-                Receipt
-                Notification MUST have a syntax identifier.
+                Receipt Notification MUST have a syntax identifier.
             </assert>
             <report id="eSENS-T014-S301" flag="warning" test="(ext:UBLExtensions)">
                 <value-of select="$syntaxError"/>
@@ -124,16 +123,15 @@
         <rule context="ubl:TenderReceipt/cbc:RegisteredTime">
             <assert id="eSENS-T014-R012" flag="fatal"
                     test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">
-                [eSENS-T014-R012] Reception of tender time MUST have a granularity of secondsMUST have a granularity of
-                seconds
+                [eSENS-T014-R012] Reception of tender withdrawal time MUST have a granularity of seconds.
             </assert>
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference">
             <assert id="eSENS-T014-S314" flag="warning"
-                    test="count(./*)-count(./cbc:ID)-count(./cbc:DocumentTypeCode)-count(./cac:Attachment)-count(./cac:IssuerParty)=0">
-                <value-of select="$syntaxError"/>[eSENS-T014-S314] TenderDocumentReference SHOULD NOT contain any
-                elements but ID, DocumentTypeCode, Attachment, IssuerParty
+                    test="count(./*) - count(./cbc:ID) - count(./cbc:DocumentTypeCode) - count(./cac:Attachment) - count(./cac:IssuerParty) = 0">
+                [eSENS-T014-S314] TenderDocumentReference SHOULD NOT contain any
+                elements but ID, DocumentTypeCode, Attachment, IssuerParty.
             </assert>
         </rule>
 
@@ -225,8 +223,8 @@
 
         <rule context="ubl:TenderReceipt/cac:SenderParty | ubl:TenderReceipt/cac:ReceiverParty">
             <assert id="eSENS-T014-S323" flag="warning"
-                    test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0">
-                <value-of select="$syntaxError"/>[eSENS-T014-S323] ContractingParty Party SHOULD NOT contain any
+                    test="count(./*) - count(./cac:PartyIdentification) - count(./cbc:EndpointID) - count(./cac:PartyName) = 0">
+                [eSENS-T014-S323] ContractingParty Party SHOULD NOT contain any
                 elements but EndpointID, PartyIdentification, PartyName
             </assert>
             <assert id="eSENS-T014-S324" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of
@@ -257,6 +255,5 @@
                 Name SHOULD NOT contain any attributes.
             </report>
         </rule>
-        <!--        -->
     </pattern>
 </schema>
