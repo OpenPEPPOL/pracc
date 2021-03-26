@@ -79,7 +79,7 @@
             <cbc:CountrySubentity>Berlin</cbc:CountrySubentity> <!--.-->
             <cac:Country> <!--.-->
                 <cbc:IdentificationCode>DE</cbc:IdentificationCode> <!--.-->
-            </cac:Country>
+           </cac:Country>
         </cac:PostalAddress>
         <!--end::tenderer-party[] -->
         <!--tag::tenderer-party-contact[] -->

@@ -208,14 +208,14 @@
 
         <rule context="ubl:TenderReceipt/cac:SenderParty">
             <assert id="eSENS-T014-R017" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
-                [eSENS-T014-R017] A Tender Receipt Notification MUST identify the Contracting Authority by its party and
+                [eSENS-T014-R017] A Tender Receipt Withdrawal Notification MUST identify the Contracting Authority by its party and
                 endpoint identifiers.
             </assert>
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:ReceiverParty">
             <assert id="eSENS-T014-R018" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
-                [eSENS-T014-R018] A Tender Receipt Notification MUST identify the Economic Operator by its party and
+                [eSENS-T014-R018] A Tender Receipt Withdrawal Notification MUST identify the Economic Operator by its party and
                 endpoint identifiers.
             </assert>
         </rule>
