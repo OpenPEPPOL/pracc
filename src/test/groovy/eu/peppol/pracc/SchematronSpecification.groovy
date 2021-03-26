@@ -56,6 +56,7 @@ class SchematronSpecification extends Specification {
         'rules/tender-clarification-1.0/PEPPOL-T010.sch'                         | 'guides/transactions/T010/files/TenderClarification-doc.xml'
         'rules/peppol-search-notice/PEPPOL-T011.sch'                             | 'guides/transactions/T011/files/ExampleSearchNoticeRequest.xml'
         'rules/peppol-search-notice/PEPPOL-T012.sch'                             | 'guides/transactions/T012/files/ExampleSearchNoticeResponse.xml'
+        'rules/peppol-tender-withdrawal/PEPPOL-T014.sch'                         | 'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml'
     }
 
     static Map<String, Schema> schemaCache = new HashMap<>()
@@ -88,6 +89,7 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T010/files/TenderClarification-doc.xml'               | 'xsdrt/maindoc/UBL-EnquiryResponse-2.2.xsd'
         'guides/transactions/T011/files/ExampleSearchNoticeRequest.xml'            | 'ebXML/query.xsd'
         'guides/transactions/T012/files/ExampleSearchNoticeResponse.xml'           | 'ebXML/query.xsd'
+        'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml' | 'xsdrt/maindoc/UBL-TenderReceipt-2.2.xsd'
     }
 
     static Schema loadSchema(SchemaFactory factory, URL xsdSource) {

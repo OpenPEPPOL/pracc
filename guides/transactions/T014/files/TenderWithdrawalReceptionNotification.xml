@@ -19,7 +19,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:2021:pracc:p007:01:1.0</cbc:ProfileID> <!--.-->
     <!--end::business-process-type-identifier[] -->
     <!--tag::document-identifier[] -->
-    <cbc:ID>191C084F-5CC0-4719-BE32-234DEF813B44</cbc:ID> <!--.-->
+    <cbc:ID schemeURI="urn:uuid">191C084F-5CC0-4719-BE32-234DEF813B44</cbc:ID> <!--.-->
     <!--end::document-identifier[] -->
     <!--tag::reference-number[] -->
     <cbc:ContractFolderID>CA2B5B8C-61A5-4797-8E27-47D7D22EAC29</cbc:ContractFolderID> <!--.-->
