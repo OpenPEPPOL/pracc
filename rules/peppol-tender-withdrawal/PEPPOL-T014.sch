@@ -86,19 +86,19 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cbc:ID">
-            <assert id="eSENS-T014-R004" flag="fatal" test="./@schemeURI">[eSENS-T014-R004] A Tender Receipt
+            <assert id="eSENS-T014-R004" flag="fatal" test="./@schemeURI">[eSENS-T014-R004] A Tender Withdrawal Receipt
                 Notification Identifier MUST have a schemeURI attribute.
             </assert>
             <assert id="eSENS-T014-R005" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T014-R005]
-                schemeURI for Tender Receipt Notification Identifier MUST be 'urn:uuid'.
+                schemeURI for Tender Withdrawal Receipt Notification Identifier MUST be 'urn:uuid'.
             </assert>
             <report id="eSENS-T014-S306" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of
-                    select="$syntaxError"/>[eSENS-T014-S306] A Tender Receipt Notification Identifier SHOULD NOT have
+                    select="$syntaxError"/>[eSENS-T014-S306] A Tender Withdrawal Receipt Notification Identifier SHOULD NOT have
                 any attributes but schemeURI
             </report>
             <assert id="eSENS-T014-R006" flag="fatal"
                     test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">
-                [eSENS-T014-R006] A Tender Receipt Notification Identifier MUST be expressed in a UUID syntax (RFC 4122)
+                [eSENS-T014-R006] A Tender Withdrawal Receipt Notification Identifier MUST be expressed in a UUID syntax (RFC 4122)
             </assert>
         </rule>
         <rule context="ubl:TenderReceipt/cbc:ContractFolderID">
@@ -208,14 +208,14 @@
 
         <rule context="ubl:TenderReceipt/cac:SenderParty">
             <assert id="eSENS-T014-R017" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
-                [eSENS-T014-R017] A Tender Receipt Withdrawal Notification MUST identify the Contracting Authority by its party and
+                [eSENS-T014-R017] A Tender Withdrawal Receipt Notification MUST identify the Contracting Authority by its party and
                 endpoint identifiers.
             </assert>
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:ReceiverParty">
             <assert id="eSENS-T014-R018" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
-                [eSENS-T014-R018] A Tender Receipt Withdrawal Notification MUST identify the Economic Operator by its party and
+                [eSENS-T014-R018] A Tender Withdrawal Receipt Notification MUST identify the Economic Operator by its party and
                 endpoint identifiers.
             </assert>
         </rule>
