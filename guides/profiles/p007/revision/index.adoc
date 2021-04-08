@@ -9,13 +9,7 @@
 | Description
 
 | 0.1
-| 2020-11-23
-| Jörg Schömer
-| adesso SE
-| First draft
-
-| 0.2
-| 2020-12-02
+| 2021-04-08
 | Ansgar Mondorf
 | University of Koblenz-Landau
 | Profile description, revisions and formatting

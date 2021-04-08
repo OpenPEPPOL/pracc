@@ -8,23 +8,23 @@ image::processTC.png[align="center", width=800]
 .Business process
 |===
 | Category | Description
-| Description | As the tender is not clear, the contracting body asks the economic operator to clarify his tender.
+| Description | An economic operator withdraws an earlier submitted bid in a tendering procedure and receives a tender withdrawal receipt notification.
 
-The economic operator answers the questions and sends the answers to the contracting body.
+| Pre-conditions | The economic operator has submitted his tender.
+| Post-conditions | The tender has been withdrawn and will not be evaluated by the contracting body.
+| Remarks | After withdrawal, the economic operator may submit a new or changed tender, if the deadline has not been reached.
 
-| Pre-conditions | The contracting body has opened the tender.
-| Post-conditions | The tender has been clarified.
 |===
 
 [cols="3,2,7", options="header"]
 .Role description
 |===
 | Activity | Role involved | Description
-| Send Tender clarification request | Contracting body | The contracting body sends questions to the economic operator.
-| Send Tender clarification request | Economic operator | The economic operator receives the tender questions.
-| Clarify tender | Economic operator | The economic operator formulates clarifications.
-| Send tender clarification | Economic operator | The economic operator sends the answers to the contracting body.
-| Receive tender clarification | Contracting body | The contracting body receives the tender clarification.
+| Send Tender Withdrawal | Economic operator | The tender withdrawal is sent by the economic operator.
+| Receive Tender Withdrawal | Contracting body | The tender withdrawal is received by the contracting body.
+| Confirm Tender Withdrawal | Contracting body | The contracting body sends a confirmation to the economic operator that the withdrawal has been received.
+| Receive Tender Withdrawal receipt notification | Economic operator | The economic operator receives the confirmation.
+
 |===
 
 :leveloffset: +1
