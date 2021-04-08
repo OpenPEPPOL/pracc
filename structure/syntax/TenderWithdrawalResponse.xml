@@ -1,63 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term>Tender Withdrawal Response</Term>
-	<Name>Tender Withdrawal Response (T014)</Name>
+    <Term>Tender Withdrawal Response</Term>
+    <Name>Tender Withdrawal Response (T014)</Name>
 
-	<Namespace prefix="t014">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
-	<Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
-	<Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Namespace prefix="t014">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 
-	<Document>
-		<Term>t014:TenderReceipt</Term>
-		<Name>Tender Receipt, root element</Name>
-		<Element>
-			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Verison identifier</Name>
-			<DataType>Identifier</DataType>
-			<Value type="FIXED">2.2</Value>
-		</Element>
-		<Element>
-			<Term>cbc:CustomizationID</Term>
-			<Name>Specification identification</Name>
-			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t013:ver1.0</Value>
-		</Element>
-		<Element>
-			<Term>cbc:ProfileID</Term>
-			<Name>Business process type identifier</Name>
-			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
-			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p007:01:1.0</Value>
-		</Element>
-		<Element>
-			<Term>cbc:ID</Term>
-			<Name>Tender identifier</Name>
-			<Description>Identifier of the tender document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
-			<DataType>Identifier</DataType>
-			<Attribute>
-				<Term>schemeURI</Term>
-				<Name>Scheme URI</Name>
-				<Value type="FIXED">urn:uuid</Value>
-			</Attribute>
-		</Element>
-		<Element>
-			<Term>cbc:ContractFolderID</Term>
-			<Name>Reference number</Name>
-			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-			<DataType>Identifier</DataType>
-		</Element>
-		<Element>
-			<Term>cbc:IssueDate</Term>
-			<Name>Tender issue date</Name>
-			<Description>The date when the tender is issued by the economic operator.</Description>
-			<DataType>Date</DataType>
-		</Element>
-		<Element>
-			<Term>cbc:IssueTime</Term>
-			<Name>Tender issue time</Name>
-			<Description>The time when the tender is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
-			<DataType>Time</DataType>
-		</Element>
-	</Document>
+    <Document>
+        <Term>t014:TenderReceipt</Term>
+        <Name>Tender Withdrawal Reception Notification, root element</Name>
+        <Element>
+            <Term>cbc:UBLVersionID</Term>
+            <Name>UBL Verison identifier</Name>
+            <Description>Requires UBL version 2.3</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">2.3</Value>
+        </Element>
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Specification identification</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">
+                urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0
+            </Value>
+        </Element>
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Business process type identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
+                to process the document in an appropriate way.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p007:01:1.0</Value>
+        </Element>
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Tender withdrawal reception notification identifier</Name>
+            <Description>Identifies the Tender Withdrawal Reception Notification as issued by the economic operator.
+                Must be expressed as a UUID.
+            </Description>
+            <Attribute>
+                <Term>schemeURI</Term>
+                <Name>scheme URI</Name>
+                <Value type="FIXED">urn:uuid</Value>
+            </Attribute>
+            <DataType>Identifier</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Reference number</Name>
+            <Description>An identifier that is specified by the buyer and used as a reference number for all documents
+                in the procurement process. It is also known as procurement project identifier, procurement reference
+                number or contract folder identifier.
+            </Description>
+            <DataType>Identifier</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Document issue date</Name>
+            <Description>Date when the tender withdrawal reception notification was issued.</Description>
+            <DataType>Date</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:IssueTime</Term>
+            <Name>Document issue time</Name>
+            <Description>Time when the tender withdrawal reception notification was issued.
+            </Description>
+            <DataType>Time</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:RegisteredDate</Term>
+            <Name>Document reception date</Name>
+            <Description>Date when the tender withdrawal was received by the sender of the tender withdrawal reception
+                notification.
+            </Description>
+            <DataType>Date</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:RegisteredTime</Term>
+            <Name>Document reception time</Name>
+            <Description>The time at which the tender withdrawal was received by the sender of the tender withdrawal
+                reception notification.
+            </Description>
+            <DataType>Time</DataType>
+        </Element>
+        <Element>
+            <Term>cac:TenderDocumentReference</Term>
+            <Name>Received document reference</Name>
+            <Description>The tender reception notification contains the reference to the tender document sent by the
+                economic operator. The contracting authority should refer to the tender by using the document hash and
+                the hash algorithm method used.
+            </Description>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Document identifier</Name>
+                <Description>Identifier of a document</Description>
+                <Attribute>
+                    <Term>schemeURI</Term>
+                    <Name>scheme URI</Name>
+                    <Value type="FIXED">urn:uuid</Value>
+                </Attribute>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element>
+                <Term>cbc:DocumentTypeCode</Term>
+                <Name>Document type code</Name>
+                <Description>Document Type Code is coded according to code list 1001 issued by UN/CEFACT.</Description>
+                <Attribute>
+                    <Term>listID</Term>
+                    <Name>List ID</Name>
+                    <Value type="FIXED">UNCL1001</Value>
+                </Attribute>
+                <DataType>Code</DataType>
+                <Value type="FIXED">23</Value>
+            </Element>
+            <Element>
+                <Term>cac:Attachment</Term>
+                <Name>Attachment</Name>
+                <Description>Container for document digest</Description>
+                <Element>
+                    <Term>cac:External Reference</Term>
+                    <Name>External reference</Name>
+                    <Description>Container for document digest</Description>
+                    <Element>
+                        <Term>cbc:Document Hash</Term>
+                        <Name>Document digest</Name>
+                        <Description>Document digest of a tender document. Used as a reference to the tender document to
+                            be withdrawn.
+                        </Description>
+                        <DataType>Text</DataType>
+                    </Element>
+                    <Element>
+                        <Term>cbc:HashAlgorithmMethod</Term>
+                        <Name>Document digest methode mode</Name>
+                        <Description>Code that indicates the algorithm used to calculate the hash. For the tender digest document hash algorithm must be "http://www.w3.org/2001/04/xmlenc#sha256".</Description>
+                        <DataType>Text</DataType>
+                        <Value type="FIXED">http://www.w3.org/2001/04/xmlenc#sha256</Value>
+                    </Element>
+                    <DataType>External Reference</DataType>
+                </Element>
+                <DataType>Attachment</DataType>
+            </Element>
+            <Element>
+                <Term>cac:IssuerParty</Term>
+                <Name>Issuing system identification</Name>
+                <Description>Identification of the system that issues the document.
+                </Description>
+                <Element>
+                    <Term>cbc:EndpointID</Term>
+                    <Name>Endpoint Id</Name>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>scheme Id</Name>
+                    </Attribute>
+                    <DataType>Identifier</DataType>
+                </Element>
+                <DataType>Party</DataType>
+            </Element>
+            <DataType>Document Reference</DataType>
+        </Element>
+        <Element>
+            <Term>cac:SenderParty</Term>
+            <Name>Contracting body</Name>
+            <Description>The contracting body is the contracting authority or contracting entity who is buying supplies,
+                services or tendering works.
+            </Description>
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Endpoint Id</Name>
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>scheme Id</Name>
+                </Attribute>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element>
+                <Term>cac:PartyIdentification</Term>
+                <Name>Party identification</Name>
+                <Description>An identifier for this party.</Description>
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Contracting body identifier</Name>
+                    <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
+                        identification, such as KBO)
+                    </Description>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>scheme Id</Name>
+                    </Attribute>
+                    <DataType>Identifier</DataType>
+                </Element>
+                <DataType>Party Identification</DataType>
+            </Element>
+            <Element>
+                <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
+                <Description>A name for this party.</Description>
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting body name</Name>
+                    <Description>The name of the contracting body as it is registered.</Description>
+                    <DataType>Name</DataType>
+                </Element>
+                <DataType>PartyName</DataType>
+            </Element>
+            <DataType>Contracting Party</DataType>
+        </Element>
+        <Element>
+            <Term>cac:ReceiverParty</Term>
+            <Name>Economic operator</Name>
+            <Description>Any natural or legal person or public entity or group of such persons and/or entities,
+                including any temporary association of undertakings, which offers the execution of works and/or a work,
+                the supply of products or the provision of services on the market.
+            </Description>
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Endpoint Id</Name>
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>scheme Id</Name>
+                </Attribute>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element>
+                <Term>cac:PartyIdentification</Term>
+                <Name>Party Identification</Name>
+                <Description>An identifier for this party.</Description>
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Contracting body identifier</Name>
+                    <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
+                        identification, such as KBO)
+                    </Description>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>scheme Id</Name>
+                    </Attribute>
+                    <DataType>Identifier</DataType>
+                </Element>
+                <DataType>Party Identification</DataType>
+            </Element>
+            <Element>
+                <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
+                <Description>A name for this party.</Description>
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting body name</Name>
+                    <Description>The name of the contracting body as it is registered.</Description>
+                    <DataType>Name</DataType>
+                </Element>
+                <DataType>PartyName</DataType>
+            </Element>
+            <DataType>Contracting Party</DataType>
+        </Element>
+
+    </Document>
 </Structure>

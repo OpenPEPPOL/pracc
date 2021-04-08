@@ -34,13 +34,13 @@
     <!--end::document-reception-time-date[] -->
     <!--tag::received-document-reference[] -->
     <cac:TenderDocumentReference>
-        <cbc:ID>243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:ID> <!--.-->
+        <cbc:ID schemeURI="urn:uuid">243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:ID> <!--.-->
         <!--end::received-document-reference[] -->
         <cbc:DocumentTypeCode listID="UNCL1001">23</cbc:DocumentTypeCode> <!--.-->
         <!--tag::document-digest[] -->
         <cac:Attachment>
             <cac:ExternalReference>
-                <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.--> <!--Auf welches Dokument bezieht sich der Hashwert? -->
+                <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.-->
                 <cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod> <!--.-->
             </cac:ExternalReference>
         </cac:Attachment>
