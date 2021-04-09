@@ -5,7 +5,7 @@ include::../shared/settings.adoc[]
 :name-transaction-org: "Trdm045 - Tender Withdrawal transaction"
 :name-trans-short: Tender Withdrawal 1.0
 :name-transaction: T013 - {name-trans-short}
-:name-syntax: TenderWithdrawalRequest
+:name-syntax: TenderWithdrawal
 
 include::../shared/links.adoc[]
 

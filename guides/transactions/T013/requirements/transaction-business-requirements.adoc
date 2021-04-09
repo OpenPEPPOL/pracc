@@ -1,20 +1,34 @@
 
 = Identification and description of the requirements
 
-NOTE: Please note that the transaction "{name-transaction}" has to be sent to all economic operators subscribed for the procedure. The "{name-transaction}" shall not contain any means to identify other economic operators that issued questions. The PEPPOL transaction "Call for Tender (T004)" has to be updated according to the given answers and it must be also resend to all subscribed economic operators.
+NOTE: Please note that the transaction "{name-transaction}" has to be sent to contracting authorities when an existing tender is withdrawn. As a consequence, the "{name-transaction}" shall be also sent before sending an updated tender, to ensure that the economic operator receives confirmation of the withdrawal of the old tender, as well as a corresponding confirmation of the submission of a new tender.
 
 
 [cols="2,10a", options="header"]
 .Transaction business requirements of {name-transaction}
 |===
 | ID | Requirement
-|tbr85-001| The contracting body shall be identified.
-|tbr85-002| The economic operator shall be identified.
-|tbr85-003| The creation date and time of the message shall be specified.
-|tbr85-004| Each message shall have a message ID.
-|tbr85-005| The CEN/BII profile and transaction names and versions shall be identified.
-|tbr85-006| The message shall contain the Procurement Reference number.
-|tbr85-007| The message may contain the Lot ID’s.
-|tbr85-008| The message shall contain the answer text.
-|tbr85-009| The message may contain a reference to the related call for tender questions.
+|tbr89-001| The business process, specification names and versions shall be identified.
+|tbr89-002| The economic operator shall be identified.
+|tbr89-003| The contracting body shall be identified.
+|tbr89-004| The creation date and time of the message shall be specified.
+|tbr89-005| Each message shall have a message ID.
+|tbr89-006| The message shall contain the Procurement Reference number.
+|tbr89-007| The message shall contain either credentials issued by the Contracting Body, or the following information about the business:
+
+* Economic operator ID type
+* Economic operator name
+* Economic operator registration country code
+* Economic operator postal address (standard address elements)
+* Contacting details (standard contact person elements)
+
+|tbr89-008| The message shall contain the following information about the qualification or tender:
+
+* ID
+* Hash
+* signature
+
+|tbr89-009| The message shall contain the ID of the Tender Reception Notification.
+|tbr89-011| The message shall clearly state the Economic Operator wants to withdraw the offer.
+
 |===

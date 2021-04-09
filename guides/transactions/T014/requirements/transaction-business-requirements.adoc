@@ -1,20 +1,22 @@
 
 = Identification and description of the requirements
 
-NOTE: Please note that the transaction "{name-transaction}" has to be sent to all economic operators subscribed for the procedure. The "{name-transaction}" shall not contain any means to identify other economic operators that issued questions. The PEPPOL transaction "Call for Tender (T004)" has to be updated according to the given answers and it must be also resend to all subscribed economic operators.
+The transaction "{name-transaction}" must be sent to the economic operator when an existing tender is withdrawn. The "{name-transaction}" acknowledges the reception of a tender withdrawal document and noting the date and time of reception.
+
+
 
 
 [cols="2,10a", options="header"]
 .Transaction business requirements of {name-transaction}
 |===
 | ID | Requirement
-|tbr85-001| The contracting body shall be identified.
-|tbr85-002| The economic operator shall be identified.
-|tbr85-003| The creation date and time of the message shall be specified.
-|tbr85-004| Each message shall have a message ID.
-|tbr85-005| The CEN/BII profile and transaction names and versions shall be identified.
-|tbr85-006| The message shall contain the Procurement Reference number.
-|tbr85-007| The message may contain the Lot ID’s.
-|tbr85-008| The message shall contain the answer text.
-|tbr85-009| The message may contain a reference to the related call for tender questions.
+|tbr45-001| The Tender Reception Notification shall name the business process, specification, versions and have its own ID, date and time (and timezone) of issue and name or identification of its sender and receiver.
+|tbr45-002| The Tender Reception Notification shall state the date and time (and timezone) the tender was received.
+|tbr45-003| The Tender Reception Notification shall NOT give an assessment on completeness or validity of the tender.
+|tbr45-004| In case the tender document was submitted simultaneously with the Qualification documents and/or the pre-award Catalogue document, the Tender Reception Notification shall notify the reception of those documents as well.
+|tbr45-005| The Tender Reception Notification shall refer to the Tender documents that were received and to the procurement project.
+|tbr45-006| The Tender Reception Notification may state the object of the tendered contract.
+|tbr45-007| It shall be possible to check the integrity of the received document(s), e.g. by quoting the hash values.
+|tbr45-008| It shall be possible to check the integrity of the Tender Reception Notification
+|tbr45-009| The message may contain a reference to the related call for tender questions.
 |===
