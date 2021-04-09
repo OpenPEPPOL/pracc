@@ -10,6 +10,7 @@
     <Document>
         <Term>t014:TenderReceipt</Term>
         <Name>Tender Withdrawal Reception Notification, root element</Name>
+        <Reference type="RULE"></Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL Verison identifier</Name>

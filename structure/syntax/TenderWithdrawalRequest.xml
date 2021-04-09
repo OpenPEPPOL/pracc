@@ -15,7 +15,7 @@
 			<Name>UBL Version ID</Name>
 			<Description>The UBLversion identifier</Description>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">2.2</Value>
+			<Value type="FIXED">2.3</Value>
 		</Element>
 		<Element>
 			<Term>cbc:CustomizationID</Term>

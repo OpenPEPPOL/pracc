@@ -141,13 +141,23 @@
                 [eSENS-T014-R013] The document reference Identifier MUST reference the Tender ID expressed in a UUID
                 syntax (RFC 4122)
             </assert>
-            <report id="eSENS-T014-S315" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S315]
-                TenderDocumentReference Identifier SHOULD NOT contain any attributes.
+            <assert id="eSENS-T014-R014" flag="fatal" test="./@schemeURI">[eSENS-T014-R004] A Tender Document Reference Identifier MUST have a schemeURI attribute.
+            </assert>
+            <assert id="eSENS-T014-R015" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T014-R005]
+                schemeURI for Tender Document Reference Identifier MUST be 'urn:uuid'.
+            </assert>
+            <report id="eSENS-T014-S315" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of
+                    select="$syntaxError"/>[eSENS-T014-S306] A Tender Document Reference Identifier SHOULD NOT have
+                any attributes but schemeURI
             </report>
+            <assert id="eSENS-T014-R016" flag="fatal"
+                    test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">
+                [eSENS-T014-R006] A Tender Document Reference Identifier MUST be expressed in a UUID syntax (RFC 4122)
+            </assert>
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cbc:DocumentTypeCode">
-            <assert id="eSENS-T014-R014" flag="fatal" test="normalize-space(.)='23'">[eSENS-T014-R014] The document
+            <assert id="eSENS-T014-R017" flag="fatal" test="normalize-space(.)='23'">[eSENS-T014-R014] The document
                 type code for the document reference (the tender withdrawal) MUST be '23'.
             </assert>
         </rule>
@@ -168,7 +178,7 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cac:Attachment/cac:ExternalReference/cbc:DocumentHash">
-            <assert id="eSENS-T014-R015" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{64}$')">
+            <assert id="eSENS-T014-R018" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{64}$')">
                 [eSENS-T014-R015] DocumentHash MUST resemble a SHA-256 hash value (32 byte HexString)
             </assert>
             <report id="eSENS-T014-S318" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S318]
@@ -177,7 +187,7 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cac:Attachment/cac:ExternalReference/cbc:HashAlgorithmMethod">
-            <assert id="eSENS-T014-R016" flag="fatal"
+            <assert id="eSENS-T014-R022" flag="fatal"
                     test="normalize-space(.)='http://www.w3.org/2001/04/xmlenc#sha256'">[eSENS-T014-R016]
                 HashAlgorithmMethod MUST be 'http://www.w3.org/2001/04/xmlenc#sha256'
             </assert>
@@ -207,14 +217,14 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:SenderParty">
-            <assert id="eSENS-T014-R017" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
+            <assert id="eSENS-T014-R020" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
                 [eSENS-T014-R017] A Tender Withdrawal Receipt Notification MUST identify the Contracting Authority by its party and
                 endpoint identifiers.
             </assert>
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:ReceiverParty">
-            <assert id="eSENS-T014-R018" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
+            <assert id="eSENS-T014-R021" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">
                 [eSENS-T014-R018] A Tender Withdrawal Receipt Notification MUST identify the Economic Operator by its party and
                 endpoint identifiers.
             </assert>
