@@ -46,7 +46,7 @@
     </cac:TenderDocumentReference>
     <!--tag::tender-notification-document-reference[] -->
     <cac:TenderNotificationDocumentReference>
-        <cbc:ID>49af1fe0-c0af-4a98-8ffa-309408f9cfac</cbc:ID> <!--.-->
+        <cbc:ID schemeURI="urn:uuid">49af1fe0-c0af-4a98-8ffa-309408f9cfac</cbc:ID> <!--.-->
     </cac:TenderNotificationDocumentReference>
     <!--end::tender-notification-document-reference[] -->
     <!--tag::contracting-party[] -->

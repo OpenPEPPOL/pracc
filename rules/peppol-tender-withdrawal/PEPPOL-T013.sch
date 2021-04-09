@@ -135,7 +135,8 @@
                 [eSENS-T013-R013] The document reference Identifier MUST reference the Tender ID expressed in a UUID
                 syntax (RFC 4122)
             </assert>
-            <assert id="eSENS-T013-R014" flag="fatal" test="./@schemeURI">[eSENS-T014-R004] A Tender Document Reference Identifier MUST have a schemeURI attribute.
+            <assert id="eSENS-T013-R014" flag="fatal" test="./@schemeURI">[eSENS-T014-R004] A Tender Document Reference
+                Identifier MUST have a schemeURI attribute.
             </assert>
             <assert id="eSENS-T013-R015" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T014-R005]
                 schemeURI for Tender Document Reference Identifier MUST be 'urn:uuid'.
@@ -147,12 +148,6 @@
             <assert id="eSENS-T013-R016" flag="fatal"
                     test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">
                 [eSENS-T014-R006] A Tender Document Reference Identifier MUST be expressed in a UUID syntax (RFC 4122)
-            </assert>
-        </rule>
-
-        <rule context="ubl:TenderWithdrawal/cac:TenderDocumentReference/cbc:DocumentTypeCode">
-            <assert id="eSENS-T013-R017" flag="fatal" test="normalize-space(.)='23'">[eSENS-T013-R014] The document
-                type code for the document reference (the tender withdrawal) MUST be '23'.
             </assert>
         </rule>
 
@@ -182,7 +177,7 @@
 
         <rule context="ubl:TenderWithdrawal/cac:TenderDocumentReference/cac:Attachment/cac:ExternalReference/cbc:HashAlgorithmMethod">
             <assert id="eSENS-T013-R023" flag="fatal"
-                    test="normalize-space(.)='http://www.w3.org/2001/04/xmlenc#sha256'">[eSENS-T013-R016]
+                    test="normalize-space(.)='http://www.w3.org/2001/04/xmlenc#sha256'">[eSENS-T013-R023]
                 HashAlgorithmMethod MUST be 'http://www.w3.org/2001/04/xmlenc#sha256'
             </assert>
             <report id="eSENS-T013-S319" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T013-S319]
@@ -193,12 +188,20 @@
         <rule context="ubl:TenderWithdrawal/cac:TenderNotificationDocumentReference/cbc:ID">
             <assert id="eSENS-T013-R020" flag="fatal"
                     test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">
-                [eSENS-T013-R013] The tender notification reference Identifier MUST reference the Tender ID expressed in
+                [eSENS-T013-R013] The tender notification document reference Identifier MUST reference the Tender ID
+                expressed in
                 a UUID
                 syntax (RFC 4122)
             </assert>
-            <report id="eSENS-T013-S320" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T013-S315]
-                TenderDocumentReference Identifier SHOULD NOT contain any attributes.
+            <assert id="eSENS-T013-R024" flag="fatal" test="./@schemeURI">[eSENS-T013-R024] A Tender Notification
+                Document Reference MUST have a schemeURI attribute.
+            </assert>
+            <assert id="eSENS-T013-R025" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T013-R025]
+                schemeURI for Tender Notification Document Reference MUST be 'urn:uuid'.
+            </assert>
+            <report id="eSENS-T013-S320" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of
+                    select="$syntaxError"/>[eSENS-T013-S320] A Tender Notification Document Reference SHOULD NOT have
+                any attributes but schemeURI
             </report>
         </rule>
 
@@ -214,6 +217,20 @@
                 [eSENS-T013-R017] A Tender Withdrawal MUST identify the Tenderer Party by its party and
                 endpoint identifiers.
             </assert>
+        </rule>
+
+        <rule context="cbc:EndpointID">
+            <assert id="eSENS-T013-R010" flag="fatal" test="./@schemeID">[eSENS-T013-R010] An Endpoint Identifier MUST
+                have a scheme identifier attribute.
+            </assert>
+            <assert id="eSENS-T013-R011" flag="fatal"
+                    test="matches(normalize-space(./@schemeID),'^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">
+                [eSENS-T013-R011] An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers
+                described in the "PEPPOL Policy for using Identifiers".
+            </assert>
+            <report id="eSENS-T013-S321" flag="warning" test="./@*[not(name()='schemeID')]"><value-of
+                    select="$syntaxError"/>[eSENS-T013-S321] EndpointID SHOULD NOT have any attributes but schemeID
+            </report>
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cac:ContractingParty/cac:Party | ubl:TenderWithdrawal/cac:TendererParty">
