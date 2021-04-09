@@ -101,6 +101,7 @@
                 [eSENS-T014-R006] A Tender Withdrawal Receipt Notification Identifier MUST be expressed in a UUID syntax (RFC 4122)
             </assert>
         </rule>
+
         <rule context="ubl:TenderReceipt/cbc:ContractFolderID">
             <report id="eSENS-T014-S309" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S309]
                 ContractFolderID SHOULD NOT contain any attributes.
@@ -112,12 +113,6 @@
                     test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">
                 [eSENS-T014-R007] IssueTime MUST have a granularity of seconds
             </assert>
-        </rule>
-
-        <rule context="ubl:TenderReceipt/cbc:ContractName">
-            <report id="eSENS-T014-S311" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S311]
-                ContractName SHOULD NOT contain any attributes.
-            </report>
         </rule>
 
         <rule context="ubl:TenderReceipt/cbc:RegisteredTime">
@@ -159,6 +154,9 @@
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cbc:DocumentTypeCode">
             <assert id="eSENS-T014-R017" flag="fatal" test="normalize-space(.)='23'">[eSENS-T014-R014] The document
                 type code for the document reference (the tender withdrawal) MUST be '23'.
+            </assert>
+            <assert id="eSENS-T014-R023" flag="fatal" test="normalize-space(./@listID)='UNCL1001'">[eSENS-T014-R023]
+                listID for Document Type Code MUST be 'UNCL1001'.
             </assert>
         </rule>
 
