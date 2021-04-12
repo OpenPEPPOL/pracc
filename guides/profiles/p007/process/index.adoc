@@ -24,7 +24,7 @@ image::../images/processTW.png[align="center", width="800"]
 | Send Tender Withdrawal | Economic operator | The tender withdrawal is sent by the economic operator.
 | Receive Tender Withdrawal | Contracting body | The tender withdrawal is received by the contracting body.
 | Confirm Tender Withdrawal | Contracting body | The contracting body sends a confirmation to the economic operator that the withdrawal has been received.
-| Receive Tender Withdrawal receipt notification | Economic operator | The economic operator receives the confirmation.
+| Receive Tender Withdrawal receipt notification | Economic operator | The economic operator receives the confirmation that the tender withdrawal has been received.
 
 |===
 

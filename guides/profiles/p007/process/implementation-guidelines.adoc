@@ -2,7 +2,7 @@
 = Implementation guidelines
 
 
-{name-profile} is based on work done by {link-bii3}, and business rules and code lists used are inherited from the following {link-bii3} and {link-ubl} documents:
+{name-profile} is based on work done by {link-bii3}, and business rules and code lists used are inherited from the following {link-bii3} and {link-ubl-22} documents:
 
  urn:oasis:names:specification:ubl:schema:xsd:TenderWithdrawal-2
  urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2
