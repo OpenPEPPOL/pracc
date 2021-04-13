@@ -54,7 +54,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=reference-numbe
 The tender reception notification contains the reference to the tender document sent by the economic operator. The contracting authority should refer to the tender by using the document hash and the hash algorithm method used.
 
 ==== Tender document reference ID
-
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=received-document-reference]
 ....
@@ -66,7 +66,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=received-docume
 The type of business document must also be included in the document reference element. Document Type
 Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
 the document types, see {link-un-ece-1001}.
-
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[lines=39]
 ....
@@ -87,6 +87,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-digest
 
 Party, which issued the reception, not always the final receiving party of the message.
 
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=issuer-party]
 ....
