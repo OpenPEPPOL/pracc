@@ -75,6 +75,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[lines=39]
 
 ==== Document hash algorithm
 
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=document-digest]
 ....

@@ -167,6 +167,7 @@ include::../files/TenderWithdrawal.xml[tags=document-date-time]
 === Withdraw Offer Indicator
 Indicates that the economic operator states that he wants to withdraw the offer (true).
 
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawal.xml[tags=withdraw-offer-indicator]
 ....
