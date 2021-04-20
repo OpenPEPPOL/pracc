@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>Tender Withdrawal Request</Term>
-    <Name>Tender Withdrawal Request (T013)</Name>
+    <Term>Tender Withdrawal</Term>
+    <Name>Tender Withdrawal (T013)</Name>
 
     <Namespace prefix="t013">urn:oasis:names:specification:ubl:schema:xsd:TenderWithdrawal-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>

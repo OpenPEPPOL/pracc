@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>Tender Withdrawal Response</Term>
-    <Name>Tender Withdrawal Response (T014)</Name>
+    <Term>Tender Withdrawal Reception Notification</Term>
+    <Name>Tender Withdrawal Reception Notification (T014)</Name>
 
     <Namespace prefix="t014">urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>

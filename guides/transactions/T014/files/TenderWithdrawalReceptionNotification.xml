@@ -13,7 +13,7 @@
                 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.3.xsd">
     <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
     <!--tag::specification-identification[] -->
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0</cbc:CustomizationID> <!--.-->
+    <cbc:CustomizationID>urn:fdc:peppol.eu:2021:pracc:t014:ver1.0</cbc:CustomizationID> <!--.-->
     <!--end::specification-identification[] -->
     <!--tag::business-process-type-identifier[] -->
     <cbc:ProfileID>urn:fdc:peppol.eu:2021:pracc:p007:01:1.0</cbc:ProfileID> <!--.-->
