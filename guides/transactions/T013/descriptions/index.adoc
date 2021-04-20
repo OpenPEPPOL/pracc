@@ -133,9 +133,7 @@ include::../files/TenderWithdrawal.xml[tags=tenderer-party-contact]
 <.> A fax number for the contact point
 <.> An e-mail address for the contact point.
 
-== Additional Tags
-
-=== Document Date Time
+== Document Date Time
 Issue date and time must be sent.
 
 Issue date is a xs:date data type, and the date is specified as "YYYY-MM-DD" where:
@@ -164,7 +162,7 @@ include::../files/TenderWithdrawal.xml[tags=document-date-time]
 <.> Date when the referred document was issued by the sending party.
 <.> Time when the referred document was issued by the sending party, granular to seconds and timezone.
 
-=== Withdraw Offer Indicator
+== Withdraw Offer Indicator
 Indicates that the economic operator states that he wants to withdraw the offer (true).
 
 [source,xml,indent=0]
