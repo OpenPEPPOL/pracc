@@ -66,9 +66,9 @@
 
         <rule context="ubl:TenderReceipt/cbc:CustomizationID">
             <assert id="eSENS-T014-R002" flag="fatal"
-                    test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0'">
+                    test="normalize-space(.) = 'urn:fdc:peppol.eu:2021:pracc:t014:ver1.0'">
                 [eSENS-T014-R002] CustomizationID value MUST be
-                'urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0'
+                'urn:fdc:peppol.eu:2021:pracc:t014:ver1.0'
             </assert>
             <report id="eSENS-T014-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S303]
                 CustomizationID SHOULD NOT contain any attributes.
