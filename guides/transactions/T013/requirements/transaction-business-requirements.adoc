@@ -1,7 +1,9 @@
 
 = Identification and description of the requirements
 
-NOTE: Please note that the transaction "{name-transaction}" has to be sent to contracting authorities when an existing tender is withdrawn. As a consequence, the "{name-transaction}" shall be also sent before sending an updated tender, to ensure that the economic operator receives confirmation of the withdrawal of the old tender, as well as a corresponding confirmation of the submission of a new tender.
+The transaction "{name-transaction}" must be sent to the contracting authority when the economic operator has submitted a tender and decided to withdraw the tender. After "{name-transaction}", the bid of the Economic Operator is not evaluated. The tender may be resubmitted if the submission deadline has not passed.
+
+NOTE: Please note that the transaction "{name-transaction}" has to be sent to contracting authorities when an existing tender is withdrawn. As a consequence, the "{name-transaction}" shall be also sent before sending an updated Tender (T005), to ensure that the economic operator receives confirmation of the withdrawal of the old tender (T014), as well as a corresponding confirmation of the submission of a new tender (T006).
 
 
 [cols="2,10a", options="header"]
