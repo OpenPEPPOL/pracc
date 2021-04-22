@@ -6,19 +6,19 @@
 
     <Name>PEPPOL Pre-Award</Name>
 
-    <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription</Documentation>
+    <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.0.1</Documentation>
     <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure</Documentation>
     <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation</Documentation>
-    <Documentation path="profiles/p002/index.html">P002 - Procurement document access</Documentation>
+    <Documentation path="profiles/p002/index.html">P002 - Procurement document access - 1.0.1</Documentation>
     <Documentation path="transactions/T003/index.html">T003 - Tender Status Inquiry</Documentation>
     <Documentation path="transactions/T004/index.html">T004 - Call for Tenders</Documentation>
-    <Documentation path="profiles/p003/index.html">P003 - Tender Submission</Documentation>
+    <Documentation path="profiles/p003/index.html">P003 - Tender Submission - 1.0.1</Documentation>
     <Documentation path="transactions/T005/index.html">T005 - Tender</Documentation>
     <Documentation path="transactions/T006/index.html">T006 - Tender Reception Notification</Documentation>
-    <Documentation path="profiles/p004/index.html">P004 - Call for Tender Question and Answers</Documentation>
+    <Documentation path="profiles/p004/index.html">P004 - Call for Tender Question and Answers - 1.0.0</Documentation>
     <Documentation path="transactions/T007/index.html">T007 - Tendering Questions</Documentation>
     <Documentation path="transactions/T008/index.html">T008 - Tendering Answers</Documentation>
-    <Documentation path="profiles/p005/index.html">P005 - Tender Clarification</Documentation>
+    <Documentation path="profiles/p005/index.html">P005 - Tender Clarification - 1.0.0</Documentation>
     <Documentation path="transactions/T009/index.html">T009 - Tender Clarification Request</Documentation>
     <Documentation path="transactions/T010/index.html">T010 - Tender Clarification</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
