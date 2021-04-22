@@ -56,8 +56,8 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cbc:UBLVersionID">
-            <assert id="eSENS-T014-R019" flag="fatal" test="normalize-space(.) = '2.3'">[eSENS-T014-R019] UBLVersionID
-                value MUST be '2.3'
+            <assert id="eSENS-T014-R019" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T014-R019] UBLVersionID
+                value MUST be '2.2'
             </assert>
             <report id="eSENS-T014-S302" flag="warning" test="./@*"><value-of select="$syntaxError"/>[eSENS-T014-S302]
                 UBLVersionID SHOULD NOT contain any attributes.

@@ -13,7 +13,7 @@ Identifier for the set of rules and transactions for the Tender Withdrawal Recep
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=specification-identification]
 ....
-<.> The value for the specification identification is always "_urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t014:ver1.0_".
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:2021:pracc:t014:ver1.0_".
 
 
 === Business Process Type Identifier
@@ -99,7 +99,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=issuer-party]
 The economic operator is the party submitting the tender and the recipient of the tender withdrawal reception notification, and is any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products, or the provision of services on the market.
 
 [source,xml,indent=0]
-.Economic operator is represented in UBL 2.3 using ReceiverParty
+.Economic operator is represented in UBL 2.2 using ReceiverParty
 
 [source,xml,indent=0]
 ....
@@ -116,7 +116,7 @@ include::../files/TenderWithdrawalReceptionNotification.xml[tags=economic-operat
 The contracting body is the contracting authority or contracting entity who is buying supplies, services or tendering works.
 
 [source,xml,indent=0]
-.The contracting body is represented in UBL 2.3 using the SenderParty:
+.The contracting body is represented in UBL 2.2 using the SenderParty:
 
 ....
 include::../files/TenderWithdrawalReceptionNotification.xml[tags=contracting-body]

@@ -13,7 +13,7 @@ Identifier for the set of rules and transactions for the Tender Withdrawal Recep
 ....
 include::../files/TenderWithdrawal.xml[tags=specification-identification]
 ....
-<.> The value for the specification identification is always "_urn:www.cenbii.eu:transaction:biitrdm089:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t013:ver1.0_".
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:2021:pracc:t013:ver1.0_".
 
 
 === Business Process Type Identifier
@@ -88,7 +88,7 @@ include::../files/TenderWithdrawal.xml[tags=tender-notification-document-referen
 The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).
 
 [source,xml,indent=0]
-.Contracting Body is represented in UBL 2.3 using Contracting Party:
+.Contracting Body is represented in UBL 2.2 using Contracting Party:
 
 [source,xml,indent=0]
 ....
@@ -104,7 +104,7 @@ include::../files/TenderWithdrawal.xml[tags=contracting-party]
 Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products, or the provision of services on the market.
 
 [source,xml,indent=0]
-.The Economic Operator is represented in UBL 2.3 using the Tenderer Party:
+.The Economic Operator is represented in UBL 2.2 using the Tenderer Party:
 
 ....
 include::../files/TenderWithdrawal.xml[tags=tenderer-party]
