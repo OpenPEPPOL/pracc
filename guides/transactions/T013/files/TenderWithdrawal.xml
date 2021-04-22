@@ -87,7 +87,7 @@
             <cbc:Name>Maximilian Mustermann</cbc:Name> <!--.-->
             <cbc:Telephone>+49 231 7000-7000</cbc:Telephone> <!--.-->
             <cbc:Telefax>+49-711-9876543</cbc:Telefax> <!--.-->
-            <cbc:ElectronicMail>max@mustermann.de</cbc:ElectronicMail> <!--.-->
+            <cbc:ElectronicMail>max.mustermann@example.com</cbc:ElectronicMail> <!--.-->
         </cac:Contact>
         <!--end::tenderer-party-contact[] -->
     </cac:TendererParty>
