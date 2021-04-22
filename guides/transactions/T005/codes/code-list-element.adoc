@@ -34,5 +34,5 @@
 | Document location
 | `cac:DocumentReference/cbc:DocumentTypeCode`
 | Source codelist
-|  http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001 (Subset by CEN BII2)]
+|  https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/[UN/ECE 1001 (Subset by CEN BII2)]
 |===
