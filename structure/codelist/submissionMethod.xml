@@ -3,7 +3,7 @@
     <Title>SubmissionMethodCode</Title>
     <Identifier>submissionMethod</Identifier>
     <Version>2018-05-04</Version>
-    <Agency>eSENS</Agency>
+    <Agency>PEPPOL</Agency>
     <Code>
         <Id>POSTAL</Id>
         <Name>Paper submission</Name>

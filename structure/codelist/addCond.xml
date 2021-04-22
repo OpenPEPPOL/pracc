@@ -3,7 +3,7 @@
     <Title>AdditionalConditionsCode</Title>
     <Identifier>addCond</Identifier>
     <Version>2018-05-04</Version>
-    <Agency>eSENS</Agency>
+    <Agency>PEPPOL</Agency>
     <Code>
         <Id>WOS</Id>
         <Name>Return without signature</Name>

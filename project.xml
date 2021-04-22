@@ -77,37 +77,37 @@
     <Resource>
         <Identifier>T001</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T001.sch</Path>
+        <Path>rules/peppol-procurement-procedure-subscription-1.0/PEPPOL-T001.sch</Path>
         <Title>PEPPOL T001 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T002</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-procurement-procedure-subscription-1.0/ESENS-UBL-T002.sch</Path>
+        <Path>rules/peppol-procurement-procedure-subscription-1.0/PEPPOL-T002.sch</Path>
         <Title>PEPPOL T002 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T003</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-tender-status-inquiry-1.0/ESENS-UBL-T003.sch</Path>
+        <Path>rules/peppol-tender-status-inquiry-1.0/PEPPOL-T003.sch</Path>
         <Title>PEPPOL T003 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T004</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-call-for-tender-1.0/peppol/ESENS-UBL-T004.sch</Path>
+        <Path>rules/peppol-call-for-tender-1.0/peppol/PEPPOL-T004.sch</Path>
         <Title>PEPPOL T004 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T005</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T005.sch</Path>
+        <Path>rules/peppol-tender-1.0/peppol/PEPPOL-T005.sch</Path>
         <Title>PEPPOL T005 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T006</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-tender-1.0/peppol/ESENS-UBL-T006.sch</Path>
+        <Path>rules/peppol-tender-1.0/peppol/PEPPOL-T006.sch</Path>
         <Title>PEPPOL T006 rules</Title>
     </Resource>
     <Resource>
