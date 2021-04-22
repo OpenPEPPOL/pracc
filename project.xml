@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Project [
-        <!ENTITY nbsp "&#160;">
-]>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
     <Name>PEPPOL Pre-Award</Name>
