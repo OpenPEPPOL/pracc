@@ -4,5 +4,6 @@ include::links.adoc[]
 
 include::../shared/settings.adoc[]
 
+:version: n/a
 :name-profile-org: Profile BII53 — "Tender Withdrawal"
 :name-profile: Profile P007 - "Tender Withdrawal"

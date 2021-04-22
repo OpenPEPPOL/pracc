@@ -18,10 +18,10 @@
     <Documentation path="profiles/p005/index.html">P005 - Tender Clarification - 1.0</Documentation>
     <Documentation path="transactions/T009/index.html">T009 - Tender Clarification Request</Documentation>
     <Documentation path="transactions/T010/index.html">T010 - Tender Clarification</Documentation>
-    <Documentation path="profiles/p006/index.html">P006 - Search Notices</Documentation>
+    <Documentation path="profiles/p006/index.html">P006 - Search Notices - N/A</Documentation>
     <Documentation path="transactions/T011/index.html">T011 - Search Notice Request</Documentation>
     <Documentation path="transactions/T012/index.html">T012 - Search Notice Response</Documentation>
-    <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal</Documentation>
+    <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - N/A</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
 
