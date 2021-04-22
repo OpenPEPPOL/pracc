@@ -124,6 +124,8 @@ include::../files/TenderWithdrawal.xml[tags=tenderer-party]
 === Tenderer Party Contact
 
 Used to provide contacting information for a party in general or a person. Optional information additional to the Economic Operator.
+
+[source,xml,indent=0]
 ....
 include::../files/TenderWithdrawal.xml[tags=tenderer-party-contact]
 ....
