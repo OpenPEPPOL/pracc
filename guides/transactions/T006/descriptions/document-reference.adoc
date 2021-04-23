@@ -38,7 +38,7 @@ include::../{xml-doc-file}[tags=TenderDocumentReference]
 
 The type of business document must also be included in the document reference element. Document Type
 Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
-the document types, see {link-un-ece-1001}.
+the document types, see https://unece.org/fileadmin/DAM////trade/untdid/d99a/uncl/uncl1001.htm[UNECE 1001].
 
 [source,xml,indent=0]
 .Document Type Code

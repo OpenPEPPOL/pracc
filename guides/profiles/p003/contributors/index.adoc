@@ -16,5 +16,6 @@
 | NL | Kornelis Drijfhout | PIANOo
 | NL | Chander Khoenkhoen | PIANOo
 | DK | Finn Bock | Inno:vasion
+| DE | Ansgar Mondorf |University of Koblenz-Landau
 
 |===
