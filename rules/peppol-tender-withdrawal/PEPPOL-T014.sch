@@ -46,8 +46,8 @@
                 <value-of select="$syntaxError"/>
                 [eSENS-T014-S312] Note SHOULD NOT be used.
             </report>
-            <report id="eSENS-T014-S313" flag="warning" test="count (cac:TenderDocumentReference) &gt; 1"><value-of
-                    select="$syntaxError"/>[eSENS-T014-S313] TenderDocumentReference SHOULD NOT be used more than once.
+            <report id="eSENS-T014-S313" flag="warning" test="count (cac:TenderDocumentReference) &gt; 2"><value-of
+                    select="$syntaxError"/>[eSENS-T014-S313] TenderDocumentReference SHOULD NOT be used more than twice.
             </report>
             <report id="eSENS-T014-S322" flag="warning" test="(cac:Signature)">
                 <value-of select="$syntaxError"/>
@@ -152,8 +152,8 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cbc:DocumentTypeCode">
-            <assert id="eSENS-T014-R017" flag="fatal" test="normalize-space(.)='23'">[eSENS-T014-R014] The document
-                type code for the document reference (the tender withdrawal) MUST be '23'.
+            <assert id="eSENS-T014-R017" flag="fatal" test="(normalize-space(.)='13') || (normalize-space(.)='310')">[eSENS-T014-R014] The document
+                type code for the document reference (the tender withdrawal) MUST be '310' or '13' if you refer to a REM evidence.
             </assert>
             <assert id="eSENS-T014-R023" flag="fatal" test="normalize-space(./@listID)='UNCL1001'">[eSENS-T014-R023]
                 listID for Document Type Code MUST be 'UNCL1001'.
