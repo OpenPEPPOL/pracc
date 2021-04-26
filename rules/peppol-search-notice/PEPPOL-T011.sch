@@ -36,11 +36,11 @@
         </rule>
 
         <rule context="query:QueryRequest/rim:Slot[@name='SpecificationIdentification']">
-            <assert id="PEPPOL-T011-R011" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']/rim:Value/text()[normalize-space() = 'urn:fdc:peppol.eu:2021:pracc:t011:1.0']">SpecificationIdentification value MUST be 'urn:www.cenbii.eu:transaction:biitrdm099:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t011:ver1.0'.</assert>
+            <assert id="PEPPOL-T011-R011" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']/rim:Value/text()[normalize-space() = 'urn:fdc:peppol.eu:prac:trns:t011:1.0']">SpecificationIdentification value MUST be 'urn:fdc:peppol.eu:prac:trns:t011:1.0'.</assert>
         </rule>
 
         <rule context="query:QueryRequest/rim:Slot[@name='BusinessProcessTypeIdentifier']">
-            <assert id="PEPPOL-T011-R012" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']/rim:Value/text()[normalize-space() = 'urn:fdc:peppol.eu:2021:pracc:p006:1.0']">BusinessProcessTypeIdentifier value MUST be 'urn:fdc:peppol.eu:2020:pracc:p006:01:1.0'.</assert>
+            <assert id="PEPPOL-T011-R012" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']/rim:Value/text()[normalize-space() = 'urn:fdc:peppol.eu:prac:bis:p006:1.0']">BusinessProcessTypeIdentifier value MUST be 'urn:fdc:peppol.eu:prac:bis:p006:1.0'.</assert>
         </rule>
 
         <rule context="query:QueryRequest/rim:Slot[@name='SenderElectronicAddress'] | query:QueryRequest/rim:Slot[@name='ReceiverElectronicAddress']">

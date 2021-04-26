@@ -37,7 +37,7 @@ include::../../../shared/pagination.PLANTUML[]
 include::../files/ExampleSearchNoticeResponse.xml[tags=specification-identification]
 ....
 <.> Identifier for the set of rules and transactions for a search notice response.
-<.> The value for the specification identification is always "_urn:www.cenbii.eu:transaction:biitrdm100:ver3.0:extended:urn:fdc:peppol.eu:2021:pracc:t012:ver1.0_", just like in the given example.
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t012:1.0_", just like in the given example.
 
 
 === Business Process Type Identifier
@@ -46,7 +46,7 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=specification-identificat
 include::../files/ExampleSearchNoticeResponse.xml[tags=business-process-type-identifier]
 ....
 <.> Identifier for the business process context of the search notice response.
-<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:2020:pracc:p006:01:1.0_", just like in the given example.
+<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.0_", just like in the given example.
 
 === Issue Date Time
 [source,xml,indent=0]
