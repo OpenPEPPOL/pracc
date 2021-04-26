@@ -25,29 +25,26 @@
                 MUST have a syntax identifier.
             </assert>
             <assert id="eSENS-T013-S301" flag="warning" test="not(ext:UBLExtensions)">
-                <value-of select="$syntaxError"/>
+
                 [eSENS-T013-S301] UBLExtensions SHOULD NOT be used.
             </assert>
-            <assert id="eSENS-T013-S305" flag="warning" test="not(cbc:ProfileExectuionID)"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S305] ProfileExecutionID SHOULD NOT be used.
+            <assert id="eSENS-T013-S305" flag="warning" test="not(cbc:ProfileExectuionID)">[eSENS-T013-S305] ProfileExecutionID SHOULD NOT be used.
             </assert>
             <assert id="eSENS-T013-S307" flag="warning" test="not(cbc:CopyIndicator)">
-                <value-of select="$syntaxError"/>
+
                 [eSENS-T013-S307] CopyIndicator SHOULD NOT be used.
             </assert>
             <assert id="eSENS-T013-S308" flag="warning" test="not(cbc:UUID)">
-                <value-of select="$syntaxError"/>
+
                 [eSENS-T013-S308] UUID SHOULD NOT be used.
             </assert>
             <assert id="eSENS-T013-S312" flag="warning" test="not(cbc:Note)">
-                <value-of select="$syntaxError"/>
+
                 [eSENS-T013-S312] Note SHOULD NOT be used.
             </assert>
-            <assert id="eSENS-T013-S313" flag="warning" test="2 > count(cac:TenderDocumentReference)"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S313] TenderDocumentReference SHOULD NOT be used more than once.
+            <assert id="eSENS-T013-S313" flag="warning" test="2 > count(cac:TenderDocumentReference)">[eSENS-T013-S313] TenderDocumentReference SHOULD NOT be used more than once.
             </assert>
             <assert id="eSENS-T013-S322" flag="warning" test="not(cac:Signature)">
-                <value-of select="$syntaxError"/>
                 [eSENS-T013-S322] Signature SHOULD NOT be used.
             </assert>
         </rule>
@@ -56,7 +53,7 @@
             <assert id="eSENS-T013-R019" flag="fatal" test="normalize-space(.) = '2.2'">[eSENS-T013-R019] UBLVersionID
                 value MUST be '2.2'
             </assert>
-            <assert id="eSENS-T013-S302" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S302]
+            <assert id="eSENS-T013-S302" flag="warning" test="not(./@*)">[eSENS-T013-S302]
                 UBLVersionID SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -67,7 +64,7 @@
                 [eSENS-T013-R002] CustomizationID value MUST be
                 'urn:fdc:peppol.eu:2021:pracc:t013:ver1.0'
             </assert>
-            <assert id="eSENS-T013-S303" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S303]
+            <assert id="eSENS-T013-S303" flag="warning" test="not(./@*)">[eSENS-T013-S303]
                 CustomizationID SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -77,7 +74,7 @@
                     test="normalize-space(.) = 'urn:fdc:peppol.eu:2021:pracc:p007:01:1.0'">[eSENS-T013-R003] ProfileID
                 value MUST be 'urn:fdc:peppol.eu:2021:pracc:p007:01:1.0'
             </assert>
-            <assert id="eSENS-T013-S304" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S304]
+            <assert id="eSENS-T013-S304" flag="warning" test="not(./@*)">[eSENS-T013-S304]
                 ProfileID SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -89,8 +86,7 @@
             <assert id="eSENS-T013-R005" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T013-R005]
                 schemeURI for Tender Withdrawal Identifier MUST be 'urn:uuid'.
             </assert>
-            <assert id="eSENS-T013-S306" flag="warning" test="./@*[name()='schemeURI']"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S306] A Tender Withdrawal Identifier SHOULD NOT have
+            <assert id="eSENS-T013-S306" flag="warning" test="./@*[name()='schemeURI']">[eSENS-T013-S306] A Tender Withdrawal Identifier SHOULD NOT have
                 any attributes but schemeURI
             </assert>
             <assert id="eSENS-T013-R006" flag="fatal"
@@ -100,7 +96,7 @@
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cbc:ContractFolderID">
-            <assert id="eSENS-T013-S309" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S309]
+            <assert id="eSENS-T013-S309" flag="warning" test="not(./@*)">[eSENS-T013-S309]
                 ContractFolderID SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -113,7 +109,7 @@
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cbc:WithdrawOfferIndicator">
-            <assert id="eSENS-T013-S311" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S310]
+            <assert id="eSENS-T013-S311" flag="warning" test="not(./@*)">[eSENS-T013-S310]
                 WithdrawOfferIndicator SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -138,8 +134,7 @@
             <assert id="eSENS-T013-R015" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T014-R005]
                 schemeURI for Tender Document Reference Identifier MUST be 'urn:uuid'.
             </assert>
-            <assert id="eSENS-T013-S315" flag="warning" test="./@*[name()='schemeURI']"><value-of
-                    select="$syntaxError"/>[eSENS-T014-S306] A Tender Document Reference Identifier SHOULD NOT have
+            <assert id="eSENS-T013-S315" flag="warning" test="./@*[name()='schemeURI']">[eSENS-T014-S306] A Tender Document Reference Identifier SHOULD NOT have
                 any attributes but schemeURI
             </assert>
             <assert id="eSENS-T013-R016" flag="fatal"
@@ -149,16 +144,14 @@
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cac:TenderDocumentReference/cac:Attachment">
-            <assert id="eSENS-T013-S316" flag="warning" test="count(./*)-count(./cac:ExternalReference)=0"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S316] Attachment SHOULD NOT contain any elements but
+            <assert id="eSENS-T013-S316" flag="warning" test="count(./*)-count(./cac:ExternalReference)=0">[eSENS-T013-S316] Attachment SHOULD NOT contain any elements but
                 ExternalReference
             </assert>
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cac:TenderDocumentReference/cac:Attachment/cac:ExternalReference">
             <assert id="eSENS-T013-S317" flag="warning"
-                    test="count(./*)-count(./cbc:DocumentHash)-count(./cbc:HashAlgorithmMethod)=0"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S317] Attachment/ExternalReference SHOULD NOT contain any
+                    test="count(./*)-count(./cbc:DocumentHash)-count(./cbc:HashAlgorithmMethod)=0">[eSENS-T013-S317] Attachment/ExternalReference SHOULD NOT contain any
                 elements but DocumentHash, HashAlgorithmMethod
             </assert>
         </rule>
@@ -167,7 +160,7 @@
             <assert id="eSENS-T013-R018" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{64}$')">
                 [eSENS-T013-R015] DocumentHash MUST resemble a SHA-256 hash value (32 byte HexString)
             </assert>
-            <assert id="eSENS-T013-S318" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S318]
+            <assert id="eSENS-T013-S318" flag="warning" test="not(./@*)">[eSENS-T013-S318]
                 DocumentHash SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -177,7 +170,7 @@
                     test="normalize-space(.)='http://www.w3.org/2001/04/xmlenc#sha256'">[eSENS-T013-R023]
                 HashAlgorithmMethod MUST be 'http://www.w3.org/2001/04/xmlenc#sha256'
             </assert>
-            <assert id="eSENS-T013-S319" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S319]
+            <assert id="eSENS-T013-S319" flag="warning" test="not(./@*)">[eSENS-T013-S319]
                 HashAlgorithmMethod SHOULD NOT contain any attributes.
             </assert>
         </rule>
@@ -196,8 +189,7 @@
             <assert id="eSENS-T013-R025" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[eSENS-T013-R025]
                 schemeURI for Tender Notification Document Reference MUST be 'urn:uuid'.
             </assert>
-            <assert id="eSENS-T013-S320" flag="warning" test="./@*[name()='schemeURI']"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S320] A Tender Notification Document Reference SHOULD NOT have
+            <assert id="eSENS-T013-S320" flag="warning" test="./@*[name()='schemeURI']">[eSENS-T013-S320] A Tender Notification Document Reference SHOULD NOT have
                 any attributes but schemeURI
             </assert>
         </rule>
@@ -225,8 +217,7 @@
                 [eSENS-T013-R011] An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers
                 described in the "PEPPOL Policy for using Identifiers".
             </assert>
-            <assert id="eSENS-T013-S321" flag="warning" test="./@*[name()='schemeID']"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S321] EndpointID SHOULD NOT have any attributes but schemeID
+            <assert id="eSENS-T013-S321" flag="warning" test="./@*[name()='schemeID']">[eSENS-T013-S321] EndpointID SHOULD NOT have any attributes but schemeID
             </assert>
         </rule>
 
@@ -236,11 +227,9 @@
                 [eSENS-T013-S323] ContractingParty or TendererParty SHOULD NOT contain any
                 elements but EndpointID, PartyIdentification, PartyName
             </assert>
-            <assert id="eSENS-T013-S324" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S324] PartyIdentification SHOULD be used exactly once.
+            <assert id="eSENS-T013-S324" flag="warning" test="count(./cac:PartyIdentification) = 1">[eSENS-T013-S324] PartyIdentification SHOULD be used exactly once.
             </assert>
-            <assert id="eSENS-T013-S326" flag="warning" test="2 > count(./cac:PartyName)"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S326] PartyName SHOULD NOT be used more than once.
+            <assert id="eSENS-T013-S326" flag="warning" test="2 > count(./cac:PartyName)">[eSENS-T013-S326] PartyName SHOULD NOT be used more than once.
             </assert>
         </rule>
 
@@ -253,14 +242,13 @@
                 [eSENS-T013-R009] A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described
                 in the "PEPPOL Policy for using Identifiers".
             </assert>
-            <assert id="eSENS-T013-S325" flag="warning" test="./@*[name()='schemeID']"><value-of
-                    select="$syntaxError"/>[eSENS-T013-S325] PartyIdentifier SHOULD NOT have any further attributes but
+            <assert id="eSENS-T013-S325" flag="warning" test="./@*[name()='schemeID']">[eSENS-T013-S325] PartyIdentifier SHOULD NOT have any further attributes but
                 schemeID
             </assert>
         </rule>
 
         <rule context="cbc:Name">
-            <assert id="eSENS-T013-S327" flag="warning" test="not(./@*)"><value-of select="$syntaxError"/>[eSENS-T013-S327]
+            <assert id="eSENS-T013-S327" flag="warning" test="not(./@*)">[eSENS-T013-S327]
                 Name SHOULD NOT contain any attributes.
             </assert>
         </rule>
