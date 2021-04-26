@@ -60,9 +60,9 @@
 
         <rule context="ubl:TenderWithdrawal/cbc:CustomizationID">
             <assert id="eSENS-T013-R002" flag="fatal"
-                    test="normalize-space(.) = 'urn:fdc:peppol.eu:2021:pracc:t013:ver1.0'">
+                    test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t013:1.0'">
                 [eSENS-T013-R002] CustomizationID value MUST be
-                'urn:fdc:peppol.eu:2021:pracc:t013:ver1.0'
+                'urn:fdc:peppol.eu:prac:trns:t013:1.0'
             </assert>
             <assert id="eSENS-T013-S303" flag="warning" test="not(./@*)">[eSENS-T013-S303]
                 CustomizationID SHOULD NOT contain any attributes.
@@ -71,8 +71,8 @@
 
         <rule context="ubl:TenderWithdrawal/cbc:ProfileID">
             <assert id="eSENS-T013-R003" flag="fatal"
-                    test="normalize-space(.) = 'urn:fdc:peppol.eu:2021:pracc:p007:01:1.0'">[eSENS-T013-R003] ProfileID
-                value MUST be 'urn:fdc:peppol.eu:2021:pracc:p007:01:1.0'
+                    test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p007:1.0'">[eSENS-T013-R003] ProfileID
+                value MUST be 'urn:fdc:peppol.eu:prac:bis:p007:1.0'
             </assert>
             <assert id="eSENS-T013-S304" flag="warning" test="not(./@*)">[eSENS-T013-S304]
                 ProfileID SHOULD NOT contain any attributes.
