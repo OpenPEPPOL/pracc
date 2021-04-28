@@ -1,13 +1,20 @@
-= Changelog for versions 1.0.0 and 1.0.1
+= Changelog for version 1.0.1
 
-== Profiles P001 - P005 (v1.0.1)
+== v1.0.1 (Profiles P001 - P005)
 
-* Replaced references to eSENS by PEPPOL (in schematron rules and syntax mappings=
-* Revised naming convention of business process identification und specification identification to use a consistent schema
-* Updated references and rules referencing to UNCL code list
+*Release date 2021-04-30*
 
+=== Profiles P001 - P003
+Editorial changes in the profile. No new features added. Several links and references were updated. References to eSENS were removed from rules, codes lists and syntax mapping.
 
-== Profiles P006 - P007
+* Replaced references to eSENS by PEPPOL (in schematron rules, syntax mappings and code lists)
+* Revised naming convention of Profile Ids and Customization Ids to use of a consistent schema
+* Updated references and rules referencing to UNCL code list in order to provide working links
 
-* Profile P006 - initial version of "Search Notice" added
-* Profile P007 - initial version of "Tender Withdrawal" added (and revised accoruding to changes in P001 to P007)
+=== Profile P004
+
+* Profile P004 - "Call for Tenders Questions and Answers"
+
+=== Profile P005
+* Profile P005 - "Tender Clarification" added
+
