@@ -5,7 +5,7 @@ include::../shared/settings.adoc[]
 :name-transaction-org: "Trdm045 Tender Reception Notification transaction"
 :name-trans-short: Tender Withdrawal Reception Notification 1.0
 :name-transaction: T014 - {name-trans-short}
-:name-syntax: TenderReceipt
+:name-syntax: TenderWithdrawalResponse
 
 include::../shared/links.adoc[]
 

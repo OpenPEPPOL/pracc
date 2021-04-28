@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>Tender Withdrawal</Term>
+    <Term>TenderWithdrawalRequest</Term>
     <Name>Tender Withdrawal (T013)</Name>
 
     <Namespace prefix="t013">urn:oasis:names:specification:ubl:schema:xsd:TenderWithdrawal-2</Namespace>
@@ -15,7 +15,6 @@
         <Reference type="RULE">PEPPOL-T013-S305</Reference>
         <Reference type="RULE">PEPPOL-T013-S307</Reference>
         <Reference type="RULE">PEPPOL-T013-S308</Reference>
-        <Reference type="RULE">PEPPOL-T013-S310</Reference>
         <Reference type="RULE">PEPPOL-T013-S312</Reference>
         <Reference type="RULE">PEPPOL-T013-S313</Reference>
         <Reference type="RULE">PEPPOL-T013-S322</Reference>
@@ -100,7 +99,7 @@
             <Name>Withdraw offer indicator</Name>
             <Description>Indicates that the economic operator states that he wants to withdraw the offer (true).
             </Description>
-            <Reference type="RULE">PEPPOL-T013-S311</Reference>
+            <Reference type="RULE">PEPPOL-T013-S310</Reference>
             <DataType>Indicator</DataType>
         </Element>
         <Element>
@@ -360,7 +359,7 @@
                     <DataType>Text</DataType>
                 </Element>
                 <Element cardinality="0..1">
-                    <Term>Cac:Country</Term>
+                    <Term>cac:Country</Term>
                     <Name>Country</Name>
                     <Description>The country in which this address is situated.</Description>
                     <Element cardinality="0..1">

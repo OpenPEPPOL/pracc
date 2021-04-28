@@ -109,7 +109,7 @@
         </rule>
 
         <rule context="ubl:TenderWithdrawal/cbc:WithdrawOfferIndicator">
-            <assert id="PEPPOL-T013-S311" flag="warning" test="not(./@*)">[PEPPOL-T013-S310]
+            <assert id="PEPPOL-T013-S310" flag="warning" test="not(./@*)">[PEPPOL-T013-S310]
                 WithdrawOfferIndicator SHOULD NOT contain any attributes.
             </assert>
         </rule>
