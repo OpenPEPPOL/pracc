@@ -167,7 +167,7 @@
 				<Name>Contracting body electronic address identifier</Name>
 				<Description>Electronic address of the contracting body.</Description>
 				<Reference type="RULE">PEPPOL-T006-R017</Reference>
-				<Reference type="RULE">eSENS-T006-R017</Reference>
+
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
