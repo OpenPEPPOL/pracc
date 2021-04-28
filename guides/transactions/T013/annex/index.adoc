@@ -1,8 +1,5 @@
 [appendix]
-== T013 - Tender Withdrawal Exchange Data Model
-
-[.line-through]##[##appendix]
-== Key examples/use cases
+= Key examples/use cases
 
 link:../files/TenderWithdrawal.xml[Link to example file]
 

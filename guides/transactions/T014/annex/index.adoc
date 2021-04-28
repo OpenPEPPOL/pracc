@@ -1,10 +1,7 @@
 [appendix]
-== T014 - Tender Withdrawal Reception Notification Exchange Data Model
+= Key examples/use cases
 
-[.line-through]##[##appendix]
-== Key examples/use cases
-
-link:../files/TenderWithdrawalReceptionNotification.xml[Link to example file]
+link:{xml-doc-file}[Link to example file]
 
 [source,xml,role="hide-callouts"]
 .Example file for {name-transaction}
