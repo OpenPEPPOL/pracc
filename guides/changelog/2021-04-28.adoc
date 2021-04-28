@@ -1,0 +1,13 @@
+= Changelog for versions 1.0.0 and 1.0.1
+
+== Profiles P001 - P005 (v1.0.1)
+
+* Replaced references to eSENS by PEPPOL (in schematron rules and syntax mappings=
+* Revised naming convention of business process identification und specification identification to use a consistent schema
+* Updated references and rules referencing to UNCL code list
+
+
+== Profiles P006 - P007
+
+* Profile P006 - initial version of "Search Notice" added
+* Profile P007 - initial version of "Tender Withdrawal" added (and revised accoruding to changes in P001 to P007)
