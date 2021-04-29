@@ -17,12 +17,12 @@ Since the eSENS project does not longer exist and PEPPOL maintains and updates t
 
 *Release date 2021-05-17*
 
-=== New Profile P004
+=== New Profile P004 - Call for Tenders Questions and Answers
 The Profile P004 - "Call for Tenders Questions and Answers" was added as a new eTendering profile.  The profile describes a process providing electronic messaging support for the business process of answering questions of economic operators about a call for tenders. Thereby the profile supports contracting authorities to distribute answers to all economic operators having expressed their interest in the procedure.
 
 * Profile P004 - "Call for Tenders Questions and Answers" was added
 
-=== New Profile P005
+=== New Profile P005 - Tender Clarification
 The Profile P005 - "Tender Clarification" was added as a new eTendering profile. The profile describes a process providing electronic messaging support for the business process of answering questions of contracting authorities about a tender. Thus, this profile supports the contracting authority to clarify questions on a tender which has been submitted by an economic operator.
 
 * Profile P005 - "Tender Clarification" was added
