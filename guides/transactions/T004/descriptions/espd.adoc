@@ -9,7 +9,7 @@ Documentation and services related to {link-espd}[ESPD] are provided by the Euro
 * link:https://github.com/ESPD/ESPD-Service[ESPD Service]
 * link:https://github.com/ESPD/ESPD-EDM[ESPD Exchange Data Model]
 
-Implementers of this profile attach ESPD Request/Response by adding a DocumentReference. Values to be used:
+Implementers of this profile attach ESPD Request/Response by adding a DocumentReference. The transaction T004 does not prescribe the use of a specific ESPD version. The use of specific ESPD versions by the Contracting Authority may result into incompatibilities with the systems available to the Economic Operator. Thus, it should be described by the Contracting Authority in the Tendering Documents which ESPD version is used and how it can be returned by Economic Operators. Values to indicate that an ESPD is used as part of the Call for Tenders documents are:
 
 `cac:DocumentReference/cbc:DocumentTypeCode`
 
