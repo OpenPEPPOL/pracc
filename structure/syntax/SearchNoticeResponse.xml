@@ -13,6 +13,16 @@
         <Description>The Search Notice Response contains a package with the information on zero or more notices. Both
             the metadata of the notices are included and the full text of the notices in xml.
         </Description>
+        <Reference type="RULE">PEPPOL-T012-R001</Reference>
+        <Reference type="RULE">PEPPOL-T012-R002</Reference>
+        <Reference type="RULE">PEPPOL-T012-R003</Reference>
+        <Reference type="RULE">PEPPOL-T012-R004</Reference>
+        <Reference type="RULE">PEPPOL-T012-R005</Reference>
+        <Reference type="RULE">PEPPOL-T012-R006</Reference>
+        <Reference type="RULE">PEPPOL-T012-R007</Reference>
+        <Reference type="RULE">PEPPOL-T012-R008</Reference>
+        <Reference type="RULE">PEPPOL-T012-R023</Reference>
+        <Reference type="RULE">PEPPOL-T012-R024</Reference>
         <Attribute usage="OPTIONAL">
             <Term>totalResultCount</Term>
             <Name>Total Result Count</Name>
@@ -50,10 +60,12 @@
                 <Term>rim:SlotValue</Term>
                 <Attribute>
                     <Term>xsi:type</Term>
+                    <Reference type="RULE">PEPPOL-T012-R009</Reference>
                     <Value type="FIXED">rim:StringValueType</Value>
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T012-R010</Reference>
                     <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:t012:1.0</Value>
                 </Element>
             </Element>
@@ -69,10 +81,12 @@
                 <Term>rim:SlotValue</Term>
                 <Attribute>
                     <Term>xsi:type</Term>
+                    <Reference type="RULE">PEPPOL-T012-R009</Reference>
                     <Value type="FIXED">rim:StringValueType</Value>
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T012-R011</Reference>
                     <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p006:1.0</Value>
                 </Element>
             </Element>
@@ -85,6 +99,7 @@
             </Description>
             <Attribute>
                 <Term>name</Term>
+                <Reference type="RULE">PEPPOL-T012-R012</Reference>
                 <Value type="FIXED">IssueDateTime</Value>
             </Attribute>
             <Element>
@@ -96,6 +111,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Description>The issue date and time of the response</Description>
+                    <Reference type="RULE">PEPPOL-T012-R013</Reference>
                     <DataType>rim:DateTimeValueType</DataType>
                 </Element>
             </Element>
@@ -117,12 +133,14 @@
             </Attribute>
             <Element>
                 <Term>rim:SlotVlaue</Term>
+                <Reference type="RULE">PEPPOL-T012-R009</Reference>
                 <Attribute>
                     <Term>xsi:type</Term>
                     <Value type="FIXED">rim:StringValueType</Value>
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>
             </Element>
@@ -146,10 +164,12 @@
                 <Term>rim:SlotVlaue</Term>
                 <Attribute>
                     <Term>xsi:type</Term>
+                    <Reference type="RULE">PEPPOL-T012-R009</Reference>
                     <Value type="FIXED">rim:StringValueType</Value>
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>
             </Element>
@@ -160,6 +180,11 @@
             <Description>The Registry Object List returns the requested Information. It identifies the notice instances
                 that were affected by the Search Notices Request.
             </Description>
+            <Reference type="RULE">PEPPOL-T012-R015</Reference>
+            <Reference type="RULE">PEPPOL-T012-R016</Reference>
+            <Reference type="RULE">PEPPOL-T012-R017</Reference>
+            <Reference type="RULE">PEPPOL-T012-R018</Reference>
+            <Reference type="RULE">PEPPOL-T012-R019</Reference>
             <Element cardinality="0..n">
                 <Term>rim:RegistryObject</Term>
                 <Name>Registry Object</Name>
@@ -199,12 +224,14 @@
                     <Attribute>
                         <Term>type</Term>
                         <Description>The list has to be defined! TODO</Description>
+                        <Reference type="RULE">PEPPOL-T012-R021</Reference>
                         <Value type="FIXED">http://doc.peppol.eu/code-lists/document-type</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
                         <Attribute>
                             <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T012-R009</Reference>
                             <Value type="FIXED">rim:StringValueType</Value>
                         </Attribute>
                         <Element>
@@ -238,10 +265,12 @@
                         <Term>rim:SlotValue</Term>
                         <Attribute>
                             <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T012-R020</Reference>
                             <Value type="FIXED">rim:StringValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
+                            <Reference type="RULE">PEPPOL-T012-R014</Reference>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -252,6 +281,7 @@
                     <Description>The Repository Item Reference specifies a reference to the XML notice that is included
                         to the local ASiC-E container (Associated Signature Container Extended) repository.
                     </Description>
+                    <Reference type="RULE">PEPPOL-T012-R022</Reference>
                     <Attribute>
                         <Term>xlink</Term>
                         <Name>List Identifier</Name>
