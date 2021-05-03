@@ -81,7 +81,6 @@
         | query:QueryRequest/query:Query/rim:Slot[@name='SubmissionLanguage']
         | query:QueryRequest/query:Query/rim:Slot[@name='ReservedParticipation']
         | query:QueryRequest/query:Query/rim:Slot[@name='AwardCriterionType']
-        | query:QueryRequest/query:Query/rim:Slot[@name='AwardCriterionType']
         | query:QueryRequest/query:Query/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='OrganizationCountrySubdivision']
         | query:QueryRequest/query:Query/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='CountryCode']
         | query:QueryRequest/query:Query/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='LegalType']
