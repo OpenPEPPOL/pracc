@@ -223,6 +223,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/legalBasis.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/procedureType.xml</Path>
     </Resource>
     <Resource>
