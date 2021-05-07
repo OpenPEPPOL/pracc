@@ -1,11 +1,18 @@
 
 = Implementation guidelines
 
-{name-profile} is based on work done by {link-cenbii}, and business rules and code lists used are inherited from the follwing {link-cenbii} documents: +
+{name-profile} is based on work done by {link-bii3}, and business rules and code lists used are inherited from the following {link-bii3} and {link-ubl-22} documents:
 
-* UBL Syntax Implementation Guideline for Trdm090 Tender (CWA 17027-218)
-* UBL Syntax Implementation Guideline for Trdm045 Tender Reception Notification (CWA 17027-205)
-* Profile BII54  Tendering (CWA 17027-119)
+urn:oasis:names:specification:ubl:schema:xsd:Tender-2
+urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2
+
+The syntax mapping for {name-profile} has been tested and revised during the {link-esens} pilot and is based on transaction description for Submit Tender (Trdm090) and  Tender Reception Notification (Trdm045) done by {link-bii3}. Requirements, business rules and code lists used are inherited from the following documents:
+
+* {link-profile}
+* {sig-tender}
+* {sig-tender-receipt}
+* {ubl-tender}
+* {ubl-tender-receipt}
 
 {link-peppol} {name-profile} business process includes 2 transactions:
 

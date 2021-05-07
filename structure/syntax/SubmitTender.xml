@@ -13,8 +13,8 @@
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
 			<Name>UBL Verison identifier</Name>
-			<Reference type="RULE">eSENS-T005-R001</Reference>
-			<Reference type="RULE">eSENS-T005-R021</Reference>
+			<Reference type="RULE">PEPPOL-T005-R001</Reference>
+			<Reference type="RULE">PEPPOL-T005-R021</Reference>
 			<DataType>Identifier</DataType>
 			<Value type="FIXED">2.2</Value>
 		</Element>
@@ -23,7 +23,7 @@
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
 			<Reference type="RULE">BII3-T90-R001</Reference>
-			<Reference type="RULE">eSENS-T005-R002</Reference>
+			<Reference type="RULE">PEPPOL-T005-R002</Reference>
 			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0</Value>
 		</Element>
@@ -32,7 +32,7 @@
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
 			<Reference type="RULE">BII3-T90-R002</Reference>
-			<Reference type="RULE">eSENS-T005-R003</Reference>
+			<Reference type="RULE">PEPPOL-T005-R003</Reference>
 			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:fdc:peppol.eu:2017:pracc:p003:01:1.0</Value>
 		</Element>
@@ -41,22 +41,20 @@
 			<Name>Tender identifier</Name>
 			<Description>Identifier of the tender document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
 			<Reference type="RULE">BII3-T90-R008</Reference>
-			<Reference type="RULE">eSENS-T005-R006</Reference>
+			<Reference type="RULE">PEPPOL-T005-R006</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme URI</Name>
-				<Reference type="RULE">eSENS-T005-R004</Reference>
-				<Reference type="RULE">eSENS-T005-R005</Reference>
+				<Reference type="RULE">PEPPOL-T005-R004</Reference>
+				<Reference type="RULE">PEPPOL-T005-R005</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
 			<DataType>Identifier</DataType>
-
 		</Element>
 		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
-			<Reference type="RULE">BII3-T90-R009</Reference>
 			<DataType>Identifier</DataType>
 		</Element>
 		<Element>
@@ -72,7 +70,7 @@
 			<Description>The time when the tender is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
 			<Reference type="RULE">BII3-T90-R006</Reference>
 			<Reference type="RULE">BII3-T90-R007</Reference>
-			<Reference type="RULE">eSENS-T005-R007</Reference>
+			<Reference type="RULE">PEPPOL-T005-R007</Reference>
 			<DataType>Time</DataType>
 		</Element>
 		<Element cardinality="1..n">
@@ -86,8 +84,8 @@
 				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
 				<Reference type="RULE">BII3-T90-R010</Reference>
 				<Reference type="RULE">BII3-T90-R013</Reference>
-				<Reference type="RULE">eSENS-T005-R013</Reference>
-				<Reference type="RULE">eSENS-T005-R012</Reference>
+				<Reference type="RULE">PEPPOL-T005-R013</Reference>
+				<Reference type="RULE">PEPPOL-T005-R012</Reference>
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
@@ -108,11 +106,11 @@
 				<Term>cbc:LocaleCode</Term>
 				<Name>Tender language</Name>
 				<Description>The language used to write the tender.</Description>
-				<Reference type="RULE">eSENS-T005-R016</Reference>
+				<Reference type="RULE">PEPPOL-T005-R016</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier for tender language</Name>
-					<Reference type="RULE">eSENS-T005-R015</Reference>
+					<Reference type="RULE">PEPPOL-T005-R015</Reference>
 					<Value type="FIXED">ISO639-1</Value>
 				</Attribute>
 				<DataType>Code</DataType>
@@ -150,7 +148,7 @@
 						<Name>Document digest</Name>
 						<Description>Digest of the document, must be a SHA-256 value</Description>
 						<Reference type="RULE">BII3-T90-R017</Reference>
-						<Reference type="RULE">eSENS-T005-R017</Reference>
+						<Reference type="RULE">PEPPOL-T005-R017</Reference>
 						<DataType>Text</DataType>
 					</Element>
 					<Element>
@@ -158,7 +156,7 @@
 						<Name>Document digest method code</Name>
 						<Description>Code that indicates the algorithm used to calculate the hash.</Description>
 						<Reference type="RULE">BII3-T90-R018</Reference>
-						<Reference type="RULE">eSENS-T005-R018</Reference>
+						<Reference type="RULE">PEPPOL-T005-R018</Reference>
 						<DataType>Code</DataType>
 						<Value type="FIXED">http://www.w3.org/2001/04/xmlenc#sha256</Value>
 					</Element>
@@ -174,7 +172,7 @@
 						<Name>Document name</Name>
 						<Description>The file name of the document.</Description>
 						<Reference type="RULE">BII3-T90-R016</Reference>
-						<Reference type="RULE">eSENS-T005-R014</Reference>
+						<Reference type="RULE">PEPPOL-T005-R014</Reference>
 						<DataType>Text</DataType>
 					</Element>
 				</Element>
@@ -188,19 +186,19 @@
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator.</Description>
-				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Reference type="RULE">PEPPOL-T005-R020</Reference>
 				<Attribute>
 					<Term>schemeID</Term>
 					<Name>Scheme identifier for electronic address identifier</Name>
-					<Reference type="RULE">eSENS-T005-R010</Reference>
-					<Reference type="RULE">eSENS-T005-R011</Reference>
+					<Reference type="RULE">PEPPOL-T005-R010</Reference>
+					<Reference type="RULE">PEPPOL-T005-R011</Reference>
 				</Attribute>
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
 				<Name>Party identification</Name>
-				<Reference type="RULE">eSENS-T005-R020</Reference>
+				<Reference type="RULE">PEPPOL-T005-R020</Reference>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
@@ -209,8 +207,8 @@
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier for party identifier</Name>
-						<Reference type="RULE">eSENS-T005-R008</Reference>
-						<Reference type="RULE">eSENS-T005-R009</Reference>
+						<Reference type="RULE">PEPPOL-T005-R008</Reference>
+						<Reference type="RULE">PEPPOL-T005-R009</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
@@ -350,19 +348,19 @@
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
 					<Description>Electronic address of the contracting body.</Description>
-					<Reference type="RULE">eSENS-T005-R019</Reference>
+					<Reference type="RULE">PEPPOL-T005-R019</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier for electronic address identifier</Name>
-						<Reference type="RULE">eSENS-T005-R010</Reference>
-						<Reference type="RULE">eSENS-T005-R011</Reference>
+						<Reference type="RULE">PEPPOL-T005-R010</Reference>
+						<Reference type="RULE">PEPPOL-T005-R011</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
 					<Name>Party identification</Name>
-					<Reference type="RULE">eSENS-T005-R019</Reference>
+					<Reference type="RULE">PEPPOL-T005-R019</Reference>
 					<Element>
 						<Term>cbc:ID</Term>
 						<Name>Contracting body identifier</Name>
@@ -371,8 +369,8 @@
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Scheme identifier for party identifier</Name>
-							<Reference type="RULE">eSENS-T005-R008</Reference>
-							<Reference type="RULE">eSENS-T005-R009</Reference>
+							<Reference type="RULE">PEPPOL-T005-R008</Reference>
+							<Reference type="RULE">PEPPOL-T005-R009</Reference>
 						</Attribute>
 						<DataType>Identifier</DataType>
 					</Element>

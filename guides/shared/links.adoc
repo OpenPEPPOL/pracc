@@ -9,21 +9,22 @@
 :link-cenbii: http://www.cenbii.eu[CEN BII]
 
 // eSENS
-:link-esens: https://www.esens.eu/[e-SENS]
+:link-esens: http://wiki.ds.unipi.gr/display/ESENSPILOTS/D5.6-1+-+5.1.1+-+eTendering[e-SENS]
 :link-e-SENS-SBDH: http://wiki.ds.unipi.gr/display/ESENSPILOTS/5.1.1+-+Pilot+Specifications+-+eDelivery+guide+for+eTendering#id-5.1.1-PilotSpecifications-eDeliveryguideforeTendering-5.1.1-PilotSpecification-SBDH
 
 :link-un-ece-1001: http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001]
 
 // UBL
 :link-ubl: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
+:link-ubl-22: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2]
 
 :link-espd: https://en.wikipedia.org/wiki/European_Single_Procurement_Document
 :link-art43-50: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0025&from=EN
 :link-eu-directive: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=En
 :link-bpmn: https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
 
-:link-eDelivery: link:/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.2.docx[BIS eDelivery guide for pre-award]
-:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.docx[BIS eDocuments guide for pre-award]
+:link-eDelivery: https://docs.peppol.eu/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.2.pdf[BIS eDelivery guide for pre-award]
+:link-eDocument: https://docs.peppol.eu/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.pdf[BIS eDocuments guide for pre-award]
 
 
 //RegRep

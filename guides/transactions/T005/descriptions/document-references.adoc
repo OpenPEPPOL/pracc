@@ -45,13 +45,13 @@ include::../{xml-doc-file}[tags=DocumentTypeCode]
 
 == ESPD response
 
-ESPD response can be given as either structured or unstructured information, based on what is asked for in the call for tenders.
+ESPD response can be given as either structured or unstructured information, based on what is asked for in the call for tenders. The transaction T005 does not prescribe a specific ESPD version to be used. The use of other ESPD versions than those used in T004 may result into incompatibilities. Thus, it should be described by the Contracting authority in the Tendering Documents which ESPD version is used and how it can be returned by Economic Operators.
 
 [source,xml]
 .Example provided ESPD response (structured)
 ----
 include::../{xml-doc-file}[tags=Provided_ESPD]
 ----
-<1>  Codevalue used for ESPD response
+<1>  Codevalue used for ESPD response must be 916 (Related document)
 <2>  DocumentDescription should be "ESPD Response"
 <3>  Name of the structured ESPD file

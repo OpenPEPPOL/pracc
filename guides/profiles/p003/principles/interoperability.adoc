@@ -22,5 +22,5 @@ It applies the Framework as follows:
 
 . Technical interoperability
 * Technical Interaction (Process and semantic implementation):
-** Binding to {link-e-SENS-SBDH}[e-SENS-SBDH]
-** {link-e-SENS-SBDH}[ASiC-E container with CAdES signature]
+** Use of transport specifications are described in the {link-eDelivery}
+** Use of cryptographic specifications are described in the {link-eDocument}

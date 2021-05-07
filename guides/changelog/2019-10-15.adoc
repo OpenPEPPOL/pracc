@@ -2,7 +2,7 @@
 
  * Version 1.0 - RC2 is tagged as version 1.0.0
 
-= Changelog for version 1.0 - RC2
+== Changelog for version 1.0 - RC2
 
  * Added the Pre-Award eDelivery Guide and Pre-Award eDocuments Guide
  * Created the pre-award schematron Package and made it available for download

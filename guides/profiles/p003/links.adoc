@@ -1,1 +1,8 @@
 include::../../shared/links.adoc[]
+:link-profile: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62036&cs=1B57C1FFDC64EB8350D7D5CBB71AE70E6[Profile BII54 Tendering (CWA 17027-119)]
+:sig-tender: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62064&cs=1C94C9BF0E78149739339246CD144CD94[UBL Syntax Implementation Guideline for Trdm090 Tender (CWA 17027-218:2016)]
+:sig-tender-receipt: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62059&cs=113E804F94A591BBB67C46406DED32414[UBL Syntax Implementation Guideline for Trdm045 Tender Reception Notification (CWA 17027-205:2016)]
+:ubl-tender: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-TENDER-SCHEMA[UBL Tender Schema]
+:ubl-tender-receipt: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-TENDER-RECEIPT-SCHEMA[UBL Tender Receipt Schema]
+
+
