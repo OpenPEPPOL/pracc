@@ -238,11 +238,10 @@
         </rim:Slot>
         <!-- end::procedure-identifier[] -->
         <!-- tag::procedure-legal-basis[] -->
-        <rim:Slot name="ProcedureLegalBasis"> <!-- optional -->
+        <rim:Slot name="ProcedureLegalBasis" type="legalBasis"> <!-- optional -->
             <rim:SlotValue xsi:type="rim:CollectionValueType">
                 <rim:Element xsi:type="rim:StringValueType">
-                    <!-- 2014/24 - Example from EForms Schema Usage-->
-                    <rim:Value>32014L0024</rim:Value> <!--.-->
+                    <rim:Value>32014L0023</rim:Value> <!--.-->
                 </rim:Element>
             </rim:SlotValue>
         </rim:Slot>

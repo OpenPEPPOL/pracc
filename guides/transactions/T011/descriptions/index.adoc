@@ -237,7 +237,7 @@ This slot is optional and can only be included once.
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=procedure-legal-basis]
 ....
-<.> Insert the id of the legal base from which you draw the procedure.
+<.> The type of the slotValue is a CollectionValueType, so you can enter more than one element. The listID "legalBasis" has to be filled into the type-attribute of the slot. The value of the slot is chosen from the list.  Insert the id of the legal base from which you draw the procedure.
 
 This slot is optional and can only be included once.
 
