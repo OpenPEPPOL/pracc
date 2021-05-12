@@ -55,13 +55,21 @@
                 lid="2C621D47-112D-42D4-B6F8-57392464C3E7"
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
-            <!-- tag::pub-date-time[] -->
-            <rim:Slot name="PreferredPublicationDate"> <!--.-->
-                <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
-                    <rim:Value>2020-05-14T19:20:30+01:00</rim:Value>
+            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->
+            <!-- tag::document-type-code[] -->
+            <rim:Slot name="DocumentTypeCode" type="http://docs.peppol.eu/document-type-code"> <!--.-->
+                <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:Value>CN</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
-            <!-- end:::pub-date-time[] -->
+            <!-- end::document-type-code[] -->
+            <!-- tag::notice-version[] -->
+            <rim:Slot name="NoticeVersion"> <!--.-->
+                <rim:SlotValue xsi:type="rim:IntegerValueType">
+                    <rim:Value>1.0</rim:Value> <!--.-->
+                </rim:SlotValue>
+            </rim:Slot>
+            <!-- end::notice-version[] -->
             <!-- tag::notice-language[] -->
             <rim:Slot name="NoticeLanguage" type="http://publications.europa.eu/resource/authority/language"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
@@ -69,6 +77,13 @@
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::notice-language[] -->
+            <!-- tag::pub-date-time[] -->
+            <rim:Slot name="PreferredPublicationDate"> <!--.-->
+                <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
+                    <rim:Value>2020-05-14T19:20:30+01:00</rim:Value>
+                </rim:SlotValue>
+            </rim:Slot>
+            <!-- end:::pub-date-time[] -->
             <!-- tag::procedure-legal-basis[] -->
             <rim:Slot name="ProcedureLegalBasis">
                 <rim:SlotValue xsi:type="rim:CollectionValueType">
@@ -90,34 +105,43 @@
                         <rim:Value>04011000-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
-                <rim:Slot name="ParticipantIdentifier"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType">
-                        <rim:Value></rim:Value>
-                    </rim:SlotValue>
-                </rim:Slot>
                 <rim:Slot name="CountryCode" type="http://publications.europa.eu/resource/authority/country"> <!--.-->
                     <rim:SlotValue xsi:type="rim:CollectionValueType">
                         <rim:Element xsi:type="rim:StringValueType">
                             <rim:Value>DNK</rim:Value>
                         </rim:Element>
-                        <rim:Element xsi:type="rim:StringValueType">
-                            <rim:Value>IRL</rim:Value>
-                        </rim:Element>
+                    </rim:SlotValue>
+                </rim:Slot>
+                <rim:Slot name="BuyerPartyIdentification"
+                          type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:StringValueType">
+                        <rim:Value>0013</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
+                <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:StringValueType">
+                        <rim:Value>9930:DE89769595</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
+            </rim:Slot>
+            <rim:Slot name="ChangeNotice">
+                <rim:Slot name="ChangeNoticeVersionIdentifier">
+                    <rim:SlotValue xsi:type="rim:IntegerValueType">
+                        <rim:Value>0.9</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
+                <rim:Slot name="ProcurementDocumentsChangeDate">
+                    <rim:SlotValue xsi:type="rim:DateTimeValueType">
+                        <rim:Value>2019-05-14T19:20:30+01:00</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
+                <rim:Slot name="ProcurementDocumentsChangeIndicator">
+                    <rim:SlotValue xsi:type="rim:BooleanValueType">
+                        <rim:Value>true</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
             </rim:Slot>
             <!-- end::information-about-buyer[]-->
-            <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
-                <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>9930:DE89769595</rim:Value>
-                </rim:SlotValue>
-            </rim:Slot>
-            <rim:Slot name="DocumentTypeCode" type="http://docs.peppol.eu/document-type-code"> <!--.-->
-                <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>CN</rim:Value>
-                </rim:SlotValue>
-            </rim:Slot>
-            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->
         </rim:RegistryObject>
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
