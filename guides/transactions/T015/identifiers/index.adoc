@@ -1,0 +1,18 @@
+
+include::peppol.adoc[]
+
+[cols="2,2,3,5", options="header"]
+.Customization ID to be used for this transaction.
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+| `cbc:CustomizationID`
+// TODO Transaction Identifiers
+| T015
+| Publish Notice
+| The provider sends the search notice response to the requester.
+| urn:www.cenbii.eu:transaction:biitrdm100:ver3.0:extended: +
+urn:fdc:peppol.eu:2020:pracc:t012:ver1.0
+|===

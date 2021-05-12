@@ -1,0 +1,13 @@
+
+= Non-functional requirements
+
+For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as documented in {link-bii3} {name-profile-org}. Implementers must comply to these requirements.
+
+//TODO Non functional requirements
+
+[cols="2,10", options="header"]
+|===
+| Req. ID
+| Requirement statement
+
+|===

@@ -1,0 +1,7 @@
+include::links.adoc[]
+
+include::../shared/settings.adoc[]
+
+//TODO Business Profile Name in Settings
+:name-profile-org: "Profile BII45 — Search Notice" (CWA 17026-104:2016)
+:name-profile: Profile P008 - "Publish Notice"
