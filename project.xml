@@ -24,7 +24,8 @@
     <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - N/A</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
-
+    <Documentation path="profiles/p008/index.html">P008 - Publish Notice - N/A</Documentation>
+    <Documentation path="transactions/T015/index.html">T015 - Publish Notice</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
