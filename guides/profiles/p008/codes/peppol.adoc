@@ -1,0 +1,28 @@
+
+= PEPPOL Identifiers
+
+PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment.
+
+== Profile ID
+
+[IMPORTANT]
+All transactions within this profile uses the same profile identifier.
+
+[cols="2*2,2*4", options="header"]
+.The table below shows values to be used for the Specification Identification
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+| `rim:Slot name="SpecificationIdentification`
+
+| T015
+| Publish Notice
+| The requester sends a Publish Notice Request to the Data Provider.
+.2+.^| urn:fdc:peppol.eu:prac:trns:t015:1.0
+
+|===
+
+[NOTE]
+For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.
