@@ -52,6 +52,3 @@ At the time of publication of a notice, the publication body sends a confirmatio
 include::implementation-guidelines.adoc[]
 
 :leveloffset: -1
-
-
-
