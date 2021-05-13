@@ -100,15 +100,44 @@ include::../files/ExamplePublishNotice.xml[tags=notice-language]
 
 === Procedure Legal Basis
 
+Legal Basis of the procedure to which the notice refers. Optional use in this transaction.
+
 [source,xml,indent=0]
 ....
 include::../files/ExamplePublishNotice.xml[tags=procedure-legal-basis]
 ....
 <.> Slot for the procedure legal basis, the type is always "_ProcedureLegalBasis_"
-<.> SlotValue type has to be CollectionValueType and each elements type StringValueType
+<.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
 
 === Buyer Information
 
+The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached publish notice.
+
+=== Change Notice
+
+The change notice includes information in case of a change in the publishing notice. If the notice to be published is not new but rather a change in a previous existing notice these elements have to be included.
+
+==== Change Notice Version Identifier
+
+The change notice version identifier references the change of this notice and keeps track of all the changes made to the published notice.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=change-notice-version-identifier]
+....
+<.> Slot for the change notice version identifier
+<.> SlotValue type has to be IntegerValueType
+
+==== Procurement Documents Change Indicator
+
+Boolean value which makes it easier to disclose whether the referenced procurement documents have changed. If the change notice in general is used in the transaction, the indicator should state true.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=procurement-documents-change-indicator]
+....
+<.> Slot for the procurement documents change indicator
+<.> SlotValue type has to be BooleanValueType. To act according to the change notice the value should be true.
 
 == Date and time
 
@@ -129,14 +158,16 @@ Issue time and received time are both xs:time data type, and the time is specifi
 
 The preferred publication date and time are the times when the notice should be published while the issue date and time refer to the actual issuance of the notice.
 
+The third date, the procurement documents change date is only used in the change notice. It refers to the date when the previous documents where changed last time.
+
 NOTE: The issue date, and the preferred publication date must specify the time zone.
 
 [source,xml,indent=0]
-.Example of Issue date/time and preferred publication date/time
+.Example of Issue date/time, the preferred publication date/time and the procurement documents change date/time
 ....
 include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
 ....
-<.> Slot for date and time of issuing of the publish notice
+<.> Slot for date and time of issuing of the published notice
 <.> SlotValue type has to be DateTimeValue
 <.> Value tag were the issue date time has to be put, including the time zone
 
@@ -145,5 +176,12 @@ include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
 include::../files/ExamplePublishNotice.xml[tags=pub-date-time]
 ....
 <.> Optional slot for date and time of the preferred date of publishment for the publish notice
+<.> SlotValue type has to be DateTimeValue
+<.> Value tag were the issue date time has to be put, including the time zone
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=procurement-documents-change-date]
+....
+<.> Optional slot for date and time of the date of the change of the procurement documents
 <.> SlotValue type has to be DateTimeValue
 <.> Value tag were the issue date time has to be put, including the time zone
