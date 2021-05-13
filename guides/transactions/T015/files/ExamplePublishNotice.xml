@@ -96,17 +96,22 @@
             </rim:Slot>
             <!-- end::procedure-legal-basis[] -->
             <!-- tag::information-about-buyer[] -->
-            <rim:Slot name="BuyerInformation"> <!--.-->
+            <rim:Slot name="BuyerInformation">
+                <!-- tag::name[] -->
                 <rim:Slot name="Name"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>Company Y SE</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::name[]-->
+                <!-- tag::organisation-number[] -->
                 <rim:Slot name="OrganisationNumber"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>04011000-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::organisation-number[] -->
+                <!-- tag::country-code[] -->
                 <rim:Slot name="CountryCode" type="http://publications.europa.eu/resource/authority/country"> <!--.-->
                     <rim:SlotValue xsi:type="rim:CollectionValueType">
                         <rim:Element xsi:type="rim:StringValueType">
@@ -114,36 +119,49 @@
                         </rim:Element>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::country-code[] -->
+                <!-- tag::buyer-party-identification[] -->
                 <rim:Slot name="BuyerPartyIdentification"
                           type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>0013</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::buyer-party-identification[] -->
+                <!-- tag::buyer-electronic-address[] -->
                 <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>9930:DE89769595</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::buyer-electronic-address[] -->
             </rim:Slot>
+            <!-- end::information-about-buyer[] -->
+            <!-- tag::change-notice[] -->
             <rim:Slot name="ChangeNotice">
-                <rim:Slot name="ChangeNoticeVersionIdentifier">
-                    <rim:SlotValue xsi:type="rim:IntegerValueType">
+                <!-- tag::change-notice-version-identifier[] -->
+                <rim:Slot name="ChangeNoticeVersionIdentifier"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:IntegerValueType"> <!--.-->
                         <rim:Value>0.9</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
-                <rim:Slot name="ProcurementDocumentsChangeDate">
-                    <rim:SlotValue xsi:type="rim:DateTimeValueType">
-                        <rim:Value>2019-05-14T19:20:30+01:00</rim:Value>
+                <!-- end::change-notice-version-identifier[] -->
+                <!-- tag::procurement-documents-change-date[] -->
+                <rim:Slot name="ProcurementDocumentsChangeDate"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
+                        <rim:Value>2019-05-14T19:20:30+01:00</rim:Value> <!--.-->
                     </rim:SlotValue>
                 </rim:Slot>
-                <rim:Slot name="ProcurementDocumentsChangeIndicator">
-                    <rim:SlotValue xsi:type="rim:BooleanValueType">
+                <!-- end::procurement-documents-change-date[] -->
+                <!-- tag::procurement-documents-change-indicator[] -->
+                <rim:Slot name="ProcurementDocumentsChangeIndicator"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:BooleanValueType"> <!--.-->
                         <rim:Value>true</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
+                <!-- end::procurement-documents-change-indicator[] -->
             </rim:Slot>
-            <!-- end::information-about-buyer[]-->
+            <!-- end::change-notice[] -->
         </rim:RegistryObject>
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
