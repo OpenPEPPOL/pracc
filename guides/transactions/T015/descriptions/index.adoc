@@ -111,11 +111,65 @@ include::../files/ExamplePublishNotice.xml[tags=procedure-legal-basis]
 
 === Buyer Information
 
-The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached publish notice.
+The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached published notice. The buyer information are optional in the transaction.
+
+==== Name
+
+Name of the organisation or company under which the buyer operates.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=name]
+....
+<.> Slot for the name of the buyer
+<.> SlotValue type has to be StringValueType
+
+==== Organisation Number
+
+Identifier of the organisation, if known or given.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=organisation-number]
+....
+<.> Slot for the organisation number
+<.> SlotValue type has to be StringValueType
+
+==== Country Code
+
+NUTS Code for the region in which the buyer resides. For optional use in this transaction.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=country-code]
+....
+<.> Slot for the country code, the type is always "_http://publications.europa.eu/resource/authority/country_"
+<.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
+
+==== Buyer Party Identification
+
+The buyer party identification is an additional identifier for the buying organization. For optional use in the transaction.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=buyer-party-identification]
+....
+<.> Slot for the buyer party identification, the type is always "_https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/_"
+<.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
+
+==== BuyerElectronicAddress
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=buyer-electronic-address]
+....
+<.> Slot for the sender electronic address, including the schemeID in the type
+<.> SlotValue type has to be StringValueType
+<.> Value tag were the EndpointID has to be put
 
 === Change Notice
 
-The change notice includes information in case of a change in the publishing notice. If the notice to be published is not new but rather a change in a previous existing notice these elements have to be included.
+The change notice includes information in case of a change in the publishing notice. If the notice to be published is not new but rather a change in a previous existing notice these elements have to be included. The change notice is optional in the transaction.
 
 ==== Change Notice Version Identifier
 
@@ -130,7 +184,7 @@ include::../files/ExamplePublishNotice.xml[tags=change-notice-version-identifier
 
 ==== Procurement Documents Change Indicator
 
-Boolean value which makes it easier to disclose whether the referenced procurement documents have changed. If the change notice in general is used in the transaction, the indicator should state true.
+Boolean value which makes it easier to disclose whether the referenced procurement documents have changed. If the change notice in general is used in the transaction, the indicator should state true. The indicator is of optional use in this transaction.
 
 [source,xml,indent=0]
 ....
