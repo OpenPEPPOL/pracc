@@ -99,21 +99,21 @@
             <rim:Slot name="BuyerInformation">
                 <!-- tag::name[] -->
                 <rim:Slot name="Name"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>Company Y SE</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
-                <!-- end::name[]-->
+                <!-- end::name[] -->
                 <!-- tag::organisation-number[] -->
                 <rim:Slot name="OrganisationNumber"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>04011000-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::organisation-number[] -->
                 <!-- tag::country-code[] -->
                 <rim:Slot name="CountryCode" type="http://publications.europa.eu/resource/authority/country"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:CollectionValueType">
+                    <rim:SlotValue xsi:type="rim:CollectionValueType"> <!--.-->
                         <rim:Element xsi:type="rim:StringValueType">
                             <rim:Value>DNK</rim:Value>
                         </rim:Element>
@@ -123,15 +123,15 @@
                 <!-- tag::buyer-party-identification[] -->
                 <rim:Slot name="BuyerPartyIdentification"
                           type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>0013</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::buyer-party-identification[] -->
                 <!-- tag::buyer-electronic-address[] -->
                 <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType">
-                        <rim:Value>9930:DE89769595</rim:Value>
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
+                        <rim:Value>9930:DE89769595</rim:Value> <!--.-->
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::buyer-electronic-address[] -->
