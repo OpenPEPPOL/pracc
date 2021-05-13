@@ -31,20 +31,20 @@
     <!-- tag::issue-date-time[] -->
     <rim:Slot name="IssueDateTime"> <!--.-->
         <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
-            <rim:Value>2020-02-14T19:20:30+01:00</rim:Value>
+            <rim:Value>2020-02-14T19:20:30+01:00</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
-    <!-- end:::issue-date-time[] -->
+    <!-- end::issue-date-time[] -->
     <!-- tag::sender-electronic-address[] -->
     <rim:Slot name="SenderElectronicAddress" type="DE:VAT"> <!--.-->
-        <rim:SlotValue xsi:type="rim:StringValueType">
+        <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
             <rim:Value>9930:DE122268496</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::sender-electronic-address[] -->
     <!-- tag::receiver-electronic-address[] -->
     <rim:Slot name="ReceiverElectronicAddress" type="PT:VAT"> <!--.-->
-        <rim:SlotValue xsi:type="rim:StringValueType">
+        <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
             <rim:Value>9946:500820007</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
@@ -65,27 +65,29 @@
             <!-- end::document-type-code[] -->
             <!-- tag::notice-version[] -->
             <rim:Slot name="NoticeVersion"> <!--.-->
-                <rim:SlotValue xsi:type="rim:IntegerValueType">
-                    <rim:Value>1.0</rim:Value> <!--.-->
+                <rim:SlotValue xsi:type="rim:IntegerValueType"> <!--.-->
+                    <rim:Value>1.0</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::notice-version[] -->
             <!-- tag::notice-language[] -->
             <rim:Slot name="NoticeLanguage" type="http://publications.europa.eu/resource/authority/language"> <!--.-->
-                <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>GER</rim:Value> <!--.-->
+                <rim:SlotValue xsi:type="rim:CollectionValueType"> <!--.-->
+                    <rim:Element xsi:type="rim:StringValueType">
+                        <rim:Value>GER</rim:Value>
+                    </rim:Element>
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::notice-language[] -->
             <!-- tag::pub-date-time[] -->
             <rim:Slot name="PreferredPublicationDate"> <!--.-->
                 <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
-                    <rim:Value>2020-05-14T19:20:30+01:00</rim:Value>
+                    <rim:Value>2020-05-14T19:20:30+01:00</rim:Value> <!--.-->
                 </rim:SlotValue>
             </rim:Slot>
-            <!-- end:::pub-date-time[] -->
+            <!-- end::pub-date-time[] -->
             <!-- tag::procedure-legal-basis[] -->
-            <rim:Slot name="ProcedureLegalBasis">
+            <rim:Slot name="ProcedureLegalBasis" type="ProcedureLegalBasis"> <!--.-->
                 <rim:SlotValue xsi:type="rim:CollectionValueType">
                     <rim:Element xsi:type="rim:StringValueType">
                         <rim:Value>32014L0024</rim:Value> <!--.-->

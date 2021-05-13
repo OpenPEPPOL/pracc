@@ -3,4 +3,147 @@
 
 Limited support for this, see {name-profile-org}.
 
-== Identifiers
+== Process control
+
+=== Specification identification
+
+Identifier for the set of rules and transactions for the Publish Notice.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=specification-identification]
+....
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t015:1.0_".
+
+
+=== Business Process Type Identifier
+
+Identifier for the business process context of the Publish Notice.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=business-process-type-identifier]
+....
+<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p008:1.0_".
+
+=== Sender Party
+
+The party sending the notice.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=sender-electronic-address]
+....
+<.> Slot for the sender electronic address, including the schemeID in the type
+<.> SlotValue type has to be StringValueType
+<.> Value tag were the EndpointID has to be put
+
+=== Receiver Party
+
+The party receiving of the notice.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=receiver-electronic-address]
+....
+<.> Slot for the sender electronic address, including the schemeID in the type
+<.> SlotValue type has to be StringValueType
+<.> Value tag were the EndpointID has to be put
+
+
+== Registry Object (List)
+
+This list contains all the notices, which will be published at once during this transaction. Each notice is represented as one registry object. The Registry Object contains the RepositoryItemRef, which is the reference to the notice itself.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!notice-language;!pub-date-time;!procedure-legal-basis]
+....
+
+<.> Beginning of the registry object list
+<.> Each registry object is an Extrinsic Object Type. The Objects are identified by the lid (logical id) referencing the notice id and the id referencing the id of the publish notice
+<.> At last in each registry object goes the reference to the notice as an eforms document.
+
+=== Document Type Code
+
+The type of business document must also be included in the document reference element. Document Type
+Code is coded according to code list document type issued by PEPPOL. For a complete list of all
+the document types, see http://docs.peppol.eu/document-type-code.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=document-type-code]
+....
+<.> The code "_CN_" for status information has to be put into the value tag. The listID as the SlotType is always "_http://docs.peppol.eu/document-type-code_".
+
+=== Notice Version
+
+Version of the notice which shall be published. If this is not the first iteration of the notice choose a higher number than one, ideally counting up from the last version which was published.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=notice-version]
+....
+<.> Slot for the notice version
+<.> SlotValue type has to be IntegerValueType, in this case 1.0 as it is the first version of the notice
+
+=== Notice Language
+
+All languages which are included in the notice, each represented as one element in the collection.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=notice-language]
+....
+<.> Slot for the notice language, the type is always "_http://publications.europa.eu/resource/authority/language_"
+<.> SlotValue type has to be CollectionValueType, so each language gets its own element in the collection. The type for the elements is always a StringValueType
+
+=== Procedure Legal Basis
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=procedure-legal-basis]
+....
+<.> Slot for the procedure legal basis, the type is always "_ProcedureLegalBasis_"
+<.> SlotValue type has to be CollectionValueType and each elements type StringValueType
+
+=== Buyer Information
+
+
+== Date and time
+
+Issue date/time, and the registered date/time must be sent.
+
+Issue date and received date are both xs:date data type, and the date is specified as "YYYY-MM-DD" where:
+
+* YYYY - four digit year
+* MM - two digit month (01 to 12)
+* DD - two digit day (0)
+
+Issue time and received time are both xs:time data type, and the time is specified as "hh:mm:ss" where:
+
+* hh - two digits of hour (00 to 23) (am/pm NOT allowed).
+* mm - two digits of minute (00 to 59)
+* ss - two digits of second (00 to 59)
+* TZD - time zone designator (Z or +hh:mm or -hh:mm)
+
+The preferred publication date and time are the times when the notice should be published while the issue date and time refer to the actual issuance of the notice.
+
+NOTE: The issue date, and the preferred publication date must specify the time zone.
+
+[source,xml,indent=0]
+.Example of Issue date/time and preferred publication date/time
+....
+include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
+....
+<.> Slot for date and time of issuing of the publish notice
+<.> SlotValue type has to be DateTimeValue
+<.> Value tag were the issue date time has to be put, including the time zone
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=pub-date-time]
+....
+<.> Optional slot for date and time of the preferred date of publishment for the publish notice
+<.> SlotValue type has to be DateTimeValue
+<.> Value tag were the issue date time has to be put, including the time zone
