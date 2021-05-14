@@ -1,7 +1,7 @@
 
 = Interoperability
 
-This {link-peppol} BIS structure is based on the link:https://ec.europa.eu/isa2/home_en[European Interoperability Framework 2.0].
+This {link-peppol} BIS structure is based on the link:https://ec.europa.eu/isa2/eif_en[European Interoperability Framework (EIF)].
 
 It applies the Framework as follows:
 
@@ -22,5 +22,5 @@ It applies the Framework as follows:
 
 . Technical interoperability
 * Technical Interaction (Process and semantic implementation):
-** Binding to {link-e-SENS-SBDH}[e-SENS-SBDH]
-** {link-e-SENS-SBDH}[ASiC-E container with CAdES signature]
+** Use of transport specifications are described in the {link-eDelivery}
+** Use of cryptographic specifications are described in the {link-eDocument}

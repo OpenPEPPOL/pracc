@@ -10,5 +10,5 @@
 | Document location
 | `cac:DocumentReference/cbc:DocumentTypeCode`
 | Source codelist
-|  http://www.unece.org/trade/untdid/d08a/tred/tred1001.htm[UN/ECE 1001 (Subset by CEN BII2)]
+|  https://unece.org/fileadmin/DAM////trade/untdid/d99a/uncl/uncl1001.htm[UNECE 1001]
 |===

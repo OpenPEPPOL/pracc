@@ -1,7 +1,7 @@
 
 = Non-functional requirements
 
-For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as mentioned on {link-bii3} {name-profile-org}. When adopting the {link-peppol} BIS implementers must comply to these requirements.
+For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as mentioned on {link-profile}. When adopting the {link-peppol} BIS implementers must comply to these requirements.
 
 [cols="2,10", options="header"]
 |===

@@ -1,5 +1,6 @@
 
 = Business process
+
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 image::processTC.png[align="center", width=800]

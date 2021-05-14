@@ -84,4 +84,9 @@
 | PIANOo
 | Transaction business and information requirements for Trdm081 and Trdm082.
 
+| 2.0
+|23-04-2021| Ansgar Mondorf
+| UKL
+| Editorial changes related to links and references.
+
 |===
