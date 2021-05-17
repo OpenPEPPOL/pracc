@@ -57,7 +57,7 @@ This list contains all the notices, which will be published at once during this 
 
 [source,xml,indent=0]
 ....
-include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!notice-language;!pub-date-time;!procedure-legal-basis]
+include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!notice-language;!pub-date-time;!procedure-legal-basis;!change-notice]
 ....
 
 <.> Beginning of the registry object list
@@ -232,6 +232,7 @@ include::../files/ExamplePublishNotice.xml[tags=pub-date-time]
 <.> Optional slot for date and time of the preferred date of publishment for the publish notice
 <.> SlotValue type has to be DateTimeValue
 <.> Value tag were the issue date time has to be put, including the time zone
+
 [source,xml,indent=0]
 ....
 include::../files/ExamplePublishNotice.xml[tags=procurement-documents-change-date]
