@@ -66,7 +66,7 @@
             <!-- tag::notice-version[] -->
             <rim:Slot name="NoticeVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:IntegerValueType"> <!--.-->
-                    <rim:Value>1.0</rim:Value>
+                    <rim:Value>1</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::notice-version[] -->
@@ -124,7 +124,7 @@
                 <rim:Slot name="BuyerPartyIdentification"
                           type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
-                        <rim:Value>0013</rim:Value>
+                        <rim:Value>9930:DE89769595</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::buyer-party-identification[] -->
@@ -142,7 +142,7 @@
                 <!-- tag::change-notice-version-identifier[] -->
                 <rim:Slot name="ChangeNoticeVersionIdentifier"> <!--.-->
                     <rim:SlotValue xsi:type="rim:IntegerValueType"> <!--.-->
-                        <rim:Value>0.9</rim:Value>
+                        <rim:Value>0</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::change-notice-version-identifier[] -->
