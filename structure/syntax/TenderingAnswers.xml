@@ -46,7 +46,7 @@
             <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p004:01:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p004:1.0</Value>
             <Reference type="RULE">PEPPOL-T008-R010</Reference>
             <Reference type="RULE">PEPPOL-T008-S010</Reference>
         </Element>

@@ -41,12 +41,12 @@
         </rule>
 
         <rule context="ubl:Enquiry/cbc:CustomizationID">
-            <assert id="PEPPOL-T007-R011" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0'">CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t007:ver1.0'</assert>
+            <assert id="PEPPOL-T007-R011" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t007:1.0'">CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t007:1.0'</assert>
             <assert id="PEPPOL-T007-S009" flag="warning" test="not(./@*)"><value-of select="$syntaxError" />CustomizationID SHOULD NOT have any attributes.</assert>
         </rule>
 
         <rule context="ubl:Enquiry/cbc:ProfileID">
-            <assert id="PEPPOL-T007-R012" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:2020:pracc:p004:01:1.0'">ProfileID value MUST be 'urn:fdc:peppol.eu:2020:pracc:p004:01:1.0'</assert>
+            <assert id="PEPPOL-T007-R012" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p004:1.0'">ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p004:1.0'</assert>
             <assert id="PEPPOL-T007-S010" flag="warning" test="not(./@*)"><value-of select="$syntaxError" />ProfileID SHOULD NOT have any attributes.</assert>
         </rule>
 
