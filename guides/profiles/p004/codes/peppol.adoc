@@ -20,7 +20,7 @@ All transactions within this profile uses the same profile identifier.
 | T007
 | Tendering Questions
 | The EO sends questions for the Call for Tender to the CA.
-.2+.^| urn:fdc:peppol.eu:2020:pracc:p004:01:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p004:1.0
 
 | T008
 | Tender Answers

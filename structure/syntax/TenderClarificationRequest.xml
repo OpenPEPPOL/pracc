@@ -43,7 +43,7 @@
             </Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t009:ver1.0
+                urn:fdc:peppol.eu:prac:trns:t009:1.0
             </Value>
             <Reference type="RULE">PEPPOL-T009-R012</Reference>
             <Reference type="RULE">PEPPOL-T009-S009</Reference>
@@ -55,7 +55,7 @@
                 to process the document in an appropriate way.
             </Description>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p005:01:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p005:1.0</Value>
             <Reference type="RULE">PEPPOL-T009-R013</Reference>
             <Reference type="RULE">PEPPOL-T009-S010</Reference>
         </Element>
