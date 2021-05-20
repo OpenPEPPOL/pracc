@@ -95,6 +95,13 @@
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::procedure-legal-basis[] -->
+            <!-- tag::tender-value[] -->
+            <rim:Slot name="TenderValue"> <!--.-->
+                <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
+                    <rim:Value>100 €</rim:Value>
+                </rim:SlotValue>
+            </rim:Slot>
+            <!-- end::tender-value[] -->
             <!-- tag::information-about-buyer[] -->
             <rim:Slot name="BuyerInformation">
                 <!-- tag::name[] -->

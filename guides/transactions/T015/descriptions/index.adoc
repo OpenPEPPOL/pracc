@@ -109,6 +109,17 @@ include::../files/ExamplePublishNotice.xml[tags=procedure-legal-basis]
 <.> Slot for the procedure legal basis, the type is always "_ProcedureLegalBasis_"
 <.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
 
+=== Tender Value
+
+Tender Value of the procedure to which the notice refers. Optional use in this transaction.
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=tender-value]
+....
+<.> Slot for the tender Value
+<.> SlotValue type has to be StringValueType to allow the use of the currency symbol
+
 === Buyer Information
 
 The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached published notice. The buyer information are optional in the transaction.
