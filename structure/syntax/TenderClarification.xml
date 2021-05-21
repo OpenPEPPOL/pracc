@@ -39,7 +39,7 @@
             </Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t010:ver1.0
+                urn:fdc:peppol.eu:prac:trns:t010:1.0
             </Value>
             <Reference type="RULE">PEPPOL-T010-R009</Reference>
             <Reference type="RULE">PEPPOL-T010-S009</Reference>
