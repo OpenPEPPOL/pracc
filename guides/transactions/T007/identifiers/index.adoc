@@ -13,6 +13,5 @@ include::../../shared/peppol.adoc[]
 | T007
 | TenderingQuestions
 | The EO sends questions to the CA.
-| urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended: +
-urn:fdc:peppol.eu:2020:pracc:t007:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t007:1.0
 |===
