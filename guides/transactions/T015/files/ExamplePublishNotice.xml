@@ -55,7 +55,6 @@
                 lid="2C621D47-112D-42D4-B6F8-57392464C3E7"
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
-            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->
             <!-- tag::document-type-code[] -->
             <rim:Slot name="DocumentTypeCode" type="http://docs.peppol.eu/document-type-code"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
@@ -87,7 +86,7 @@
             </rim:Slot>
             <!-- end::pub-date-time[] -->
             <!-- tag::procedure-legal-basis[] -->
-            <rim:Slot name="ProcedureLegalBasis" type="ProcedureLegalBasis"> <!--.-->
+            <rim:Slot name="ProcedureLegalBasis" type="http://publications.europa.eu/resource/authority/legal-basis"> <!--.-->
                 <rim:SlotValue xsi:type="rim:CollectionValueType">
                     <rim:Element xsi:type="rim:StringValueType">
                         <rim:Value>32014L0024</rim:Value> <!--.-->
@@ -156,7 +155,7 @@
                 <!-- tag::procurement-documents-change-date[] -->
                 <rim:Slot name="ProcurementDocumentsChangeDate"> <!--.-->
                     <rim:SlotValue xsi:type="rim:DateTimeValueType"> <!--.-->
-                        <rim:Value>2019-05-14T19:20:30+01:00</rim:Value> <!--.-->
+                        <rim:Value>2020-05-14T19:20:30+01:00</rim:Value> <!--.-->
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::procurement-documents-change-date[] -->
@@ -169,6 +168,7 @@
                 <!-- end::procurement-documents-change-indicator[] -->
             </rim:Slot>
             <!-- end::change-notice[] -->
+            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/>
         </rim:RegistryObject>
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
