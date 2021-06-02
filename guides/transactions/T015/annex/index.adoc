@@ -1,8 +1,6 @@
 [appendix]
 == T015 - Publish Notice Data Model
 
-//image::../files/SearchNoticeResponseEDM.png[align="center", width=800]
-
 [appendix]
 == Key examples/use cases
 

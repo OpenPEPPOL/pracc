@@ -89,7 +89,7 @@
                 </rim:Element>
             </rim:SlotValue>
         </rim:Slot>
-        <rim:Slot name="Classification" type="http://publications.europa.eu/resource/authority/cpv/cpvsuppl"> <!--.-->
+        <rim:Slot name="Classification" type="http://publications.europa.eu/resource/authority/cpv/cpvsuppls"> <!--.-->
             <rim:SlotValue xsi:type="rim:CollectionValueType">
                 <rim:Element xsi:type="rim:StringValueType">
                     <rim:Value>AA08</rim:Value>
