@@ -99,7 +99,11 @@
         <Path>structure/syntax/TenderWithdrawalResponse.xml</Path>
         <Title>Syntax Mapping T014 - Tender Withdrawal Notification</Title>
     </Resource>
-
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PublishNotice.xml</Path>
+        <Title>Syntax Mapping T015 - Publish Notice</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
