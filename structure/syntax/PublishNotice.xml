@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>PublishNotice</Term>
+    <Name>Publish Notice (T015)</Name>
+
+    <Namespace prefix="lcm">urn:oasis:names:tc:ebxml-regrep:xsd:lcm:4.0</Namespace>
+    <Namespace prefix="rim">urn:oasis:names:tc:ebxml-regrep:xsd:rim:4.0</Namespace>
+    <Namespace prefix="xsi">http://www.w3.org/2001/XMLSchema-instance</Namespace>
+
+    <Document>
+        <Term>lcm:SubmitObjectsRequest</Term>
+        <Name>Publish Notice root element</Name>
+        <Description>The Publish Notice is a transaction which sends notices and their attachments as new notices or
+            updates to already known notices to the publication offices.
+        </Description>
+        <Reference type="RULE">PEPPOL-T015-R001</Reference>
+        <Reference type="RULE">PEPPOL-T015-R002</Reference>
+        <Reference type="RULE">PEPPOL-T015-R003</Reference>
+        <Reference type="RULE">PEPPOL-T015-R004</Reference>
+        <Reference type="RULE">PEPPOL-T015-R005</Reference>
+        <Reference type="RULE">PEPPOL-T015-R006</Reference>
+        <Reference type="RULE">PEPPOL-T015-R007</Reference>
+        <Attribute>
+            <Term>id</Term>
+            <Name>Publish Notice Identifier</Name>
+            <Description>Specifies the unique identifier for an Identifiable Publish Notice.</Description>
+        </Attribute>
+        <Attribute>
+            <Term>mode</Term>
+            <Name>Mode</Name>
+            <Description>Mode for the publishment of the notice, regarding if it is new or a change to an already
+                existing notice. If a notice does not exist, the publishing office MUST create it as a new notice.
+                If a notice already exists,the publishing office MUST not alter the existing object and instead it MUST
+                create a new version of the existing object using the state of the submitted notice. So it is ensured
+                that the old notice will not be overwritten but stays readable as an outdated version.
+            </Description>
+            <DataType>String</DataType>
+            <Value type="FIXED">CreateOrVersion</Value>
+        </Attribute>
+        <Element>
+            <Term>rim:Slot@name=SpecificationIdentification</Term>
+            <Name>SpecificationIdentification</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.
+            </Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">SpecificationIdentification</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Reference type="RULE">PEPPOL-T015-R010</Reference>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T015-R011</Reference>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t015:1.0</Value>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=BusinessProcessTypeIdentifier</Term>
+            <Name>BusinessProcessTypeIdentifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the
+                receiver to process the document in an appropriate way.
+            </Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">BusinessProcessTypeIdentifier</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Reference type="RULE">PEPPOL-T015-R010</Reference>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T015-R012</Reference>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.0</Value>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=IssueDateTime</Term>
+            <Name>IssueDateTime</Name>
+            <Description>The issue date and time when the Publish Notice is issued. The issue date time must have
+                granularity of seconds, and include time zone information.
+            </Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">IssueDateTime</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:DateTimeValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Reference type="RULE">PEPPOL-T015-R058</Reference>
+                    <DataType>rim:DateTimeValueType</DataType>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=SenderElectronicAddress</Term>
+            <Name>SenderElectronicAddress</Name>
+            <Description>The electronic address of the sender.</Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">SenderElectronicAddress</Value>
+            </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Name>SchemeIdentifier</Name>
+                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
+                    Identifiers described in the "PEPPOL Policy for using Identifiers"
+                </Description>
+                <Reference type="RULE">PEPPOL-T015-R013</Reference>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Reference type="RULE">PEPPOL-T015-R010</Reference>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Name>EndpointId</Name>
+                    <Description>The endpoint ID of the sender platform</Description>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
+            <Name>ReceiverElectronicAddress</Name>
+            <Description>The electronic address of the receiver.</Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">ReceiverElectronicAddress</Value>
+            </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Name>Scheme Identifier</Name>
+                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
+                    Identifiers described in the "PEPPOL Policy for using Identifiers"
+                </Description>
+                <Reference type="RULE">PEPPOL-T015-R013</Reference>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Reference type="RULE">PEPPOL-T015-R010</Reference>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:StringValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Name>EndpointId</Name>
+                    <Description>The endpoint ID of the receiver platform</Description>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>rim:RegistryObjectList</Term>
+            <Name>Registry Object List</Name>
+            <Description>The Registry Object List returns the requested Information. It identifies the notice instances
+                that were affected by the Publish Notice.
+            </Description>
+            <Reference type="RULE">PEPPOL-T015-R015</Reference>
+            <Reference type="RULE">PEPPOL-T015-R016</Reference>
+            <Reference type="RULE">PEPPOL-T015-R017</Reference>
+            <Reference type="RULE">PEPPOL-T015-R018</Reference>
+            <Reference type="RULE">PEPPOL-T015-R019</Reference>
+            <Element cardinality="0..n">
+                <Term>rim:RegistryObject</Term>
+                <Name>Registry Object</Name>
+                <Description>The Registery Object returns a notice instance that matches the Search Notice Request.
+                </Description>
+                <Attribute>
+                    <Term>lid</Term>
+                    <Name>Procedure Identifier</Name>
+                    <Description>The Procedure Identifier allows distinguishing procurement procedures and shall be
+                        globally unique. It identifies the procurement procedure the notice belongs to. In PEPPOL the
+                        Procedure Identifier is also named "Reference Number" or "ContractFolderID". In the later
+                        eTendering process the element is used to find the right procedure for a Procurement Procedure
+                        Subscription (P001).
+                    </Description>
+                </Attribute>
+                <Attribute>
+                    <Term>id</Term>
+                    <Name>Notice Identifier</Name>
+                    <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
+                        amongst all other existing ones contained within the query.
+                    </Description>
+                </Attribute>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:ExtrinsicObjectType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Slot@name=DocumentTypeCode</Term>
+                    <Name>Document Type Code</Name>
+                    <Description>Used to identify the UBL document type of the referenced notice which are associated to
+                        the corresponding UBL namespaces.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">DocumentTypeCode</Value>
+                    </Attribute>
+                    <Attribute>
+                        <Term>type</Term>
+                        <Description>The list has to be defined! TODO</Description>
+                        <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                        <Value type="FIXED">http://doc.peppol.eu/code-lists/document-type</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:StringValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term></Term>
+                </Element>
+                <Element>
+                    <Term>rim:RepositoryItemRef</Term>
+                    <Name>Repository Item Reference</Name>
+                    <Description>The Repository Item Reference specifies a reference to the XML notice that is included
+                        to the local ASiC-E container (Associated Signature Container Extended) repository.
+                    </Description>
+                    <Reference type="RULE">PEPPOL-T015-R022</Reference>
+                    <Attribute>
+                        <Term>xlink</Term>
+                        <Name>List Identifier</Name>
+                        <Description>This element uses xlink:href to specify local XML notices of the ASiC-E container
+                            as repository items.
+                        </Description>
+                    </Attribute>
+                </Element>
+            </Element>
+        </Element>
+    </Document>
+</Structure>
