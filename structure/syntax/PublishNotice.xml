@@ -235,7 +235,366 @@
                     </Element>
                 </Element>
                 <Element>
-                    <Term></Term>
+                    <Term>rim:Slot@name=NoticeVersion</Term>
+                    <Name>Notice Version</Name>
+                    <Description>Version of the notice which shall be published. If this is not the first iteration of
+                        the notice choose a higher number than one, ideally counting up from the last version which was
+                        published.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">NoticeVersion</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:IntegerValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="1..N">
+                    <Term>rim:Slot@name=NoticeLanguage</Term>
+                    <Name>Notice Language</Name>
+                    <Description>All languages which are included in the notice, each represented as one element in the
+                        collection.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">NoticeLanguage</Value>
+                    </Attribute>
+                    <Attribute>
+                        <Term>type</Term>
+                        <Description>Languages</Description>
+                        <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                        <Value type="FIXED">http://publications.europa.eu/resource/authority/language</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:CollectionValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Element</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>rim:Slot@name=PreferredPublicationDate</Term>
+                    <Name>PreferredPublicationDate</Name>
+                    <Description>The preferred publication date and time are the times when the notice should be
+                        published while the issue date and time refer to the actual issuance of the notice.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">PreferredPublicationDate</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:DateTimeValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>rim:Slot@name=ProcedureLegalBasis</Term>
+                    <Name>ProcedureLegalBasis</Name>
+                    <Description>Legal Basis of the procedure to which the notice refers. Optional use in this
+                        transaction.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">ProcedureLegalBasis</Value>
+                    </Attribute>
+                    <Attribute>
+                        <Term>type</Term>
+                        <Description>possible legal bases for the notice</Description>
+                        <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                        <Value type="FIXED">http://publications.europa.eu/resource/authority/legal-basis</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:CollectionValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Element</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>rim:Slot@name=TenderValue</Term>
+                    <Name>TenderValue</Name>
+                    <Description>Tender Value of the procedure to which the notice refers. Optional use in this
+                        transaction.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">TenderValue</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                            <Value type="FIXED">rim:StringValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term>rim:Slot@name=BuyerInformation</Term>
+                    <Name>BuyerInformation</Name>
+                    <Description>The information about the buyer includes different types of identification elements to
+                        disclose a way to contact the buyer without immediately opening the attached published notice.
+                        The buyer information are optional in the transaction.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">BuyerInformation</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:Slot@name=Name</Term>
+                        <Name>Name</Name>
+                        <Description>Name of the organisation or company under which the buyer operates.
+                        </Description>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">Name</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>rim:Slot@name=OrganisationNumber</Term>
+                        <Name>OrganisationNumber</Name>
+                        <Description>Identifier of the organisation, if known or given.
+                        </Description>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">OrganisationNumber</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element>
+                        <Term>rim:Slot@name=CountryCode</Term>
+                        <Name>Country Code</Name>
+                        <Description>NUTS Code for the region in which the buyer resides. For optional use in this
+                            transaction.
+                        </Description>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">CountryCode</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Description>all country codes</Description>
+                            <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                            <Value type="FIXED">http://publications.europa.eu/resource/authority/country</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:CollectionValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Element</Term>
+                                <Attribute>
+                                    <Term>xsi:type</Term>
+                                    <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                    <Value type="FIXED">rim:StringValueType</Value>
+                                </Attribute>
+                                <Element>
+                                    <Term>rim:Value</Term>
+                                    <DataType>rim:StringValueType</DataType>
+                                </Element>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>rim:Slot@name=BuyerPartyIdentification</Term>
+                        <Name>Buyer Party Identification</Name>
+                        <Description>The buyer party identification is an additional identifier for the buying
+                            organization. For optional use in the transaction.
+                        </Description>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">BuyerPartyIdentification</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Description>possible identification precodes</Description>
+                            <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                            <Value type="FIXED">https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:CollectionValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Element</Term>
+                                <Attribute>
+                                    <Term>xsi:type</Term>
+                                    <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                    <Value type="FIXED">rim:StringValueType</Value>
+                                </Attribute>
+                                <Element>
+                                    <Term>rim:Value</Term>
+                                    <DataType>rim:StringValueType</DataType>
+                                </Element>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>rim:Slot@name=BuyerElectronicAddress</Term>
+                        <Name>Buyer Electronic Address</Name>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">BuyerElectronicAddress</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>rim:Slot@name=ChangeNotice</Term>
+                    <Name>Change Notice</Name>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">ChangeNotice</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:Slot@name=ChangeNoticeVersionIdentifier</Term>
+                        <Name>Change Notice Version Identifier</Name>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">ChangeNoticeVersionIdentifier</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:IntegerValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:IntegerValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element>
+                        <Term>rim:Slot@name=ProcurementDocumentsChangeDate</Term>
+                        <Name>Procurement Documents Change Date</Name>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">ProcurementDocumentsChangeDate</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:DateTimeValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:DateTimeValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element>
+                        <Term>rim:Slot@name=ProcurementDocumentsChangeIndicator</Term>
+                        <Name>Procurement Documents Change Indicator</Name>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">ProcurementDocumentsChangeIndicator</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T015-R009</Reference>
+                                <Value type="FIXED">rim:BooleanValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <DataType>rim:BooleanValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
                 </Element>
                 <Element>
                     <Term>rim:RepositoryItemRef</Term>
