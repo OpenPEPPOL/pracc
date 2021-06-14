@@ -1,8 +1,6 @@
 
 = Business process
 
-//TODO Business process
-
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 The process starts by the requester preparing a Search Notice Request, based on his ambitions and capabilities. He then sends the query to the provider. The provider interprets the query and assembles a package with notices that fulfill the query conditions. The package consists of a list of notice objects containing the notice metadata and a local reference to the actual XML notice contained within the ASiC-E Container as defined by {link-eDocument}. The XML notices included to the ASiC-E must be formatted according to {eforms-specs} and expressed by the {ubl-pin}, {ubl-cn} and {ubl-can}. The notices are put into the ASiC-E Container. If the result is zero notices found, then a package will be sent indicating that no notice corresponding to the search criteria were found.
@@ -15,11 +13,11 @@ The figure above illustrates the overall composition of a Search Notice Request 
 .Business process
 |===
 | Category | Description
-| Description | A requester searches for relevant notices on a given platform.
+| Description
+| A contracting body requests a publication body to publish a prior information/ contract notice. The publication body assesses the request and may ask for corrections. Small corrections may be applied by the publication body itself. When the notice to be published meets the criteria, it is published or filed if confidential.
+| Pre-conditions | The contracting body prepared a prior information/ contract notice.
+| Post-conditions	| The prior information/ contract notice is published.
 
-| Pre-conditions | The requester can make a Search Notices Request using the search criteria that are defined in this profile.
-| Post-conditions | The requester has received the result of his search: notice metadata and notices in xml based on {eforms-specs}.
-| Remarks | As a search can have a result containing zero notices, the result transaction must permit the information "totalResultCount = 0".
 
 |===
 
@@ -27,14 +25,20 @@ The figure above illustrates the overall composition of a Search Notice Request 
 .Role description
 |===
 | Activity | Role involved | Description
-| Prepare query | Requester  | The requester prepares a Search Notice Request using the defined search criteria.
-| Send query | Requester  | The requester sends the prepared Search Notice Request to the provider.
-| Receive query | Provider | The provider receives a structured Search Notice Request.
-| Process query | Provider | The provider processes the Search Notice Request.
-| Assemble notice metadata and notices | Provider | The provider assembles the notice metadata and the related notices in the format of {eforms-specs}. If no results the provider indicates this in the "totalResultCount=0".
-| Package result | Provider | All notice metadata and notices are assembled and grouped together in a package.
-| Send result | Provider | The provider sends the package to the requester.
-| Receive result | Requester | The requester receives the package of results.
+| Prepare publication request |Contracting body | The contracting body prepares a publication request
+| Send publication request | Contracting body | The contracting body sends the request to publish the notice to the publication body
+| Receive publication request | Publication body | The publication body receives the publication request
+| Send publication request receipt confirmation	| Publication body | The publication body confirms the receipt of the publication request. This is an optional step, publication bodies may not send confirmations but offer contracting bodies means to track the status of the publication.
+| Assess publication request | Publication body | The publication body assesses the validity of the publication request
+| Reject publication request | Publication body	| If the request is not valid, the publication body rejects it
+| Prepare publication | Publication body | The publication body prepares the publication and assesses the contents of the notice
+| Request/suggest publication request correction | Publication body | The publication body may request and/or suggest corrections of the request to the contracting body by ordinary email. The process stops here. The contracting body prepares a new (corrected) request.
+| Receive publication request correction | Contracting body | The contracting body receives a publication request correction.
+| Send publication request publication confirmation | Publication body | The publication body sends a confirmation that the notice is published and in parallel publishes the notice.
+| Receive publication request publication confirmation | Contracting body | The contracting body receives a confirmation that the notice is published. The process ends.
+| File | Publication body | In case of a confidential notice, the publication body files the notice instead of publishing it
+| Publish | Publication body | The notice is published
+
 |===
 
 :leveloffset: +1
@@ -42,3 +46,8 @@ The figure above illustrates the overall composition of a Search Notice Request 
 include::implementation-guidelines.adoc[]
 
 :leveloffset: -1
+
+
+//TODO change images to higher resolution
+image::../images/publishNoticeBPMN.png[align="center", width=800]
+
