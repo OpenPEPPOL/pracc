@@ -14,5 +14,10 @@
 | adesso SE
 | First draft
 
+| 0.2
+| 2021-06-14
+| Felicia Tsakonas
+| adesso SE
+| Gathered information from given profiles
 
 |===
