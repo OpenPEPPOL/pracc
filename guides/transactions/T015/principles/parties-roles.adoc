@@ -10,18 +10,24 @@ The following parties participate as business partners in this transaction, acti
 | Description
 | *Governmental or private organization*
 | Any organisation.
+| *Governmental organization*
+| A body governed by public law, meaning bodies:
+
+(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character;
+
+(b) having legal personality; and
+
+(c) financed, for the most part, by the State, regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities, or by other bodies governed by public law.
+
 |===
 
-//TODO Transaction Roles
 [cols="2,10", options="header"]
 .roles
 |===
 | Role
 | Description
-| *Requester*
-| A service or economic operator in search of opportunities.
-| *Provider*
-| A data service that discloses information on notices (whether governmental or a private organisation).
+| *Contracting body*
+| The State, regional or local authorities, bodies governed by public law, associations formed by one or several of such authorities or one or more such bodies governed by public law, contracting Economic Operators for supply of goods, services or works. This term has a narrower scope than the term “Customer” and is in BII treated as a customer role.
+| *Publication body*
+| A Pan-European, national or regional organisation that publishes procurement notices of a contracting body. While the basic role of the publisher may apply to any newspaper, other roles and functions are often restricted to official gazettes. These gazettes are also often responsible to ensure a formal verification of the notices in respect of legislative or other requirements in vigour. Official gazettes may also have the role to receive information exempted from publication (e.g. due to confidential content) used for notification to a supervising authority. I.e. eNotification also covers notification of authorities in the context of public procurement notices, e.g. for transparency and control reasons.
 |===
-
-NOTE: Also other bodies than economic operators may need to search for notices, such as a statistics office or scholars. This profile particularly focuses on the tendering process, involving involving tendering platforms that are operated for economic operators. However, the search process and the transactions described in this profile may not necessarily be used by economic operators alone.

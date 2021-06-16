@@ -1,14 +1,13 @@
-// TODO Transaction Requirements
 = Identification and description of the requirements
 
 [cols="2,10a", options="header"]
 .Transaction business requirements of {name-transaction}
 |===
 | ID | Requirement
-|tbr79-001
+| tbr78-001 tbr79-001 tbr80-001
 | The Directive used by this notice shall be specified.
-| tbr79-002
-| The information about the contracting body shall be at least:
+| tbr78-002 tbr79-002 Tbr80-002
+| The contracting body shall be identified by:
 
 * the official name
 * the country of the address
@@ -16,15 +15,15 @@
 * the address email
 * the internet address
 * the town of the address
-| tbr79-003
+| tbr78-003 tbr79-003 tbr80-003
 | The object of the publication shall be identified.
-| tbr79-004
+| tbr78-004 tbr79-004 tbr80-004
 | The date of publication of the notice shall be specified.
-| tbr79-005
+| tbr78-005 tbr79-005 tbr80-005
 | At least one CPV code for the project shall be specified
-| tbr79-006
+| tbr78-006 tbr79-006 tbr80-006
 | The main activity of the contracting body shall be specified
-| tbr79-007
+| tbr78-007 tbr79-007
 | Different informations about communication may be specified:
 
 *	The address to find more information
@@ -32,12 +31,20 @@
 *	The electronic address for submission
 *	The address to find electronic procurement document
 *	The electronic address for tools used for electronic communication
-| tbr79-008
+| tbr78-008
+| The electronic address for tools used for electronic communication may be specified
+| tbr78-011
+| The notice shall contain information about the project:
+* Project description
+* Type of project
+
+| tbr78-012 tbr79-008 tbr80-008
 | The notice may contain information about the project:
 
 * Project name
 * Reference number
 * Project description
+* Type of project
 * Contract number
 * Supplementary CPV
 * Place of execution
@@ -47,31 +54,37 @@
 * Duration
 * Options or variants permit
 * renewals
-| tbr79-009
+| tbr78-009
+| The type of activity of the contracting body may be specified
+| tbr79-009 tbr80-009 tbr78-013
 | The notice may contain information about the scope of the project:
 
 * Usage of EU funds
 * Framework type and details
 * Government Procurement Agreement (GPA)
-| tbr79-010
+| tbr78-010
+| The form of procurement may be specified (framework agreement dynamic purchasing system)
+| tbr78-014 tbr79-010 tbr80-010
 | The notice may contain information about lot:
 
 *	Divided in lots indicator
 *	Information about condition of submission or attribution of lots
-| tbr79-011
+| tbr78-015 tbr79-011 tbr80-011
 | Each lot, if available, shall contain:
 
 * An identifier
 * A description
 * At least one CPV
 * A location and at least one NUTS CODE
-| tbr79-012
+* Value
+| tbr78-016 tbr79-012 tbr80-012
 | Each lot may contain:
 
 * A name
 * Supplementary CPV
 * Value
 * Duration
+* A location and at least one NUTS CODE
 | tbr79-013
 | The estimated date of publication of the contract notice may be specified
 | tbr79-014
@@ -82,146 +95,26 @@
 * Technical and professional ability
 * Rules and criteria for participation
 * Information about reserved contracts or particular profession
-| tbr79-015
+| tbr78-019 tbr79-015 tbr80-015
 | The notice may contain information about the procedure:
 
 * The type of procedure
 * the award criteria
-* usage of electronic auction
+* usage of electronic auction/ catalogues
 * time limit for receipt of tenders or requests to participate
-* the language used for submission
-| tbr79-016
-| The notice may contains additional information:
-
-* information about electronic workflow
-* information additional
-* information about review:
-** body responsible for appeal procedure
-** Body responsible for mediation procedures
-** Service providing information about the lodging of appeals
-** Lodging of appeals deadline
-| tbr79-020
-| The form of procurement may be specified (Joint procurement, dynamic purchasing system)
-| tbr78-001
-| The Directive used by this notice shall be specified.
-| tbr78-002
-| The contracting body shall be identified by:
-
-* the official name
-* the country of the address
-* the code NUTS of the address
-* the address email
-* the internet addres
-* the town of the address
-| tbr78-003
-| The object of the publication shall be identified.
-| tbr78-004
-| The date of publication of the notice shall be specified.
-| tbr78-005
-| At least one CPV code for the project shall be specified
-| tbr78-006
-| The main activity of the contracting body shall be specified
-| tbr78-007
-| Different information about communication shall be specified:
-
-* The address to find more information
-* The address for submission
-* The electronic address for submission
-* The address to find electronic procurement document
-| tbr78-008
-| The electronic address for tools used for electronic communication may be specified
-| tbr78-009
-| The type of activity of the contracting body may be specified
-| tbr78-010
-| The form of procurement may be specified (framework agreement dynamic purchasing system)
-| tbr78-011
-| The notice shall contain information about the project:
-
-* Project description
-* Type of project
-| tbr78-012
-| The notice may contain information about the project:
-
-* Project name
-* Contract number
-* Reference number
-* Place of performance description
-* Supplementary CPV
-* Code nuts of the place of performance
-* Value or scope
-* Duration
-* Justification about the extent of the duration
-* Options or variants permit
-* renewals
-| tbr78-013
-| The notice may contain information about the scope of the project:
-
-* relation to EU funds
-* Framework type and details
-* Government Procurement Agreement (GPA)
-| tbr78-014
-| The notice may contain information about lots:
-
-* Divided in lots indicator
-* Information about condition of submission or attribution of lots
-| tbr78-015
-| Each lot, if available, shall contain:
-
-* An identifier
-* A description
-* At least one CPV
-* at least one NUTS CODE
-* Value
-| tbr78-016
-| Each lot may contain:
-
-* A name
-* Supplementary CPV	* Duration
-| tbr78-018
-| The notice may contain legal, financial and technical information:
-
-* Conditions for participation
-* Economic and financial standing
-* Technical and professional ability
-* Criteria and rules for participation
-* Information about reserved contracts or particular profession
-* Conditions for performance of contracts
-* Information about staff responsible for the performance of the contract
-| tbr78-019
-| The notice may contain information about the procedure:
-
-* The type of procedure
 * Information about the limits on the number of operators to be invited
 * Information about reduction of the number of solutions or tenders during negotiation or dialogue
-* Information about electronic catalogues
 * Envisaged number of operators to be invited, total, minimum or maximum
 * Criteria for evaluation of projects
 * Information about national rules URI
 * Features of the award procedure
 * Information about negotiation
-* The award criteria type,
+* The award criteria type
 * One or more criteria weight, criteria description
-* usage of electronic auction
 * previous publication number
-* time limit for receipt of tenders or requests to participate
 * the language used for submission or requests
 * date limite of validity of the tender
-| tbr78-020
-| The notice may contain information about opening of tenders
-
-* the date
-* the time
-* the conditions and place
-| tbr78-021
-| The notice may contain information about prizes
-
-* indication about the awarding of the prize
-* number and value of prize
-* details of paiement to participants
-* indication about the follow-up contracts
-* indication about the binding of the decision
-* member of jury name
-| tbr78-026
+| tbr78-026 tbr79-016 tbr80-016
 | The notice may contains additional information:
 
 * information about recurrence
@@ -232,77 +125,36 @@
 ** Body responsible for mediation procedures
 ** Service providing information about the lodging of appeals
 ** Lodging of appeals deadline
-| Tbr80-001
-| The Directive used by this notice shall be specified.
-| Tbr80-002
-| The information about the contracting body shall be at least :
+| tbr78-018
+| The notice may contain legal, financial and technical information:
 
-* the official name
-* the country of the address
-* the code NUTS of the address
-* the address email
-* the internet address
-* le town of the address
-| Tbr80-003
-| The object of the publication shall be identified.
-| Tbr80-004
-| The date of publication of the notice shall be specified.
-| Tbr80-005
-| At least one CPV code for the project shall be specified
-| Tbr80-006
-| The main activity of the contracting body shall be specified
-| Tbr80-008
-| The notice may contain information about the project:
+* Conditions for participation
+* Economic and financial standing
+* Technical and professional ability
+* Criteria and rules for participation
+* Information about reserved contracts or particular profession
+* Conditions for performance of contracts
+* Information about staff responsible for the performance of the contract
+| tbr78-020
+| The notice may contain information about opening of tenders
 
-* Project name
-* Reference number
-* Project description
-* Contract number
-* Supplementary CPV
-* Place of performance
-* Code nuts of the location of performance
-* Type of project
-* Value or scope
-* Duration
-* Options or variants permit
-| Tbr80-009
-| The notice shall report about the usage of EU funds and may contain information about the scope of the project:
+* the date
+* the time
+* the conditions and place
+| tbr79-020 tbr80-020
+| The form of procurement may be specified
 
-* Government Procurement Agreement (GPA)
-| Tbr80-010
-| The notice may contain information about lots:
+ * for Prior Information Notice: Joint procurement, dynamic purchasing system
+ * for Contract Notice: framework agreement, dynamic purchasing system
+| tbr78-021
+| The notice may contain information about prizes
 
-* Divided in lots indicator
-| Tbr80-011
-| Each lot, if available, shall contain:
-
-* An identifier
-* A description
-* At least one CPV
-| Tbr80-012
-| Each lot may contain:
-
-* A name
-* Supplementary CPV
-* A location and at least one NUTS CODE
-| Tbr80-015
-| The notice may contain information about the procedure:
-
-* The type of procedure
-* the award criteria
-* usage of electronic auction
-| Tbr80-016
-| The notice may contains addition information:
-
-* information additional
-* information about review:
-** body responsible for appeal procedure
-** Body responsible for mediation procedures
-** Service providing information about the lodging of appeals
-** Lodging of appeals deadline
-| Tbr80-020
-| The form of procurement may be specified (framework agreement, dynamic purchasing system)
-
+* indication about the awarding of the prize
+* number and value of prize
+* details of paiement to participants
+* indication about the follow-up contracts
+* indication about the binding of the decision
+* member of jury name
 
 
 |===
