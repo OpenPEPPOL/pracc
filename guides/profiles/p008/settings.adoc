@@ -1,6 +1,6 @@
 include::links.adoc[]
 
 include::../shared/settings.adoc[]
-
-:name-profile-org: "Profile BII45 — Search Notice" (CWA 17026-104:2016)
+//TODO define Profile Name
+:name-profile-org: "Profile BII14 — Prior Information Notice" (CWA 2345-102:2014)
 :name-profile: Profile P008 - "Publish Notice"
