@@ -41,6 +41,10 @@ The figure above illustrates the overall composition of a Search Notice Request 
 
 |===
 
+
+//TODO change images to higher resolution
+image::../images/publishNoticeBPMN.png[align="center", width=800]
+
 :leveloffset: +1
 
 include::implementation-guidelines.adoc[]
@@ -48,6 +52,4 @@ include::implementation-guidelines.adoc[]
 :leveloffset: -1
 
 
-//TODO change images to higher resolution
-image::../images/publishNoticeBPMN.png[align="center", width=800]
 

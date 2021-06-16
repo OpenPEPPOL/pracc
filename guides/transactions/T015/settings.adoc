@@ -8,7 +8,7 @@ include::../shared/settings.adoc[]
 :name-syntax: PublishNotice
 
 include::../shared/links.adoc[]
-
-:name-profile-org: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62010&cs=1D08F9435D30F904B4F67A8BAFA621C04[BII Profile 45 - Search Notices (CWA 17026-104:2016)]
+//TODO define Name of Profile
+:name-profile-org: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT,FSP_ORG_ID:62008,2073699&cs=11A56B357252E994D5A587EB7A472803B[BII Profile 14 - Prior Information Notice (CWA 17026-102:2016)]
 
 :xml-doc-file: files/ExamplePublishNotice.xml

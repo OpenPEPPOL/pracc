@@ -66,11 +66,11 @@
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='DocumentTypeCode']">
-            <assert id="PEPPOL-T011-R021" flag="fatal" test="@type = 'http://docs.peppol.eu/document-type-code'">The @type for rim:Slot "DocumentTypeCode" MUST be: list to be created</assert>
+            <assert id="PEPPOL-T012-R021" flag="fatal" test="@type = 'http://docs.peppol.eu/document-type-code'">The @type for rim:Slot "DocumentTypeCode" MUST be: list to be created</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:RepositoryItemRef">
-            <assert id="PEPPOL-T011-R022" flag="fatal" test="matches(normalize-space(./@xlink:href), '.*[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}.*')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122).</assert>
+            <assert id="PEPPOL-T012-R022" flag="fatal" test="matches(normalize-space(./@xlink:href), '.*[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}.*')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122).</assert>
         </rule>
 
         <!--Gobal Rules (only matches if no other does)-->

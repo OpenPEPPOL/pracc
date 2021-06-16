@@ -22,7 +22,7 @@ For the {link-peppol} BIS all {link-peppol} non-functional requirements are appl
 | br14-001
 | A contracting body may directly or indirectly via another submitter request the publication of a prior information notice by a publication body.
 | br14-004
-| The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.	G 14-001
+| The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.
 | br14-005
 | The publication body may itself correct small (e.g. typographic) errors.
 | br14-006
