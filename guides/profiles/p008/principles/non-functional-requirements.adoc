@@ -1,47 +1,39 @@
 
 = Non-functional requirements
 
-For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as documented in {link-bii3} {name-profile-org}. Implementers must comply to these requirements.
+For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as documented in {link-bii3}
+
+{name-profile-org}.
+
+Implementers must comply to these requirements.
 
 [cols="2,10", options="header"]
 |===
 | Req. ID
 | Requirement statement
-| br10-001
-| A contracting body may directly or indirectly via another submitter request the publication of a contract notice by a publication body.
-| br10-004
-| The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.
-| br10-005
-| The publication body may itself correct small (e.g. typographic) errors.
-| br10-006
-| The contracting body may request the publication body to inform him of the status of his notice.
-| br10-007
-| The publication body may provide publication status information on request of the contracting body.
-| br10-010
-| The publication body treats a modification or cancellation as a separate publication request.
-| br14-001
-| A contracting body may directly or indirectly via another submitter request the publication of a prior information notice by a publication body.
-| br14-004
-| The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.
-| br14-005
-| The publication body may itself correct small (e.g. typographic) errors.
-| br14-006
-| The contracting body may request the publication body to inform him of the status of his notice.
-| br14-007
-| The publication body may provide publication status information on request of the contracting body.
-| br14-010
-| The publication body treats the modification or cancellation as a separate publication request.
-| br43-001
+| br10-001 +
+br14-001 +
+br43-001
 | A contracting body may directly or indirectly via another submitter request the publication or an appropriate processing of some notice in an information medium, operated by a publication body.
-| br43-004
+| br10-004 +
+ br14-004 +
+ br43-004
 | The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.
-| br43-005
+| br10-005 +
+ br14-005 +
+ br43-005
 | The publication body may itself correct small (e.g. typographic) errors.
-| br43-006
+| br10-006 +
+ br14-006 +
+ br43-006
 | The contracting body may request the publication body to inform him of the status of his notice.
-| br43-007
+| br10-007 +
+ br14-007 +
+ br43-007
 | The publication body may provide publication status information on request of the contracting body.
-| br43-010
+| br10-010 +
+ br14-010 +
+ br43-010
 | The publication body treats the modification or cancellation as a separate publication request.
 
 |===

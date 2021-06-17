@@ -1,7 +1,9 @@
 [[descriptions]]
 = Description of selected parts of the transaction
 
-Limited support for this, see {name-profile-org}.
+Limited support for this, see
+
+{name-profile-org}.
 
 == Process control
 
@@ -154,7 +156,7 @@ NUTS Code for the region in which the buyer resides. For optional use in this tr
 ....
 include::../files/ExamplePublishNotice.xml[tags=country-code]
 ....
-<.> Slot for the country code, the type is always "_http://publications.europa.eu/resource/authority/country_"
+<.> Slot for the country code, the type is always "_http://publications.europa.eu/resource/authority/nuts_"
 <.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
 
 ==== Buyer Party Identification

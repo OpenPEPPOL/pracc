@@ -3,20 +3,24 @@
 
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
-The process starts by the requester preparing a Search Notice Request, based on his ambitions and capabilities. He then sends the query to the provider. The provider interprets the query and assembles a package with notices that fulfill the query conditions. The package consists of a list of notice objects containing the notice metadata and a local reference to the actual XML notice contained within the ASiC-E Container as defined by {link-eDocument}. The XML notices included to the ASiC-E must be formatted according to {eforms-specs} and expressed by the {ubl-pin}, {ubl-cn} and {ubl-can}. The notices are put into the ASiC-E Container. If the result is zero notices found, then a package will be sent indicating that no notice corresponding to the search criteria were found.
+[NOTE]
+Process will be described as soon as its finalized
 
-The Search Notice Request (QueryRequest) and Search Notice Response (QueryResponse) are facilitated by {regrep}, a standard defining service interfaces, protocols and information model for an integrated registry and repository. Both transactions are therefore described by {ebrim}. As three types of UBL notices exist, Contract Notice (CN), Prior Information Notice (PIN) and Contract Award Notice (CAN), three notices types may be included to the package as a result of the process. Each of them may be repeated, depending on the number of notices found for the query. The notices included in the results are in an agreed XML syntax format following the rules of {eforms-specs} and the corresponding UBL syntaxes.
+//TODO change images to higher resolution
+image::../images/publishNoticeBPMN.png[align="center", width=800]
 
-The figure above illustrates the overall composition of a Search Notice Request or Search Notice Response composed of the SBDH, the ASiC-E Container, the Query Protocol and the Payloads based on eFORMs and UBL.
+[NOTE]
+This image does not represent the final process and only a placeholder for the actual process.
+
 
 [cols="2,10", options="header"]
 .Business process
 |===
 | Category | Description
 | Description
-| A contracting body requests a publication body to publish a prior information/ contract notice. The publication body assesses the request and may ask for corrections. Small corrections may be applied by the publication body itself. When the notice to be published meets the criteria, it is published or filed if confidential.
+| A contracting body requests a publication body to publish a prior information/ contract notice/ contract award notice. The publication body assesses the request and may ask for corrections. Small corrections may be applied by the publication body itself. When the notice to be published meets the criteria, it is published or filed if confidential.
 | Pre-conditions | The contracting body prepared a prior information/ contract notice.
-| Post-conditions	| The prior information/ contract notice is published.
+| Post-conditions	| The prior information/ contract notice/ contract award notice is published.
 
 
 |===
@@ -40,10 +44,6 @@ The figure above illustrates the overall composition of a Search Notice Request 
 | Publish | Publication body | The notice is published
 
 |===
-
-
-//TODO change images to higher resolution
-image::../images/publishNoticeBPMN.png[align="center", width=800]
 
 :leveloffset: +1
 
