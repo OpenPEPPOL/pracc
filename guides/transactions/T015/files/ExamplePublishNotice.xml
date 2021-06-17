@@ -118,10 +118,10 @@
                 </rim:Slot>
                 <!-- end::organisation-number[] -->
                 <!-- tag::country-code[] -->
-                <rim:Slot name="CountryCode" type="http://publications.europa.eu/resource/authority/country"> <!--.-->
+                <rim:Slot name="NUTSCode" type="http://publications.europa.eu/resource/authority/nuts"> <!--.-->
                     <rim:SlotValue xsi:type="rim:CollectionValueType"> <!--.-->
                         <rim:Element xsi:type="rim:StringValueType">
-                            <rim:Value>DNK</rim:Value>
+                            <rim:Value>IE063</rim:Value>
                         </rim:Element>
                     </rim:SlotValue>
                 </rim:Slot>

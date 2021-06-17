@@ -9,13 +9,19 @@
 * urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2
 * urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
 
-The Publish Notice is based on {ebrim} and adapted according to the Query Protocol of {ebrs}. The package contains notices metadata defined along business terms defined in {eforms-specs} and {link-profile} and notices in XML format.
+The Publish Notice is based on {ebrim} and adapted according to the Query Protocol of {ebrs}. The package contains notices metadata defined along business terms defined in {eforms-specs} and the profiles
+
+{name-profile-org}
+
+and notices in XML format.
 
 * {ubl-pin}: Describes the notices type "Prior Information Notice" that can be referenced in the QueryResponse. The XML must be formatted according to {eforms-specs}.
 * {ubl-cn}: Describes the notices type "Contract Notice" that can be referenced in the QueryResponse.The XML must be formatted according to {eforms-specs}.
 * {ubl-can} Describes the notices type "Contract Award Notice" that can be referenced in the QueryResponse.The XML must be formatted according to {eforms-specs}.
 
-{link-peppol} {name-profile} business process includes 1 transaction:
+{name-profile-org}
+
+business processes include 1 transaction:
 
 * link:../../transactions/T015/index.html[T015 - Publish Notice]
 

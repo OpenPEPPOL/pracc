@@ -1,6 +1,7 @@
 
 = Key examples
 
+== Profile 10 - Contract Notice
 *Example 1*
 
 A contracting body sends a request to publish a contract notice to the publication body. The publication body validates the notice. The notice concerns the delivery of one hundred personal computers and the installation of software. The notice contains also details about the project such as the place of performance, the duration and the estimated value of the procurement. All information about the contracting body are included in the notice. The publication body publishes the contract notice. Economic operators can see in the published notice, the address to access more information about the procurement project and the address to submit tenders or request to participate.
@@ -9,6 +10,8 @@ A contracting body sends a request to publish a contract notice to the publicati
 
 A contracting body has a procurement project and publishes a contract notice to inform economic operators about the call for tenders. The notices present details about the project (text description, NUTS codes for location, CPV code for procurement items) and the procurement procedures (delay, award criterion, technical or financial capacities), so that economic operators can evaluate their interest in this business opportunity.
 
+== Profile 14 - Prior Information Notice
+
 *Example 3*
 
 A contracting body sends a request to publish a prior information notice, the notice concerns the delivery of one hundred personal computer and the installation of administrative software. The notice contains also details about the project such as the place of performance, the duration and the estimated value of the procurement. All information about the contracting body are included in the notice. If the reducing time limit indicator is checked, the contracting body indicates that a call for tender with a reduced delay for submitting bids will be pbulished. The economic operator will see from the notice the estimated date of publication of the contract notice.
@@ -16,6 +19,8 @@ A contracting body sends a request to publish a prior information notice, the no
 *Example 4*
 
 A contracting body has a procurement project and publishes a prior information notice to inform economic operators about a business opportunity. The notice presents details about the project (text description, NUTS codes for location, CPV code for procurement items). If the call for competition indicator is checked and the address to which  the tenders is indicated an interested economic operator can send a tender.
+
+== Profile 43 - Contract Award Notice
 
 *Example 5*
 

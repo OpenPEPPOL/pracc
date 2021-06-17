@@ -1,7 +1,6 @@
 
 = Parties and roles
 
-
 The following parties participate as business partners in this transaction, acting in the roles as defined below
 
 [cols="5,10", options="header"]

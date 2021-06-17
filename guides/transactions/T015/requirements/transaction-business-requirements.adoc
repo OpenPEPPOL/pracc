@@ -4,9 +4,13 @@
 .Transaction business requirements of {name-transaction}
 |===
 | ID | Requirement
-| tbr78-001 tbr79-001 tbr80-001
+| tbr78-001 +
+tbr79-001 +
+tbr80-001
 | The Directive used by this notice shall be specified.
-| tbr78-002 tbr79-002 Tbr80-002
+| tbr78-002 +
+ tbr79-002 +
+ tbr80-002
 | The contracting body shall be identified by:
 
 * the official name
@@ -15,15 +19,24 @@
 * the address email
 * the internet address
 * the town of the address
-| tbr78-003 tbr79-003 tbr80-003
+| tbr78-003 +
+ tbr79-003 +
+ tbr80-003
 | The object of the publication shall be identified.
-| tbr78-004 tbr79-004 tbr80-004
+| tbr78-004 +
+ tbr79-004 +
+ tbr80-004
 | The date of publication of the notice shall be specified.
-| tbr78-005 tbr79-005 tbr80-005
+| tbr78-005 +
+ tbr79-005 +
+ tbr80-005
 | At least one CPV code for the project shall be specified
-| tbr78-006 tbr79-006 tbr80-006
+| tbr78-006 +
+ tbr79-006 +
+ tbr80-006
 | The main activity of the contracting body shall be specified
-| tbr78-007 tbr79-007
+| tbr78-007 +
+ tbr79-007
 | Different informations about communication may be specified:
 
 *	The address to find more information
@@ -35,10 +48,12 @@
 | The electronic address for tools used for electronic communication may be specified
 | tbr78-011
 | The notice shall contain information about the project:
+
 * Project description
 * Type of project
-
-| tbr78-012 tbr79-008 tbr80-008
+| tbr78-012 +
+ tbr79-008 +
+ tbr80-008
 | The notice may contain information about the project:
 
 * Project name
@@ -56,7 +71,9 @@
 * renewals
 | tbr78-009
 | The type of activity of the contracting body may be specified
-| tbr79-009 tbr80-009 tbr78-013
+| tbr78-013 +
+ tbr79-009 +
+ tbr80-009
 | The notice may contain information about the scope of the project:
 
 * Usage of EU funds
@@ -64,12 +81,16 @@
 * Government Procurement Agreement (GPA)
 | tbr78-010
 | The form of procurement may be specified (framework agreement dynamic purchasing system)
-| tbr78-014 tbr79-010 tbr80-010
+| tbr78-014 +
+ tbr79-010 +
+ tbr80-010
 | The notice may contain information about lot:
 
 *	Divided in lots indicator
 *	Information about condition of submission or attribution of lots
-| tbr78-015 tbr79-011 tbr80-011
+| tbr78-015 +
+ tbr79-011 +
+ tbr80-011
 | Each lot, if available, shall contain:
 
 * An identifier
@@ -77,7 +98,9 @@
 * At least one CPV
 * A location and at least one NUTS CODE
 * Value
-| tbr78-016 tbr79-012 tbr80-012
+| tbr78-016 +
+ tbr79-012 +
+ tbr80-012
 | Each lot may contain:
 
 * A name
@@ -95,7 +118,9 @@
 * Technical and professional ability
 * Rules and criteria for participation
 * Information about reserved contracts or particular profession
-| tbr78-019 tbr79-015 tbr80-015
+| tbr78-019 +
+ tbr79-015 +
+ tbr80-015
 | The notice may contain information about the procedure:
 
 * The type of procedure
@@ -114,7 +139,9 @@
 * previous publication number
 * the language used for submission or requests
 * date limite of validity of the tender
-| tbr78-026 tbr79-016 tbr80-016
+| tbr78-026 +
+ tbr79-016 +
+ tbr80-016
 | The notice may contains additional information:
 
 * information about recurrence
@@ -141,7 +168,8 @@
 * the date
 * the time
 * the conditions and place
-| tbr79-020 tbr80-020
+| tbr79-020 +
+ tbr80-020
 | The form of procurement may be specified
 
  * for Prior Information Notice: Joint procurement, dynamic purchasing system
