@@ -62,7 +62,7 @@
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='CountryCode']">
-            <assert id="PEPPOL-T015-R015" flag="fatal" test="@type = 'http://publications.europa.eu/resource/authority/country'">The Type for CountryCode MUST be "http://publications.europa.eu/resource/authority/country".</assert>
+            <assert id="PEPPOL-T015-R015" flag="fatal" test="@type = 'http://publications.europa.eu/resource/authority/nuts'">The Type for CountryCode MUST be "http://publications.europa.eu/resource/authority/nuts".</assert>
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='DocumentTypeCode']">
@@ -84,7 +84,7 @@
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot">
-            <assert id="PEPPOL-T015-R025" flag="fatal" test="@name = 'Name' or @name = 'OrganisationNumber' or @name = 'CountryCode' or @name = 'BuyerPartyIdentification' or @name = 'BuyerElectronicAddress'">The name of the slots under Buyer Information MUST be one of "Name", "OrganisationNumber", "CountryCode", "BuyerPartyIdentification" or "BuyerElectronicAddress".</assert>
+            <assert id="PEPPOL-T015-R025" flag="fatal" test="@name = 'Name' or @name = 'OrganisationNumber' or @name = 'NUTSCode' or @name = 'BuyerPartyIdentification' or @name = 'BuyerElectronicAddress'">The name of the slots under Buyer Information MUST be one of "Name", "OrganisationNumber", "NUTSCode", "BuyerPartyIdentification" or "BuyerElectronicAddress".</assert>
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='ChangeNotice']">
