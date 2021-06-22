@@ -6,8 +6,7 @@ The following {link-bpmn}[BPMN] diagram shows the choreography of the business p
 [NOTE]
 Process will be described as soon as its finalized
 
-//TODO change images to higher resolution
-image::../images/publishNoticeBPMN.png[align="center", width=800]
+image::../images/processPN.png[align="center", width=800]
 
 [NOTE]
 This image does not represent the final process and only a placeholder for the actual process.
