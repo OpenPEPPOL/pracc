@@ -58,6 +58,16 @@ include::../files/ExamplePublishNotice.xml[tags=publication-requested]
 <.> Slot for the indication of the publication of the attached notices
 <.> SlotValue type has to be BooleanValueType
 
+=== Publication Request Indicator
+
+This indicator shows if the attached notice needs to be published or if it only needs to be validated by the publication body. The check by the publication body can help the contracting party to determine the validity of the notice with regard to a possible publication.
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=publication-requested]
+....
+<.> Slot for the indication of the publication of the attached notices
+<.> SlotValue type has to be BooleanValueType
+
 
 == Registry Object (List)
 
