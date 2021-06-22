@@ -8,8 +8,14 @@ Process will be described as soon as its finalized
 
 image::../images/processPN.png[align="center", width=800]
 
+The process starts with the contracting body issuing a new publication notice. At first, they have to choose which kind of notice has to be published (PIN, CN or CAN). After that the publication request will be prepared and send to the publication body. Transaction T015 is used for the message to the publication body.
+
+Depending on the validity of the message, the process continues for the contracting body with the receipt of the rejection. The rejection is submitted by the publication body, after they checked the validity of the notice via T016 with the status "Rejected". The contracting body now updates the request. With this action the process ends for both parties.
+
+In case of a valid notice the contracting body receives a publication confirmation via T016 with the status "Accepted" from the publication body. After both parties wait for the desired publication date the publication body sends a status update via T016 with the status "Published" to confirm the successful publication of the notice. This ends the process finishes the process for the publication office. The same goes for the contracting body, which ends the process with the receipt of the publication request status. The notice has been published.
+
 [NOTE]
-This image does not represent the final process and only a placeholder for the actual process.
+Transaction T016 needs to be created.
 
 
 [cols="2,10", options="header"]
