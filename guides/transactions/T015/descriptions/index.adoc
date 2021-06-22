@@ -69,7 +69,7 @@ This list contains all the notices, which will be published at once during this 
 
 [source,xml,indent=0]
 ....
-include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version]
+include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!additional-document-reference]
 ....
 
 <.> Beginning of the registry object list
