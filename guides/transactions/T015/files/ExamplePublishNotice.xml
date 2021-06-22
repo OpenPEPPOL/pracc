@@ -107,7 +107,7 @@
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::additional-document-reference[] -->
-            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/>
+            <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->
         </rim:RegistryObject>
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
