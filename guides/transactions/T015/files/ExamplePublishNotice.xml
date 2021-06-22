@@ -80,7 +80,7 @@
                 </rim:Slot>
                 <!-- end::buyer-party-identification[] -->
                 <!-- tag::buyer-electronic-address[] -->
-                <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
+                <rim:Slot name="BuyerElectronicAddress" type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>9930:DE89769595</rim:Value> <!--.-->
                     </rim:SlotValue>
