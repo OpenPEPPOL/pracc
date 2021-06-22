@@ -37,6 +37,7 @@
                 create a new version of the existing object using the state of the submitted notice. So it is ensured
                 that the old notice will not be overwritten but stays readable as an outdated version.
             </Description>
+            <Reference type="RULE">PEPPOL-T015-R012</Reference>
             <DataType>String</DataType>
             <Value type="FIXED">CreateOrVersion</Value>
         </Attribute>
@@ -270,6 +271,7 @@
                         <Element>
                             <Term>rim:Value</Term>
                             <Description>The value of the Slot instance.</Description>
+                            <Reference type="RULE">PEPPOL-T015-R013</Reference>
                             <DataType>rim:IntegerValueType</DataType>
                         </Element>
                     </Element>
@@ -348,6 +350,7 @@
                             <Element>
                                 <Term>rim:Value</Term>
                                 <Description>The value of the Slot instance.</Description>
+                                <Reference type="RULE">PEPPOL-T015-R014</Reference>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
@@ -389,6 +392,7 @@
                         <Term>xlink</Term>
                         <Name>Local Identifier</Name>
                         <Description>This element uses xlink:href to specify local XML notice of the ASiC-E container as repository item.</Description>
+                        <Reference type="RULE">PEPPOL-T015-R015</Reference>
                     </Attribute>
                 </Element>
             </Element>

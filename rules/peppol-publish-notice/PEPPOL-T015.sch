@@ -5,10 +5,12 @@
     <ns prefix="rim" uri="urn:oasis:names:tc:ebxml-regrep:xsd:rim:4.0"/>
     <ns prefix="lcm" uri="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:4.0"/>
     <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
 
     <pattern>
         <rule context="lcm:SubmitObjectsRequest">
             <assert id="PEPPOL-T015-R001" flag="fatal" test="matches(normalize-space(./@id), '^[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}$')">LCM Identifier value MUST be expressed in a UUID syntax (RFC 4122).</assert>
+            <assert id="PEPPOL-T015-R012" flag="fatal" test="matches(normalize-space(./@mode), 'CreateOrVersion')">A Notice SubmitObjectsRequest MUST have mode definition with the value "CreateOrVersion".</assert>
             <assert id="PEPPOL-T015-R002" flag="fatal" test="count(rim:Slot[@name='SpecificationIdentification']) = 1">A Notice SubmitObjectsRequest MUST have an identifier.</assert>
             <assert id="PEPPOL-T015-R003" flag="fatal" test="count(rim:Slot[@name='BusinessProcessTypeIdentifier']) = 1">There MUST be exactly 1 BusinessProcessTypeIdentifier.</assert>
             <assert id="PEPPOL-T015-R004" flag="fatal" test="count(rim:Slot[@name='IssueDateTime']) = 1">There MUST be exactly 1 IssueDateTime.</assert>
@@ -47,8 +49,16 @@
             <assert id="PEPPOL-T015-R016" flag="fatal" test="@type = 'http://docs.peppol.eu/document-type-code'">The UBLDocumentSchema MUST have a type of the value of "http://docs.peppol.eu/document-type-code".</assert>
         </rule>
 
+        <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='NoticeVersion']/rim:SlotValue/rim:Value">
+            <assert id="PEPPOL-T015-R013" flag="fatal" test="./text()[matches(normalize-space(), '^\d{1,2}$')]">The Notice Version MUST be consecutive numbers made of 1 or 2 digits.</assert>
+        </rule>
+
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']">
-            <assert id="PEPPOL-T015-R017" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "http://docs.peppol.eu/document-type-code".</assert>
+            <assert id="PEPPOL-T015-R017" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+        </rule>
+
+        <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">
+            <assert id="PEPPOL-T015-R014" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']">
@@ -74,6 +84,10 @@
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='NoticeVersion']">
             <assert id="PEPPOL-T015-R036" flag="fatal" test="rim:SlotValue[@xsi:type='rim:IntegerValueType']">NoticeVersion MUST have an element SlotValue with xsi:type of rim:IntegerValueType.</assert>
+        </rule>
+
+        <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:RepositoryItemRef">
+            <assert id="PEPPOL-T015-R015" flag="fatal" test="matches(normalize-space(./@xlink:href), '^\./[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}\.eform\.xml$')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122). The file referenced by the xlink:href MUST be present in the ASiC-E Container. </assert>
         </rule>
 
         <!--Gobal Rules (only matches if no other does)-->
