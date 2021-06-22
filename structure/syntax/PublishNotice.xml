@@ -19,6 +19,7 @@
         <Reference type="RULE">PEPPOL-T015-R004</Reference>
         <Reference type="RULE">PEPPOL-T015-R005</Reference>
         <Reference type="RULE">PEPPOL-T015-R006</Reference>
+        <Reference type="RULE">PEPPOL-T015-R020</Reference>
         <Reference type="RULE">PEPPOL-T015-R037</Reference>
         <Reference type="RULE">PEPPOL-T015-R038</Reference>
         <Reference type="RULE">PEPPOL-T015-R039</Reference>
@@ -181,6 +182,31 @@
             </Element>
         </Element>
         <Element>
+            <Term>rim:Slot@name=PublicationRequested</Term>
+            <Name>Publication Requested</Name>
+            <Description>This indicator shows if the attached notice needs to be published or if it only needs to be
+                validated by the publication body. The check by the publication body can help the contracting party to
+                determine the validity of the notice with regard to a possible publication.
+            </Description>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">PublicationRequested</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Description>An abstract class that defines a container for a string value.</Description>
+                <Reference type="RULE">PEPPOL-T015-R021</Reference>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Value type="FIXED">rim:BooleanValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Description>The value of the Slot instance.</Description>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
             <Term>rim:RegistryObjectList</Term>
             <Name>Registry Object List</Name>
             <Description>The Registry Object List contains the information to be published. It describes the notice
@@ -333,7 +359,9 @@
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerElectronicAddress</Term>
                         <Name>Buyer Electronic Address</Name>
-                        <Description>Identifies the buyer party's electronic address according to Electronic Address Scheme (EAS)</Description>
+                        <Description>Identifies the buyer party's electronic address according to Electronic Address
+                            Scheme (EAS)
+                        </Description>
                         <Reference type="RULE">PEPPOL-T015-R024</Reference>
                         <Attribute>
                             <Term>name</Term>
@@ -359,7 +387,8 @@
                         <Term>rim:Slot@name=AdditionalDocumentReference</Term>
                         <Name>Additional Document Reference</Name>
                         <Description>The Additional Document Reference specifies a reference to an additional file that
-                            is included to the local ASiC-E container (Associated Signature Container Extended) repository.
+                            is included to the local ASiC-E container (Associated Signature Container Extended)
+                            repository.
                         </Description>
                         <Attribute>
                             <Term>name</Term>
@@ -391,7 +420,9 @@
                     <Attribute>
                         <Term>xlink</Term>
                         <Name>Local Identifier</Name>
-                        <Description>This element uses xlink:href to specify local XML notice of the ASiC-E container as repository item.</Description>
+                        <Description>This element uses xlink:href to specify local XML notice of the ASiC-E container as
+                            repository item.
+                        </Description>
                         <Reference type="RULE">PEPPOL-T015-R015</Reference>
                     </Attribute>
                 </Element>

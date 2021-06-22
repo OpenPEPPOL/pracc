@@ -49,6 +49,13 @@
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::receiver-electronic-address[] -->
+    <!-- tag::publication-requested[] -->
+    <rim:Slot name="PublicationRequested"> <!--.-->
+        <rim:SlotValue xsi:type="rim:BooleanValueType"> <!--.-->
+            <rim:Value>true</rim:Value>
+        </rim:SlotValue>
+    </rim:Slot>
+    <!-- end::publication-requested[] -->
     <!-- tag::registry-object-list[] -->
     <rim:RegistryObjectList> <!--.-->
         <rim:RegistryObject
@@ -89,12 +96,12 @@
             </rim:Slot>
             <!-- end::information-about-buyer[] -->
             <!-- tag::additional-document-reference[] -->
-            <rim:Slot name="AdditionalDocumentReference" type="description of document"> <!--.-->
+            <rim:Slot name="AdditionalDocumentReference" type="type of document1"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>document</rim:Value> <!--.-->
                 </rim:SlotValue>
             </rim:Slot>
-            <rim:Slot name="AdditionalDocumentReference" type="description of document2"> <!--.-->
+            <rim:Slot name="AdditionalDocumentReference" type="type of document2"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>document2</rim:Value>
                 </rim:SlotValue>
