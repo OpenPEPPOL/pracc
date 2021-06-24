@@ -6,21 +6,25 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 == Profile ID
 
 [IMPORTANT]
-All transactions within this profile uses the same profile identifier.
+All transactions within this profile uses the same Business Process Type Identifier.
 
 [cols="2*2,2*4", options="header"]
-.The table below shows values to be used for the Specification Identification
+.The table below shows values to be used for the Business Process Type Identifier
 |===
 
 | TransactionID
 | Transaction name
 | Short Description
-| `rim:Slot name="SpecificationIdentification`
+| Business Process Type Identifier
 
 | T015
 | Publish Notice
-| The requester sends a Publish Notice Request to the Data Provider.
-.2+.^| urn:fdc:peppol.eu:prac:trns:t015:1.0
+| The requester sends a Publish Notice Request to the publisher.
+.2+.^| urn:fdc:peppol.eu:prac:bis:p008:1.0
+
+| T016
+| Notice Publication Response
+| The publisher sends a Notice Publication Response to the requester.
 
 |===
 
