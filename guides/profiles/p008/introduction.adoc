@@ -6,11 +6,13 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 .Relationship between BII profiles and PEPPOL BIS
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
-The {name-profile} describes a process providing electronic messaging support for the business process to retrieve a bulk download of relevant notices from a publisher by any interested party; which could be for example another publisher or an intermediary service. The key aspects covered by this BIS are:
+The {name-profile} describes a process providing electronic messaging support for the business process to publish a prior information notice, a contract notice or a contract award notice. The profile is executed between a contracting body or his representative and a publication body to announce business opportunities and contract awards in public procurement procedures. The key aspects covered by this BIS are:
 
-* The search and retrieval of all relevant notices available from a publisher.
-* The retrieval of the notice(s) in xml based on {eforms-specs}.
-* The association of notice metadata facilitating PEPPOL eTendering processes such as P001 - Procurement Procedure Subscription.
+* The electronic message exchange from the contracting body or his representative to publish a notice at the services provided by a publisher.
+* The association of a notice to the message following the syntax provided by the UBL document schemas: {ubl-pin}, {ubl-cn}, {ubl-can}.
+* The formatting of that notice according the rules described in {eforms-specs} maintained by the Publication Office.
+* The possibility for the publisher to validate the notice, to request/suggest corrections to the notice, to approve its publication and to announce its publication date.
+* The association of notice metadata to facilitate PEPPOL eTendering processes such as P001 - Procurement Procedure Subscription.
 
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the notification and tendering process based on these formats.

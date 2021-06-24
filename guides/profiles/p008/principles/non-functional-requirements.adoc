@@ -18,7 +18,7 @@ br43-001
 | br10-004 +
  br14-004 +
  br43-004
-| The publication body may request the contracting body to correct the notice if it does not comply with regulations that apply.
+| The publication body may request the contracting body to correct the notice if it does not comply with regulations or rules that apply.
 | br10-005 +
  br14-005 +
  br43-005
@@ -26,11 +26,11 @@ br43-001
 | br10-006 +
  br14-006 +
  br43-006
-| The contracting body may request the publication body to inform him of the status of his notice.
+| The contracting body requires the publication body to inform him of the status of his notice.
 | br10-007 +
  br14-007 +
  br43-007
-| The publication body may provide publication status information on request of the contracting body.
+| The publication body may provide publication status information to the contracting body.
 | br10-010 +
  br14-010 +
  br43-010

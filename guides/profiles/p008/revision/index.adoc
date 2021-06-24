@@ -20,4 +20,10 @@
 | adesso SE
 | Gathered information from given profiles
 
+| 0.3
+| 2021-06-24
+| Ansgar Mondorf
+| University of Koblenz-Landau
+| Review of Profile, Inclusion of Process descriptions, Description of Implementation Guideline
+
 |===
