@@ -66,6 +66,10 @@
             <assert id="PEPPOL-T015-R013" flag="fatal" test="./text()[matches(normalize-space(), '^\d{1,2}$')]">The Notice Version MUST be consecutive numbers made of 1 or 2 digits.</assert>
         </rule>
 
+        <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='eFormsVersion']/rim:SlotValue/rim:Value">
+            <assert id="PEPPOL-T015-R022" flag="fatal" test="./text()[matches(normalize-space(), 'eforms-[0-9].[0-9]')]">The eForms Version MUST be in the format eforms-x.y</assert>
+        </rule>
+
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']">
             <assert id="PEPPOL-T015-R017" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
         </rule>

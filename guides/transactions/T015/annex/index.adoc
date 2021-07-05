@@ -3,6 +3,8 @@
 
 //image::../files/publishnoticedatamodel.png[align="center"]
 
+image::../images/PublishNoticeV4.png[align="center", width=1200]
+
 [appendix]
 == Key examples/use cases
 
