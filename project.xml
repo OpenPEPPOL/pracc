@@ -270,5 +270,12 @@
         <Property key="download">schematrons.zip</Property>
         <Property key="filename">schematrons.zip</Property>
     </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Code lists</Title>
+        <Property key="download">codelists.zip</Property>
+        <Property key="filename">codelists.zip</Property>
+    </Resource>
 
 </Project>
