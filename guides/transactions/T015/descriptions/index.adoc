@@ -69,7 +69,7 @@ This list contains all the notices, which will be published at once during this 
 
 [source,xml,indent=0]
 ....
-include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!additional-document-reference]
+include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!additional-document-reference;!eforms-version]
 ....
 
 <.> Beginning of the registry object list
@@ -97,6 +97,22 @@ include::../files/ExamplePublishNotice.xml[tags=notice-version]
 ....
 <.> Slot for the notice version
 <.> SlotValue type has to be IntegerValueType, in this case 1.0 as it is the first version of the notice
+
+=== eForms Version
+
+Version of the used eForms specification for the notice. The format is according to the specification always eforms-x.y.
+
+• “eforms-”: fixed prefix,
+• “x”: major version number (increased everytime backward compatibility is affected),
+• “y”: minor version number
+
+
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=eforms-version]
+....
+<.> Slot for the eForms version
+<.> SlotValue type has to be StringValueType, as the format for the version will be always eforms-x.y
 
 === Buyer Information
 
@@ -127,6 +143,8 @@ include::../files/ExamplePublishNotice.xml[tags=buyer-electronic-address]
 === Additional Document Reference
 
 The Additional Document Reference specifies a reference to an additional file that is included to the local ASiC-E container (Associated Signature Container Extended) repository. For optional use.
+
+The notice stored in a eForms based format must contain all the information of the notice, regardless of the place of publication. Therefore, the attached additional file shall contain only additional information to the notice (like statistical data) that is not part of the notice itself.
 
 [source,xml,indent=0]
 ....

@@ -240,6 +240,28 @@
                         </Element>
                     </Element>
                 </Element>
+                <Element>
+                    <Term>rim:Slot@name=eFormsVersion</Term>
+                    <Name>eForms Version</Name>
+                    <Description>Used to identify the version of the eForms specification used for the document.
+                    </Description>
+                    <Attribute>
+                        <Term>name</Term>
+                        <Value type="FIXED">eFormsVersion</Value>
+                    </Attribute>
+                    <Element>
+                        <Term>rim:SlotValue</Term>
+                        <Attribute>
+                            <Term>xsi:type</Term>
+                            <Reference type="RULE">PEPPOL-T012-R025</Reference>
+                            <Value type="FIXED">rim:StringValueType</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:Value</Term>
+                            <DataType>rim:StringValueType</DataType>
+                        </Element>
+                    </Element>
+                </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=BuyerElectronicAddress</Term>
                     <Name>Buyer Electronic Address Identifier</Name>

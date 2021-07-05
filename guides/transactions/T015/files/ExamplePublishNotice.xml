@@ -76,6 +76,13 @@
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::notice-version[] -->
+            <!-- tag::eforms-version[] -->
+            <rim:Slot name="eFormsVersion"> <!--.-->
+                <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
+                    <rim:Value>eforms-1.2</rim:Value>
+                </rim:SlotValue>
+            </rim:Slot>
+            <!-- end::eforms-version[] -->
             <!-- tag::information-about-buyer[] -->
             <rim:Slot name="BuyerInformation">
                 <!-- tag::buyer-party-identification[] -->
@@ -96,14 +103,14 @@
             </rim:Slot>
             <!-- end::information-about-buyer[] -->
             <!-- tag::additional-document-reference[] -->
-            <rim:Slot name="AdditionalDocumentReference" type="type of document1"> <!--.-->
+            <rim:Slot name="AdditionalDocumentReference" type="SomeStatistics"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>document</rim:Value> <!--.-->
+                    <rim:Value>./12f5017b-e5fa-404b-bfa1-849c721b2c83.eform.xml</rim:Value> <!--.-->
                 </rim:SlotValue>
             </rim:Slot>
-            <rim:Slot name="AdditionalDocumentReference" type="type of document2"> <!--.-->
+            <rim:Slot name="AdditionalDocumentReference" type="EvenMoreStats"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>document2</rim:Value>
+                    <rim:Value>./d2c79a1a-af4c-409f-b4c5-f2460e32cfb8.eform.xml</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::additional-document-reference[] -->
