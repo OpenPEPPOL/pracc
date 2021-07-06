@@ -1,7 +1,7 @@
 [appendix]
 == T015 - Publish Notice Data Model
 
-image::../images/PublishNoticeV4.png[align="center", width=1200]
+image::../files/publishnoticedatamodel.png[align="center"]
 
 [appendix]
 == Key examples/use cases
