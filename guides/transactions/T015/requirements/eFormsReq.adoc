@@ -1,3 +1,6 @@
 = Non-functional requirements
 
-All the requirements can be seen under the following link: https://ec.europa.eu/docsroom/documents/43488[2019/1780 - Extended Annex to Regulation for eForms]
+All the requirements for eForms can be seen under the following link: https://ec.europa.eu/docsroom/documents/43488[2019/1780 - Extended Annex to Regulation for eForms].
+These are additional requirements to the table above.
+
+For this transaction being mostly influenced by the eForms specification and not on the UBL profiles, the link will provide an overview of the eForms requirements. These were used to create the transaction. All selected slots for the transaction are seen in the data model below. The content for these will be according to the document, which has to be transmitted.

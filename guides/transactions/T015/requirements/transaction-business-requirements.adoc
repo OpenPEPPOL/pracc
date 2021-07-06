@@ -4,6 +4,20 @@
 .Transaction business requirements of {name-transaction}
 |===
 | ID | Requirement
+| tbr78-003 +
+tbr79-003 +
+tbr80-003
+| The object of the publication shall be identified.
+| tbr78-004 +
+tbr79-004 +
+tbr80-004
+| The date of publication of the notice shall be specified.
+| tbr78-008
+| The electronic address for tools used for electronic communication may be specified
+| tbr79-013
+| The estimated date of publication of the contract notice may be specified
+|===
+////
 | tbr78-001 +
 tbr79-001 +
 tbr80-001
@@ -19,14 +33,6 @@ tbr80-001
 * the address email
 * the internet address
 * the town of the address
-| tbr78-003 +
- tbr79-003 +
- tbr80-003
-| The object of the publication shall be identified.
-| tbr78-004 +
- tbr79-004 +
- tbr80-004
-| The date of publication of the notice shall be specified.
 | tbr78-005 +
  tbr79-005 +
  tbr80-005
@@ -44,8 +50,7 @@ tbr80-001
 *	The electronic address for submission
 *	The address to find electronic procurement document
 *	The electronic address for tools used for electronic communication
-| tbr78-008
-| The electronic address for tools used for electronic communication may be specified
+
 | tbr78-011
 | The notice shall contain information about the project:
 
@@ -108,8 +113,6 @@ tbr80-001
 * Value
 * Duration
 * A location and at least one NUTS CODE
-| tbr79-013
-| The estimated date of publication of the contract notice may be specified
 | tbr79-014
 | The notice may contain legal, financial and technical information:
 
@@ -183,6 +186,6 @@ tbr80-001
 * indication about the follow-up contracts
 * indication about the binding of the decision
 * member of jury name
+////
 
 
-|===
