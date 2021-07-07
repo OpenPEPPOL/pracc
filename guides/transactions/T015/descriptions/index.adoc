@@ -12,6 +12,7 @@ Limited support for this, see
 Specifies the unique identifier for an the Request to publish a notice.
 
 [source,xml,indent=0]
+.Example of usage of Specification Identification
 ....
 include::../files/ExamplePublishNotice.xml[tags=specification-identification]
 ....
@@ -23,6 +24,7 @@ include::../files/ExamplePublishNotice.xml[tags=specification-identification]
 Identifier for the business process context of the Publish Notice.
 
 [source,xml,indent=0]
+.Example of usage of business process type identifier
 ....
 include::../files/ExamplePublishNotice.xml[tags=business-process-type-identifier]
 ....
@@ -33,6 +35,7 @@ include::../files/ExamplePublishNotice.xml[tags=business-process-type-identifier
 The party sending the notice.
 
 [source,xml,indent=0]
+.Example of usage of electronic address of sender party
 ....
 include::../files/ExamplePublishNotice.xml[tags=sender-electronic-address]
 ....
@@ -45,6 +48,7 @@ include::../files/ExamplePublishNotice.xml[tags=sender-electronic-address]
 The party receiving of the notice.
 
 [source,xml,indent=0]
+.Example of usage of electronic address of receiver party
 ....
 include::../files/ExamplePublishNotice.xml[tags=receiver-electronic-address]
 ....
@@ -55,7 +59,9 @@ include::../files/ExamplePublishNotice.xml[tags=receiver-electronic-address]
 === Publication Request Indicator
 
 This indicator shows if the attached notice needs to be published or if it only needs to be validated by the publication body. The check by the publication body can help the contracting party to determine the validity of the notice with regard to a possible publication.
+
 [source,xml,indent=0]
+.Example of usage of publication request indicator
 ....
 include::../files/ExamplePublishNotice.xml[tags=publication-requested]
 ....
@@ -68,6 +74,7 @@ include::../files/ExamplePublishNotice.xml[tags=publication-requested]
 This list contains all the notices, which will be published at once during this transaction. Each notice is represented as one registry object. The Registry Object contains the RepositoryItemRef, which is the reference to the notice itself.
 
 [source,xml,indent=0]
+.Example of usage of the registry object list (abbreviated)
 ....
 include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!information-about-buyer;!document-type-code;!notice-version;!additional-document-reference;!eforms-version]
 ....
@@ -82,6 +89,7 @@ Used to identify the UBL document schema of the referenced notice which are asso
 the document types, see tbd.
 
 [source,xml,indent=0]
+.Example of usage of ubl document schema
 ....
 include::../files/ExamplePublishNotice.xml[tags=document-type-code]
 ....
@@ -92,6 +100,7 @@ include::../files/ExamplePublishNotice.xml[tags=document-type-code]
 Version of the notice which shall be published. If this is not the first iteration of the notice choose a higher number than one, ideally counting up from the last version which was published.
 
 [source,xml,indent=0]
+.Example of usage of notice version
 ....
 include::../files/ExamplePublishNotice.xml[tags=notice-version]
 ....
@@ -108,6 +117,7 @@ Version of the used eForms specification for the notice. The format is according
 
 
 [source,xml,indent=0]
+.Example of usage of eForms version
 ....
 include::../files/ExamplePublishNotice.xml[tags=eforms-version]
 ....
@@ -123,16 +133,18 @@ The information about the buyer includes different types of identification eleme
 The buyer party identification is an additional identifier for the buying organization. For optional use in the transaction.
 
 [source,xml,indent=0]
+.Example of usage of buyer party identification
 ....
 include::../files/ExamplePublishNotice.xml[tags=buyer-party-identification]
 ....
 <.> Slot for the buyer party identification, the type is always "_https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/_"
 <.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
 
-==== BuyerElectronicAddress
+==== Buyer Electronic Address
 Identifies the buyer party's electronic address according to Electronic Address Scheme (EAS).
 
 [source,xml,indent=0]
+.Example of usage of electronic address of buyer party
 ....
 include::../files/ExamplePublishNotice.xml[tags=buyer-electronic-address]
 ....
@@ -147,6 +159,7 @@ The Additional Document Reference specifies a reference to an additional file th
 The notice stored in a eForms based format must contain all the information of the notice, regardless of the place of publication. Therefore, the attached additional file shall contain only additional information to the notice (like statistical data) that is not part of the notice itself.
 
 [source,xml,indent=0]
+.Example of usage of additional document references
 ....
 include::../files/ExamplePublishNotice.xml[tags=additional-document-reference]
 ....
@@ -177,7 +190,7 @@ The issue date and time refer to the actual issuance of the notice.
 NOTE: The issue date, and the preferred publication date must specify the time zone.
 
 [source,xml,indent=0]
-.Example of Issue date/time, the preferred publication date/time and the procurement documents change date/time
+.Example of Issue date and time
 ....
 include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
 ....

@@ -16,6 +16,34 @@ tbr80-004
 | The electronic address for tools used for electronic communication may be specified
 | tbr79-013
 | The estimated date of publication of the contract notice may be specified
+| PEPPOL-tbr015-001
+| The publication request shall be identified.
+| PEPPOL-tbr015-002
+| The electronic address of the sender of the publication request shall be identified.
+| PEPPOL-tbr015-003
+| The electronic address of the receiver of the publication request shall be identified.
+| PEPPOL-tbr015-004
+| The creation date and time of the publication request shall be specified.
+| PEPPOL-tbr015-005
+| The publication request shall indicate if a publication or a validation of the notice object is requested.
+| PEPPOL-tbr015-006
+| The object of the notice publication request shall be identified.
+| PEPPOL-tbr015-007
+| The object of the notice publication request shall be included and must be formatted according to the eForms standard.
+| PEPPOL-tbr015-008
+| The publication request shall contain the following notice metadata:
+
+* Procedure identifier
+* Notice version
+* UBL document schema
+* eForms version (Customization ID)
+| PEPPOL-tbr015-009
+| The publication request shall contain the following buyer information:
+
+* Buyer identifier
+* Buyer electronic address identifier
+| PEPPOL-tbr015-010
+| The publication request shall provide the possibility to include other attachments associated to a notice.
 |===
 ////
 | tbr78-001 +
