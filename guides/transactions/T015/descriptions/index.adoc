@@ -5,58 +5,48 @@ Limited support for this, see
 
 {name-profile-org}.
 
-== Process control
+== Submit Objects Request
 
-=== Specification Identification
-
-Specifies the unique identifier for an the Request to publish a notice.
-
-[source,xml,indent=0]
-.Example of usage of Specification Identification
-....
-include::../files/ExamplePublishNotice.xml[tags=specification-identification]
-....
-<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t015:1.0_".
-
-
-=== Business Process Type Identifier
-
-Identifier for the business process context of the Publish Notice.
+* id indicates the id of the transmission in the form of an UUID
+* mode has to be "_CreateOrVersion_" as it should be possible to both transfer a new submission or an updated version
 
 [source,xml,indent=0]
-.Example of usage of business process type identifier
+.Example of usage of submit objects request basis
 ....
-include::../files/ExamplePublishNotice.xml[tags=business-process-type-identifier]
+include::../files/ExamplePublishNotice.xml[tags=submit-objects-request;!specification-identification;!business-process-type-identifier;!issue-date-time;!sender-electronic-address;!receiver-electronic-address;!publication-requested;!registry-object-list]
 ....
-<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p008:1.0_".
 
-=== Sender Party
+== Issue Date and time
 
-The party sending the notice.
+Issue date/time, and the registered date/time must be sent.
+
+Issue date and received date are both xs:date data type, and the date is specified as "YYYY-MM-DD" where:
+
+* YYYY - four digit year
+* MM - two digit month (01 to 12)
+* DD - two digit day (0)
+
+Issue time and received time are both xs:time data type, and the time is specified as "hh:mm:ss" where:
+
+* hh - two digits of hour (00 to 23) (am/pm NOT allowed).
+* mm - two digits of minute (00 to 59)
+* ss - two digits of second (00 to 59)
+* TZD - time zone designator (Z or +hh:mm or -hh:mm)
+
+The issue date and time refer to the actual issuance of the notice.
+
+NOTE: The issue date, and the preferred publication date must specify the time zone.
 
 [source,xml,indent=0]
-.Example of usage of electronic address of sender party
+.Example of Issue date and time
 ....
-include::../files/ExamplePublishNotice.xml[tags=sender-electronic-address]
+include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
 ....
-<.> Slot for the sender electronic address, including the schemeID in the type
-<.> SlotValue type has to be StringValueType
-<.> Value tag were the EndpointID has to be put
+<.> Slot for date and time of issuing of the published notice
+<.> SlotValue type has to be DateTimeValue
+<.> Value tag were the issue date time has to be put, including the time zone
 
-=== Receiver Party
-
-The party receiving of the notice.
-
-[source,xml,indent=0]
-.Example of usage of electronic address of receiver party
-....
-include::../files/ExamplePublishNotice.xml[tags=receiver-electronic-address]
-....
-<.> Slot for the sender electronic address, including the schemeID in the type
-<.> SlotValue type has to be StringValueType
-<.> Value tag were the EndpointID has to be put
-
-=== Publication Request Indicator
+== Publication Request Indicator
 
 This indicator shows if the attached notice needs to be published or if it only needs to be validated by the publication body. The check by the publication body can help the contracting party to determine the validity of the notice with regard to a possible publication.
 
@@ -82,6 +72,8 @@ include::../files/ExamplePublishNotice.xml[tags=registry-object-list;!informatio
 <.> Beginning of the registry object list
 <.> Each registry object is an Extrinsic Object Type. The Objects are identified by the lid (logical id) referencing the notice id and the id referencing the id of the publish notice
 <.> At last in each registry object goes the reference to the notice as an eforms document.
+
+== Notice Metadata
 
 === UBL Document Schema
 
@@ -124,11 +116,10 @@ include::../files/ExamplePublishNotice.xml[tags=eforms-version]
 <.> Slot for the eForms version
 <.> SlotValue type has to be StringValueType, as the format for the version will be always eforms-x.y
 
-=== Buyer Information
+
+=== Buyer Party Identification
 
 The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached published notice. The buyer information are optional in the transaction.
-
-==== Buyer Party Identification
 
 The buyer party identification is an additional identifier for the buying organization. For optional use in the transaction.
 
@@ -139,18 +130,6 @@ include::../files/ExamplePublishNotice.xml[tags=buyer-party-identification]
 ....
 <.> Slot for the buyer party identification, the type is always "_https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/_"
 <.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
-
-==== Buyer Electronic Address
-Identifies the buyer party's electronic address according to Electronic Address Scheme (EAS).
-
-[source,xml,indent=0]
-.Example of usage of electronic address of buyer party
-....
-include::../files/ExamplePublishNotice.xml[tags=buyer-electronic-address]
-....
-<.> Slot for the sender electronic address, including the schemeID in the type
-<.> SlotValue type has to be StringValueType
-<.> Value tag were the EndpointID has to be put
 
 === Additional Document Reference
 
@@ -168,32 +147,4 @@ include::../files/ExamplePublishNotice.xml[tags=additional-document-reference]
 <.> Path to the file
 <.> If needed additional attachments can be included in the same way as an additional slot
 
-== Date and time
 
-Issue date/time, and the registered date/time must be sent.
-
-Issue date and received date are both xs:date data type, and the date is specified as "YYYY-MM-DD" where:
-
-* YYYY - four digit year
-* MM - two digit month (01 to 12)
-* DD - two digit day (0)
-
-Issue time and received time are both xs:time data type, and the time is specified as "hh:mm:ss" where:
-
-* hh - two digits of hour (00 to 23) (am/pm NOT allowed).
-* mm - two digits of minute (00 to 59)
-* ss - two digits of second (00 to 59)
-* TZD - time zone designator (Z or +hh:mm or -hh:mm)
-
-The issue date and time refer to the actual issuance of the notice.
-
-NOTE: The issue date, and the preferred publication date must specify the time zone.
-
-[source,xml,indent=0]
-.Example of Issue date and time
-....
-include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
-....
-<.> Slot for date and time of issuing of the published notice
-<.> SlotValue type has to be DateTimeValue
-<.> Value tag were the issue date time has to be put, including the time zone

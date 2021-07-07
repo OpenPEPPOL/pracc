@@ -1,12 +1,14 @@
-[appendix]
-== T015 - Publish Notice Data Model
+//[appendix]
+//== T015 - Publish Notice Data Model
 
-image::../files/publishnoticedatamodel.png[align="center"]
+//image::../files/publishnoticedatamodel.png[align="center"]
 
 [appendix]
 == Key examples/use cases
 
 link:files/ExamplePublishNotice.xml[Link to example file]
+
+<<#t015data-model>>
 
 [source,xml,role="hide-callouts"]
 .Example file for {name-transaction}

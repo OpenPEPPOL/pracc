@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- tag::submit-objects-request[] -->
 <lcm:SubmitObjectsRequest
         id="4e3517fd-724d-44fc-b90b-5743c33ff68e"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -119,3 +120,5 @@
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
 </lcm:SubmitObjectsRequest>
+<!-- end::submit-objects-request[] -->
+
