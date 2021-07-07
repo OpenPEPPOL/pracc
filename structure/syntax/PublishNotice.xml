@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>Publish Notice</Term>
+    <Term>PublishNotice</Term>
     <Name>Publish Notice (T015)</Name>
 
     <Namespace prefix="lcm">urn:oasis:names:tc:ebxml-regrep:xsd:lcm:4.0</Namespace>
