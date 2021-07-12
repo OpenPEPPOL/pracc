@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>NoticeResponseCode</Title>
+    <Identifier>noticeResponse</Identifier>
+    <Version>2021-07-12</Version>
+    <Agency>PEPPOL</Agency>
+    <Code>
+        <Id>RE</Id>
+        <Name>Rejected</Name>
+    </Code>
+    <Code>
+        <Id>AP</Id>
+        <Name>Accepted</Name>
+    </Code>
+    <Code>
+        <Id>CA</Id>
+        <Name>Conditionally accepted</Name>
+    </Code>
+    <Code>
+        <Id>PU</Id>
+        <Name>Published</Name>
+    </Code>
+</CodeList>
