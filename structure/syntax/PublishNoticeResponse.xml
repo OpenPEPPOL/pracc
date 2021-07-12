@@ -73,7 +73,7 @@
             <Reference type="RULE">PEPPOL-T016-R003</Reference>
             <Reference type="RULE">PEPPOL-T016-R003</Reference>
             <DataType>Time</DataType>
-            <Value type="EXAMPLE">12:01:34+1:00</Value>
+            <Value type="EXAMPLE">14:44:33+01:00</Value>
         </Element>
         <Element>
             <Term>cac:SenderParty</Term>
