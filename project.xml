@@ -105,6 +105,11 @@
         <Path>structure/syntax/PublishNotice.xml</Path>
         <Title>Syntax Mapping T015 - Publish Notice</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PublishNoticeResponse.xml</Path>
+        <Title>Syntax Mapping T016 - Notice Publishment Response</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
