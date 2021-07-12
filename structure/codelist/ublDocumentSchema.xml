@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+    <Title>UBLDocumentSchema</Title>
+    <Identifier>ublDocumentSchema</Identifier>
+    <Version>2021-07-12</Version>
+    <Agency>PEPPOL</Agency>
+    <Code>
+        <Id>CN</Id>
+        <Name>Contract Notice</Name>
+    </Code>
+    <Code>
+        <Id>CAN</Id>
+        <Name>Contract Award Notice</Name>
+    </Code>
+    <Code>
+        <Id>PIN</Id>
+        <Name>Prior Information Notice</Name>
+    </Code>
+</CodeList>
