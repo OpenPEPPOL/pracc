@@ -7,17 +7,21 @@
     <Code>
         <Id>RE</Id>
         <Name>Rejected</Name>
+        <Description>Indication that the notice was not processed because of identified issues.</Description>
     </Code>
     <Code>
         <Id>AP</Id>
         <Name>Accepted</Name>
+        <Description>Indication that the notice will be published at a certain time.</Description>
     </Code>
     <Code>
         <Id>CA</Id>
         <Name>Conditionally accepted</Name>
+        <Description>Indication that the publication of the notice is done with warnings indicated in the message.</Description>
     </Code>
     <Code>
         <Id>PU</Id>
         <Name>Published</Name>
+        <Description>Indication that the notice has been published at a certain time.</Description>
     </Code>
 </CodeList>

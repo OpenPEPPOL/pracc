@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>MLR</Term>
+    <Term>NoticePublicationResponse</Term>
     <Name>Notice Publication Response (T016)</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
@@ -60,7 +60,7 @@
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Response issue date</Name>
-            <Description>The date on which the transaction instance was issued.Format "YYYY-MM-DD"</Description>
+            <Description>The date on which the transaction instance was issued. Format "YYYY-MM-DD"</Description>
             <Reference type="BUSINESS_TERM">tir65-002</Reference>
             <DataType>Date</DataType>
             <Value type="EXAMPLE">2018-05-18</Value>
@@ -68,7 +68,7 @@
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Response issue time</Name>
-            <Description>The time at which the transaction instance was issued.Format "hh:mm:ss</Description>
+            <Description>The time at which the transaction instance was issued. Format "hh:mm:ss</Description>
             <Reference type="BUSINESS_TERM">tir65-003</Reference>
             <Reference type="RULE">PEPPOL-T016-R003</Reference>
             <Reference type="RULE">PEPPOL-T016-R003</Reference>
@@ -220,7 +220,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Publish notice identifier</Name>
-                    <Description>Specifies the unique identifier of the container that desribes the request to publish a
+                    <Description>Specifies the unique identifier of the container that describes the request to publish a
                         notice on which the Notice Publication Response is based.
                     </Description>
                     <Reference type="BUSINESS_TERM">tir65-016</Reference>
@@ -242,7 +242,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:DocumentTypeCode</Term>
                     <Name>UBL document schema</Name>
-                    <Description>TAn identification of the UBL document schema of the notice being referred to,
+                    <Description>An identification of the UBL document schema of the notice being referred to,
                         expressed as a code.
                     </Description>
                     <Reference type="BUSINESS_TERM">tir65-022</Reference>

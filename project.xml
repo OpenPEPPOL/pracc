@@ -26,7 +26,7 @@
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
     <Documentation path="profiles/p008/index.html">P008 - Publish Notice - N/A</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice</Documentation>
-    <!-- <Documentation path="transactions/T016/index.html">T016 - Publish Notice Response</Documentation> -->
+    <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
@@ -108,7 +108,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/PublishNoticeResponse.xml</Path>
-        <Title>Syntax Mapping T016 - Notice Publishment Response</Title>
+        <Title>Syntax Mapping T016 - Notice Publication Response</Title>
     </Resource>
 
     <!-- Rules -->

@@ -85,7 +85,7 @@ the document types, see tbd.
 ....
 include::../files/ExamplePublishNotice.xml[tags=document-type-code]
 ....
-<.> The code "_CN_" for status information has to be put into the value tag. The listID as the SlotType is always "_http://docs.peppol.eu/document-type-code_" (tbd).
+<.> The code "_CN_" for status information has to be put into the value tag. The listID as the SlotType is always "_ublDocumentSchema_" (tbd).
 
 === Notice Version
 
@@ -115,21 +115,6 @@ include::../files/ExamplePublishNotice.xml[tags=eforms-version]
 ....
 <.> Slot for the eForms version
 <.> SlotValue type has to be StringValueType, as the format for the version will be always eforms-x.y
-
-
-=== Buyer Party Identification
-
-The information about the buyer includes different types of identification elements to disclose a way to contact the buyer without immediately opening the attached published notice. The buyer information are optional in the transaction.
-
-The buyer party identification is an additional identifier for the buying organization. For optional use in the transaction.
-
-[source,xml,indent=0]
-.Example of usage of buyer party identification
-....
-include::../files/ExamplePublishNotice.xml[tags=buyer-party-identification]
-....
-<.> Slot for the buyer party identification, the type is always "_https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/_"
-<.> SlotValue type has to be CollectionValueType and type of each element has to be StringValueType
 
 === Additional Document Reference
 

@@ -254,9 +254,9 @@
                     </Attribute>
                     <Attribute>
                         <Term>List Identifier</Term>
-                        <Description>The list has to be defined! TODO</Description>
+                        <Description>UBL Document Schema</Description>
                         <Reference type="RULE">PEPPOL-T015-R016</Reference>
-                        <Value type="FIXED">http://doc.peppol.eu/code-lists/document-type</Value>
+                        <Value type="FIXED">ublDocumentSchema</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
