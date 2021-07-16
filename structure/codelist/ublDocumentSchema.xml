@@ -6,14 +6,17 @@
     <Agency>PEPPOL</Agency>
     <Code>
         <Id>CN</Id>
-        <Name>Contract Notice</Name>
+        <Name>Contract Notice Schema</Name>
+        <Description>A document used by a contracting party to announce a project to buy goods, services, or works.</Description>
     </Code>
     <Code>
         <Id>CAN</Id>
-        <Name>Contract Award Notice</Name>
+        <Name>Contract Award Notice Schema</Name>
+        <Description>A document published by a Contracting Party to announce the awarding of a procurement project.</Description>
     </Code>
     <Code>
         <Id>PIN</Id>
-        <Name>Prior Information Notice</Name>
+        <Name>Prior Information Notice Schema</Name>
+        <Description>A document used by a contracting party to declare the intention to buy goods, services, or works during a specified period.</Description>
     </Code>
 </CodeList>

@@ -39,12 +39,6 @@ Example of usage in Sender Electronic Address Identifier and Receiver Electronic
 
 ----
 
-[source,xml,indent=0]
-.Example of usage of Buyer Party Identification in `rim:Slot`
-....
-include::../files/ExamplePublishNotice.xml[tags=buyer-party-identification]
-....
-
 == Document Identifiers used in ebXML RegRep documents
 
 === Profile ID

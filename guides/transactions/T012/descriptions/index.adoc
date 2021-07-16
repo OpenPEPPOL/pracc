@@ -80,7 +80,7 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=registry-object-list]
 <.> The Registry object list contains the registry object, which contains the requested form.
 <.> Here you can find the uuids from your request as you defined them in the notice (id) and procedure (lid) identifier.
 <.> Electronic address used by the buyer, just like the ones from the receiver or sender.
-<.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list "_http://docs.peppol.eu/document-type-code_", which has to be deposited in the type-attribute of the slot.
+<.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list "_UBL Document Schema_", which has to be deposited in the type-attribute of the slot.
 <.> Used eForms-Version according to specification in the format eforms-x.y
 <.> Reference to the eform.xml with the requested information included.
 

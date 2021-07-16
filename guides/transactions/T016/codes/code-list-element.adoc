@@ -6,9 +6,9 @@
 [cols="1h,4"]
 |===
 | Qualifier (listID)
-| UBL Document Schema
+| #NoticeTypeCode (tbd)#
 | Document location
-| `rim:Slot name="ublDocumentSchema"`
+| `rim:Slot name="DocumentTypeCode"`
 | Issuer
 | {link-peppol}
 |===

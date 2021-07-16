@@ -66,7 +66,7 @@
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='DocumentTypeCode']">
-            <assert id="PEPPOL-T012-R021" flag="fatal" test="@type = 'http://docs.peppol.eu/document-type-code'">The @type for rim:Slot "DocumentTypeCode" MUST be: list to be created</assert>
+            <assert id="PEPPOL-T012-R021" flag="fatal" test="@type = 'ublDocumentSchema'">The @type for rim:Slot "DocumentTypeCode" MUST be: list to be created</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:RepositoryItemRef">

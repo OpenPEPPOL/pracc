@@ -62,7 +62,7 @@
                     <rim:Value>9930:DE89769595</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
-            <rim:Slot name="DocumentTypeCode" type="http://docs.peppol.eu/document-type-code"> <!--.-->
+            <rim:Slot name="DocumentTypeCode" type="ublDocumentSchema"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>CN</rim:Value>
                 </rim:SlotValue>

@@ -7,13 +7,16 @@
     <Code>
         <Id>BV</Id>
         <Name>Business rule violation, fatal</Name>
+        <Description>Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.</Description>
     </Code>
     <Code>
         <Id>BW</Id>
         <Name>Business rule violation, warning</Name>
+        <Description>Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.</Description>
     </Code>
     <Code>
         <Id>SV</Id>
         <Name>Syntax violation</Name>
+        <Description>Error related to the syntax composition that prevents further processing.</Description>
     </Code>
 </CodeList>

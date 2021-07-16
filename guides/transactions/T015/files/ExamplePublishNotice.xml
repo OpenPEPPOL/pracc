@@ -64,7 +64,7 @@
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
             <!-- tag::document-type-code[] -->
-            <rim:Slot name="UBLDocumentSchema" type="http://docs.peppol.eu/document-type-code"> <!--.-->
+            <rim:Slot name="UBLDocumentSchema" type="ublDocumentSchema"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>CN</rim:Value>
                 </rim:SlotValue>
@@ -88,8 +88,8 @@
             <rim:Slot name="BuyerInformation">
                 <!-- tag::buyer-party-identification[] -->
                 <rim:Slot name="BuyerPartyIdentification"
-                          type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
-                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
+                          type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/">
+                    <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>9930:DE89769595</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
