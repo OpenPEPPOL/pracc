@@ -199,6 +199,7 @@
                         eTendering process the element is used to find the right procedure for a Procurement Procedure
                         Subscription (P001).
                     </Description>
+                    <Reference type="BUSINESS_TERM">eForms BT-04</Reference>
                 </Attribute>
                 <Attribute>
                     <Term>id</Term>
@@ -206,6 +207,7 @@
                     <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
                         amongst all other existing ones contained within the query.
                     </Description>
+                    <Reference type="BUSINESS_TERM">eForms BT-701</Reference>
                 </Attribute>
                 <Attribute>
                     <Term>xsi:type</Term>
@@ -261,6 +263,7 @@
                             directive (Directives 2014/24/EU, 2014/25/EU). In the later eTendering process the element is
                             used to find the right eTendering Platform for a Procurement Procedure Subscription (P001).
                         </Description>
+                        <Reference type="BUSINESS_TERM">eForms BT-509</Reference>
                         <Reference type="RULE">PEPPOL-T012-R017</Reference>
                         <Attribute>
                             <Term>name</Term>
