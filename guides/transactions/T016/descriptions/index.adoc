@@ -5,6 +5,30 @@ Limited support for this, see
 
 {name-profile-org}.
 
+== Identifier
+
+=== UBL Version Identifier
+
+Requires UBL version 2.2.
+
+[source,xml,indent=0]
+.Example of response issue time
+....
+include::../files/ExampleNoticePublicationResponse.xml[tags=ubl-version]
+....
+<.> Has to be 2.2, to correspondent to the used UBL version
+
+=== Response Identifier
+
+The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process.
+
+[source,xml,indent=0]
+.Example of response issue time
+....
+include::../files/ExampleNoticePublicationResponse.xml[tags=response-id]
+....
+<.> A transaction instance must contain an identifier, being a number
+
 == Response issue date and time
 
 Response issue date/time must be sent.

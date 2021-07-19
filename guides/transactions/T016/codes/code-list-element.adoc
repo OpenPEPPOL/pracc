@@ -1,16 +1,46 @@
 
 = Code list for elements
 
-
-== Notice Type Code
+== Notice Response Code
 [cols="1h,4"]
 |===
 | Qualifier (listID)
-| #NoticeTypeCode (tbd)#
+| Notice Response Code
 | Document location
-| `rim:Slot name="DocumentTypeCode"`
+| `<cbc:ResponseCode>RE</cbc:ResponseCode>`
 | Issuer
 | {link-peppol}
 |===
 
+== Publication Condition Code
+[cols="1h,4"]
+|===
+| Qualifier (listID)
+| Publication Condition Code
+| Document location
+| `<cbc:ConditionCode>FCST</cbc:ConditionCode>`
+| Issuer
+| {link-peppol}
+|===
 
+== UBL Document Schema
+[cols="1h,4"]
+|===
+| Qualifier (listID)
+| UBL Document Schema
+| Document location
+| `<cbc:DocumentTypeCode>CN</cbc:DocumentTypeCode>`
+| Issuer
+| {link-peppol}
+|===
+
+== Status Reason Code
+[cols="1h,4"]
+|===
+| Qualifier (listID)
+| Status Reason Code
+| Document location
+| `<cbc:StatusReasonCode>BV</cbc:StatusReasonCode>`
+| Issuer
+| {link-peppol}
+|===

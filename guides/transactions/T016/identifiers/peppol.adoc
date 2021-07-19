@@ -9,69 +9,47 @@ The `@type` attribute must be populated in all instances of the ID element when 
 Example of usage in Sender Electronic Address Identifier and Receiver Electronic Address Identifier:
 
 [source,xml,indent=0]
-.Example of usage of Sender Electronic Address Identifier in `rim:Slot`
+.Example of usage of Sender Electronic Address Identifier in `cac:SenderParty`
 ----
-<rim:Slot name="SenderElectronicAddress" type="PT:VAT">
-    <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>9946:500820007</rim:Value>
-	</rim:SlotValue>
-</rim:Slot>
+<cac:SenderParty>
+    <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
+</cac:SenderParty>
 
 ----
 [source,xml,indent=0]
-.Example of usage of Receiver Electronic Address Identifier in `rim:Slot`
+.Example of usage of Receiver Electronic Address Identifier in `cac:ReceiverParty`
 ----
-<rim:Slot name="ReceiverElectronicAddress" type="DE:VAT">
-    <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>9930:DE122268496</rim:Value>
-	</rim:SlotValue>
-</rim:Slot>
-
-----
-[source,xml,indent=0]
-.Example of usage of the Buyer Electronic Address Identifier in `rim:Slot`
-----
-<rim:Slot name="BuyerElectronicAddress" type="DE:VAT">
-    <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>9930:DE89769595</rim:Value>
-	</rim:SlotValue>
-</rim:Slot>
+<cac:ReceiverParty>
+    <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
+</cac:ReceiverParty>
 
 ----
 
-== Document Identifiers used in ebXML RegRep documents
+== Document Identifiers
 
 === Profile ID
-The PEPPOL Profile ID identifies what business process a given message is part of, and are connected to one business process, and may contain multiple document types. The Profile ID must be put in the element `rim:Slot name="BusinessProcessTypeIdentifier"`
+The PEPPOL Profile ID identifies what business process a given message is part of, and are connected to one business process, and may contain multiple document types. The Profile ID must be put in the element `/cbc:ProfileID`
 
 Valid profile identifiers are described in the profile BIS documents. See {link-main-site}. The following example illustrates the usage of Business Process Type Identifiers in OASIS ebXML RegRep Version 4.0 documents:
 
 [source,xml,indent=0]
-.Example of usage of Business Process Type Identifiers in `rim:Slot`
+.Example of usage of Business Process Type Identifiers in `cbc:ProfileID`
 ----
-<rim:Slot name="BusinessProcessTypeIdentifier">
-    <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>urn:fdc:peppol.eu:2021:pracc:p008:1.0</rim:Value>
-	</rim:SlotValue>
-</rim:Slot>
+<cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p008:1.0</cbc:ProfileID>
+
 ----
-
-
 
 === Customization ID
 
-The PEPPOL Customization ID identifies the specification of content and rules that apply to the transaction. This transaction requires several changes to the CEN BII transaction. Following the CEN BII methodology any extension must be communicated by adding an extension ID onto the Customization ID. The Customization ID must be put in the element `rim:Slot name="SpecificationIdentification"`
+ProfileID identifies what business process a given message is part of, and are connected to one business process, and may contain multiple document types.
 
-The following example illustrates the usage of Specification Identification in OASIS ebXML RegRep Version 4.0 documents:
+Valid profile identifiers are described in the profile BIS documents. See
 
 [source,xml,indent=0]
 .Example of usage of Specification Identification in `rim:Slot`
 ----
-<rim:Slot name="SpecificationIdentification">
-    <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>urn:fdc:peppol.eu:2021:pracc:t015:ver1.0</rim:Value>
-    </rim:SlotValue>
-</rim:Slot>
+<cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t016:1.0</cbc:CustomizationID>
+
 ----
 
 Which customization identification should be used, is based on which transaction is sent, and the extension identification for BIS documents.
