@@ -294,14 +294,14 @@
                     </Element>
                 </Element>
                 <Element>
-                    <Term>rim:Slot@name=DocumentTypeCode</Term>
-                    <Name>Document Type Code</Name>
+                    <Term>rim:Slot@name=UBLDocumentSchema</Term>
+                    <Name>UBL Document Schema</Name>
                     <Description>Used to identify the UBL document type of the referenced notice which are associated to
                         the corresponding UBL namespaces.
                     </Description>
                     <Attribute>
                         <Term>name</Term>
-                        <Value type="FIXED">DocumentTypeCode</Value>
+                        <Value type="FIXED">UBLDocumentSchema</Value>
                     </Attribute>
                     <Attribute>
                         <Term>type</Term>
