@@ -1,5 +1,5 @@
 
-include::peppol.adoc[]
+include::../../shared/peppol.adoc[]
 
 [cols="2,2,3,5", options="header"]
 .Customization ID to be used for this transaction.
@@ -9,8 +9,8 @@ include::peppol.adoc[]
 | Transaction name
 | Short Description
 | `cbc:CustomizationID`
-| T015
-| Publish Notice
+| T016
+| Notice Publication Reponse
 | The provider sends the publish notice request to the responder.
-|  urn:fdc:peppol.eu:prac:trns:t015:1.0
+|  urn:fdc:peppol.eu:prac:trns:t016:1.0
 |===

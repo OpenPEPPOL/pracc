@@ -4,7 +4,7 @@
                      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
                      xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
     <!--tag::ubl-version[] -->
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID> <!--.-->
     <!--end::ubl-version[] -->
     <!--tag::specification-id[] -->
     <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t016:1.0</cbc:CustomizationID>
@@ -13,7 +13,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p008:1.0</cbc:ProfileID>
     <!--end::business-process-id[] -->
     <!--tag::response-id[] -->
-    <cbc:ID>23</cbc:ID>
+    <cbc:ID>23</cbc:ID> <!--.-->
     <!--end::response-id[] -->
     <!--tag::response-issue-date[] -->
     <cbc:IssueDate>2021-07-18</cbc:IssueDate> <!--.-->
