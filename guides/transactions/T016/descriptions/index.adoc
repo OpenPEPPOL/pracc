@@ -149,7 +149,7 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=line-reference]
 ....
 <.> Identifies the section of the notice to which the reported issue applies.
 <.> A reference to the document containing the referenced line.
-<.> Specifies the unique document identifier to which the line response is related, expressed in uuid syntax
+<.> Specifies the unique document identifier to which the line response is related, expressed in uuid syntax. See in comparsion the uuid in the response, which is represents the same documente hence uses the same ID seen at number 2
 
 ==== Line response information
 

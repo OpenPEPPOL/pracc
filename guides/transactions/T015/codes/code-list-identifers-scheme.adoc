@@ -5,6 +5,13 @@
 
 All party identifiers (`rim:Slot name="BuyerPartyIdentification"`) and party legal registration identifier (`rim:Slot name="BuyerElectronicAddress"`) has an non optional scheme identifier attribute (`@type`). The value shall be chosen from the code list link:https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes].
 
+[source,xml,indent=0]
+.Example of usage of Buyer Party Identification in `rim:Value`
+----
+<rim:Value>9930:DE89769595</rim:Value>
+----
+
+
 [cols="4,4,4"options="header"]
 .Code list for identifier schemes
 |===
