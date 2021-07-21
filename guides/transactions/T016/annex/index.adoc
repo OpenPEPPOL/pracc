@@ -1,4 +1,9 @@
 [appendix]
+== Data Model
+
+image::../files/noticepublicationresponsedatamodel.png[align="center"]
+
+[appendix]
 == Key examples/use cases
 
 link:files/ExampleNoticePublicationResponse.xml[Link to example file]

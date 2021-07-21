@@ -51,7 +51,6 @@
         </cac:IssuerParty>
         <!--end::issuer-party[] -->
     </cac:TenderDocumentReference>
-    <!--end::received-document-reference[] -->
     <!--tag::rem-evidence-reference[] -->
     <cac:TenderDocumentReference>
         <cbc:ID schemeURI="urn:uuid">4946060c-f428-475f-9d81-39409bdf32bd</cbc:ID>

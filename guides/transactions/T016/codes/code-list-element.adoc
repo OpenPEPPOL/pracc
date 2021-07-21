@@ -7,7 +7,7 @@
 | Qualifier (listID)
 | Notice Response Code
 | Document location
-| `<cbc:ResponseCode>RE</cbc:ResponseCode>`
+| `cac:DocumentResponse/cac:LineResponse/cac:Response/cbc:ResponseCode`
 | Issuer
 | {link-peppol}
 |===
@@ -18,7 +18,7 @@
 | Qualifier (listID)
 | Publication Condition Code
 | Document location
-| `<cbc:ConditionCode>FCST</cbc:ConditionCode>`
+| `cac:DocumentResponse/cac:Response/cac:Status/cbc:ConditionCode`
 | Issuer
 | {link-peppol}
 |===
@@ -29,7 +29,7 @@
 | Qualifier (listID)
 | UBL Document Schema
 | Document location
-| `<cbc:DocumentTypeCode>CN</cbc:DocumentTypeCode>`
+| `cac:DocumentResponse/cac:DocumentReference/cbc:DocumentTypeCode`
 | Issuer
 | {link-peppol}
 |===
@@ -40,7 +40,7 @@
 | Qualifier (listID)
 | Status Reason Code
 | Document location
-| `<cbc:StatusReasonCode>BV</cbc:StatusReasonCode>`
+| `cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/cbc:StatusReasonCode`
 | Issuer
 | {link-peppol}
 |===

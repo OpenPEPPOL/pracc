@@ -6,5 +6,5 @@
 |===
 | Business Term | Allowed Scheme | Document location
 | Sender Electronic Address Identifier| Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers] (policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | `cac:SenderParty/cbc:EndpointID/@schemeID`
-| Receiver Electronic Address Identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers](policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | `cac:ReceiverParty/cbc:EndpointID/@schemeID`
+| Receiver Electronic Address Identifier | Must be according to link:https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.0-2019-01-28.pdf[PEPPOL Policy for use of identifiers] (policy 8), see also link:http://peppol.eu/wp-content/uploads/2018/10/BIS-eDelivery-guide-for-pre-award-v1-1_FINAL.docx[PEPPOL BIS eDelivery guide for pre-award] | `cac:ReceiverParty/cbc:EndpointID/@schemeID`
 |===
