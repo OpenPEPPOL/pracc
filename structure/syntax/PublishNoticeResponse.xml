@@ -51,11 +51,11 @@
             <Name>Response identifier</Name>
             <Description>A transaction instance must contain an identifier. The identifier enables
                 positive referencing the transaction instance for various purposes including
-                referencing between transactions that are part of the same process.
+                referencing between transactions that are part of the same process. Must be expressed as a UUID.
             </Description>
             <Reference type="BUSINESS_TERM">tir65-001</Reference>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">23</Value>
+            <Value type="EXAMPLE">123e4567-e89b-12d3-a456-426614174000</Value>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>

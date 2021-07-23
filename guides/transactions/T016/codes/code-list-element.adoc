@@ -8,6 +8,7 @@
 | Notice Response Code
 | Document location
 | `cac:DocumentResponse/cac:LineResponse/cac:Response/cbc:ResponseCode`
+`cac:DocumentResponse/cac:Response/cbc:ResponseCode`
 | Issuer
 | {link-peppol}
 |===

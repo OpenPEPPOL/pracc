@@ -5,12 +5,8 @@
 .Code list for identifier schemes
 |===
 | Business Term | Allowed Scheme | Applicable Xpath
-| Economic operator electronic address identifier | Must be according to link:https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for use of identifiers], policy 8, +
-see also {link-eDelivery} | cac:TendererParty/cbc:EndpointID/@schemeID
-| Contracting body electronic address identifier | Must be according to link:https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for use of identifiers], policy 8, +
-see also {link-eDelivery} | cac:ContractingParty/cac:Party/cbc:EndpointID/@schemeID
-| Economic operator identifier | Must be according to link:https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for use of identifiers], policy 8, +
-see also {link-eDelivery} | cac:TendererParty/cac:PartyIdentification/cbc:ID/@schemeID
-| Contracting body identifier | Must be according to link:https://joinup.ec.europa.eu/svn/peppol/TransportInfrastructure/PEPPOL_Policy%20for%20use%20of%20identifiers-300.pdf[PEPPOL Policy for use of identifiers], policy 8, +
-see also {link-eDelivery} | cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID
+| Economic operator electronic address identifier | chemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes] | cac:TendererParty/cbc:EndpointID/@schemeID
+| Contracting body electronic address identifier | chemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes] | cac:ContractingParty/cac:Party/cbc:EndpointID/@schemeID
+| Economic operator identifier | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes] | cac:TendererParty/cac:PartyIdentification/cbc:ID/@schemeID
+| Contracting body identifier | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes] | cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID/@schemeID
 |===
