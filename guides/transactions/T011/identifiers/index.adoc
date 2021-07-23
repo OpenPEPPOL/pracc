@@ -15,6 +15,5 @@ test
 | T011
 | Search Notice Request
 | The Sender sends the Search Notice Request to the Receiver.
-| urn:www.cenbii.eu:transaction:biitrdm099:ver3.0:extended: +
-urn:fdc:peppol.eu:2020:pracc:t011:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t011:1.0
 |===

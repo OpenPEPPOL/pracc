@@ -13,7 +13,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p008:1.0</cbc:ProfileID>
     <!--end::business-process-id[] -->
     <!--tag::response-id[] -->
-    <cbc:ID>23</cbc:ID> <!--.-->
+    <cbc:ID>123e4567-e89b-12d3-a456-426614174000</cbc:ID> <!--.-->
     <!--end::response-id[] -->
     <!--tag::response-issue-date[] -->
     <cbc:IssueDate>2021-07-18</cbc:IssueDate> <!--.-->

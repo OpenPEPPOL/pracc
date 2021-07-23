@@ -12,7 +12,7 @@ Limited support for this, see
 Requires UBL version 2.2.
 
 [source,xml,indent=0]
-.Example of response issue time
+.Example of UBL Version Identifier
 ....
 include::../files/ExampleNoticePublicationResponse.xml[tags=ubl-version]
 ....
@@ -20,10 +20,10 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=ubl-version]
 
 === Response Identifier
 
-The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process.
+The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process. Must be expressed as a UUID.
 
 [source,xml,indent=0]
-.Example of response issue time
+.Example of response identifier
 ....
 include::../files/ExampleNoticePublicationResponse.xml[tags=response-id]
 ....
@@ -71,7 +71,7 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=response-issue-time]
 The party sending an Notice Publication Response message back to the sending party that initiated the request to publish a notice.
 
 [source,xml,indent=0]
-.Example of document reference
+.Example of sender party
 ....
 include::../files/ExampleNoticePublicationResponse.xml[tags=sender-info]
 ....
@@ -82,7 +82,7 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=sender-info]
 The party who is supposed to process the Notice Publication Response. This is the same party that initiated the request to publish a notice.
 
 [source,xml,indent=0]
-.Example of document reference
+.Example of receiver party
 ....
 include::../files/ExampleNoticePublicationResponse.xml[tags=receiver-info]
 ....
@@ -96,10 +96,10 @@ The notice response is used to indicate the result of business document validati
 
 A "rejection" states that the notice was not processed because of identified issues. "Conditionally accepted" indicates that the publication of the notice is done with warnings indicated in the message. "Accepted" indicates that the notice will be published at a certain time.  "Published" indicates that the notice has been published at a certain time.
 
-The value "test" is used to indicate that the notice will be only used for the purpose to check its validity and not its publication. The value "test" is also used for negative responses. The value "forcast" is used to indicate a planned publication date in the future. The value "effective" is used to indicate an actual publication date.
+The value "test" is used to indicate that the notice has be only used for the purpose to check its validity and not its publication. The value "test" is also used in case of negative validation responses. The value "forecast" is used to indicate a planned publication date in the future. The value "effective" is used to indicate an actual publication date.
 
 [source,xml,indent=0]
-.Example of document reference
+.Example of response
 ....
 include::../files/ExampleNoticePublicationResponse.xml[tags=response-information]
 ....
@@ -112,11 +112,7 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=response-information
 
 === Document reference
 
-The document reference is used to provide a reference to the envelope of the business document on
-which the message level response is based. The message level response message may only cover
-exactly one business document. The element
-`cac:DocumentResponse/cac:DocumentReference/cbc:ID` MUST contain the instance
-identifier of the envelope of the original business document.
+The document reference is used to provide references to notice request transaction and the notice payload. Thus, the transaction uses two levels of validation. The first one is the notice transaction itself, referenced with the `cbc:ID tag`. The second level is the notice which is included as payload and referenced with the `cbc:UUID`.
 
 [source,xml,indent=0]
 .Example of document reference
@@ -125,20 +121,20 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=document-reference]
 ....
 <.> Specifies the unique identifier of the container that describes the request to publish a notice on which the Notice Publication Response is based, expressed in uuid syntax.
 <.> Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice, expressed in uuid syntax.
-<.> An identification of the UBL document schema of the notice being referred to, expressed as a code. Refer to the code list document ubl document schema for the code selection.
+<.> An identification of the UBL document schema of the notice being referred to, expressed as a code. Refer to the code list UBLDocumentSchema.
 <.> An identification of the version of the underlying notice (BT-757).
 
 === Line response
 
-A response to a particular line in the notice. If the document response is negative (code='RE'), the line response element is used to specify the errors in the notice.
+A response to a particular line in the notice transaction or notice payload. If the document response is negative (code='RE'), the line response element is used to specify the errors in the notice.
 
 The line response contains the line reference and the line response information
 
 ==== Line reference
 
-Identifies the line in the notice to which the reported issue applies.
+Identifies the line in the notice transaction or notice payload to which the reported issue applies.
 
-The LineID element must be used to indicate where in the notice the error occurred by using XPath to reference the element causing the error. To cater for scenarios where it is not possible to provide XPath, a dummy value must be applied. The dummy value must consist of the characters NA. This is due to that the LineID element is mandatory in the ApplicationResponse message in UBL 2.1 on which the MLR message is based.
+The LineID element must be used to indicate where in the notice the error occurred by using XPath to reference the element causing the error. To cater for scenarios where it is not possible to provide XPath, a dummy value must be applied. The dummy value must consist of the characters NA. This is due to that the LineID element is mandatory in the ApplicationResponse message in UBL 2.1 on which the notice response transaction is based.
 
 Line responses may be given for the container that describes the request to publish a notice or they can be related to the referenced notice within the container.
 
@@ -149,9 +145,15 @@ include::../files/ExampleNoticePublicationResponse.xml[tags=line-reference]
 ....
 <.> Identifies the section of the notice to which the reported issue applies.
 <.> A reference to the document containing the referenced line.
-<.> Specifies the unique document identifier to which the line response is related, expressed in uuid syntax. See in comparsion the uuid in the response, which is represents the same documente hence uses the same ID seen at number 2
+<.> Specifies the unique document identifier to which the line response is related, expressed in uuid syntax.
+* The ID from `cac:DocumentResponse/cac:DocumentReference/cbc:ID` must be used to reference the notice transaction.
+* The ID from `cac:DocumentResponse/cac:DocumentReference/cbc:UUID` must be used to reference the notice payload.
+
+Must either use the See in comparsion the uuid in the response, which is represents the same documente hence uses the same ID seen at number 2
 
 ==== Line response information
+
+Line response information provides details about a given validation error.
 
 [source,xml,indent=0]
 .Example of line response

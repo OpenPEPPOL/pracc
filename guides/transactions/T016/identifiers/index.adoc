@@ -11,6 +11,6 @@ include::../../shared/peppol.adoc[]
 | `cbc:CustomizationID`
 | T016
 | Notice Publication Reponse
-| The provider sends the publish notice request to the responder.
+| The publication body sends a notice publication response to the contracting authority.
 |  urn:fdc:peppol.eu:prac:trns:t016:1.0
 |===
