@@ -14,7 +14,6 @@ include::../../shared/peppol.adoc[]
 | T009
 | Tender Clarification Request
 | The CA sends clarification request to the EO.
-| urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended +
-:urn:fdc:peppol.eu:2020:pracc:t009:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t009:1.0
 
 |===

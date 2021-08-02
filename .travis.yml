@@ -8,7 +8,7 @@ addons:
 services:
 - docker
 script:
-- sh tools/bin/build.sh
+- sudo sh tools/bin/build.sh
 deploy:
   provider: s3
   access_key_id:

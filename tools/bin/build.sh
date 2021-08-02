@@ -27,8 +27,8 @@ dc structure
 
 pushd $FOLDER > /dev/null
 info "Create ZIP file with schematrons"
-zip -qr "target/site/files/schematrons-1.zip" "rules/"
-mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
+sudo zip -qr "target/site/files/schematrons-1.zip" "rules/"
+sudo mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
 popd > /dev/null
 
 (

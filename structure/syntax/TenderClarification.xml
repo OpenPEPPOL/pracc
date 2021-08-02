@@ -41,7 +41,7 @@
             <Reference type="RULE">PEPPOL-T010-S009</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm084:ver3.0:extended:urn:fdc:peppol.eu:2020:pracc:t010:ver1.0
+                urn:fdc:peppol.eu:prac:trns:t010:1.0
             </Value>
         </Element>
         <Element>
@@ -53,7 +53,7 @@
             <Reference type="RULE">PEPPOL-T010-R010</Reference>
             <Reference type="RULE">PEPPOL-T010-S010</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:2020:pracc:p005:01:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p005:1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
@@ -260,6 +260,7 @@
                     more detail. There must be only one kind of reference a file or questions.
                 </Description>
                 <Reference type="RULE">PEPPOL-T010-R028</Reference>
+                <Reference type="RULE">PEPPOL-T010-R029</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
                     <Name>Mime Code of the file</Name>
