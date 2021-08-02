@@ -87,6 +87,7 @@ include::../files/NotifiyAwarding.xml[tags=receiverParty]
 <.> Can be the registration number in the professional registry. An identifier that identifies the economic operator, such
 as a legal registration identifier.
 <.> The name of the economic operator
+
 == Reason of non award/ Grounds for awarding
 
 Textual description of the reason for not awarding the tender or the grounds for awarding an
@@ -98,3 +99,67 @@ specific contract or a framework agreement.
 include::../files/NotifiyAwarding.xml[tags=note]
 ....
 <.> Text field for the reason of awarding/non awarding
+
+== Tender Result
+
+This sections contains all the information about the outcome of the tender, containing the date of the award, the date of the stand still period, the winning party and the resulting contract.
+
+The tender result wraps all the subsections below into one xml tag.
+
+=== Awarded Date and Time
+
+The date and time on which the contract has been awarded. For the specification on how to use the date and time fields see the section above for the issue date and time.
+
+[source,xml,indent=0]
+.Example of awarded date and time
+....
+include::../files/NotifiyAwarding.xml[tags=awardDateTime]
+....
+<.> Format for the date has to be yyyy-mm-dd
+<.> Format for the time has to be hh:mm:ssTZD, granularity down to seconds and timezone
+
+=== Start Date
+
+Final date for the stand still period. For optional use in the transaction.
+
+[source,xml,indent=0]
+.Example of start date
+....
+include::../files/NotifiyAwarding.xml[tags=startDate]
+....
+<.> Format for the date has to be yyyy-mm-dd
+
+=== Contract
+
+Optional information about the contract, which is bound to the award.
+
+[source,xml,indent=0]
+.Example of contract reference
+....
+include::../files/NotifiyAwarding.xml[tags=contract]
+....
+<.> An identifier that can be used to reference the attached document, such as an unique identifier.
+<.> A Binary Object MIME code attribute MUST be coded using MIME Code Type version 2008 code list
+
+=== Awarded Tendered Project
+
+Optional reference to the specific lot which the notification is about. Only to be used if there were lots to be awarded differently.
+
+[source,xml,indent=0]
+.Example of awarded tendered project
+....
+include::../files/NotifiyAwarding.xml[tags=awardedTenderedProject]
+....
+<.> An identifier for the lot
+
+=== Winning Party
+
+Information about all the winning parties. This tag can be used multiple times, but doesn't have to be included. It should be used to add more detailed information about the winning economic operators of the tendering procedure.
+
+[source,xml,indent=0]
+.Example of Winning Party
+....
+include::../files/NotifiyAwarding.xml[tags=winningParty]
+....
+<.> The name of the economic operator
+<.> The registration country code of the economic operator, listID has to be given and will always be
