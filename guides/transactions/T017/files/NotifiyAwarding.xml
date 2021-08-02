@@ -11,29 +11,29 @@
                 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonBasicComponents-2.2.xsd
                 urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 
                 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
-    <!-- tag::UBLVersionID[] -->
+    <!-- tag::ublVersionID[] -->
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID> <!--.-->
-    <!-- end::UBLVersionID[] -->
-    <!-- tag::CustomizationID[] -->
+    <!-- end::ublVersionID[] -->
+    <!-- tag::customizationID[] -->
     <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t017:1.0</cbc:CustomizationID> <!--.-->
-    <!-- end::CustomizationID[] -->
-    <!-- tag::ProfileID[] -->
+    <!-- end::customizationID[] -->
+    <!-- tag::profileID[] -->
     <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p009:1.0</cbc:ProfileID> <!--.-->
-    <!-- end::ProfileID[] -->
-    <!-- tag::ID[] -->
+    <!-- end::profileID[] -->
+    <!-- tag::id[] -->
     <cbc:ID schemeURI="urn:uuid">191C084F-5CC0-4719-BE32-234DEF813B44</cbc:ID> <!--.-->
-    <!-- end::ID[] -->
-    <!-- tag::ContractFolderID[] -->
+    <!-- end::id[] -->
+    <!-- tag::contractFolderID[] -->
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID> <!--.-->
-    <!-- end::ContractFolderID[] -->
-    <!-- tag::IssueDateTime[] -->
+    <!-- end::contractFolderID[] -->
+    <!-- tag::issueDateTime[] -->
     <cbc:IssueDate>2021-02-15</cbc:IssueDate> <!--.-->
     <cbc:IssueTime>00:00:00Z</cbc:IssueTime> <!--.-->
-    <!-- end::IssueDateTime[] -->
-    <!-- tag::Note[] -->
+    <!-- end::issueDateTime[] -->
+    <!-- tag::note[] -->
     <cbc:Note>price too high</cbc:Note> <!--.-->
-    <!-- end::Note[] -->
-    <!-- tag::SenderParty[] -->
+    <!-- end::note[] -->
+    <!-- tag::senderParty[] -->
     <cac:SenderParty>
         <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
@@ -48,24 +48,27 @@
             </cbc:CompanyLegalFormCode> <!--.-->
         </cac:PartyLegalEntity>
     </cac:SenderParty>
-    <!-- end::SenderParty[] -->
-    <!-- tag::ReceiverParty[] -->
+    <!-- end::senderParty[] -->
+    <!-- tag::receiverParty[] -->
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
             <cbc:ID schemeID="NL:KVK">30058019</cbc:ID> <!--.-->
         </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Dutch Ministery of Foreign affairs (Ministerie van Buitenlandse Zaken)</cbc:Name> <!--.-->
+        </cac:PartyName>
     </cac:ReceiverParty>
-    <!-- end::ReceiverParty[] -->
+    <!-- end::receiverParty[] -->
     <cac:TenderResult>
-        <!-- tag::AwardDateTime[] -->
+        <!-- tag::awardDateTime[] -->
         <cbc:AwardDate>2021-01-15</cbc:AwardDate> <!--.-->
         <cbc:AwardTime>14:44:33+01:00</cbc:AwardTime> <!--.-->
-        <!-- end::AwardDateTime[] -->
-        <!-- tag::StartDate[] -->
+        <!-- end::awardDateTime[] -->
+        <!-- tag::startDate[] -->
         <cbc:StartDate>2020-12-15</cbc:StartDate> <!--.-->
-        <!-- end::StartDate[] -->
-        <!-- tag::Contract[] -->
+        <!-- end::startDate[] -->
+        <!-- tag::contract[] -->
         <cac:Contract>
             <cac:ContractDocumentReference>
                 <cbc:ID>123Contractref</cbc:ID> <!--.-->
@@ -76,15 +79,15 @@
                 </cac:Attachment>
             </cac:ContractDocumentReference>
         </cac:Contract>
-        <!-- end::Contract[] -->
-        <!-- tag::AwardedTenderedProject[] -->
+        <!-- end::contract[] -->
+        <!-- tag::awardedTenderedProject[] -->
         <cac:AwardedTenderedProject>
             <cac:ProcurementProjectLot>
                 <cbc:ID>LOT-0001</cbc:ID> <!--.-->
             </cac:ProcurementProjectLot>
         </cac:AwardedTenderedProject>
-        <!-- end::AwardedTenderedProject[] -->
-        <!-- tag::WinningParty[] -->
+        <!-- end::awardedTenderedProject[] -->
+        <!-- tag::winningParty[] -->
         <cac:WinningParty>
             <cac:Party>
                 <cac:PartyName>
@@ -99,6 +102,6 @@
                 </cac:PartyLegalEntity>
             </cac:Party>
         </cac:WinningParty>
-        <!-- end::WinningParty[] -->
+        <!-- end::winningParty[] -->
     </cac:TenderResult>
 </AwardedNotification>
