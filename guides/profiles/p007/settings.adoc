@@ -1,9 +1,0 @@
-:name-profile-org: Profile 53 — Tender Withdrawal (CWA 17027-118:2016)
-
-include::links.adoc[]
-
-include::../shared/settings.adoc[]
-
-:version: n/a
-:name-profile-org: Profile BII53 — "Tender Withdrawal"
-:name-profile: Profile P007 - "Tender Withdrawal" 1.0
