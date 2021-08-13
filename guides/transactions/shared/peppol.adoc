@@ -11,7 +11,7 @@ All party identifiers (cac:PartyIdentification/cbc:ID) have an optional scheme i
 .Examples of usage in cac:PartyIdentification
 ----
 <cac:PartyIdentification>
-	<cbc:ID schemeID="0088">5790000435968</cbc:ID> <1>
+	<cbc:ID schemeID="0088">5790000435968</cbc:ID> <!--.-->
 </cac:PartyIdentification>
 ----
 <.> schemeID attribute is optional, but when used, the codes must be from https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes]
@@ -24,7 +24,7 @@ Valid values are found here: https://docs.peppol.eu/poacc/upgrade-3/codelist/eas
 [source,xml,indent=0]
 .Examples of usage in cbc:EndpointID
 ----
-<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID> <1>
+<cbc:EndpointID schemeID="0184">DK87654321</cbc:EndpointID> <!--.-->
 ----
 <.> schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
 
