@@ -1,0 +1,33 @@
+
+= Non-functional requirements
+
+For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as documented in {link-bii3} {name-profile-org}. Implementers must comply to these requirements.
+
+[cols="2,10", options="header"]
+|===
+| Req. ID
+| Requirement statement
+
+| br53-001
+| If imposed by the contracting body the Economic operator shall sign the withdrawal of his bid before submission.
+
+| br53-002
+| The economic operator may preferably use for signing the withdrawal of his bid digital certificates which are supported by the EU Trusted Lists of Certification Service Providers.
+
+| br53-003
+| The receipt notification of a withdrawal shall contain a cryptographic time stamp of the moment the contracting body received the Tender withdrawal.
+
+| br53-004
+| The economic operator shall receive an acknowledgement that its bid has been withdrawn for the purpose of Recipient non-repudiation.
+
+| br53-005
+| The economic operator should not be able to withdraw his bid after the time limit set out in the tender documents has passed.
+
+| br53-006
+| The contracting body should use the European e-Signature validation services.
+
+| br53-007
+| The economic operator shall clearly identify the tender he wants to withdraw including the tender receipt reference as a proof that the tender was received by the Contracting body.
+
+
+|===

@@ -42,11 +42,6 @@
         <cac:PartyName>
             <cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name> <!--.-->
         </cac:PartyName>
-        <cac:PartyLegalEntity>
-            <cbc:CompanyLegalFormCode listName="BuyerLegalType" listID="http://publications.europa.eu/resource/authority/buyer-legal-type">
-                pub-undert-cga
-            </cbc:CompanyLegalFormCode> <!--.-->
-        </cac:PartyLegalEntity>
     </cac:SenderParty>
     <!-- end::senderParty[] -->
     <!-- tag::receiverParty[] -->
@@ -60,7 +55,13 @@
         </cac:PartyName>
     </cac:ReceiverParty>
     <!-- end::receiverParty[] -->
+    <cac:MinutesDocumentReference>
+        <cbc:ID>4d53c26e-68cf-4bd0-952f-8e312e4deb76</cbc:ID>
+        <cbc:DocumentStatusCode>unaward|award</cbc:DocumentStatusCode>
+    </cac:MinutesDocumentReference>
+
     <cac:TenderResult>
+        <cbc:TenderResultCode>1</cbc:TenderResultCode>
         <!-- tag::awardDateTime[] -->
         <cbc:AwardDate>2021-01-15</cbc:AwardDate> <!--.-->
         <cbc:AwardTime>14:44:33+01:00</cbc:AwardTime> <!--.-->
@@ -73,7 +74,7 @@
             <cac:ContractDocumentReference>
                 <cbc:ID>123Contractref</cbc:ID> <!--.-->
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="folder.csv">
+                    <cbc:EmbeddedDocumentBinaryObject mimeCode="text/pdf" filename="folder.pdf">
                         aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==
                     </cbc:EmbeddedDocumentBinaryObject> <!--.-->
                 </cac:Attachment>
@@ -89,6 +90,7 @@
         <!-- end::awardedTenderedProject[] -->
         <!-- tag::winningParty[] -->
         <cac:WinningParty>
+            <cbc:Rank>1</cbc:Rank> <!--.-->
             <cac:Party>
                 <cac:PartyName>
                     <cbc:Name>Company1</cbc:Name> <!--.-->

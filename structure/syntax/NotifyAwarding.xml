@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>TenderWithdrawalResponse</Term>
+    <Name>Tender Withdrawal Reception Notification (T014)</Name>
+
+    <Namespace prefix="t017">urn:oasis:names:specification:ubl:schema:xsd:AwardedNotification-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+
+    <Document>
+        <Term>t017:NotifyAwarding</Term>
+        <Name>Awarded Notification, root element</Name>
+        <Element>
+            <Term>cbc:UBLVersionID</Term>
+            <Name>UBL Verison identifier</Name>
+            <Description>Requires UBL version 2.3</Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">2.3</Value>
+        </Element>
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Specification identification</Name>
+            <Description>An identification of the specification containing the total set of rules regarding semantic
+                content, cardinalities and business rules to which the data contained in the instance document conforms.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">
+                urn:fdc:peppol.eu:2021:pracc:t017:ver1.0
+            </Value>
+        </Element>
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Business process type identifier</Name>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
+                to process the document in an appropriate way.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p009:01:1.0</Value>
+        </Element>
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Tender withdrawal reception notification identifier</Name>
+            <Description>Identifies the Awarding Notification as issued by the economic operator.
+                Must be expressed as a UUID.
+            </Description>
+            <Attribute>
+                <Term>schemeURI</Term>
+                <Name>scheme URI</Name>
+                <Value type="FIXED">urn:uuid</Value>
+            </Attribute>
+            <DataType>Identifier</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Reference number</Name>
+            <Description>An identifier that is specified by the buyer and used as a reference number for all documents
+                in the procurement process. It is also known as procurement project identifier, procurement reference
+                number or contract folder identifier.
+            </Description>
+            <DataType>Identifier</DataType>
+        </Element>
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Document issue date</Name>
+            <Description>Date when the awarding notification was issued.</Description>
+            <DataType>Date</DataType>
+        </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:IssueTime</Term>
+            <Name>Document issue time</Name>
+            <Description>Time when the awarding notification was issued.
+            </Description>
+            <DataType>Time</DataType>
+        </Element>
+        <Element cardinality="0..n">
+            <Term>cbc:Note</Term>
+            <Name>Reasons of non award/Grounds for awarding</Name>
+            <Description>Textual description of the reason for not awarding the tender. Textual description of the grounds for awarding an specific contract or a framework agreement.
+            </Description>
+            <DataType>Text</DataType>
+        </Element>
+        <Element>
+            <Term>cac:SenderParty</Term>
+            <Name>Contracting body</Name>
+            <Description>The contracting body is the contracting authority or contracting entity who is buying supplies,
+                services or tendering works.
+            </Description>
+            <Element cardinality="0..1">
+                <Term>cbc:EndpointID</Term>
+                <Name>Endpoint Id</Name>
+                <Attribute usage="OPTIONAL">
+                    <Term>schemeID</Term>
+                    <Name>scheme Id</Name>
+                </Attribute>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element cardinality="1..n">
+                <Term>cac:PartyIdentification</Term>
+                <Name>Party identification</Name>
+                <Description>An identifier for this party.</Description>
+                <Element cardinality="0..1">
+                    <Term>cbc:ID</Term>
+                    <Name>Contracting body identifier</Name>
+                    <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
+                        identification, such as KBO)
+                    </Description>
+                    <Attribute usage="OPTIONAL">
+                        <Term>schemeID</Term>
+                        <Name>scheme Id</Name>
+                    </Attribute>
+                    <DataType>Identifier</DataType>
+                </Element>
+                <DataType>Party Identification</DataType>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
+                <Description>A name for this party.</Description>
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting body name</Name>
+                    <Description>The name of the contracting body as it is registered.</Description>
+                    <DataType>Name</DataType>
+                </Element>
+                <DataType>PartyName</DataType>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cac:PartyLegalEntity</Term>
+                <Name>Party Legal Entity</Name>
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyLegalFormCode</Term>
+                    <Name>Type of contracting body</Name>
+                    <Description>Categorization of a contracting body.</Description>
+                    <Attribute usage="OPTIONAL">
+                        <Term>listName</Term>
+                        <Name>List Name</Name>
+                    </Attribute>
+                    <Attribute>
+                        <Term>listID</Term>
+                        <Name>List ID</Name>
+                    </Attribute>
+                    <DataType>Code</DataType>
+                </Element>
+                <DataType>PartyLegalEntity</DataType>
+            </Element>
+            <DataType>Contracting Party</DataType>
+        </Element>
+        <Element>
+            <Term>cac:ReceiverParty</Term>
+            <Name>Economic operator</Name>
+            <Description>Any natural or legal person or public entity or group of such persons and/or entities,
+                including any temporary association of undertakings, which offers the execution of works and/or a work,
+                the supply of products or the provision of services on the market.
+            </Description>
+            <Element cardinality="0..1">
+                <Term>cbc:EndpointID</Term>
+                <Name>Endpoint Id</Name>
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>scheme Id</Name>
+                </Attribute>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element cardinality="1..n">
+                <Term>cac:PartyIdentification</Term>
+                <Name>Party Identification</Name>
+                <Description>An identifier for this party.</Description>
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Contracting body identifier</Name>
+                    <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
+                        identification, such as KBO)
+                    </Description>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>scheme Id</Name>
+                    </Attribute>
+                    <DataType>Identifier</DataType>
+                </Element>
+                <DataType>Party Identification</DataType>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cac:PartyName</Term>
+                <Name>Party name</Name>
+                <Description>A name for this party.</Description>
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Contracting body name</Name>
+                    <Description>The name of the contracting body as it is registered.</Description>
+                    <DataType>Name</DataType>
+                </Element>
+                <DataType>PartyName</DataType>
+            </Element>
+            <DataType>Contracting Party</DataType>
+        </Element>
+        <Element cardinality="1..n">
+            <Term>cac:TenderResult</Term>
+            <Name>Award of the contract</Name>
+            <Description>The result of the tendering process reported in this notification.</Description>
+            <Element>
+                <Term>cbc:AwardDate</Term>
+                <Name>Award Date</Name>
+                <Description>The date on which the contract has been awarded.</Description>
+                <DataType>Date</DataType>
+            </Element>
+            <Element cardinality="0..1">
+                <Term>cdc:AwardTime</Term>
+                <Name>Award Time</Name>
+                <Description>The time on which the contract has been awarded.</Description>
+                <DataType>Time</DataType>
+            </Element>
+            <Element cardinality="0..1">
+                <Term>cbc:StartDate</Term>
+                <Name>Stand still period end date</Name>
+                <Description>Final date for the stand still period.</Description>
+                <DataType>Date</DataType>
+            </Element>
+            <Element cardinality="0..1">
+                <Term>cac:Contract</Term>
+                <Name>Contract</Name>
+                <Element cardinality="0..n">
+                    <Term>cac:ContractDocumentReference</Term>
+                    <Name>Contract Document Reference</Name>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Attachment ID</Name>
+                        <Description>An identifier that can be used to reference the attached document, such as an unique identifier.</Description>
+                        <DataType>Identifier</DataType>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cac:Attachment</Term>
+                        <Name>Attachment</Name>
+                        <Element>
+                            <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                            <Name>Attached Object</Name>
+                            <Description>A Binary Object MIME code attribute MUST be coded using MIME Code Type version 2008 code list</Description>
+                            <Attribute>
+                                <Term>mimeCode</Term>
+                                <Name>MIME Code</Name>
+                            </Attribute>
+                            <Attribute>
+                                <Term>filename</Term>
+                                <Name>File name</Name>
+                            </Attribute>
+                            <DataType>BinaryObject</DataType>
+                        </Element>
+                        <DataType>Attachment</DataType>
+                    </Element>
+                    <DataType>Document Reference</DataType>
+                </Element>
+                <DataType>Contract</DataType>
+            </Element>
+            <Element cardinality="0..1">
+                <Term>cac:AwardedTenderedProject</Term>
+                <Name>Awarded Tendered Project</Name>
+                <Element cardinality="0..1">
+                    <Term>cac:ProcurementProjectLot</Term>
+                    <Name>Procurement Project Lot</Name>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Lot Identifier</Name>
+                        <Description>An identifier for the lot.</Description>
+                        <DataType>Identifier</DataType>
+                    </Element>
+                    <DataType>ProcurementProjectLot</DataType>
+                </Element>
+                <DataType>TenderedProject</DataType>
+            </Element>
+            <Element cardinality="0..n">
+                <Term>cac:WinningParty</Term>
+                <Name>Winning Party</Name>
+                <Element>
+                    <Term>cbc:Rank</Term>
+                    <Name>Rank</Name>
+                    <Description>Ranking of result</Description>
+                    <DataType>Text</DataType>
+                </Element>
+                <Element>
+                    <Term>cac:Party</Term>
+                    <Name>Winner Economic Operator</Name>
+                    <Element cardinality="0..n">
+                        <Term>cac:PartyName</Term>
+                        <Name>Economic Operator Name</Name>
+                        <Element>
+                            <Term>cbc:Name</Term>
+                            <Name>Economic Operator Name</Name>
+                            <Description>The name of the winning economic operator.</Description>
+                            <DataType>Text</DataType>
+                        </Element>
+                        <DataType>Name</DataType>
+                    </Element>
+                    <Element cardinality="0..n">
+                        <Term>cac:PartyLegalEntity</Term>
+                        <Name>Party Legal Entity</Name>
+                        <Element cardinality="0..1">
+                            <Term>cac:RegistrationAddress</Term>
+                            <Name>Registration Address</Name>
+                            <Element cardinality="0..1">
+                                <Term>cac:Country</Term>
+                                <Name>Country</Name>
+                                <Element cardinality="0..1">
+                                    <Term>cbc:IdentificationCode</Term>
+                                    <Name>Economic operator registration country code</Name>
+                                    <Description>The registration country code of the economic operator.</Description>
+                                    <Attribute usage="OPTIONAL">
+                                        <Term>listID</Term>
+                                        <Name>List ID</Name>
+                                    </Attribute>
+                                    <DataType>Code</DataType>
+                                </Element>
+                                <DataType>Country</DataType>
+                            </Element>
+                            <DataType>Address</DataType>
+                        </Element>
+                        <DataType>PartyLegalEntity</DataType>
+                    </Element>
+                    <DataType>Party</DataType>
+                </Element>
+                <DataType>Winning Party</DataType>
+            </Element>
+            <DataType>Tender Result</DataType>
+        </Element>
+    </Document>
+</Structure>

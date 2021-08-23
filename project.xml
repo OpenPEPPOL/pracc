@@ -24,6 +24,9 @@
     <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - N/A</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
+    <Documentation path="profiles/p009/index.html">P009 - Awarding Notification - N/A</Documentation>
+    <Documentation path="transactions/T014/index.html">T017 - Notify Awarding</Documentation>
+
 
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
@@ -98,7 +101,11 @@
         <Path>structure/syntax/TenderWithdrawalResponse.xml</Path>
         <Title>Syntax Mapping T014 - Tender Withdrawal Notification</Title>
     </Resource>
-
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/NotifyAwarding.xml</Path>
+        <Title>Syntax Mapping T017 - Notifiy Awarding</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
