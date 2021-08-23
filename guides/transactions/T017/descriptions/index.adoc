@@ -72,7 +72,6 @@ include::../files/NotifiyAwarding.xml[tags=senderParty]
 <.> Identifies the contracting party's electronic address and the scheme identifier for the electronic address
 <.> The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)
 <.> The name of the contracting body as it is registered
-<.> Categorization of a contracting body
 
 === Economic Operator
 
@@ -94,17 +93,40 @@ Textual description of the reason for not awarding the tender or the grounds for
 specific contract or a framework agreement.
 
 [source,xml,indent=0]
-.Example of receiver party
+.Example of reason of non award
 ....
 include::../files/NotifiyAwarding.xml[tags=note]
 ....
 <.> Text field for the reason of awarding/non awarding
+
+== Tender Document Reference and awarding result
+
+Machine readable code to easily identify the result of the tendering procedure for the corresponding document.
+
+[source,xml,indent=0]
+.Example of minutes document reference
+....
+include::../files/NotifiyAwarding.xml[tags=minutesDocumentReference]
+....
+<.> ID for the referenced tender document
+<.> Code for the result of the tendering procedure, listID must be "tenderResult"
 
 == Tender Result
 
 This sections contains all the information about the outcome of the tender, containing the date of the award, the date of the stand still period, the winning party and the resulting contract.
 
 The tender result wraps all the subsections below into one xml tag.
+
+=== Tender Result Code
+
+The tender result code indicates wether the tendering procedure was successfull and a winner was chosen, or if the tender was not awarded at all.
+
+[source,xml,indent=0]
+.Example of tender result code
+....
+include::../files/NotifiyAwarding.xml[tags=minutesDocumentReference]
+....
+<.> Code for the result of the tendering procedure, listID has to be _"http://publications.europa.eu/resource/authority/winner-selection-status"_
 
 === Awarded Date and Time
 

@@ -55,13 +55,16 @@
         </cac:PartyName>
     </cac:ReceiverParty>
     <!-- end::receiverParty[] -->
+    <!-- tag::minutesDocumentReference[] -->
     <cac:MinutesDocumentReference>
-        <cbc:ID>4d53c26e-68cf-4bd0-952f-8e312e4deb76</cbc:ID>
-        <cbc:DocumentStatusCode>unaward|award</cbc:DocumentStatusCode>
+        <cbc:ID>4d53c26e-68cf-4bd0-952f-8e312e4deb76</cbc:ID> <!--.-->
+        <cbc:DocumentStatusCode listID="tenderResult">unaward</cbc:DocumentStatusCode> <!--.-->
     </cac:MinutesDocumentReference>
-
+    <!-- end::minutesDocumentReference[] -->
     <cac:TenderResult>
-        <cbc:TenderResultCode>1</cbc:TenderResultCode>
+        <!-- tag::tenderResultCode[] -->
+        <cbc:TenderResultCode listID="http://publications.europa.eu/resource/authority/winner-selection-status">selec-w</cbc:TenderResultCode> <!--.-->
+        <!-- end::tenderResultCode[] -->
         <!-- tag::awardDateTime[] -->
         <cbc:AwardDate>2021-01-15</cbc:AwardDate> <!--.-->
         <cbc:AwardTime>14:44:33+01:00</cbc:AwardTime> <!--.-->

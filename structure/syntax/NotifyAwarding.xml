@@ -124,25 +124,6 @@
                 </Element>
                 <DataType>PartyName</DataType>
             </Element>
-            <Element cardinality="0..n">
-                <Term>cac:PartyLegalEntity</Term>
-                <Name>Party Legal Entity</Name>
-                <Element cardinality="0..1">
-                    <Term>cbc:CompanyLegalFormCode</Term>
-                    <Name>Type of contracting body</Name>
-                    <Description>Categorization of a contracting body.</Description>
-                    <Attribute usage="OPTIONAL">
-                        <Term>listName</Term>
-                        <Name>List Name</Name>
-                    </Attribute>
-                    <Attribute>
-                        <Term>listID</Term>
-                        <Name>List ID</Name>
-                    </Attribute>
-                    <DataType>Code</DataType>
-                </Element>
-                <DataType>PartyLegalEntity</DataType>
-            </Element>
             <DataType>Contracting Party</DataType>
         </Element>
         <Element>
@@ -193,10 +174,44 @@
             </Element>
             <DataType>Contracting Party</DataType>
         </Element>
+        <Element>
+            <Term>cac:MinutesDocumentReference</Term>
+            <Name>Minutes Document Reference</Name>
+            <Description>A reference to a set of minutes associated with this award.</Description>
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Document Identifier</Name>
+                <Description>Identifier for the tender documents, which results are available</Description>
+                <DataType>Identifier</DataType>
+            </Element>
+            <Element>
+                <Term>cbc:DocumentStatusCode</Term>
+                <Name>Document Status Code</Name>
+                <Description>Result of the tendering procedure for the referenced documents</Description>
+                <Attribute>
+                    <Term>listID</Term>
+                    <Name>List ID</Name>
+                    <Value type="FIXED">tenderResult</Value>
+                </Attribute>
+                <DataType>Code</DataType>
+            </Element>
+            <DataType>DocumentReference</DataType>
+        </Element>
         <Element cardinality="1..n">
             <Term>cac:TenderResult</Term>
             <Name>Award of the contract</Name>
             <Description>The result of the tendering process reported in this notification.</Description>
+            <Element>
+                <Term>cbc:TenderResultCode</Term>
+                <Name>Tender Result Code</Name>
+                <Description>Result of the tendering procdure as a whole</Description>
+                <Attribute>
+                    <Term>listID</Term>
+                    <Name>List ID</Name>
+                    <Value type="FIXED">http://publications.europa.eu/resource/authority/winner-selection-status</Value>
+                </Attribute>
+                <DataType>Code</DataType>
+            </Element>
             <Element>
                 <Term>cbc:AwardDate</Term>
                 <Name>Award Date</Name>
@@ -241,6 +256,7 @@
                             <Attribute>
                                 <Term>filename</Term>
                                 <Name>File name</Name>
+                                <Value type="FIXED">text/pdf</Value>
                             </Attribute>
                             <DataType>BinaryObject</DataType>
                         </Element>
@@ -305,6 +321,7 @@
                                     <Attribute usage="OPTIONAL">
                                         <Term>listID</Term>
                                         <Name>List ID</Name>
+                                        <Value type="FIXED">ISO3166-1:Alpha2</Value>
                                     </Attribute>
                                     <DataType>Code</DataType>
                                 </Element>
