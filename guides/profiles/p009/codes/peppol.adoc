@@ -17,14 +17,10 @@ All transactions within this profile uses the same profile identifier.
 | Short Description
 | `cbc:ProfileID`
 
-| T013
-| Tender Withdrawal
-| The EO sends a Tender Withdrawal to the CA.
-.2+.^| urn:fdc:peppol.eu:2020:pracc:p007:01:1.0
-
-| T014
-| Tender Withdrawal Reception Notification
-| The CA sends a Tender Withdrawal Reception Notification to the EO.
+| T017
+| Notify Awarding
+| The CA sends a Awarding Notification to the EO.
+.2+.^| urn:fdc:peppol.eu:2020:pracc:p009:01:1.0
 
 |===
 

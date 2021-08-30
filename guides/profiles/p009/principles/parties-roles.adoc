@@ -12,7 +12,7 @@ The following parties participate as business partners in this transaction, acti
 | Example of roles
 | *Customer*
 | The customer is the legal person or organization who is in demand of a product, service or works.
-| Buyer, consignee, debtor, contracting body
+| buyer, consignee, debtor, contracting body
 | *Supplier*
 | The supplier is the legal person or organization who provides a product, service or works.
 | Seller, consignor, creditor, economic operator

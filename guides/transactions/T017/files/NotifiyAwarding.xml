@@ -55,12 +55,12 @@
         </cac:PartyName>
     </cac:ReceiverParty>
     <!-- end::receiverParty[] -->
-    <!-- tag::minutesDocumentReference[] -->
+    <!-- tag::tenderReference[] -->
     <cac:MinutesDocumentReference>
         <cbc:ID>4d53c26e-68cf-4bd0-952f-8e312e4deb76</cbc:ID> <!--.-->
-        <cbc:DocumentStatusCode listID="tenderResult">unaward</cbc:DocumentStatusCode> <!--.-->
+        <cbc:DocumentStatusCode listID="awardCode">unaward</cbc:DocumentStatusCode> <!--.-->
     </cac:MinutesDocumentReference>
-    <!-- end::minutesDocumentReference[] -->
+    <!-- end::tenderReference[] -->
     <cac:TenderResult>
         <!-- tag::tenderResultCode[] -->
         <cbc:TenderResultCode listID="http://publications.europa.eu/resource/authority/winner-selection-status">selec-w</cbc:TenderResultCode> <!--.-->

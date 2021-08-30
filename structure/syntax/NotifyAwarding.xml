@@ -68,8 +68,7 @@
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Document issue time</Name>
-            <Description>Time when the awarding notification was issued.
-            </Description>
+            <Description>Time when the awarding notification was issued.</Description>
             <DataType>Time</DataType>
         </Element>
         <Element cardinality="0..n">

@@ -8,26 +8,14 @@ For the {link-peppol} BIS all {link-peppol} non-functional requirements are appl
 | Req. ID
 | Requirement statement
 
-| br53-001
-| If imposed by the contracting body the Economic operator shall sign the withdrawal of his bid before submission.
+| br58-001 | The contracting body shall inform candidates who failed to meet the exclusion and/or selection criteria and/or award criteria of the reasons why they failed before the award decision
+| br58-002 | The contracting body shall inform all unsuccessful tenderers simultaneously and individually of the reasons why they failed.
+| br58-003 | The contracting body shall inform the successful tenderer of the award decision and its ground.
+| br58-004 | The contracting body shall specify that the notification does not imply any commitment on behalf of the contracting body.
+| br58-005 | The contracting body shall inform the winner(s) at the same time as they inform the unsuccessful tenderers.
+| br58-005 | The notification of the awarding decision to successful tenderers may convey the draft contract.
+| br58-006 | The notification of the awarding decision shall start the standstill period clock.
 
-| br53-002
-| The economic operator may preferably use for signing the withdrawal of his bid digital certificates which are supported by the EU Trusted Lists of Certification Service Providers.
-
-| br53-003
-| The receipt notification of a withdrawal shall contain a cryptographic time stamp of the moment the contracting body received the Tender withdrawal.
-
-| br53-004
-| The economic operator shall receive an acknowledgement that its bid has been withdrawn for the purpose of Recipient non-repudiation.
-
-| br53-005
-| The economic operator should not be able to withdraw his bid after the time limit set out in the tender documents has passed.
-
-| br53-006
-| The contracting body should use the European e-Signature validation services.
-
-| br53-007
-| The economic operator shall clearly identify the tender he wants to withdraw including the tender receipt reference as a proof that the tender was received by the Contracting body.
 
 
 |===
