@@ -24,10 +24,11 @@
     <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - N/A</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
+    <Documentation path="profiles/p008/index.html">P008 - Publish Notice - N/A</Documentation>
+    <Documentation path="transactions/T015/index.html">T015 - Publish Notice</Documentation>
     <Documentation path="profiles/p009/index.html">P009 - Awarding Notification - N/A</Documentation>
     <Documentation path="transactions/T014/index.html">T017 - Notify Awarding</Documentation>
-
-
+    <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
@@ -100,6 +101,16 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderWithdrawalResponse.xml</Path>
         <Title>Syntax Mapping T014 - Tender Withdrawal Notification</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PublishNotice.xml</Path>
+        <Title>Syntax Mapping T015 - Publish Notice</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PublishNoticeResponse.xml</Path>
+        <Title>Syntax Mapping T016 - Notice Publication Response</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -193,6 +204,18 @@
         <Title>PEPPOL T014 rules</Title>
     </Resource>
     <Resource>
+        <Identifier>T015</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-publish-notice/PEPPOL-T015.sch</Path>
+        <Title>PEPPOL T015 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T016</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-publish-notice/PEPPOL-T016.sch</Path>
+        <Title>PEPPOL T016 rules</Title>
+    </Resource>
+    <Resource>
         <Identifier>BIIT004</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender-1.0/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
@@ -234,6 +257,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/noticeResponse.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/procedureType.xml</Path>
     </Resource>
     <Resource>
@@ -242,7 +269,19 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/publicationCondition.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/statusReason.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/submissionMethod.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/ublDocumentSchema.xml</Path>
     </Resource>
 
     <Resource>
@@ -265,6 +304,13 @@
         <Title>Schematron files</Title>
         <Property key="download">schematrons.zip</Property>
         <Property key="filename">schematrons.zip</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>project.xml</Path>
+        <Title>Code lists</Title>
+        <Property key="download">codelists.zip</Property>
+        <Property key="filename">codelists.zip</Property>
     </Resource>
 
 </Project>

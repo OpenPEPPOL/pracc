@@ -1,0 +1,4 @@
+[#t015data-model]
+= Data Model
+
+image::../files/publishnoticedatamodel.png[align="center"]

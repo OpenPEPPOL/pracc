@@ -66,7 +66,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T012-R010</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:t012:1.0</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t012:1.0</Value>
                 </Element>
             </Element>
         </Element>
@@ -87,7 +87,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T012-R011</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p006:1.0</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p006:1.0</Value>
                 </Element>
             </Element>
         </Element>
@@ -199,6 +199,7 @@
                         eTendering process the element is used to find the right procedure for a Procurement Procedure
                         Subscription (P001).
                     </Description>
+                    <Reference type="BUSINESS_TERM">eForms BT-04</Reference>
                 </Attribute>
                 <Attribute>
                     <Term>id</Term>
@@ -206,26 +207,107 @@
                     <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
                         amongst all other existing ones contained within the query.
                     </Description>
+                    <Reference type="BUSINESS_TERM">eForms BT-701</Reference>
                 </Attribute>
                 <Attribute>
                     <Term>xsi:type</Term>
                     <Value type="FIXED">rim:ExtrinsicObjectType</Value>
                 </Attribute>
                 <Element>
-                    <Term>rim:Slot@name=DocumentTypeCode</Term>
-                    <Name>Document Type Code</Name>
+                    <Term>rim:Slot@name=BuyerInformation</Term>
+                    <Name>Buyer Information</Name>
+                    <Element cardinality="0..1">
+                        <Term>rim:Slot@name=BuyerPartyIdentification</Term>
+                        <Name>Buyer Party Identification</Name>
+                        <Description>An identification for the buyer party according to ISO 6523 ICD list.</Description>
+                        <Reference type="RULE">PEPPOL-T012-R026</Reference>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">BuyerPartyIdentification</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Name>List Identifier</Name>
+                            <Description>The type is used to assign the list identifier attribute.</Description>
+                            <Value type="FIXED">https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Description>An abstract class that defines a container for a string value.</Description>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Value type="FIXED">rim:CollectionValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Element</Term>
+                                <Reference type="RULE">PEPPOL-T012-R020</Reference>
+                                <Attribute>
+                                    <Term>xsi:type</Term>
+                                    <Value type="FIXED">rim:StringValueType</Value>
+                                </Attribute>
+                                <Element>
+                                    <Term>rim:Value</Term>
+                                    <Description>The value of the Slot instance.</Description>
+                                    <Reference type="RULE">PEPPOL-T012-R028</Reference>
+                                    <DataType>rim:StringValueType</DataType>
+                                </Element>
+                            </Element>
+                        </Element>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>rim:Slot@name=BuyerElectronicAddress</Term>
+                        <Name>Buyer Electronic Address Identifier</Name>
+                        <Description>The electronic address of the eTendering system or Organisation eDelivery Gateway
+                            (BT-509) which is used by the buyer, contracting authority or contracting entity who is buying
+                            supplies, services or public works using a tendering procedure as described in the applicable
+                            directive (Directives 2014/24/EU, 2014/25/EU). In the later eTendering process the element is
+                            used to find the right eTendering Platform for a Procurement Procedure Subscription (P001).
+                        </Description>
+                        <Reference type="BUSINESS_TERM">eForms BT-509</Reference>
+                        <Reference type="RULE">PEPPOL-T012-R017</Reference>
+                        <Attribute>
+                            <Term>name</Term>
+                            <Value type="FIXED">BuyerElectronicAddress</Value>
+                        </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Name>Scheme Identifier</Name>
+                            <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL
+                                Party Identifiers" described in the "PEPPOL Policy for using Identifiers"
+                            </Description>
+                            <Value type="EXAMPLE">DE:VAT</Value>
+                        </Attribute>
+                        <Element>
+                            <Term>rim:SlotValue</Term>
+                            <Attribute>
+                                <Term>xsi:type</Term>
+                                <Reference type="RULE">PEPPOL-T012-R020</Reference>
+                                <Value type="FIXED">rim:StringValueType</Value>
+                            </Attribute>
+                            <Element>
+                                <Term>rim:Value</Term>
+                                <Description>The value of the Slot instance.</Description>
+                                <Reference type="RULE">PEPPOL-T012-R028</Reference>
+                                <DataType>rim:StringValueType</DataType>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term>rim:Slot@name=UBLDocumentSchema</Term>
+                    <Name>UBL Document Schema</Name>
                     <Description>Used to identify the UBL document type of the referenced notice which are associated to
                         the corresponding UBL namespaces.
                     </Description>
                     <Attribute>
                         <Term>name</Term>
-                        <Value type="FIXED">DocumentTypeCode</Value>
+                        <Value type="FIXED">UBLDocumentSchema</Value>
                     </Attribute>
                     <Attribute>
                         <Term>type</Term>
-                        <Description>The list has to be defined! TODO</Description>
+                        <Description>UBL Document Schema</Description>
                         <Reference type="RULE">PEPPOL-T012-R021</Reference>
-                        <Value type="FIXED">http://doc.peppol.eu/code-lists/document-type</Value>
+                        <Value type="FIXED">ublDocumentSchema</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
@@ -240,37 +322,24 @@
                         </Element>
                     </Element>
                 </Element>
-                <Element cardinality="0..1">
-                    <Term>rim:Slot@name=BuyerElectronicAddress</Term>
-                    <Name>Buyer Electronic Address Identifier</Name>
-                    <Description>The electronic address of the eTendering system or Organisation eDelivery Gateway
-                        (BT-509) which is used by the buyer, contracting authority or contracting entity who is buying
-                        supplies, services or public works using a tendering procedure as described in the applicable
-                        directive (Directives 2014/24/EU, 2014/25/EU). In the later eTendering process the element is
-                        used to find the right eTendering Platform for a Procurement Procedure Subscription (P001).
+                <Element>
+                    <Term>rim:Slot@name=eFormsVersion</Term>
+                    <Name>eForms Version</Name>
+                    <Description>Used to identify the version of the eForms specification used for the document.
                     </Description>
                     <Attribute>
                         <Term>name</Term>
-                        <Value type="FIXED">BuyerElectronicAddress</Value>
-                    </Attribute>
-                    <Attribute>
-                        <Term>type</Term>
-                        <Name>Scheme Identifier</Name>
-                        <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL
-                            Party Identifiers" described in the "PEPPOL Policy for using Identifiers"
-                        </Description>
-                        <Value type="EXAMPLE">DE:VAT</Value>
+                        <Value type="FIXED">eFormsVersion</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
                         <Attribute>
                             <Term>xsi:type</Term>
-                            <Reference type="RULE">PEPPOL-T012-R020</Reference>
+                            <Reference type="RULE">PEPPOL-T012-R025</Reference>
                             <Value type="FIXED">rim:StringValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Reference type="RULE">PEPPOL-T012-R014</Reference>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>

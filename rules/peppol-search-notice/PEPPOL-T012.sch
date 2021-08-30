@@ -24,7 +24,7 @@
         | query:QueryResponse/rim:Slot[@name='BusinessProcessTypeIdentifier']
         | query:QueryResponse/rim:Slot[@name='SenderElectronicAddress']
         | query:QueryResponse/rim:Slot[@name='ReceiverElectronicAddress']
-        | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='DocumentTypeCode']
+        | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='ublDocumentSchema']
         ">
             <assert id="PEPPOL-T012-R009" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']">This SlotValue MUST have a xsi:type rim:StringValueType.</assert>
         </rule>
@@ -48,29 +48,45 @@
         <rule context="
           query:QueryResponse/rim:Slot[@name='SenderElectronicAddress']
         | query:QueryResponse/rim:Slot[@name='ReceiverElectronicAddress']
-        | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerElectronicAddress']
         ">
-            <assert id="PEPPOL-T012-R014" flag="fatal" test="matches(normalize-space(./@type), '^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">A SenderElectronicAddress MUST have a scheme identifier attribute from the list of "PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
+            <assert id="PEPPOL-T012-R014" flag="fatal" test="matches(normalize-space(./@type), '^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">A Sender and Receiver ElectronicAddress MUST have a scheme identifier attribute from the list of "PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject">
             <assert id="PEPPOL-T012-R015" flag="fatal" test="normalize-space(./@lid) != ''">The Registry Object List MUST have an attribute lid.</assert>
             <assert id="PEPPOL-T012-R016" flag="fatal" test="@xsi:type='rim:ExtrinsicObjectType'">An EndpointId MUST have an element SlotValue with xsi:type of rim:StringValueType.</assert>
-            <assert id="PEPPOL-T012-R017" flag="fatal" test="rim:Slot[@name='BuyerElectronicAddress']">A Notice QueryResponse MUST identify the Receiver by its party identifier and its BuyerElectronicAddress.</assert>
-            <assert id="PEPPOL-T012-R018" flag="fatal" test="rim:Slot[@name='DocumentTypeCode']">A Registry Object MUST have a Document Type Code.</assert>
+            <assert id="PEPPOL-T012-R017" flag="fatal" test="rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">A Notice QueryResponse MUST identify the Receiver by its party identifier and its BuyerElectronicAddress.</assert>
+            <assert id="PEPPOL-T012-R026" flag="fatal" test="rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']">A Notice QueryResponse MUST identify the Receiver by its party identifier and its BuyerPartyIdentification.</assert>
+            <assert id="PEPPOL-T012-R018" flag="fatal" test="rim:Slot[@name='ublDocumentSchema']">A Registry Object MUST have a UBL Document Schema.</assert>
             <assert id="PEPPOL-T012-R019" flag="fatal" test="rim:RepositoryItemRef">A Registry Object MUST have a Repository Item Reference.</assert>
         </rule>
 
-        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerElectronicAddress']">
-            <assert id="PEPPOL-T012-R020" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']">A BuyerElectronicAddress MUST have an element SlotValue with xsi:type of rim:StringValueType.</assert>
+        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']
+            | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']
+            ">
+            <assert id="PEPPOL-T012-R020" flag="fatal" test="rim:SlotValue[@xsi:type='rim:StringValueType']">A Buyer Information MUST have an element SlotValue with xsi:type of rim:StringValueType.</assert>
         </rule>
 
-        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='DocumentTypeCode']">
-            <assert id="PEPPOL-T011-R021" flag="fatal" test="@type = 'http://docs.peppol.eu/document-type-code'">The @type for rim:Slot "DocumentTypeCode" MUST be: list to be created</assert>
+        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='ublDocumentSchema']">
+            <assert id="PEPPOL-T012-R021" flag="fatal" test="@type = 'ublDocumentSchema'">The @type for rim:Slot "ublDocumentSchema" MUST be: list to be created</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:RepositoryItemRef">
-            <assert id="PEPPOL-T011-R022" flag="fatal" test="matches(normalize-space(./@xlink:href), '.*[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}.*')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122).</assert>
+            <assert id="PEPPOL-T012-R022" flag="fatal" test="matches(normalize-space(./@xlink:href), '.*[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}.*')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122).</assert>
+        </rule>
+
+        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='eFormsVersion']/rim:SlotValue/rim:Value">
+            <assert id="PEPPOL-T012-R025" flag="fatal" test="./text()[matches(normalize-space(), 'eforms-[0-9].[0-9]')]">The eForms Version MUST be in the format eforms-x.y</assert>
+        </rule>
+
+        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">
+            <assert id="PEPPOL-T012-R027" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">BuyerElectronicAddress MUST have a type of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+        </rule>
+
+        <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']
+            | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']
+        ">
+            <assert id="PEPPOL-T012-R028" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">BuyerElectronicAddress and BuyerPartyIdentification MUST have a type of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
         </rule>
 
         <!--Gobal Rules (only matches if no other does)-->

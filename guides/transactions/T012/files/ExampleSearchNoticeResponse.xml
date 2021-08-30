@@ -57,14 +57,32 @@
                 lid="2C621D47-112D-42D4-B6F8-57392464C3E7"
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
-            <rim:Slot name="BuyerElectronicAddress" type="DE:VAT"> <!--.-->
-                <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>9930:DE89769595</rim:Value>
-                </rim:SlotValue>
+            <rim:Slot name="BuyerInformation">
+                <rim:Slot name="BuyerPartyIdentification"
+                          type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/">
+                    <rim:SlotValue xsi:type="rim:StringValueType">  <!--.-->
+                        <rim:Value>9930:DE89769595</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
+                <rim:Slot name="BuyerElectronicAddress" type="https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:StringValueType">
+                        <rim:Value>9930:DE89769595</rim:Value>
+                    </rim:SlotValue>
+                </rim:Slot>
             </rim:Slot>
-            <rim:Slot name="DocumentTypeCode" type="http://docs.peppol.eu/document-type-code"> <!--.-->
+            <rim:Slot name="ublDocumentSchema" type="ublDocumentSchema"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>CN</rim:Value>
+                </rim:SlotValue>
+            </rim:Slot>
+            <rim:Slot name="eFormsVersion"> <!--.-->
+                <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:Value>eforms-1.2</rim:Value>
+                </rim:SlotValue>
+            </rim:Slot>
+            <rim:Slot name="eFormsVersion"> <!--.-->
+                <rim:SlotValue xsi:type="rim:StringValueType">
+                    <rim:Value>eforms-1.2</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->
