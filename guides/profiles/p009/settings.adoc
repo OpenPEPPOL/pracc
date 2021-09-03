@@ -4,4 +4,4 @@ include::../shared/settings.adoc[]
 
 :version: n/a
 :name-profile-org: BII Profile 58 - Notify Awarding (CWA 17027-121:2016)
-:name-profile: Profile P009 - "Notify Awarding"
+:name-profile: WIP - Profile P009 - "Notify Awarding"

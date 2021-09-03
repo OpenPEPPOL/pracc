@@ -27,8 +27,8 @@
     <Documentation path="profiles/p008/index.html">P008 - Publish Notice - N/A</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice</Documentation>
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
-    <Documentation path="profiles/p009/index.html">P009 - Awarding Notification - N/A</Documentation>
-    <Documentation path="transactions/T014/index.html">T017 - Notify Awarding</Documentation>
+    <Documentation path="profiles/p009/index.html">WIP - P009 - Awarding Notification - N/A</Documentation>
+    <Documentation path="transactions/T017/index.html">WIP - T017 - Notify Awarding</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
