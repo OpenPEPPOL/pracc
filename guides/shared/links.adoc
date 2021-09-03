@@ -38,7 +38,7 @@
 :eform-reg: https://eur-lex.europa.eu/eli/reg_impl/2019/1780/oj[Commission Implementing Regulation (EU) 2019/1780]
 
 //CEN BII Search Notice Profile
-:link-profile: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62010&cs=1D08F9435D30F904B4F67A8BAFA621C04[BII Profile 45]
+:link-profile: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62010&cs=1628543602EFDE54C11B8136021A5621A[BII Profile 45]
 
 
 // UBL notice documents

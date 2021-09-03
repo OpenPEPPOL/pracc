@@ -1,7 +1,7 @@
 include::../../shared/links.adoc[]
-:link-profile: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62055&cs=15323A835797B786F64D7F31C0BFD36A1[Profile BII60 - Tender Status Inquiry (CWA 17027-123:2016)]
-:link-profile2: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62029&cs=1BE67389A05BECA7D93F5C340DFF58C49[Profile BII47 - Call for Tenders (CWA 17027-112:2016)]
-:sig-cft: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62060&cs=1D98A6CCC2D06F9ECC597E7E0A98A9293[UBL Syntax Implementation Guideline for Trdm083 Call for Tenders (CWA 17027-216)]
+:link-profile: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62055&cs=1FA2AB7C9A0F601605C549112B7B93DA3[{name-profile-org}]
+:link-profile2: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62029&cs=16BDCBBEBAE1A6A235013E1B31A0B78D6[{name-profile-org}]
+:sig-cft: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62060&cs=1D0ACDA2A9232666E1F4196153554FD0A[UBL Syntax Implementation Guideline for Trdm083 Call for Tenders (CWA 17027-216)]
 :tender-status: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-TENDER-STATUS-SCHEMA[UBL Tender Status Schema]
 :call-for-tenders: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-CALL-FOR-TENDERS-SCHEMA[UBL Call for Tenders Schema]
 
