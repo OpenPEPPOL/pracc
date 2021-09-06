@@ -10,13 +10,13 @@ include::../../shared/copyright.adoc[]
 
 :leveloffset: +1
 
-//include::principles/index.adoc[]
+include::principles/index.adoc[]
 
 include::requirements/index.adoc[]
 
-//include::codes/index.adoc[]
+include::codes/index.adoc[]
 
-//include::identifiers/index.adoc[]
+include::identifiers/index.adoc[]
 
 include::descriptions/index.adoc[]
 

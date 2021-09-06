@@ -4,7 +4,7 @@ include::../shared/settings.adoc[]
 
 :name-transaction-org: "Trdm094 Awarding Notification"
 :name-transaction: WIP - T017 - Notify Awarding 1.0
-:name-trans-short: Notifiy Awarding
+:name-trans-short: Notify Awarding
 :name-syntax: NotifyAwarding
 
 include::../shared/links.adoc[]

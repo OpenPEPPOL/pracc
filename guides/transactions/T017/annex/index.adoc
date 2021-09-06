@@ -11,5 +11,5 @@ link:../files/NotifyAwarding.xml[Link to example file]
 [source,xml,role="hide-callouts"]
 .Example file for {name-transaction}
 ----
-include::../files/NotifiyAwarding.xml[tag=**]
+include::../files/NotifyAwarding.xml[tag=**]
 ----
