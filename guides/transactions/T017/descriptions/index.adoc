@@ -26,7 +26,18 @@ The identifier enables positive referencing the transaction instance for various
 ....
 include::../files/NotifyAwarding.xml[tags=id]
 ....
-<.> A transaction instance must contain an identifier, being a number
+<.> A transaction instance must contain an identifier, being a number expressed in uuid syntax
+
+=== Contract Folder ID
+
+The identifier specified by the buyer as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier. In UBL this element is mapped to the cbc:ContractFolderID class.
+
+[source,xml,indent=0]
+.Example of document identifier
+....
+include::../files/NotifyAwarding.xml[tags=contractFolderID]
+....
+<.> A reference number expressed in uuid syntax
 
 == Document Issue date and time
 
@@ -90,7 +101,7 @@ as a legal registration identifier.
 == Reason of non award/ Grounds for awarding
 
 Textual description of the reason for not awarding the tender or the grounds for awarding an
-specific contract or a framework agreement.
+specific contract or a framework agreement. For reasons of non award the following code list may be helpful: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/non-award-justification[Non award justification]
 
 [source,xml,indent=0]
 .Example of reason of non award

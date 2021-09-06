@@ -10,10 +10,15 @@
     <Document>
         <Term>t017:NotifyAwarding</Term>
         <Name>Awarded Notification, root element</Name>
+        <Reference type="RULE">PEPPOL-T017-R001</Reference>
+        <Reference type="RULE">PEPPOL-T017-R002</Reference>
+        <Reference type="RULE">PEPPOL-T017-R074</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL Verison identifier</Name>
             <Description>Requires UBL version 2.3</Description>
+            <Reference type="RULE">PEPPOL-T017-R003</Reference>
+            <Reference type="RULE">PEPPOL-T017-R016</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">2.3</Value>
         </Element>
@@ -23,6 +28,8 @@
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R004</Reference>
+            <Reference type="RULE">PEPPOL-T017-R017</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
                 urn:fdc:peppol.eu:2021:pracc:t017:ver1.0
@@ -34,6 +41,8 @@
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer
                 to process the document in an appropriate way.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R005</Reference>
+            <Reference type="RULE">PEPPOL-T017-R018</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p009:01:1.0</Value>
         </Element>
@@ -43,6 +52,9 @@
             <Description>Identifies the Awarding Notification as issued by the economic operator.
                 Must be expressed as a UUID.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R006</Reference>
+            <Reference type="RULE">PEPPOL-T017-R019</Reference>
+            <Reference type="RULE">PEPPOL-T017-R020</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
                 <Name>scheme URI</Name>
@@ -57,18 +69,24 @@
                 in the procurement process. It is also known as procurement project identifier, procurement reference
                 number or contract folder identifier.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R007</Reference>
+            <Reference type="RULE">PEPPOL-T017-R021</Reference>
             <DataType>Identifier</DataType>
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
             <Name>Document issue date</Name>
             <Description>Date when the awarding notification was issued.</Description>
+            <Reference type="RULE">PEPPOL-T017-R009</Reference>
             <DataType>Date</DataType>
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
             <Name>Document issue time</Name>
             <Description>Time when the awarding notification was issued.</Description>
+            <Reference type="RULE">PEPPOL-T017-R010</Reference>
+            <Reference type="RULE">PEPPOL-T017-R022</Reference>
+            <Reference type="RULE">PEPPOL-T017-R023</Reference>
             <DataType>Time</DataType>
         </Element>
         <Element cardinality="0..n">
@@ -76,6 +94,7 @@
             <Name>Reasons of non award/Grounds for awarding</Name>
             <Description>Textual description of the reason for not awarding the tender. Textual description of the grounds for awarding an specific contract or a framework agreement.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R011</Reference>
             <DataType>Text</DataType>
         </Element>
         <Element>
@@ -84,9 +103,13 @@
             <Description>The contracting body is the contracting authority or contracting entity who is buying supplies,
                 services or tendering works.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R012</Reference>
+            <Reference type="RULE">PEPPOL-T017-R034</Reference>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Endpoint Id</Name>
+                <Reference type="RULE">PEPPOL-T017-R026</Reference>
+                <Reference type="RULE">PEPPOL-T017-R027</Reference>
                 <Attribute usage="OPTIONAL">
                     <Term>schemeID</Term>
                     <Name>scheme Id</Name>
@@ -103,6 +126,10 @@
                     <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
                         identification, such as KBO)
                     </Description>
+                    <Reference type="RULE">PEPPOL-T017-R028</Reference>
+                    <Reference type="RULE">PEPPOL-T017-R029</Reference>
+                    <Reference type="RULE">PEPPOL-T017-R030</Reference>
+                    <Reference type="RULE">PEPPOL-T017-R031</Reference>
                     <Attribute usage="OPTIONAL">
                         <Term>schemeID</Term>
                         <Name>scheme Id</Name>
@@ -115,6 +142,8 @@
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
                 <Description>A name for this party.</Description>
+                <Reference type="RULE">PEPPOL-T017-R032</Reference>
+                <Reference type="RULE">PEPPOL-T017-R033</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:Name</Term>
                     <Name>Contracting body name</Name>
@@ -132,9 +161,15 @@
                 including any temporary association of undertakings, which offers the execution of works and/or a work,
                 the supply of products or the provision of services on the market.
             </Description>
+            <Reference type="RULE">PEPPOL-T017-R013</Reference>
+            <Reference type="RULE">PEPPOL-T017-R045</Reference>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Endpoint Id</Name>
+                <Reference type="RULE">PEPPOL-T017-R035</Reference>
+                <Reference type="RULE">PEPPOL-T017-R036</Reference>
+                <Reference type="RULE">PEPPOL-T017-R038</Reference>
+                <Reference type="RULE">PEPPOL-T017-R037</Reference>
                 <Attribute>
                     <Term>schemeID</Term>
                     <Name>scheme Id</Name>
@@ -145,12 +180,16 @@
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party Identification</Name>
                 <Description>An identifier for this party.</Description>
+                <Reference type="RULE">PEPPOL-T017-R039</Reference>
+                <Reference type="RULE">PEPPOL-T017-R042</Reference>
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Contracting body identifier</Name>
                     <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
                         identification, such as KBO)
                     </Description>
+                    <Reference type="RULE">PEPPOL-T017-R040</Reference>
+                    <Reference type="RULE">PEPPOL-T017-R041</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>scheme Id</Name>
@@ -163,6 +202,8 @@
                 <Term>cac:PartyName</Term>
                 <Name>Party name</Name>
                 <Description>A name for this party.</Description>
+                <Reference type="RULE">PEPPOL-T017-R043</Reference>
+                <Reference type="RULE">PEPPOL-T017-R044</Reference>
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Contracting body name</Name>
@@ -175,22 +216,30 @@
         </Element>
         <Element>
             <Term>cac:MinutesDocumentReference</Term>
-            <Name>Minutes Document Reference</Name>
-            <Description>A reference to a set of minutes associated with this award.</Description>
+            <Name>Tender Award</Name>
+            <Description>A reference to the tendering documents from this award.</Description>
+            <Reference type="RULE">PEPPOL-T017-R014</Reference>
+            <Reference type="RULE">PEPPOL-T017-R052</Reference>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document Identifier</Name>
                 <Description>Identifier for the tender documents, which results are available</Description>
+                <Reference type="RULE">PEPPOL-T017-R046</Reference>
+                <Reference type="RULE">PEPPOL-T017-R048</Reference>
                 <DataType>Identifier</DataType>
             </Element>
             <Element>
                 <Term>cbc:DocumentStatusCode</Term>
                 <Name>Document Status Code</Name>
                 <Description>Result of the tendering procedure for the referenced documents</Description>
+                <Reference type="RULE">PEPPOL-T017-R047</Reference>
+                <Reference type="RULE">PEPPOL-T017-R049</Reference>
+                <Reference type="RULE">PEPPOL-T017-R050</Reference>
+                <Reference type="RULE">PEPPOL-T017-R051</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List ID</Name>
-                    <Value type="FIXED">tenderResult</Value>
+                    <Value type="FIXED">awardCode</Value>
                 </Attribute>
                 <DataType>Code</DataType>
             </Element>
@@ -200,10 +249,16 @@
             <Term>cac:TenderResult</Term>
             <Name>Award of the contract</Name>
             <Description>The result of the tendering process reported in this notification.</Description>
+            <Reference type="RULE">PEPPOL-T017-R015</Reference>
+            <Reference type="RULE">PEPPOL-T017-R073</Reference>
             <Element>
                 <Term>cbc:TenderResultCode</Term>
                 <Name>Tender Result Code</Name>
                 <Description>Result of the tendering procdure as a whole</Description>
+                <Reference type="RULE">PEPPOL-T017-R053</Reference>
+                <Reference type="RULE">PEPPOL-T017-R054</Reference>
+                <Reference type="RULE">PEPPOL-T017-R055</Reference>
+                <Reference type="RULE">PEPPOL-T017-R056</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List ID</Name>
@@ -221,6 +276,8 @@
                 <Term>cdc:AwardTime</Term>
                 <Name>Award Time</Name>
                 <Description>The time on which the contract has been awarded.</Description>
+                <Reference type="RULE">PEPPOL-T017-R057</Reference>
+                <Reference type="RULE">PEPPOL-T017-R058</Reference>
                 <DataType>Time</DataType>
             </Element>
             <Element cardinality="0..1">
@@ -235,15 +292,20 @@
                 <Element cardinality="0..n">
                     <Term>cac:ContractDocumentReference</Term>
                     <Name>Contract Document Reference</Name>
+                    <Reference type="RULE">PEPPOL-T017-R063</Reference>
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Attachment ID</Name>
                         <Description>An identifier that can be used to reference the attached document, such as an unique identifier.</Description>
+                        <Reference type="RULE">PEPPOL-T017-R059</Reference>
                         <DataType>Identifier</DataType>
                     </Element>
                     <Element cardinality="0..1">
                         <Term>cac:Attachment</Term>
                         <Name>Attachment</Name>
+                        <Reference type="RULE">PEPPOL-T017-R060</Reference>
+                        <Reference type="RULE">PEPPOL-T017-R061</Reference>
+                        <Reference type="RULE">PEPPOL-T017-R062</Reference>
                         <Element>
                             <Term>cbc:EmbeddedDocumentBinaryObject</Term>
                             <Name>Attached Object</Name>
@@ -268,13 +330,16 @@
             <Element cardinality="0..1">
                 <Term>cac:AwardedTenderedProject</Term>
                 <Name>Awarded Tendered Project</Name>
+                <Reference type="RULE">PEPPOL-T017-R066</Reference>
                 <Element cardinality="0..1">
                     <Term>cac:ProcurementProjectLot</Term>
                     <Name>Procurement Project Lot</Name>
+                    <Reference type="RULE">PEPPOL-T017-R065</Reference>
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Lot Identifier</Name>
                         <Description>An identifier for the lot.</Description>
+                        <Reference type="RULE">PEPPOL-T017-R064</Reference>
                         <DataType>Identifier</DataType>
                     </Element>
                     <DataType>ProcurementProjectLot</DataType>
@@ -288,6 +353,7 @@
                     <Term>cbc:Rank</Term>
                     <Name>Rank</Name>
                     <Description>Ranking of result</Description>
+                    <Reference type="RULE">PEPPOL-T017-R067</Reference>
                     <DataType>Text</DataType>
                 </Element>
                 <Element>
@@ -300,6 +366,7 @@
                             <Term>cbc:Name</Term>
                             <Name>Economic Operator Name</Name>
                             <Description>The name of the winning economic operator.</Description>
+                            <Reference type="RULE">PEPPOL-T017-R068</Reference>
                             <DataType>Text</DataType>
                         </Element>
                         <DataType>Name</DataType>
@@ -317,6 +384,10 @@
                                     <Term>cbc:IdentificationCode</Term>
                                     <Name>Economic operator registration country code</Name>
                                     <Description>The registration country code of the economic operator.</Description>
+                                    <Reference type="RULE">PEPPOL-T017-R069</Reference>
+                                    <Reference type="RULE">PEPPOL-T017-R070</Reference>
+                                    <Reference type="RULE">PEPPOL-T017-R071</Reference>
+                                    <Reference type="RULE">PEPPOL-T017-R072</Reference>
                                     <Attribute usage="OPTIONAL">
                                         <Term>listID</Term>
                                         <Name>List ID</Name>
