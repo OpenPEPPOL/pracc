@@ -45,3 +45,12 @@ the document types, see https://unece.org/fileadmin/DAM////trade/untdid/d99a/unc
 ----
 include::../{xml-doc-file}[tags=DocumentTypeCode]
 ----
+
+=== Issuer Party
+
+Party, which issued the reception, not always the final receiving party of the message.
+
+[source,xml,indent=0]
+....
+include::../{xml-doc-file}[tags=IssuerParty]
+....

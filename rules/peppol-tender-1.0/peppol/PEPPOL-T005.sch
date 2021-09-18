@@ -41,12 +41,12 @@
         </rule>
         
         <rule context="ubl:Tender/cbc:CustomizationID">
-            <assert id="PEPPOL-T005-R002" flag="fatal" test="normalize-space(.) = 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0'">[PEPPOL-T005-R002] CustomizationID value MUST be 'urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0'</assert>
+            <assert id="PEPPOL-T005-R002" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t005:1.0'">[PEPPOL-T005-R002] CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t005:1.0'</assert>
             <report id="PEPPOL-T005-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[PEPPOL-T005-S303] CustomizationID SHOULD NOT contain any attributes.</report>
         </rule>
         
         <rule context="ubl:Tender/cbc:ProfileID">
-            <assert id="PEPPOL-T005-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:2017:pracc:p003:01:1.0'">[PEPPOL-T005-R003] ProfileID value MUST be 'urn:fdc:peppol.eu:2017:pracc:p003:01:1.0'</assert>
+            <assert id="PEPPOL-T005-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p003:1.0'">[PEPPOL-T005-R003] ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p003:1.0'</assert>
             <report id="PEPPOL-T005-S304" flag="warning" test="./@*"><value-of select="$syntaxError"/>[PEPPOL-T005-S304] ProfileID SHOULD NOT contain any attributes.</report>
         </rule>
         
@@ -73,7 +73,7 @@
         
         <rule context="cbc:EndpointID">
             <assert id="PEPPOL-T005-R010" flag="fatal" test="./@schemeID">[PEPPOL-T005-R010] An Endpoint Identifier MUST have a scheme identifier attribute.</assert>
-            <assert id="PEPPOL-T005-R011" flag="fatal" test="matches(normalize-space(./@schemeID),'^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">[PEPPOL-T005-R011] An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
+            <assert id="PEPPOL-T005-R011" flag="fatal" test="matches(normalize-space(./@schemeID),'^(0002|0007|0009|0037|0060|0088|0096|0097|0106|0130|0135|0142|0151|0183|0184|0190|0191|0192|0193|0195|0196|0198|0199|0200|0201|0202|0204|0208|0209|0210|0211|0212|0213|9901|9906|9907|9910|9913|9914|9915|9918|9919|9920|9922|9923|9924|9925|9926|9927|9928|9929|9930|9931|9932|9933|9934|9935|9936|9937|9938|9939|9940|9941|9942|9943|9944|9945|9946|9947|9948|9949|9950|9951|9952|9953|9955|9957)')">[PEPPOL-T005-R011] An Endpoint Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
             <report id="PEPPOL-T005-S316" flag="warning" test="./@*[not(name()='schemeID')]"><value-of select="$syntaxError"/>[PEPPOL-T005-S316] EndpointID SHOULD NOT have any attributes but schemeID</report>
         </rule>
         
@@ -134,7 +134,7 @@
         
         <rule context="cac:PartyIdentification/cbc:ID">
             <assert id="PEPPOL-T005-R008" flag="fatal" test="./@schemeID">[PEPPOL-T005-R008] A Party Identifier MUST have a scheme identifier attribute.</assert>
-            <assert id="PEPPOL-T005-R009" flag="fatal" test="matches(normalize-space(./@schemeID),'^(FR:SIRENE|SE:ORGNR|FR:SIRET|FI:OVT|DUNS|GLN|DK:P|IT:FTI|NL:KVK|IT:SIA|IT:SECETI|DK:CPR|DK:CVR|DK:SE|DK:VANS|IT:VAT|IT:CF|NO:ORGNR|NO:VAT|HU:VAT|EU:REID|AT:VAT|AT:GOV|IS:KT|IBAN|AT:KUR|ES:VAT|IT:IPA|AD:VAT|AL:VAT|BA:VAT|BE:VAT|BG:VAT|CH:VAT|CY:VAT|CZ:VAT|DE:VAT|EE:VAT|GB:VAT|GR:VAT|HR:VAT|IE:VAT|LI:VAT|LT:VAT|LU:VAT|LV:VAT|MC:VAT|ME:VAT|MK:VAT|MT:VAT|NL:VAT|PL:VAT|PT:VAT|RO:VAT|RS:VAT|SI:VAT|SK:VAT|SM:VAT|TR:VAT|VA:VAT|NL:ION|SE:VAT|ZZZ)$')">[PEPPOL-T005-R009] A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
+            <assert id="PEPPOL-T005-R009" flag="fatal" test="matches(normalize-space(./@schemeID),'^(0002|0007|0009|0037|0060|0088|0096|0097|0106|0130|0135|0142|0151|0183|0184|0190|0191|0192|0193|0195|0196|0198|0199|0200|0201|0202|0204|0208|0209|0210|0211|0212|0213|9901|9906|9907|9910|9913|9914|9915|9918|9919|9920|9922|9923|9924|9925|9926|9927|9928|9929|9930|9931|9932|9933|9934|9935|9936|9937|9938|9939|9940|9941|9942|9943|9944|9945|9946|9947|9948|9949|9950|9951|9952|9953|9955|9957)')">[PEPPOL-T005-R009] A Party Identifier Scheme MUST be from the list of PEPPOL Party Identifiers described in the "PEPPOL Policy for using Identifiers".</assert>
             <report id="PEPPOL-T005-S331" flag="warning" test="./@*[not(name()='schemeID')]"><value-of select="$syntaxError"/>[PEPPOL-T005-S331] cac:PartyIdentification/cbc:ID SHOULD NOT have any further attributes but schemeID</report>
         </rule>
         

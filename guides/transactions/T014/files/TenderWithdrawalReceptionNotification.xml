@@ -47,7 +47,7 @@
         <!--end::document-digest[] -->
         <!--tag::issuer-party[] -->
         <cac:IssuerParty>
-            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
+            <cbc:EndpointID schemeID="9930">30058019</cbc:EndpointID> <!--.-->
         </cac:IssuerParty>
         <!--end::issuer-party[] -->
     </cac:TenderDocumentReference>
@@ -62,15 +62,15 @@
             </cac:ExternalReference>
         </cac:Attachment>
         <cac:IssuerParty>
-            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID>
         </cac:IssuerParty>
     </cac:TenderDocumentReference>
     <!--end::rem-evidence-reference[] -->
     <!--tag::contracting-body[] -->
     <cac:SenderParty> <!--.-->
-        <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification> <!--.-->
-            <cbc:ID schemeID="DE:VAT">DE122268496</cbc:ID> <!--.-->
+            <cbc:ID schemeID="9930">DE122268496</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName> <!--.-->
             <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
@@ -79,9 +79,9 @@
     <!--end::contracting-body[] -->
     <!--tag::economic-operator[] -->
     <cac:ReceiverParty> <!--.-->
-        <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification> <!--.-->
-            <cbc:ID schemeID="NL:KVK">30058019</cbc:ID> <!--.-->
+            <cbc:ID schemeID="9944">30058019</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName> <!--.-->
             <cbc:Name>Aankoopbureau</cbc:Name>

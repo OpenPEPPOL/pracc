@@ -10,7 +10,7 @@ image::../files/publishnoticedatamodel.png[align="center"]
 
 link:files/ExamplePublishNotice.xml[Link to example file]
 
-<<#t015data-model>>
+<<#_data_mode>>
 
 [source,xml,role="hide-callouts"]
 .Example file for {name-transaction}

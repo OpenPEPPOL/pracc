@@ -950,6 +950,7 @@
                     notice is published.
                 </Description>
                 <Reference type="BUSINESS_TERM">eForms BT-01</Reference>
+                <Reference type="CODE_LIST">legalBasis</Reference>
                 <Attribute>
                     <Term>name</Term>
                     <Value type="FIXED">ProcedureLegalBasis</Value>

@@ -160,6 +160,7 @@
                     </Description>
                     <Reference type="BUSINESS_TERM">tir65-021</Reference>
                     <Reference type="RULE">PEPPOL-T016-R027</Reference>
+                    <Reference type="CODE_LIST">noticeResponse</Reference>
                     <Value type="EXAMPLE">RE</Value>
                 </Element>
                 <Element cardinality="0..1">
@@ -260,7 +261,7 @@
                     <Reference type="BUSINESS_TERM">tir65-022</Reference>
                     <Reference type="RULE">PEPPOL-T016-R039</Reference>
                     <Reference type="RULE">PEPPOL-T016-R035</Reference>
-                    <Reference type="CODE_LIST">UBLDocumentSchema</Reference>
+                    <Reference type="CODE_LIST">ublDocumentSchema</Reference>
                     <DataType>Code</DataType>
                     <Value type="FIXED">CN</Value>
                 </Element>
@@ -363,6 +364,7 @@
                                 violation, etc.
                             </Description>
                             <Reference type="RULE">PEPPOL-T016-R052</Reference>
+                            <Reference type="CODE_LIST">statusReason</Reference>
                             <DataType>Code</DataType>
                             <Value type="EXAMPLE">BV</Value>
                         </Element>

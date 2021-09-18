@@ -94,7 +94,7 @@ The contracting authority or contracting entity who is buying supplies, services
 ....
 include::../files/TenderWithdrawal.xml[tags=contracting-party]
 ....
-<.> At first the EndpointID with its schemeID has to be clarified. The schemeID is an attribute of the EndpointID and has to be chosen according to the EndpointID.
+<.> At first the EndpointID with its schemeID has to be clarified. The schemeID is a mandatory attribute of the EndpointID and has to be chosen according to the EndpointID.
 <.> Following the EndpointID the Identification of the Party has to be given in the same manner.
 <.> The same value as in the EndpointID also the EndpointID has to be given into the ID and the corresponding attribute for the schemeID.
 <.> Additional to the Party Identification the Party Name has to be given, as it is registered.

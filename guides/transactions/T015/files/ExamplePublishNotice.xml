@@ -37,7 +37,7 @@
     </rim:Slot>
     <!-- end::issue-date-time[] -->
     <!-- tag::sender-electronic-address[] -->
-    <rim:Slot name="SenderElectronicAddress" type="DE:VAT"> <!--.-->
+    <rim:Slot name="SenderElectronicAddress"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
             <rim:Value>9930:DE122268496</rim:Value> <!--.-->
         </rim:SlotValue>

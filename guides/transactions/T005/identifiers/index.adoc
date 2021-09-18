@@ -14,6 +14,5 @@ include::../../shared/peppol.adoc[]
 | T005
 | Tender
 | EO sends his tender for the procurement project to CA
-| urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t005:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t005:1.0
 |===

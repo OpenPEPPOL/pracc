@@ -20,7 +20,7 @@ All transactions within this profile uses the same profile identifier.
 | T011
 | Search Notice Request
 | The requester sends a Search Notice Request to the Data Provider.
-.2+.^| urn:fdc:peppol.eu:2020:pracc:p006:01:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p006:1.0
 
 | T012
 | Search Notice Response

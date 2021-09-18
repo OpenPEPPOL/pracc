@@ -5,8 +5,8 @@
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t001:ver1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p001:01:1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t001:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p001:1.0</cbc:ProfileID>
     <cbc:ID schemeURI="urn:uuid">f81d4fae-7dec-11d0-a765-00a0c91e6bF6</cbc:ID>
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
     <cbc:IssueDate>2015-05-28</cbc:IssueDate>
@@ -14,9 +14,9 @@
     <cbc:PreferredLanguageLocaleCode listID="ISO639-1">EN</cbc:PreferredLanguageLocaleCode>
     <cac:EconomicOperatorParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="NL:KVK">30058019</cbc:ID>
+                <cbc:ID schemeID="9944">30058019</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Dutch Ministery of Foreign affairs (Ministerie van Buitenlandse Zaken)</cbc:Name>
@@ -46,9 +46,9 @@
     </cac:EconomicOperatorParty>
     <cac:ContractingParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="DE:VAT">DE122268496 </cbc:EndpointID>
+            <cbc:EndpointID schemeID="9930">DE122268496 </cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="DE:VAT">DE122268496</cbc:ID>
+                <cbc:ID schemeID="9930">DE122268496</cbc:ID>
             </cac:PartyIdentification>
         </cac:Party>
     </cac:ContractingParty>

@@ -35,9 +35,9 @@
     <!-- end::note[] -->
     <!-- tag::senderParty[] -->
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
-            <cbc:ID schemeID="DE:VAT">DE122268496</cbc:ID> <!--.-->
+            <cbc:ID schemeID="9930">DE122268496</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name> <!--.-->
@@ -46,9 +46,9 @@
     <!-- end::senderParty[] -->
     <!-- tag::receiverParty[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
-            <cbc:ID schemeID="NL:KVK">30058019</cbc:ID> <!--.-->
+            <cbc:ID schemeID="9944">30058019</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Dutch Ministery of Foreign affairs (Ministerie van Buitenlandse Zaken)</cbc:Name> <!--.-->

@@ -13,7 +13,6 @@ include::../../shared/peppol.adoc[]
 | T006
 | TenderReceipt
 | CA receives the tender and sends acknowledgement to EO
-| urn:www.cenbii.eu:transaction:biitrdm045:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t006:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t006:1.0
 
 |===

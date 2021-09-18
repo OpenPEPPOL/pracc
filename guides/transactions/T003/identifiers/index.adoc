@@ -14,6 +14,5 @@ include::../../shared/peppol.adoc[]
 | T003
 | TenderStatusRequest
 | EO requests CA for the procurement project documents
-| urn:www.cenbii.eu:transaction:biitrdm097:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t003:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t003:1.0
 |===

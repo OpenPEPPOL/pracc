@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>TenderWithdrawalResponse</Term>
-    <Name>Tender Withdrawal Reception Notification (T014)</Name>
+    <Term>NotifyAwarding</Term>
+    <Name>Notify Awarding (T017)</Name>
 
     <Namespace prefix="t017">urn:oasis:names:specification:ubl:schema:xsd:AwardedNotification-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -32,7 +32,7 @@
             <Reference type="RULE">PEPPOL-T017-R017</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:2021:pracc:t017:ver1.0
+                urn:fdc:peppol.eu:prac:trns:t017:1.0
             </Value>
         </Element>
         <Element>
@@ -44,7 +44,7 @@
             <Reference type="RULE">PEPPOL-T017-R005</Reference>
             <Reference type="RULE">PEPPOL-T017-R018</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:2021:pracc:p009:01:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p009:1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
@@ -236,6 +236,7 @@
                 <Reference type="RULE">PEPPOL-T017-R049</Reference>
                 <Reference type="RULE">PEPPOL-T017-R050</Reference>
                 <Reference type="RULE">PEPPOL-T017-R051</Reference>
+                <Reference type="CODE_LIST">awardCode</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List ID</Name>
@@ -273,7 +274,7 @@
                 <DataType>Date</DataType>
             </Element>
             <Element cardinality="0..1">
-                <Term>cdc:AwardTime</Term>
+                <Term>cbc:AwardTime</Term>
                 <Name>Award Time</Name>
                 <Description>The time on which the contract has been awarded.</Description>
                 <Reference type="RULE">PEPPOL-T017-R057</Reference>

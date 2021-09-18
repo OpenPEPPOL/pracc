@@ -41,7 +41,7 @@
     </rim:Slot>
     <!-- end::sender-electronic-address[] -->
     <!-- tag::receiver-electronic-address[] -->
-    <rim:Slot name="ReceiverElectronicAddress" type="DE:VAT"> <!--.-->
+    <rim:Slot name="ReceiverElectronicAddress"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
             <rim:Value>9930:DE122268496</rim:Value> <!--.-->
         </rim:SlotValue>
