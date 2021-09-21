@@ -1,7 +1,7 @@
 [[descriptions]]
 = Descriptions of selected parts of the transaction
 
-Limited support for this, see {name-profile-org}.
+The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in {name-profile-org}.
 
 == AdditionalDocumentReferences and Attachments
 

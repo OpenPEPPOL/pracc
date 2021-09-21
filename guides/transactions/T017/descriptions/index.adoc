@@ -1,7 +1,7 @@
 [[descriptions]]
 = Description of selected parts of the transaction
 
-The transaction is based upon the definitions of {name-transaction-org} described in {link-profile}. Business terms, Business rules and code lists used are inherited from the following {link-bii3} and {eforms-specs} and {regrep} documents:
+The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in {name-profile-org}.
 
 
 == Identifier
@@ -120,7 +120,7 @@ Machine readable code to easily identify the result of the tendering procedure f
 include::../files/NotifyAwarding.xml[tags=tenderReference]
 ....
 <.> ID for the referenced tender document
-<.> Code for the result of the tendering procedure, listID must be "tenderResult"
+<.> Code for the result of the tendering procedure, listID must be "awardCode"
 
 == Tender Result
 
@@ -137,7 +137,7 @@ The tender result code indicates weather the tendering procedure was successful 
 ....
 include::../files/NotifyAwarding.xml[tags=tenderResultCode]
 ....
-<.> Code for the result of the tendering procedure, listID has to be _"http://publications.europa.eu/resource/authority/winner-selection-status"_
+<.> Code for the result of the tendering procedure, listID has to be _"##http://publications.europa.eu/resource/authority/winner-selection-status"##_
 
 === Awarded Date and Time
 
@@ -172,7 +172,7 @@ Optional information about the contract, which is bound to the award.
 include::../files/NotifyAwarding.xml[tags=contract]
 ....
 <.> An identifier that can be used to reference the attached document, such as an unique identifier.
-<.> A Binary Object MIME code attribute MUST be coded using MIME Code Type version 2008 code list
+<.> A #Binary Object MIME code# attribute MUST be coded using MIME Code Type version 2008 code list
 
 === Awarded Tendered Project
 
@@ -194,5 +194,6 @@ Information about all the winning parties. This tag can be used multiple times, 
 ....
 include::../files/NotifyAwarding.xml[tags=winningParty]
 ....
+<.> The rank of the economic operator
 <.> The name of the economic operator
-<.> The registration country code of the economic operator, listID has to be given and will always be
+<.> The registration country code of the economic operator, listID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/ISO3166/[Country Codes (ISO 3166-1:Alpha2)]

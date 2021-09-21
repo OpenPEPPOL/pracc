@@ -5,7 +5,7 @@
 :link-common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
 
 //CEN BII3
-:link-bii3: https://standards.cen.eu/dyn/www/f?p=204:32:0::::FSP_ORG_ID,FSP_LANG_ID:2073699,25&cs=15AF0C1A6E029E9FE6E07383C858E58B0[CEN WS/BII 3]
+:link-bii3: https://standards.cencenelec.eu/dyn/www/f?p=205:32:0::::FSP_ORG_ID,FSP_LANG_ID:2073699,25&cs=1764296F93587711762A3AB227353671A[CEN WS/BII 3]
 :link-cenbii: http://www.cenbii.eu[CEN BII]
 
 // eSENS

@@ -1,7 +1,7 @@
 
 = Business process
 
-The following diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
+The #following diagram# shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 image::../images/processNA.png[align="center", width="400"]
 
@@ -9,10 +9,10 @@ image::../images/processNA.png[align="center", width="400"]
 .Business process
 |===
 | Category | Description
-| Description | A contracting body sends an awarding notification to an economic operator who participated in the tendering procedure.
+| Description | The contracting body sends an awarding notification to all economic operators that have tendered.
 
-| Pre-conditions | The economic operator has submitted his tender and the contracting body has the tender evaluated.
-| Post-conditions | The award notification has been received and can be evaluated by the economic operator.
+| Pre-conditions | The contracting body has awarded the contract to a tendering economic operator.
+| Post-conditions | All tendering economic operators have been informed about the awarding of the contract by the contracting body.
 
 |===
 
@@ -20,8 +20,8 @@ image::../images/processNA.png[align="center", width="400"]
 .Role description
 |===
 | Activity | Role involved | Description
-| Send Awarding Notification | Contracting body | The tender awarding notification is send by the economic operator.
-| Receive Awarding Notification | Economic operator | The economic operator receives the notification for the awarding of the tendering process.
+| Send Awarding Notification | Contracting body | The contracting body sends an awarding notification to all economic operators that have tendered.
+| Receive Awarding Notification | Economic operator | The economic operator receives the awarding notification.
 
 |===
 

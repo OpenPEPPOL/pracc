@@ -2,7 +2,9 @@ include::../shared/settings.adoc[]
 
 :name-profile: Profile P008 - "Publish Notice"
 
-:name-transaction-org: "Trdm100 Notices metadata transaction"
+:name-transaction-org: "Trdm078 Contract Notice transaction", + \
+"Trdm079 Prior Information Notice transaction" and + \
+"Trdm080 Contract Award Notice transaction"
 :name-trans-short: Publish Notice
 :name-transaction: T015 - {name-trans-short}
 :name-syntax: PublishNotice

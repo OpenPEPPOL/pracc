@@ -77,7 +77,7 @@
             </rim:Slot>
             <rim:Slot name="eFormsVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
-                    <rim:Value>eforms-1.2</rim:Value>
+                    <rim:Value>eforms-sdk-1.2</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <rim:RepositoryItemRef xlink:href="./53EB9F20-EE12-474F-9424-78FC604E8FAE.eform.xml"/> <!--.-->

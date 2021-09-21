@@ -8,7 +8,7 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 .Relationship between BII profiles and PEPPOL BIS
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
-The {name-profile} describes a process providing electronic messaging support for the business process of the withdrawal of a tender or of participation in a tendering process by an economic operator.
+The {name-profile} describes a process providing electronic messaging support for the business process of notification by a contracting body that a contract has been awarded to a particular economic operator.
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
 
