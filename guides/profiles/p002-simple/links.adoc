@@ -1,4 +1,6 @@
 include::../../shared/links.adoc[]
 
+include::settings.adoc[]
+
 //links used in the BIS document
 :link-transaction1: ../../transactions/t004/main.html[T004 - Call for Tenders]

@@ -1,4 +1,4 @@
-include::settings.adoc[]
+include::links.adoc[]
 
 = {doctitle}
 {name-op-en}

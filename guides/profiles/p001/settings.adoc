@@ -1,4 +1,4 @@
-include::links.adoc[]
+//include::links.adoc[]
 
 include::../shared/settings.adoc[]
 
