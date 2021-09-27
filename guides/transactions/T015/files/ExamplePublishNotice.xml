@@ -80,7 +80,7 @@
             <!-- tag::eforms-version[] -->
             <rim:Slot name="eFormsVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
-                    <rim:Value>eforms-1.2</rim:Value>
+                    <rim:Value>eforms-sdk-1.2</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::eforms-version[] -->

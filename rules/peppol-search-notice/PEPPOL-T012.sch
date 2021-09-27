@@ -76,7 +76,7 @@
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='eFormsVersion']/rim:SlotValue/rim:Value">
-            <assert id="PEPPOL-T012-R025" flag="fatal" test="./text()[matches(normalize-space(), 'eforms-sdk-[0-9].[0-9]')]">The eForms Version MUST be in the format eforms-x.y</assert>
+            <assert id="PEPPOL-T012-R025" flag="fatal" test="./text()[matches(normalize-space(), 'eforms-sdk-[0-9].[0-9]')]">The eForms Version MUST be in the format eforms-sdk-x.y</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">

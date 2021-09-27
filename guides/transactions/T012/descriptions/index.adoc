@@ -82,5 +82,5 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=registry-object-list]
 <.> An identification for the buyer party according to ISO 6523 ICD list.
 <.> Electronic address used by the buyer, just like the ones from the receiver or sender.
 <.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list "_UBL Document Schema_", which has to be deposited in the type-attribute of the slot.
-<.> Used eForms-Version according to specification in the format eforms-x.y
+<.> Used eForms-Version according to specification in the format eforms-sdk-x.y
 <.> Reference to the eform.xml with the requested information included.

@@ -111,9 +111,9 @@ include::../files/ExamplePublishNotice.xml[tags=notice-version]
 
 === eForms Version
 
-Version of the used eForms specification for the notice. The format is according to the specification always eforms-x.y.
+Version of the used eForms specification for the notice. The format is according to the specification always "eforms-sdk-x.y".
 
-• “eforms-”: fixed prefix,
+• “eforms-sdk-”: fixed prefix,
 • “x”: major version number (increased everytime backward compatibility is affected),
 • “y”: minor version number
 
