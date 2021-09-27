@@ -137,7 +137,7 @@ The tender result code indicates weather the tendering procedure was successful 
 ....
 include::../files/NotifyAwarding.xml[tags=tenderResultCode]
 ....
-<.> Code for the result of the tendering procedure, listID has to be _"##http://publications.europa.eu/resource/authority/winner-selection-status"##_
+<.> Code for the result of the tendering procedure, listID has to be _"http://publications.europa.eu/resource/authority/winner-selection-status"_
 
 === Awarded Date and Time
 
