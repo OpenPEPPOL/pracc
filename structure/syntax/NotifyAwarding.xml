@@ -186,6 +186,7 @@
                 </Attribute>
                 <DataType>Identifier</DataType>
                 <Value type="EXAMPLE">DE280857971</Value>
+            </Element>
             <Element cardinality="1..n">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Party identification</Name>
