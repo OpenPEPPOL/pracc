@@ -172,7 +172,7 @@ Optional information about the contract, which is bound to the award.
 include::../files/NotifyAwarding.xml[tags=contract]
 ....
 <.> An identifier that can be used to reference the attached document, such as an unique identifier.
-<.> A #Binary Object MIME code# attribute MUST be coded using MIME Code Type version 2008 code list
+<.> The External Reference to the ASICC Container, should consist of the file name, type (Mime Code) and the URI
 
 === Awarded Tendered Project
 

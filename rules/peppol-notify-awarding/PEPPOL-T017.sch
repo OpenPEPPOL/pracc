@@ -187,9 +187,10 @@
             <assert test="cac:Attachment" flag="fatal" id="PEPPOL-T017-R060">Element 'cac:Attachment' MUST be provided.</assert>
         </rule>
 
-        <rule context="/ubl:AwardedNotification/cac:TenderResult/cac:Contract/cac:ContractDocumentReference/cac:Attachment/cbc:EmbeddedDocumentBinaryObject">
-            <assert flag="fatal" id="PEPPOL-T017-R061" test="@mimeCode">Attribute 'mimeCode' MUST be present.</assert>
-            <assert flag="fatal" id="PEPPOL-T017-R062" test="@filename">Attribute 'filename' MUST be present.</assert>
+        <rule context="/ubl:AwardedNotification/cac:TenderResult/cac:Contract/cac:ContractDocumentReference/cac:Attachment/cac:ExternalReference">
+            <assert flag="fatal" id="PEPPOL-T017-R061" test="cbc:URI">Element 'cbc:URI' MUST be provided.</assert>
+            <assert flag="fatal" id="PEPPOL-T017-R062" test="cbc:MimeCode">Element 'cbc:URI' MUST be provided.</assert>
+            <assert flag="fatal" id="PEPPOL-T017-R075" test="cbc:FileName">Element 'cbc:FileName' MUST be provided.</assert>
         </rule>
 
         <rule context="/ubl:AwardedNotification/cac:TenderResult/cac:Contract/*">

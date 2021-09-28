@@ -307,20 +307,30 @@
                         <Reference type="RULE">PEPPOL-T017-R060</Reference>
                         <Reference type="RULE">PEPPOL-T017-R061</Reference>
                         <Reference type="RULE">PEPPOL-T017-R062</Reference>
+                        <Reference type="RULE">PEPPOL-T017-R075</Reference>
                         <Element>
-                            <Term>cbc:EmbeddedDocumentBinaryObject</Term>
+                            <Term>cac:ExternalReference</Term>
                             <Name>Attached Object</Name>
-                            <Description>A Binary Object MIME code attribute MUST be coded using MIME Code Type version 2008 code list</Description>
-                            <Attribute>
-                                <Term>mimeCode</Term>
-                                <Name>MIME Code</Name>
-                            </Attribute>
-                            <Attribute>
-                                <Term>filename</Term>
-                                <Name>File name</Name>
-                                <Value type="FIXED">text/pdf</Value>
-                            </Attribute>
-                            <DataType>BinaryObject</DataType>
+                            <Description>Reference to document in asicc container.</Description>
+                            <Element>
+                                <Term>cbc:URI</Term>
+                                <Name>Contract Reference</Name>
+                                <Description>direct reference to document in asicc container</Description>
+                                <DataType>Identifier</DataType>
+                            </Element>
+                            <Element>
+                                <Term>cbc:MimeCode</Term>
+                                <Name>Mime Code</Name>
+                                <Description>Data type of attached object</Description>
+                                <DataType>Code</DataType>
+                            </Element>
+                            <Element>
+                                <Term>cbc:FileName</Term>
+                                <Name>Contract File Name</Name>
+                                <Description>Name of the attached draft file</Description>
+                                <DataType>Name</DataType>
+                            </Element>
+                            <DataType>ExternalReference</DataType>
                         </Element>
                         <DataType>Attachment</DataType>
                     </Element>

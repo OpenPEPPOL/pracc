@@ -77,9 +77,11 @@
             <cac:ContractDocumentReference>
                 <cbc:ID>123Contractref</cbc:ID> <!--.-->
                 <cac:Attachment>
-                    <cbc:EmbeddedDocumentBinaryObject mimeCode="text/pdf" filename="folder.pdf">
-                        aHR0cHM6Ly90ZXN0LXZlZmEuZGlmaS5uby9wZXBwb2xiaXMvcG9hY2MvYmlsbGluZy8zLjAvYmlzLw==
-                    </cbc:EmbeddedDocumentBinaryObject> <!--.-->
+                    <cac:ExternalReference>
+                        <cbc:URI>cid:contractref.pdf</cbc:URI>
+                        <cbc:MimeCode>text/pdf/</cbc:MimeCode>
+                        <cbc:FileName>ContractDraft</cbc:FileName>
+                    </cac:ExternalReference> <!--.-->
                 </cac:Attachment>
             </cac:ContractDocumentReference>
         </cac:Contract>
