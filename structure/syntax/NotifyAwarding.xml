@@ -9,7 +9,7 @@
 
     <Document>
         <Term>t017:AwardingNotification</Term>
-        <Name>Awarded Notification, root element</Name>
+        <Name>Awarding Notification, root element</Name>
         <Reference type="RULE">PEPPOL-T017-R001</Reference>
         <Reference type="RULE">PEPPOL-T017-R002</Reference>
         <Reference type="RULE">PEPPOL-T017-R074</Reference>
