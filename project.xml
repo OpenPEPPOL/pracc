@@ -115,7 +115,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/NotifyAwarding.xml</Path>
-        <Title>Syntax Mapping T017 - Notify Awarding</Title>
+        <Title>Syntax Mapping T017 - Awarding Notification</Title>
     </Resource>
 
     <!-- Rules -->
