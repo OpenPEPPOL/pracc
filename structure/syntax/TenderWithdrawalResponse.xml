@@ -21,7 +21,7 @@
         <Reference type="RULE">PEPPOL-T014-S322</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Verison identifier</Name>
+            <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.3</Description>
             <Reference type="RULE">PEPPOL-T014-R019</Reference>
             <Reference type="RULE">PEPPOL-T014-S302</Reference>
@@ -61,7 +61,7 @@
             <Reference type="RULE">PEPPOL-T014-S306</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>scheme URI</Name>
+                <Name>Scheme URI</Name>
                 <Reference type="RULE">PEPPOL-T014-R004</Reference>
                 <Reference type="RULE">PEPPOL-T014-R005</Reference>
                 <Reference type="RULE">PEPPOL-T014-R006</Reference>
@@ -126,7 +126,7 @@
                 <Reference type="RULE">PEPPOL-T014-R016</Reference>
                 <Attribute>
                     <Term>schemeURI</Term>
-                    <Name>scheme URI</Name>
+                    <Name>Scheme URI</Name>
                     <Reference type="RULE">PEPPOL-T014-R014</Reference>
                     <Reference type="RULE">PEPPOL-T014-R015</Reference>
                     <Value type="FIXED">urn:uuid</Value>
@@ -140,7 +140,7 @@
                 <Reference type="RULE">PEPPOL-T014-R017</Reference>
                 <Attribute>
                     <Term>listID</Term>
-                    <Name>List ID</Name>
+                    <Name>List identifier for the document type code</Name>
                     <Reference type="RULE">PEPPOL-T014-R023</Reference>
                     <Value type="FIXED">UNCL1001</Value>
                 </Attribute>
@@ -190,12 +190,12 @@
                 <Reference type="RULE">PEPPOL-T014-S320</Reference>
                 <Element>
                     <Term>cbc:EndpointID</Term>
-                    <Name>Endpoint Id</Name>
+                    <Name>Issuing Party electronic address identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-S321</Reference>
                     <Reference type="RULE">PEPPOL-T014-R011</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>scheme Id</Name>
+                        <Name>Scheme Id</Name>
                         <Reference type="RULE">PEPPOL-T014-R010</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
@@ -214,12 +214,12 @@
             <Reference type="RULE">PEPPOL-T014-S323</Reference>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name>Endpoint Id</Name>
+                <Name>Contracting body electronic address identifier</Name>
                 <Reference type="RULE">PEPPOL-T014-S321</Reference>
                 <Reference type="RULE">PEPPOL-T014-R011</Reference>
                 <Attribute usage="OPTIONAL">
                     <Term>schemeID</Term>
-                    <Name>scheme Id</Name>
+                    <Name>Scheme Id</Name>
                     <Reference type="RULE">PEPPOL-T014-R010</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>
@@ -240,7 +240,7 @@
                     <Reference type="RULE">PEPPOL-T014-S325</Reference>
                     <Attribute usage="OPTIONAL">
                         <Term>schemeID</Term>
-                        <Name>scheme Id</Name>
+                        <Name>Scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T014-R008</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
@@ -273,19 +273,19 @@
             <Reference type="RULE">PEPPOL-T014-S323</Reference>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name>Endpoint Id</Name>
+                <Name>Economic operator electronic address identifier</Name>
                 <Reference type="RULE">PEPPOL-T014-S321</Reference>
                 <Reference type="RULE">PEPPOL-T014-R011</Reference>
                 <Attribute>
                     <Term>schemeID</Term>
-                    <Name>scheme Id</Name>
+                    <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-R010</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
             <Element>
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party Identification</Name>
+                <Name>Party identification</Name>
                 <Description>An identifier for this party.</Description>
                 <Reference type="RULE">PEPPOL-T014-S324</Reference>
                 <Reference type="RULE">PEPPOL-T014-S326</Reference>
@@ -299,7 +299,7 @@
                     <Reference type="RULE">PEPPOL-T014-S325</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>scheme Id</Name>
+                        <Name>Scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T014-R008</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>

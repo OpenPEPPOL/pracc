@@ -15,12 +15,12 @@
         <Reference type="RULE">PEPPOL-T017-R074</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL verison identifier</Name>
-            <Description>Requires UBL version 2.3</Description>
+            <Name>UBL version identifier</Name>
+            <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T017-R003</Reference>
             <Reference type="RULE">PEPPOL-T017-R016</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">2.3</Value>
+            <Value type="FIXED">2.2</Value>
         </Element>
         <Element>
             <Term>cbc:CustomizationID</Term>

@@ -12,7 +12,7 @@
 		
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Verison identifier</Name>
+			<Name>UBL version identifier</Name>
 			<Reference type="RULE">PEPPOL-T005-R001</Reference>
 			<Reference type="RULE">PEPPOL-T005-R021</Reference>
 			<DataType>Identifier</DataType>
@@ -80,7 +80,7 @@
 			<Reference type="RULE">BII3-T90-R012</Reference>
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Call for tender reference Document identifier</Name>
+				<Name>Call for tender reference document identifier</Name>
 				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
 				<Reference type="RULE">BII3-T90-R010</Reference>
 				<Reference type="RULE">BII3-T90-R013</Reference>

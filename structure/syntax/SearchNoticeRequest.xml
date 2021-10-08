@@ -9,7 +9,7 @@
 
     <Document>
         <Term>query:QueryRequest</Term>
-        <Name>Search Notice Request root element</Name>
+        <Name>Search Notice Request, root element</Name>
         <Description>The Search Notice Request is a query transaction that requests notices using either a set of
             criteria for notices usually based on the eTendering Service Providers or Economic Operators ambitions and
             capabilities.
@@ -26,7 +26,7 @@
         <Reference type="RULE">PEPPOL-T011-R080</Reference>
         <Attribute usage="OPTIONAL">
             <Term>startIndex</Term>
-            <Name>Start Index</Name>
+            <Name>Start index</Name>
             <Description>The Search Notice Request and Response support the ability to iterate over a large result set
                 matching a query by allowing multiple QueryRequest requests to be submitted in succession such that each
                 query requests a different subset of results within the result set. This feature enables the server to
@@ -39,7 +39,7 @@
         </Attribute>
         <Attribute usage="OPTIONAL">
             <Term>maxResults</Term>
-            <Name>Maximum Number Of Results</Name>
+            <Name>Maximum number of results</Name>
             <Description>This attribute specifies a limit on the maximum number of results the sender wishes the query
                 to return. A receiver of the request MUST return a result set whose size is less than or equal to the
                 maxResults parameter depending upon whether enough results are available starting at startIndex. If the
@@ -50,7 +50,7 @@
         </Attribute>
         <Attribute>
             <Term>id</Term>
-            <Name>Search Notice Request Identifier</Name>
+            <Name>Search notice request identifier</Name>
             <Description>Specifies the unique identifier for an Identifiable Search Notice Request. In case of different
                 start index for same QueryRequest is used it is possible to use the same Search Notice Request
                 Identifier.
@@ -58,7 +58,7 @@
         </Attribute>
         <Element>
             <Term>rim:Slot@name=SpecificationIdentification</Term>
-            <Name>SpecificationIdentification</Name>
+            <Name>Specification identification</Name>
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.
             </Description>
@@ -82,7 +82,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=BusinessProcessTypeIdentifier</Term>
-            <Name>BusinessProcessTypeIdentifier</Name>
+            <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the
                 receiver to process the document in an appropriate way.
             </Description>
@@ -106,7 +106,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=IssueDateTime</Term>
-            <Name>IssueDateTime</Name>
+            <Name>Issue date time</Name>
             <Description>The issue date and time when the Serch Notice request is issued. The issue date time must have
                 granularity of seconds, and include time zone information.
             </Description>
@@ -129,7 +129,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>SenderElectronicAddress</Name>
+            <Name>Sender electronic address</Name>
             <Description>The electronic address of the sender.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -137,7 +137,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>SchemeIdentifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -152,14 +152,14 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>EndpointId</Name>
+                    <Name>Endpoint identifier</Name>
                     <Description>The endpoint ID of the sender platform</Description>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>ReceiverElectronicAddress</Name>
+            <Name>Receiver electronic address</Name>
             <Description>The electronic address of the receiver.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -167,7 +167,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>Scheme Identifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -182,14 +182,14 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>EndpointId</Name>
+                    <Name>Endpoint identifier</Name>
                     <Description>The endpoint ID of the receiver platform</Description>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>query:ResponseOption</Term>
-            <Name>Response Option</Name>
+            <Name>Response option</Name>
             <Description>An element to control the type and structure of results within the corresponding QueryResponse.
                 For the Search Notice Request it is required that the notices are included as repository Items to the
                 QueryResponse. This is indicated through the returnType "LeafClassWithRepositoryItem".
@@ -255,7 +255,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=FormType</Term>
-                <Name>FormType</Name>
+                <Name>Form type</Name>
                 <Description>Used to search for specific form types like planning, competition, direct award
                     pre-notification etc.
                 </Description>
@@ -284,7 +284,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Form Type Code</Name>
+                            <Name>Form type code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -292,7 +292,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=NoticeType</Term>
-                <Name>NoticeType</Name>
+                <Name>Notice type</Name>
                 <Description>Used to search for specific notice types (BT-02) [e.g. PIN only] for notice categories
                     [e.g. Prior Information Notice]. A given form type (BT-03) [e.g. Planning] regroups multiple notice
                     types [e.g. PIN only and PIN time limit].
@@ -322,7 +322,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Notice Type Code</Name>
+                            <Name>Notice type code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -374,7 +374,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=ContractNature</Term>
-                <Name>ContractNature</Name>
+                <Name>Contract nature</Name>
                 <Description>Used to search upon the values of main natures (BT-23) and additional natures (BT-531) of a
                     notice.
                 </Description>
@@ -404,7 +404,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Contract Nature Code</Name>
+                            <Name>Contract nature code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -412,7 +412,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=PlaceOfPerformance</Term>
-                <Name>PlaceOfPerformance</Name>
+                <Name>Place of performance</Name>
                 <Description>Used to search upon the values of a country subentity code (BT-5071) according to the
                     Nomenclature of territorial units for statistics (NUTS).
                 </Description>
@@ -441,7 +441,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>NUTS Code</Name>
+                            <Name>NUTS code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -449,7 +449,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=EstimatedValue</Term>
-                <Name>EstimatedValue</Name>
+                <Name>Estimated value</Name>
                 <Description>An abstract class that defines a container for search attributes related to estimated
                     overall contract amount. Can be used to specify a minimum, maximum, range value or a currency for
                     the procurement. The results correspond to the amounts indicated in the fields Estimated Value
@@ -524,7 +524,7 @@
                     </Attribute>
                     <Attribute>
                         <Term>type</Term>
-                        <Name>List Identifier</Name>
+                        <Name>List identifier</Name>
                         <Description>The type is used to assign the list identifier attribute.</Description>
                         <Reference type="RULE">PEPPOL-T011-R047</Reference>
                         <Value type="FIXED">http://publications.europa.eu/resource/authority/currency</Value>
@@ -545,7 +545,7 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Name>Currency Code</Name>
+                                <Name>Currency code</Name>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
@@ -554,7 +554,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=ProcedureType</Term>
-                <Name>ProcedureType</Name>
+                <Name>Procedure type</Name>
                 <Description>Used to search upon type of procurement procedure (BT-105) according to the types given in
                     the procurement Directives.
                 </Description>
@@ -565,7 +565,7 @@
                 </Attribute>
                 <Attribute>
                     <Term>type</Term>
-                    <Name>List Identifier</Name>
+                    <Name>List identifier</Name>
                     <Description>The type is used to assign the list identifier attribute.</Description>
                     <Reference type="RULE">PEPPOL-T011-R049</Reference>
                     <Value type="FIXED">http://publications.europa.eu/resource/authority/procurement-procedure-type
@@ -586,7 +586,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Procurement Procedure Type Code</Name>
+                            <Name>Procurement procedure type code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -594,7 +594,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=SubmissionLanguage</Term>
-                <Name>SubmissionLanguage</Name>
+                <Name>Submission language</Name>
                 <Description>Used to search upon the languages that may be used to submit tenders (BT-97).</Description>
                 <Reference type="BUSINESS_TERM">eForms BT-97</Reference>
                 <Attribute>
@@ -621,7 +621,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Language Code</Name>
+                            <Name>Language code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -630,7 +630,7 @@
             <!-- dates -->
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=PublicationDate</Term>
-                <Name>PublicationDate</Name>
+                <Name>Publication date</Name>
                 <Description>
                     An abstract class that defines a container for search attributes related to the Publication Date
                     Preferred (BT-738) for notices and for planning notices to specify when the competition notice will
@@ -648,7 +648,7 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot@name=StartDate</Term>
-                    <Name>StartDate</Name>
+                    <Name>Start date</Name>
                     <Description>Used to search upon the start date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -671,7 +671,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=EndDate</Term>
-                    <Name>EndDate</Name>
+                    <Name>End date</Name>
                     <Description>Used to search upon the end date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -695,7 +695,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=DeadlineReceiptTenders</Term>
-                <Name>DeadlineReceiptTenders</Name>
+                <Name>Deadline receipt tenders</Name>
                 <Description>
                     An abstract class that defines a container for search attributes related to the deadline for tender
                     reception (BT-131). Can be used to specify a start date, end date or a time range .
@@ -711,7 +711,7 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>StartDate</Name>
+                    <Name>Start date</Name>
                     <Description>Used to search upon the start date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -734,7 +734,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>EndDate</Name>
+                    <Name>End date</Name>
                     <Description>Used to search upon the end date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -758,7 +758,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=AdditionalInformationDeadline</Term>
-                <Name>AdditionalInformationDeadline</Name>
+                <Name>Additional information deadline</Name>
                 <Description>
                     An abstract class that defines a container for search attributes related to the the deadline to
                     request for additional information (BT-13). Can be used to specify a start date, end date or a time
@@ -775,7 +775,7 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>StartDate</Name>
+                    <Name>Start date</Name>
                     <Description>Used to search upon the start date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -798,7 +798,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>EndDate</Name>
+                    <Name>End date</Name>
                     <Description>Used to search upon the end date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -822,7 +822,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=DeadlineReceiptRequests</Term>
-                <Name>DeadlineReceiptRequests</Name>
+                <Name>Deadline receipt requests</Name>
                 <Description>
                     An abstract class that defines a container for search attributes related to the deadline for
                     reception of requests to participate (BT-1311). Can be used to specify a start date, end date or a
@@ -838,7 +838,7 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>StartDate</Name>
+                    <Name>Start date</Name>
                     <Description>Used to search upon the start date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -861,7 +861,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot</Term>
-                    <Name>EndDate</Name>
+                    <Name>End date</Name>
                     <Description>Used to search upon the end date.</Description>
                     <Reference type="RULE">PEPPOL-T011-R055</Reference>
                     <Reference type="RULE">PEPPOL-T011-R056</Reference>
@@ -885,7 +885,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=NoticeIdentifier</Term>
-                <Name>NoticeIdentifier</Name>
+                <Name>Notice identifier</Name>
                 <Description>Used to search for notice identifiers (BT-701) allowing to uniquely distinguishing notices
                     amongst all other existing ones.
                 </Description>
@@ -915,7 +915,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=ProcedureIdentifier</Term>
-                <Name>ProcedureIdentifier</Name>
+                <Name>Procedure identifier</Name>
                 <Description>Used to search for procedure identifiers (BT-04) allowing to uniquely distinguishing
                     procurement procedures.
                 </Description>
@@ -945,7 +945,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=ProcedureLegalBasis</Term>
-                <Name>ProcedureLegalBasis</Name>
+                <Name>Procedure legal basis</Name>
                 <Description>Used to search for legal references. The code indicates the EU Directive under which a
                     notice is published.
                 </Description>
@@ -973,7 +973,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Procedure Legal Basis Code</Name>
+                            <Name>Procedure legal basis code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -981,7 +981,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:slot@name=ReservedParticipation</Term>
-                <Name>ReservedParticipation</Name>
+                <Name>Reserved participation</Name>
                 <Description>Used to search for notices that express a participation restriction (BT-71); e.g. only
                     tenderers with specific social missions may tender.
                 </Description>
@@ -1010,7 +1010,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Reserved Participation Code</Name>
+                            <Name>Reserved participation code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -1018,7 +1018,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=SuitableForSMEs</Term>
-                <Name>SuitableForSMEs</Name>
+                <Name>Suitable for SMEs</Name>
                 <Description>Used to search for notices that indicate that a tender participation is suitability for
                     SMEs (BT-726)
                 </Description>
@@ -1038,7 +1038,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=WinnerEconomicOperatorName</Term>
-                <Name>WinnerEconomicOperatorName</Name>
+                <Name>Winner economic operator name</Name>
                 <Description>Used to search for the winning organisation name (BT-500) to whom a contract has been
                     awarded.
                 </Description>
@@ -1058,7 +1058,7 @@
             </Element>
             <Element cardinality="0..1">
                 <Term>rim:Slot@name=AwardCriterionType</Term>
-                <Name>AwardCriterionType</Name>
+                <Name>Award criterion type</Name>
                 <Description>Used to search for the awarding criterion type code (BT-539) that is used to assess the
                     tenders.
                 </Description>
@@ -1087,7 +1087,7 @@
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <Name>Award Criterion Type Code</Name>
+                            <Name>Award criterion type code</Name>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -1095,7 +1095,7 @@
             </Element>
             <Element cardinality="0..n">
                 <Term>rim:Slot@name=BuyerInformation</Term>
-                <Name>BuyerInformation</Name>
+                <Name>Buyer information</Name>
                 <Description>Used to search for the awarding criterion type code (BT-539) that is used to assess the
                     tenders.
                 </Description>
@@ -1139,7 +1139,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=OrganisationNumber</Term>
-                    <Name>OrganisationNumber</Name>
+                    <Name>Organisation number</Name>
                     <Description>Used to search for the contracting party organisation identifier (BT-501).
                     </Description>
                     <Reference type="BUSINESS_TERM">eForms BT-501</Reference>
@@ -1185,7 +1185,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=PostCode</Term>
-                    <Name>PostCode</Name>
+                    <Name>Post code</Name>
                     <Description>Used to search for the contracting party organisation post code (BT-512).</Description>
                     <Reference type="BUSINESS_TERM">eForms BT-512</Reference>
                     <Attribute>
@@ -1207,7 +1207,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=OrganizationCountrySubdivision</Term>
-                    <Name>OrganizationCountrySubdivision</Name>
+                    <Name>Organization country subdivision</Name>
                     <Description>Used to search for the contracting party organisation country subdivision (BT-500)
                         according to the Nomenclature of territorial units for statistics (NUTS).
                     </Description>
@@ -1236,7 +1236,7 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Name>NUTS Code</Name>
+                                <Name>NUTS code</Name>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
@@ -1244,7 +1244,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=CountryCode</Term>
-                    <Name>CountryCode</Name>
+                    <Name>Country code</Name>
                     <Description>Used to search for the contracting party country code (BT-514) according to country
                         codes.
                     </Description>
@@ -1273,7 +1273,7 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Name>Country Code</Name>
+                                <Name>Country code</Name>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
@@ -1281,7 +1281,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=LegalType</Term>
-                    <Name>LegalType</Name>
+                    <Name>Legal type</Name>
                     <Description>Used to search for the contracting party type code (BT-11) according to legal type
                         codes.
                     </Description>
@@ -1310,7 +1310,7 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Name>Buyer Legal Type Code</Name>
+                                <Name>Buyer legal type code</Name>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
@@ -1318,7 +1318,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>rim:Slot@name=MainActivity</Term>
-                    <Name>MainActivity</Name>
+                    <Name>Main activity</Name>
                     <Description>Used to search for the contracting activity type code (BT-610) of the buyer according
                         to main activity codes.
                     </Description>
@@ -1347,7 +1347,7 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Name>Main Activity Code</Name>
+                                <Name>Main activity code</Name>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>

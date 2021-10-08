@@ -13,7 +13,7 @@
 
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version identifier</Name>
+            <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T004-R001</Reference>
             <Reference type="RULE">PEPPOL-T004-R039</Reference>
@@ -577,7 +577,7 @@
 
                 <Element>
                     <Term>cbc:EndpointID</Term>
-                    <Name>PEPPOL Address for Submission of Tenders</Name>
+                    <Name>PEPPOL address for submission of tenders</Name>
                     <Description>The PEPPOL Address (Participant Identifier) that the call for tenders to which tenders
                         or requests to participate shall be submitted. This endpoint ID MUST be used only when different
                         from the Contracting Authority Endpoint ID
@@ -794,7 +794,7 @@
                     <Reference type="RULE">BII3-T83-R017</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Scheme Identifier</Name>
+                        <Name>Scheme identifier</Name>
                         <Reference type="RULE">BII3-T83-R020</Reference>
                         <Value type="FIXED">NUTS</Value>
                     </Attribute>

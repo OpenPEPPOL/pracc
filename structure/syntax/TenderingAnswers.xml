@@ -25,7 +25,7 @@
         <Reference type="RULE">PEPPOL-T008-S007</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version identifier</Name>
+            <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T008-R008</Reference>
             <Reference type="RULE">PEPPOL-T008-S008</Reference>
@@ -81,7 +81,7 @@
         </Element>
         <Element>
             <Term>cac:RequestorParty</Term>
-            <Name>The Economic operator</Name>
+            <Name>The economic operator</Name>
             <Description>Party information of the economic operator</Description>
             <Reference type="RULE">PEPPOL-T008-R016</Reference>
             <Reference type="RULE">PEPPOL-T008-R017</Reference>
@@ -180,7 +180,7 @@
         </Element>
         <Element>
             <Term>cac:ParentDocumentReference</Term>
-            <Name>b</Name>
+            <Name>Parent document reference</Name>
             <Description>c</Description>
             <Element>
                 <Term>cbc:ID</Term>
@@ -188,7 +188,7 @@
                 <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
                 <Attribute>
                     <Term>schemeName</Term>
-                    <Name>Scheme Name</Name>
+                    <Name>Scheme name</Name>
                     <Description>Has to be ContractFolderID.</Description>
                     <Value type="FIXED">ContractFolderID</Value>
                 </Attribute>
@@ -198,7 +198,7 @@
         </Element>
         <Element cardinality="1..n">
             <Term>cac:AdditionalDocumentReference</Term>
-            <Name>Additional document references.</Name>
+            <Name>Additional document references</Name>
             <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
             <Reference type="RULE">PEPPOL-T008-R027</Reference>
             <Element>
@@ -207,7 +207,7 @@
                 <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
                 <Attribute>
                     <Term>schemeName</Term>
-                    <Name>Scheme Name</Name>
+                    <Name>Scheme name</Name>
                     <Description>Valid values are ContractFolderID, LotGroup or Lot.</Description>
                 </Attribute>
                 <DataType>Identifier</DataType>
@@ -227,12 +227,12 @@
             <Description>An attached tendering request or files which must be referenced by an cac:AdditionalDocumentReference</Description>
             <Element>
                 <Term>cac:ExternalReference</Term>
-                <Name>ExternalReference</Name>
+                <Name>External reference</Name>
                 <Description>An external reference to place your questions or add an attachment to express questions in more detail. There must be only one kind of reference a file or questions.</Description>
                 <Reference type="RULE">PEPPOL-T008-R029</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
-                    <Name>Mime Code of the file</Name>
+                    <Name>Mime code of the file</Name>
                     <Description>A code signifying the mime type of the external object.</Description>
                     <DataType>cbc:MimeCodeType</DataType>
                 </Element>
@@ -244,7 +244,7 @@
                 </Element>
                 <Element cardinality="1..1">
                     <Term>cbc:Description</Term>
-                    <Name>Tendering Request</Name>
+                    <Name>Tendering request</Name>
                     <Description>The tendering request about the procurement procedure.</Description>
                     <DataType>cbc:DescriptionType</DataType>
                 </Element>

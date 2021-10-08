@@ -9,7 +9,7 @@
 
     <Document>
         <Term>query:QueryResponse</Term>
-        <Name>Search Notice Response root element</Name>
+        <Name>Search Notice Response, root element</Name>
         <Description>The Search Notice Response contains a package with the information on zero or more notices. Both
             the metadata of the notices are included and the full text of the notices in xml.
         </Description>
@@ -25,7 +25,7 @@
         <Reference type="RULE">PEPPOL-T012-R024</Reference>
         <Attribute usage="OPTIONAL">
             <Term>totalResultCount</Term>
-            <Name>Total Result Count</Name>
+            <Name>Total result count</Name>
             <Description>This parameter specifies the size of the complete result set matching the query within the
                 server. When this value is unspecified, the client should assume it is the size of the result set
                 contained within the result. When this value is -1, the client should assume that the number of total
@@ -36,7 +36,7 @@
         </Attribute>
         <Attribute usage="OPTIONAL">
             <Term>startIndex</Term>
-            <Name>Start Index</Name>
+            <Name>Start index</Name>
             <Description>This integer value is used to indicate the index for the first result in the result set
                 returned by the query, within the complete result set matching the query. By default, this value is 0.
             </Description>
@@ -44,14 +44,14 @@
         </Attribute>
         <Attribute>
             <Term>@requestId</Term>
-            <Name>Search Notice Request Identfier</Name>
+            <Name>Search notice request identifier</Name>
             <Description>Specifies the unique identifier for an Identifiable Search Notice Request. In case of different
                 start index for same QueryRequest the requester may use the same Search Notice Request Identfier.
             </Description>
         </Attribute>
         <Element>
             <Term>rim:Slot@name=SpecificationIdentification</Term>
-            <Name>Specification Identification</Name>
+            <Name>Specification identification</Name>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">SpecificationIdentification</Value>
@@ -72,7 +72,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=BusinessProcessTypeIdentifier</Term>
-            <Name>Business Process Type Identifier</Name>
+            <Name>Business process type identifier</Name>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">BusinessProcessTypeIdentifier</Value>
@@ -93,7 +93,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=IssueDateTime</Term>
-            <Name>Issue Date Time</Name>
+            <Name>Issue date time</Name>
             <Description>The issue date and time when the Serch Notice request is issued. The issue date time must have
                 granularity of seconds, and include time zone information.
             </Description>
@@ -118,7 +118,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>Sender Electronic Address Identifier</Name>
+            <Name>Sender electronic address identifier</Name>
             <Description>The electronic address of the sender.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -126,7 +126,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>Scheme Identifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers" described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -147,7 +147,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>Receiver Electronic Address Identifier</Name>
+            <Name>Receiver electronic address identifier</Name>
             <Description>The electronic address of the receiver.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -155,7 +155,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>Scheme Identifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers" described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -176,7 +176,7 @@
         </Element>
         <Element>
             <Term>rim:RegistryObjectList</Term>
-            <Name>Registry Object List</Name>
+            <Name>Registry object list</Name>
             <Description>The Registry Object List returns the requested Information. It identifies the notice instances
                 that were affected by the Search Notices Request.
             </Description>
@@ -187,12 +187,12 @@
             <Reference type="RULE">PEPPOL-T012-R019</Reference>
             <Element cardinality="0..n">
                 <Term>rim:RegistryObject</Term>
-                <Name>Registry Object</Name>
+                <Name>Registry object</Name>
                 <Description>The Registery Object returns a notice instance that matches the Search Notice Request.
                 </Description>
                 <Attribute>
                     <Term>lid</Term>
-                    <Name>Procedure Identifier</Name>
+                    <Name>Procedure identifier</Name>
                     <Description>The Procedure Identifier allows distinguishing procurement procedures and shall be
                         globally unique. It identifies the procurement procedure the notice belongs to. In PEPPOL the
                         Procedure Identifier is also named "Reference Number" or "ContractFolderID". In the later
@@ -203,7 +203,7 @@
                 </Attribute>
                 <Attribute>
                     <Term>id</Term>
-                    <Name>Notice Identifier</Name>
+                    <Name>Notice identifier</Name>
                     <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
                         amongst all other existing ones contained within the query.
                     </Description>
@@ -215,10 +215,10 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot@name=BuyerInformation</Term>
-                    <Name>Buyer Information</Name>
+                    <Name>Buyer information</Name>
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerPartyIdentification</Term>
-                        <Name>Buyer Party Identification</Name>
+                        <Name>Buyer party identification</Name>
                         <Description>An identification for the buyer party according to ISO 6523 ICD list.</Description>
                         <Reference type="RULE">PEPPOL-T012-R026</Reference>
                         <Attribute>
@@ -227,7 +227,7 @@
                         </Attribute>
                         <Attribute>
                             <Term>type</Term>
-                            <Name>List Identifier</Name>
+                            <Name>List identifier</Name>
                             <Description>The type is used to assign the list identifier attribute.</Description>
                             <Value type="FIXED">https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/</Value>
                         </Attribute>
@@ -256,7 +256,7 @@
                     </Element>
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerElectronicAddress</Term>
-                        <Name>Buyer Electronic Address Identifier</Name>
+                        <Name>Buyer electronic address identifier</Name>
                         <Description>The electronic address of the eTendering system or Organisation eDelivery Gateway
                             (BT-509) which is used by the buyer, contracting authority or contracting entity who is buying
                             supplies, services or public works using a tendering procedure as described in the applicable
@@ -271,7 +271,7 @@
                         </Attribute>
                         <Attribute>
                             <Term>type</Term>
-                            <Name>Scheme Identifier</Name>
+                            <Name>Scheme identifier</Name>
                             <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL
                                 Party Identifiers" described in the "PEPPOL Policy for using Identifiers"
                             </Description>
@@ -295,7 +295,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=UBLDocumentSchema</Term>
-                    <Name>UBL Document Schema</Name>
+                    <Name>UBL document schema</Name>
                     <Description>Used to identify the UBL document type of the referenced notice which are associated to
                         the corresponding UBL namespaces.
                     </Description>
@@ -324,7 +324,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=eFormsVersion</Term>
-                    <Name>eForms Version</Name>
+                    <Name>eForms version</Name>
                     <Description>Used to identify the version of the eForms specification used for the document.
                     </Description>
                     <Attribute>
@@ -346,14 +346,14 @@
                 </Element>
                 <Element>
                     <Term>rim:RepositoryItemRef</Term>
-                    <Name>Repository Item Reference</Name>
+                    <Name>Repository item reference</Name>
                     <Description>The Repository Item Reference specifies a reference to the XML notice that is included
                         to the local ASiC-E container (Associated Signature Container Extended) repository.
                     </Description>
                     <Reference type="RULE">PEPPOL-T012-R022</Reference>
                     <Attribute>
                         <Term>xlink</Term>
-                        <Name>List Identifier</Name>
+                        <Name>List identifier</Name>
                         <Description>This element uses xlink:href to specify local XML notices of the ASiC-E container
                             as repository items.
                         </Description>

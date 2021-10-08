@@ -10,7 +10,7 @@
 		<Name>Expression Of Interest Response, root element</Name>
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Verison identifier</Name>
+			<Name>UBL version identifier</Name>
 			<Reference type="RULE">PEPPOL-T002-R024</Reference>
 			<Reference type="RULE">PEPPOL-T002-R029</Reference>
 			<DataType>Identifier</DataType>
@@ -86,7 +86,7 @@
 			<Reference type="BUSINESS_TERM">tir82-028</Reference>
 			<Attribute>
 				<Term>listID</Term>
-				<Name>listID for TenderLanguageLocaleCode</Name>
+				<Name>List identifier for TenderLanguageLocaleCode</Name>
 				<Reference type="RULE">PEPPOL-T002-R019</Reference>
 				<Reference type="RULE">PEPPOL-T002-R020</Reference>
 				<Value type="FIXED">ISO639-1</Value>
@@ -133,7 +133,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Party Identification</Name>
+					<Name>Party identification</Name>
 					<Reference type="RULE">PEPPOL-T002-R015</Reference>
 					<Element>
 						<Term>cbc:ID</Term>

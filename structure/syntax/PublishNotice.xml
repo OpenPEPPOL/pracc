@@ -9,7 +9,7 @@
 
     <Document>
         <Term>lcm:SubmitObjectsRequest</Term>
-        <Name>Publish Notice</Name>
+        <Name>Publish Notice, root element</Name>
         <Description>The Publish Notice is a transaction which sends notices and their attachments as new notices or
             updates to already known notices to the publication offices.
         </Description>
@@ -26,7 +26,7 @@
         <Reference type="RULE">PEPPOL-T015-R040</Reference>
         <Attribute>
             <Term>id</Term>
-            <Name>Publish Notice Identifier</Name>
+            <Name>Publish notice identifier</Name>
             <Description>Specifies the unique identifier for an Identifiable Publish Notice.</Description>
         </Attribute>
         <Attribute>
@@ -44,7 +44,7 @@
         </Attribute>
         <Element>
             <Term>rim:Slot@name=SpecificationIdentification</Term>
-            <Name>Specification Identification</Name>
+            <Name>Specification identification</Name>
             <Description>Specifies the unique identifier for an the Request to publish a notice.
             </Description>
             <Attribute>
@@ -69,7 +69,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=BusinessProcessTypeIdentifier</Term>
-            <Name>Business Process Type Identifier</Name>
+            <Name>Business process type identifier</Name>
             <Description>Identifies the business process context in which the transaction appears. It enables the
                 receiver to process the document in an appropriate way.
             </Description>
@@ -95,7 +95,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=IssueDateTime</Term>
-            <Name>Issue Date Time</Name>
+            <Name>Issue date time</Name>
             <Description>The issue date and time when the Publish Notice is issued. The issue date time must have
                 granularity of seconds, and include time zone information.
             </Description>
@@ -121,7 +121,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>Sender Electronic Address Identifier</Name>
+            <Name>Sender electronic address identifier</Name>
             <Description>The electronic address of the sender.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -129,7 +129,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>Scheme Identifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -145,14 +145,14 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint Id</Name>
+                    <Name>Endpoint identifier</Name>
                     <Description>The endpoint ID of the sender platform</Description>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>Receiver Electronic Address</Name>
+            <Name>Receiver electronic address</Name>
             <Description>The electronic address of the receiver.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -160,7 +160,7 @@
             </Attribute>
             <Attribute>
                 <Term>type</Term>
-                <Name>Scheme Identifier</Name>
+                <Name>Scheme identifier</Name>
                 <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
                     Identifiers described in the "PEPPOL Policy for using Identifiers"
                 </Description>
@@ -176,14 +176,14 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint Id</Name>
+                    <Name>Endpoint identifier</Name>
                     <Description>The endpoint ID of the receiver platform</Description>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>rim:Slot@name=PublicationRequested</Term>
-            <Name>Publication Requested</Name>
+            <Name>Publication requested</Name>
             <Description>This indicator shows if the attached notice needs to be published or if it only needs to be
                 validated by the publication body. The check by the publication body can help the contracting party to
                 determine the validity of the notice with regard to a possible publication.
@@ -208,19 +208,19 @@
         </Element>
         <Element>
             <Term>rim:RegistryObjectList</Term>
-            <Name>Registry Object List</Name>
+            <Name>Registry object list</Name>
             <Description>The Registry Object List contains the information to be published. It describes the notice
                 instances that need to be published.
             </Description>
             <Reference type="RULE">PEPPOL-T015-R007</Reference>
             <Element>
                 <Term>rim:RegistryObject</Term>
-                <Name>Registry Object</Name>
+                <Name>Registry object</Name>
                 <Description>The Registery Object returns a notice instance that matches the Search Notice Request.
                 </Description>
                 <Attribute>
                     <Term>lid</Term>
-                    <Name>Procedure Identifier</Name>
+                    <Name>Procedure identifier</Name>
                     <Description>The Procedure Identifier (BT-04) allows distinguishing procurement procedures and shall
                         be
                         globally unique. It identifies the procurement procedure the notice belongs to. In PEPPOL the
@@ -232,7 +232,7 @@
                 </Attribute>
                 <Attribute>
                     <Term>id</Term>
-                    <Name>Notice Identifier</Name>
+                    <Name>Notice identifier</Name>
                     <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the notice
                         amongst all other existing ones contained within the query.
                     </Description>
@@ -244,7 +244,7 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Slot@name=UBLDocumentSchema</Term>
-                    <Name>UBL Document Schema</Name>
+                    <Name>UBL document schema</Name>
                     <Description>Used to identify the UBL document type of the referenced notice which are associated to
                         the corresponding UBL namespaces.
                     </Description>
@@ -275,7 +275,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=NoticeVersion</Term>
-                    <Name>Notice Version</Name>
+                    <Name>Notice version</Name>
                     <Description>Version of the notice (BT-757) which shall be published. 01 for initial version. Any
                         new version should have a higher version number than any previous one. Use consecutive numbers
                         made of 2 digits. If this is not the first iteration of the notice choose a higher number than
@@ -304,7 +304,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=eFormsVersion</Term>
-                    <Name>eForms Version</Name>
+                    <Name>eForms version</Name>
                     <Description>Version of the used eForms specification for the notice. The format is according to the specification always eforms-x.y.</Description>
                     <Reference type="RULE">PEPPOL-T015-R008</Reference>
                     <Attribute>
@@ -328,7 +328,7 @@
                 </Element>
                 <Element>
                     <Term>rim:Slot@name=BuyerInformation</Term>
-                    <Name>Buyer Information</Name>
+                    <Name>Buyer information</Name>
                     <Description>The information about the buyer (BG-3) includes different types of identification
                         elements to disclose a way to identify the buyer and its location without immediately opening
                         the attached published notice.
@@ -343,7 +343,7 @@
                     </Attribute>
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerPartyIdentification</Term>
-                        <Name>Buyer Party Identification</Name>
+                        <Name>Buyer party identification</Name>
                         <Description>An identification for the buyer party according to ISO 6523 ICD list.</Description>
                         <Reference type="RULE">PEPPOL-T015-R023</Reference>
                         <Attribute>
@@ -352,7 +352,7 @@
                         </Attribute>
                         <Attribute>
                             <Term>type</Term>
-                            <Name>List Identifier</Name>
+                            <Name>List identifier</Name>
                             <Description>The type is used to assign the list identifier attribute.</Description>
                             <Reference type="RULE">PEPPOL-T015-R017</Reference>
                             <Value type="FIXED">https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/</Value>
@@ -382,7 +382,7 @@
                     </Element>
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerElectronicAddress</Term>
-                        <Name>Buyer Electronic Address</Name>
+                        <Name>Buyer electronic address</Name>
                         <Description>Identifies the buyer party's electronic address according to Electronic Address
                             Scheme (EAS)
                         </Description>
@@ -409,7 +409,7 @@
                     </Element>
                     <Element cardinality="0..n">
                         <Term>rim:Slot@name=AdditionalDocumentReference</Term>
-                        <Name>Additional Document Reference</Name>
+                        <Name>Additional document reference</Name>
                         <Description>The Additional Document Reference specifies a reference to an additional file that
                             is included to the local ASiC-E container (Associated Signature Container Extended)
                             repository.
@@ -436,14 +436,14 @@
                 </Element>
                 <Element>
                     <Term>rim:RepositoryItemRef</Term>
-                    <Name>Repository Item Reference</Name>
+                    <Name>Repository item reference</Name>
                     <Description>The Repository Item Reference specifies a reference to the XML notice that is included
                         to the local ASiC-E container (Associated Signature Container Extended) repository.
                     </Description>
                     <Reference type="RULE">PEPPOL-T015-R022</Reference>
                     <Attribute>
                         <Term>xlink</Term>
-                        <Name>Local Identifier</Name>
+                        <Name>Local identifier</Name>
                         <Description>This element uses xlink:href to specify local XML notice of the ASiC-E container as
                             repository item.
                         </Description>

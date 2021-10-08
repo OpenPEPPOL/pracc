@@ -13,7 +13,7 @@
 		
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Version ID</Name>
+			<Name>UBL version ID</Name>
 			<Description>The UBLversion identifier</Description>
 			<Reference type="RULE">PEPPOL-T006-R001</Reference>
 			<Reference type="RULE">PEPPOL-T006-R019</Reference>

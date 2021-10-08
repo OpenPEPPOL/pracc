@@ -10,7 +10,7 @@
         <Name>Expression Of Interest Request, root element</Name>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Verison identifier</Name>
+            <Name>UBL version identifier</Name>
             <Reference type="RULE">PEPPOL-T001-R033</Reference>
             <Reference type="RULE">PEPPOL-T001-R034</Reference>
             <DataType>Identifier</DataType>
@@ -41,7 +41,7 @@
         </Element>
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Express of interest identifier</Name>
+            <Name>Expression of interest identifier</Name>
             <Description>An identifier that is suitable for identifying or referencing a document, MUST be expressed in
                 a UUID syntax (RFC 4122).
             </Description>
@@ -70,7 +70,7 @@
         </Element>
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name>Express of interest issue date</Name>
+            <Name>Expression of interest issue date</Name>
             <Description>The date on which transaction is issued.</Description>
             <Reference type="RULE">PEPPOL-T001-R010</Reference>
             <Reference type="BUSINESS_TERM">tir81-002</Reference>
@@ -78,7 +78,7 @@
         </Element>
         <Element>
             <Term>cbc:IssueTime</Term>
-            <Name>Express of interest issue time</Name>
+            <Name>Expression of interest issue time</Name>
             <Description>Time of issue of Transaction.The issue time must have granularity of seconds, and include time
                 zone information
             </Description>
@@ -90,7 +90,7 @@
         </Element>
         <Element cardinality="0..1">
             <Term>cbc:PreferredLanguageLocaleCode</Term>
-            <Name>Economic operator preferred languager</Name>
+            <Name>Economic operator preferred language</Name>
             <Description>The language the economic operator prefers to use when receiving documents from the contracting
                 body. Use the ISO 639 1 code list
             </Description>
@@ -120,7 +120,7 @@
                     <Reference type="BUSINESS_TERM">tir81-030</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Scheme Identifier</Name>
+                        <Name>Scheme identifier</Name>
 						<Reference type="RULE">PEPPOL-T001-R024</Reference>
                     </Attribute>
 					<DataType>Identifier</DataType>
@@ -132,7 +132,7 @@
                     <Reference type="BUSINESS_TERM">tir81-028</Reference>
                     <Attribute>
                         <Term>listID</Term>
-                        <Name>List Identifier</Name>
+                        <Name>List identifier</Name>
 						<Reference type="RULE">PEPPOL-T001-R027</Reference>
 						<Reference type="RULE">PEPPOL-T001-R028</Reference>
                         <Value type="FIXED">TendererRole</Value>
@@ -153,7 +153,7 @@
                         <Reference type="BUSINESS_TERM">tir81-012</Reference>
                         <Attribute>
                             <Term>schemeID</Term>
-                            <Name>Scheme Identifier</Name>
+                            <Name>Scheme identifier</Name>
 							<Reference type="RULE">PEPPOL-T001-R015</Reference>
                         </Attribute>
 						<DataType>Identifier</DataType>
@@ -228,7 +228,7 @@
                             <Reference type="BUSINESS_TERM">tir81-020</Reference>
                             <Attribute>
                                 <Term>listID</Term>
-                                <Name>List Identifier</Name>
+                                <Name>List identifier</Name>
 								<Reference type="RULE">PEPPOL-T001-R019</Reference>
 								<Reference type="RULE">PEPPOL-T001-R020</Reference>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
@@ -239,7 +239,7 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cac:PartyLegalEntity</Term>
-                    <Name>Economic operator legal Entity</Name>
+                    <Name>Economic operator legal entity</Name>
                     <Element cardinality="0..1">
                         <Term>cac:RegistrationAddress</Term>
                         <Name>Registration address</Name>
@@ -256,7 +256,7 @@
                                 <Reference type="BUSINESS_TERM">tir81-014</Reference>
                                 <Attribute>
                                     <Term>listID</Term>
-                                    <Name>List Identifier</Name>
+                                    <Name>List identifier</Name>
 									<Reference type="RULE">PEPPOL-T001-R019</Reference>
 									<Reference type="RULE">PEPPOL-T001-R020</Reference>
                                     <Value type="FIXED">ISO3166-1:Alpha2</Value>

@@ -20,12 +20,12 @@
         <Reference type="RULE">PEPPOL-T013-S322</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Verison identifier</Name>
-            <Description>Requires UBL version 2.3</Description>
+            <Name>UBL version identifier</Name>
+            <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T013-R019</Reference>
             <Reference type="RULE">PEPPOL-T013-S302</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">2.3</Value>
+            <Value type="FIXED">2.2</Value>
         </Element>
         <Element>
             <Term>cbc:CustomizationID</Term>
@@ -61,7 +61,7 @@
             <Reference type="RULE">PEPPOL-T013-S306</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>scheme URI</Name>
+                <Name>Scheme URI</Name>
                 <Reference type="RULE">PEPPOL-T013-R004</Reference>
                 <Reference type="RULE">PEPPOL-T013-R005</Reference>
                 <Reference type="RULE">PEPPOL-T013-R006</Reference>
@@ -116,7 +116,7 @@
                 <Reference type="RULE">PEPPOL-T013-R016</Reference>
                 <Attribute>
                     <Term>schemeURI</Term>
-                    <Name>scheme URI</Name>
+                    <Name>Scheme URI</Name>
                     <Reference type="RULE">PEPPOL-T013-R014</Reference>
                     <Reference type="RULE">PEPPOL-T013-R015</Reference>
                     <Value type="FIXED">urn:uuid</Value>
@@ -177,7 +177,7 @@
                 <Reference type="RULE">PEPPOL-T013-R020</Reference>
                 <Attribute>
                     <Term>schemeURI</Term>
-                    <Name>scheme identifier</Name>
+                    <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T013-R024</Reference>
                     <Reference type="RULE">PEPPOL-T013-R025</Reference>
                     <Reference type="RULE">PEPPOL-T013-S320</Reference>
@@ -202,14 +202,14 @@
                 <Reference type="RULE">PEPPOL-T013-S323</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:EndpointID</Term>
-                    <Name>Endpoint Id</Name>
+                    <Name>Contracting body electronic address identifier</Name>
                     <Description>Electronic address of the contracting body.</Description>
                     <Reference type="RULE">PEPPOL-T013-R024</Reference>
                     <Reference type="RULE">PEPPOL-T013-R010</Reference>
                     <Reference type="RULE">PEPPOL-T013-S321</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>scheme Id</Name>
+                        <Name>Scheme identifier</Name>
                         <Description>A Party Identifier Scheme from the list of PEPPOL Party Identifiers described in
                             the "PEPPOL Policy for using Identifiers".
                         </Description>
@@ -233,7 +233,7 @@
                         <Reference type="RULE">PEPPOL-T013-S325</Reference>
                         <Attribute usage="OPTIONAL">
                             <Term>schemeID</Term>
-                            <Name>scheme Id</Name>
+                            <Name>Scheme identifier</Name>
                             <Reference type="RULE">PEPPOL-T013-R008</Reference>
                         </Attribute>
                         <DataType>Identifier</DataType>
@@ -269,7 +269,7 @@
             <Reference type="RULE">PEPPOL-T013-R010</Reference>
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
-                <Name>Endpoint Id</Name>
+                <Name>Tenderer party electronic address identifier</Name>
                 <Reference type="RULE">PEPPOL-T013-S321</Reference>
                 <Reference type="RULE">PEPPOL-T013-R011</Reference>
                 <Attribute>
@@ -281,7 +281,7 @@
             </Element>
             <Element>
                 <Term>cac:PartyIdentification</Term>
-                <Name>Party Identification</Name>
+                <Name>Party identification</Name>
                 <Description>An identifier for this party.</Description>
                 <Reference type="RULE">PEPPOL-T013-S324</Reference>
                 <Reference type="RULE">PEPPOL-T013-S326</Reference>

@@ -10,7 +10,7 @@
 		<Name>Tender Status Request, root element</Name>
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
-			<Name>UBL Verison identifier</Name>
+			<Name>UBL version identifier</Name>
 			<Reference type="RULE">PEPPOL-T003-R023</Reference>
 			<Reference type="RULE">PEPPOL-T003-R024</Reference>
 			<DataType>Identifier</DataType>
@@ -152,7 +152,7 @@
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
-					<Name>Party Identification</Name>
+					<Name>Party identification</Name>
 					<Reference type="RULE">PEPPOL-T003-R008</Reference>
 					<Element>
 						<Term>cbc:ID</Term>

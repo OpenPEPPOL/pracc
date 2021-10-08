@@ -28,7 +28,7 @@
         <Reference type="RULE">PEPPOL-T009-S007</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version identifier</Name>
+            <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T009-R011</Reference>
             <Reference type="RULE">PEPPOL-T009-S008</Reference>
@@ -237,7 +237,7 @@
                 <Reference type="RULE">PEPPOL-T009-R032</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
-                    <Name>Mime Code of the file</Name>
+                    <Name>Mime code of the file</Name>
                     <Description>A code signifying the mime type of the external object.</Description>
                     <DataType>cbc:MimeCodeType</DataType>
                 </Element>

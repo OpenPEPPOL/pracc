@@ -9,7 +9,7 @@
 
     <Document>
         <Term>ubl:ApplicationResponse</Term>
-        <Name>Notice Publication Response</Name>
+        <Name>Notice publication response, root element</Name>
         <Reference type="RULE">PEPPOL-T016-R001</Reference>
         <Reference type="RULE">PEPPOL-T016-R002</Reference>
         <Reference type="RULE">PEPPOL-T016-R003</Reference>
@@ -23,7 +23,7 @@
         <Reference type="RULE">PEPPOL-T016-R056</Reference>
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Name>UBL Version identifier</Name>
+            <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.2</Description>
             <DataType>Identifier</DataType>
             <Value type="FIXED">2.2</Value>
@@ -116,7 +116,7 @@
             <Reference type="RULE">PEPPOL-T016-R022</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
-                <Name>Reciever party electronic address</Name>
+                <Name>Receiver party electronic address</Name>
                 <Description>Identifies the receiver party's electronic address</Description>
                 <Reference type="BUSINESS_TERM">tir65-011</Reference>
                 <Attribute>
@@ -358,7 +358,7 @@
                         <Reference type="RULE">PEPPOL-T016-R053</Reference>
                         <Element>
                             <Term>cbc:StatusReasonCode</Term>
-                            <Name>Issue type coded</Name>
+                            <Name>Issue type code</Name>
                             <Description>A codified verison of the issue description that describes
                                 the nature of the issue e.g. Syntax violation, Business rule
                                 violation, etc.
