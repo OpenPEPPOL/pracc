@@ -270,6 +270,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Tenderer party electronic address identifier</Name>
+                <Description>Electronic address identifier of the tenderer party.</Description>
                 <Reference type="RULE">PEPPOL-T013-S321</Reference>
                 <Reference type="RULE">PEPPOL-T013-R011</Reference>
                 <Attribute>

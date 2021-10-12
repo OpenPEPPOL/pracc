@@ -190,7 +190,8 @@
                 <Reference type="RULE">PEPPOL-T014-S320</Reference>
                 <Element>
                     <Term>cbc:EndpointID</Term>
-                    <Name>Issuing Party electronic address identifier</Name>
+                    <Name>Issuer Party electronic address identifier</Name>
+                    <Description>Electronic address of the issuer party.</Description>
                     <Reference type="RULE">PEPPOL-T014-S321</Reference>
                     <Reference type="RULE">PEPPOL-T014-R011</Reference>
                     <Attribute>
@@ -215,6 +216,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
+                <Description>Electronic address oof the contracting body.</Description>
                 <Reference type="RULE">PEPPOL-T014-S321</Reference>
                 <Reference type="RULE">PEPPOL-T014-R011</Reference>
                 <Attribute usage="OPTIONAL">
@@ -274,6 +276,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
                 <Name>Economic operator electronic address identifier</Name>
+                <Description>Electronic address of the economic operator.</Description>
                 <Reference type="RULE">PEPPOL-T014-S321</Reference>
                 <Reference type="RULE">PEPPOL-T014-R011</Reference>
                 <Attribute>

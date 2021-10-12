@@ -118,7 +118,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>Sender electronic address identifier</Name>
+            <Name>Sender electronic address</Name>
             <Description>The electronic address of the sender.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -140,6 +140,8 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Name>Sender party electronic address identifier</Name>
+                    <Description>Electronic address of the sending party</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>
@@ -147,7 +149,7 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>Receiver electronic address identifier</Name>
+            <Name>Receiver electronic address</Name>
             <Description>The electronic address of the receiver.</Description>
             <Attribute>
                 <Term>name</Term>
@@ -169,6 +171,8 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
+                    <Name>Receiver party electronic address identifier</Name>
+                    <Description>Electronic address of the sending party</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>

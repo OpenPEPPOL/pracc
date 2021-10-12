@@ -347,7 +347,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Contracting body electronic address identifier</Name>
-					<Description>Electronic address of the contracting body.</Description>
+					<Description>Electronic address of the contracting body</Description>
 					<Reference type="RULE">PEPPOL-T005-R019</Reference>
 					<Attribute>
 						<Term>schemeID</Term>

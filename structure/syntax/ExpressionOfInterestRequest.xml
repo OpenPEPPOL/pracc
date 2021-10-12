@@ -114,7 +114,7 @@
                 <Element>
                     <Term>cbc:EndpointID</Term>
                     <Name>Economic operator electronic address identifier</Name>
-                    <Description>Electronic address of the economic operato</Description>
+                    <Description>Electronic address of the economic operator.</Description>
 					<Reference type="RULE">PEPPOL-T001-R014</Reference>
 					<Reference type="RULE">PEPPOL-T001-R025</Reference>
                     <Reference type="BUSINESS_TERM">tir81-030</Reference>

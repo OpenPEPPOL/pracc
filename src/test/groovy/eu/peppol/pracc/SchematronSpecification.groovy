@@ -60,7 +60,7 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tender-withdrawal/PEPPOL-T014.sch'                        | 'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml'
         'rules/peppol-publish-notice/PEPPOL-T015.sch'                           | 'guides/transactions/T015/files/ExamplePublishNotice.xml'
         'rules/peppol-publish-notice/PEPPOL-T016.sch'                           | 'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'
-        'rules/peppol-notify-awarding/PEPPOL-T017.sch'                           | 'guides/transactions/T017/files/NotifyAwarding.xml'
+        'rules/peppol-notify-awarding/PEPPOL-T017.sch'                          | 'guides/transactions/T017/files/NotifyAwarding.xml'
     }
 
     static Map<String, Schema> schemaCache = new HashMap<>()

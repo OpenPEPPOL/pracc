@@ -147,7 +147,8 @@
 				<Name>Issuer party</Name>
 				<Element>
 					<Term>cbc:EndpointID</Term>
-					<Name>Electronic address identifier</Name>
+					<Name>Issuing party electronic address identifier</Name>
+					<Description>Electronic address of the issuing party.</Description>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier for electronic address identifier</Name>						

@@ -145,8 +145,8 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint identifier</Name>
-                    <Description>The endpoint ID of the sender platform</Description>
+                    <Name>Sending operator electronic address identifier</Name>
+                    <Description>Electronic address of the sending operator</Description>
                 </Element>
             </Element>
         </Element>
@@ -176,8 +176,8 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint identifier</Name>
-                    <Description>The endpoint ID of the receiver platform</Description>
+                    <Name>Receiving platform electronic address identifier</Name>
+                    <Description>Electronic address of the receiving platform</Description>
                 </Element>
             </Element>
         </Element>

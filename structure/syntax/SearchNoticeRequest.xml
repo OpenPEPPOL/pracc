@@ -152,8 +152,9 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint identifier</Name>
-                    <Description>The endpoint ID of the sender platform</Description>
+                    <Name>Sender party electronic address identifier</Name>
+                    <Description>Electronic address of the sending party</Description>
+                    <DataType>rim:StringValueType</DataType>
                 </Element>
             </Element>
         </Element>
@@ -182,8 +183,8 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Endpoint identifier</Name>
-                    <Description>The endpoint ID of the receiver platform</Description>
+                    <Name>Receiver party electronic address identifier</Name>
+                    <Description>Electronic address of the sending party</Description>
                 </Element>
             </Element>
         </Element>

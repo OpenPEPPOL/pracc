@@ -122,7 +122,7 @@
 				<Element>
 					<Term>cbc:EndpointID</Term>
 					<Name>Economic operator electronic address identifier</Name>
-					<Description>Electronic address of the economic operator</Description>
+					<Description>Electronic address of the economic operator.</Description>
 					<Reference type="RULE">PEPPOL-T002-R022</Reference>
 					<Attribute>
 						<Term>schemeID</Term>

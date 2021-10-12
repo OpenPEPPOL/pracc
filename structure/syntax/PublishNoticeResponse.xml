@@ -87,8 +87,8 @@
             </Description>
             <Element>
                 <Term>cbc:EndpointID</Term>
-                <Name>Sender party electronic address</Name>
-                <Description>Identifies the sender party's electronic address</Description>
+                <Name>Sending party electronic address identifier</Name>
+                <Description>Electronic address of the sending party.</Description>
                 <Reference type="BUSINESS_TERM">tir65-009</Reference>
                 <Reference type="RULE">PEPPOL-T016-R015</Reference>
                 <Reference type="RULE">PEPPOL-T016-R018</Reference>
@@ -116,8 +116,8 @@
             <Reference type="RULE">PEPPOL-T016-R022</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
-                <Name>Receiver party electronic address</Name>
-                <Description>Identifies the receiver party's electronic address</Description>
+                <Name>Receiving party electronic address identifier</Name>
+                <Description>Electronic address of the receiving party</Description>
                 <Reference type="BUSINESS_TERM">tir65-011</Reference>
                 <Attribute>
                     <Term>schemeID</Term>
