@@ -37,7 +37,7 @@
     <cac:SenderParty>
         <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
-            <cbc:ID schemeID="9930">DE122268496</cbc:ID> <!--.-->
+            <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName>
             <cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name> <!--.-->
@@ -46,12 +46,12 @@
     <!-- end::senderParty[] -->
     <!-- tag::receiverParty[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID> <!--.-->
         <cac:PartyIdentification>
-            <cbc:ID schemeID="9944">30058019</cbc:ID> <!--.-->
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID> <!--.-->
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>Dutch Ministery of Foreign affairs (Ministerie van Buitenlandse Zaken)</cbc:Name> <!--.-->
+            <cbc:Name>Dutch Tulips Ltd</cbc:Name> <!--.-->
         </cac:PartyName>
     </cac:ReceiverParty>
     <!-- end::receiverParty[] -->

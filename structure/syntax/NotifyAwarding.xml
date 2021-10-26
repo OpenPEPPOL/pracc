@@ -57,7 +57,7 @@
             <Reference type="RULE">PEPPOL-T017-R020</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>Scheme URI</Name>
+                <Name>Scheme identifier</Name>
                 <Value type="FIXED">urn:uuid</Value>
             </Attribute>
             <DataType>Identifier</DataType>
@@ -115,10 +115,10 @@
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Description>Scheme identifier for the electronic address.</Description>
-                    <Value type="EXAMPLE">9946</Value>
+                    <Value type="EXAMPLE">9930</Value>
                 </Attribute>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">500820007</Value>
+                <Value type="EXAMPLE">DE122268496</Value>
             </Element>
             <Element cardinality="1..n">
                 <Term>cac:PartyIdentification</Term>
@@ -141,9 +141,9 @@
                         <Value type="EXAMPLE">0204</Value>
                     </Attribute>
                     <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">991-1234512345-06</Value>
                 </Element>
                 <DataType>Party Identification</DataType>
-                <Value type="EXAMPLE">991-1234512345-06</Value>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
@@ -182,10 +182,10 @@
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Description>Scheme identifier for the electronic address</Description>
-                    <Value type="EXAMPLE">9930</Value>
+                    <Value type="EXAMPLE">9946</Value>
                 </Attribute>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">DE280857971</Value>
+                <Value type="EXAMPLE">500820007</Value>
             </Element>
             <Element cardinality="1..n">
                 <Term>cac:PartyIdentification</Term>
@@ -207,9 +207,9 @@
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
                     <DataType>Identifier</DataType>
+                    <Value type="EXAMPLE">7300010000001</Value>
                 </Element>
                 <DataType>Party Identification</DataType>
-                <Value type="EXAMPLE">7300010000001</Value>
             </Element>
             <Element cardinality="0..n">
                 <Term>cac:PartyName</Term>
