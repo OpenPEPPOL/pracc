@@ -42,12 +42,12 @@
         </rule>
 
         <rule context="/ubl:AwardedNotification/cbc:CustomizationID">
-            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:trns:t017:1.0'"
-                    flag="fatal" id="PEPPOL-T017-R017">Element 'cbc:CustomizationID' MUST contain value 'urn:fdc:peppol.eu:prac:trns:t017:1.0'.</assert>
+            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:trns:t017:1.1'"
+                    flag="fatal" id="PEPPOL-T017-R017">Element 'cbc:CustomizationID' MUST contain value 'urn:fdc:peppol.eu:prac:trns:t017:1.1'.</assert>
         </rule>
 
         <rule context="/ubl:AwardedNotification/cbc:ProfileID">
-            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:bis:p009:1.0'" flag="fatal" id="PEPPOL-T017-R018">Element 'cbc:ProfileID' MUST contain value 'urn:fdc:peppol.eu:prac:bis:p009:1.0'.</assert>
+            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:bis:p009:1.1'" flag="fatal" id="PEPPOL-T017-R018">Element 'cbc:ProfileID' MUST contain value 'urn:fdc:peppol.eu:prac:bis:p009:1.1'.</assert>
         </rule>
 
         <rule context="/ubl:AwardedNotification/cbc:ID">

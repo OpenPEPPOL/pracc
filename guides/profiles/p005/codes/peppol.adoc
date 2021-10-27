@@ -20,7 +20,7 @@ All transactions within this profile uses the same profile identifier.
 | T009
 | Tender Clarification Request
 | The CA sends a tender clarification request to the EO.
-.2+.^| urn:fdc:peppol.eu:prac:bis:p005:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p005:1.1
 
 | T010
 | Tender Clarification

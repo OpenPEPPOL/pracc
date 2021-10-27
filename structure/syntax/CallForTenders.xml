@@ -30,7 +30,7 @@
             <Reference type="RULE">PEPPOL-T004-R002</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t004:1.0
+                urn:fdc:peppol.eu:prac:trns:t004:1.1
             </Value>
         </Element>
 
@@ -43,7 +43,7 @@
             <Reference type="RULE">BII3-T83-R002</Reference>
             <Reference type="RULE">PEPPOL-T004-R003</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p002:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p002:1.1</Value>
         </Element>
 
         <Element>

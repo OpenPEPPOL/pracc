@@ -25,7 +25,7 @@
             <Reference type="BUSINESS_TERM">tir81-007</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t001:1.0
+                urn:fdc:peppol.eu:prac:trns:t001:1.1
             </Value>
         </Element>
         <Element>
@@ -37,7 +37,7 @@
             <Reference type="RULE">PEPPOL-T001-R004</Reference>
             <Reference type="BUSINESS_TERM">tir81-006</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.1</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>

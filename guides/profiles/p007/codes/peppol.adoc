@@ -20,7 +20,7 @@ All transactions within this profile uses the same profile identifier.
 | T013
 | Tender Withdrawal
 | The EO sends a Tender Withdrawal to the CA.
-.2+.^| urn:fdc:peppol.eu:prac:bis:p007:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p007:1.1
 
 | T014
 | Tender Withdrawal Reception Notification

@@ -37,7 +37,7 @@
             <Reference type="RULE">PEPPOL-T013-S303</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t013:1.0
+                urn:fdc:peppol.eu:prac:trns:t013:1.1
             </Value>
         </Element>
         <Element>
@@ -49,7 +49,7 @@
             <Reference type="RULE">PEPPOL-T013-R003</Reference>
             <Reference type="RULE">PEPPOL-T013-S304</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p007:1.0</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p007:1.1</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>

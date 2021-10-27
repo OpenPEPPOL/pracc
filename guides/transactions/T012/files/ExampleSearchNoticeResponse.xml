@@ -18,7 +18,7 @@
     <rim:Slot name="SpecificationIdentification"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
             <rim:Value>
-                urn:fdc:peppol.eu:prac:trns:t012:1.0
+                urn:fdc:peppol.eu:prac:trns:t012:1.1
             </rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
@@ -26,7 +26,7 @@
     <!-- tag::business-process-type-identifier[] -->
     <rim:Slot name="BusinessProcessTypeIdentifier"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
-            <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.0</rim:Value> <!--.-->
+            <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.1</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::business-process-type-identifier[] -->

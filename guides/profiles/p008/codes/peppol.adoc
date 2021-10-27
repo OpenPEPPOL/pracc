@@ -20,7 +20,7 @@ All transactions within this profile uses the same Business Process Type Identif
 | T015
 | Publish Notice
 | The requester sends a Publish Notice Request to the publisher.
-.2+.^| urn:fdc:peppol.eu:prac:bis:p008:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p008:1.1
 
 | T016
 | Notice Publication Response

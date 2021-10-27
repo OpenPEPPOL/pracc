@@ -63,7 +63,7 @@
                     <Term>rim:Value</Term>
                     <Description>The value of the Slot instance.</Description>
                     <Reference type="RULE">PEPPOL-T015-R009</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t015:1.0</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t015:1.1</Value>
                 </Element>
             </Element>
         </Element>
@@ -89,7 +89,7 @@
                     <Term>rim:Value</Term>
                     <Description>The value of the Slot instance.</Description>
                     <Reference type="RULE">PEPPOL-T015-R010</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.0</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.1</Value>
                 </Element>
             </Element>
         </Element>
