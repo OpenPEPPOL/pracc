@@ -61,7 +61,7 @@
             <Reference type="RULE">PEPPOL-T014-S306</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>Scheme URI</Name>
+                <Name>Scheme identifier</Name>
                 <Reference type="RULE">PEPPOL-T014-R004</Reference>
                 <Reference type="RULE">PEPPOL-T014-R005</Reference>
                 <Reference type="RULE">PEPPOL-T014-R006</Reference>
@@ -126,7 +126,7 @@
                 <Reference type="RULE">PEPPOL-T014-R016</Reference>
                 <Attribute>
                     <Term>schemeURI</Term>
-                    <Name>Scheme URI</Name>
+                    <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-R014</Reference>
                     <Reference type="RULE">PEPPOL-T014-R015</Reference>
                     <Value type="FIXED">urn:uuid</Value>
@@ -196,7 +196,7 @@
                     <Reference type="RULE">PEPPOL-T014-R011</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
-                        <Name>Scheme Id</Name>
+                        <Name>Scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T014-R010</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
@@ -221,7 +221,7 @@
                 <Reference type="RULE">PEPPOL-T014-R011</Reference>
                 <Attribute usage="OPTIONAL">
                     <Term>schemeID</Term>
-                    <Name>Scheme Id</Name>
+                    <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-R010</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>

@@ -50,7 +50,7 @@
             <Reference type="BUSINESS_TERM">tir81-001</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>Scheme URI</Name>
+                <Name>Scheme identifier</Name>
                 <Reference type="RULE">PEPPOL-T001-R006</Reference>
                 <Reference type="RULE">PEPPOL-T001-R007</Reference>
                 <Value type="FIXED">urn:uuid</Value>

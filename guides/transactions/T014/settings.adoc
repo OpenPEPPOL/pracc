@@ -3,7 +3,7 @@ include::../shared/settings.adoc[]
 :name-profile: Profile P007 - "Tender Withdrawal"
 
 :name-transaction-org: "Trdm045 Tender Reception Notification transaction"
-:name-trans-short: Tender Withdrawal Reception Notification 1.0
+:name-trans-short: Tender Withdrawal Reception Notification 1.1
 :name-transaction: T014 - {name-trans-short}
 :name-syntax: TenderWithdrawalResponse
 

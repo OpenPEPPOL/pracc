@@ -45,7 +45,7 @@
 			<Reference type="BUSINESS_TERM">tir82-001</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
-				<Name>Scheme URI</Name>
+				<Name>Scheme identifier</Name>
 				<Reference type="RULE">PEPPOL-T002-R006</Reference>
 				<Reference type="RULE">PEPPOL-T002-R007</Reference>
 				<Value type="FIXED">urn:uuid</Value>
@@ -105,7 +105,7 @@
 				<Reference type="RULE">PEPPOL-T002-R027</Reference>
 				<Attribute>
 					<Term>schemeURI</Term>
-					<Name>Scheme URI</Name>
+					<Name>Scheme identifier</Name>
 					<Reference type="RULE">PEPPOL-T002-R025</Reference>
 					<Reference type="RULE">PEPPOL-T002-R026</Reference>
 					<Value type="FIXED">urn:uuid</Value>

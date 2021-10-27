@@ -43,7 +43,7 @@
             <Value type="DEFAULT">0</Value>
         </Attribute>
         <Attribute>
-            <Term>@requestId</Term>
+            <Term>requestId</Term>
             <Name>Search notice request identifier</Name>
             <Description>Specifies the unique identifier for an Identifiable Search Notice Request. In case of different
                 start index for same QueryRequest the requester may use the same Search Notice Request Identfier.

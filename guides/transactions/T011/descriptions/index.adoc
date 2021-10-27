@@ -40,7 +40,7 @@ include::../../../shared/pagination.PLANTUML[]
 include::../files/ExampleSearchNoticeRequest.xml[tags=specification-identification]
 ....
 <.> Identifier for the set of rules and transactions for a search notice request.
-<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t011:1.0_", just like in the given example.
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t011:1.1_", just like in the given example.
 
 === Business Process Type Identifier
 [source,xml,indent=0]
@@ -48,7 +48,7 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=specification-identificati
 include::../files/ExampleSearchNoticeRequest.xml[tags=business-process-type-identifier]
 ....
 <.> Identifier for the business process context of the search notice response.
-<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.0_", just like in the given example.
+<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.1_", just like in the given example.
 
 === Issue Date Time
 [source,xml,indent=0]

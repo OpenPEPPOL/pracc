@@ -70,7 +70,7 @@
             <Reference type="RULE">PEPPOL-T009-S011</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
-                <Name>Scheme URI</Name>
+                <Name>Scheme identifier</Name>
                 <Reference type="RULE">PEPPOL-T009-R016</Reference>
                 <Value type="FIXED">urn:uuid</Value>
             </Attribute>
