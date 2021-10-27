@@ -6,6 +6,7 @@ include::../../shared/links.adoc[]
 
 // code list links
 :link-iso3166: link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]
+:link-uncl1001://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL1001]
 
 //RegRep
 :ebrs: http://docs.oasis-open.org/regrep/regrep-core/v4.0/os/regrep-core-rs-v4.0-os.html[Services and Protocols (ebRS) for ebXML RegRep]
