@@ -416,6 +416,7 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="RULE">CL-T83-R005</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <Attribute>
                             <Term>listID</Term>
                             <Name>List identifier for country code</Name>

@@ -260,7 +260,6 @@
                     more detail. There must be only one kind of reference a file or questions.
                 </Description>
                 <Reference type="RULE">PEPPOL-T010-R028</Reference>
-                <Reference type="RULE">PEPPOL-T010-R029</Reference>
                 <Element cardinality="0..1">
                     <Term>cbc:MimeCode</Term>
                     <Name>Mime code of the file</Name>
