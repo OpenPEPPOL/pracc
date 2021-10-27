@@ -94,6 +94,7 @@
 				<Description>A code specifying the type of the document.</Description>
 				<Reference type="RULE">BII3-T90-R015</Reference>
 				<Reference type="RULE">CL-T90-R003</Reference>
+				<Reference type="CODE_LIST">https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier for document type code</Name>
