@@ -267,7 +267,7 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
-        <Path>structure/codelist/ICD.xml</Path>
+        <Path>structure/codelist/icd.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
