@@ -6,9 +6,9 @@
 |===
 | Business Term | Allowed Scheme | Document location
 | Sender Electronic Address Identifier|
-schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
+schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes]
 | `cac:SenderParty/cbc:EndpointID/@schemeID`
 | Receiver Electronic Address Identifier |
-schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
+schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes]
 | `cac:ReceiverParty/cbc:EndpointID/@schemeID`
 |===

@@ -422,6 +422,7 @@
                                     <Reference type="RULE">PEPPOL-T017-R070</Reference>
                                     <Reference type="RULE">PEPPOL-T017-R071</Reference>
                                     <Reference type="RULE">PEPPOL-T017-R072</Reference>
+                                    <Reference type="CODE_LIST">ISO3166</Reference>
                                     <Attribute usage="OPTIONAL">
                                         <Term>listID</Term>
                                         <Name>List identifier</Name>

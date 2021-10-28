@@ -5,10 +5,10 @@
 .Code list for identifier schemes
 |===
 | Business Term | Allowed Scheme | Document location
-| Sender Electronic Address Identifier | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
+| Sender Electronic Address Identifier | schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes]
 | `rim:Slot name="SenderElectronicAddress" @type`
-| Receiver Electronic Address Identifier | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
+| Receiver Electronic Address Identifier | schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes]
 | `rim:Slot name="ReceiverElectronicAddress" @type`
-| Buyer Electronic Address Identifier  | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes]
+| Buyer Electronic Address Identifier  | schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes]
 | `rim:Slot name="BuyerElectronicAddress" @type`
 |===

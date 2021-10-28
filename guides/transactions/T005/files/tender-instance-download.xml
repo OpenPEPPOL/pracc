@@ -14,7 +14,7 @@
         <cbc:DocumentTypeCode listID="UNCL1001">311</cbc:DocumentTypeCode>
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode>
         <cbc:VersionID>1</cbc:VersionID>
-        <cbc:DocumentDescription>CallforTenders reference</cbc:DocumentDescription>
+        <cbc:DocumentDescription>Call forTenders reference</cbc:DocumentDescription>
     </cac:DocumentReference>
     <cac:DocumentReference>
         <cbc:ID>507</cbc:ID>
@@ -43,12 +43,12 @@
         </cac:Attachment>
     </cac:DocumentReference>
     <cac:TendererParty>
-        <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID>
+        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="9944">30058019</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>The tenderer Name</cbc:Name>
+            <cbc:Name>Dutch Tulip Ltd.</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>null</cbc:StreetName>
@@ -70,7 +70,7 @@
         <cac:Party>
             <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="9930">DE122268496</cbc:ID>
+                <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Beschaffungsamt des BMI</cbc:Name>

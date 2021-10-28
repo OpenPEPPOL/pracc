@@ -16,9 +16,9 @@
 	</cac:ExpressionOfInterestDocumentReference>
 	<cac:EconomicOperatorParty>
 		<cac:Party>
-			<cbc:EndpointID schemeID="9930">30058019</cbc:EndpointID>
+			<cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="9930">30058019</cbc:ID>
+				<cbc:ID schemeID="0088">7300010000001</cbc:ID>
 			</cac:PartyIdentification>
 		</cac:Party>
 	</cac:EconomicOperatorParty>
@@ -26,10 +26,10 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="9930">DE122268496</cbc:ID>
+				<cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
-				<cbc:Name>vergabestelle1_kurz</cbc:Name>
+				<cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name>
 			</cac:PartyName>
 		</cac:Party>
 	</cac:ContractingParty>

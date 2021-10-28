@@ -355,7 +355,7 @@
                             <Name>List identifier</Name>
                             <Description>The type is used to assign the list identifier attribute.</Description>
                             <Reference type="RULE">PEPPOL-T015-R017</Reference>
-                            <Value type="FIXED">https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/</Value>
+                            <Value type="FIXED">ICD</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>

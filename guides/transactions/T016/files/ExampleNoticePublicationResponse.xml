@@ -23,12 +23,12 @@
     <!--end::response-issue-time[] -->
     <!--tag::sender-info[] -->
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
     </cac:SenderParty>
     <!--end::sender-info[] -->
     <!--tag::receiver-info[] -->
     <cac:ReceiverParty>
-        <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
+        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID> <!--.-->
     </cac:ReceiverParty>
     <!--end::receiver-info[] -->
     <cac:DocumentResponse>

@@ -63,11 +63,11 @@
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']">
-            <assert id="PEPPOL-T015-R017" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+            <assert id="PEPPOL-T015-R017" flag="fatal" test="@type = 'ISO6523ICDList'">The DocumentTypeCode MUST have a type of the value of "ISO6523ICDList".</assert>
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">
-            <assert id="PEPPOL-T015-R014" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">The DocumentTypeCode MUST have a type of the value of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+            <assert id="PEPPOL-T015-R014" flag="fatal" test="@type = 'ISO6523ICDList'">The DocumentTypeCode MUST have a type of the value of "ISO6523ICDList".</assert>
         </rule>
 
         <rule context="lcm:SubmitObjectsRequest/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']">

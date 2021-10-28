@@ -3,12 +3,12 @@
 
 == Party identifiers and party legal registration identifier scheme
 
-All party identifiers (`rim:Slot name="BuyerPartyIdentification"`) and party legal registration identifier (`rim:Slot name="BuyerElectronicAddress"`) has an non optional scheme identifier attribute (`@type`). The value shall be chosen from the code list link:https://docs.peppol.eu/poacc/upgrade-3/codelist/ICD/[ICD codes].
+All party identifiers (`rim:Slot name="BuyerPartyIdentification"`) and party legal registration identifier (`rim:Slot name="BuyerElectronicAddress"`) has an non optional scheme identifier attribute (`@type`). The value shall be chosen from the code list  link:/pracc/codelist/ICD/[ICD codes].
 
 [source,xml,indent=0]
 .Example of usage of Buyer Party Identification in `rim:Value`
 ----
-<rim:Value>9930:DE89769595</rim:Value>
+<rim:Value>0088:7300010000001</rim:Value>
 ----
 
 
@@ -25,7 +25,7 @@ All party identifiers (`rim:Slot name="BuyerPartyIdentification"`) and party leg
 
 All electronic address identifiers use the Electronic Address Scheme code list (EAS), maintained by CEF (link:https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Code+lists#Codelists-1[CEF Code lists]).
 
-Valid values are found here: link:/poacc/upgrade-3/codelist/eas/[EAS codes].
+Valid values are found here: link:/pracc/codelist/eas/[EAS codes].
 
 [source,xml,indent=0]
 .Example of usage of Sender Electronic Address Identifier in `rim:Value`
@@ -38,7 +38,7 @@ Valid values are found here: link:/poacc/upgrade-3/codelist/eas/[EAS codes].
 .Code list for identifier schemes
 |===
 | Business Term | Allowed Scheme | Document location
-| Sender Electronic Address Identifier | schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes] | `rim:Slot name="SenderElectronicAddress" @type`
+| Sender Electronic Address Identifier | schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes] | `rim:Slot name="SenderElectronicAddress" @type`
 
-| Receiver Electronic Address Identifier |schemeID attribute is mandatory and must use values from https://docs.peppol.eu/poacc/upgrade-3/codelist/eas/[EAS codes] | `rim:Slot name="ReceiverElectronicAddress" @type`
+| Receiver Electronic Address Identifier |schemeID attribute is mandatory and must use values from link:/pracc/codelist/eas/[EAS codes] | `rim:Slot name="ReceiverElectronicAddress" @type`
 |===

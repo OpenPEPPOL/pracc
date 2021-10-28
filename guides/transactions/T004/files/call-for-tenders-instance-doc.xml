@@ -41,7 +41,7 @@
 		<cac:Party>
 			<cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
 			<cac:PartyIdentification>
-				<cbc:ID schemeID="9930">DE122268496</cbc:ID>
+				<cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
 			</cac:PartyIdentification>
 			<cac:PartyName>
 				<cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name>

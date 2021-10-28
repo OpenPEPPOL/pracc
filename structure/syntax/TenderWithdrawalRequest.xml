@@ -373,6 +373,7 @@
                             alpha-2 representation.
                         </Description>
                         <Reference type="RULE">PEPPOL-T013-S329</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
                         <DataType>Code</DataType>
                     </Element>
                     <DataType>Country</DataType>

@@ -12,23 +12,23 @@
     <cbc:IssueTime>16:24:27+01:00</cbc:IssueTime>
     <cac:ContractingParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0184">10213231-1</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="0184">10213231-1</cbc:ID>
+                <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>The Danish Procurement Agency</cbc:Name>
+                <cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name>
             </cac:PartyName>
         </cac:Party>
     </cac:ContractingParty>
     <cac:EconomicOperatorParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="9944">30058019</cbc:ID>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
-                <cbc:Name>De Baksteen</cbc:Name>
+                <cbc:Name>Dutch Tulips Ltd</cbc:Name>
             </cac:PartyName>
         </cac:Party>
     </cac:EconomicOperatorParty>

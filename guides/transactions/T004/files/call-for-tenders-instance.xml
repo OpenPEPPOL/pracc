@@ -37,7 +37,7 @@
         <cac:Party>
             <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="9930">DE122268496</cbc:ID>
+                <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Beschaffungsamt des Bundesministerium des Innern (BeschA)</cbc:Name>
@@ -55,7 +55,7 @@
         <cbc:VariantConstraintIndicator>false</cbc:VariantConstraintIndicator>
         <cbc:AdditionalConditions>WOS</cbc:AdditionalConditions>
         <cac:TenderRecipientParty>
-            <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
         </cac:TenderRecipientParty>
     </cac:TenderingTerms>
     <cac:TenderingProcess>

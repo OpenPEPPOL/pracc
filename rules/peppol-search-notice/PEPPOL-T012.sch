@@ -80,13 +80,13 @@
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']">
-            <assert id="PEPPOL-T012-R027" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">BuyerElectronicAddress MUST have a type of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+            <assert id="PEPPOL-T012-R027" flag="fatal" test="@type = 'ISO6523ICDList'">BuyerElectronicAddress MUST have a type of "ISO6523ICDList".</assert>
         </rule>
 
         <rule context="query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerElectronicAddress']
             | query:QueryResponse/rim:RegistryObjectList/rim:RegistryObject/rim:Slot[@name='BuyerInformation']/rim:Slot[@name='BuyerPartyIdentification']
         ">
-            <assert id="PEPPOL-T012-R028" flag="fatal" test="@type = 'https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/'">BuyerElectronicAddress and BuyerPartyIdentification MUST have a type of "https://docs.peppol.eu/poacc/billing/3.0/codelist/ICD/".</assert>
+            <assert id="PEPPOL-T012-R028" flag="fatal" test="@type = 'ISO6523ICDList'">BuyerElectronicAddress and BuyerPartyIdentification MUST have a type of "ISO6523ICDList".</assert>
         </rule>
 
         <!--Gobal Rules (only matches if no other does)-->
