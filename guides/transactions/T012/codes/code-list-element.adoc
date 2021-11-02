@@ -6,7 +6,7 @@
 [cols="1h,4"]
 |===
 | Qualifier (listID)
-| #NoticeTypeCode (tbd)#
+| DocumentTypeCode
 | Document location
 | `rim:Slot name="DocumentTypeCode"`
 | Issuer

@@ -139,7 +139,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for party identification</Description>
-                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">icd</Reference>
                         <Value type="EXAMPLE">0204</Value>
                     </Attribute>
                     <DataType>Identifier</DataType>
@@ -207,7 +207,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Description>Scheme identifier for party identification</Description>
-                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Reference type="CODE_LIST">icd</Reference>
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
                     <DataType>Identifier</DataType>

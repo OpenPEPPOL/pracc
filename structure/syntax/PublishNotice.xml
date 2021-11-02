@@ -121,19 +121,11 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>Sender electronic address identifier</Name>
-            <Description>The electronic address of the sender.</Description>
+            <Name>Contracting body electronic address identifier</Name>
+            <Description>The electronic address of the contracting body.</Description>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">SenderElectronicAddress</Value>
-            </Attribute>
-            <Attribute>
-                <Term>type</Term>
-                <Name>Scheme identifier</Name>
-                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
-                    Identifiers described in the "PEPPOL Policy for using Identifiers"
-                </Description>
-                <Reference type="RULE">PEPPOL-T015-R011</Reference>
             </Attribute>
             <Element>
                 <Term>rim:SlotValue</Term>
@@ -145,28 +137,21 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Sending operator electronic address identifier</Name>
-                    <Description>Electronic address of the sending operator</Description>
+                    <Name>Contracting body electronic address identifier</Name>
+                    <Description>Scheme identifier for the contracting body</Description>
                     <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Reference type="CODE_LIST">icd</Reference>
+                    <Value type="EXAMPLE">9930:DE122268496</Value>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>Receiver electronic address</Name>
-            <Description>The electronic address of the receiver.</Description>
+            <Name>Economic operator electronic address</Name>
+            <Description>The electronic address of the economic operator.</Description>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">ReceiverElectronicAddress</Value>
-            </Attribute>
-            <Attribute>
-                <Term>type</Term>
-                <Name>Scheme identifier</Name>
-                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
-                    Identifiers described in the "PEPPOL Policy for using Identifiers"
-                </Description>
-                <Reference type="RULE">PEPPOL-T015-R011</Reference>
             </Attribute>
             <Element>
                 <Term>rim:SlotValue</Term>
@@ -178,10 +163,11 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Receiving platform electronic address identifier</Name>
-                    <Description>Electronic address of the receiving platform</Description>
+                    <Name>Economic operator electronic address identifier</Name>
+                    <Description>Scheme identifier for the economic operator</Description>
                     <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Reference type="CODE_LIST">icd</Reference>
+                    <Value type="EXAMPLE">9946:500820007</Value>
                 </Element>
             </Element>
         </Element>
@@ -309,7 +295,9 @@
                 <Element>
                     <Term>rim:Slot@name=eFormsVersion</Term>
                     <Name>eForms version</Name>
-                    <Description>Version of the used eForms specification for the notice. The format is according to the specification always eforms-x.y.</Description>
+                    <Description>Version of the used eForms specification for the notice. The format is according to the
+                        specification always eforms-x.y.
+                    </Description>
                     <Reference type="RULE">PEPPOL-T015-R008</Reference>
                     <Attribute>
                         <Term>name</Term>
@@ -354,13 +342,6 @@
                             <Term>name</Term>
                             <Value type="FIXED">BuyerPartyIdentification</Value>
                         </Attribute>
-                        <Attribute>
-                            <Term>type</Term>
-                            <Name>List identifier</Name>
-                            <Description>The type is used to assign the list identifier attribute.</Description>
-                            <Reference type="RULE">PEPPOL-T015-R017</Reference>
-                            <Value type="FIXED">ICD</Value>
-                        </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>
                             <Description>An abstract class that defines a container for a string value.</Description>
@@ -379,8 +360,9 @@
                                 <Element>
                                     <Term>rim:Value</Term>
                                     <Description>The value of the Slot instance.</Description>
-                                    <Reference type="CODE_LIST">ICD</Reference>
+                                    <Reference type="CODE_LIST">icd</Reference>
                                     <DataType>rim:StringValueType</DataType>
+                                    <Value type="EXAMPLE">0204:991-1234512345-06</Value>
                                 </Element>
                             </Element>
                         </Element>
@@ -388,9 +370,7 @@
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerElectronicAddress</Term>
                         <Name>Buyer electronic address</Name>
-                        <Description>Identifies the buyer party's electronic address according to Electronic Address
-                            Scheme (EAS)
-                        </Description>
+                        <Description>The electronic address of the buyer.</Description>
                         <Reference type="RULE">PEPPOL-T015-R024</Reference>
                         <Attribute>
                             <Term>name</Term>
@@ -406,10 +386,12 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Description>The value of the Slot instance.</Description>
+                                <Name>Buyer electronic address identifier</Name>
+                                <Description>Scheme identifier for the buyer</Description>
                                 <Reference type="RULE">PEPPOL-T015-R014</Reference>
                                 <Reference type="CODE_LIST">eas</Reference>
                                 <DataType>rim:StringValueType</DataType>
+                                <Value type="EXAMPLE">9930:DE122268496</Value>
                             </Element>
                         </Element>
                     </Element>

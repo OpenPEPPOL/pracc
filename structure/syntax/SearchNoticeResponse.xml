@@ -118,18 +118,11 @@
         </Element>
         <Element>
             <Term>rim:Slot@name=SenderElectronicAddress</Term>
-            <Name>Sender electronic address</Name>
-            <Description>The electronic address of the sender.</Description>
+            <Name>Contracting body electronic address</Name>
+            <Description>The electronic address of the contracting body.</Description>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">SenderElectronicAddress</Value>
-            </Attribute>
-            <Attribute>
-                <Term>type</Term>
-                <Name>Scheme identifier</Name>
-                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
-                    Identifiers" described in the "PEPPOL Policy for using Identifiers"
-                </Description>
             </Attribute>
             <Element>
                 <Term>rim:SlotVlaue</Term>
@@ -140,29 +133,23 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Sender party electronic address identifier</Name>
-                    <Description>Electronic address of the sending party</Description>
+                    <Name>Contracting body electronic address identifier</Name>
+                    <Description>Scheme identifier for the contracting body</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Reference type="CODE_LIST">icd</Reference>
                     <DataType>rim:StringValueType</DataType>
+                    <Value type="EXAMPLE">9930:DE122268496</Value>
                 </Element>
             </Element>
         </Element>
         <Element>
             <Term>rim:Slot@name=ReceiverElectronicAddress</Term>
-            <Name>Receiver electronic address</Name>
-            <Description>The electronic address of the receiver.</Description>
+            <Name>Economic operator electronic address</Name>
+            <Description>The electronic address of the economic operator.</Description>
             <Attribute>
                 <Term>name</Term>
                 <Value type="FIXED">ReceiverElectronicAddress</Value>
-            </Attribute>
-            <Attribute>
-                <Term>type</Term>
-                <Name>Scheme identifier</Name>
-                <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL Party
-                    Identifiers" described in the "PEPPOL Policy for using Identifiers"
-                </Description>
             </Attribute>
             <Element>
                 <Term>rim:SlotVlaue</Term>
@@ -173,12 +160,13 @@
                 </Attribute>
                 <Element>
                     <Term>rim:Value</Term>
-                    <Name>Receiver party electronic address identifier</Name>
-                    <Description>Electronic address of the sending party</Description>
+                    <Name>Economic operator electronic address identifier</Name>
+                    <Description>Scheme identifier for the economic operator</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
                     <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Reference type="CODE_LIST">icd</Reference>
                     <DataType>rim:StringValueType</DataType>
+                    <Value type="EXAMPLE">9946:500820007</Value>
                 </Element>
             </Element>
         </Element>
@@ -237,7 +225,7 @@
                             <Term>type</Term>
                             <Name>List identifier</Name>
                             <Description>The type is used to assign the list identifier attribute.</Description>
-                            <Value type="FIXED">ICD</Value>
+                            <Value type="FIXED">icd</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>
@@ -277,14 +265,6 @@
                             <Term>name</Term>
                             <Value type="FIXED">BuyerElectronicAddress</Value>
                         </Attribute>
-                        <Attribute>
-                            <Term>type</Term>
-                            <Name>Scheme identifier</Name>
-                            <Description>The type is used to assign the scheme identifier attribute from the list of "PEPPOL
-                                Party Identifiers" described in the "PEPPOL Policy for using Identifiers"
-                            </Description>
-                            <Value type="EXAMPLE">9930</Value>
-                        </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>
                             <Attribute>
@@ -294,9 +274,12 @@
                             </Attribute>
                             <Element>
                                 <Term>rim:Value</Term>
-                                <Description>The value of the Slot instance.</Description>
+                                <Name>Buyer electronic address identifier</Name>
+                                <Description>Scheme identifier for the buyer</Description>
                                 <Reference type="RULE">PEPPOL-T012-R028</Reference>
+                                <Reference type="CODE_LIST">eas</Reference>
                                 <DataType>rim:StringValueType</DataType>
+                                <Value type="EXAMPLE">9930:DE89769595</Value>
                             </Element>
                         </Element>
                     </Element>

@@ -193,8 +193,10 @@
 					<Reference type="RULE">PEPPOL-T005-R010</Reference>
 					<Reference type="RULE">PEPPOL-T005-R011</Reference>
 					<Reference type="CODE_LIST">eas</Reference>
+					<Value type="EXAMPLE">9946</Value>
 				</Attribute>
 				<DataType>Identifier</DataType>
+				<Value type="EXAMPLE">500820007</Value>
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
@@ -210,9 +212,11 @@
 						<Name>Scheme identifier for party identifier</Name>
 						<Reference type="RULE">PEPPOL-T005-R008</Reference>
 						<Reference type="RULE">PEPPOL-T005-R009</Reference>
-						<Reference type="CODE_LIST">ICD</Reference>
+						<Reference type="CODE_LIST">icd</Reference>
+						<Value type="EXAMPLE">0088</Value>
 					</Attribute>
 					<DataType>Identifier</DataType>
+					<Value type="EXAMPLE">7300010000001</Value>
 				</Element>
 			</Element>
 			<Element cardinality="0..1">
@@ -359,8 +363,10 @@
 						<Reference type="RULE">PEPPOL-T005-R010</Reference>
 						<Reference type="RULE">PEPPOL-T005-R011</Reference>
 						<Reference type="CODE_LIST">eas</Reference>
+						<Value type="EXAMPLE">9930</Value>
 					</Attribute>
 					<DataType>Identifier</DataType>
+					<Value type="EXAMPLE">DE122268496</Value>
 				</Element>
 				<Element>
 					<Term>cac:PartyIdentification</Term>
@@ -376,9 +382,11 @@
 							<Name>Scheme identifier for party identifier</Name>
 							<Reference type="RULE">PEPPOL-T005-R008</Reference>
 							<Reference type="RULE">PEPPOL-T005-R009</Reference>
-							<Reference type="CODE_LIST">ICD</Reference>
+							<Reference type="CODE_LIST">icd</Reference>
+							<Value type="EXAMPLE">0204</Value>
 						</Attribute>
 						<DataType>Identifier</DataType>
+						<Value type="EXAMPLE">991-1234512345-06</Value>
 					</Element>
 				</Element>
 				<Element cardinality="0..1">

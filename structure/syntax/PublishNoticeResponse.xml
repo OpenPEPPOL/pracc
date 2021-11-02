@@ -87,7 +87,7 @@
             </Description>
             <Element>
                 <Term>cbc:EndpointID</Term>
-                <Name>Sending party electronic address identifier</Name>
+                <Name>Contracting body electronic address identifier</Name>
                 <Description>Electronic address of the sending party.</Description>
                 <Reference type="BUSINESS_TERM">tir65-009</Reference>
                 <Reference type="RULE">PEPPOL-T016-R015</Reference>
@@ -99,10 +99,10 @@
                     <Reference type="CODE_LIST">eas</Reference>
                     <Reference type="RULE">PEPPOL-T016-R016</Reference>
                     <Reference type="RULE">PEPPOL-T016-R017</Reference>
-                    <Value type="EXAMPLE">9946</Value>
+                    <Value type="EXAMPLE">9930</Value>
                 </Attribute>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">500820007</Value>
+                <Value type="EXAMPLE">DE122268496</Value>
             </Element>
         </Element>
         <Element>
@@ -116,7 +116,7 @@
             <Reference type="RULE">PEPPOL-T016-R022</Reference>
             <Element>
                 <Term>cbc:EndpointID</Term>
-                <Name>Receiving party electronic address identifier</Name>
+                <Name>Economic operator electronic address identifier</Name>
                 <Description>Electronic address of the receiving party</Description>
                 <Reference type="BUSINESS_TERM">tir65-011</Reference>
                 <Attribute>
@@ -126,10 +126,10 @@
                     <Reference type="CODE_LIST">eas</Reference>
                     <Reference type="RULE">PEPPOL-T016-R020</Reference>
                     <Reference type="RULE">PEPPOL-T016-R021</Reference>
-                    <Value type="EXAMPLE">9930</Value>
+                    <Value type="EXAMPLE">9946</Value>
                 </Attribute>
                 <DataType>Identifier</DataType>
-                <Value type="EXAMPLE">DE122268496</Value>
+                <Value type="EXAMPLE">500820007</Value>
             </Element>
         </Element>
         <Element>

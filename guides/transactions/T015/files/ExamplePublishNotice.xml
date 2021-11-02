@@ -44,7 +44,7 @@
     </rim:Slot>
     <!-- end::sender-electronic-address[] -->
     <!-- tag::receiver-electronic-address[] -->
-    <rim:Slot name="ReceiverElectronicAddress" type="PT:VAT"> <!--.-->
+    <rim:Slot name="ReceiverElectronicAddress"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
             <rim:Value>9946:500820007</rim:Value> <!--.-->
         </rim:SlotValue>
@@ -88,14 +88,14 @@
             <rim:Slot name="BuyerInformation">
                 <!-- tag::buyer-party-identification[] -->
                 <rim:Slot name="BuyerPartyIdentification"
-                          type="ISO6523ICDList">
+                          type="ICD">
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>9930:DE122268496</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
                 <!-- end::buyer-party-identification[] -->
                 <!-- tag::buyer-electronic-address[] -->
-                <rim:Slot name="BuyerElectronicAddress" type="ISO6523ICDList"> <!--.-->
+                <rim:Slot name="BuyerElectronicAddress" type="eas"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>9946:500820007</rim:Value> <!--.-->
                     </rim:SlotValue>

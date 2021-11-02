@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>ISO6523ICDList</Title>
-    <Identifier>ICD</Identifier>
+    <Title>ISO 6523 ICD list</Title>
+    <Identifier>icd</Identifier>
     <Version>2021</Version>
     <Agency>The International Organization for Standardization (ISO)</Agency>
     <Code>
