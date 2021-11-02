@@ -128,6 +128,7 @@
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T002-R021</Reference>
+						<Reference type="CODE_LIST">eas</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
@@ -145,6 +146,7 @@
 							<Term>schemeID</Term>
 							<Name>Economic operator identifier</Name>
 							<Reference type="RULE">PEPPOL-T002-R016</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 						</Attribute>
 						<DataType>Identifier</DataType>
 					</Element>
@@ -168,6 +170,7 @@
 						<Term>schemeID</Term>
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T002-R021</Reference>
+						<Reference type="CODE_LIST">eas</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
@@ -183,6 +186,7 @@
 						<Attribute>
 							<Term>schemeID</Term>
 							<Name>Contracting body identifier</Name>
+							<Reference type="CODE_LIST">ICD</Reference>
 						</Attribute>
 						<DataType>Identifier</DataType>
 					</Element>

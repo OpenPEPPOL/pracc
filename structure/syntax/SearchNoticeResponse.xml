@@ -143,6 +143,8 @@
                     <Name>Sender party electronic address identifier</Name>
                     <Description>Electronic address of the sending party</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>
             </Element>
@@ -174,6 +176,8 @@
                     <Name>Receiver party electronic address identifier</Name>
                     <Description>Electronic address of the sending party</Description>
                     <Reference type="RULE">PEPPOL-T012-R014</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                     <DataType>rim:StringValueType</DataType>
                 </Element>
             </Element>

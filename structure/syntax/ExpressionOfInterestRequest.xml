@@ -122,6 +122,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
 						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+                        <Reference type="CODE_LIST">eas</Reference>
                     </Attribute>
 					<DataType>Identifier</DataType>
                 </Element>
@@ -155,6 +156,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
 							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                         </Attribute>
 						<DataType>Identifier</DataType>
                     </Element>
@@ -323,6 +325,7 @@
                         <Term>schemeID</Term>
                         <Name>Electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+                        <Reference type="CODE_LIST">eas</Reference>
                     </Attribute>
 					<DataType>Identifier</DataType>
                 </Element>
@@ -342,6 +345,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
 							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                         </Attribute>
 						<DataType>Identifier</DataType>
                     </Element>

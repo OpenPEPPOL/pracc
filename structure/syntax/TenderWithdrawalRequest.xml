@@ -214,6 +214,7 @@
                             the "PEPPOL Policy for using Identifiers".
                         </Description>
                         <Reference type="RULE">PEPPOL-T013-R011</Reference>
+                        <Reference type="CODE_LIST">eas</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
                 </Element>
@@ -235,6 +236,7 @@
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
                             <Reference type="RULE">PEPPOL-T013-R008</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
                         </Attribute>
                         <DataType>Identifier</DataType>
                     </Element>
@@ -277,6 +279,7 @@
                     <Term>schemeID</Term>
                     <Name>scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T013-R010</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
@@ -298,6 +301,7 @@
                         <Term>schemeID</Term>
                         <Name>scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T013-R008</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
                 </Element>

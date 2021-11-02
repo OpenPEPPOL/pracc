@@ -192,6 +192,7 @@
 					<Name>Scheme identifier for electronic address identifier</Name>
 					<Reference type="RULE">PEPPOL-T005-R010</Reference>
 					<Reference type="RULE">PEPPOL-T005-R011</Reference>
+					<Reference type="CODE_LIST">eas</Reference>
 				</Attribute>
 				<DataType>Identifier</DataType>
 			</Element>
@@ -209,6 +210,7 @@
 						<Name>Scheme identifier for party identifier</Name>
 						<Reference type="RULE">PEPPOL-T005-R008</Reference>
 						<Reference type="RULE">PEPPOL-T005-R009</Reference>
+						<Reference type="CODE_LIST">ICD</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
@@ -356,6 +358,7 @@
 						<Name>Scheme identifier for electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T005-R010</Reference>
 						<Reference type="RULE">PEPPOL-T005-R011</Reference>
+						<Reference type="CODE_LIST">eas</Reference>
 					</Attribute>
 					<DataType>Identifier</DataType>
 				</Element>
@@ -373,6 +376,7 @@
 							<Name>Scheme identifier for party identifier</Name>
 							<Reference type="RULE">PEPPOL-T005-R008</Reference>
 							<Reference type="RULE">PEPPOL-T005-R009</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 						</Attribute>
 						<DataType>Identifier</DataType>
 					</Element>

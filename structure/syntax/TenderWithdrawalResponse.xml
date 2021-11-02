@@ -223,6 +223,7 @@
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-R010</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
@@ -244,6 +245,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T014-R008</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
                 </Element>
@@ -283,6 +285,7 @@
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Reference type="RULE">PEPPOL-T014-R010</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
@@ -304,6 +307,7 @@
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
                         <Reference type="RULE">PEPPOL-T014-R008</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
                     </Attribute>
                     <DataType>Identifier</DataType>
                 </Element>

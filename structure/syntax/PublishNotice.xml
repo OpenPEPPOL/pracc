@@ -147,6 +147,8 @@
                     <Term>rim:Value</Term>
                     <Name>Sending operator electronic address identifier</Name>
                     <Description>Electronic address of the sending operator</Description>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                 </Element>
             </Element>
         </Element>
@@ -178,6 +180,8 @@
                     <Term>rim:Value</Term>
                     <Name>Receiving platform electronic address identifier</Name>
                     <Description>Electronic address of the receiving platform</Description>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Reference type="CODE_LIST">ICD</Reference>
                 </Element>
             </Element>
         </Element>
@@ -375,6 +379,7 @@
                                 <Element>
                                     <Term>rim:Value</Term>
                                     <Description>The value of the Slot instance.</Description>
+                                    <Reference type="CODE_LIST">ICD</Reference>
                                     <DataType>rim:StringValueType</DataType>
                                 </Element>
                             </Element>
@@ -403,6 +408,7 @@
                                 <Term>rim:Value</Term>
                                 <Description>The value of the Slot instance.</Description>
                                 <Reference type="RULE">PEPPOL-T015-R014</Reference>
+                                <Reference type="CODE_LIST">eas</Reference>
                                 <DataType>rim:StringValueType</DataType>
                             </Element>
                         </Element>
