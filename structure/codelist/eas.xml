@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
     <Title>Electronic Address Scheme (EAS)</Title>
-    <Identifier>eas</Identifier>
+    <Identifier>EAS</Identifier>
     <Agency>CEF</Agency>
 
     <Code>

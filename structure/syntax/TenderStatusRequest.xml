@@ -95,7 +95,7 @@
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T003-R020</Reference>
 						<Reference type="RULE">PEPPOL-T003-R021</Reference>
-						<Reference type="CODE_LIST">eas</Reference>
+						<Reference type="CODE_LIST">EAS</Reference>
 						<Value type="EXAMPLE">9930</Value>
 					</Attribute>
 					<DataType>Identifier</DataType>
@@ -116,7 +116,7 @@
 							<Name>Scheme identifier</Name>
 							<Reference type="RULE">PEPPOL-T003-R018</Reference>
 							<Reference type="RULE">PEPPOL-T003-R019</Reference>
-							<Reference type="CODE_LIST">icd</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0204</Value>
 						</Attribute>
 						<DataType>Identifier</DataType>
@@ -153,7 +153,7 @@
 						<Name>Electronic address identifier</Name>
 						<Reference type="RULE">PEPPOL-T003-R020</Reference>
 						<Reference type="RULE">PEPPOL-T003-R021</Reference>
-						<Reference type="CODE_LIST">eas</Reference>
+						<Reference type="CODE_LIST">EAS</Reference>
 						<Value type="EXAMPLE">9946</Value>
 					</Attribute>
 					<DataType>Identifier</DataType>
@@ -173,7 +173,7 @@
 							<Name>Scheme identifier</Name>
 							<Reference type="RULE">PEPPOL-T003-R018</Reference>
 							<Reference type="RULE">PEPPOL-T003-R019</Reference>
-							<Reference type="CODE_LIST">icd</Reference>
+							<Reference type="CODE_LIST">ICD</Reference>
 							<Value type="EXAMPLE">0088</Value>
 						</Attribute>
 						<DataType>Identifier</DataType>

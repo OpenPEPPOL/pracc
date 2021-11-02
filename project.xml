@@ -18,16 +18,16 @@
     <Documentation path="profiles/p005/index.html">P005 - Tender Clarification - 1.1</Documentation>
     <Documentation path="transactions/T009/index.html">T009 - Tender Clarification Request</Documentation>
     <Documentation path="transactions/T010/index.html">T010 - Tender Clarification</Documentation>
-    <Documentation path="profiles/p006/index.html">P006 - Search Notices - 1.1 - ready to publish</Documentation>
+    <Documentation path="profiles/p006/index.html">P006 - Search Notices - 1.1</Documentation>
     <Documentation path="transactions/T011/index.html">T011 - Search Notice Request</Documentation>
     <Documentation path="transactions/T012/index.html">T012 - Search Notice Response</Documentation>
-    <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - 1.1 ready to publish</Documentation>
+    <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - 1.1</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification</Documentation>
-    <Documentation path="profiles/p008/index.html">P008 - Publish Notice - 1.1 - ready to publish</Documentation>
+    <Documentation path="profiles/p008/index.html">P008 - Publish Notice - 1.1</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice</Documentation>
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
-    <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 0.9 - under review</Documentation>
+    <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 

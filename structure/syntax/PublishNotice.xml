@@ -127,6 +127,11 @@
                 <Term>name</Term>
                 <Value type="FIXED">SenderElectronicAddress</Value>
             </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Reference type="RULE">PEPPOL-T015-R026</Reference>
+                <Value type="FIXED">EAS</Value>
+            </Attribute>
             <Element>
                 <Term>rim:SlotValue</Term>
                 <Description>An abstract class that defines a container for a string value.</Description>
@@ -138,9 +143,8 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Name>Contracting body electronic address identifier</Name>
-                    <Description>Scheme identifier for the contracting body</Description>
-                    <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">icd</Reference>
+                    <Description>Scheme identifier:Identification for the contracting body</Description>
+                    <Reference type="CODE_LIST">EAS</Reference>
                     <Value type="EXAMPLE">9930:DE122268496</Value>
                 </Element>
             </Element>
@@ -153,6 +157,11 @@
                 <Term>name</Term>
                 <Value type="FIXED">ReceiverElectronicAddress</Value>
             </Attribute>
+            <Attribute>
+                <Term>type</Term>
+                <Reference type="RULE">PEPPOL-T015-R026</Reference>
+                <Value type="FIXED">EAS</Value>
+            </Attribute>
             <Element>
                 <Term>rim:SlotValue</Term>
                 <Description>An abstract class that defines a container for a string value.</Description>
@@ -164,9 +173,8 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Name>Economic operator electronic address identifier</Name>
-                    <Description>Scheme identifier for the economic operator</Description>
-                    <Reference type="CODE_LIST">eas</Reference>
-                    <Reference type="CODE_LIST">icd</Reference>
+                    <Description>Scheme identifier:Identification for the economic operator</Description>
+                    <Reference type="CODE_LIST">EAS</Reference>
                     <Value type="EXAMPLE">9946:500820007</Value>
                 </Element>
             </Element>
@@ -342,6 +350,10 @@
                             <Term>name</Term>
                             <Value type="FIXED">BuyerPartyIdentification</Value>
                         </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Value type="FIXED">ICD</Value>
+                        </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>
                             <Description>An abstract class that defines a container for a string value.</Description>
@@ -359,8 +371,9 @@
                                 </Attribute>
                                 <Element>
                                     <Term>rim:Value</Term>
-                                    <Description>The value of the Slot instance.</Description>
-                                    <Reference type="CODE_LIST">icd</Reference>
+                                    <Description>Scheme identifier:Party Identification for the buyer.</Description>
+                                    <Reference type="CODE_LIST">ICD</Reference>
+                                    <Reference type="RULE">PEPPOL-T015-R042</Reference>
                                     <DataType>rim:StringValueType</DataType>
                                     <Value type="EXAMPLE">0204:991-1234512345-06</Value>
                                 </Element>
@@ -376,6 +389,10 @@
                             <Term>name</Term>
                             <Value type="FIXED">BuyerElectronicAddress</Value>
                         </Attribute>
+                        <Attribute>
+                            <Term>type</Term>
+                            <Value type="FIXED">EAS</Value>
+                        </Attribute>
                         <Element>
                             <Term>rim:SlotValue</Term>
                             <Description>An abstract class that defines a container for a string value.</Description>
@@ -387,9 +404,10 @@
                             <Element>
                                 <Term>rim:Value</Term>
                                 <Name>Buyer electronic address identifier</Name>
-                                <Description>Scheme identifier for the buyer</Description>
+                                <Description>Scheme identifier:Identification for the buyer</Description>
                                 <Reference type="RULE">PEPPOL-T015-R014</Reference>
-                                <Reference type="CODE_LIST">eas</Reference>
+                                <Reference type="RULE">PEPPOL-T015-R041</Reference>
+                                <Reference type="CODE_LIST">EAS</Reference>
                                 <DataType>rim:StringValueType</DataType>
                                 <Value type="EXAMPLE">9930:DE122268496</Value>
                             </Element>

@@ -38,14 +38,14 @@
     </rim:Slot>
     <!-- end::issue-date-time[] -->
     <!-- tag::sender-electronic-address[] -->
-    <rim:Slot name="SenderElectronicAddress"> <!--.-->
+    <rim:Slot name="SenderElectronicAddress" type="EAS"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
             <rim:Value>9930:DE122268496</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::sender-electronic-address[] -->
     <!-- tag::receiver-electronic-address[] -->
-    <rim:Slot name="ReceiverElectronicAddress"> <!--.-->
+    <rim:Slot name="ReceiverElectronicAddress" type="EAS"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
             <rim:Value>9946:500820007</rim:Value> <!--.-->
         </rim:SlotValue>
@@ -63,7 +63,7 @@
                         <rim:Value>0204:991-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>
-                <rim:Slot name="BuyerElectronicAddress"> <!--.-->
+                <rim:Slot name="BuyerElectronicAddress" type="EAS"> <!--.-->
                     <rim:SlotValue xsi:type="rim:StringValueType">
                         <rim:Value>9930:DE122268496</rim:Value>
                     </rim:SlotValue>
