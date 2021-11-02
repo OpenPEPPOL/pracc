@@ -10,5 +10,5 @@
 | Document location
 | `cac:DocumentReference/cbc:DocumentTypeCode`
 | Source codelist
-|  https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]
+|  link:/pracc/codelist/UNCL1001[UNCL 1001]
 |===

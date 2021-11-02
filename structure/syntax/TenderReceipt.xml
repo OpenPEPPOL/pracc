@@ -115,6 +115,7 @@
 					<Term>listID</Term>
 					<Name>List identifier for document type code</Name>
 					<Reference type="RULE">BII3-T45-R016</Reference>
+					<Reference type="CODE_LIST">UNCL1001</Reference>
 					<Value type="FIXED">UNCL1001</Value>
 				</Attribute>
 				<DataType>Code</DataType>
