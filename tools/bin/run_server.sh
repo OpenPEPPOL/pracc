@@ -19,33 +19,26 @@ pushd ${script_dir}/../.. > /dev/null
 container_id=$(docker ps -q --filter "ancestor=pracc")
 
 if [[ -n "$container_id" ]]; then
-  # stop running container
   info "stop running container ${container_id}"
   docker container stop ${container_id} &> /dev/null
 fi
 
-# remove image
 info "remove pracc images"
 docker image rm -f pracc &> /dev/null
 ) &
 
-# clean target
 info "clean target"
 rm -rf target
 
-# check schematron
 info "check schematron and create xml instances"
 ./gradlew check
 
-# build target
 info "running build.sh"
 ${script_dir}/build.sh
 
-# build docker image
 info "building pracc image"
 docker build --tag pracc .
 
-# run docker image detached
 info "running pracc image"
 docker run --rm -p 80:8000 -d pracc:latest
 

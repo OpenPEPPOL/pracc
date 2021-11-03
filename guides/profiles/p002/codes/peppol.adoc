@@ -20,7 +20,7 @@ All transactions within this profile uses the same profile identifier.
 | T003
 | TenderStatusRequest
 | EO requests CA for the procurement project documents
-.2+.^| urn:fdc:peppol.eu:2017:pracc:p002:01:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p002:1.1
 
 | T004
 | CallForTenders

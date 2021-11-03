@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        attributeFormDefault="unqualified"
+        elementFormDefault="qualified"
+        targetNamespace="urn:fdc:difi.no:2017:vefa:structure:Project-1"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1"
+>
+    <xs:element name="Project" type="ProjectType" />
+    <xs:complexType name="DocumentationType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="path" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ResourceType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Identifier" minOccurs="0" />
+            <xs:element type="xs:string" name="Type" />
+            <xs:element type="xs:string" name="Path" />
+            <xs:element type="xs:string" name="Title" minOccurs="0" />
+            <xs:element type="xs:string" name="Description" minOccurs="0" />
+            <xs:element type="PropertyType" name="Property" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PropertyType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="key" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ProjectType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Name" />
+            <xs:element type="DocumentationType" name="Documentation" maxOccurs="unbounded" minOccurs="0" />
+            <xs:element type="ResourceType" name="Resource" maxOccurs="unbounded" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
