@@ -33,8 +33,8 @@ popd > /dev/null
 
 pushd $FOLDER > /dev/null
 info "Create ZIP file with codelists"
-zip -qr "target/site/files/codelists-1.zip" "structure/codelist"
-mv "target/site/files/codelists-1.zip" "target/site/files/codelists.zip"
+sudo zip -qr "target/site/files/codelists-1.zip" "structure/codelist"
+sudo mv "target/site/files/codelists-1.zip" "target/site/files/codelists.zip"
 popd > /dev/null
 
 

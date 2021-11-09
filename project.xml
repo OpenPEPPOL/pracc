@@ -326,14 +326,14 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>project.xml</Path>
+        <Path>file-placeholders/placeholder.zip</Path>
         <Title>Schematron files</Title>
         <Property key="download">schematrons.zip</Property>
         <Property key="filename">schematrons.zip</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>project.xml</Path>
+        <Path>file-placeholders/placeholder.zip</Path>
         <Title>Code lists</Title>
         <Property key="download">codelists.zip</Property>
         <Property key="filename">codelists.zip</Property>
