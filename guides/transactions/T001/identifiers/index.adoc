@@ -14,6 +14,5 @@ include::../../shared/peppol.adoc[]
 | T001
 | ExpressionOfInterestRequest
 | EO subscribe to a procedure
-| urn:www.cenbii.eu:transaction:biitrdm081:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t001:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t001:1.1
 |===

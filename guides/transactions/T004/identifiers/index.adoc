@@ -14,6 +14,5 @@ include::../../shared/peppol.adoc[]
 | T004
 | CallForTenders
 | CA sends all procurement project documents to EO
-| urn:www.cenbii.eu:transaction:biitrdm083:ver3.0:extended: +
-urn:fdc:peppol.eu:2017:pracc:t004:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t004:1.1
 |===

@@ -3,8 +3,8 @@
      xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
      xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrdm090:ver3.0:extended:urn:fdc:peppol.eu:2017:pracc:t005:ver1.0</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:peppol.eu:2017:pracc:p003:01:1.0</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t005:1.1</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p003:1.1</cbc:ProfileID>
     <cbc:ID schemeURI="urn:uuid">243a177f-e4e9-4fc8-b97e-bb1a950dd8f8</cbc:ID>
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
     <cbc:IssueDate>2016-11-24</cbc:IssueDate>
@@ -14,7 +14,7 @@
         <cbc:DocumentTypeCode listID="UNCL1001">311</cbc:DocumentTypeCode>
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode>
         <cbc:VersionID>1</cbc:VersionID>
-        <cbc:DocumentDescription>CallforTenders reference</cbc:DocumentDescription>
+        <cbc:DocumentDescription>Call forTenders reference</cbc:DocumentDescription>
     </cac:DocumentReference>
     <cac:DocumentReference>
         <cbc:ID>507</cbc:ID>
@@ -43,12 +43,12 @@
         </cac:Attachment>
     </cac:DocumentReference>
     <cac:TendererParty>
-        <cbc:EndpointID schemeID="NL:KVK">30058019</cbc:EndpointID>
+        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
         <cac:PartyIdentification>
-            <cbc:ID schemeID="NL:KVK">30058019</cbc:ID>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID>
         </cac:PartyIdentification>
         <cac:PartyName>
-            <cbc:Name>The tenderer Name</cbc:Name>
+            <cbc:Name>Dutch Tulip Ltd.</cbc:Name>
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>null</cbc:StreetName>
@@ -68,9 +68,9 @@
     </cac:TendererParty>
     <cac:ContractingParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="DE:VAT">DE122268496</cbc:EndpointID>
+            <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
             <cac:PartyIdentification>
-                <cbc:ID schemeID="DE:VAT">DE122268496</cbc:ID>
+                <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
             </cac:PartyIdentification>
             <cac:PartyName>
                 <cbc:Name>Beschaffungsamt des BMI</cbc:Name>

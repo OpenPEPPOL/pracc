@@ -1,0 +1,86 @@
+[[descriptions]]
+= Description of selected parts of the transaction
+
+The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in {name-profile-org}.
+
+== Query Response
+
+=== Parameter totalResultCount and startIndex
+
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[lines=2..16]
+....
+
+[cols="4,8", options="header"]
+|===
+| name
+| description
+
+| totalResultCount
+| This parameter specifies the size of the complete result set matching the query within the server. When this value is unspecified, the client should assume it is the size of the result set contained within the result. When this value is -1, the client should assume that the number of total results is unknown. In this case the client should keep iterating through the remaining result set for the query until no more results are returned.
+
+| startIndex
+| This integer value is used to indicate the index for the first result in the result set returned by the query, within the complete result set matching the query. By default, this value is 0.
+|===
+
+[plantuml, pagination-seq-diagram, svg]
+.Example of a request with maxResults set to 100.
+....
+include::../../../shared/pagination.PLANTUML[]
+....
+
+=== Specification Identification
+
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=specification-identification]
+....
+<.> Identifier for the set of rules and transactions for a search notice response.
+<.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t012:1.0_", just like in the given example.
+
+
+=== Business Process Type Identifier
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=business-process-type-identifier]
+....
+<.> Identifier for the business process context of the search notice response.
+<.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.0_", just like in the given example.
+
+=== Issue Date Time
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=issue-date-time]
+....
+<.> Date and time when the request was being issued.
+<.> The SlotValue type has to be DateTimeValueType. Stick to the format "_yyyy-mm-ddThh:mm:ss_" and add the timezone in the end (i.e. Z or +01:00). Values for seconds, and the timezone must be given.
+
+=== Sender electronic address
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=sender-electronic-address]
+....
+<.> The endpoint id is clarified in the type attribute of the slot.
+<.> Fill the electronic sender address into this slot.
+
+=== Receiver electronic address
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=receiver-electronic-address]
+....
+<.> The endpoint id is clarified in the type attribute of the slot.
+<.> Fill the electronic receiver address into this slot.
+
+== Registry Object
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeResponse.xml[tags=registry-object-list]
+....
+<.> The Registry object list contains the registry object, which contains the requested form.
+<.> Here you can find the uuids from your request as you defined them in the notice (id) and procedure (lid) identifier.
+<.> An identification for the buyer party according to ISO 6523 ICD list.
+<.> Electronic address used by the buyer, just like the ones from the receiver or sender.
+<.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list "_UBL Document Schema_", which has to be deposited in the type-attribute of the slot.
+<.> Used eForms-Version according to specification in the format eforms-sdk-x.y
+<.> Reference to the eform.xml with the requested information included.

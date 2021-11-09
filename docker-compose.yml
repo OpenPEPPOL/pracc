@@ -3,33 +3,35 @@ services:
 
   asciidoctor:
     image: "difi/asciidoctor"
+    environment:
+      diagram: 'true'
     volumes:
-     - .:/documents
-     - ./target:/target
+      - .:/documents
+      - ./target:/target
 
   structure:
     image: "difi/vefa-structure:0.6"
     volumes:
-     - .:/src
-     - ./target:/target
+      - .:/src
+      - ./target:/target
 
   validator:
     image: "anskaffelser/validator:2.1.0"
     command: build -x -t /src -target target/validator -n eu.peppol.pracc.catalogue
     volumes:
-     - .:/src
+      - .:/src
 
   target-rm:
     image: "alpine:3.6"
     command: sh -c 'if [ -e /src/target ]; then rm -rf /src/target/*; fi'
     volumes:
-     - .:/src
+      - .:/src
 
   serve:
     image: "python:3-alpine"
     command: python3 -m http.server 8000 -b 0.0.0.0
     volumes:
-     - .:/src
+      - .:/src
     ports:
-     - "8000:8000"
+      - "8000:8000"
     working_dir: /src/target

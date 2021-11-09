@@ -1,5 +1,8 @@
 include::../../shared/links.adoc[]
-:link-profile: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62028&cs=1C03E59471109C3FE2FBA27707207745B[Profile BII46 - Subscribe to Procedure (CWA 17027-113:2016)]
+
+include::settings.adoc[]
+
+:link-profile: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62028&cs=16B7CFE594685D73AD82275DFFE3FCC55[{name-profile-org}]
 :eoi-request: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-EXPRESSION-OF-INTEREST-REQUEST-SCHEMA[UBL Expression of Interest Request Schema]
 :eoi-response: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-EXPRESSION-OF-INTEREST-RESPONSE-SCHEMA[UBL Expression of Interest Response Schema]
 :ufp-request: http://docs.oasis-open.org/ubl/os-UBL-2.2/UBL-2.2.html#S-UNSUBSCRIBE-FROM-PROCEDURE-REQUEST-SCHEMA[UBL Unsubscribe from Procedure Request Schema]

@@ -1,0 +1,25 @@
+= Principles and prerequisites
+
+This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award.
+It is based on the {link-bii3} and the work done upon {eforms-main}:
+
+&#8226; {eforms-specs} +
+{name-profile-org}
+
+
+
+NOTE: The {link-BII10}, {link-BII14}, {link-BII43} profile documents are available from your national standardization body.
+
+
+:leveloffset: +1
+
+
+include::scope.adoc[]
+
+include::interoperability.adoc[]
+
+include::non-functional-requirements.adoc[]
+
+
+
+:leveloffset: -1

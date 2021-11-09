@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>AdditionalConditionsCode</Title>
+    <Title>additionalConditionsCode</Title>
     <Identifier>addCond</Identifier>
     <Version>2018-05-04</Version>
     <Agency>PEPPOL</Agency>
