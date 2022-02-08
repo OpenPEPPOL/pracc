@@ -1,22 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
-    <Title>StatusReasonCode</Title>
-    <Identifier>statusReason</Identifier>
+    <Title>StatusReasonCodeSubset</Title>
+    <Identifier>statusReasonSubset</Identifier>
     <Version>2021-07-12</Version>
     <Agency>PEPPOL</Agency>
     <Code>
         <Id>BV</Id>
         <Name>Business rule violation, fatal</Name>
-        <Description>Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.</Description>
+        <Description>Warning related to a business rule that indicates a problem but that does not hinder further
+            processing at this point in time.</Description>
     </Code>
     <Code>
         <Id>BW</Id>
         <Name>Business rule violation, warning</Name>
-        <Description>Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.</Description>
+        <Description>Warning related to a business rule that indicates a problem but that does not hinder further
+            processing at this point in time.</Description>
     </Code>
     <Code>
         <Id>SV</Id>
         <Name>Syntax violation</Name>
         <Description>Error related to the syntax composition that prevents further processing.</Description>
+    </Code>
+    <Code>
+        <Id>NF</Id>
+        <Name>Reference not found</Name>
+        <Description>Tender or procedure cannot be found, therefore the request must be rejected.</Description>
+    </Code>
+    <Code>
+        <Id>DL</Id>
+        <Name>Deadline expired</Name>
+        <Description>The deadline expired before your request was received.</Description>
+    </Code>
+    <Code>
+        <Id>RF</Id>
+        <Name>Request failed</Name>
+        <Description>The request cannot be processed due to uncertain reasons.</Description>
+    </Code>
+    <Code>
+        <Id>WT</Id>
+        <Name>Wrong transaction flow</Name>
+        <Description>Error related to the order in which the request was received in comparison to the procedure.</Description>
+    </Code>
+    <Code>
+        <Id>IR</Id>
+        <Name>Invalid request</Name>
+        <Description>Request cannot be processed due to the </Description>
+    </Code>
+    <Code>
+        <Id>MA</Id>
+        <Name>Missing authorisation</Name>
+        <Description>The sender of the request does not hold the permission to access this procedure.</Description>
+    </Code>
+    <Code>
+        <Id>AE</Id>
+        <Name>Authentication exception</Name>
+        <Description>The sender of the request cannot be identified.</Description>
+    </Code>
+    <Code>
+        <Id>PT</Id>
+        <Name>Process termination</Name>
+        <Description>The process was terminated by the sender of this message, and will not be continued.</Description>
     </Code>
 </CodeList>
