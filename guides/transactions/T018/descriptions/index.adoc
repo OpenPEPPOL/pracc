@@ -1,0 +1,9 @@
+[[descriptions]]
+= Description of selected parts of the transaction
+
+The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in:
+
+{name-profile-org}.
+
+== Identifier
+

@@ -1,0 +1,97 @@
+[[status-codes-1]]
+= Status codes
+
+.The following policies apply to the use of status codes:
+* List of Status codes is fixed and can not be changed bilaterally.
+* There are seven pre-agreed status codes (main statuses).
+* Status code is sent from one party to the other to inform it about further processing of the request the other side.
+* Every status can be the first status sent to the Receiver but from there further statuses must follow a defined order
+* Maximum time for first response 3 days – The Seller should receive the first Invoice Response within 3 working days.
+** By receiving the first Response message the Seller will know that an Invoice has been received by the Buyer and what its status is.
+** However, if the Seller does not receive any response he should wait 3 working days before contacting the Buyer to query whether the Invoice was received.
+** A Buyer who has received an invoice should therefore provide a first Response before that time to notify the Seller that it has been received and what its status is.
+* The minimum set of Statuses that must be supported by a Buyer is “Message acknowledged”, “Rejected” and “Approved”.
+
+
+.The columns in the below table shall be understood as follows:
+[horizontal]
+Status code:: The code that defines the status of the reference document, e.g. AP.
+
+PEPPOL name:: The name of the code, based on UNECE code list 4343.
+
+PEPPOL definition:: The definition of the code, based on UNECE code list 4343.
+
+Response expected::
+Indicates that the Buyer expects a response from the Seller in accordance to the information given in the Invoice Response.
+If no response is expected, then the Buyer will proceed with the processing of the invoice without interruption.
+If a response is expected, then the Buyer will not proceed with the processing until the Seller has provided the response (externally).
+
+Clarification required:: Indicates that when Invoice Response message contains this code then a clarification must be provided by the Buyer in the form of a Status Reason code (See {link-codelist}) or text or both.
+
+Mandatory::
+Indicates that a Buyer who supports this BIS shall at minimum be able to report these statuses in the processing of the invoice.
+In other words, the Seller can at minimum expect to receive this status information.
+
+Final::
+Indicates that this is a final status in the processing of the referenced invoice.
+The Seller will not receive any further Invoice Response messages referencing this invoice.
+
+.The Status codes used in an Message Level Response message are defined in the table.
+[cols="1h,1,3,3,1,1,1",options="header"]
+|====
+|Status Code
+|PEPPOL name
+|PEPPOL definition
+|Response expected
+|Clarification Required
+|Mandatory
+|Final
+|BV |Business rule violation, fatally |Indicates that one or more schematron rules failed and the request cannot be processed. |YES |YES |YES |NO
+|BW |Business rule violation, warning |Indicates that one or more schematron rules emitted a warning and the request should be checked. | NO |NO |YES |NO
+|SV |Syntax violation |Indicates that the processing of the xml file was not successful due to violation against the syntax itself. |YES |YES |YES |NO
+|NF |Reference not found |Indicates that the referenced procedure or tender cannot be found. |YES |YES |YES |NO
+|DL |Deadline expired |Indicates that the deadline of the referenced procedure lays in the past. |NO |NO |YES |NO
+|RF |Request failed | Indicates that the request cannot be processed due to uncertain technical reasons. |YES |YES |YES |NO
+|WT |Wrong transaction flow | Indicates that the order in which the request was received does not match with the standard process. |YES |YES |NO |NO
+|IR |Invalid request | Indicates that the request cannot be processed due to business related reasons. |YES |YES |YES |NO
+|MA |Missing authorisation | Indicates that the sender of the request is not authorised to participate in this procedure. |NO |NO |YES |NO
+|AE |Authentication exception | Indicates that the authentication of the sender cannot be found in this procedure. |NO |NO |YES |NO
+|PT |Process termination | Indicates that a request was dismissed by the sender itself. |NO |NO |YES |NO
+|RE |Rejected | Indicates that the request cannot be processed and needs to be reevaluated. |YES |YES |YES |NO
+|CA |Conditionally accepted | Indicates that the request needs to be checked before it can be accepted or rejected. |NO |NO |YES |NO
+|AP |Accepted | Indicates that the request was accepted and can be processed. |NO |NO |YES |YES
+
+|====
+
+(1) Status code PD (Paid) together with Clarification Reason code PPD (Partially Paid) is the case when an invoice is partially paid with the intention of later paying the full invoice amount as was accepted.
+
+The sequence of the status codes is fixed to allow the Seller, as receiver of the Invoice Response message, to advance the status of the invoice in his systems in an orderly way.
+See <<invoice-response-process-rules>>.
+This requires the Buyer to be conservative in reporting status and only advance an invoice when the status is reasonably certain.
+
+The status of an invoice must advance in the following sequence, but any status may be the first one used or may be omitted.
+
+1. AB – Message acknowledgement
+2. IP – In process
+3. UQ – Under query (may be repeated before moving forward)
+4. CA – Conditionally accepted
+5. RE – Rejected
+6. AP – Accepted
+7. PD – Paid, can be in steps, partially paid and then paid.
+
+.Examples of status advancement:
+====
+1. If an invoice is paid right after being received, the Buyer can report with a single Invoice Response using the code PD.
+2. If an invoice has been put under query then following the response from the Seller, the Buyer may advance it to any of the following codes:
+[horizontal]
+CA:: conditionally accepted
+RE:: Rejected
+AP:: Accepted
+PD:: Paid
+====
+
+Deviations from this sequence must be handled manually between the trading parties.
+As example, if a Buyer has stated that an invoice has been accepted they can not later send an Invoice Response indicating that it is under query or rejected.
+This does however not prohibit the Buyer from changing his decision, but he must report that to the Seller by other means than by using an Invoice Response.
+
+The fixed order simplifies the automation of the processing for the receiver of the Invoice Response.

@@ -34,7 +34,7 @@
     <Code>
         <Id>RF</Id>
         <Name>Request failed</Name>
-        <Description>The request cannot be processed due to uncertain reasons.</Description>
+        <Description>The request cannot be processed due to uncertain technical reasons.</Description>
     </Code>
     <Code>
         <Id>WT</Id>
@@ -44,7 +44,7 @@
     <Code>
         <Id>IR</Id>
         <Name>Invalid request</Name>
-        <Description>Request cannot be processed due to the </Description>
+        <Description>Request cannot be processed due to uncertain business reasons.</Description>
     </Code>
     <Code>
         <Id>MA</Id>
