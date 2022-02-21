@@ -36,31 +36,38 @@ Final::
 Indicates that this is a final status in the processing of the referenced invoice.
 The Seller will not receive any further Invoice Response messages referencing this invoice.
 
-.The Status codes used in an Message Level Response message are defined in the table.
-[cols="1h,1,3,3,1,1,1",options="header"]
+.The Status Reason codes used in a Tender Message Response message are defined in the table below.
+[cols="1h,1,3,3,1",options="header"]
 |====
-|Status Code
-|PEPPOL name
-|PEPPOL definition
-|Response expected
-|Clarification Required
-|Mandatory
-|Final
-|BV |Business rule violation, fatally |Indicates that one or more schematron rules failed and the request cannot be processed. |YES |YES |YES |NO
-|BW |Business rule violation, warning |Indicates that one or more schematron rules emitted a warning and the request should be checked. | NO |NO |YES |NO
-|SV |Syntax violation |Indicates that the processing of the xml file was not successful due to violation against the syntax itself. |YES |YES |YES |NO
-|NF |Reference not found |Indicates that the referenced procedure or tender cannot be found. |YES |YES |YES |NO
-|DL |Deadline expired |Indicates that the deadline of the referenced procedure lays in the past. |NO |NO |YES |NO
-|RF |Request failed | Indicates that the request cannot be processed due to uncertain technical reasons. |YES |YES |YES |NO
-|WT |Wrong transaction flow | Indicates that the order in which the request was received does not match with the standard process. |YES |YES |NO |NO
-|IR |Invalid request | Indicates that the request cannot be processed due to business related reasons. |YES |YES |YES |NO
-|MA |Missing authorisation | Indicates that the sender of the request is not authorised to participate in this procedure. |NO |NO |YES |NO
-|AE |Authentication exception | Indicates that the authentication of the sender cannot be found in this procedure. |NO |NO |YES |NO
-|PT |Process termination | Indicates that a request was dismissed by the sender itself. |NO |NO |YES |NO
-|RE |Rejected | Indicates that the request cannot be processed and needs to be reevaluated. |YES |YES |YES |NO
-|CA |Conditionally accepted | Indicates that the request needs to be checked before it can be accepted or rejected. |NO |NO |YES |NO
-|AP |Accepted | Indicates that the request was accepted and can be processed. |NO |NO |YES |YES
+|Status Reason Code
+|Name of the Status Reason Code
+|Usage of the Status Reason Code
+|Example
+|Possible resulting Message Response Code
+|BV |Business rule violation, fatal |Error associated with a business rule that indicates a problem that leads to the rejection of the referenced message. |A Tenderings Questions transaction does not contain a question. |RE
+|BW |Business rule violation, warning |Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.| A Tendering Answers transaction includes a cbc:CopyIndicator that is not required according to the specifications.| CA
+|SV |Syntax violation |Error associated with a syntax violation that indicates a problem that leads to the rejection of the referenced message.| The retrieved Tendering Questions transaction does not adhere to the UBL syntax for Enquiry.| RE
+|NF |Reference not found|Error caused by a document reference given in the received message that could not be found. Leads to the rejection of the received message.| The Tender or procedure to which Tender Withdrawal is referencing was not found.|RE
+|DL |Deadline expired | Error caused by a received message that was not submitted on time. Depending on the procedure availability and elapsed time period, the message may be rejected or conditionally accepted as a result.| The tender submission deadline has expired before the retrieval of a Tender.| RE/CA
+|RF |Request failed |Error caused by a received message that cannot be processed further for technical reasons. Leads to rejection of the received message.| An undefined technical error occurred so that a Call for Tender update could not be processed by the receiver.| RE
+|WT |Wrong transaction flow| Error caused to a received message that was not sent in the expected sequence of the business process. Leads to the rejection of the received message.|A Tender Status Inquiry transaction is sent before the Subscribe to Procedure transaction.|RE
+|IR |Invalid request| Error caused by a received message that cannot be processed further for semantic or business reasons.  The message may be rejected or conditionally accepted as a result.|A Tender that was submitted contains false Contracting Authority information that cannot be processed by the receiver.| RE/CA
+|MA |Missing authorisation|Error caused by a received message that could not be processed further due to a missing authorization or approval for the procedure. Leads to the rejection of the received message.| A Subscribe to Procedure cannot be confirmed because the subscriber has not been approved for the restricted procedure.| RE
+|AE |Authentication exception | Error caused by a received message that could not be processed further due missing authentication or registration for the procedure. Leads to the rejection of the received message.|A Tender is submitted for an economic operator that is not subscribed for the procedure.|RE
+|PT |Process termination | A query response of a Search Notice Request is cancelled or terminated.|A Search Notice Response sent in several replies is aborted by the recipient because searched information has already been found.|RE
+|====
 
+.Message Response codes resulting from the found errors in the message displayed by the Status Reason codes.
+[cols="1h,1,3,3,1",options="header"]
+|====
+|Message Response Code
+|Name of the Message Response Code
+|Usage of the Message Response Code
+|Example
+|Possible Status Reason Code
+|RE |Rejected |Response code is used when the receiver will not process the referenced message any further. The reason for rejecting the message shall be stated in ´Status Reason´. |The received Tender has been rejected due to a fatal business rule violation (BV) |BV, SV, NF, DL, RF, WT, IR, MA, AE, PT
+|AP |Accepted |Response code is uses when the referenced message has been accepted by the receiver. | The received Tender has been accepted.| none
+|CA |Conditionally accepted |Response code is used when the receiver is accepting the message under conditions stated in ‘Status Reason’ and proceed to continue the process unless disputed by the sender.| The received Tender has only been conditionally accepted due to an expired tender submission deadline. The Contracting Authority is investigating the incident in a separate process. | RE
 |====
 
 (1) Status code PD (Paid) together with Clarification Reason code PPD (Partially Paid) is the case when an invoice is partially paid with the intention of later paying the full invoice amount as was accepted.
