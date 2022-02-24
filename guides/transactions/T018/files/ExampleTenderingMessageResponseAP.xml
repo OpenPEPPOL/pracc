@@ -18,7 +18,7 @@
     <cac:DocumentResponse>
         <cac:Response>
             <cbc:ResponseCode>AP</cbc:ResponseCode>
-            <cbc:Description>accepted</cbc:Description>
+            <cbc:Description>Accepted</cbc:Description>
         </cac:Response>
         <cac:DocumentReference>
             <cbc:ID>4e3517fd-724d-44fc-b90b-5743c33ff68e</cbc:ID>

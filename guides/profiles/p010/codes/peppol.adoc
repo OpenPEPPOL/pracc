@@ -17,14 +17,11 @@ All transactions within this profile uses the same Business Process Type Identif
 | Short Description
 | Business Process Type Identifier
 
-| T015
-| Publish Notice
-| The requester sends a Publish Notice Request to the publisher.
-.2+.^| urn:fdc:peppol.eu:prac:bis:p008:1.1
+| T018
+| Tendering Message Response
+| The receiver of a message or the sender of a search notice sends a Tendering Message Response to the sender of a message or the receiver of search notice.
+| urn:fdc:peppol.eu:prac:bis:p010:1.0
 
-| T016
-| Notice Publication Response
-| The publisher sends a Notice Publication Response to the requester.
 
 |===
 

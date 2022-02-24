@@ -3,7 +3,7 @@
 
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
-image::../images/processPN.svg[align="center", width=1200]
+//image::../images/processPN.svg[align="center", width=1200]
 
 The process starts with the contracting body issuing a new publication notice. At first, they have to choose the appropriate UBL document schema of the underlying notice (PIN, CN or CAN) which needs to be formatted according to the {eforms-specs}. After that, the publication request will be prepared and send to the publication body. Transaction 'T015 - Publish Notice' is used for the message to the publication body. The publication request can either be made with the intention to publish the notice or it can be sent to the publication body for validation purposes only.
 

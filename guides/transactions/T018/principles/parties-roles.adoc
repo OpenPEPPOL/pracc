@@ -8,17 +8,12 @@ The following parties participate as business partners in this transaction, acti
 |===
 | Business Partner
 | Description
-| *Governmental or private organization*
-| Any organisation.
-| *Governmental organization*
-| A body governed by public law, meaning bodies:
-
-(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character;
-
-(b) having legal personality; and
-
-(c) financed, for the most part, by the State, regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities, or by other bodies governed by public law.
-
+| *Sender*
+| The party sending an electronic message level response message back to the sending party of the business document.
+    Exception for the search notice: Sender of the search notice is also the sender of the TMR for process termination.
+| *Receiver*
+| The party, an electronic message level response was addressed to, and who is supposed to process the message level response.This is the same party as the sender of the business document.
+    Exception for the search notice: Receiver of the search notice is also the receiver of the TMR for process termination.
 |===
 
 [cols="2,10", options="header"]

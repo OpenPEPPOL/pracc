@@ -364,7 +364,7 @@
                                 violation, etc.
                             </Description>
                             <Reference type="RULE">PEPPOL-T016-R052</Reference>
-                            <Reference type="CODE_LIST">statusReason</Reference>
+                            <Reference type="CODE_LIST">statusReasonSubset</Reference>
                             <DataType>Code</DataType>
                             <Value type="EXAMPLE">BV</Value>
                         </Element>

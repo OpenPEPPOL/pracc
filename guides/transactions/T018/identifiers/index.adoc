@@ -9,8 +9,8 @@ include::../../shared/peppol.adoc[]
 | Transaction name
 | Short Description
 | `cbc:CustomizationID`
-| T016
-| Notice Publication Reponse
+| T018
+| Tender Message Response
 | The publication body sends a notice publication response to the contracting authority.
-|  urn:fdc:peppol.eu:prac:trns:t016:1.1
+|  urn:fdc:peppol.eu:prac:trns:t018:1.0
 |===

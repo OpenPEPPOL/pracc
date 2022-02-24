@@ -2,41 +2,27 @@
 = Status codes
 
 .The following policies apply to the use of status codes:
-* List of Status codes is fixed and can not be changed bilaterally.
-* There are seven pre-agreed status codes (main statuses).
-* Status code is sent from one party to the other to inform it about further processing of the request the other side.
-* Every status can be the first status sent to the Receiver but from there further statuses must follow a defined order
+* Lists of Status codes are fixed and can not be changed bilaterally.
+* There are eleven pre-agreed status codes (elven reason status and three result status).
+* Status codes are sent from one party to the other to inform it about further processing of the request the other side.
 * Maximum time for first response 3 days – The Seller should receive the first Invoice Response within 3 working days.
-** By receiving the first Response message the Seller will know that an Invoice has been received by the Buyer and what its status is.
-** However, if the Seller does not receive any response he should wait 3 working days before contacting the Buyer to query whether the Invoice was received.
-** A Buyer who has received an invoice should therefore provide a first Response before that time to notify the Seller that it has been received and what its status is.
-* The minimum set of Statuses that must be supported by a Buyer is “Message acknowledged”, “Rejected” and “Approved”.
 
 
 .The columns in the below table shall be understood as follows:
 [horizontal]
-Status code:: The code that defines the status of the reference document, e.g. AP.
+Status Reason/ Message Response Code:: The code that defines the status of the reference document, e.g. AP.
 
-PEPPOL name:: The name of the code, based on UNECE code list 4343.
+Name of the Status Reason/ Message Response Code:: The name of the code.
 
-PEPPOL definition:: The definition of the code, based on UNECE code list 4343.
+Usage of the Status Reason/ Message Response Code:: The usage of the code.
 
-Response expected::
-Indicates that the Buyer expects a response from the Seller in accordance to the information given in the Invoice Response.
-If no response is expected, then the Buyer will proceed with the processing of the invoice without interruption.
-If a response is expected, then the Buyer will not proceed with the processing until the Seller has provided the response (externally).
+Example:: Example of a use case for the code.
 
-Clarification required:: Indicates that when Invoice Response message contains this code then a clarification must be provided by the Buyer in the form of a Status Reason code (See {link-codelist}) or text or both.
+Possible resulting Message Response Code:: Message Response Codes which could be the results of the usage of the status reason code.
 
-Mandatory::
-Indicates that a Buyer who supports this BIS shall at minimum be able to report these statuses in the processing of the invoice.
-In other words, the Seller can at minimum expect to receive this status information.
+Possible Status Reason Code:: Status Reason code which could be used to lead to the Message Response Code.
 
-Final::
-Indicates that this is a final status in the processing of the referenced invoice.
-The Seller will not receive any further Invoice Response messages referencing this invoice.
-
-.The Status Reason codes used in a Tender Message Response message are defined in the table below.
+.The Status Reason Codes used in a Tender Message Response message are defined in the table below.
 [cols="1h,1,3,3,1",options="header"]
 |====
 |Status Reason Code
@@ -57,7 +43,7 @@ The Seller will not receive any further Invoice Response messages referencing th
 |PT |Process termination | A query response of a Search Notice Request is cancelled or terminated.|A Search Notice Response sent in several replies is aborted by the recipient because searched information has already been found.|RE
 |====
 
-.Message Response codes resulting from the found errors in the message displayed by the Status Reason codes.
+.The Message Response Codes used in a Tender Message Response message are defined in the table below.
 [cols="1h,1,3,3,1",options="header"]
 |====
 |Message Response Code
@@ -69,36 +55,3 @@ The Seller will not receive any further Invoice Response messages referencing th
 |AP |Accepted |Response code is uses when the referenced message has been accepted by the receiver. | The received Tender has been accepted.| none
 |CA |Conditionally accepted |Response code is used when the receiver is accepting the message under conditions stated in ‘Status Reason’ and proceed to continue the process unless disputed by the sender.| The received Tender has only been conditionally accepted due to an expired tender submission deadline. The Contracting Authority is investigating the incident in a separate process. | RE
 |====
-
-(1) Status code PD (Paid) together with Clarification Reason code PPD (Partially Paid) is the case when an invoice is partially paid with the intention of later paying the full invoice amount as was accepted.
-
-The sequence of the status codes is fixed to allow the Seller, as receiver of the Invoice Response message, to advance the status of the invoice in his systems in an orderly way.
-See <<invoice-response-process-rules>>.
-This requires the Buyer to be conservative in reporting status and only advance an invoice when the status is reasonably certain.
-
-The status of an invoice must advance in the following sequence, but any status may be the first one used or may be omitted.
-
-1. AB – Message acknowledgement
-2. IP – In process
-3. UQ – Under query (may be repeated before moving forward)
-4. CA – Conditionally accepted
-5. RE – Rejected
-6. AP – Accepted
-7. PD – Paid, can be in steps, partially paid and then paid.
-
-.Examples of status advancement:
-====
-1. If an invoice is paid right after being received, the Buyer can report with a single Invoice Response using the code PD.
-2. If an invoice has been put under query then following the response from the Seller, the Buyer may advance it to any of the following codes:
-[horizontal]
-CA:: conditionally accepted
-RE:: Rejected
-AP:: Accepted
-PD:: Paid
-====
-
-Deviations from this sequence must be handled manually between the trading parties.
-As example, if a Buyer has stated that an invoice has been accepted they can not later send an Invoice Response indicating that it is under query or rejected.
-This does however not prohibit the Buyer from changing his decision, but he must report that to the Seller by other means than by using an Invoice Response.
-
-The fixed order simplifies the automation of the processing for the receiver of the Invoice Response.

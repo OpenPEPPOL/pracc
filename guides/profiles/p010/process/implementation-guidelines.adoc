@@ -17,16 +17,9 @@ The namespaces used in the {eforms-main} schemas are:
 * urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2
 * urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
 
-The T015 - Publish Notice transaction is based on {ebrim} and adapted according to the SubmitObjects Protocol of {ebrs}. The package consists of notice and notice metadata defined along business terms described by {eforms-specs} and {link-BII10}, {link-BII14}, {link-BII43}. A local reference in the notice metadata points to the actual XML notice contained within the ASiC-E Container as defined by {link-eDocument}. Notices must be defined in XML format along the following standards:
-
-* {ubl-pin}: Describes the notices type "Prior Information Notice" that can be referenced in the T015 - Publish Notice transaction. The XML must be formatted according to {eforms-specs}.
-* {ubl-cn}: Describes the notices type "Contract Notice" that can be referenced in the T015 - Publish Notice transaction.The XML must be formatted according to {eforms-specs}.
-* {ubl-can} Describes the notices type "Contract Award Notice" that can be referenced in the T015 - Publish Notice transaction.The XML must be formatted according to {eforms-specs}.
-
-The T016 - Notice Publication Response is based on {link-noticeresponse} and the response message described in {link-BII10}, {link-BII14}, {link-BII43}.
+The T018 - Tendering Message Reponse is based on {link-noticeresponse} and the response message described in {link-BII10}, {link-BII14}, {link-BII43}.
 
 The business processes includes 2 transaction:
 
-* link:../../transactions/T015/index.html[T015 - Publish Notice]
-* link:../../transactions/T016/index.html[T016 - Notice Publication Response]
+* link:../../transactions/T018/index.html[T018 - Tendering Message Response]
 

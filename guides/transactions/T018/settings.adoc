@@ -1,11 +1,11 @@
 include::../shared/settings.adoc[]
 
-:name-profile: Profile P008 - "Publish Notice"
+:name-profile: Profile P010 - "Tendering Message Response"
 
 :name-transaction-org: "Trdm100 Notices metadata transaction"
-:name-trans-short: Notice Publication Response
-:name-transaction: T016 - {name-trans-short}
-:name-syntax: PublishNoticeResponse
+:name-trans-short: Tendering Message Response
+:name-transaction: T018 - {name-trans-short}
+:name-syntax: TenderingMessageResponse
 
 include::../shared/links.adoc[]
 
@@ -13,5 +13,5 @@ include::../shared/links.adoc[]
 &#8226; https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT,FSP_ORG_ID:62014,2073699&cs=1244B0DAC4408B3D60ED2C85F7B3EC51A[BII Profile 10 - Contract Notice (CWA 17026-202:2016)] + \
 &#8226; https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT,FSP_ORG_ID:62009,2073699&cs=146C9FDE3307E57F4DDBE58D90108598F[BII Profile 43 - Contract Award Notice (CWA 17026-103:2016)]]
 
-:xml-doc-file: files/ExamplePublishNotice.xml
+:xml-doc-file: files/ExampleTenderingMessageResponseBV.xml
 
