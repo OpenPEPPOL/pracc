@@ -1,5 +1,17 @@
-
+//ToDo
 = Business process
+
+The following use cases describe in examples how the message level response can be used.
+
+:leveloffset: +1
+
+include::use-case-ap.adoc[]
+include::use-case-bv.adoc[]
+include::use-case-bw.adoc[]
+include::use-case-pt.adoc[]
+
+:leveloffset: -1
+
 
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 

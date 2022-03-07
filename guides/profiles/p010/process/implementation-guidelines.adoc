@@ -1,25 +1,23 @@
 
 = Implementation guidelines
-
+//ToDo
 {name-profile} is based on work done by {link-bii3} and {eforms-main}. Business terms, Business rules and code lists used are inherited from {eforms-specs}, {regrep},  {link-ubl-22} and {link-ubl} documents and the following {link-bii3} specifications:
 
 {name-profile-org}
 
 The namespaces used in the {name-profile} are:
 
-* urn:oasis:names:tc:ebxml-regrep:xsd:rim:4.0
-* urn:oasis:names:tc:ebxml-regrep:xsd:lcm:4.0
 * urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2
 
-The namespaces used in the {eforms-main} schemas are:
+//The namespaces used in the {eforms-main} schemas are:
 
-* urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2
-* urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2
-* urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
+//* urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2
+//* urn:oasis:names:specification:ubl:schema:xsd:ContractNotice-2
+//* urn:oasis:names:specification:ubl:schema:xsd:ContractAwardNotice-2
 
-The T018 - Tendering Message Reponse is based on {link-noticeresponse} and the response message described in {link-BII10}, {link-BII14}, {link-BII43}.
+//The T018 - Tendering Message Reponse is based on {link-noticeresponse} and the response message described in {link-BII10}, {link-BII14}, {link-BII43}.
 
-The business processes includes 2 transaction:
+The business processes includes 1 transaction:
 
-* link:../../transactions/T018/index.html[T018 - Tendering Message Response]
+* link:../../transactions/T018/index.html[T088 - Tendering Message Response]
 

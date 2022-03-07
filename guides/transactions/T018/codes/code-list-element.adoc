@@ -5,7 +5,7 @@
 [cols="1h,4"]
 |===
 | Qualifier (listID)
-| Status Response Code
+| Message Response Code
 | Document location
 | `cac:DocumentResponse/cac:Response/cbc:ResponseCode`
 `cac:DocumentResponse/cac:LineResponse/cac:Response/cbc:ResponseCode`

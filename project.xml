@@ -119,6 +119,11 @@
         <Path>structure/syntax/NotifyAwarding.xml</Path>
         <Title>Syntax Mapping T017 - Awarding Notification</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/TenderMessageResponse.xml</Path>
+        <Title>Syntax Mapping T018 - Tender Message Response</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
@@ -224,6 +229,12 @@
         <Title>PEPPOL T017 rules</Title>
     </Resource>
     <Resource>
+        <Identifier>T018</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-tendering-message-response/PEPPOL-T018.sch</Path>
+        <Title>PEPPOL T018 rules</Title>
+    </Resource>
+    <Resource>
         <Identifier>BIIT004</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
@@ -281,6 +292,10 @@
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>
+        <Path>structure/codelist/messageResponseCode.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
         <Path>structure/codelist/noticeResponse.xml</Path>
     </Resource>
     <Resource>
@@ -298,6 +313,10 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/statusReason.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/statusReasonSubset.xml</Path>
     </Resource>
     <Resource>
         <Type>CodeList-1</Type>

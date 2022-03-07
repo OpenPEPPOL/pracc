@@ -7,7 +7,7 @@
     <Code>
         <Id>BV</Id>
         <Name>Business rule violation, fatal</Name>
-        <Description>Warning related to a business rule that indicates a problem but that does not hinder further processing at this point in time.</Description>
+        <Description>Error associated with a business rule that indicates a problem that leads to the rejection of the referenced message.</Description>
     </Code>
     <Code>
         <Id>BW</Id>
@@ -17,6 +17,6 @@
     <Code>
         <Id>SV</Id>
         <Name>Syntax violation</Name>
-        <Description>Error related to the syntax composition that prevents further processing.</Description>
+        <Description>Error associated with a syntax violation that indicates a problem that leads to the rejection of the referenced message.</Description>
     </Code>
 </CodeList>

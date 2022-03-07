@@ -207,6 +207,7 @@
                             to indicate an actual publication date.
                         </Description>
                         <Reference type="RULE">PEPPOL-T016-R031</Reference>
+                        <Reference type="CODE_LIST">publicationCondition</Reference>
                         <DataType>Code</DataType>
                         <Value type="EXAMPLE">FCST</Value>
                     </Element>

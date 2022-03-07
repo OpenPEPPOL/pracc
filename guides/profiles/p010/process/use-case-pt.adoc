@@ -1,5 +1,5 @@
-[[use-case-2-negative-response-violation-of-business-rules]]
-= Use Case 2 – Negative response – violation of business rules
+[[use-case-4-negative-response-process-termination]]
+= Use Case 4 – Negative response – Process termination
 
 This use case is a message level response which can be used to terminate a search request to not receive further results.
 

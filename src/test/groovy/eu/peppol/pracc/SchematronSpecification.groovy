@@ -61,6 +61,12 @@ class SchematronSpecification extends Specification {
         'rules/peppol-publish-notice/PEPPOL-T015.sch'                       | 'guides/transactions/T015/files/ExamplePublishNotice.xml'
         'rules/peppol-publish-notice/PEPPOL-T016.sch'                       | 'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'
         'rules/peppol-notify-awarding/PEPPOL-T017.sch'                      | 'guides/transactions/T017/files/NotifyAwarding.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBV.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'
     }
 
     static Map<String, Schema> schemaCache = new HashMap<>()
@@ -98,6 +104,12 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T015/files/ExamplePublishNotice.xml'                  | 'ebXML/lcm.xsd'
         'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'      | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T017/files/NotifyAwarding.xml'                        | 'xsdrt/maindoc/UBL-AwardedNotification-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponsebWNF.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
     }
 
     static Schema loadSchema(SchemaFactory factory, URL xsdSource) {

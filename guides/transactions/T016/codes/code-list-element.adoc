@@ -39,7 +39,7 @@
 [cols="1h,4"]
 |===
 | Qualifier (listID)
-| Status Reason Code
+| Status Reason Code Subset
 | Document location
 | `cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/cbc:StatusReasonCode`
 | Issuer
