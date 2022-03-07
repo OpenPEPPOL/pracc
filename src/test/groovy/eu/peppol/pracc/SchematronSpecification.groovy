@@ -106,8 +106,8 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T017/files/NotifyAwarding.xml'                        | 'xsdrt/maindoc/UBL-AwardedNotification-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseBV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
-        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
-        'guides/transactions/T018/files/ExampleTenderingMessageResponsebWNF.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
     }
