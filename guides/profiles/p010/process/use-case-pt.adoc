@@ -12,7 +12,7 @@ This use case is a message level response which can be used to terminate a searc
 |Process termination
 
 |Use Case Description
-|This use case is a message level response based on a search notice, whose results are no longer requested.
+|This use case is a TMR based on a search notice, whose results are no longer requested.
 
 |Parties involved
 |SearchNoticeSender, MLRSender +
@@ -37,12 +37,12 @@ a|
 .  The SearchNoticeReceiver has received the search notice.
 .  The SearchNoticeReceiver has validated the search notice.
 .  The SearchNoticeReceiver sent page wise search results to the SearchNoticeSender.
-.  The MLRSender has sent a message level response message back to the SearchNoticeReceiver.
-.  The MLRReceiver has received and processed the message level response message and performed appropriate action due to the process termination.
+.  The MLRSender has sent a TMR back to the SearchNoticeReceiver with the request to terminate the page wise search results.
+.  The MLRReceiver has received and processed the TMR and performed appropriate action to terminate the process.
 
 |Result
 a|
-.  The message level response message helped the SearchNoticeSender to confirm that the search was concluded and it does not need more results.
+.  The TMR helped the SearchNoticeSender to confirm that the search was concluded and it does not need more results.
 The SearchNoticeReceiver must take appropriate action to stop the sending of search results.
 
 |XML example file

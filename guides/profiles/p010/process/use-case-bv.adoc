@@ -12,7 +12,7 @@ This use case is a message level response containing errors due to violation of 
 |Negative response – violation of business rules
 
 |Use Case Description
-|This use case is a message level response based on a business document containing errors due to violation of business rules.
+|This use case is a TMR based on a business document containing errors due to violation of business rules.
 
 |Parties involved
 |BusinessDocumentSender, MLRReceiver +
@@ -35,12 +35,12 @@ a|
 .  The BusinessDocumentSender has prepared and sent an electronic business document to the BusinessDocumentReceiver.
 .  The BusinessDocumentReceiver has received the business document.
 .  The BusinessDocumentReceiver has validated and rejected the business document.
-.  The MLRSender has sent a message level response message back to the BusinessDocumentSender.
-.  The MLRReceiver has received and processed the message level response message and performed appropriate action due to the rejection.
+.  The MLRSender has sent a TMR back to the BusinessDocumentSender.
+.  The MLRReceiver has received and processed the TMR and performed appropriate action due to the rejection.
 
 |Result
 a|
-.  The message level response message helped the BusinessDocumentSender to confirm that the business document was received and rejected by the BusinessDocumentReceiver.
+.  The TMR helped the BusinessDocumentSender to confirm that the business document was received and rejected by the BusinessDocumentReceiver.
 The BusinessDocumentSender must take appropriate action to correct and resend the business document.
 
 |XML example file

@@ -1,4 +1,0 @@
-//TODO
-= Key examples
-
-For examples of the usages of this profile please refer to the xref:#_business_process[business process] in the process section.

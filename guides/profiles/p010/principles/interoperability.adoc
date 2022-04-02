@@ -15,12 +15,12 @@ It applies the Framework as follows:
 
 . Organizational interoperability
 * Organization (Organization/Business):
-** This {link-peppol} eNotification BIS supports B2G, G2G and B2B.
-** This {link-peppol} eNotification BIS supports cross border, regional and domestic tendering procedures in EU and EEA.
-** This {link-peppol} eNotification BIS can function as a standardized EDI agreement within a trading community.
-** This {link-peppol} eNotification BIS supports linking of business processes within the sending and receiving organization.
+** This {link-peppol} eTendering BIS supports B2G, G2G and B2B.
+** This {link-peppol} eTendering BIS supports cross border, regional and domestic tendering procedures in EU and EEA.
+** This {link-peppol} eTendering BIS can function as a standardized EDI agreement within a trading community.
+** This {link-peppol} eTendering BIS supports linking of business processes within the sending and receiving organization.
 * Organization (Process):
-** This {link-peppol} eNotification BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
+** This {link-peppol} eTendering BIS supports a set of “common business processes” that are assumed to be supported by most enterprises whether public or private. These are processes that are used widely or understood as being relevant for most companies.
 
 . Technical interoperability
 * Technical Interaction (Process and semantic implementation):

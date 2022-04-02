@@ -5,9 +5,6 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 
 == Profile ID
 
-[IMPORTANT]
-All transactions within this profile uses the same Business Process Type Identifier.
-
 [cols="2*2,2*4", options="header"]
 .The table below shows values to be used for the Business Process Type Identifier
 |===
@@ -16,11 +13,12 @@ All transactions within this profile uses the same Business Process Type Identif
 | Transaction name
 | Short Description
 | Business Process Type Identifier
+(cbc:ProfileID)
 
 | T018
 | Tendering Message Response
-| The receiver of a message or the sender of a search notice sends a Tendering Message Response to the sender of a message or the receiver of search notice.
-| urn:fdc:peppol.eu:prac:bis:p010:1.0
+| The receiver of a business document sends a Tendering Message Response to the sender of the business document.
+| urn:fdc:peppol.eu:prac:bis:p010:1.1
 
 
 |===
