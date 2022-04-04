@@ -22,7 +22,7 @@ Possible resulting Message Response Code:: Message Response Codes which could be
 
 Possible Status Reason Code:: Status Reason code which could be used to lead to the Message Response Code.
 
-.The Status Reason Codes used in a Tender Message Response message are defined in the table below.
+.The Status Reason Codes used in a Tendering Message Response message are defined in the table below.
 [cols="1h,1,3,3,1",options="header"]
 |====
 |Status Reason Code
@@ -43,7 +43,7 @@ Possible Status Reason Code:: Status Reason code which could be used to lead to 
 |PT |Process termination | A query response of a Search Notice Request is cancelled or terminated.|A Search Notice Response sent in several replies is aborted by the recipient because searched information has already been found.|RE
 |====
 
-.The Message Response Codes used in a Tender Message Response message are defined in the table below.
+.The Message Response Codes used in a Tendering Message Response message are defined in the table below.
 [cols="1h,1,3,3,1",options="header"]
 |====
 |Message Response Code
