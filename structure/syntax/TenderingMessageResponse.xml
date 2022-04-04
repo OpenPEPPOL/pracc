@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>TenderMessageResponse</Term>
-    <Name>Tender Message Response (T018)</Name>
+    <Term>TenderingMessageResponse</Term>
+    <Name>Tendering Message Response (T018)</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
@@ -85,8 +85,7 @@
             <Term>cac:SenderParty</Term>
             <Name>Sender information</Name>
             <Description>The party sending an electronic message level response message back to the sending party of the
-                business document.
-            </Description>
+                business document.</Description>
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Contracting body electronic address identifier</Name>
@@ -111,9 +110,7 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver information</Name>
             <Description>The party, an electronic message level response was addressed to, and who is supposed to
-                process the message level response.
-                This is the same party as the sender of the business document.
-            </Description>
+                process the message level response. This is the same party as the sender of the business document.</Description>
             <Reference type="RULE">PEPPOL-T018-R021</Reference>
             <Reference type="RULE">PEPPOL-T018-R024</Reference>
             <Element>
@@ -137,7 +134,7 @@
         <Element>
             <Term>cac:DocumentResponse</Term>
             <Name>Document response</Name>
-            <Description>The notice response is used to indicate the result of business document validation. The element
+            <Description>The tendering response is used to indicate the result of business document validation. The element
                 'cac:DocumentResponse/cac:Response/cbc:ResponseCode' MUST contain the overall result code.
             </Description>
             <Reference type="RULE">PEPPOL-T018-R025</Reference>
@@ -154,10 +151,8 @@
                     <Name>Message response code</Name>
                     <Description>An indicator stating whether the referenced message was cleared through validation and
                         advanced to the next step in the process. A "rejection" states that the request was not
-                        processed
-                        because of identified issues. "Conditionally accepted" indicates that the request may not be
-                        correctly
-                        handled because of the warnings indicated in the message. "Accepted" indicates that the notice
+                        processed because of identified issues. "Conditionally accepted" indicates that the request may not be
+                        correctly handled because of the warnings indicated in the message. "Accepted" indicates that the tendering message
                         will be processed in time.
                     </Description>
                     <Reference type="BUSINESS_TERM">tir65-021</Reference>

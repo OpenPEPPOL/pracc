@@ -121,7 +121,7 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/TenderMessageResponse.xml</Path>
+        <Path>structure/syntax/TenderingMessageResponse.xml</Path>
         <Title>Syntax Mapping T018 - Tender Message Response</Title>
     </Resource>
 
