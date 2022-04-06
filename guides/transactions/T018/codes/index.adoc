@@ -8,6 +8,6 @@ The following code lists for coded elements and identifier schemes are used in t
 
 include::code-list-element.adoc[]
 include::code-list-identifers-scheme.adoc[]
-include::status-codes.adoc[]
+//include::status-codes.adoc[]
 
 :leveloffset: -1
