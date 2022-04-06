@@ -29,7 +29,7 @@
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
     <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
-    <Documentation path="profiles/p010/index.html">P010 - Message Level Response - 0.1</Documentation>
+    <Documentation path="profiles/p010/index.html">P010 - Message Level Response - 0.9</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Message Level Response</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
