@@ -13,7 +13,7 @@
 
 * Wrong version of business document (Will be handled like validation error of type fatal error)
 
-*Processing expections*
+*Processing exceptions*
 
 * Wrong values and references (after database look-up) (e.g. wrong receiver, reference to procedure not found, ...)
 
