@@ -43,24 +43,30 @@ class SchematronSpecification extends Specification {
         failedAsserts?.isEmpty() && result != null
 
         where:
-        schematronFileName                                                      | xmlFileName
-        'rules/peppol-procurement-procedure-subscription-1.0/PEPPOL-T001.sch'   | 'guides/transactions/T001/files/ExpressionOfInterestRequest-instance.xml'
-        'rules/peppol-procurement-procedure-subscription-1.0/PEPPOL-T002.sch'   | 'guides/transactions/T002/files/ExpressionOfInterestResponse-instance.xml'
-        'rules/peppol-tender-status-inquiry-1.0/PEPPOL-T003.sch'                | 'guides/transactions/T003/files/TenderStatusRequest-instance.xml'
-        'rules/peppol-call-for-tender-1.0/peppol/PEPPOL-T004.sch'               | 'guides/transactions/T004/files/call-for-tenders-instance.xml'
-        'rules/peppol-tender-1.0/peppol/PEPPOL-T005.sch'                        | 'guides/transactions/T005/files/tender-instance.xml'
-        'rules/peppol-tender-1.0/peppol/PEPPOL-T006.sch'                        | 'guides/transactions/T006/files/tender-receipt-instance.xml'
-        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T007.sch' | 'guides/transactions/T007/files/TenderingQuestions-doc.xml'
-        'rules/peppol-call-for-tender-question-and-answers-1.0/PEPPOL-T008.sch' | 'guides/transactions/T008/files/TenderingAnswers-doc.xml'
-        'rules/tender-clarification-1.0/PEPPOL-T009.sch'                        | 'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'
-        'rules/tender-clarification-1.0/PEPPOL-T010.sch'                        | 'guides/transactions/T010/files/TenderClarification-doc.xml'
-        'rules/peppol-search-notice/PEPPOL-T011.sch'                            | 'guides/transactions/T011/files/ExampleSearchNoticeRequest.xml'
-        'rules/peppol-search-notice/PEPPOL-T012.sch'                            | 'guides/transactions/T012/files/ExampleSearchNoticeResponse.xml'
-        'rules/peppol-tender-withdrawal/PEPPOL-T013.sch'                        | 'guides/transactions/T013/files/TenderWithdrawal.xml'
-        'rules/peppol-tender-withdrawal/PEPPOL-T014.sch'                        | 'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml'
-        'rules/peppol-publish-notice/PEPPOL-T015.sch'                           | 'guides/transactions/T015/files/ExamplePublishNotice.xml'
-        'rules/peppol-publish-notice/PEPPOL-T016.sch'                           | 'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'
-        'rules/peppol-notify-awarding/PEPPOL-T017.sch'                          | 'guides/transactions/T017/files/NotifyAwarding.xml'
+        schematronFileName                                                  | xmlFileName
+        'rules/peppol-procurement-procedure-subscription/PEPPOL-T001.sch'   | 'guides/transactions/T001/files/ExpressionOfInterestRequest-instance.xml'
+        'rules/peppol-procurement-procedure-subscription/PEPPOL-T002.sch'   | 'guides/transactions/T002/files/ExpressionOfInterestResponse-instance.xml'
+        'rules/peppol-tender-status-inquiry/PEPPOL-T003.sch'                | 'guides/transactions/T003/files/TenderStatusRequest-instance.xml'
+        'rules/peppol-call-for-tender/peppol/PEPPOL-T004.sch'               | 'guides/transactions/T004/files/call-for-tenders-instance.xml'
+        'rules/peppol-tender/peppol/PEPPOL-T005.sch'                        | 'guides/transactions/T005/files/tender-instance.xml'
+        'rules/peppol-tender/peppol/PEPPOL-T006.sch'                        | 'guides/transactions/T006/files/tender-receipt-instance.xml'
+        'rules/peppol-call-for-tender-question-and-answers/PEPPOL-T007.sch' | 'guides/transactions/T007/files/TenderingQuestions-doc.xml'
+        'rules/peppol-call-for-tender-question-and-answers/PEPPOL-T008.sch' | 'guides/transactions/T008/files/TenderingAnswers-doc.xml'
+        'rules/tender-clarification/PEPPOL-T009.sch'                        | 'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'
+        'rules/tender-clarification/PEPPOL-T010.sch'                        | 'guides/transactions/T010/files/TenderClarification-doc.xml'
+        'rules/peppol-search-notice/PEPPOL-T011.sch'                        | 'guides/transactions/T011/files/ExampleSearchNoticeRequest.xml'
+        'rules/peppol-search-notice/PEPPOL-T012.sch'                        | 'guides/transactions/T012/files/ExampleSearchNoticeResponse.xml'
+        'rules/peppol-tender-withdrawal/PEPPOL-T013.sch'                    | 'guides/transactions/T013/files/TenderWithdrawal.xml'
+        'rules/peppol-tender-withdrawal/PEPPOL-T014.sch'                    | 'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml'
+        'rules/peppol-publish-notice/PEPPOL-T015.sch'                       | 'guides/transactions/T015/files/ExamplePublishNotice.xml'
+        'rules/peppol-publish-notice/PEPPOL-T016.sch'                       | 'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'
+        'rules/peppol-notify-awarding/PEPPOL-T017.sch'                      | 'guides/transactions/T017/files/NotifyAwarding.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBV.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'
+        'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'
     }
 
     static Map<String, Schema> schemaCache = new HashMap<>()
@@ -98,6 +104,12 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T015/files/ExamplePublishNotice.xml'                  | 'ebXML/lcm.xsd'
         'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'      | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T017/files/NotifyAwarding.xml'                        | 'xsdrt/maindoc/UBL-AwardedNotification-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
     }
 
     static Schema loadSchema(SchemaFactory factory, URL xsdSource) {

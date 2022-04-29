@@ -209,7 +209,7 @@
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/cbc:StatusReasonCode">
-            <assert flag="fatal" id="PEPPOL-T016-R052" test="matches(normalize-space(.),'^(BV|SV|BW)$')">Value MUST be part of code list 'Status Reason Code'.</assert>
+            <assert flag="fatal" id="PEPPOL-T016-R052" test="matches(normalize-space(.),'^(BV|SV|BW)$')">Value MUST be part of code list 'Status Reason Code Subset'.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/*">

@@ -1,0 +1,18 @@
+//ToDo
+= Business process and use cases
+
+
+
+The following process flows and use cases describe how the Tendering Message Response (TMR) can be used.
+
+:leveloffset: +1
+
+include::processFlow.adoc[]
+include::use-case-ap.adoc[]
+include::use-case-bv.adoc[]
+include::use-case-bw.adoc[]
+include::use-case-pt.adoc[]
+
+include::implementation-guidelines.adoc[]
+
+:leveloffset: -1

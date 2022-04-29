@@ -1,0 +1,27 @@
+
+= PEPPOL Identifiers
+
+PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment.
+
+== Profile ID
+
+[cols="2*2,2*4", options="header"]
+.The table below shows values to be used for the Business Process Type Identifier
+|===
+
+| TransactionID
+| Transaction name
+| Short Description
+| Business Process Type Identifier
+(cbc:ProfileID)
+
+| T018
+| Tendering Message Response
+| The receiver of a business document sends a Tendering Message Response to the sender of the business document.
+| urn:fdc:peppol.eu:prac:bis:p010:1.1
+
+
+|===
+
+[NOTE]
+For implementers, please note that the process identifiers in the document instance MUST correspond to the http://docs.oasis-open.org/bdxr/bdx-smp/v1.0/cs03/bdx-smp-v1.0-cs03.pdf[SMP] process identifier.
