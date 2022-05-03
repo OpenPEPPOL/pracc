@@ -1,7 +1,10 @@
-[[use-case-3-negative-response-violation-of-syntax-and-business-rules]]
-= Use Case 3 – Negative response – violation of syntax and business rules
+[[use-case-3-positive-response-violation-of-business-rules-warnings]]
+= Use Case 3 – Positive response – violation of business rules warnings
 
 This use case is a message level response containing warnings due to violation business rules.
+
+[NOTE]
+This case should be used for the tender submission. Due to legal framework conditions, there is a constraint to tolerate errors to a certain extent when receiving a tender, even if from a technical point of view, the message might have to be rejected. Especially tender rejections have to be kept to a minimum and must be based on valid reasons. These have to withstand judical review.
 
 [cols="2s,6",options="header"]
 |====
@@ -9,7 +12,7 @@ This use case is a message level response containing warnings due to violation b
 |3
 
 |Use Case Name
-|Negative response – violation of business rules warnings
+|Positive response – violation of business rules warnings
 
 |Use Case Description
 |This use case is a TMR based on a business document containing warnings due to violation of non-fatal business rules.
