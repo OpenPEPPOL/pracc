@@ -7,5 +7,5 @@
 | Country | Name | Organization
 | DE | Ansgar Mondorf | University of Koblenz-Landau
 | DE | Rolf Kewitz | Beschaffungsamt des BMI
-| DE | Felicia Tsakonas | adesso SE
+| DE | Felicia | adesso SE
 |===
