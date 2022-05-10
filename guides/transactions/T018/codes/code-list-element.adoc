@@ -32,6 +32,8 @@ Example:: Example of a use case for the code.
 
 Possible Status Reason Code:: Status Reason code which could be used to lead to the Message Response Code.
 
+[IMPORTANT]
+Due to legal framework conditions, there is a constraint to tolerate errors to a certain extent when receiving a tender, even if from a technical point of view, the message might have to be rejected. Especially tender rejections have to be kept to a minimum and must be based on valid reasons. These have to withstand judicial review.
 
 .The Message Response Codes used in a Tendering Message Response message are defined in the table below.
 [cols="1h,1,3,3,1",options="header"]
@@ -42,10 +44,6 @@ Possible Status Reason Code:: Status Reason code which could be used to lead to 
 |Example
 |Possible Status Reason Code
 |RE |Rejected |Response code is used when the receiver will not process the referenced message any further. The reason for rejecting the message shall be stated in ´Status Reason´. |The received Tender has been rejected due to a fatal business rule violation (BV) |BV, SV, NF, DL, RF, WT, IR, MA, AE, PT
-
-[IMPORTANT]
-Due to legal framework conditions, there is a constraint to tolerate errors to a certain extent when receiving a tender, even if from a technical point of view, the message might have to be rejected. Especially tender rejections have to be kept to a minimum and must be based on valid reasons. These have to withstand judicial review.
-
 |AP |Accepted |Response code is uses when the referenced message has been accepted by the receiver. | The received Tender has been accepted.| none
 |CA |Conditionally accepted |Response code is used when the receiver is accepting the message under conditions stated in ‘Status Reason’ and proceed to continue the process unless disputed by the sender.| The received Tender has only been conditionally accepted due to an expired tender submission deadline. The Contracting Authority is investigating the incident in a separate process. | BW, DL, IR
 |====

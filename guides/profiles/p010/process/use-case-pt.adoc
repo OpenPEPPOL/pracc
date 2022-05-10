@@ -15,8 +15,8 @@ This use case is a message level response which can be used to terminate a searc
 |This use case is a TMR based on a search notice, whose results are no longer requested.
 
 |Parties involved
-|SearchNoticeSender, MLRSender +
-SearchNoticeReceiver, MLRReceiver
+|SearchNoticeSender, TMR Sender +
+SearchNoticeReceiver, TMR Receiver
 
 |Status Code
 |RE
@@ -37,12 +37,12 @@ a|
 .  The SearchNoticeReceiver has received the search notice.
 .  The SearchNoticeReceiver has validated the search notice.
 .  The SearchNoticeReceiver sent page wise search results to the SearchNoticeSender.
-.  The MLRSender has sent a TMR back to the SearchNoticeReceiver with the request to terminate the page wise search results.
-.  The MLRReceiver has received and processed the TMR and performed appropriate action to terminate the process.
+.  The TMR Sender has sent a TMR back to the SearchNoticeReceiver with the request to terminate the page wise search results.
+.  The TMR Receiver has received and processed the TMR and performed appropriate action to terminate the process.
 
 |Result
 a|
-.  The TMR helped the SearchNoticeSender to confirm that the search was concluded and it does not need more results.
+.  The TMR helped the SearchNoticeSender to confirm that the search was concluded, and it does not need more results.
 The SearchNoticeReceiver must take appropriate action to stop the sending of search results.
 
 |XML example file

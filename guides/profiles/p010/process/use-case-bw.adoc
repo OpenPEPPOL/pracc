@@ -3,9 +3,6 @@
 
 This use case is a message level response containing warnings due to violation business rules.
 
-[NOTE]
-This case should be used for the tender submission. Due to legal framework conditions, there is a constraint to tolerate errors to a certain extent when receiving a tender, even if from a technical point of view, the message might have to be rejected. Especially tender rejections have to be kept to a minimum and must be based on valid reasons. These have to withstand judical review.
-
 [cols="2s,6",options="header"]
 |====
 |Use Case number
@@ -18,14 +15,14 @@ This case should be used for the tender submission. Due to legal framework condi
 |This use case is a TMR based on a business document containing warnings due to violation of non-fatal business rules.
 
 |Parties involved
-|BusinessDocumentSender, MLRReceiver +
-BusinessDocumentReceiver, MLRSender
+|BusinessDocumentSender, TMR Receiver +
+BusinessDocumentReceiver, TMR Sender
 
 |Status Code
 |CA
 
 |Possible Status Reason Codes
-|BW, DL
+|BW
 
 |Assumptions
 a|
@@ -38,8 +35,8 @@ a|
 .  The BusinessDocumentSender has prepared and sent an electronic business document to the BusinessDocumentReceiver.
 .  The BusinessDocumentReceiver has received the business document.
 .  The BusinessDocumentReceiver has validated and found possible errors the business document.
-.  The MLRSender has sent a TMR back to the MLRReceiver.
-.  The MLRReceiver has received and processed the TMR and performed appropriate action to anticipate any future rejection of a similar incident.
+.  The TMR Sender has sent a TMR back to the TMR Receiver.
+.  The TMR Receiver has received and processed the TMR and performed appropriate action to anticipate any future rejection of a similar incident.
 
 |Result
 a|
