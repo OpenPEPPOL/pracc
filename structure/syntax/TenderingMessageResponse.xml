@@ -39,7 +39,7 @@
             <Reference type="BUSINESS_TERM">tir65-006</Reference>
             <Reference type="RULE">PEPPOL-T018-R013</Reference>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:peppol.eu:prac:trns:t018:1.1</Value>
+            <Value type="EXAMPLE">urn:fdc:peppol.eu:prac:trns:t018:1.0</Value>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>

@@ -17,23 +17,22 @@
     </cac:ReceiverParty>
     <cac:DocumentResponse>
         <cac:Response>
-            <cbc:ResponseCode>RE</cbc:ResponseCode>
-            <cbc:Description>Rejected</cbc:Description>
+            <cbc:ResponseCode>CA</cbc:ResponseCode>
+            <cbc:Description>Conditionally accepted</cbc:Description>
         </cac:Response>
         <cac:DocumentReference>
-            <cbc:ID>432a35d2-756a-4670-a07f-46d4ca0433e6</cbc:ID>
-            <cbc:DocumentTypeCode>urn:fdc:peppol.eu:prac:trns:t010:1.1</cbc:DocumentTypeCode>
+            <cbc:ID>4e3517fd-724d-44fc-b90b-5743c33ff68e</cbc:ID>
+            <cbc:DocumentTypeCode>urn:fdc:peppol.eu:prac:trns:t005:1.1</cbc:DocumentTypeCode>
         </cac:DocumentReference>
         <cac:LineResponse>
             <cac:LineReference>
-                <cbc:LineID>/EnquiryResponse</cbc:LineID>
+                <cbc:LineID>/Tender/cbc:IssueDate</cbc:LineID>
             </cac:LineReference>
             <cac:Response>
-                <cbc:ResponseCode>RE</cbc:ResponseCode>
-                <cbc:Description>Error caused to a received message that was not sent in the expected sequence of the
-                    business process. Leads to the rejection of the received message.</cbc:Description>
+                <cbc:ResponseCode>CA</cbc:ResponseCode>
+                <cbc:Description>Deadline expired</cbc:Description>
                 <cac:Status>
-                    <cbc:StatusReasonCode>WT</cbc:StatusReasonCode>
+                    <cbc:StatusReasonCode>DL</cbc:StatusReasonCode>
                 </cac:Status>
             </cac:Response>
         </cac:LineResponse>

@@ -18,7 +18,7 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 | T018
 | Tendering Message Response
 | The receiver of a business document sends a Tendering Message Response to the sender of the business document.
-| urn:fdc:peppol.eu:prac:bis:p010:1.1
+| urn:fdc:peppol.eu:prac:bis:p010:1.0
 
 
 |===
