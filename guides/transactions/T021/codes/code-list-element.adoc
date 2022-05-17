@@ -1,0 +1,48 @@
+
+= Code list for elements
+
+== Economic operator preferred language
+[cols="1h,4"]
+|===
+| Qualifier
+| `ISO639-1` (listID)
+| Document location
+| `ExpressionOfInterestRequest/cbc:PreferredLanguageLocaleCode`
+| Source codelist
+| link:http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=22109[ISO639-1]
+|===
+
+
+== Economic operator registration country code
+[cols="1h,4"]
+|===
+| Qualifier
+| `ISO3166-1:Alpha2` (listID)
+| Document location
+| `ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/​cac:PartyLegalEntity/{zwsp}cac:RegistrationAddress/cac:Country/cbc:IdentificationCode`
+| Source codelist
+| Use Alpha-2 codes from {link-iso3166}
+|===
+
+== Economic operator type code
+[cols="1h,4"]
+|===
+| Qualifier
+| `TendererRole` (listID)
+| Document location
+| `ExpressionOfInterestRequest/cac:EconomicParty/cac:Party/cbc:IndustryClassificationCode`
+| Source codelist
+| http://wiki.ds.unipi.gr/download/attachments/31424661/TendererRole.pdf?version=1&modificationDate=1478593740000&api=v2[TendererRole.pdf]
+|===
+
+
+== Country code
+[cols="1h,4"]
+|===
+| Qualifier
+| `ISO3166-1:Alpha2` (listID)
+| Document location
+| `ExpressionOfInterestRequest/cac:EconomicOperatorParty/cac:Party/​cac:PostalAddress/{zwsp}cac:Country/cbc:IdentificationCode`
+| Source codelist
+| Use Alpha-2 codes from {link-iso3166}
+|===
