@@ -1,10 +1,10 @@
 include::../shared/settings.adoc[]
 
-:name-profile: Profile P001 - "Procurement procedure subscription"
+:name-profile: Profile P021 - "Procurement procedure cancellation"
 
 :name-transaction-org: "Trdm081 Subscribe to Procedure"
-:name-transaction: T001 - Subscribe to Procedure 1.1
-:name-trans-short: Subscribe to Procedure
+:name-transaction: T021 - Unsubscribe to Procedure 0.9
+:name-trans-short: Unsubscribe to Procedure
 :name-syntax: ExpressionOfInterestRequest
 
 include::../shared/links.adoc[]

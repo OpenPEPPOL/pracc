@@ -6,7 +6,6 @@
     <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.1</Documentation>
     <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure</Documentation>
     <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation</Documentation>
-    <Documentation path="profiles/p021/index.html">P021 - Procurement procedure cancellation - 0.9</Documentation>
     <Documentation path="transactions/T021/index.html">T021 - Unsubscribe to Procedure</Documentation>
     <Documentation path="transactions/T012/index.html">T022 - Unsubscribe to Procedure Confirmation</Documentation>
     <Documentation path="profiles/p002/index.html">P002 - Procurement document access - 1.1</Documentation>
