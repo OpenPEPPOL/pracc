@@ -11,8 +11,8 @@ include::../../shared/peppol.adoc[]
 | Short Description
 | `cbc:CustomizationID`
 
-| T002
-| ExpressionOfInterestResponse
+| T022
+| UnsubscribeFromProcedureResponse
 | CA responds to the subscribe to procedure
-| urn:fdc:peppol.eu:prac:trns:t002:1.1
+| urn:fdc:peppol.eu:prac:trns:t022:1.0
 |===

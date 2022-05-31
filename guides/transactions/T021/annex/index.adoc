@@ -2,7 +2,7 @@
 
 = Key examples/use cases
 
-link:files/ExpressionOfInterestRequest-instance.xml[Link to example file]
+link:files/UnsubscribeFromProcedureRequest.xml[Link to example file]
 
 [source,xml,indent=0]
 ----

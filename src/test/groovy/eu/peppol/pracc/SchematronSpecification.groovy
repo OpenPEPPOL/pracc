@@ -112,6 +112,8 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
+        'guides/transactions/T021/files/UnsubscribeFromProcedureRequest.xml'       | 'xsdrt/maindoc/UBL-UnsubscribeFromProcedureRequest-2.2.xsd'
+        'guides/transactions/T022/files/UnsubscribeFromProcedureResponse.xml'      | 'xsdrt/maindoc/UBL-UnsubscribeFromProcedureResponse-2.2.xsd'
     }
 
     static Schema loadSchema(SchemaFactory factory, URL xsdSource) {
