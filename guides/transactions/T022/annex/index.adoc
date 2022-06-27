@@ -7,6 +7,6 @@ link:files/UnsubscribeFromProcedureResponse.xml[Link to example file]
 [source,xml,indent=0]
 ----
 
-include::../{xml-doc-file}[]
+include::../files/UnsubscribeFromProcedureResponse.xml[tag=**]
 
 ----

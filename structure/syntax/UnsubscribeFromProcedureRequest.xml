@@ -2,7 +2,7 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
     <Term>UnsubscribeFromProcedureRequest</Term>
     <Name>UnsubscribeFromProcedureRequest (T021)</Name>
-    <Namespace prefix="t001">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureRequest-2</Namespace>
+    <Namespace prefix="t021">urn:oasis:names:specification:ubl:schema:xsd:UnsubscribeFromProcedureRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
@@ -22,10 +22,10 @@
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
             <Reference type="RULE">PEPPOL-T001-R001</Reference>
             <Reference type="RULE">PEPPOL-T001-R002</Reference>
-            <Reference type="BUSINESS_TERM">tir81-007</Reference>
+            <Reference type="BUSINESS_TERM">tir106-007</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t001:1.1
+                urn:fdc:peppol.eu:prac:trns:t021:1.2
             </Value>
         </Element>
         <Element>
@@ -35,9 +35,9 @@
             </Description>
             <Reference type="RULE">PEPPOL-T001-R003</Reference>
             <Reference type="RULE">PEPPOL-T001-R004</Reference>
-            <Reference type="BUSINESS_TERM">tir81-006</Reference>
+            <Reference type="BUSINESS_TERM">tir106-006</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.1</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p021:1.2</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
@@ -47,7 +47,7 @@
             </Description>
             <Reference type="RULE">PEPPOL-T001-R005</Reference>
             <Reference type="RULE">PEPPOL-T001-R008</Reference>
-            <Reference type="BUSINESS_TERM">tir81-001</Reference>
+            <Reference type="BUSINESS_TERM">tir106-001</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
                 <Name>Scheme identifier</Name>
@@ -65,7 +65,7 @@
                 number or contract folder identifier. Used as a link to the call for tenders.
             </Description>
             <Reference type="RULE">PEPPOL-T001-R009</Reference>
-            <Reference type="BUSINESS_TERM">tir81-005</Reference>
+            <Reference type="BUSINESS_TERM">tir106-005</Reference>
             <DataType>Identifier</DataType>
         </Element>
         <Element>
@@ -73,7 +73,7 @@
             <Name>Unsubscribe from procedure issue date</Name>
             <Description>The date on which transaction is issued.</Description>
             <Reference type="RULE">PEPPOL-T001-R010</Reference>
-            <Reference type="BUSINESS_TERM">tir81-002</Reference>
+            <Reference type="BUSINESS_TERM">tir106-002</Reference>
             <DataType>Date</DataType>
         </Element>
         <Element>
@@ -85,7 +85,7 @@
             <Reference type="RULE">PEPPOL-T001-R011</Reference>
             <Reference type="RULE">PEPPOL-T001-R012</Reference>
             <Reference type="RULE">PEPPOL-T001-R030</Reference>
-            <Reference type="BUSINESS_TERM">tir81-003</Reference>
+            <Reference type="BUSINESS_TERM">tir106-003</Reference>
             <DataType>Time</DataType>
         </Element>
         <Element>
@@ -100,7 +100,6 @@
                     <Description>Electronic address of the economic operator.</Description>
 					<Reference type="RULE">PEPPOL-T001-R014</Reference>
 					<Reference type="RULE">PEPPOL-T001-R025</Reference>
-                    <Reference type="BUSINESS_TERM">tir81-030</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
@@ -115,7 +114,7 @@
                     <Term>cbc:IndustryClassificationCode</Term>
                     <Name>Economic operator type code</Name>
 					<Reference type="RULE">PEPPOL-T001-R026</Reference>
-                    <Reference type="BUSINESS_TERM">tir81-028</Reference>
+                    <Reference type="BUSINESS_TERM">tir106-028</Reference>
                     <Attribute>
                         <Term>listID</Term>
                         <Name>List identifier</Name>
@@ -136,7 +135,7 @@
                             identifier. Can be the registration number in the professional registry.
                         </Description>
 						<Reference type="RULE">PEPPOL-T001-R016</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-012</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-012</Reference>
                         <Attribute>
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
@@ -156,7 +155,7 @@
                         <Name>Economic operator name</Name>
                         <Description>The name of the economic operator.</Description>
 						<Reference type="RULE">PEPPOL-T001-R017</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-013</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-013</Reference>
 						<DataType>Text</DataType>
                     </Element>
                 </Element>
@@ -169,7 +168,7 @@
                         <Description>The main address line in an address. Usually the street name and number or post
                             office box
                         </Description>
-                        <Reference type="BUSINESS_TERM">tir81-015</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-015</Reference>
 						<DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -184,7 +183,7 @@
                         <Term>cbc:CityName</Term>
                         <Name>City</Name>
                         <Description>The common name of a city where the address is located.</Description>
-                        <Reference type="BUSINESS_TERM">tir81-017</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-017</Reference>
 						<DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -193,7 +192,7 @@
                         <Description>The identifier for an addressable group of properties according to the relevant
                             postal service, such as a ZIP code or Post Code.
                         </Description>
-						<Reference type="BUSINESS_TERM">tir81-018</Reference>
+						<Reference type="BUSINESS_TERM">tir106-018</Reference>
                         <DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -201,7 +200,7 @@
                         <Name>Country subdivision</Name>
                         <Description>The subdivision of a country such as region, county, state, province etc.
                         </Description>
-						<Reference type="BUSINESS_TERM">tir81-019</Reference>
+						<Reference type="BUSINESS_TERM">tir106-019</Reference>
                         <DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -214,7 +213,7 @@
                                 countries and their subdivisions". It is recommended to use the alpha-2 representation.
                             </Description>
 							<Reference type="RULE">PEPPOL-T001-R018</Reference>
-                            <Reference type="BUSINESS_TERM">tir81-020</Reference>
+                            <Reference type="BUSINESS_TERM">tir106-020</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference>
                             <Attribute>
                                 <Term>listID</Term>
@@ -243,7 +242,7 @@
                                     always be given by using ISO code 3166 alpha 2
                                 </Description>
 								<Reference type="RULE">PEPPOL-T001-R018</Reference>
-                                <Reference type="BUSINESS_TERM">tir81-014</Reference>
+                                <Reference type="BUSINESS_TERM">tir106-014</Reference>
                                 <Reference type="CODE_LIST">ISO3166</Reference>
                                 <Attribute>
                                     <Term>listID</Term>
@@ -266,7 +265,7 @@
                         <Name>Contact point</Name>
                         <Description>The name of the contact point.</Description>
 						<Reference type="RULE">PEPPOL-T001-R032</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-021</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-021</Reference>
 						<DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -274,7 +273,7 @@
                         <Name>Contact telephone number</Name>
                         <Description>TA phone number for the contact point</Description>
 						<Reference type="RULE">PEPPOL-T001-R032</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-023</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-023</Reference>
 						<DataType>Text</DataType>
                     </Element>
                     <Element cardinality="0..1">
@@ -282,7 +281,7 @@
                         <Name>Contact fax number</Name>
                         <Description>A fax number for the contact point.</Description>
 						<Reference type="RULE">PEPPOL-T001-R032</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-022</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-022</Reference>
 						<DataType>Text</DataType>
                     </Element>
                     <Element>
@@ -290,7 +289,7 @@
                         <Name>Contact email address</Name>
                         <Description>An e-mail address for the contact point.</Description>
 						<Reference type="RULE">PEPPOL-T001-R032</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-024</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-024</Reference>
 						<DataType>Text</DataType>
                     </Element>
                 </Element>
@@ -329,7 +328,7 @@
                             identification, such as KBO)
                         </Description>
 						<Reference type="RULE">PEPPOL-T001-R016</Reference>
-                        <Reference type="BUSINESS_TERM">tir81-009</Reference>
+                        <Reference type="BUSINESS_TERM">tir106-009</Reference>
                         <Attribute>
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
@@ -351,7 +350,7 @@
                 <Name>Lot identifier</Name>
                 <Description>An identifier for the lot.</Description>
 				<Reference type="RULE">PEPPOL-T001-R029</Reference>
-                <Reference type="BUSINESS_TERM">tir81-026</Reference>
+                <Reference type="BUSINESS_TERM">tir106-026</Reference>
 				<DataType>Identifier</DataType>
             </Element>
         </Element>

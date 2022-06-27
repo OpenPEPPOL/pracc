@@ -7,12 +7,12 @@ include::../../shared/peppol.adoc[]
 |===
 
 | TransactionID
-| Transaction name
+| UBL Transaction name
 | Short Description
 | `cbc:CustomizationID`
 
 | T022
 | UnsubscribeFromProcedureResponse
 | CA responds to the subscribe to procedure
-| urn:fdc:peppol.eu:prac:trns:t022:1.0
+| urn:fdc:peppol.eu:prac:trns:t022:1.2
 |===

@@ -89,4 +89,14 @@
 | UKL
 | Editorial changes related to links and references.
 
+| 2.1
+|31-05-2022| Felicia Tsakonas
+| adesso
+| Inclusion of Unsubscribe to Procedure elements.
+
+| 2.2
+|27-06-2022| Ansgar Mondorf
+| UKL
+| Editorial review and inclusion of BPMN for Unsubsribe to Procedure.
+
 |===

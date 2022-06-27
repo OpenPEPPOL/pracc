@@ -3,11 +3,11 @@
 
     <Name>PEPPOL Pre-Award</Name>
 
-    <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.1</Documentation>
-    <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure</Documentation>
-    <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation</Documentation>
-    <Documentation path="transactions/T021/index.html">T021 - Unsubscribe to Procedure</Documentation>
-    <Documentation path="transactions/T012/index.html">T022 - Unsubscribe to Procedure Confirmation</Documentation>
+    <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.2</Documentation>
+    <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure - 1.2</Documentation>
+    <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation - 1.2</Documentation>
+    <Documentation path="transactions/T021/index.html">T021 - Unsubscribe from Procedure - 1.2</Documentation>
+    <Documentation path="transactions/T022/index.html">T022 - Unsubscribe from Procedure Confirmation - 1.2</Documentation>
     <Documentation path="profiles/p002/index.html">P002 - Procurement document access - 1.1</Documentation>
     <Documentation path="transactions/T003/index.html">T003 - Tender Status Inquiry</Documentation>
     <Documentation path="transactions/T004/index.html">T004 - Call for Tenders</Documentation>
@@ -31,7 +31,7 @@
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
     <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
-    <Documentation path="profiles/p010/index.html">P010 - Message Level Response - 0.9</Documentation>
+    <Documentation path="profiles/p010/index.html">P010 - Message Level Response - 1.0</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Message Level Response</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
@@ -125,6 +125,16 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderingMessageResponse.xml</Path>
         <Title>Syntax Mapping T018 - Tendering Message Response</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/UnsubscribeFromProcedureRequest.xml</Path>
+        <Title>Syntax Mapping T021 - Unsubscribe From Procedure</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/UnsubscribeFromProcedureResponse.xml</Path>
+        <Title>Syntax Mapping T022 - Unsubscribe From Procedure Confirmation</Title>
     </Resource>
 
     <!-- Rules -->
@@ -235,6 +245,18 @@
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tendering-message-response/PEPPOL-T018.sch</Path>
         <Title>PEPPOL T018 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T021</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T021.sch</Path>
+        <Title>PEPPOL T021 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T022</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T022.sch</Path>
+        <Title>PEPPOL T022 rules</Title>
     </Resource>
     <Resource>
         <Identifier>BIIT004</Identifier>

@@ -18,13 +18,21 @@ All transactions within this profile uses the same profile identifier.
 | `cbc:ProfileID`
 
 | T001
-| ExpressionOfInterestRequest
+| Subscribe to Procedure
 | EO shows his interest in the procurement project
-.2+.^| urn:fdc:peppol.eu:prac:bis:p001:1.1
+.4+.^| urn:fdc:peppol.eu:prac:bis:p001:1.2
 
 | T002
-| ExpressionOfInterestResponse
+| Subscribe to Procedure Confirmation
 | CA sends acknowledgement to EO including all documents
+
+| T021
+| Unsubscribe from Procedure
+| EO wants to unsubscribe from the procurement project
+
+| T022
+| Unsubscribe from Procedure Confirmation
+| CA sends unsubscription acknowledgement to EO
 
 |===
 
