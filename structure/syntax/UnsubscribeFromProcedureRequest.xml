@@ -11,8 +11,8 @@
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL version identifier</Name>
-            <Reference type="RULE">PEPPOL-T001-R033</Reference>
-            <Reference type="RULE">PEPPOL-T001-R034</Reference>
+            <Reference type="RULE">PEPPOL-T021-R033</Reference>
+            <Reference type="RULE">PEPPOL-T021-R034</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">2.2</Value>
         </Element>
@@ -20,8 +20,8 @@
             <Term>cbc:CustomizationID</Term>
             <Name>Customization identifier</Name>
             <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
-            <Reference type="RULE">PEPPOL-T001-R001</Reference>
-            <Reference type="RULE">PEPPOL-T001-R002</Reference>
+            <Reference type="RULE">PEPPOL-T021-R001</Reference>
+            <Reference type="RULE">PEPPOL-T021-R002</Reference>
             <Reference type="BUSINESS_TERM">tir106-007</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
@@ -33,8 +33,8 @@
             <Name>Profile identifier</Name>
             <Description>Identifies the BII profile or business process context in which the transaction appears.
             </Description>
-            <Reference type="RULE">PEPPOL-T001-R003</Reference>
-            <Reference type="RULE">PEPPOL-T001-R004</Reference>
+            <Reference type="RULE">PEPPOL-T021-R003</Reference>
+            <Reference type="RULE">PEPPOL-T021-R004</Reference>
             <Reference type="BUSINESS_TERM">tir106-006</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p021:1.2</Value>
@@ -45,14 +45,14 @@
             <Description>An identifier that is suitable for identifying or referencing a document, MUST be expressed in
                 a UUID syntax (RFC 4122).
             </Description>
-            <Reference type="RULE">PEPPOL-T001-R005</Reference>
-            <Reference type="RULE">PEPPOL-T001-R008</Reference>
+            <Reference type="RULE">PEPPOL-T021-R005</Reference>
+            <Reference type="RULE">PEPPOL-T021-R008</Reference>
             <Reference type="BUSINESS_TERM">tir106-001</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
                 <Name>Scheme identifier</Name>
-                <Reference type="RULE">PEPPOL-T001-R006</Reference>
-                <Reference type="RULE">PEPPOL-T001-R007</Reference>
+                <Reference type="RULE">PEPPOL-T021-R006</Reference>
+                <Reference type="RULE">PEPPOL-T021-R007</Reference>
                 <Value type="FIXED">urn:uuid</Value>
             </Attribute>
             <DataType>Identifier</DataType>
@@ -64,7 +64,7 @@
                 in the procurement process. It is also known as procurement project identifier, procurement reference
                 number or contract folder identifier. Used as a link to the call for tenders.
             </Description>
-            <Reference type="RULE">PEPPOL-T001-R009</Reference>
+            <Reference type="RULE">PEPPOL-T021-R009</Reference>
             <Reference type="BUSINESS_TERM">tir106-005</Reference>
             <DataType>Identifier</DataType>
         </Element>
@@ -72,7 +72,7 @@
             <Term>cbc:IssueDate</Term>
             <Name>Unsubscribe from procedure issue date</Name>
             <Description>The date on which transaction is issued.</Description>
-            <Reference type="RULE">PEPPOL-T001-R010</Reference>
+            <Reference type="RULE">PEPPOL-T021-R010</Reference>
             <Reference type="BUSINESS_TERM">tir106-002</Reference>
             <DataType>Date</DataType>
         </Element>
@@ -82,9 +82,9 @@
             <Description>Time of issue of Transaction.The issue time must have granularity of seconds, and include time
                 zone information
             </Description>
-            <Reference type="RULE">PEPPOL-T001-R011</Reference>
-            <Reference type="RULE">PEPPOL-T001-R012</Reference>
-            <Reference type="RULE">PEPPOL-T001-R030</Reference>
+            <Reference type="RULE">PEPPOL-T021-R011</Reference>
+            <Reference type="RULE">PEPPOL-T021-R012</Reference>
+            <Reference type="RULE">PEPPOL-T021-R030</Reference>
             <Reference type="BUSINESS_TERM">tir106-003</Reference>
             <DataType>Time</DataType>
         </Element>
@@ -98,12 +98,13 @@
                     <Term>cbc:EndpointID</Term>
                     <Name>Economic operator electronic address identifier</Name>
                     <Description>Electronic address of the economic operator.</Description>
-					<Reference type="RULE">PEPPOL-T001-R014</Reference>
-					<Reference type="RULE">PEPPOL-T001-R025</Reference>
+					<Reference type="RULE">PEPPOL-T021-R014</Reference>
+					<Reference type="RULE">PEPPOL-T021-R025</Reference>
+                    <Reference type="BUSINESS_TERM">tir106-030</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+						<Reference type="RULE">PEPPOL-T021-R024</Reference>
                         <Reference type="CODE_LIST">EAS</Reference>
                         <Value type="EXAMPLE">9946</Value>
                     </Attribute>
@@ -113,13 +114,13 @@
                 <Element cardinality="0..1">
                     <Term>cbc:IndustryClassificationCode</Term>
                     <Name>Economic operator type code</Name>
-					<Reference type="RULE">PEPPOL-T001-R026</Reference>
+					<Reference type="RULE">PEPPOL-T021-R026</Reference>
                     <Reference type="BUSINESS_TERM">tir106-028</Reference>
                     <Attribute>
                         <Term>listID</Term>
                         <Name>List identifier</Name>
-						<Reference type="RULE">PEPPOL-T001-R027</Reference>
-						<Reference type="RULE">PEPPOL-T001-R028</Reference>
+						<Reference type="RULE">PEPPOL-T021-R027</Reference>
+						<Reference type="RULE">PEPPOL-T021-R028</Reference>
                         <Value type="FIXED">TendererRole</Value>
                     </Attribute>
 					<DataType>Code</DataType>
@@ -127,19 +128,19 @@
                 <Element>
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-					<Reference type="RULE">PEPPOL-T001-R014</Reference>
+					<Reference type="RULE">PEPPOL-T021-R014</Reference>
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Economic operator identifier</Name>
                         <Description>An identifier that identifies the economic operator, such as a legal registration
                             identifier. Can be the registration number in the professional registry.
                         </Description>
-						<Reference type="RULE">PEPPOL-T001-R016</Reference>
+						<Reference type="RULE">PEPPOL-T021-R016</Reference>
                         <Reference type="BUSINESS_TERM">tir106-012</Reference>
                         <Attribute>
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
-							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+							<Reference type="RULE">PEPPOL-T021-R015</Reference>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0088</Value>
                         </Attribute>
@@ -154,7 +155,7 @@
                         <Term>cbc:Name</Term>
                         <Name>Economic operator name</Name>
                         <Description>The name of the economic operator.</Description>
-						<Reference type="RULE">PEPPOL-T001-R017</Reference>
+						<Reference type="RULE">PEPPOL-T021-R017</Reference>
                         <Reference type="BUSINESS_TERM">tir106-013</Reference>
 						<DataType>Text</DataType>
                     </Element>
@@ -212,14 +213,14 @@
                                 with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of
                                 countries and their subdivisions". It is recommended to use the alpha-2 representation.
                             </Description>
-							<Reference type="RULE">PEPPOL-T001-R018</Reference>
+							<Reference type="RULE">PEPPOL-T021-R018</Reference>
                             <Reference type="BUSINESS_TERM">tir106-020</Reference>
                             <Reference type="CODE_LIST">ISO3166</Reference>
                             <Attribute>
                                 <Term>listID</Term>
                                 <Name>List identifier</Name>
-								<Reference type="RULE">PEPPOL-T001-R019</Reference>
-								<Reference type="RULE">PEPPOL-T001-R020</Reference>
+								<Reference type="RULE">PEPPOL-T021-R019</Reference>
+								<Reference type="RULE">PEPPOL-T021-R020</Reference>
                                 <Value type="FIXED">ISO3166-1:Alpha2</Value>
                             </Attribute>
 							<DataType>Code</DataType>
@@ -241,14 +242,14 @@
                                 <Description>The registration country code of the economic operator. The country should
                                     always be given by using ISO code 3166 alpha 2
                                 </Description>
-								<Reference type="RULE">PEPPOL-T001-R018</Reference>
+								<Reference type="RULE">PEPPOL-T021-R018</Reference>
                                 <Reference type="BUSINESS_TERM">tir106-014</Reference>
                                 <Reference type="CODE_LIST">ISO3166</Reference>
                                 <Attribute>
                                     <Term>listID</Term>
                                     <Name>List identifier</Name>
-									<Reference type="RULE">PEPPOL-T001-R019</Reference>
-									<Reference type="RULE">PEPPOL-T001-R020</Reference>
+									<Reference type="RULE">PEPPOL-T021-R019</Reference>
+									<Reference type="RULE">PEPPOL-T021-R020</Reference>
                                     <Value type="FIXED">ISO3166-1:Alpha2</Value>
                                 </Attribute>
 								<DataType>Code</DataType>
@@ -259,12 +260,12 @@
                 <Element>
                     <Term>cac:Contact</Term>
                     <Name>Contacting details</Name>
-					<Reference type="RULE">PEPPOL-T001-R031</Reference>
+					<Reference type="RULE">PEPPOL-T021-R031</Reference>
                     <Element>
                         <Term>cbc:Name</Term>
                         <Name>Contact point</Name>
                         <Description>The name of the contact point.</Description>
-						<Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="RULE">PEPPOL-T021-R032</Reference>
                         <Reference type="BUSINESS_TERM">tir106-021</Reference>
 						<DataType>Text</DataType>
                     </Element>
@@ -272,7 +273,7 @@
                         <Term>cbc:Telephone</Term>
                         <Name>Contact telephone number</Name>
                         <Description>TA phone number for the contact point</Description>
-						<Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="RULE">PEPPOL-T021-R032</Reference>
                         <Reference type="BUSINESS_TERM">tir106-023</Reference>
 						<DataType>Text</DataType>
                     </Element>
@@ -280,7 +281,7 @@
                         <Term>cbc:Telefax</Term>
                         <Name>Contact fax number</Name>
                         <Description>A fax number for the contact point.</Description>
-						<Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="RULE">PEPPOL-T021-R032</Reference>
                         <Reference type="BUSINESS_TERM">tir106-022</Reference>
 						<DataType>Text</DataType>
                     </Element>
@@ -288,7 +289,7 @@
                         <Term>cbc:ElectronicMail</Term>
                         <Name>Contact email address</Name>
                         <Description>An e-mail address for the contact point.</Description>
-						<Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="RULE">PEPPOL-T021-R032</Reference>
                         <Reference type="BUSINESS_TERM">tir106-024</Reference>
 						<DataType>Text</DataType>
                     </Element>
@@ -305,12 +306,12 @@
                     <Term>cbc:EndpointID</Term>
                     <Name>Contracting body electronic address identifier</Name>
                     <Description>Electronic address of the contracting body.</Description>
-					<Reference type="RULE">PEPPOL-T001-R013</Reference>
-					<Reference type="RULE">PEPPOL-T001-R025</Reference>
+					<Reference type="RULE">PEPPOL-T021-R013</Reference>
+					<Reference type="RULE">PEPPOL-T021-R025</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Electronic address identifier</Name>
-						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+						<Reference type="RULE">PEPPOL-T021-R024</Reference>
                         <Reference type="CODE_LIST">EAS</Reference>
                         <Value type="EXAMPLE">9930</Value>
                     </Attribute>
@@ -320,19 +321,19 @@
                 <Element>
                     <Term>cac:PartyIdentification</Term>
                     <Name>Party identification</Name>
-					<Reference type="RULE">PEPPOL-T001-R013</Reference>
+					<Reference type="RULE">PEPPOL-T021-R013</Reference>
                     <Element>
                         <Term>cbc:ID</Term>
                         <Name>Contracting body identifier</Name>
                         <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
                             identification, such as KBO)
                         </Description>
-						<Reference type="RULE">PEPPOL-T001-R016</Reference>
+						<Reference type="RULE">PEPPOL-T021-R016</Reference>
                         <Reference type="BUSINESS_TERM">tir106-009</Reference>
                         <Attribute>
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
-							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+							<Reference type="RULE">PEPPOL-T021-R015</Reference>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="EXAMPLE">0204</Value>
                         </Attribute>
@@ -349,7 +350,7 @@
                 <Term>cbc:ID</Term>
                 <Name>Lot identifier</Name>
                 <Description>An identifier for the lot.</Description>
-				<Reference type="RULE">PEPPOL-T001-R029</Reference>
+				<Reference type="RULE">PEPPOL-T021-R029</Reference>
                 <Reference type="BUSINESS_TERM">tir106-026</Reference>
 				<DataType>Identifier</DataType>
             </Element>

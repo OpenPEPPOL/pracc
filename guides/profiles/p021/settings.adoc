@@ -1,7 +1,0 @@
-//include::links.adoc[]
-
-include::../shared/settings.adoc[]
-
-:version: 1.1.0
-:name-profile-org: Profile BII46  "Unsubscribe to Procedure" (CWA 17027-111)
-:name-profile: Profile P021 - "Procurement procedure cancellation" 0.9

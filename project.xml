@@ -48,6 +48,16 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
+        <Path>structure/syntax/UnsubscribeFromProcedure.xml</Path>
+        <Title>Syntax Mapping T021 - Unsubscribe From Procedure Request</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/UnsubscribeFromProcedureResponse.xml</Path>
+        <Title>Syntax Mapping T022 - Unsubscribe From Procedure Response</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
         <Path>structure/syntax/TenderStatusRequest.xml</Path>
         <Title>Syntax Mapping T003 - Tender Status Request</Title>
     </Resource>
@@ -126,16 +136,6 @@
         <Path>structure/syntax/TenderingMessageResponse.xml</Path>
         <Title>Syntax Mapping T018 - Tendering Message Response</Title>
     </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/UnsubscribeFromProcedureRequest.xml</Path>
-        <Title>Syntax Mapping T021 - Unsubscribe From Procedure</Title>
-    </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/UnsubscribeFromProcedureResponse.xml</Path>
-        <Title>Syntax Mapping T022 - Unsubscribe From Procedure Confirmation</Title>
-    </Resource>
 
     <!-- Rules -->
     <Resource>
@@ -149,6 +149,18 @@
         <Type>native:Schematron</Type>
         <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T002.sch</Path>
         <Title>PEPPOL T002 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T021</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T021.sch</Path>
+        <Title>PEPPOL T021 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T022</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T022.sch</Path>
+        <Title>PEPPOL T022 rules</Title>
     </Resource>
     <Resource>
         <Identifier>T003</Identifier>
@@ -245,18 +257,6 @@
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tendering-message-response/PEPPOL-T018.sch</Path>
         <Title>PEPPOL T018 rules</Title>
-    </Resource>
-    <Resource>
-        <Identifier>T021</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T021.sch</Path>
-        <Title>PEPPOL T021 rules</Title>
-    </Resource>
-    <Resource>
-        <Identifier>T022</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T022.sch</Path>
-        <Title>PEPPOL T022 rules</Title>
     </Resource>
     <Resource>
         <Identifier>BIIT004</Identifier>
