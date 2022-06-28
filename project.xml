@@ -48,7 +48,7 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/UnsubscribeFromProcedure.xml</Path>
+        <Path>structure/syntax/UnsubscribeFromProcedureRequest.xml</Path>
         <Title>Syntax Mapping T021 - Unsubscribe From Procedure Request</Title>
     </Resource>
     <Resource>
