@@ -4,10 +4,10 @@
     <Name>PEPPOL Pre-Award</Name>
 
     <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.2</Documentation>
-    <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure - 1.2</Documentation>
-    <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation - 1.2</Documentation>
-    <Documentation path="transactions/T021/index.html">T021 - Unsubscribe from Procedure - 1.2</Documentation>
-    <Documentation path="transactions/T022/index.html">T022 - Unsubscribe from Procedure Confirmation - 1.2</Documentation>
+    <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure</Documentation>
+    <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation</Documentation>
+    <Documentation path="transactions/T021/index.html">T021 - Unsubscribe from Procedure</Documentation>
+    <Documentation path="transactions/T022/index.html">T022 - Unsubscribe from Procedure Confirmation</Documentation>
     <Documentation path="profiles/p002/index.html">P002 - Procurement document access - 1.1</Documentation>
     <Documentation path="transactions/T003/index.html">T003 - Tender Status Inquiry</Documentation>
     <Documentation path="transactions/T004/index.html">T004 - Call for Tenders</Documentation>
