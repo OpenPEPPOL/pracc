@@ -193,12 +193,19 @@
         <Element cardinality="1..n">
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document references.</Name>
-            <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
+            <Description>Additional document reference is used for identifying the procurement procedure and the
+                questions for the procurement project. The ContractFolderID must be at least provided.
+                Additional references may be included to locate the questions for LotGroups or Lots.
+            </Description>
             <Reference type="RULE">PEPPOL-T007-R029</Reference>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
-                <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+                <Description>Used as a link to the call for tenders (also known as procurement project identifier,
+                    procurement reference number or contract folder identifier). The contract folder ID must be at
+                    least provided. Element can be repeated and also used as an identifier to the LotGroups and Lots
+                    to which the tendering question applies. XPath expressions are
+                     used to locate the questions.</Description>
                 <Attribute>
                     <Term>schemeName</Term>
                     <Name>Scheme name</Name>
@@ -209,7 +216,8 @@
             <Element cardinality="0..n">
                 <Term>cbc:XPath</Term>
                 <Name>Reference to an cac:Attachment</Name>
-                <Description>An xpath expression to reference an cac:Attachment where questions can be asked or refer a file within the ASiC-e.</Description>
+                <Description>An xpath expression to reference an cac:Attachment where questions can be described or
+                    referenced to an attached file within the ASiC-e.</Description>
                 <Reference type="RULE">PEPPOL-T007-R030</Reference>
                 <DataType>cbc:XPathType</DataType>
             </Element>

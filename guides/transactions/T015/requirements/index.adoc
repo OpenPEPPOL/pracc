@@ -16,9 +16,6 @@ include::eFormsReq.adoc[]
 
 include::data-model.adoc[]
 
-include::eFormsReq.adoc[]
-
-include::data-model.adoc[]
 
 
 :leveloffset: -1
