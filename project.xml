@@ -361,10 +361,10 @@
 
     <Resource>
         <Type>native:File</Type>
-        <Path>guides/BIS-eDelivery-guide-for-pre-award-v1.2.pdf</Path>
+        <Path>guides/BIS-eDelivery-guide-for-pre-award-v1.3.pdf</Path>
         <Title>eDelivery Guide For Pre-award</Title>
         <Description>The eDelivery Guide for Pre-award</Description>
-        <Property key="download">BIS-eDelivery-guide-for-pre-award-v1.2.pdf</Property>
+        <Property key="download">BIS-eDelivery-guide-for-pre-award-v1.3.pdf</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
