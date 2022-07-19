@@ -224,6 +224,11 @@
                     to which the tender clarification request applies. XPath expressions can than be used to locate
                     the questions.
                 </Description>
+                <Attribute>
+                    <Term>schemeName</Term>
+                    <Name>Scheme name</Name>
+                    <Description>Valid values are ContractFolderID, LotGroup or Lot.</Description>
+                </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
             <Element cardinality="0..n">
