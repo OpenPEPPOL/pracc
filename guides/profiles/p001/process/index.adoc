@@ -3,8 +3,7 @@
 
 The following diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
-image::../images/P001bpmn.svg[align="center", width=800]
-
+image::../images/p001bpmn.png[align="center", width=800]
 
 [cols="3,9", options="header"]
 |===
@@ -25,7 +24,7 @@ image::../images/P001bpmn.svg[align="center", width=800]
 | Role involved
 | Description
 
-| Express interest for business opportunity
+| Express interest in business opportunity
 | Economic operator
 | An economic operator has found an interesting business opportunity in a long list of published notices. He expresses his interest and subscribes to the tendering procedure by sending the expression of interest.
 

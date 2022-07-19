@@ -138,6 +138,7 @@
                         <Name>List identifier</Name>
 						<Reference type="RULE">PEPPOL-T001-R027</Reference>
 						<Reference type="RULE">PEPPOL-T001-R028</Reference>
+                        <Reference type="CODE_LIST">tendererRole</Reference>
                         <Value type="FIXED">TendererRole</Value>
                     </Attribute>
 					<DataType>Code</DataType>

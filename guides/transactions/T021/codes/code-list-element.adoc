@@ -20,8 +20,8 @@
 | `TendererRole` (listID)
 | Document location
 | `UnsubscribeFromProcedureRequest/cac:EconomicParty/cac:Party/cbc:IndustryClassificationCode`
-| Source codelist
-| http://wiki.ds.unipi.gr/download/attachments/31424661/TendererRole.pdf?version=1&modificationDate=1478593740000&api=v2[TendererRole.pdf]
+| Issuer
+| {link-peppol}
 |===
 
 
