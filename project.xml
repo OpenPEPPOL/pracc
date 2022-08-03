@@ -33,6 +33,8 @@
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
     <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response</Documentation>
+    <Documentation path="profiles/p010/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
+    <Documentation path="transactions/T018/index.html">T019 - Tenderer Qualification Response</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->

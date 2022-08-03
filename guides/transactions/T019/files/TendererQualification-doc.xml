@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TendererQualification xmlns="urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+            urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/maindoc/UBL-TendererQualification-2.2.xsd
+            urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonBasicComponents-2.2.xsd
+            urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2 http://docs.oasis-open.org/ubl/os-UBL-2.2/xsdrt/common/UBL-CommonAggregateComponents-2.2.xsd">
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t019:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p011:1.0</cbc:ProfileID>
+    <cbc:ID schemeURI="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID>
+    <cbc:ContractFolderID>ID</cbc:ContractFolderID>
+    <cbc:IssueDate>2020-05-10</cbc:IssueDate>
+    <cbc:IssueTime>14:34:27+01:00</cbc:IssueTime>
+    <cbc:VersionID>?</cbc:VersionID>
+    <cac:TendererPartyQualification>
+        <cac:InterestedProcurementProjectLot>
+            <cbc:ID>Lot reference 1</cbc:ID>
+        </cac:InterestedProcurementProjectLot>
+        <cac:InterestedProcurementProjectLot>
+            <cbc:ID>Lot reference 2</cbc:ID>
+        </cac:InterestedProcurementProjectLot>
+        <cac:InterestedProcurementProjectLot>
+            <cbc:ID>Lot reference 3</cbc:ID>
+        </cac:InterestedProcurementProjectLot>
+        <cac:MainQualifyingParty>
+            <cac:Party>
+                <cbc:EndpointID schemeID="uuid">endpointID</cbc:EndpointID>
+                <cac:PartyIdentification>
+                    <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+                </cac:PartyIdentification>
+                <cac:PartyName>
+                    <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
+                </cac:PartyName>
+                <cac:PostalAddress>
+                    <cbc:StreetName>Street Name 1</cbc:StreetName>
+                    <cbc:AdditionalStreetName>Street Name 2</cbc:AdditionalStreetName>
+                    <cbc:CityName>City</cbc:CityName>
+                    <cbc:PostalZone>post code</cbc:PostalZone>
+                    <cbc:CountrySubentity>Code</cbc:CountrySubentity>
+                    <cac:Country>
+                        <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:PostalAddress>
+                <cac:PartyLegalEntity>
+                    <cbc:CompanyLegalFormCode>LegalForm</cbc:CompanyLegalFormCode>
+                </cac:PartyLegalEntity>
+                <cac:Contact>
+                    <cbc:Name>ContactName</cbc:Name>
+                    <cbc:Telephone>Phone</cbc:Telephone>
+                    <cbc:Telefax>Fax</cbc:Telefax>
+                    <cbc:ElectronicMail>email</cbc:ElectronicMail>
+                </cac:Contact>
+            </cac:Party>
+            <cac:EconomicOperatorRole>
+                <cbc:RoleCode>rolle</cbc:RoleCode>
+            </cac:EconomicOperatorRole>
+        </cac:MainQualifyingParty>
+    </cac:TendererPartyQualification>
+    <cac:ContractingParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">7300010000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
+            </cac:PartyName>
+        </cac:Party>
+    </cac:ContractingParty>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>callForTenderReferenceId</cbc:ID>
+        <cbc:UUID>lot reference1</cbc:UUID>
+        <cbc:DocumentTypeCode listID="UNCL1001">913</cbc:DocumentTypeCode> <!--1-->
+        <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode>
+        <cbc:VersionID>CallForTenderVersion</cbc:VersionID>
+        <cbc:DocumentDescription>dsfa</cbc:DocumentDescription>
+        <cac:Attachment>
+            <cac:ExternalReference>
+                <cbc:URI>url from call for tender</cbc:URI>
+                <cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash>
+                <cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod>
+                <cbc:MimeCode>application/xml</cbc:MimeCode>
+                <cbc:FileName>Document name</cbc:FileName>
+                <cbc:Description>size</cbc:Description>
+            </cac:ExternalReference>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+</TendererQualification>

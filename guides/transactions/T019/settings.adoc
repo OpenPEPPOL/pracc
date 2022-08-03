@@ -1,0 +1,14 @@
+include::../shared/settings.adoc[]
+
+:name-profile: Profile P005 - "Tender Clarification"
+
+:name-transaction-org: "Trdm086 Tenderer Qualification transaction"
+:name-transaction: T019 - Tenderer Qualification Request 1.0
+:name-trans-short: Tender Qualification Request
+:name-syntax: TendeQualificationRequest
+
+include::../shared/links.adoc[]
+
+:name-profile-org: https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:62031,2073699&cs=149BB8DEACBF2C6757A8678435583AD82["Profile 49 — Qualification" (CWA 17027-114:2016)]
+
+:xml-doc-file: files/TendererQualification-doc.xml
