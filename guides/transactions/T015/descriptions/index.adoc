@@ -16,7 +16,7 @@ The transaction including business terms, business rules and code lists are base
 include::../files/ExamplePublishNotice.xml[tags=submit-objects-request;!specification-identification;!business-process-type-identifier;!issue-date-time;!sender-electronic-address;!receiver-electronic-address;!publication-requested;!registry-object-list]
 ....
 
-== Issue Date and time
+== Issue Date and time (and preferred publication date)
 
 Issue date/time, and the registered date/time must be sent.
 
@@ -46,18 +46,6 @@ include::../files/ExamplePublishNotice.xml[tags=issue-date-time]
 <.> SlotValue type has to be DateTimeValue
 <.> Value tag were the issue date time has to be put, including the time zone
 
-== Publication Request Indicator
-
-This indicator shows if the attached notice needs to be published or if it only needs to be validated by the publication body. The check by the publication body can help the contracting party to determine the validity of the notice with regard to a possible publication.
-
-[source,xml,indent=0]
-.Example of usage of publication request indicator
-....
-include::../files/ExamplePublishNotice.xml[tags=publication-requested]
-....
-<.> Slot for the indication of the publication of the attached notices
-<.> SlotValue type has to be BooleanValueType
-
 === Publication Request Indicator
 
 This indicator shows if the attached notice needs to be published or if it only needs to be validated by the publication body. The check by the publication body can help the contracting party to determine the validity of the notice with regard to a possible publication.
@@ -67,6 +55,16 @@ include::../files/ExamplePublishNotice.xml[tags=publication-requested]
 ....
 <.> Slot for the indication of the publication of the attached notices
 <.> SlotValue type has to be BooleanValueType
+
+=== Preferred Publication Date
+
+In case the publication of the attached notices should not be with the sending of this transaction, use the field to enter a preferred publication date. Otherwise, this field should not be included as well as when no publication is preferred.
+[source,xml,indent=0]
+....
+include::../files/ExamplePublishNotice.xml[tags=publication-date]
+....
+<.> Slot for the preferred publication date of the attached notices
+<.> SlotValue type has to be DateTimeValueType (please refer to the general hints about using a dateTime Slot above)
 
 
 == Registry Object (List)
