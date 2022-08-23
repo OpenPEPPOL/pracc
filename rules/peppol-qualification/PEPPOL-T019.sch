@@ -201,7 +201,5 @@
         <rule context="ubl:TendererQualification/cac:TendererPartyQualification/cac:ProcurementProjectLot/cbc:ID">
             <report id="PEPPOL-T019-S359" flag="warning" test="./@*"><value-of select="$syntaxError"/>Procurement Project Lot Identifier SHOULD NOT contain any attributes</report>
         </rule>
-
-        -->
     </pattern>
 </schema>
