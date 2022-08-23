@@ -10,8 +10,8 @@ include::../../shared/peppol.adoc[]
 | Short Description
 | `cbc:CustomizationID`
 
-| T010
-| TenderClarification
-| The EO sends the tender clarification to the CA.
-| urn:fdc:peppol.eu:prac:trns:t010:1.1
+| T020
+| QualificationReceptionNotification
+| The EO sends the qualification reception notification to the CA.
+| urn:fdc:peppol.eu:prac:trns:t020:1.0
 |===

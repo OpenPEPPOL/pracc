@@ -1,7 +1,7 @@
 
 = Scope
 
-This guide aims to provide insight into transaction details for the transaction model Trdm083 "Call for tender".
+This guide aims to provide insight into transaction details for the transaction model Trdm042 "Qualification Reception Notification".
 It is a transaction description, meant to be a standalone description to be used as a part of one or more procurement profiles.
 It describes syntax mappings, requirements, rules and use case with example.
 

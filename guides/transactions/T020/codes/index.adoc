@@ -6,6 +6,7 @@ NOTE: Additional code lists are listed in the CEN BII documents, and must also b
 
 :leveloffset: +1
 
+include::code-list-element.adoc[]
 include::code-list-identifers-scheme.adoc[]
 
 :leveloffset: -1

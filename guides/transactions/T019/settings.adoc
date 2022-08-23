@@ -1,11 +1,11 @@
 include::../shared/settings.adoc[]
 
-:name-profile: Profile P005 - "Tender Clarification"
+:name-profile: Profile P011 - "Qualification"
 
-:name-transaction-org: "Trdm086 Tenderer Qualification transaction"
-:name-transaction: T019 - Tenderer Qualification Request 1.0
-:name-trans-short: Tender Qualification Request
-:name-syntax: TendeQualificationRequest
+:name-transaction-org: "Trdm086 Qualification transaction"
+:name-transaction: T019 - Qualification Request 1.0
+:name-trans-short: Qualification Request
+:name-syntax: QualificationRequest
 
 include::../shared/links.adoc[]
 
