@@ -17,7 +17,7 @@
     <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p011:1.0</cbc:ProfileID>
     <!-- end::ProfileID[] -->
     <cbc:ID schemeURI="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID>
-    <cbc:ContractFolderID>ID</cbc:ContractFolderID>
+    <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
     <!-- tag::IssueDateTime[] -->
     <cbc:IssueDate>2020-05-10</cbc:IssueDate>
     <cbc:IssueTime>14:34:27+01:00</cbc:IssueTime>
@@ -94,7 +94,7 @@
         <cbc:UUID>4946060c-f428-475f-9d81-39409bdf32bd::1</cbc:UUID>   <!--.-->
         <cbc:DocumentTypeCode listID="UNCL1001">913</cbc:DocumentTypeCode>   <!--.-->
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode>   <!--.-->
-        <cbc:VersionID>CallForTenderVersion</cbc:VersionID>   <!--.-->
+        <cbc:VersionID>1</cbc:VersionID>   <!--.-->
         <cbc:DocumentDescription>textual document description</cbc:DocumentDescription>   <!--.-->
         <cac:Attachment>   <!--.-->
             <cac:ExternalReference>
