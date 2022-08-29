@@ -17,13 +17,13 @@ All transactions within this profile uses the same profile identifier.
 | Short Description
 | `cbc:ProfileID`
 
-| T005
-| Tender
-| EO sends his tender for the procurement project to CA
-.2+.^| urn:fdc:peppol.eu:prac:bis:p003:1.1
+| T019
+| Qualification
+| EO sends his qualification documents for the procurement project to CA
+.2+.^| urn:fdc:peppol.eu:prac:bis:p011:1.0
 
-| T006
-| TenderReceipt
+| T020
+| Qualification Receipt
 | CA sends acknowledgement to EO
 
 |===
