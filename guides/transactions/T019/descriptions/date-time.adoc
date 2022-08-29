@@ -19,8 +19,7 @@ Issue time is xs:time data type, and the time is specified as "hh:mm:ss" where:
 NOTE: The issue time must specify the time zone.
 
 [source,xml,indent=0]
-.Example of Issue date/time
-
-----
-include::../{xml-doc-file}[tags=IssueDate;IssueTime]
-----
+.Example of UBL Version Identifier
+....
+include::../files/Qualification-doc.xml[tags=IssueDateTime]
+....

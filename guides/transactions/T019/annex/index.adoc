@@ -1,10 +1,10 @@
 [appendix]
 = Key examples/use cases
 
-link:files/TenderQualification-doc.xml[Link to example file]
+link:files/Qualification-doc.xml[Link to example file]
 
 [source,xml,role="hide-callouts"]
 .Example file for {name-transaction}
 ----
-include::../files/TendererQualification-doc.xml[tag=**]
+include::../files/Qualification-doc.xml[tag=**]
 ----
