@@ -2,13 +2,13 @@ include::../shared/settings.adoc[]
 
 :name-profile: Profile P011 - "Qualification"
 
-:name-transaction-org: "Trdm042 Qualification Reception Notification transaction"
+:name-transaction-org: "T020 - Qualification Reception Notification transaction"
 :name-transaction: T020 - Qualification Reception Notification 1.0
 :name-trans-short: Qualification Reception Notification
 :name-syntax: QualificationReceptionNotification
 
 include::../shared/links.adoc[]
 
-:name-profile-org: https://standards.cen.eu/dyn/www/f?p=204:110:0::::FSP_PROJECT:62032&cs=1605295EF37255C56EA0FDCA8C8362709["Profile 42 — Tender Clarification" (CWA 17027-115:2016)]
+:name-profile-org: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62031&cs=1B70B853F56C648B3483016CF296DFC0A["Profile 49 — Qualification" (CWA 17027-114:2016)]
 
 :xml-doc-file: files/TendererQualificationResponse-doc.xml
