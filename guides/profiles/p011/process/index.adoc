@@ -8,7 +8,7 @@ The following process flows and use cases describe how the Qualification can be 
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 
-image::BPMNqualification.png[align="center", width=800]
+image::bpmnQualification.svg[align="center", width=800]
 
 [cols="2,10", options="header"]
 .Business process

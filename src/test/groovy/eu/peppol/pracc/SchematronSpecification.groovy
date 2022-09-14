@@ -68,8 +68,8 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWBV.xml'
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'
-        'rules/peppol-qualification/PEPPOL-T019.sch'                        | 'guides/transactions/T019/files/TendererQualification-doc.xml'
-        'rules/peppol-qualification/PEPPOL-T020.sch'                        | 'guides/transactions/T020/files/TendererQualificationResponse-doc.xml'
+        'rules/peppol-qualification/PEPPOL-T019.sch'                        | 'guides/transactions/T019/files/Qualification-doc.xml'
+        'rules/peppol-qualification/PEPPOL-T020.sch'                        | 'guides/transactions/T020/files/QualificationResponse-doc.xml'
     }
 
     static Map<String, Schema> schemaCache = new HashMap<>()
@@ -114,8 +114,8 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T018/files/ExampleTenderingMessageResponseBWNF.xml'   | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
         'guides/transactions/T018/files/ExampleTenderingMessageResponseWT.xml'     | 'xsdrt/maindoc/UBL-ApplicationResponse-2.2.xsd'
-        'guides/transactions/T019/files/TendererQualification-doc.xml'             | 'xsdrt/maindoc/UBL-TendererQualification-2.2.xsd'
-        'guides/transactions/T020/files/TendererQualificationResponse-doc.xml'     | 'xsdrt/maindoc/UBL-TenderReceipt-2.2.xsd'
+        'guides/transactions/T019/files/Qualification-doc.xml'                     | 'xsdrt/maindoc/UBL-TendererQualification-2.2.xsd'
+        'guides/transactions/T020/files/QualificationResponse-doc.xml'             | 'xsdrt/maindoc/UBL-TenderReceipt-2.2.xsd'
         'guides/transactions/T021/files/UnsubscribeFromProcedureRequest.xml'       | 'xsdrt/maindoc/UBL-UnsubscribeFromProcedureRequest-2.2.xsd'
         'guides/transactions/T022/files/UnsubscribeFromProcedureResponse.xml'      | 'xsdrt/maindoc/UBL-UnsubscribeFromProcedureResponse-2.2.xsd'
     }
