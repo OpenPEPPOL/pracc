@@ -9,5 +9,5 @@ The Tendering Message Response data model in this PEPPOL BIS is bound to the {li
 
 {link-peppol} {name-profile} business process includes 1 transactions:
 
-* link:../../transactions/T018/index.html[T088 - Tendering Message Response]
+* link:../../transactions/T018/index.html[T018 - Tendering Message Response]
 
