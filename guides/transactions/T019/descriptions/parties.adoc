@@ -1,0 +1,35 @@
+= Parties
+
+== Economic operator
+
+The economic operator is the party submitting the tender, and is any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.
+
+
+[source,xml,indent=0]
+.Economic operator is represented in UBL 2.2 using the TendererParty
+----
+include::../files/Qualification-doc.xml[tags=MainQualifyingParty]
+----
+
+<.> Identifies the economics operator's electronic address and the scheme identifier for the electronic address
+<.> The national identifier of a economic operator as it is legally registered (e.g. VAT identification, such as KBO)
+<.> Name of the economic operator, as registered
+<.> Postal address of the economic operator
+<.> Legal form of the economic operator
+<.> Details to the country of the economic operator, with accompanying code list
+<.> Further contact details to the economic operator
+<.> Tendering role of the economic operator
+
+== Contracting Body
+
+The contracting body is the contracting authority or contracting entity who is buying supplies, services or tendering works.
+
+[source,xml,indent=0]
+.Example
+
+----
+include::../files/Qualification-doc.xml[tags=ContractingParty]
+----
+<.> Identifies the contracting party's electronic address and the scheme identifier for the electronic address
+<.> The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)
+<.> The name of the contracting body as it is registered

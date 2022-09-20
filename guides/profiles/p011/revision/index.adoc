@@ -1,0 +1,10 @@
+
+
+= Revision history
+
+[cols="1,2,3,2,4", options="header"]
+|===
+| Version | Date | Author | Organization | Description
+| 0.9 | 29-08-2022 | Felicia Tsakonas | adesso SE | First draft for review
+
+|===

@@ -1,0 +1,11 @@
+
+
+= Contributors
+
+[cols="2,5,5", options="header"]
+|===
+| Country | Name | Organization
+| DE | Felicia Tsakonas | adesso SE
+| DE | Ansgar Mondorf |University of Koblenz-Landau
+
+|===

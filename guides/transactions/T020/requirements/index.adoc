@@ -1,0 +1,19 @@
+
+= Transaction business and information requirements
+
+The following tables describe the transaction business and information requirements of "{name-transaction}", it inherits from the profile
+
+* {name-profile-org}
+
+created by {link-bii3}.
+
+By submitting a qualification reception confirmation the contracting authority confirms that he has received a qualification. The qualification reception confirmation does not imply that the qualification is valid or complete.
+
+
+
+:leveloffset: +1
+
+include::transaction-business-requirements.adoc[]
+
+
+:leveloffset: -1

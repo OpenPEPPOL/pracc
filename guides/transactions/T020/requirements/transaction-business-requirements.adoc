@@ -1,0 +1,15 @@
+
+= Identification and description of the requirements
+
+[cols="2,10a", options="header"]
+.Transaction business requirements of {name-transaction}
+|===
+| ID | Requirement
+| tbr42-001 | The Qualification Reception Notification shall have its own ID, date and time (and timezone) of issue and name or identification of its sender and receiver.
+| tbr42-005 | The Qualification Reception Notification shall refer to the Tender documents that were received and to the procurement project.
+| tbr42-002 | The Qualification Reception Notification shall state the date and time the tender was received
+| tbr42-003 | The Qualification Reception Notification shall NOT give an assessment on completeness or validity of the tender.
+| tbr42-006 | The Qualification Reception Notification may state the object of the tendered contract.
+| tbr42-007 | It shall be possible to check the integrity of the received document(s), e.g. by quoting the hash values.
+| tbr42-008 | It shall be possible to check the integrity of the Qualification Reception Notification
+|===

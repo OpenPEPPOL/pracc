@@ -33,6 +33,9 @@
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
     <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response</Documentation>
+    <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
+    <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
+    <Documentation path="transactions/T020/index.html">T020 - Qualification Receipt</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
@@ -135,6 +138,11 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderingMessageResponse.xml</Path>
         <Title>Syntax Mapping T018 - Tendering Message Response</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/QualificationReceipt.xml</Path>
+        <Title>Syntax Mapping T020 - Qualification Response</Title>
     </Resource>
 
     <!-- Rules -->
@@ -257,6 +265,12 @@
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tendering-message-response/PEPPOL-T018.sch</Path>
         <Title>PEPPOL T018 rules</Title>
+    </Resource>
+    <Resource>
+        <Identifier>T020</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-qualification/PEPPOL-T020.sch</Path>
+        <Title>PEPPOL T020 rules</Title>
     </Resource>
     <Resource>
         <Identifier>BIIT004</Identifier>
