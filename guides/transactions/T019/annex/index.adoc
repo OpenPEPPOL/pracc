@@ -1,5 +1,9 @@
 [appendix]
-= Key examples/use cases
+
+== Data Model
+image::../files/DataModelQualification.png[align="center"]
+
+== Key examples/use cases
 
 link:files/Qualification-doc.xml[Link to example file]
 

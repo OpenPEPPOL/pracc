@@ -213,14 +213,140 @@
 						</Element>
 					</Element>
 				</Element>
+			</Element>
+			<Element cardinality="0..n">
+				<Term>cac:AdditionalQualifyingParty</Term>
+				<Name>Additional qualifying party</Name>
 				<Element>
-					<Term>cac:EconomicOperatorRole</Term>
-					<Name>Economic operator role</Name>
+					<Term>cac:Party</Term>
+					<Name>Economic operator</Name>
+					<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
 					<Element>
-						<Term>cbc:RoleCode</Term>
-						<Name>Role code</Name>
-						<Description>The role of the economic operator when bidding from a consortium. (main contractor, subcontractor , additional)</Description>
-						<DataType>Text</DataType>
+						<Term>cbc:EndpointID</Term>
+						<Name>Economic operator electronic address identifier</Name>
+						<Description>Electronic address of the economic operator.</Description>
+						<Attribute>
+							<Term>schemeID</Term>
+							<Name>Scheme identifier for electronic address identifier</Name>
+							<Reference type="CODE_LIST">EAS</Reference>
+							<Value type="EXAMPLE">9930</Value>
+						</Attribute>
+						<DataType>Identifier</DataType>
+						<Value type="EXAMPLE">DE122268496</Value>
+					</Element>
+					<Element>
+						<Term>cac:PartyIdentification</Term>
+						<Name>Party identification</Name>
+						<Element>
+							<Term>cbc:ID</Term>
+							<Name>Economic operator identifier</Name>
+							<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+							<Attribute>
+								<Term>schemeID</Term>
+								<Name>Scheme identifier for party identifier</Name>
+								<Reference type="CODE_LIST">ICD</Reference>
+								<Value type="EXAMPLE">0204</Value>
+							</Attribute>
+							<DataType>Identifier</DataType>
+							<Value type="EXAMPLE">991-1234512345-06</Value>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:PartyName</Term>
+						<Name>Party name</Name>
+						<Element>
+							<Term>cbc:Name</Term>
+							<Name>Economic operator name</Name>
+							<Description>The name of the economic operator.</Description>
+							<DataType>Text</DataType>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:PostalAddress</Term>
+						<Name>Postal address</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:StreetName</Term>
+							<Name>Address line 1</Name>
+							<Description>The main address line in an address.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:AdditionalStreetName</Term>
+							<Name>Address line 2</Name>
+							<Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:CityName</Term>
+							<Name>City</Name>
+							<Description>The common name of a city where the address is located.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:PostalZone</Term>
+							<Name>Post code</Name>
+							<Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:CountrySubentity</Term>
+							<Name>Country subdivision</Name>
+							<Description>The subdivision of a country such as region, county, state, province etc.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cac:Country</Term>
+							<Name>Country</Name>
+							<Element>
+								<Term>cbc:IdentificationCode</Term>
+								<Name>Country code</Name>
+								<Description>A code that identifies the country.</Description>
+								<Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
+								<Attribute>
+									<Term>listID</Term>
+									<Name>List identifier for country code</Name>
+								</Attribute>
+								<DataType>Code</DataType>
+							</Element>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:PartyLegalEntity</Term>
+						<Name>Party legal entity</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:CompanyLegalForm</Term>
+							<Name>Economic operator legal form</Name>
+							<Description>A textual description of the legal form of the economic operator.</Description>
+							<DataType>Text</DataType>
+						</Element>
+					</Element>
+					<Element cardinality="0..1">
+						<Term>cac:Contact</Term>
+						<Name>Contact information</Name>
+						<Element cardinality="0..1">
+							<Term>cbc:Name</Term>
+							<Name>Contact point</Name>
+							<Description>The name of the contact point.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:Telephone</Term>
+							<Name>Contact telephone number</Name>
+							<Description>A phone number for the contact point.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:Telefax</Term>
+							<Name>Contact fax number</Name>
+							<Description>A fax number for the contact point.</Description>
+							<DataType>Text</DataType>
+						</Element>
+						<Element cardinality="0..1">
+							<Term>cbc:ElectronicMail</Term>
+							<Name>Contact email address</Name>
+							<Description>An e-mail address for the contact point.</Description>
+							<DataType>Text</DataType>
+						</Element>
 					</Element>
 				</Element>
 			</Element>
@@ -285,12 +411,6 @@
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
-				<Term>cbc:UUID</Term>
-				<Name>Qualification reference lot identifier</Name>
-				<Description>A reference to the lot of the call for tender document</Description>
-				<DataType>Identifier</DataType>
-			</Element>
-			<Element>
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
 				<Description>A code specifying the type of the document.</Description>
@@ -301,6 +421,12 @@
 					<Value type="FIXED">UNCL1001</Value>
 				</Attribute>
 				<DataType>Code</DataType>
+			</Element>
+			<Element>
+				<Term>cbc:XPath</Term>
+				<Name>Party reference</Name>
+				<Description>A reference to party whos documents are attached in this field.</Description>
+				<DataType>Text</DataType>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:LocaleCode</Term>

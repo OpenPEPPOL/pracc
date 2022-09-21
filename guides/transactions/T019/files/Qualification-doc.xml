@@ -115,10 +115,8 @@
     <!-- tag::AdditionalDocumentReference[] -->
     <cac:AdditionalDocumentReference>
         <cbc:ID>94f467cc-dc7c-464e-aea8-82522855979f</cbc:ID>   <!--.-->
-        <cbc:UUID>765a9937-16d5-4513-92b4-cc9800925951::1</cbc:UUID>   <!--.-->
         <cbc:DocumentTypeCode listID="UNCL1001">916</cbc:DocumentTypeCode>   <!--.-->
-        <cbc:XPath>/TendererQualification/cac:TendererPartyQualification/cac:MainQualifyingParty/cac:Party[1]
-        </cbc:XPath> <!--.-->
+        <cbc:XPath>/TendererQualification/cac:TendererPartyQualification/cac:MainQualifyingParty/cac:Party[1]</cbc:XPath> <!--.-->
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode> <!--.-->
         <cbc:VersionID>1</cbc:VersionID>   <!--.-->
         <cbc:DocumentDescription>textual document description</cbc:DocumentDescription>   <!--.-->
