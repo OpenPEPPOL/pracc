@@ -9,7 +9,7 @@ PEPPOL has defined a Policy for Using Identifiers that specifies how to use iden
 All transactions within this profile uses the same profile identifier.
 
 [cols="2*2,2*4", options="header"]
-.The table below shows values to be used for the Profile ID
+.The table below shows values to be used for the Business Process Type Identifier
 |===
 
 | TransactionID

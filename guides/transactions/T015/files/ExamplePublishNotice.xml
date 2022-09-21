@@ -57,13 +57,6 @@
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::publication-requested[] -->
-    <!-- tag::publication-date[] -->
-    <rim:Slot name="PreferredPublicationDate"> <!--.-->
-        <rim:SlotValue xsi:type="rim:DateTimeValueType">
-            <rim:Value>2020-02-14T19:20:30+01:00</rim:Value> <!--.-->
-        </rim:SlotValue>
-    </rim:Slot>
-    <!-- end::publication-date[] -->
     <!-- tag::registry-object-list[] -->
     <rim:RegistryObjectList> <!--.-->
         <rim:RegistryObject
@@ -77,6 +70,13 @@
                 </rim:SlotValue>
             </rim:Slot>
             <!-- end::document-type-code[] -->
+            <!-- tag::publication-date[] -->
+            <rim:Slot name="NoticePublicationDatePreferred"> <!--.-->
+                <rim:SlotValue xsi:type="rim:DateTimeValueType">
+                    <rim:Value>2020-02-14T19:20:30+01:00</rim:Value> <!--.-->
+                </rim:SlotValue>
+            </rim:Slot>
+            <!-- end::publication-date[] -->
             <!-- tag::notice-version[] -->
             <rim:Slot name="NoticeVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:IntegerValueType"> <!--.-->
@@ -85,7 +85,7 @@
             </rim:Slot>
             <!-- end::notice-version[] -->
             <!-- tag::eforms-version[] -->
-            <rim:Slot name="eFormsVersion"> <!--.-->
+            <rim:Slot name="CustomizationID"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                     <rim:Value>eforms-sdk-1.2</rim:Value>
                 </rim:SlotValue>
@@ -126,5 +126,5 @@
     </rim:RegistryObjectList>
     <!-- end::registry-object-list[] -->
 </lcm:SubmitObjectsRequest>
-<!-- end::submit-objects-request[] -->
+        <!-- end::submit-objects-request[] -->
 

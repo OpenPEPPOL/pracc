@@ -1,32 +1,37 @@
 
-= Business process
+= Business process and use cases
+
+The following process flows and use cases describe how the Qualification can be used.
+
+== Business process description
+
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 
-image::bpmn003.png[align="center", width=800]
+image::bpmnQualification.svg[align="center", width=800]
 
 [cols="2,10", options="header"]
 .Business process
 |===
 | Category | Description
-| Description | An economic operator prepares and then submits a tender to a contracting body, as a response to a call for tender. The tender is to be encrypted according to defined business needs, as specified in thhe Call for Tender. The process of encryption and decryption has to be considered as conformant to the profile. +
+| Description | The Economic operator sends an electronic qualification document containing the information requested for qualification by the contracting body in the call for tenders.
 
-The Tender must contain documents as defined by the procedure, e.g. an ESPD, Pre-award catalogue and other structured and unstructured document that the contracting authority requires in the Tender. The contracting body notifies the economic operator of having received the Tender. +
+The reception of the qualification is confirmed by the contracting body.
 
-The contracting body notifies the economic operator of having received the Tender.
+The contracting body evaluates the qualification information. The evaluation process can be supported by business information held by trusted third parties acquired through external processes.
 
-| Pre-conditions | A contracting body has issued a call for tender to potential applicants.
-| Post-conditions | Tenders have been received by the contracting body and are to be evaluated by him. Tender reception has been notified to the economic operators.
+| Pre-conditions | A contracting body has issued a call for tenders to potential economic operators, including a call for qualification.
+| Post-conditions | Qualifications have been received by the contracting body and are to be evaluated.
 |===
 
 [cols="3,2,7", options="header"]
 .Role description
 |===
 | Activity | Role involved | Description
-| Send Tender | Economic operator | The economic operator has prepared his offer and submits the signed and encrypted tender documents.
-| Receive Tender | Contracting body | The contracting body receives the bid, but doesn’t look at the content of the bid before the deadline for submission has passed. The bid is kept secure in a tender box.
-| Confirm tender reception | Contracting body | The contracting body sends the economic operator an acknowledgement with time stamp of reception and hash code of the bid.
-| Receive tender receipt notification | Economic operator | The economic operator receives the electronic tender reception notification document
+| Send qualification | Economic operator | The economic operator sends an electronic qualification document containing the information required for the economic operator to participate in a tendering process.
+| Receive Qualification | Contracting body | The contracting body received the qualification document.
+| Send qualification reception confirmation | Contracting body | The contracting body sends the qualification reception confirmation document.
+| Receive qualification reception confirmation | Economic operator | The economic operator receives the qualification reception confirmation document.
 |===
 
 :leveloffset: +1

@@ -13,7 +13,7 @@ The transaction including business terms, business rules and code lists are base
 [source,xml,indent=0]
 .Example of usage of submit objects request basis
 ....
-include::../files/ExamplePublishNotice.xml[tags=submit-objects-request;!specification-identification;!business-process-type-identifier;!issue-date-time;!sender-electronic-address;!receiver-electronic-address;!publication-requested;!registry-object-list]
+include::../files/ExamplePublishNotice.xml[tags=submit-objects-request;!specification-identification;!business-process-type-identifier;!issue-date-time;!sender-electronic-address;!receiver-electronic-address;!publication-requested;!registry-object-list;!publication-date]
 ....
 
 == Issue Date and time (and preferred publication date)

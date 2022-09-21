@@ -206,15 +206,16 @@
             </Element>
         </Element>
         <Element>
-            <Term>rim:Slot@name=PreferredPublicationDate</Term>
+            <Term>rim:Slot@name=NoticePublicationDatePreferred</Term>
             <Name>Issue date time</Name>
-            <Description>The issue date and time when the attached notices should be published. The issue date time must have
-                granularity of seconds, and include time zone information.
+            <Description>The "Notice Publication Date Preferred" is the date on which the buyer wishes the notice to be
+                published. It can be used to help the buyer respect the requirements that exist
+                between publications at national and European levels.
             </Description>
             <Reference type="BUSINESS_TERM">BT-738</Reference>
             <Attribute>
                 <Term>name</Term>
-                <Value type="FIXED">PreferredPublicationDate</Value>
+                <Value type="FIXED">NoticePublicationDatePreferred</Value>
             </Attribute>
             <Element>
                 <Term>rim:SlotValue</Term>
@@ -329,19 +330,19 @@
                     </Element>
                 </Element>
                 <Element>
-                    <Term>rim:Slot@name=eFormsVersion</Term>
+                    <Term>rim:Slot@name=CustomizationID</Term>
                     <Name>eForms version</Name>
-                    <Description>Version of the used eForms specification for the notice. The format is according to the
-                        specification always eforms-x.y.
+                    <Description>This element identifies the customization used for the notice. Identification is based
+                        on the complete set (schemas+rules) limited to the major and minor version numbers.
                     </Description>
                     <Reference type="RULE">PEPPOL-T015-R008</Reference>
                     <Attribute>
                         <Term>name</Term>
-                        <Value type="FIXED">eFormsVersion</Value>
+                        <Value type="FIXED">CustomizationID</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
-                        <Description>An abstract class that defines a container for an string value.</Description>
+                        <Description>An abstract class that defines a container for a string value.</Description>
                         <Attribute>
                             <Term>xsi:type</Term>
                             <Value type="FIXED">rim:StringValueType</Value>
