@@ -6,15 +6,14 @@
 urn:oasis:names:specification:ubl:schema:xsd:TendererQualification-2
 urn:oasis:names:specification:ubl:schema:xsd:TenderReceipt-2
 
-The syntax mapping for {name-profile} has been tested and revised during the {link-esens} pilot and is based on transaction description for Qualification (Trdm086) and  Qualification Reception Confirmation (Trdm042) done by {link-bii3}. Requirements, business rules and code lists used are inherited from the following documents:
+The syntax mapping for {name-profile} is based on transaction description for Qualification (Trdm086) and  Qualification Reception Confirmation (Trdm042) done by {link-bii3}. Requirements, business rules and code lists used are inherited from the following documents:
 
 * {link-profile}
-* {sig-tender}
 * {sig-tender-receipt}
 * {ubl-tender}
 * {ubl-tender-receipt}
 
-{link-peppol} {name-profile} business process includes 2 transactions:
+The {link-peppol} {name-profile} business process includes two transactions:
 
 * link:../../transactions/T019/index.html[T019 - Qualification]
-* link:../../transactions/T020/index.html[T020 - Qualification Receipt]
+* link:../../transactions/T020/index.html[T020 - Qualification Reception Confirmation]
