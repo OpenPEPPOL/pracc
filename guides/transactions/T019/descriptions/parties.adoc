@@ -19,7 +19,20 @@ include::../files/Qualification-doc.xml[tags=MainQualifyingParty]
 <.> Details to the country of the economic operator, with accompanying code list
 <.> Further contact details to the economic operator
 <.> Tendering role of the economic operator
-<.> Additional economic operators that belong to a group of economic operators can be added using cac:AdditionalQualifyingParty/cac:Party.
+<.> Additional economic operators that belong to a group of economic operators can be added using <cac:Party>.
+
+== Referenced lots
+
+The lots to which the (group of) economic operator(s) is interested can be referenced.
+
+[source,xml,indent=0]
+----
+include::../files/Qualification-doc.xml[tags=InterestedProcurementProjectLot]
+----
+
+<.> UUID identifier to the call for tender. The lot number (in this case lot 1) is included after the UUID and follows double colons
+<.> UUID identifier to the call for tender. The lot number (in this case lot 3) is included after the UUID and follows double colons
+
 
 == Contracting Body
 
@@ -34,20 +47,4 @@ include::../files/Qualification-doc.xml[tags=ContractingParty]
 <.> Identifies the contracting party's electronic address and the scheme identifier for the electronic address
 <.> The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)
 <.> The name of the contracting body as it is registered
-
-
-= Referenced lots
-
-The lots to which the (group of) economic operator(s) is interested can be referenced.
-
-[source,xml,indent=0]
-----
-include::../files/Qualification-doc.xml[tags=InterestedProcurementProjectLot]
-----
-
-<.> UUID identifier to the call for tender. The lot number (in this case lot 1) is included after the UUID and follows double colons
-<.> UUID identifier to the call for tender. The lot number (in this case lot 3) is included after the UUID and follows double colons
-
-
-
 

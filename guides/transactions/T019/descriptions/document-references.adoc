@@ -1,9 +1,13 @@
 
-= Document References
+= Qualification documents
 
-The class cac:AdditionalDocumentReference is used to attach the qualification documents or other references such as the Call for Tender reference.
 
-Example below shows an attached qualification document, its hash and algorithm. The attached qualification document is in this example unstructured. An additional reference to the Call for Tender is included.
+
+== Attached documents
+
+The class cac:AdditionalDocumentReference is used to attach the tender documents or their references.
+
+Example below shows the attached tender document and its hash and algorithm. The attached tender document is in this example unstructured.
 
 [source,xml,indent=0]
 ----
@@ -29,4 +33,4 @@ Code is coded according to code list 1001 issued by UN/CEFACT ( see https://serv
 <.> ID of the Call for Tenders document
 <.> The type of business document must also be included in the document reference element. In this case the code 311 is used to reference to the Call for Tender. Document Type Code is coded according to code list 1001 issued by UN/CEFACT ( see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]). In this message the following codes are allowed:
 * 311 (Request for quote): Call for tender reference
-* 916 (Related document): Qualification document (e.g. ESPD response)
+* 916 (Related document): ESPD response
