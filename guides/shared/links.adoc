@@ -15,6 +15,8 @@
 :P007: https://docs.peppol.eu/pracc/profiles/p007/index.html[P007 Tender Withdrawal]
 :P008: https://docs.peppol.eu/pracc/profiles/p008/index.html[P008 Publish Notice]
 :P009: https://docs.peppol.eu/pracc/profiles/p009/index.html[P009 Notify Awarding]
+:P010: https://docs.peppol.eu/pracc/profiles/p010/index.html[P010 Tendering Message Response]
+:P011: https://docs.peppol.eu/pracc/profiles/p011/index.html[P011 Qualification]
 
 
 //CEN BII3
@@ -37,8 +39,8 @@
 :BII58: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62038&cs=1438046879E98863C8263389E46ED47C4[BII58 Notify Awarding]
 :BII60: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62055&cs=1FA2AB7C9A0F601605C549112B7B93DA3[BII60 Tender Status Inquiry]
 :BII107: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:61996&cs=1F1CAB7AB3DA79B9397033D8EC7A317CE[BII107 Message Level Response guideline]
-:BII49: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62031&cs=1B70B853F56C648B3483016CF296DFC0A[BII 49 — Qualification]
-
+:BII49: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62031&cs=1B70B853F56C648B3483016CF296DFC0A[BII 49 Qualification]
+:BII51: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62033&cs=1A7DBDEE6682A0238FED320C05D7FEE35[BII 51 Qualification Rejection]
 
 // eSENS
 :link-esens: http://wiki.ds.unipi.gr/display/ESENSPILOTS/D5.6-1+-+5.1.1+-+eTendering[e-SENS]

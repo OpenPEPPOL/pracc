@@ -1,14 +1,6 @@
 
 = Qualification documents
 
-== Referenced lots
-
-[source,xml,indent=0]
-----
-include::../files/Qualification-doc.xml[tags=InterestedProcurementProjectLot]
-----
-
-<.> UUID identifier to reference the lot for which the call for tender qualification is valid, lot number follows double colons
 
 
 == Attached documents
@@ -21,21 +13,24 @@ Example below shows the attached tender document and its hash and algorithm. The
 ----
 include::../files/Qualification-doc.xml[tags=AdditionalDocumentReference]
 ----
-<.> ID of the referenced call for tender document
-<.> The type of business document must also be included in the document reference element. Document Type
-Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
-the document types, see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]. In this message the following codes are used:
-* 310 (Offer/quotation): Tender reference
+<.> ID of the referenced qualification document
+<.> The type of business document must also be included in the document reference element. In this case the code 916 is used to reference to a qualification document. Document Type
+Code is coded according to code list 1001 issued by UN/CEFACT ( see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]). In this message the following codes are allowed:
 * 311 (Request for quote): Call for tender reference
 * 916 (Related document): ESPD response
-<.> XPath Reference to the party to whom these attachment belongs
-<.> Code indicating the location of the tenderer
-<.> Version of the reference call for tender, must be an integer
-<.> Free textual description of the call for tender
-<.> Beginning of the actual attachment
-<.> URI identifying the attached document
-<.> Hash proving the identity of the attachment
+<.> XPath reference to the party to whom this qualification document belongs
+<.> Code indicating the language of the qualification document
+<.> Version of the referenced qualification document, must be an integer
+<.> Free textual description of the qualification document
+<.> The actual document that is attached
+<.> URI identifying the attached qualification document in the ASiC-E Container
+<.> Hash value to prove the integrity of the attached qualification document
 <.> Used hash algorithm, must be 'http://www.w3.org/2001/04/xmlenc#sha256</'
 <.> Mime code of the attachment
 <.> File name of the attachment
 <.> Size of the attachment
+<.> Another Document Reference pointing to the Call for Tender
+<.> ID of the Call for Tenders document
+<.> The type of business document must also be included in the document reference element. In this case the code 311 is used to reference to the Call for Tender. Document Type Code is coded according to code list 1001 issued by UN/CEFACT ( see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]). In this message the following codes are allowed:
+* 311 (Request for quote): Call for tender reference
+* 916 (Related document): ESPD response

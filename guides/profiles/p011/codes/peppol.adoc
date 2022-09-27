@@ -1,9 +1,7 @@
 
-= PEPPOL Identifiers
+= PEPPOL Identifiers and Profile ID
 
 PEPPOL has defined a Policy for Using Identifiers that specifies how to use identifiers in both its transport infrastructure and within the documents exchanged across that infrastructure. It also introduces principles for any identifiers used in the PEPPOL environment.
-
-== Profile ID
 
 [IMPORTANT]
 All transactions within this profile uses the same profile identifier.
@@ -20,10 +18,10 @@ All transactions within this profile uses the same profile identifier.
 | T019
 | Qualification
 | EO sends his qualification documents for the procurement project to CA
-.2+.^| urn:fdc:peppol.eu:prac:bis:p011:1.0
+.2+.^| urn:fdc:peppol.eu:prac:bis:p011:1.1
 
 | T020
-| Qualification Receipt
+| Qualification Reception Confirmation
 | CA sends acknowledgement to EO
 
 |===

@@ -11,10 +11,10 @@
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
     <!-- end::UBL[] -->
     <!-- tag::CustomizationID[] -->
-    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t019:1.0</cbc:CustomizationID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t019:1.1</cbc:CustomizationID>
     <!-- end::CustomizationID[] -->
     <!-- tag::ProfileID[] -->
-    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p011:1.0</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p011:1.1</cbc:ProfileID>
     <!-- end::ProfileID[] -->
     <cbc:ID schemeURI="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID>
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
@@ -26,31 +26,30 @@
     <cbc:VersionID>1</cbc:VersionID>
     <!-- end::VersionID[] -->
     <!-- tag::TendererPartyQualification[] -->
+    <!-- tag::InterestedProcurementProjectLot[] -->
     <cac:TendererPartyQualification>
         <cac:InterestedProcurementProjectLot> <!--.-->
-            <cbc:ID>4946060c-f428-475f-9d81-39409bdf32bd::1</cbc:ID>
+            <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::1</cbc:ID>
         </cac:InterestedProcurementProjectLot>
-        <!-- tag::InterestedProcurementProjectLot[] -->
         <cac:InterestedProcurementProjectLot>
-            <cbc:ID>4946060c-f428-475f-9d81-39409bdf32bd::3</cbc:ID> <!--.-->
+            <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::3</cbc:ID> <!--.-->
         </cac:InterestedProcurementProjectLot>
         <!-- end::InterestedProcurementProjectLot[] -->
         <!-- tag::MainQualifyingParty[] -->
         <cac:MainQualifyingParty>
             <cac:Party>
-                <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
+                <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID> <!--.-->
                 <cac:PartyIdentification> <!--.-->
-                    <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
+                    <cbc:ID schemeID="0088">7300010000001</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName> <!--.-->
-                    <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
+                    <cbc:Name>Dutch Tulips Ltd</cbc:Name>
                 </cac:PartyName>
                 <cac:PostalAddress> <!--.-->
-                    <cbc:StreetName>Street Name 1</cbc:StreetName>
-                    <cbc:AdditionalStreetName>Street Name 2</cbc:AdditionalStreetName>
-                    <cbc:CityName>City</cbc:CityName>
-                    <cbc:PostalZone>post code</cbc:PostalZone>
-                    <cbc:CountrySubentity>Code</cbc:CountrySubentity>
+                    <cbc:StreetName>Amsterdam Street Name 1</cbc:StreetName>
+                    <cbc:CityName>Amsterdam</cbc:CityName>
+                    <cbc:CountrySubentity>North Holland</cbc:CountrySubentity>
+                    <cbc:PostalZone>1092</cbc:PostalZone>
                     <cac:Country> <!--.-->
                         <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
                     </cac:Country>
@@ -66,22 +65,21 @@
                 </cac:Contact>
             </cac:Party>
         </cac:MainQualifyingParty>
-        <!-- end::MainQualifyingParty[] -->
-        <cac:AdditionalQualifyingParty>
+        <cac:AdditionalQualifyingParty><!--.-->
             <cac:Party>
-                <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID> <!--.-->
+                <!-- end::MainQualifyingParty[] -->
+                <cbc:EndpointID schemeID="9946">502352433</cbc:EndpointID> <!--.-->
                 <cac:PartyIdentification> <!--.-->
-                    <cbc:ID schemeID="0204">991-1234512345-06</cbc:ID>
+                    <cbc:ID schemeID="0088">7323412337651</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName> <!--.-->
-                    <cbc:Name>Beschaffungsamt des BMI</cbc:Name>
+                    <cbc:Name>Dutch Plants Ltd</cbc:Name>
                 </cac:PartyName>
                 <cac:PostalAddress> <!--.-->
-                    <cbc:StreetName>Street Name 1</cbc:StreetName>
-                    <cbc:AdditionalStreetName>Street Name 2</cbc:AdditionalStreetName>
-                    <cbc:CityName>City</cbc:CityName>
-                    <cbc:PostalZone>post code</cbc:PostalZone>
-                    <cbc:CountrySubentity>Code</cbc:CountrySubentity>
+                    <cbc:StreetName>The Hague Street Name 1</cbc:StreetName>
+                    <cbc:CityName>The Hague</cbc:CityName>
+                    <cbc:PostalZone>2563</cbc:PostalZone>
+                    <cbc:CountrySubentity>South Holland</cbc:CountrySubentity>
                     <cac:Country> <!--.-->
                         <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
                     </cac:Country>
@@ -119,7 +117,7 @@
         <cbc:XPath>/TendererQualification/cac:TendererPartyQualification/cac:MainQualifyingParty/cac:Party[1]</cbc:XPath> <!--.-->
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode> <!--.-->
         <cbc:VersionID>1</cbc:VersionID>   <!--.-->
-        <cbc:DocumentDescription>textual document description</cbc:DocumentDescription>   <!--.-->
+        <cbc:DocumentDescription>A qualification document description</cbc:DocumentDescription>   <!--.-->
         <cac:Attachment>   <!--.-->
             <cac:ExternalReference>
                 <cbc:URI>243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:URI> <!--.-->
@@ -132,10 +130,10 @@
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
-    <cac:AdditionalDocumentReference>
-        <cbc:ID>7f38107c-d794-478f-96ff-cc0cc570a76b</cbc:ID>
+    <cac:AdditionalDocumentReference> <!--.-->
+        <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ID> <!--.-->
         <!-- tag::DocumentTypeCode[] -->
-        <cbc:DocumentTypeCode listID="UNCL1001">311</cbc:DocumentTypeCode>
+        <cbc:DocumentTypeCode listID="UNCL1001">311</cbc:DocumentTypeCode> <!--.-->
         <!-- end::DocumentTypeCode[] -->
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode>
         <cbc:VersionID>1</cbc:VersionID>

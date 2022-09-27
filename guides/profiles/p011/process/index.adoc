@@ -1,12 +1,11 @@
 
 = Business process and use cases
 
-The following process flows and use cases describe how the Qualification can be used.
+The following process flows and use cases describe how the {name-profile} can be used.
 
 == Business process description
 
 The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
-
 
 image::bpmnQualification.svg[align="center", width=800]
 
@@ -29,7 +28,7 @@ The contracting body evaluates the qualification information. The evaluation pro
 |===
 | Activity | Role involved | Description
 | Send qualification | Economic operator | The economic operator sends an electronic qualification document containing the information required for the economic operator to participate in a tendering process.
-| Receive Qualification | Contracting body | The contracting body received the qualification document.
+| Receive qualification | Contracting body | The contracting body received the qualification document.
 | Send qualification reception confirmation | Contracting body | The contracting body sends the qualification reception confirmation document.
 | Receive qualification reception confirmation | Economic operator | The economic operator receives the qualification reception confirmation document.
 |===

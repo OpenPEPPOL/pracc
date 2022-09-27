@@ -2,7 +2,7 @@
 
 == Economic operator
 
-The economic operator is the party submitting the tender, and is any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.
+The economic operator is the party submitting the qualification, and is any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. In case there is a group of economic operators there is always one main economic operator and an unspecified number of additional economic operator qualifying for a contract
 
 
 [source,xml,indent=0]
@@ -11,7 +11,7 @@ The economic operator is the party submitting the tender, and is any natural or 
 include::../files/Qualification-doc.xml[tags=MainQualifyingParty]
 ----
 
-<.> Identifies the economics operator's electronic address and the scheme identifier for the electronic address
+<.> Identifies the main economics operator's electronic address and the scheme identifier for the electronic address
 <.> The national identifier of a economic operator as it is legally registered (e.g. VAT identification, such as KBO)
 <.> Name of the economic operator, as registered
 <.> Postal address of the economic operator
@@ -19,6 +19,20 @@ include::../files/Qualification-doc.xml[tags=MainQualifyingParty]
 <.> Details to the country of the economic operator, with accompanying code list
 <.> Further contact details to the economic operator
 <.> Tendering role of the economic operator
+<.> Additional economic operators that belong to a group of economic operators can be added using <cac:Party>.
+
+== Referenced lots
+
+The lots to which the (group of) economic operator(s) is interested can be referenced.
+
+[source,xml,indent=0]
+----
+include::../files/Qualification-doc.xml[tags=InterestedProcurementProjectLot]
+----
+
+<.> UUID identifier to the call for tender. The lot number (in this case lot 1) is included after the UUID and follows double colons
+<.> UUID identifier to the call for tender. The lot number (in this case lot 3) is included after the UUID and follows double colons
+
 
 == Contracting Body
 
@@ -33,3 +47,4 @@ include::../files/Qualification-doc.xml[tags=ContractingParty]
 <.> Identifies the contracting party's electronic address and the scheme identifier for the electronic address
 <.> The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)
 <.> The name of the contracting body as it is registered
+

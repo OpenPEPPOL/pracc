@@ -3,12 +3,12 @@ include::../shared/settings.adoc[]
 :name-profile: Profile P011 - "Qualification"
 
 :name-transaction-org: "Trdm086 Qualification transaction"
-:name-transaction: T019 - Qualification Request 1.0
-:name-trans-short: Qualification Request
-:name-syntax: QualificationRequest
+:name-transaction: T019 - Qualification
+:name-trans-short: Qualification
+:name-syntax: Qualification
 
 include::../shared/links.adoc[]
 
-:name-profile-org: https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:62031,2073699&cs=149BB8DEACBF2C6757A8678435583AD82["Profile 49 — Qualification" (CWA 17027-114:2016)]
+:name-profile-org: https://standards.cencenelec.eu/dyn/www/f?p=205:110:0::::FSP_PROJECT:62031&cs=1B70B853F56C648B3483016CF296DFC0A["Profile 49 — Qualification" (CWA 17027-114:2016)]
 
 :xml-doc-file: files/TendererQualification-doc.xml

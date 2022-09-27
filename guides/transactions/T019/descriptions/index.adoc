@@ -3,10 +3,12 @@
 
 :leveloffset: +1
 
+include::date-time.adoc[]
+
 include::parties.adoc[]
 
 include::document-references.adoc[]
 
-include::date-time.adoc[]
+
 
 :leveloffset: -1
