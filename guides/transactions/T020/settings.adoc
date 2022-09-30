@@ -2,10 +2,10 @@ include::../shared/settings.adoc[]
 
 :name-profile: Profile P011 - "Qualification"
 
-:name-transaction-org: "T020 - Qualification Reception Notification transaction"
-:name-transaction: T020 - Qualification Reception Notification 1.0
-:name-trans-short: Qualification Reception Notification
-:name-syntax: QualificationReceptionNotification
+:name-transaction-org: "T020 - Qualification Reception Confirmation transaction"
+:name-transaction: T020 - Qualification Reception Confirmation
+:name-trans-short: Qualification Reception Confirmation
+:name-syntax: QualificationReceptionConfirmation
 
 include::../shared/links.adoc[]
 
