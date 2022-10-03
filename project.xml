@@ -31,9 +31,9 @@
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response</Documentation>
     <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
-    <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
+    <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.1</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response</Documentation>
-    <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
+    <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.1</Documentation>
     <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
     <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
