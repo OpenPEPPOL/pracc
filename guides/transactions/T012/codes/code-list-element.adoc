@@ -4,7 +4,7 @@
 
 == UBL Document Schema
 
-The UBL Document Schema (`rim:Slot name="ublDocumentSchema"`) has to have the non optional type attribute (`type=ublDocumentSchema`). It has to be chosen from the code list link:/pracc/codelist/ublDocumentSchema/[UBL Document Schema]
+The UBL Document Schema (`rim:Slot name="ublDocumentSchema"`) has to have the non optional type attribute (`type=ublDocumentSchema`). It has to be chosen from the code list link:/pracc/codelist/ublDocumentSchema/[ublDocumentSchema]
 
 [source,xml,indent=0]
 .Example of usage of UBL Document Schema
@@ -15,8 +15,8 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=UBLDocumentSchema]
 
 [cols="1h,4"]
 |===
-| Qualifier (listID)
-| UBL Document Schema
+| Identifier  (type)
+| link:/pracc/codelist/ublDocumentSchema/[ublDocumentSchema]
 | Document location
 | `rim:Slot name="ublDocumentSchema"`
 | Issuer
