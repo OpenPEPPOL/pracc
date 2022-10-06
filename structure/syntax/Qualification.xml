@@ -32,8 +32,8 @@
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
-			<Name>Tender identifier</Name>
-			<Description>Identifier of the tender document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
+			<Name>Qualification identifier</Name>
+			<Description>Identifier of the qualificaton document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme identifier</Name>
@@ -49,14 +49,14 @@
 		</Element>
 		<Element>
 			<Term>cbc:IssueDate</Term>
-			<Name>Tender issue date</Name>
-			<Description>The date when the tender is issued by the economic operator.</Description>
+			<Name>Qualification issue date</Name>
+			<Description>The date when the qualification is issued by the economic operator.</Description>
 			<DataType>Date</DataType>
 		</Element>
 		<Element>
 			<Term>cbc:IssueTime</Term>
-			<Name>Tender issue time</Name>
-			<Description>The time when the tender is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
+			<Name>Qualification issue time</Name>
+			<Description>The time when the qualification is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
 			<DataType>Time</DataType>
 		</Element>
 		<Element cardinality="0..1">
@@ -67,20 +67,20 @@
 		</Element>
 		<Element>
 			<Term>cac:TendererPartyQualification</Term>
-			<Name>Provided document</Name>
+			<Name>A class to describe the Economic Operator or Group of Economic Operators that want to qualify for the Call for Tender.</Name>
 			<Element cardinality="0..n">
 				<Term>cac:InterestedProcurementProjectLot</Term>
 				<Name>Interested procurement project lot</Name>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Lot identifier</Name>
-					<Description>An identifier for the lot</Description>
+					<Description>An identifier of the lots for which the Economic Operator want to qualify.</Description>
 					<DataType>identifier</DataType>
 				</Element>
 			</Element>
 			<Element>
 				<Term>cac:MainQualifyingParty</Term>
-				<Name>Main qualifying party</Name>
+				<Name>The Economic Operator that is responsible for the submission of the qualification document. In case there is a group of economic operators there is always one main economic operator and an unspecified number of additional economic operator qualifying for a contract. </Name>
 				<Element>
 					<Term>cac:Party</Term>
 					<Name>Economic operator</Name>
@@ -216,7 +216,7 @@
 			</Element>
 			<Element cardinality="0..n">
 				<Term>cac:AdditionalQualifyingParty</Term>
-				<Name>Additional qualifying party</Name>
+				<Name>In case there is a group of economic operators there is an unspecified number of additional economic operator qualifying for a contract.</Name>
 				<Element>
 					<Term>cac:Party</Term>
 					<Name>Economic operator</Name>
@@ -402,18 +402,18 @@
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:AdditionalDocumentReference</Term>
-			<Name>Provided document</Name>
-			<Description>Document that is provided as part of a qualification.</Description>
+			<Name>Document References</Name>
+			<Description>The class is used to attach the qualification documents or other references such as the Call for Tender reference.</Description>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Qualification reference document identifier</Name>
-				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender. The call for tenders and tenders reference must be a UUID</Description>
+				<Description>The identifier of a qualification document provided by the economic operator. Is also used to provide a reference to the call for tender as issued by the contracting body to create links between the call for tender and the qualification documents. The value must be a UUID</Description>
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
-				<Description>A code specifying the type of the document.</Description>
+				<Description>A code specifying the type of the document. The code 916 is used to reference to a qualification document. The code 311 is used to reference to the Call for Tender. </Description>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier for document type code</Name>
@@ -425,13 +425,13 @@
 			<Element>
 				<Term>cbc:XPath</Term>
 				<Name>Party reference</Name>
-				<Description>A reference to party whos documents are attached in this field.</Description>
+				<Description>XPath reference to the party to whom this qualification document belongs.</Description>
 				<DataType>Text</DataType>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:LocaleCode</Term>
-				<Name>Tender language</Name>
-				<Description>The language used to write the tender.</Description>
+				<Name>Language</Name>
+				<Description>The language used to write the qualification document.</Description>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier for tender language</Name>
@@ -448,7 +448,7 @@
 			<Element>
 				<Term>cbc:DocumentDescription</Term>
 				<Name>Document description</Name>
-				<Description>Textual description of the document.</Description>
+				<Description>Textual description of the document. Might include information about the lots or type of qualification criteria to which the document replies.</Description>
 				<DataType>Text</DataType>
 			</Element>
 			<Element cardinality="0..1">
@@ -460,7 +460,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:URI</Term>
 						<Name>Provided document url</Name>
-						<Description>URL where a document that is provided as part of a call for tender can be downloaded.</Description>
+						<Description>URL where a document that is provided can be downloaded.</Description>
 						<DataType>Identifier</DataType>
 					</Element>
 					<Element>

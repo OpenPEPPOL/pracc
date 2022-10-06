@@ -52,7 +52,9 @@
     <query:ResponseOption returnType="LeafClassWithRepositoryItem"/> <!--.-->
     <!-- end::response-option[] -->
 
-    <query:Query queryDefinition="SearchNotice">
+    <!-- tag::queryDefinition[] -->
+    <query:Query queryDefinition="SearchNotice"> <!--.-->
+        <!-- end::queryDefinition[] -->
         <!-- tag::keywords[] -->
         <rim:Slot name="Keywords">
             <rim:SlotValue xsi:type="rim:StringValueType">

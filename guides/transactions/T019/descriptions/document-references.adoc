@@ -1,13 +1,9 @@
 
-= Qualification documents
+= Document References
 
+The class cac:AdditionalDocumentReference is used to attach the qualification documents or other references such as the Call for Tender reference.
 
-
-== Attached documents
-
-The class cac:AdditionalDocumentReference is used to attach the tender documents or their references.
-
-Example below shows the attached tender document and its hash and algorithm. The attached tender document is in this example unstructured.
+Example below shows an attached qualification document, its hash and algorithm. The attached qualification document is in this example unstructured. An additional reference to the Call for Tender is included.
 
 [source,xml,indent=0]
 ----

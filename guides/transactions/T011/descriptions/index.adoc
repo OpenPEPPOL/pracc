@@ -3,9 +3,7 @@
 
 The transaction is based upon the definitions of {name-transaction-org} described in {link-profile}. Business terms, Business rules and code lists used are inherited from the following {link-bii3} and {eforms-specs} and {regrep} documents:
 
-== Query Request
-
-=== Parameter maxResults and startIndex
+== Query Request: Parameter maxResults and startIndex
 
 The Search Notice Request and Response support the ability to iterate over a large result set matching a query by allowing multiple QueryRequest requests to be submitted in succession such that each query requests a different subset of results within the result set. This feature enables the server to handle queries that match a very large result set, in a scalable manner also known as pagination.
 
@@ -34,7 +32,7 @@ include::../files/ExampleSearchNoticeRequest.xml[lines=2..14]
 include::../../../shared/pagination.PLANTUML[]
 ....
 
-=== Specification Identification
+== Specification Identification
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=specification-identification]
@@ -42,7 +40,7 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=specification-identificati
 <.> Identifier for the set of rules and transactions for a search notice request.
 <.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t011:1.1_", just like in the given example.
 
-=== Business Process Type Identifier
+== Business Process Type Identifier
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=business-process-type-identifier]
@@ -50,7 +48,7 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=business-process-type-iden
 <.> Identifier for the business process context of the search notice response.
 <.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.1_", just like in the given example.
 
-=== Issue Date Time
+== Issue Date Time
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=issue-date-time]
@@ -58,7 +56,7 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=issue-date-time]
 <.> Date and time when the request was being issued.
 <.> The SlotValue type has to be DateTimeValueType. Stick to the format "_yyyy-mm-ddThh:mm:ss_" and add the timezone in the end (i.e. Z or +01:00). Values for seconds, and the timezone must be given.
 
-=== Sender electronic address
+== Sender electronic address
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=sender-electronic-address]
@@ -66,7 +64,7 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=sender-electronic-address]
 <.> The endpoint id is clarified in the type attribute of the slot.
 <.> Fill the electronic sender address into this slot.
 
-=== Receiver electronic address
+== Receiver electronic address
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeRequest.xml[tags=receiver-electronic-address]
@@ -81,7 +79,13 @@ include::../files/ExampleSearchNoticeRequest.xml[tags=response-option]
 ....
 <.> You have to include the response option with its default option "_LeafClassWithRepositoryItem_" to allow for the response to include the required repository items.
 
-== Query
+== Query and Query Parameters
+[source,xml,indent=0]
+....
+include::../files/ExampleSearchNoticeRequest.xml[tags=queryDefinition]
+....
+<.> You have to use the fixed value "_SearchNotice_" as Query Definition.
+
 === Keywords
 [source,xml,indent=0]
 ....
