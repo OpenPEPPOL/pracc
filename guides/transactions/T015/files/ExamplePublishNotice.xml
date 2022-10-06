@@ -94,8 +94,8 @@
             <!-- tag::information-about-buyer[] -->
             <rim:Slot name="BuyerInformation">
                 <!-- tag::buyer-party-identification[] -->
-                <rim:Slot name="BuyerPartyIdentification" type="ICD">
-                    <rim:SlotValue xsi:type="rim:StringValueType">
+                <rim:Slot name="BuyerPartyIdentification" type="ICD"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>0204:991-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>

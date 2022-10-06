@@ -1,9 +1,7 @@
 
 = Document references
 
-== Qualification document reference
-
-The qualification reception confirmation contains the reference to the qualification document sent by the economic operator. The contracting authority should refer to the qualification document by using the document hash and the hash algorithm method used.
+The qualification reception confirmation contains the reference to the qualification document sent by the economic operator and a REM-Evidence, a receipt that acknowledges the time of arrival of a qualifiction document. The contracting authority should refer to the qualification document by using the document hash and the hash algorithm method used.
 
 DocumentReference Identifier must be expressed in a UUID syntax (RFC 4122).
 
@@ -26,12 +24,7 @@ include::../{xml-doc-file}[tags=HashAlgorithmMethod]
 
 ////
 
-[source,xml,indent=0]
-.Tender document reference (REM Evidence)
 
-----
-include::../files/QualificationResponse-doc.xml[tags=TenderDocumentReference]
-----
 
 [source,xml,indent=0]
 .Tender document reference (Qualification)
@@ -40,10 +33,38 @@ include::../files/QualificationResponse-doc.xml[tags=TenderDocumentReference]
 include::../files/QualificationResponse-doc.xml[tags=QualificationDocument]
 ----
 
+[source,xml,indent=0]
+.Tender document reference (REM Evidence)
 
-== Document Type Code (REM Evidence)
+----
+include::../files/QualificationResponse-doc.xml[tags=TenderDocumentReference]
+----
 
-The type of business document must also be included in the document reference element. Document Type
+
+
+== Document Type Code for Qualification
+
+A reference to the qualification document received must be included in the document reference element. Document Type Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
+the document types, see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]. The code used to reference a qualification is 916 (Related Document)
+
+[source,xml,indent=0]
+.Document Type Code
+----
+include::../files/QualificationResponse-doc.xml[tags=DocumentTypeCode2]
+----
+
+=== Issuer Party
+
+Identifier of the economic operator which issued the qualification document.
+
+[source,xml,indent=0]
+----
+include::../files/QualificationResponse-doc.xml[tags=IssuerParty2]
+----
+
+== Document Type Code for REM Evidence
+
+A REM Evidence must also be included in the document reference element. Document Type
 Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
 the document types, see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]. The code used to reference the REM-Evidence regarding the time of arrival of
 a tender is 13 (Post receipt)
@@ -56,31 +77,10 @@ include::../files/QualificationResponse-doc.xml[tags=DocumentTypeCode]
 
 === Issuer Party
 
-Party, which issued the reception, not always the final receiving party of the message.
+Party, which issued the reception acknowledgement, not always the final receiving party of the message. Might be also a PEPPOL Access Point.
 
 [source,xml,indent=0]
 ....
 include::../files/QualificationResponse-doc.xml[tags=IssuerParty]
 ....
-
-== Document Type Code (Qualification)
-
-The tender document received must also be included in the document reference element. Document Type
-Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
-the document types, see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]. The code used to reference a qualification is 916 (Related Document)
-
-[source,xml,indent=0]
-.Document Type Code
-----
-include::../files/QualificationResponse-doc.xml[tags=DocumentTypeCode2]
-----
-
-=== Issuer Party
-
-Identifier of the economic operator which issued the tender.
-
-[source,xml,indent=0]
-----
-include::../files/QualificationResponse-doc.xml[tags=IssuerParty2]
-----
 

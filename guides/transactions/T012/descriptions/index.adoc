@@ -3,9 +3,8 @@
 
 The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in {name-profile-org}.
 
-== Query Response
 
-=== Parameter totalResultCount and startIndex
+== Query Response: Parameter totalResultCount and startIndex
 
 [source,xml,indent=0]
 ....
@@ -30,7 +29,7 @@ include::../files/ExampleSearchNoticeResponse.xml[lines=2..16]
 include::../../../shared/pagination.PLANTUML[]
 ....
 
-=== Specification Identification
+== Specification Identification
 
 [source,xml,indent=0]
 ....
@@ -40,7 +39,7 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=specification-identificat
 <.> The value for the specification identification is always "_urn:fdc:peppol.eu:prac:trns:t012:1.0_", just like in the given example.
 
 
-=== Business Process Type Identifier
+== Business Process Type Identifier
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeResponse.xml[tags=business-process-type-identifier]
@@ -48,7 +47,7 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=business-process-type-ide
 <.> Identifier for the business process context of the search notice response.
 <.> The value for the business process type identifier is always "_urn:fdc:peppol.eu:prac:bis:p006:1.0_", just like in the given example.
 
-=== Issue Date Time
+== Issue Date Time
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeResponse.xml[tags=issue-date-time]
@@ -56,31 +55,33 @@ include::../files/ExampleSearchNoticeResponse.xml[tags=issue-date-time]
 <.> Date and time when the request was being issued.
 <.> The SlotValue type has to be DateTimeValueType. Stick to the format "_yyyy-mm-ddThh:mm:ss_" and add the timezone in the end (i.e. Z or +01:00). Values for seconds, and the timezone must be given.
 
-=== Sender electronic address
+== Sender electronic address
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeResponse.xml[tags=sender-electronic-address]
 ....
-<.> The endpoint id is clarified in the type attribute of the slot.
-<.> Fill the electronic sender address into this slot.
+<.> The scheme of the endpoint id is clarified in the type attribute of the slot.
+<.> Fill the scheme id and electronic sender address into this slot.
 
-=== Receiver electronic address
+== Receiver electronic address
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeResponse.xml[tags=receiver-electronic-address]
 ....
-<.> The endpoint id is clarified in the type attribute of the slot.
-<.> Fill the electronic receiver address into this slot.
+<.> The scheme of the endpoint id is clarified in the type attribute of the slot.
+<.> Fill the scheme id and electronic receiver address into this slot.
 
-== Registry Object
+== Registry Object List and Registry Objects (Notice Metadata)
 [source,xml,indent=0]
 ....
 include::../files/ExampleSearchNoticeResponse.xml[tags=registry-object-list]
 ....
 <.> The Registry object list contains the registry object, which contains the requested form.
-<.> Here you can find the uuids from your request as you defined them in the notice (id) and procedure (lid) identifier.
-<.> An identification for the buyer party according to ISO 6523 ICD list.
-<.> Electronic address used by the buyer, just like the ones from the receiver or sender.
-<.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list "_UBL Document Schema_", which has to be deposited in the type-attribute of the slot.
+<.> Here you can find the uuids required to identify the Notice and its associated procurement procedures
+** lid: The Procedure Identifier which allows distinguishing procurement procedures globally unique. It identifies the procurement procedure the notice belongs to. In PEPPOL the Procedure Identifier is also named "Reference Number" or "ContractFolderID".
+** id: Specifies the Notice Identifier (BT-701) allowing to uniquely distinguishing the notice amongst all other existing ones contained within the query.
+<.> An identification for the buyer party according to link:/pracc/codelist/ICD/[ICD codes].
+<.> Electronic address according to link:/pracc/codelist/EAS/[EAS codes] used by the buyer, just like the ones from the receiver or sender.
+<.> This is the UBL code of the type of document you searched for. Possible values can be taken from the list link:/pracc/codelist/ublDocumentSchema/[ublDocumentSchema], which has to be identified in the type-attribute of the slot.
 <.> Used eForms-Version according to specification in the format eforms-sdk-x.y
-<.> Reference to the eform.xml with the requested information included.
+<.> Reference to the eform.xml file which must be included to the ASiC-E Container (Associated Signature Container Extended) repository (see {link-eDocument}).
