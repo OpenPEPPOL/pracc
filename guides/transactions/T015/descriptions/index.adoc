@@ -105,7 +105,7 @@ Version of the notice which shall be published. If this is not the first iterati
 include::../files/ExamplePublishNotice.xml[tags=notice-version]
 ....
 <.> Slot for the notice version
-<.> SlotValue type has to be IntegerValueType, in this case 1.0 as it is the first version of the notice
+<.> SlotValue type has to be IntegerValueType, in this case 1 as it is the first version of the notice
 
 === eForms Version
 
