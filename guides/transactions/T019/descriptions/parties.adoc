@@ -18,7 +18,6 @@ include::../files/Qualification-doc.xml[tags=MainQualifyingParty]
 <.> Legal form of the economic operator
 <.> Details to the country of the economic operator, with accompanying code list
 <.> Further contact details to the economic operator
-<.> Tendering role of the economic operator
 
 == Contracting Body
 
