@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - 2022-q2
+      - Pre-Award_Catalogue
 
 jobs:
   build:
