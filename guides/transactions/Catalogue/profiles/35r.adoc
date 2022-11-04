@@ -10,10 +10,6 @@ urn:www.cenbii.eu:profile:bii35:ver1.0
 | CustomizationID
 | Role
 
-| PreAward Catalogue
-| urn:www.cenbii.eu:transaction:biitrns068:ver1.0 :extended:urn:www.peppol.eu:bis:peppol35a:ver1.0
-| Economic Operator
-
 | PreAward Catalogue request
 | tbd
 | Contracting Authority

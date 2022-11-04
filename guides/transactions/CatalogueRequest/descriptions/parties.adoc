@@ -1,0 +1,14 @@
+[[parties]]
+= Parties
+
+In the pre-award catalogue request you can provide information on the following parties:
+
+Catalogue provider:: The party that sends the catalogue request. Information on catalogue provider is mandatory
+Receiver:: The party that receives the catalogue request. Information on catalogue provider is mandatory
+
+
+.Example of provider party
+[source, xml, indent=0]
+----
+include::../../../../structure/snippets/Snippet_68.xml[tags=provider]
+----

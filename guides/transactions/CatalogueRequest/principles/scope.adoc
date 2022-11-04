@@ -1,0 +1,14 @@
+[[scope]]
+= Scope
+
+The intended scope for this {peppol} BIS includes business-to-government (B2G)
+relationships. Although the BIS is a basis for an EDI agreement between two parties, it does not address all
+business level details of such an agreement/contract.
+
+The Pre-award Catalogue request is intended to be used in different tendering processes, such as:
+
+. Call for Tenders ({bii3} Profile 53 - Call for Tenders)
+  ** Most of the tendering information is in unstructured attachements
+. Advanced Tendering ({bii3} Profile 34 - Advanced Call for Tenders with pre-award catalogue request)
+ ** Most of the tendering information is found in structured elements
+

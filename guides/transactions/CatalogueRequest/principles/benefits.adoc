@@ -1,0 +1,9 @@
+[[benefits]]
+= Benefits
+
+PEPPOL BIS pre-award catalogue request will stimulate the service provider marked to develop services that covers tendering processes both for CA´s and EO´s. The Pre-award catalogue request will:
+
+* make it possible for CA specifiy their procurement needs in form of a structured catalogue.
+* save time for the CA to have a standardized list of products and services
+* make it possible for the CA to use the pre-award catalogue request in mini-competitions and re-opening of competitions
+* make it possible for EO´s to use the PEPPOL BIS pre-award catalogue xml when up-loading the tender in a 3-corner model on condition that tendering systems are compatible.

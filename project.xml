@@ -37,6 +37,8 @@
     <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
     <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
     <Documentation path="profiles/p035/index.html">P035 - Pre-Award Catalogue - 1.1</Documentation>
+    <Documentation path="transactions/CatalogueRequest/index.html">Pre-Award Catalogue Request</Documentation>
+    <Documentation path="transactions/Catalogue/index.html">Pre-Award Catalogue</Documentation>
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->
@@ -153,12 +155,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/PreAwardCatalogueRequest.xml</Path>
-        <Title>Pre-Award Catalogue Request</Title>
+        <Title>Syntax Mapping CatalogueRequest - Pre-Award Catalogue Request</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/PreAwardCatalogue.xml</Path>
-        <Title>Pre-Award Catalogue</Title>
+        <Title>Syntax Mapping Catalogue - Pre-Award Catalogue</Title>
     </Resource>
 
     <!-- Rules -->
