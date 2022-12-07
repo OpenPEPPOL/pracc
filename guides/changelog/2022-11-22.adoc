@@ -5,7 +5,7 @@
 *Release date 2022-11-22*
 
 === P001 - New Transactions for restricted procedure - 1.2
-T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide eletronic messaging support for the process to unsubscribe from a procedure.
+T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide electronic messaging support for the process to unsubscribe from a procedure.
 
 === P005 - New field for publication date - 1.2
 New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage.
@@ -26,11 +26,13 @@ To accompany the release of the remaining profiles and transactions to complete 
 === Editorial changes
 
 *Updated eDelivery and eDocuments guidelines*
+
 * adding the since introduced profiles in the guidelines
 * updating identifiers to new versions
 * reworking descriptions of processes and clarifying the open procedure
 
 *P001 - P009*
+
 * Update to description of open procedure to match with eDelivery guideline
 * Fix of broken links and references
 * Update to description of use of UBL versions
@@ -38,5 +40,6 @@ To accompany the release of the remaining profiles and transactions to complete 
 * Update of graphics and examples (P006)
 
 *Schematron files*
+
 * Reworking use of pattern schema
 * Bug fixing
