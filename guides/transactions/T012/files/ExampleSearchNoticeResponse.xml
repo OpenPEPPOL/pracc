@@ -58,7 +58,7 @@
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
             <rim:Slot name="BuyerInformation">
-                <rim:Slot name="BuyerPartyIdentification">
+                <rim:Slot name="BuyerPartyIdentification" type="ICD">
                     <rim:SlotValue xsi:type="rim:StringValueType">  <!--.-->
                         <rim:Value>0204:991-1234512345-06</rim:Value>
                     </rim:SlotValue>

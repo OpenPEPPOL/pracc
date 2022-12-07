@@ -151,6 +151,7 @@
                     <Term>rim:Value</Term>
                     <Name>Contracting body electronic address identifier</Name>
                     <Description>Scheme identifier:Identification for the contracting body</Description>
+                    <Reference type="RULE">PEPPOL-T011-R013</Reference>
                     <Reference type="CODE_LIST">EAS</Reference>
                     <DataType>rim:StringValueType</DataType>
                     <Value type="EXAMPLE">9930:DE122268496</Value>

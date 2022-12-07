@@ -103,7 +103,7 @@
             <assert id="PEPPOL-T015-R015" flag="fatal" test="matches(normalize-space(./@xlink:href), '^\./[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}\.eform\.xml$')">The xlink:href MUST be expressed in a UUID syntax (RFC 4122). The file referenced by the xlink:href MUST be present in the ASiC-E Container. </assert>
         </rule>
 
-        <!--Gobal Rules (only matches if no other does)-->
+        <!--Global Rules (only matches if no other does)-->
 
           <rule context="*/rim:Value">
               <assert id="PEPPOL-T015-R037" flag="fatal" test="./text()[normalize-space() != '']">Value MUST have a text.</assert>

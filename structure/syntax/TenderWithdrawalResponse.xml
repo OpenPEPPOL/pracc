@@ -22,11 +22,11 @@
         <Element>
             <Term>cbc:UBLVersionID</Term>
             <Name>UBL version identifier</Name>
-            <Description>Requires UBL version 2.3</Description>
+            <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T014-R019</Reference>
             <Reference type="RULE">PEPPOL-T014-S302</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">2.3</Value>
+            <Value type="FIXED">2.2</Value>
         </Element>
         <Element>
             <Term>cbc:CustomizationID</Term>
