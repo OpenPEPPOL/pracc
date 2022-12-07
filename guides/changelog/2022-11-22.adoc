@@ -1,0 +1,42 @@
+= Changelog for release 2022
+
+== Profiles P001 - P011
+
+*Release date 2022-11-22*
+
+=== P001 - New Transactions for restricted procedure - 1.2
+T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide eletronic messaging support for the process to unsubscribe from a procedure.
+
+=== P005 - New field for publication date - 1.2
+New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage.
+
+=== Version numbers of BIS P001 and P005 raised to 1.2
+Since the new transactions in P001 and P005 are a breaking change, the version number has been raised from 1.1.0 to 1.2.0.
+
+=== New BIS P010 - Tendering Message Response - 1.1
+The BIS P010 Tendering Message Response - 1.1 was added as a new eTendering profile. The profile provides electronic messaging support for the process to notify of errors in the provided message to the sender. The profile can only be used to communicate technical difficulties.
+
+=== New BIS P011 - Qualification - 1.1
+The BIS P011 Qualification - 1.1 was added as a new eTendering profile. The profile provides electronic messaging support for the business process of qualifying for a tendering process in a restricted procedure. The profile is executed between a contracting body or his representative and a publication body to announce business opportunities.
+
+=== New open procedure guideline
+To accompany the release of the remaining profiles and transactions to complete the open procedure, a guideline was build. The guideline provides an entrypoint and comprehensive introduction to the open procedure and its profiles.
+
+
+=== Editorial changes
+
+*Updated eDelivery and eDocuments guidelines*
+* adding the since introduced profiles in the guidelines
+* updating identifiers to new versions
+* reworking descriptions of processes and clarifying the open procedure
+
+*P001 - P009*
+* Update to description of open procedure to match with eDelivery guideline
+* Fix of broken links and references
+* Update to description of use of UBL versions
+* Rework of profile structure
+* Update of graphics and examples (P006)
+
+*Schematron files*
+* Reworking use of pattern schema
+* Bug fixing
