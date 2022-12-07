@@ -97,6 +97,6 @@
 | 2.2
 |27-06-2022| Ansgar Mondorf
 | UKL
-| Editorial review and inclusion of BPMN for Unsubsribe to Procedure.
+| Editorial review and inclusion of BPMN for Unsubscribe to Procedure.
 
 |===
