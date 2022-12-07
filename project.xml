@@ -283,24 +283,6 @@
         <Path>rules/peppol-qualification/PEPPOL-T020.sch</Path>
         <Title>PEPPOL T020 rules - Qualification Reception Confirmation</Title>
     </Resource>
-    <Resource>
-        <Identifier>BIIT004</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/peppol-call-for-tender/CENBII/BIIRULES-UBL-T83_eSENS.sch</Path>
-        <Title>CENBII T004 rules</Title>
-    </Resource>
-    <Resource>
-        <Identifier>BIIT005</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/peppol-tender/CENBII/T005/BIIRULES-UBL-T90.sch</Path>
-        <Title>CENBII T005 rules</Title>
-    </Resource>
-    <Resource>
-        <Identifier>BIIT006</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/peppol-tender/CENBII/T006/BIIRULES-UBL-T45.sch</Path>
-        <Title>CENBII T006 rules</Title>
-    </Resource>
 
     <!-- Code lists -->
     <Resource>
