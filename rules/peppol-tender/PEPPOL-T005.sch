@@ -41,12 +41,12 @@
         </rule>
         
         <rule context="ubl:Tender/cbc:CustomizationID">
-            <assert id="PEPPOL-T005-R002" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t005:1.1'">CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t005:1.1'</assert>
+            <assert id="PEPPOL-T005-R002" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t005:1.2'">CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t005:1.2'</assert>
             <report id="PEPPOL-T005-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>CustomizationID SHOULD NOT contain any attributes.</report>
         </rule>
         
         <rule context="ubl:Tender/cbc:ProfileID">
-            <assert id="PEPPOL-T005-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p003:1.1'">ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p003:1.1'</assert>
+            <assert id="PEPPOL-T005-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p003:1.2'">ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p003:1.2'</assert>
             <report id="PEPPOL-T005-S304" flag="warning" test="./@*"><value-of select="$syntaxError"/>ProfileID SHOULD NOT contain any attributes.</report>
         </rule>
         
