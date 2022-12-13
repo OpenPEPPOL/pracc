@@ -69,7 +69,7 @@
     <cac:ProcurementProject>
         <cbc:Name>Laptops</cbc:Name>
         <cbc:Description>Laptops</cbc:Description>
-        <cbc:ProcurementTypeCode listID="PROJECT_TYPE">2</cbc:ProcurementTypeCode>
+        <cbc:ProcurementTypeCode listID="PROJECT_TYPE">open</cbc:ProcurementTypeCode>
         <cac:MainCommodityClassification>
             <cbc:ItemClassificationCode listID="CPV">98300000-6</cbc:ItemClassificationCode>
         </cac:MainCommodityClassification>

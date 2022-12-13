@@ -26,7 +26,6 @@
             <Description>An identification of the specification containing the total set of rules regarding semantic
                 content, cardinalities and business rules to which the data contained in the instance document conforms.
             </Description>
-            <Reference type="RULE">BII3-T83-R001</Reference>
             <Reference type="RULE">PEPPOL-T004-R002</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
@@ -40,7 +39,6 @@
             <Description>Identifies the business process context in which the transaction appears. It enables the buyer
                 to process the document in an appropriate way.
             </Description>
-            <Reference type="RULE">BII3-T83-R002</Reference>
             <Reference type="RULE">PEPPOL-T004-R003</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p002:1.1</Value>
@@ -51,7 +49,6 @@
             <Name>Call for tender identifier</Name>
             <Description>Identifies the call for tender as issued by the contracting body. Must be expressed as a UUID
             </Description>
-            <Reference type="RULE">BII3-T83-R003</Reference>
             <Reference type="RULE">PEPPOL-T004-R006</Reference>
             <Attribute>
                 <Term>schemeURI</Term>
@@ -70,7 +67,6 @@
                 in the procurement process. It is also known as procurement project identifier, procurement reference
                 number or contract folder identifier.
             </Description>
-            <Reference type="RULE">BII3-T83-R004</Reference>
             <DataType>Identifier</DataType>
         </Element>
 
@@ -78,7 +74,6 @@
             <Term>cbc:IssueDate</Term>
             <Name>Call for tender issue date</Name>
             <Description>The date on which the call for tender is issued.</Description>
-            <Reference type="RULE">BII3-T83-R005</Reference>
             <DataType>Date</DataType>
         </Element>
 
@@ -430,7 +425,6 @@
                         <Attribute>
                             <Term>listID</Term>
                             <Name>List identifier for country code</Name>
-                            <Reference type="RULE">BII3-T83-R018</Reference>
                         </Attribute>
                         <DataType>Code</DataType>
                     </Element>
@@ -463,7 +457,6 @@
                             <Attribute>
                                 <Term>listID</Term>
                                 <Name>List identifier for country code</Name>
-                                <Reference type="RULE">BII3-T83-R018</Reference>
                             </Attribute>
                             <DataType>Code</DataType>
                         </Element>
@@ -504,7 +497,6 @@
         <Element>
             <Term>cac:TenderingTerms</Term>
             <Name>Tendering terms</Name>
-            <Reference type="RULE">BII3-T83-R007</Reference>
 
             <Element cardinality="0..1">
                 <Term>cbc:MaximumVariantQuantity</Term>
@@ -520,7 +512,6 @@
                 <Name>Variants indicator</Name>
                 <Description>Indicates if variants are accepted in the tender. Use true when variants are allowed.
                 </Description>
-                <Reference type="RULE">BII3-T83-R012</Reference>
                 <DataType>Indicator</DataType>
             </Element>
 
@@ -612,7 +603,6 @@
         <Element>
             <Term>cac:TenderingProcess</Term>
             <Name>Tendering process</Name>
-            <Reference type="RULE">BII3-T83-R008</Reference>
 
             <Element>
                 <Term>cbc:ProcedureCode</Term>
@@ -621,12 +611,10 @@
                     of procedure. (E.g.) Open procedure, negotiated etc.
                 </Description>
                 <Reference type="CODE_LIST">procedureType</Reference>
-                <Reference type="RULE">BII3-T83-R009</Reference>
                 <Reference type="RULE">CL-T83-R001</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Reference type="RULE">BII3-T83-R021</Reference>
                     <Value type="FIXED">PR_PROC</Value>
                 </Attribute>
 				<DataType>Code</DataType>
@@ -645,7 +633,6 @@
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Reference type="RULE">BII3-T83-R022</Reference>
                     <Value type="FIXED">CONTRACT_TYPE</Value>
                 </Attribute>
 				<DataType>Code</DataType>
@@ -662,7 +649,6 @@
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Reference type="RULE">BII3-T83-R023</Reference>
                     <Value type="FIXED">BII_SUBMISSION</Value>
                 </Attribute>
 				<DataType>Indicator</DataType>
@@ -679,7 +665,6 @@
                         (restricted procedures, competitive procedures with negotiation, dynamic purchasing systems,
                         competitive dialogues, innovation partnerships)
                     </Description>
-                    <Reference type="RULE">BII3-T83-R010</Reference>
 					<DataType>Date</DataType>
                 </Element>
 
@@ -706,7 +691,6 @@
                     <Description>The date and time before which documents are available for access or may be requested
                         and before which requests to participate must be received.
                     </Description>
-                    <Reference type="RULE">BII3-T83-R011</Reference>
 					<DataType>Date</DataType>
                 </Element>
                 <Element cardinality="0..1">
@@ -730,7 +714,6 @@
                 <Term>cbc:Name</Term>
                 <Name>Procurement project name</Name>
                 <Description>Title attributed to the contract by the contracting body.</Description>
-                <Reference type="RULE">BII3-T83-R013</Reference>
                 <DataType>Text</DataType>
             </Element>
 
@@ -738,7 +721,6 @@
                 <Term>cbc:Description</Term>
                 <Name>Procurement project description</Name>
                 <Description>A textual description of this Procurement project.</Description>
-                <Reference type="RULE">BII3-T83-R014</Reference>
                 <DataType>Text</DataType>
             </Element>
 
@@ -747,12 +729,10 @@
                 <Name>Procurement project type</Name>
                 <Description>Type of contract (Works, Supplies or Services).</Description>
                 <Reference type="CODE_LIST">procurementType</Reference>
-                <Reference type="RULE">BII3-T83-R015</Reference>
                 <Reference type="RULE">CL-T83-R002</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Reference type="RULE">BII3-T83-R024</Reference>
                     <Value type="FIXED">PROJECT_TYPE</Value>
                 </Attribute>
                 <DataType>Code</DataType>
@@ -767,11 +747,9 @@
                     <Name>CPV</Name>
                     <Description>Classification code of goods, works and services commonly used in procurement.
                     </Description>
-                    <Reference type="RULE">BII3-T83-R016</Reference>
                     <Attribute>
                         <Term>listID</Term>
                         <Name>List identifier</Name>
-                        <Reference type="RULE">BII3-T83-R019</Reference>
                         <Value type="FIXED">CPV</Value>
                     </Attribute>
 					<DataType>Code</DataType>
@@ -791,7 +769,6 @@
                     <Attribute>
                         <Term>listID</Term>
                         <Name>List identifier</Name>
-                        <Reference type="RULE">BII3-T83-R019</Reference>
                         <Value type="FIXED">CPV</Value>
                     </Attribute>
 					<DataType>Code</DataType>
@@ -806,11 +783,9 @@
                     <Term>cbc:ID</Term>
                     <Name>Procurement project location NUTS code</Name>
                     <Description>The identification with the NUTS code of the project location.</Description>
-                    <Reference type="RULE">BII3-T83-R017</Reference>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
-                        <Reference type="RULE">BII3-T83-R020</Reference>
                         <Value type="FIXED">NUTS</Value>
                     </Attribute>
 					<DataType>Code</DataType>
