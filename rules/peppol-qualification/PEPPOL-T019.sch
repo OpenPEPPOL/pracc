@@ -35,12 +35,12 @@
         </rule>
         
         <rule context="ubl:TendererQualification/cbc:CustomizationID">
-            <assert id="PEPPOL-T019-R002" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t019:1.0'">CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t019:1.0'</assert>
+            <assert id="PEPPOL-T019-R002" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t019:1.1'">CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t019:1.1'</assert>
             <report id="PEPPOL-T019-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>CustomizationID SHOULD NOT contain any attributes.</report>
         </rule>
         
         <rule context="ubl:TendererQualification/cbc:ProfileID">
-            <assert id="PEPPOL-T019-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p011:1.0'">ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p011:1.0'</assert>
+            <assert id="PEPPOL-T019-R003" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p011:1.1'">ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p011:1.1'</assert>
             <report id="PEPPOL-T019-S304" flag="warning" test="./@*"><value-of select="$syntaxError"/>ProfileID SHOULD NOT contain any attributes.</report>
         </rule>
         
