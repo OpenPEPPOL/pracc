@@ -309,7 +309,7 @@
                                     given by using ISO code 3166 alpha 2
                                 </Description>
                                 <Reference type="RULE">CL-T83-R005</Reference>
-                                <Reference type="CODE_LIST">ISO3166</Reference>
+                                <Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
                                 <Attribute>
                                     <Term>listID</Term>
                                     <Name>List identifier</Name>
@@ -420,7 +420,7 @@
                         <Name>Country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <Reference type="RULE">CL-T83-R005</Reference>
-                        <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
                         <Attribute>
                             <Term>listID</Term>
                             <Name>List identifier for country code</Name>
@@ -452,7 +452,7 @@
                             <Name>Economic operator registration country code</Name>
                             <Description>The registration country code of the economic operator.</Description>
                             <Reference type="RULE">CL-T83-R005</Reference>
-                            <Reference type="CODE_LIST">ISO3166</Reference>
+                            <Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
                             <Attribute>
                                 <Term>listID</Term>
                                 <Name>List identifier for country code</Name>
