@@ -7,7 +7,7 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	
 	<Document>
-		<Term>t019:Qualification</Term>
+		<Term>t019:TendererQualification</Term>
 		<Name>Qualification, root element</Name>
 		
 		<Element>
@@ -21,14 +21,14 @@
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t019:1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t019:1.1</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p011:1.0</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p011:1.1</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>

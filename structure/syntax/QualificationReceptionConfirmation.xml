@@ -24,7 +24,6 @@
 			<Term>cbc:CustomizationID</Term>
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-			<Reference type="RULE">BII3-T45-R009</Reference>
 			<Reference type="RULE">PEPPOL-T020-R002</Reference>
 			<DataType>Identifier</DataType>
 			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t020:1.1</Value>
@@ -33,16 +32,14 @@
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
-			<Reference type="RULE">BII3-T45-R010</Reference>
 			<Reference type="RULE">PEPPOL-T020-R003</Reference>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p003:1.1</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p011:1.1</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Qualification Reception Confirmation identifier</Name>
 			<Description>Identifier of a document, must be a UUID</Description>
-			<Reference type="RULE">BII3-T45-R001</Reference>
 			<Reference type="RULE">PEPPOL-T020-R006</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
@@ -80,15 +77,12 @@
 			<Term>cbc:RegisteredDate</Term>
 			<Name>Document reception date</Name>
 			<Description>Date when the referred qualification document was received.</Description>
-			<Reference type="RULE">BII3-T45-R011</Reference>
 			<DataType>Date</DataType>
 		</Element>
 		<Element>
 			<Term>cbc:RegisteredTime</Term>
 			<Name>Document reception time</Name>
 			<Description>The time at which the referenced qualification document was received by the sender of the response.The registered time must have granularity of seconds, and include time zone information</Description>
-			<Reference type="RULE">BII3-T45-R017</Reference>
-			<Reference type="RULE">BII3-T45-R012</Reference>
 			<Reference type="RULE">PEPPOL-T020-R012</Reference>
 			<DataType>Time</DataType>
 		</Element>
@@ -96,13 +90,10 @@
 			<Term>cac:TenderDocumentReference</Term>
 			<Name>Received document reference</Name>
 			<Description>The qualification reception confirmation contains the reference to the qualification document sent by the economic operator and a REM-Evidence, a receipt that acknowledges the time of arrival of a qualifiction document.</Description>
-			<Reference type="RULE">BII3-T45-R008</Reference>
-			
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>Document identifier</Name>
 				<Description>The identifier of the received qualification document or the identifier of the REM-Evidence. Must be the same UUID of the received qualification document.</Description>
-				<Reference type="RULE">BII3-T45-R013</Reference>
 				<Reference type="RULE">PEPPOL-T020-R013</Reference>
 				<DataType>Identifier</DataType>
 			</Element>
@@ -111,12 +102,10 @@
 				<Name>Document type code</Name>
 				<Description>A code specifying the type of the document. The code used to reference a qualification is 916 (Related Document). The code used to reference the REM-Evidence regarding the time of arrival of
 					a tender is 13 (Post receipt).</Description>
-				<Reference type="RULE">BII3-T45-R014</Reference>
 				<Reference type="RULE">PEPPOL-T020-R014</Reference>
 				<Attribute>
 					<Term>listID</Term>
 					<Name>List identifier for document type code</Name>
-					<Reference type="RULE">BII3-T45-R016</Reference>
 					<Reference type="CODE_LIST">UNCL1001</Reference>
 					<Value type="FIXED">UNCL1001</Value>
 				</Attribute>
@@ -216,7 +205,6 @@
 			<Term>cac:ReceiverParty</Term>
 			<Name>Economic operator</Name>
 			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. MUST be the Main Qualifying Party who send the qualification document.</Description>
-			<Reference type="RULE">BII3-T45-R006</Reference>
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>

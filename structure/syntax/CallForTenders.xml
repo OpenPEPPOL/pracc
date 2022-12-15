@@ -213,7 +213,6 @@
                         <Term>cbc:MimeCode</Term>
                         <Name>Document mime type code</Name>
                         <Description>Stands for</Description>
-                        <Reference type="RULE">CL-T83-R004</Reference>
                         <DataType>Code</DataType>
                     </Element>
 
@@ -628,7 +627,6 @@
                     indicates whether the new contract will be based on an already established framework agreement or
                     dynamic purchasing system or not.
                 </Description>
-                <Reference type="RULE">CL-T83-R006</Reference>
                 <Reference type="CODE_LIST">contractType</Reference>
                 <Attribute>
                     <Term>listID</Term>
@@ -644,7 +642,6 @@
                 <Description>Indicator whether postal submission of the tender is merely a backup for the electronic
                     submission
                 </Description>
-                <Reference type="RULE">CL-T83-R007</Reference>
                 <Reference type="CODE_LIST">submissionMethod</Reference>
                 <Attribute>
                     <Term>listID</Term>

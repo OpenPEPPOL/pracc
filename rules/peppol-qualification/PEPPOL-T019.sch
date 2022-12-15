@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <title>eSENS business and syntax rules for Submit Tender (TRDM090)</title>
+    <title>eSENS business and syntax rules for Qualification</title>
   
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
     <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -9,7 +9,7 @@
     
     <pattern>
         <rule context="*">
-            <report id="PEPPOL-T019-S002" flag="fatal" test="normalize-space(.) = '' and not(*)" >[PEPPOL-T019-S002] A Qualification document MUST NOT contain empty elements.</report>
+            <report id="PEPPOL-T019-S002" flag="fatal" test="normalize-space(.) = '' and not(*)" >A Qualification document MUST NOT contain empty elements.</report>
         </rule>
     </pattern>
     <pattern>

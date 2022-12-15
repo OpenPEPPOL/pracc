@@ -24,7 +24,6 @@
         <Reference type="RULE">PEPPOL-T015-R038</Reference>
         <Reference type="RULE">PEPPOL-T015-R039</Reference>
         <Reference type="RULE">PEPPOL-T015-R040</Reference>
-        <Reference type="RULE">PEPPOL-T015-R043</Reference>
         <Attribute>
             <Term>id</Term>
             <Name>Publish notice identifier</Name>

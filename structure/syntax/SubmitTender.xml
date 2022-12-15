@@ -109,7 +109,6 @@
 				<Term>cbc:VersionID</Term>
 				<Name>Call for tender version</Name>
 				<Description>Identifies the version of the call for tenders.</Description>
-				<Reference type="RULE">BII3-T90-R011</Reference>
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
@@ -151,7 +150,6 @@
 						<Term>cbc:MimeCode</Term>
 						<Name>Document mime type code</Name>
 						<Description>Mime code of the attached document (IANA)</Description>
-						<Reference type="RULE">CL-T90-R002</Reference>
 						<DataType>Code</DataType>
 					</Element>
 					<Element>
