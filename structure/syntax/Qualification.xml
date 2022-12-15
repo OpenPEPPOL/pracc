@@ -2,12 +2,12 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 	<Term>Qualification</Term>
 	<Name>Qualification (T019)</Name>
-	<Namespace prefix="t005">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
+	<Namespace prefix="t019">urn:oasis:names:specification:ubl:schema:xsd:QualificationApplicationRequest-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
 	
 	<Document>
-		<Term>t019:TendererQualification</Term>
+		<Term>t019:QualificationApplicationRequest</Term>
 		<Name>Qualification, root element</Name>
 		
 		<Element>
