@@ -16,9 +16,7 @@
     <!-- tag::specification-identification[] -->
     <rim:Slot name="SpecificationIdentification"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
-            <rim:Value>
-                urn:fdc:peppol.eu:prac:trns:t015:1.2
-            </rim:Value> <!--.-->
+            <rim:Value>urn:fdc:peppol.eu:prac:trns:t015:1.2</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::specification-identification[] -->
@@ -85,7 +83,7 @@
             </rim:Slot>
             <!-- end::notice-version[] -->
             <!-- tag::eforms-version[] -->
-            <rim:Slot name="CustomizationID"> <!--.-->
+            <rim:Slot name="eFormsVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                     <rim:Value>eforms-sdk-1.2</rim:Value>
                 </rim:SlotValue>
