@@ -1,11 +1,11 @@
 include::../shared/settings.adoc[]
 
-:name-profile: Profile P010 - "Tendering Message Response"
+:name-profile: Profile P012 - "Qualification Rejection"
 
 :name-transaction-org: "Trdm100 Notices metadata transaction"
-:name-trans-short: Tendering Message Response
-:name-transaction: T018 - {name-trans-short}
-:name-syntax: TenderingMessageResponse
+:name-trans-short: Qualification Rejection
+:name-transaction: T023 - {name-trans-short}
+:name-syntax: QualificationResponse
 
 include::../shared/links.adoc[]
 
