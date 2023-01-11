@@ -382,7 +382,7 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>guides/Peppol-BIS-pre-award-guide_Notification-and-Open-Procedure.pdf</Path>
+        <Path>guides/Peppol-BIS-pre-award-guide_Notification-and-Open-Procedure-v1.0.pdf</Path>
         <Title>Peppol BIS pre-award guide - Notification and Open Procedure</Title>
         <Description>The Peppol BIS pre-award guide - Notification and Open Procedure</Description>
         <Property key="download">Peppol-BIS-pre-award-guide_Notification-and-Open-Procedure-v1.0.pdf</Property>
