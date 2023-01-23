@@ -152,6 +152,16 @@
         <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
         <Title>Syntax Mapping T020 - Qualification Reception Confirmation</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PreAwardCatalogueRequest.xml</Path>
+        <Title>Syntax Mapping CatalogueRequest - Pre-Award Catalogue Request</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PreAwardCatalogue.xml</Path>
+        <Title>Syntax Mapping Catalogue - Pre-Award Catalogue</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
