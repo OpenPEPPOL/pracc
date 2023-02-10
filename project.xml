@@ -155,133 +155,133 @@
         <Identifier>T001</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T001.sch</Path>
-        <Title>PEPPOL T001 rules - Subscribe to Procuedure</Title>
+        <Title>PEPPOL T001 rules - Subscribe to Procuedure 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T002</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T002.sch</Path>
-        <Title>PEPPOL T002 rules - Subscribe to Procedure Confirmation</Title>
+        <Title>PEPPOL T002 rules - Subscribe to Procedure Confirmation 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T021</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T021.sch</Path>
-        <Title>PEPPOL T021 rules - Unsubscribe from Procedure</Title>
+        <Title>PEPPOL T021 rules - Unsubscribe from Procedure 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T022</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T022.sch</Path>
-        <Title>PEPPOL T022 rules - Unsubscribe from Procedure Confirmation</Title>
+        <Title>PEPPOL T022 rules - Unsubscribe from Procedure Confirmation 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T003</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender-status-inquiry/PEPPOL-T003.sch</Path>
-        <Title>PEPPOL T003 rules - Tender Status Inquiry</Title>
+        <Title>PEPPOL T003 rules - Tender Status Inquiry 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T004</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender/PEPPOL-T004.sch</Path>
-        <Title>PEPPOL T004 rules - Call for Tenders</Title>
+        <Title>PEPPOL T004 rules - Call for Tenders 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T005</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender/PEPPOL-T005.sch</Path>
-        <Title>PEPPOL T005 rules - Tender</Title>
+        <Title>PEPPOL T005 rules - Tender 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T006</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender/PEPPOL-T006.sch</Path>
-        <Title>PEPPOL T006 rules - Tender Reception Notification</Title>
+        <Title>PEPPOL T006 rules - Tender Reception Notification 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T007</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender-question-and-answers/PEPPOL-T007.sch</Path>
-        <Title>PEPPOL T007 rules - Tendering Questions</Title>
+        <Title>PEPPOL T007 rules - Tendering Questions 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T008</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-call-for-tender-question-and-answers/PEPPOL-T008.sch</Path>
-        <Title>PEPPOL T008 rules - Tendering Answers</Title>
+        <Title>PEPPOL T008 rules - Tendering Answers 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T009</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/tender-clarification/PEPPOL-T009.sch</Path>
-        <Title>PEPPOL T009 rules - Tender Clarification Request</Title>
+        <Title>PEPPOL T009 rules - Tender Clarification Request 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T010</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/tender-clarification/PEPPOL-T010.sch</Path>
-        <Title>PEPPOL T010 rules - Tender Clarification</Title>
+        <Title>PEPPOL T010 rules - Tender Clarification 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T011</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-search-notice/PEPPOL-T011.sch</Path>
-        <Title>PEPPOL T011 rules - Search Notice Request</Title>
+        <Title>PEPPOL T011 rules - Search Notice Request 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T012</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-search-notice/PEPPOL-T012.sch</Path>
-        <Title>PEPPOL T012 rules - Search Notice Response</Title>
+        <Title>PEPPOL T012 rules - Search Notice Response 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T013</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender-withdrawal/PEPPOL-T013.sch</Path>
-        <Title>PEPPOL T013 rules - Tender Withdrawal</Title>
+        <Title>PEPPOL T013 rules - Tender Withdrawal 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T014</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender-withdrawal/PEPPOL-T014.sch</Path>
-        <Title>PEPPOL T014 rules - Tender Withdrawal Notification</Title>
+        <Title>PEPPOL T014 rules - Tender Withdrawal Notification 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T015</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-publish-notice/PEPPOL-T015.sch</Path>
-        <Title>PEPPOL T015 rules - Publish Notice</Title>
+        <Title>PEPPOL T015 rules - Publish Notice 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T016</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-publish-notice/PEPPOL-T016.sch</Path>
-        <Title>PEPPOL T016 rules - Notice Publication Response</Title>
+        <Title>PEPPOL T016 rules - Notice Publication Response 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T017</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-notify-awarding/PEPPOL-T017.sch</Path>
-        <Title>PEPPOL T017 rules - Awarding Notification</Title>
+        <Title>PEPPOL T017 rules - Awarding Notification 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T018</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tendering-message-response/PEPPOL-T018.sch</Path>
-        <Title>PEPPOL T018 rules - Tendering Message Response</Title>
+        <Title>PEPPOL T018 rules - Tendering Message Response 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T019</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-qualification/PEPPOL-T019.sch</Path>
-        <Title>PEPPOL T019 rules - Qualification</Title>
+        <Title>PEPPOL T019 rules - Qualification 1.1</Title>
     </Resource>
     <Resource>
         <Identifier>T020</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-qualification/PEPPOL-T020.sch</Path>
-        <Title>PEPPOL T020 rules - Qualification Reception Confirmation</Title>
+        <Title>PEPPOL T020 rules - Qualification Reception Confirmation 1.1</Title>
     </Resource>
 
     <!-- Code lists -->
