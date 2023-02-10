@@ -5,10 +5,13 @@
 *Release date 2022-11-22*
 
 === P001 - New transactions to unsubscribe from a procedure - 1.2
-T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide electronic messaging support for the process to unsubscribe from a procedure.
+T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide electronic messaging support for the process to unsubscribe from a procedure. Profile identifiers and Transaction identifers of T001 and T002 have been raised to 1.2.0 due to the new profile feature.
 
 === P008 - New field for publication date - 1.2
 New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage.
+
+=== CENBII schematrons rules integrated with PEPPOL rules
+CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated into a new set of PEPPOL rules. Some rules have been removed or modified.
 
 === Version numbers of BIS P001 - P003 and P008 raised to 1.2
 Since the new transactions in P001, the removal of the CENBII schematrons and the new field in P008 are breaking changes, the version number has been raised from 1.1.0 to 1.2.0.
