@@ -1,21 +1,14 @@
-= Changelog for release 2022
+= Changelog for March release 2023
 
 == Profiles P001 - P011
 
-*Release date 2022-11-22*
+*Release date 2023-03-01*
 
 === P001 - New transactions to unsubscribe from a procedure - 1.2
 T021 - Unsubscribe from procedure and T022 - Unsubscribe from procedure confirmation were added as new eTendering transactions. The transactions provide electronic messaging support for the process to unsubscribe from a procedure. Profile identifiers and Transaction identifers of T001 and T002 have been raised to 1.2.0 due to the new profile feature.
 
 === P008 - New field for publication date - 1.2
 New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage.
-
-=== CENBII schematrons rules integrated with PEPPOL rules
-CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated into a new set of PEPPOL rules. Some rules have been removed or modified.
-* Reworking use of pattern schema
-* Removal of CENBII Schematrons
-* Applied code list rules to peppol schematrons
-* Removed references to CENBII rules in syntax mapping
 
 === Version numbers of BIS P001 - P003 and P008 raised to 1.2
 Since the new transactions in P001, the removal of the CENBII schematrons and the new field in P008 are breaking changes, the version number has been raised from 1.1.0 to 1.2.0.
@@ -28,6 +21,14 @@ The BIS P011 Qualification - 1.1 was added as a new eTendering profile. The prof
 
 === New Peppol BIS pre-award guide - Notification and Open Procedure v1.0
 The new guideline describes the choreography to execute open procedures using Peppol. Thus, the Notification & Open Procedure Guideline is a procedural specification. The guideline does not define individual transactions but it refers to Peppol several BISs and underlying standards, in which the transactions and the transaction information requirements are listed and defined.
+
+=== CENBII schematrons rules integrated with PEPPOL rules
+CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated into a new set of PEPPOL rules. Some rules have been removed or modified.
+
+* Reworking use of pattern schema
+* Removal of CENBII Schematrons
+* Applied code list rules to peppol schematrons
+* Removed references to CENBII rules in syntax mapping
 
 
 === Editorial changes
