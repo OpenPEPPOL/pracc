@@ -12,6 +12,10 @@ New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage
 
 === CENBII schematrons rules integrated with PEPPOL rules
 CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated into a new set of PEPPOL rules. Some rules have been removed or modified.
+* Reworking use of pattern schema
+* Removal of CENBII Schematrons
+** Took code list rules and applied them to peppol schematrons
+** Removed references to CENBII rules in syntax mapping
 
 === Version numbers of BIS P001 - P003 and P008 raised to 1.2
 Since the new transactions in P001, the removal of the CENBII schematrons and the new field in P008 are breaking changes, the version number has been raised from 1.1.0 to 1.2.0.
@@ -28,23 +32,24 @@ To accompany the release of the remaining profiles and transactions to complete 
 
 === Editorial changes
 
-*Updated eDelivery and eDocuments guidelines*
+*New Peppol BIS pre-award guide - Notification and Open Procedure
+The new guideline describes the choreography to execute open procedures using Peppol. Thus, the Notification & Open Procedure Guideline is a procedural specification. The guideline does not define individual transactions but it refers to Peppol several BISs and underlying standards, in which the transactions and the transaction information requirements are listed and defined.
 
-* adding the since introduced profiles in the guidelines
-* updating identifiers to new versions
-* reworking descriptions of processes and clarifying the open procedure
+*Updated eDelivery guidelines*
+
+* update 2. References
+* update use of 4.2 Party IdentifiersIdentification used in business (UBL) documents in Pre-Award
+* update of 4.4	Profile ID, Customization ID and DocumentID. Adding new identifiers due to new profiles, transactions, revisions and changes. Improving/correcting examples given in SBDH Profile for identifiers (section 6.2). Integrating section 7 with 4.4. Removing section 7
+* Editorial changes in section 4.5 about use of CEN BII and PEPPOL for normative reasons
+* additional note on the use of REM Evidence in Pre-Award in section 5.1
+
 
 *P001 - P009*
 
-* Update to description of open procedure to match with eDelivery guideline
+* Update to description of open procedure to match with Open Procedure and eDelivery guideline
 * Fix of broken links and references
 * Update to description of use of UBL versions
 * Rework of profile structure
 * Update of graphics and examples (P006)
 
-*Schematron files*
 
-* Reworking use of pattern schema
-* Removal of CENBII Schematrons
-** Took code list rules and applied them to peppol schematrons
-** Removed references to CENBII rules in syntax mapping
