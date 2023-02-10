@@ -14,8 +14,8 @@ New field _NoticePublicationDatePreferred_ added in T015 to support eForms usage
 CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated into a new set of PEPPOL rules. Some rules have been removed or modified.
 * Reworking use of pattern schema
 * Removal of CENBII Schematrons
-** Took code list rules and applied them to peppol schematrons
-** Removed references to CENBII rules in syntax mapping
+* Applied code list rules to peppol schematrons
+* Removed references to CENBII rules in syntax mapping
 
 === Version numbers of BIS P001 - P003 and P008 raised to 1.2
 Since the new transactions in P001, the removal of the CENBII schematrons and the new field in P008 are breaking changes, the version number has been raised from 1.1.0 to 1.2.0.
@@ -26,14 +26,11 @@ The BIS P010 Tendering Message Response - 1.1 was added as a new eTendering prof
 === New BIS P011 - Qualification - 1.1
 The BIS P011 Qualification - 1.1 was added as a new eTendering profile. The profile provides electronic messaging support for the business process of qualifying for a tendering process in a restricted procedure. The profile is executed between a contracting body or his representative and a publication body to announce business opportunities.
 
-=== New open procedure guideline
-To accompany the release of the remaining profiles and transactions to complete the open procedure, a guideline was build. The guideline provides an entrypoint and comprehensive introduction to the open procedure and its profiles.
+=== New Peppol BIS pre-award guide - Notification and Open Procedure v1.0
+The new guideline describes the choreography to execute open procedures using Peppol. Thus, the Notification & Open Procedure Guideline is a procedural specification. The guideline does not define individual transactions but it refers to Peppol several BISs and underlying standards, in which the transactions and the transaction information requirements are listed and defined.
 
 
 === Editorial changes
-
-*New Peppol BIS pre-award guide - Notification and Open Procedure
-The new guideline describes the choreography to execute open procedures using Peppol. Thus, the Notification & Open Procedure Guideline is a procedural specification. The guideline does not define individual transactions but it refers to Peppol several BISs and underlying standards, in which the transactions and the transaction information requirements are listed and defined.
 
 *Updated eDelivery guidelines*
 
