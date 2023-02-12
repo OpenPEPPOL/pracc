@@ -1,7 +1,7 @@
 
 = Business process
 
-The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
+The {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the {name-profile}. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 image::../images/processPN.svg[align="center", width=1200]
 
@@ -47,8 +47,8 @@ At the time of publication of a notice, the publication body sends a confirmatio
 
 |===
 
-:leveloffset: +1
+
 
 include::implementation-guidelines.adoc[]
 
-:leveloffset: -1
+

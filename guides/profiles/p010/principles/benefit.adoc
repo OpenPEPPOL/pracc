@@ -22,9 +22,4 @@ Due to legal framework conditions, there is a constraint to tolerate errors to a
 
 ** _Result: The received message (or business document) will be processed further._
 
-:leveloffset: +1
 
-include::errors-in-scope.adoc[]
-include::errors-out-of-scope.adoc[]
-
-:leveloffset: -1

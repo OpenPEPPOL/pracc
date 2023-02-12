@@ -1,5 +1,5 @@
 
-= Errors outside the scope of the message level response:
+= Errors out of scope of the Tendering Message Response
 
 * Unknown sender (in scope of transport acknowledgement)
 

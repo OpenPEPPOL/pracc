@@ -1,6 +1,8 @@
 
 = Key examples
 
+The following examples show use cases illustrating how the {name-profile}  can be used.
+
 == Prior Information Notice
 
 *Example 1*
