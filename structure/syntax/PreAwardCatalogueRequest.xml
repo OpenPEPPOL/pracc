@@ -16,38 +16,28 @@
 
         <Element>
             <Term>cbc:UBLVersionID</Term>
-            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of
-                the elements that might be encountered in the current instance.
-            </Description>
+            <Description>Identifies the earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance.</Description>
             <Value type="FIXED">2.1</Value>
         </Element>
 
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name>Specification identification</Name>
-            <Description>An identification of the specification containing the total set of rules regarding semantic
-                content, cardinalities and business rules to which the data contained in the instance document conforms.
-            </Description>
-            <Value type="FIXED">
-                urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0
-            </Value>
+            <Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+            <Value type="FIXED">urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0</Value>
         </Element>
 
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type identifier</Name>
-            <Description>Identifies the business process context in which the transaction appears. It enables the buyer
-                to process the document in an appropriate way.
-            </Description>
+            <Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
             <Value type="FIXED">urn:www.cenbii.eu:profile:bii35:ver3.0</Value>
         </Element>
 
         <Element>
             <Term>cbc:ID</Term>
             <Name>Pre-award catalogue request identifier</Name>
-            <Description>The identifier that enables referencing of the document instance for various purposes including
-                referencing between transactions that are part of the same process.
-            </Description>
+            <Description>The identifier that enables referencing of the document instance for various purposes including referencing between transactions that are part of the same process.</Description>
             <Value type="EXAMPLE">123</Value>
         </Element>
 
@@ -62,6 +52,36 @@
             <Term>cbc:IssueTime</Term>
             <Name>The time on which the pre-award catalogue request was issued.</Name>
             <Value type="EXAMPLE">10:00:00</Value>
+        </Element>
+
+        <Element cardinality="0..1">
+            <Term>cbc:VersionID</Term>
+            <Name>Catalogue version</Name>
+            <Description>The version ID of a catalogue.</Description>
+            <Value type="EXAMPLE">1</Value>
+        </Element>
+
+        <Element>
+            <Term>cac:ValidityPeriod</Term>
+            <Name>Pre award catalogue request validity period</Name>
+            <Description>The validity period must include both start date and end date, and the start date must be earlier than the end date</Description>
+            <Property key="doc">structure/docs/validity-period.adoc</Property>
+
+            <Element>
+                <Term>cbc:StartDate</Term>
+                <Name>Period start date</Name>
+                <Description>The date when the period starts.</Description>
+                <Reference type="RULE">BII3-T68-R023</Reference>
+                <Value type="EXAMPLE">2017-06-01</Value>
+            </Element>
+
+            <Element>
+                <Term>cbc:EndDate</Term>
+                <Name>Period end date</Name>
+                <Description>The date on which the period ends.</Description>
+                <Reference type="RULE">BII3-T68-R023</Reference>
+                <Value type="EXAMPLE">2017-06-30</Value>
+            </Element>
         </Element>
 
         <Element>
@@ -93,8 +113,7 @@
             <Element cardinality="1..1">
                 <Term>cbc:PreviousVersionID</Term>
                 <Name>Previous version identifier</Name>
-                <Description>The previous version of the catalogue request that is superseded by this version.
-                </Description>
+                <Description>The previous version of the catalogue request that is superseded by this version.</Description>
                 <Value type="EXAMPLE">2.0</Value>
             </Element>
         </Element>
@@ -102,9 +121,7 @@
         <Element>
             <Term>cac:ProviderParty</Term>
             <Name>Provider party</Name>
-            <Description>The contracting authority or contracting entity who is buying supplies, services or public
-                works using a tendering procedure, using a catalogue request, as described in the applicable directive.
-            </Description>
+            <Description>The contracting authority or contracting entity who is sending the catalogue request and buying supplies, services or public works using a tendering procedure, using a catalogue request, as described in the applicable directive.</Description>
             <Property key="doc">structure/docs/provider.adoc</Property>
 
             <Element cardinality="0..1">
@@ -154,9 +171,7 @@
                 <Element>
                     <Term>cbc:Name</Term>
                     <Name>Catalogue provider name</Name>
-                    <Description>The name of the party that sends the catalogue request.Use in absence of, or additon to
-                        party identifier
-                    </Description>
+                    <Description>The name of the party that sends the catalogue request. Use in absence of, or in addition to party identifier</Description>
                     <Value type="EXAMPLE">Provider name</Value>
                 </Element>
             </Element>
@@ -175,9 +190,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:AdditionalStreetName</Term>
                     <Name>Address line 2</Name>
-                    <Description>An additional address line in an address that can be used to give further details
-                        supplementing the main line.
-                    </Description>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                     <Value type="EXAMPLE">Po box 123</Value>
                 </Element>
 
@@ -191,9 +204,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:PostalZone</Term>
                     <Name>Post code</Name>
-                    <Description>The identifier for an addressable group of properties according to the relevant postal
-                        service, such as a ZIP code or Post Code.
-                    </Description>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
                     <Value type="EXAMPLE">12345</Value>
                 </Element>
 
@@ -229,10 +240,7 @@
         <Element>
             <Term>cac:ReceiverParty</Term>
             <Name>Receiver party</Name>
-            <Description>The party to which the catalogue is sent. Any natural or legal person or public entity or group
-                of such persons and/or entities, including any temporary association of undertakings, which offers the
-                execution of works and/or a work, the supply of products or the provision of services on the market.
-            </Description>
+            <Description>The party to which the catalogue request is sent. Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
             <Property key="doc">structure/docs/receiver.adoc</Property>
 
             <Element cardinality="0..1">
@@ -305,9 +313,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:AdditionalStreetName</Term>
                     <Name>Address line 2</Name>
-                    <Description>An additional address line in an address that can be used to give further details
-                        supplementing the main line.
-                    </Description>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
                     <Value type="EXAMPLE">Postbox 43</Value>
                 </Element>
 
@@ -321,9 +327,7 @@
                 <Element cardinality="0..1">
                     <Term>cbc:PostalZone</Term>
                     <Name>Post code</Name>
-                    <Description>The identifier for an addressable group of properties according to the relevant postal
-                        service, such as a ZIP code or Post Code.
-                    </Description>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service, such as a ZIP code or Post Code.</Description>
                     <Value type="EXAMPLE">5510</Value>
                 </Element>
 
