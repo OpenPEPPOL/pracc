@@ -19,6 +19,9 @@
 :P010: https://docs.peppol.eu/pracc/profiles/p010/index.html[P010 Tendering Message Response]
 :P011: https://docs.peppol.eu/pracc/profiles/p011/index.html[P011 Qualification]
 
+//PEPPOL Transactions Preaward
+:T004: https://docs.peppol.eu/pracc/transactions/T004/index.html[T004 Call for Tenders]
+
 
 //CEN BII3
 :link-bii3: https://standards.cencenelec.eu/dyn/www/f?p=205:32:0::::FSP_ORG_ID,FSP_LANG_ID:2073699,25&cs=1764296F93587711762A3AB227353671A[CEN WS/BII 3]

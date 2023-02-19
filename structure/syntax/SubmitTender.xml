@@ -69,12 +69,12 @@
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:DocumentReference</Term>
-			<Name>Provided document</Name>
-			<Description>Document that is provided as part of a  call for tender.</Description>
+			<Name>Name of the provided tender document. Is used to name the tender, the call for tenders reference and related documents like the ESPD response.</Name>
+			<Description>Description of documents that are provided as part of a tender. Is used to describe the Tender, the call for tender reference and related documents like the ESPD response. Tender documents that are encrypted may point to the file extension .p7m in the description.</Description>
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Call for tender reference document identifier</Name>
-				<Description>A reference to the call for tender as issued by the contracting body. Creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
+				<Name>Document identifier</Name>
+				<Description>A unique reference of the document reference. May point to the tender, call for tenders or related documents like the ESPD response. The cbc:ID of a Call for tenders reference creates a link between the call for tender and the tender.The call for tenders and tenders reference must be a UUID</Description>
 				<Reference type="RULE">PEPPOL-T005-R013</Reference>
 				<Reference type="RULE">PEPPOL-T005-R012</Reference>
 				<DataType>Identifier</DataType>
@@ -82,7 +82,7 @@
 			<Element>
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
-				<Description>A code specifying the type of the document.</Description>
+				<Description>A code specifying the type of the document allowing to distinguish between different document types. Allowed values are 310 (Offer/quotation) for Tender, 311 (Request for quote) for Call for tender reference and 916 (Related document) for ESPD response</Description>
 				<Reference type="RULE">CL-T90-R003</Reference>
 				<Attribute>
 					<Term>listID</Term>
@@ -107,8 +107,8 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:VersionID</Term>
-				<Name>Call for tender version</Name>
-				<Description>Identifies the version of the call for tenders.</Description>
+				<Name>Document Version</Name>
+				<Description>Identifies the version of the document reference. Typically used to indicate the version of the Call for Tenders document reference.</Description>
 				<DataType>Identifier</DataType>
 			</Element>
 			<Element>
@@ -127,7 +127,7 @@
 					<Element cardinality="0..1">
 						<Term>cbc:URI</Term>
 						<Name>Provided document url</Name>
-						<Description>URL where a document that is provided as part of a call for tender can be downloaded.</Description>
+						<Description>URL where a document that is provided as can be downloaded. Typically used by the Call for Tenders document reference.</Description>
 						<DataType>Identifier</DataType>
 					</Element>
 					
@@ -155,7 +155,7 @@
 					<Element>
 						<Term>cbc:FileName</Term>
 						<Name>Document name</Name>
-						<Description>The file name of the document.</Description>
+						<Description>The file name of the document. Encrypted tender documents MUST use the file extension .p7m and use the encryption certificate provided in the call for tender. </Description>
 						<Reference type="RULE">PEPPOL-T005-R014</Reference>
 						<DataType>Text</DataType>
 					</Element>
