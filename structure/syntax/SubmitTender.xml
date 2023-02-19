@@ -69,7 +69,7 @@
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:DocumentReference</Term>
-			<Name>Name of the provided tender document. Is used to name the tender, the call for tenders reference and related documents like the ESPD response.</Name>
+			<Name>Provided document</Name>
 			<Description>Description of documents that are provided as part of a tender. Is used to describe the Tender, the call for tender reference and related documents like the ESPD response. Tender documents that are encrypted may point to the file extension .p7m in the description.</Description>
 			<Element>
 				<Term>cbc:ID</Term>
@@ -95,7 +95,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:LocaleCode</Term>
 				<Name>Tender language</Name>
-				<Description>The language used to write the tender.</Description>
+				<Description>The language used to write the tender documents.</Description>
 				<Reference type="RULE">PEPPOL-T005-R016</Reference>
 				<Attribute>
 					<Term>listID</Term>
