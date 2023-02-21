@@ -147,11 +147,10 @@
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference">
             <assert id="PEPPOL-T016-R033" flag="fatal" test="cbc:ID">Element 'cbc:ID' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R034" flag="fatal" test="cbc:UUID">Element 'cbc:UUID' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R035" flag="fatal" test="cbc:DocumentTypeCode">Element 'cbc:DocumentTypeCode' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R036" flag="fatal" test="cbc:VersionID">Element 'cbc:VersionID' MUST be provided.</assert>
+            <assert id="PEPPOL-T016-R034" flag="fatal" test="count(cbc:UUID) = count(cbc:VersionID)">Element 'cbc:UUID' MUST be provided with cbc:VersionID.</assert>
+            <assert id="PEPPOL-T016-R035" flag="fatal" test="count(cbc:UUID) = count(cbc:DocumentTypeCode)">Element 'cbc:UUID' MUST be provided with cbc:DocumentTypeCode.</assert>
             <assert id="PEPPOL-T016-R037" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:ID)) = count(cac:DocumentReference/cbc:ID)">Element 'cbc:ID' MUST be unique.</assert>
-            <assert id="PEPPOL-T016-R038" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:UUID)) = count(cac:DocumentReference/cbc:ID)">Element 'cbc:ID' MUST be unique.</assert>
+            <assert id="PEPPOL-T016-R038" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:UUID)) = count(cac:DocumentReference/cbc:UUID)">Element 'cbc:UUID' MUST be unique.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference/cbc:DocumentTypeCode">
