@@ -107,7 +107,7 @@ The type of the slotValue is a CollectionValueType, so you can enter more than o
 === Notice Type
 [source,xml,indent=0]
 ....
-include::../files/ExampleSearchNoticeRequest.xml[tags=form-type]
+include::../files/ExampleSearchNoticeRequest.xml[tags=notice-type]
 ....
 <.> Just like the form type, you may select the notice type, you want to search for. The ID of the list has to be "_http://publications.europa.eu/resource/authority/notice-type_" in the type attribute of the slot.
 

@@ -127,12 +127,12 @@
         <!-- tag::estimatedValue[] -->
         <rim:Slot name="EstimatedValue"> <!--.-->
             <rim:Slot name="Minimum"> <!--.-->
-                <rim:SlotValue xsi:type="rim:FloatValueType">
+                <rim:SlotValue xsi:type="rim:IntegerValueType">
                     <rim:Value>25</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <rim:Slot name="Maximum"> <!--.-->
-                <rim:SlotValue xsi:type="rim:FloatValueType">
+                <rim:SlotValue xsi:type="rim:IntegerValueType">
                     <rim:Value>100</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
@@ -240,7 +240,7 @@
         </rim:Slot>
         <!-- end::procedure-identifier[] -->
         <!-- tag::procedure-legal-basis[] -->
-        <rim:Slot name="ProcedureLegalBasis" type="legalBasis"> <!-- optional -->
+        <rim:Slot name="ProcedureLegalBasis" type="http://publications.europa.eu/resource/authority/legal-basis"> <!-- optional -->
             <rim:SlotValue xsi:type="rim:CollectionValueType">
                 <rim:Element xsi:type="rim:StringValueType">
                     <rim:Value>32014L0023</rim:Value> <!--.-->
