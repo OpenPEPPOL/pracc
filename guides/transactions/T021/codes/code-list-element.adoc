@@ -10,7 +10,7 @@
 | Document location
 | `UnsubscribeFromProcedureRequest/cac:EconomicOperatorParty/cac:Party/​cac:PartyLegalEntity/{zwsp}cac:RegistrationAddress/cac:Country/cbc:IdentificationCode`
 | Source codelist
-| Use  https://docs.peppol.eu/pracc/codelist/ISO3166-1:Alpha2/[Country codes (ISO 3166-1:Alpha2)]
+| Use  https://docs.peppol.eu/pracc/codelist/ISO3166/[Country codes (ISO 3166-1:Alpha2)]
 |===
 
 == Economic operator type code
@@ -33,5 +33,5 @@
 | Document location
 | `UnsubscribeFromProcedureRequest/cac:EconomicOperatorParty/cac:Party/​cac:PostalAddress/{zwsp}cac:Country/cbc:IdentificationCode`
 | Source codelist
-| Use https://docs.peppol.eu/pracc/codelist/ISO3166-1:Alpha2/[Country codes (ISO 3166-1:Alpha2)]
+| Use https://docs.peppol.eu/pracc/codelist/ISO3166/[Country codes (ISO 3166-1:Alpha2)]
 |===
