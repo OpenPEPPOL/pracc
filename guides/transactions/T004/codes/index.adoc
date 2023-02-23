@@ -1,11 +1,7 @@
 
 = Code lists
 
-The following code lists for coded elements and identifier schemes are used in this transaction.
-
-NOTE: Information elements that are ruled by codelists are also described in the Syntax mapping for {name-trans-short}:
-
-* {link-mapping}
+include::../../shared/codelists.adoc[]
 
 :leveloffset: +1
 
