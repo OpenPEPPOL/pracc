@@ -1,11 +1,11 @@
 
 = Code list for elements
 
-.The following policies apply to the use of status codes:
-* Lists of Status codes are fixed and can not be changed bilaterally.
-* There are eleven pre-agreed status codes (elven reason status and three result status).
-* Status codes are sent from one party to the other to inform it about further processing of the request the other side.
-* Maximum time for first response 3 days – The Seller should receive the first Invoice Response within 3 working days.
+.The following policies apply to the use of codes for returning the processing status of a transaction via Message Response Codes and Status Reason Codes:
+* There are three Message Response Codes which define the final processing result.
+* There are eleven pre-defined Status Reason Codes which define the reason why a received and reference document could not be processed correctly.
+* Lists of Message Response Codes and Status Reason Codes are fixed and can not be changed bilaterally.
+* Message Response Codes and Status Reason Codes are returned from the receiver of a document to the sender of a document to inform the sender of the document about the final processing results and reasons in case of failure or processing problems.
 
 
 == Message Response Code
@@ -22,7 +22,7 @@
 
 .The columns in the below table shall be understood as follows:
 [horizontal]
-Message Response Code:: The code that defines the status of the reference document, e.g. AP.
+Message Response Code:: The code that defines the final processing result of the referenced and received document, e.g. AP for Accepted.
 
 Name of the Message Response Code:: The name of the code.
 
@@ -61,7 +61,7 @@ Due to legal framework conditions, there is a constraint to tolerate errors to a
 
 .The columns in the below table shall be understood as follows:
 [horizontal]
-Status Reason Code:: The code that defines the reason for the status of the reference document, e.g. BW.
+Status Reason Code:: The code that defines the reason why a received and reference document could not be processed correctly e.g. BW for Business rule violation, warning.
 
 Name of the Status Reason Code:: The name of the code.
 

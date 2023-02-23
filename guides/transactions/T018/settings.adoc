@@ -2,7 +2,7 @@ include::../shared/settings.adoc[]
 
 :name-profile: Profile P010 - "Tendering Message Response"
 
-:name-transaction-org: "Trdm100 Notices metadata transaction"
+:name-transaction-org: "BII Architecture 107 - Message Level Response guideline (CWA 17025-107:2016)n"
 :name-trans-short: Tendering Message Response 1.1
 :name-transaction: T018 - {name-trans-short}
 :name-syntax: TenderingMessageResponse
