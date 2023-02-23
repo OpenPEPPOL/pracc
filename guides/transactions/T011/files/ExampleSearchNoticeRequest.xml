@@ -128,12 +128,12 @@
         <rim:Slot name="EstimatedValue"> <!--.-->
             <rim:Slot name="Minimum"> <!--.-->
                 <rim:SlotValue xsi:type="rim:IntegerValueType">
-                    <rim:Value>25</rim:Value>
+                    <rim:Value>25000</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <rim:Slot name="Maximum"> <!--.-->
                 <rim:SlotValue xsi:type="rim:IntegerValueType">
-                    <rim:Value>100</rim:Value>
+                    <rim:Value>100000</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
             <rim:Slot name="Currency" type="http://publications.europa.eu/resource/authority/currency"> <!--.-->

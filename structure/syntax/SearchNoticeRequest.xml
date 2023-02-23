@@ -481,11 +481,11 @@
                         <Reference type="RULE">PEPPOL-T011-R046</Reference>
                         <Attribute>
                             <Term>xsi:type</Term>
-                            <Value type="FIXED">rim:FloatValueType</Value>
+                            <Value type="FIXED">rim:IntegerValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <DataType>rim:FloatValueType</DataType>
+                            <DataType>rim:IntegerValueType</DataType>
                         </Element>
                     </Element>
                 </Element>
@@ -504,11 +504,11 @@
                         <Attribute>
                             <Term>xsi:type</Term>
                             <Reference type="RULE">PEPPOL-T011-R046</Reference>
-                            <Value type="FIXED">rim:FloatValueType</Value>
+                            <Value type="FIXED">rim:IntegerValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <DataType>rim:FloatValueType</DataType>
+                            <DataType>rim:IntegerValueType</DataType>
                         </Element>
                     </Element>
                 </Element>
@@ -764,7 +764,7 @@
                     request for additional information (BT-13). Can be used to specify a start date, end date or a time
                     range.
                 </Description>
-                <Reference type="BUSINESS_TERM">eForms BT-1311</Reference>
+                <Reference type="BUSINESS_TERM">eForms BT-13</Reference>
                 <Reference type="RULE">PEPPOL-T011-R051</Reference>
                 <Reference type="RULE">PEPPOL-T011-R052</Reference>
                 <Reference type="RULE">PEPPOL-T011-R053</Reference>
@@ -828,6 +828,7 @@
                     reception of requests to participate (BT-1311). Can be used to specify a start date, end date or a
                     time range.
                 </Description>
+                <Reference type="BUSINESS_TERM">eForms BT-1311</Reference>
                 <Reference type="RULE">PEPPOL-T011-R051</Reference>
                 <Reference type="RULE">PEPPOL-T011-R052</Reference>
                 <Reference type="RULE">PEPPOL-T011-R053</Reference>

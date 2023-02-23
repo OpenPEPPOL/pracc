@@ -30,6 +30,10 @@ CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated int
 * Applied code list rules to peppol schematrons
 * Removed references to CENBII rules in syntax mapping
 
+=== Change of @xsi:type in Minimium and Maximum Estimated Value of T011
+
+The xsi:type of the rim:Slot[@name='Minimum'] and rim:Slot[@name='Maximum'] of rim:Slot[@name='EstimatedValue'] in T011 was changed from rim:FloatValueType to rim:IntegerValueType. The corresponding Business Rule PEPPOL-T011-R046 has been adjusted.
+
 
 === Editorial changes
 
@@ -41,6 +45,11 @@ CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated int
 * Editorial changes in section 4.5 about use of CEN BII and PEPPOL for normative reasons
 * additional note on the use of REM Evidence in Pre-Award in section 5.1
 
+*Updated eDocument guidelines*
+
+* including additional explanatory section on the use of ASIC containers and signing of PEPPOL documents with PEPPOL PKI
+* clarify applicable Tender encryption in T005
+
 
 *P001 - P009*
 
@@ -49,5 +58,8 @@ CENBII T004 rules, CENBII T005 rules, CENBII T006 rules have been integrated int
 * Update to description of use of UBL versions
 * Rework of profile structure
 * Update of graphics and examples (P006)
+* Corrections in T011
+* Rework of Syntax Mapping for T005 to better illustrate different types of Document references
+* Inclusion of additional information sections about Tender Encryption in P002 and P003 and T005
 
 
