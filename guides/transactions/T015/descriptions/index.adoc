@@ -103,7 +103,7 @@ include::../files/ExamplePublishNotice.xml[tags=document-type-code]
 
 === Notice Publication Date Preferred (BT-738)
 
-In case the publication of the attached notices should not be with the sending of this transaction, use the field to enter a preferred publication date. Otherwise, this field should not be included as well as when no publication is preferred.
+The "Notice Publication Date Preferred" is the date on which the buyer wishes the notice to be published. It can be used to help the buyer respect the requirements that exist between publications at national and European levels. In case the publication of the attached notices should not be the immediate date when sending of this transaction, use the field to enter a preferred publication date. Otherwise, this field should not be included as well as when no publication is preferred.
 [source,xml,indent=0]
 ....
 include::../files/ExamplePublishNotice.xml[tags=publication-date]
