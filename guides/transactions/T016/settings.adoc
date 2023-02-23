@@ -3,7 +3,7 @@ include::../shared/settings.adoc[]
 :name-profile: Profile P008 - "Publish Notice"
 
 :name-transaction-org: "Trdm100 Notices metadata transaction"
-:name-trans-short: Notice Publication Response
+:name-trans-short: Notice Publication Response 1.2
 :name-transaction: T016 - {name-trans-short}
 :name-syntax: PublishNoticeResponse
 

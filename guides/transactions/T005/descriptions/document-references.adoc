@@ -23,7 +23,7 @@ include::../{xml-doc-file}[tags=DocumentReference1]
 
 The class cac:DocumentReference is used to attach the tender documents or their references. If the Call For Tenders (CfT) business document provided an encryption certificate, the tender documents MUST be encrypted by the economic operator using that certificate.
 
-The example below shows the attached and encrypted tender document and its hash and algorithm. Encrypted tender documents must use the file extension .p7m in _<cbc:DocumentDescription></cbc:DocumentDescription>_ and _<cbc:Filename></cbc:Filename>_. The attached tender document is in this example unstructured .pdf file.
+The example below shows the attached and encrypted tender document and its hash and algorithm. Encrypted tender documents must use the file extension .p7m in  _<cbc:Filename></cbc:Filename>_. The attached tender document in this example is an unstructured .pdf file.
 
 [source,xml,indent=0]
 ----
