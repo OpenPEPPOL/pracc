@@ -28,4 +28,4 @@ include::../../shared/links.adoc[]
 
 // PRACC Guidelines
 :link-eDelivery: link:/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.3.pdf[BIS eDelivery guide for pre-award]
-:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.pdf[BIS eDocuments guide for pre-award]
+:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.3.pdf[BIS eDocuments guide for pre-award]

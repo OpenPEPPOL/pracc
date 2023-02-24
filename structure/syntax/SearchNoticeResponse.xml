@@ -66,7 +66,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T012-R010</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t012:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t012:1.2</Value>
                 </Element>
             </Element>
         </Element>
@@ -87,7 +87,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T012-R011</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p006:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p006:1.2</Value>
                 </Element>
             </Element>
         </Element>

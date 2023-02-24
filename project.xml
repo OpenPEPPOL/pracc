@@ -20,9 +20,9 @@
     <Documentation path="profiles/p005/index.html">P005 - Tender Clarification - 1.1</Documentation>
     <Documentation path="transactions/T009/index.html">T009 - Tender Clarification Request 1.1</Documentation>
     <Documentation path="transactions/T010/index.html">T010 - Tender Clarification 1.1</Documentation>
-    <Documentation path="profiles/p006/index.html">P006 - Search Notices - 1.1</Documentation>
-    <Documentation path="transactions/T011/index.html">T011 - Search Notice Request 1.1</Documentation>
-    <Documentation path="transactions/T012/index.html">T012 - Search Notice Response 1.1</Documentation>
+    <Documentation path="profiles/p006/index.html">P006 - Search Notices - 1.2</Documentation>
+    <Documentation path="transactions/T011/index.html">T011 - Search Notice Request 1.2</Documentation>
+    <Documentation path="transactions/T012/index.html">T012 - Search Notice Response 1.2</Documentation>
     <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - 1.1</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal 1.1</Documentation>
     <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification 1.1</Documentation>
@@ -102,12 +102,12 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/SearchNoticeRequest.xml</Path>
-        <Title>Syntax Mapping T011 - Search Notice Request 1.1</Title>
+        <Title>Syntax Mapping T011 - Search Notice Request 1.2</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/SearchNoticeResponse.xml</Path>
-        <Title>Syntax Mapping T012 - Search Notice Response 1.1</Title>
+        <Title>Syntax Mapping T012 - Search Notice Response 1.2</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -227,13 +227,13 @@
         <Identifier>T011</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-search-notice/PEPPOL-T011.sch</Path>
-        <Title>PEPPOL T011 rules - Search Notice Request 1.1</Title>
+        <Title>PEPPOL T011 rules - Search Notice Request 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T012</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-search-notice/PEPPOL-T012.sch</Path>
-        <Title>PEPPOL T012 rules - Search Notice Response 1.1</Title>
+        <Title>PEPPOL T012 rules - Search Notice Response 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T013</Identifier>
@@ -375,10 +375,10 @@
     </Resource>
     <Resource>
         <Type>native:File</Type>
-        <Path>guides/BIS-eDocuments-guide-for-pre-award-v1.2.pdf</Path>
+        <Path>guides/BIS-eDocuments-guide-for-pre-award-v1.3.pdf</Path>
         <Title>eDocuments Guide For Pre-award</Title>
         <Description>The eDocuments Guide for Pre-award</Description>
-        <Property key="download">BIS-eDocuments-guide-for-pre-award-v1.2.pdf</Property>
+        <Property key="download">BIS-eDocuments-guide-for-pre-award-v1.3.pdf</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
