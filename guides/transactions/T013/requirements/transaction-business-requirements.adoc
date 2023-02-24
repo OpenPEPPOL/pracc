@@ -1,5 +1,4 @@
 
-= Identification and description of the requirements
 
 The transaction "{name-transaction}" must be sent to the contracting authority when the economic operator has submitted a tender and decided to withdraw the tender. After "{name-transaction}", the bid of the Economic Operator is not evaluated. The tender may be resubmitted if the submission deadline has not passed.
 

@@ -1,9 +1,4 @@
 
-= Identification and description of the requirements
-
-== Business Requirements
-
-
 [cols="2,10", options="header"]
 .Transaction business requirements of T021
 |===

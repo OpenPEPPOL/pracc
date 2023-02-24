@@ -4,7 +4,7 @@ include::../shared/settings.adoc[]
 
 :name-transaction-org: "Trdm099 Search notice query transaction"
 :name-transaction: T011 - Search Notice Request 1.2
-:name-trans-short: Search Notice Request
+:name-trans-short: T011 - Search Notice Request
 :name-syntax: SearchNoticeRequest
 
 include::../shared/links.adoc[]

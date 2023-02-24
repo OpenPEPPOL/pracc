@@ -1,8 +1,5 @@
 [appendix]
-== Data Model
-image::../files/TenderingMessageResponse.png[align="center"]
 
-[appendix]
 == Key examples/use cases
 
 link:files/ExampleTenderingMessageResponseAP.xml[Link to AP example file]
