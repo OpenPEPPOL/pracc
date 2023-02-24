@@ -1,6 +1,6 @@
 [appendix]
 
-== Key examples/use cases
+= Key examples/use cases
 
 link:files/ExampleTenderingMessageResponseAP.xml[Link to AP example file]
 

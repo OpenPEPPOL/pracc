@@ -5,8 +5,8 @@ include::../shared/settings.adoc[]
 :name-transaction-org: "Trdm078 Contract Notice transaction", + \
 "Trdm079 Prior Information Notice transaction" and + \
 "Trdm080 Contract Award Notice transaction"
-:name-trans-short: Publish Notice 1.2
-:name-transaction: T015 - {name-trans-short}
+:name-trans-short: Publish Notice
+:name-transaction: T015 - {name-trans-short} 1.2
 :name-syntax: PublishNotice
 
 include::../shared/links.adoc[]
