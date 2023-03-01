@@ -53,7 +53,7 @@ Since the new transactions in P001, the removal of the CENBII schematrons, a cha
 * update of links and references
 
 
-*P001 - P009*
+*P001 - P011*
 
 * Update the section "Associated notification and tendering procedures" to match with Open Procedure and eDelivery guideline
 * Fix of broken links and references
@@ -63,6 +63,6 @@ Since the new transactions in P001, the removal of the CENBII schematrons, a cha
 * Update of graphics and examples (P006)
 * Rework of Syntax Mapping for T005 to better illustrate different types of Document references
 * Inclusion of additional information sections about Tender Encryption in P002, P003, P011 and T004, T005, T019
-* Moving examples and data models from annex and chapter 6 to new chapter chapter 3 in all transaction T001 - T022
+* Moving examples and data models from annex and chapter 6 to new chapter 3 in all transaction T001 - T022
 
 
