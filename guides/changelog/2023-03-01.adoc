@@ -38,7 +38,7 @@ Since the new transactions in P001, the removal of the CENBII schematrons, a cha
 
 === Editorial changes
 
-*Updated eDelivery guidelines*
+*Updated BIS eDelivery guide for pre-award - Version 1.3*
 
 * update 2. References
 * update use of 4.2 Party IdentifiersIdentification used in business (UBL) documents in Pre-Award
@@ -46,21 +46,23 @@ Since the new transactions in P001, the removal of the CENBII schematrons, a cha
 * Editorial changes in section 4.5 about use of CEN BII and PEPPOL for normative reasons
 * additional note on the use of REM Evidence in Pre-Award in section 5.1
 
-*Updated eDocument guidelines*
+*Updated BIS eDocuments guide for pre-award - Version 1.3*
 
-* including additional explanatory section on the use of ASIC containers and signing of PEPPOL documents with PEPPOL PKI
-* clarify applicable Tender encryption in T005
+* including additional explanatory section and ASiC example on the use of ASIC containers and signing of PEPPOL documents with PEPPOL PKI
+* update of chapter 6 Encryption of Tender and Qualificaton documents
+* update of links and references
 
 
 *P001 - P009*
 
-* Update to description of open procedure to match with Open Procedure and eDelivery guideline
+* Update the section "Associated notification and tendering procedures" to match with Open Procedure and eDelivery guideline
 * Fix of broken links and references
-* Update to description of use of UBL versions
-* Rework of profile structure
+* Update descriptions on the use of UBL versions
+* Rework of structure of profiles
+* Rework of structure of transactions
 * Update of graphics and examples (P006)
-* Corrections in T011
 * Rework of Syntax Mapping for T005 to better illustrate different types of Document references
-* Inclusion of additional information sections about Tender Encryption in P002 and P003 and T005
+* Inclusion of additional information sections about Tender Encryption in P002, P003, P011 and T004, T005, T019
+* Moving examples and data models from annex and chapter 6 to new chapter chapter 3 in all transaction T001 - T022
 
 

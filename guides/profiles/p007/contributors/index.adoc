@@ -6,7 +6,7 @@
 |===
 | Country | Name | Organization
 | DE | Rolf Kewitz | Beschaffungsamt des BMI
-| DE | Ansgar Mondorf | University of Koblenz-Landau
+| DE | Ansgar Mondorf | Mondorf IT / University of Koblenz-Landau
 | DE | Jörg Schömer | adesso SE
 | DE | Felicia Tsakonas | adesso SE
 |===

@@ -99,4 +99,9 @@
 | UKL
 | Editorial review and inclusion of BPMN for Unsubscribe to Procedure.
 
+| 2.3
+|01-03-2023| Ansgar Mondorf
+| Mondorf IT
+| Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
+
 |===
