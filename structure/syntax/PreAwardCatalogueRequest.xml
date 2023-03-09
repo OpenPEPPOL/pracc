@@ -104,13 +104,13 @@
             <Description>A reference to a specific Catalogue request; used if the Catalogue Request is updated.
             </Description>
 
-            <Element cardinality="1..1">
+            <Element>
                 <Term>cbc:ID</Term>
                 <Name>Previous catalogue request identifier</Name>
                 <Description>The catalogue request identifier for the updated catalogue request</Description>
                 <Value type="EXAMPLE">1.8</Value>
             </Element>
-            <Element cardinality="1..1">
+            <Element>
                 <Term>cbc:PreviousVersionID</Term>
                 <Name>Previous version identifier</Name>
                 <Description>The previous version of the catalogue request that is superseded by this version.</Description>
@@ -122,7 +122,7 @@
             <Term>cac:ProviderParty</Term>
             <Name>Catalogue request provider party</Name>
             <Description>The contracting authority or contracting entity who is sending the catalogue request and buying supplies, services or public works using a tendering procedure, using a catalogue request, as described in the applicable directive.</Description>
-            <Property key="doc">structure/docs/provider.adoc</Property>
+            <Property key="doc">structure/docs/request-provider.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -274,7 +274,7 @@
             <Term>cac:ReceiverParty</Term>
             <Name>Catalogue Request receiver party</Name>
             <Description>The party to which the catalogue request is sent. Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market.</Description>
-            <Property key="doc">structure/docs/receiver.adoc</Property>
+            <Property key="doc">structure/docs/request-receiver.adoc</Property>
 
             <Element cardinality="0..1">
                 <Term>cbc:EndpointID</Term>
@@ -1002,9 +1002,7 @@
                         <Element>
                             <Term>cbc:ID</Term>
                             <Name>Item label reference</Name>
-                            <Description>A reference to where the label specification can be
-                                found, e.g. a URI.
-                            </Description>
+                            <Description>A reference to where the label specification can be found, e.g. a URI.</Description>
                             <Value type="EXAMPLE">www.nordic-ecolabel.org</Value>
                         </Element>
                     </Element>
