@@ -22,19 +22,22 @@ dc () {
     fi
 }
 
+info "creating files folder in target/site"
+mkdir -p ${FOLDER}/target/site/files
+
 info "Run vefa-structure"
 dc structure
 
 pushd $FOLDER > /dev/null
 info "Create ZIP file with schematrons"
-sudo zip -qr "target/site/files/schematrons-1.zip" "rules/"
-sudo mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
+zip -qr "target/site/files/schematrons-1.zip" "rules/"
+mv "target/site/files/schematrons-1.zip" "target/site/files/schematrons.zip"
 popd > /dev/null
 
 pushd $FOLDER > /dev/null
 info "Create ZIP file with codelists"
-sudo zip -qr "target/site/files/codelists-1.zip" "structure/codelist"
-sudo mv "target/site/files/codelists-1.zip" "target/site/files/codelists.zip"
+zip -qr "target/site/files/codelists-1.zip" "structure/codelist"
+mv "target/site/files/codelists-1.zip" "target/site/files/codelists.zip"
 popd > /dev/null
 
 
