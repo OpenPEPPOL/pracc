@@ -779,8 +779,6 @@ p { margin-bottom: 1.25rem; }
 
 #footer { max-width: none; }
 
-body { background-image: url("../shared/images/Draft.svg"); }
-
 table { background: none; }
 
 .hide-callouts .conum { display: none; }
