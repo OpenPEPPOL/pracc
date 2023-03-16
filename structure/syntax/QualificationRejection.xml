@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+	<Term>Qualification Rejection</Term>
+	<Name>Qualification Rejection (T023)</Name>
+	<Namespace prefix="t023">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	
+	<Document>
+		<Term>t023:QualificationApplicationRequest</Term>
+		<Name>Qualification Rejection, root element</Name>
+		<Reference type="RULE">PEPPOL-t023-R001</Reference>
+		<Element>
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL version identifier</Name>
+			<Reference type="RULE">PEPPOL-t023-R002</Reference>
+			<Reference type="RULE">PEPPOL-t023-R013</Reference>
+			<Reference type="RULE">PEPPOL-t023-R014</Reference>
+			<DataType>Identifier</DataType>
+			<Value type="FIXED">2.2</Value>
+		</Element>
+	</Document>
+</Structure>
