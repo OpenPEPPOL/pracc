@@ -10,9 +10,21 @@
 	<Document>
 		<Term>t023:TendererQualificationResponse</Term>
 		<Name>Qualification Rejection, root element</Name>
+		<Reference type="RULE">PEPPOL-T023-R002</Reference>
+		<Reference type="RULE">PEPPOL-T023-R003</Reference>
+		<Reference type="RULE">PEPPOL-T023-R004</Reference>
+		<Reference type="RULE">PEPPOL-T023-R005</Reference>
+		<Reference type="RULE">PEPPOL-T023-R006</Reference>
+		<Reference type="RULE">PEPPOL-T023-R007</Reference>
+		<Reference type="RULE">PEPPOL-T023-R008</Reference>
+		<Reference type="RULE">PEPPOL-T023-R009</Reference>
+		<Reference type="RULE">PEPPOL-T023-R010</Reference>
+		<Reference type="RULE">PEPPOL-T023-R011</Reference>
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
 			<Name>UBL version identifier</Name>
+			<Reference type="RULE">PEPPOL-T023-R013</Reference>
+			<Reference type="RULE">PEPPOL-T023-R014</Reference>
 			<DataType>Identifier</DataType>
 			<Value type="FIXED">2.2</Value>
 		</Element>
@@ -20,20 +32,28 @@
 			<Term>cbc:CustomizationID</Term>
 			<Name>Specification identification</Name>
 			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+			<Reference type="RULE">PEPPOL-T023-R015</Reference>
+			<Reference type="RULE">PEPPOL-T023-R016</Reference>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t023:1.1</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t023:1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ProfileID</Term>
 			<Name>Business process type identifier</Name>
 			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+			<Reference type="RULE">PEPPOL-T023-R017</Reference>
+			<Reference type="RULE">PEPPOL-T023-R018</Reference>
 			<DataType>Identifier</DataType>
-			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p012:1.1</Value>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p012:1.0</Value>
 		</Element>
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Qualification identifier</Name>
 			<Description>Identifier of the qualificaton document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
+			<Reference type="RULE">PEPPOL-T023-R019</Reference>
+			<Reference type="RULE">PEPPOL-T023-R020</Reference>
+			<Reference type="RULE">PEPPOL-T023-R021</Reference>
+			<Reference type="RULE">PEPPOL-T023-R022</Reference>
 			<Attribute>
 				<Term>schemeURI</Term>
 				<Name>Scheme identifier</Name>
@@ -45,6 +65,8 @@
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
 			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<Reference type="RULE">PEPPOL-T023-R023</Reference>
+			<Reference type="RULE">PEPPOL-T023-R024</Reference>
 			<DataType>Identifier</DataType>
 		</Element>
 		<Element>
@@ -57,12 +79,7 @@
 			<Term>cbc:IssueTime</Term>
 			<Name>Qualification issue time</Name>
 			<Description>The time when the qualification is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
-			<DataType>Time</DataType>
-		</Element>
-		<Element cardinality="0..1">
-			<Term>cbc:VersionID</Term>
-			<Name>Qualification document version identifier</Name>
-			<Description>Identifies the version of the document</Description>
+			<Reference type="RULE">PEPPOL-T023-R025</Reference>
 			<DataType>Time</DataType>
 		</Element>
 		<Element>
@@ -112,7 +129,7 @@
 		<Element>
 			<Term>cac:ReceiverParty</Term>
 			<Name>Economic operator</Name>
-			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. MUST be the Main Qualifying Party who send the qualification document.</Description>
+			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. MUST be the Main Qualifying Party who have sent the qualification document.</Description>
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
