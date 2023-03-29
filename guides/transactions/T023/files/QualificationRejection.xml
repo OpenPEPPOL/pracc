@@ -13,7 +13,7 @@
     <!-- tag::ProfileID[] -->
     <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p012:1.0</cbc:ProfileID>
     <!-- end::ProfileID[] -->
-    <cbc:ID>123e4567-e89b-12d3-a456-426614174000</cbc:ID>
+    <cbc:ID schemeURI="urn:uuid">123e4567-e89b-12d3-a456-426614174000</cbc:ID>
     <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
     <!-- tag::IssueDateTime[] -->
     <cbc:IssueDate>2022-12-07</cbc:IssueDate>

@@ -72,6 +72,7 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'
         'rules/peppol-qualification/PEPPOL-T019.sch'                        | 'guides/transactions/T019/files/Qualification-doc.xml'
         'rules/peppol-qualification/PEPPOL-T020.sch'                        | 'guides/transactions/T020/files/QualificationResponse-doc.xml'
+        'rules/peppol-qualification/PEPPOL-T023.sch'                        | 'guides/transactions/T023/files/QualificationRejection.xml'
     }
 
     def 'run schematron with failing checks'() {
