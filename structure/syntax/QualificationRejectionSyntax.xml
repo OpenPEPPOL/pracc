@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+	<Term>Qualification Rejection</Term>
+	<Name>Qualification Rejection (T023)</Name>
+
+	<Namespace prefix="t023">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+	
+	<Document>
+		<Term>t023:TendererQualificationResponse</Term>
+		<Name>Qualification Rejection, root element</Name>
+		<Element>
+			<Term>cbc:UBLVersionID</Term>
+			<Name>UBL version identifier</Name>
+			<DataType>Identifier</DataType>
+			<Value type="FIXED">2.2</Value>
+		</Element>
+		<Element>
+			<Term>cbc:CustomizationID</Term>
+			<Name>Specification identification</Name>
+			<Description>An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
+			<DataType>Identifier</DataType>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t023:1.1</Value>
+		</Element>
+		<Element>
+			<Term>cbc:ProfileID</Term>
+			<Name>Business process type identifier</Name>
+			<Description>Identifies the business process context in which the transaction appears. It enables the buyer to process the document in an appropriate way.</Description>
+			<DataType>Identifier</DataType>
+			<Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p012:1.1</Value>
+		</Element>
+		<Element>
+			<Term>cbc:ID</Term>
+			<Name>Qualification identifier</Name>
+			<Description>Identifier of the qualificaton document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
+			<Attribute>
+				<Term>schemeURI</Term>
+				<Name>Scheme identifier</Name>
+				<Value type="FIXED">urn:uuid</Value>
+			</Attribute>
+			<DataType>Identifier</DataType>
+		</Element>
+		<Element>
+			<Term>cbc:ContractFolderID</Term>
+			<Name>Reference number</Name>
+			<Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+			<DataType>Identifier</DataType>
+		</Element>
+		<Element>
+			<Term>cbc:IssueDate</Term>
+			<Name>Qualification issue date</Name>
+			<Description>The date when the qualification is issued by the economic operator.</Description>
+			<DataType>Date</DataType>
+		</Element>
+		<Element>
+			<Term>cbc:IssueTime</Term>
+			<Name>Qualification issue time</Name>
+			<Description>The time when the qualification is issued by the economic operator. The issue time must have granularity of seconds, and include time zone information</Description>
+			<DataType>Time</DataType>
+		</Element>
+		<Element cardinality="0..1">
+			<Term>cbc:VersionID</Term>
+			<Name>Qualification document version identifier</Name>
+			<Description>Identifies the version of the document</Description>
+			<DataType>Time</DataType>
+		</Element>
+		<Element>
+			<Term>cac:SenderParty</Term>
+			<Name>Contracting body</Name>
+			<Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
+			<Element>
+				<Term>cbc:EndpointID</Term>
+				<Name>Contracting body electronic address identifier</Name>
+				<Description>Electronic address of the contracting body.</Description>
+				<Attribute>
+					<Term>schemeID</Term>
+					<Name>Scheme identifier</Name>
+					<Reference type="CODE_LIST">EAS</Reference>
+					<Value type="EXAMPLE">9930</Value>
+				</Attribute>
+				<DataType>Identifier</DataType>
+				<Value type="EXAMPLE">DE122268496</Value>
+			</Element>
+			<Element>
+				<Term>cac:PartyIdentification</Term>
+				<Name>Party identification</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Contracting body identifier</Name>
+					<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier</Name>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0204</Value>
+					</Attribute>
+					<DataType>Identifier</DataType>
+					<Value type="EXAMPLE">991-1234512345-06</Value>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PartyName</Term>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Contracting body name</Name>
+					<Description>The name of the contracting body as it is registered.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:ReceiverParty</Term>
+			<Name>Economic operator</Name>
+			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. MUST be the Main Qualifying Party who send the qualification document.</Description>
+			<Element>
+				<Term>cbc:EndpointID</Term>
+				<Name>Economic operator electronic address identifier</Name>
+				<Description>Electronic address of the economic operator being the main qualifying party.</Description>
+				<Attribute>
+					<Term>schemeID</Term>
+					<Name>Scheme identifier</Name>
+					<Reference type="CODE_LIST">EAS</Reference>
+					<Value type="EXAMPLE">9946</Value>
+				</Attribute>
+				<DataType>Identifier</DataType>
+				<Value type="EXAMPLE">500820007</Value>
+			</Element>
+			<Element>
+				<Term>cac:PartyIdentification</Term>
+				<Name>Party identification</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>Economic operator identifier</Name>
+					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+					<Attribute>
+						<Term>schemeID</Term>
+						<Name>Scheme identifier</Name>
+						<Reference type="CODE_LIST">ICD</Reference>
+						<Value type="EXAMPLE">0088</Value>
+					</Attribute>
+					<DataType>Identifier</DataType>
+					<Value type="EXAMPLE">7300010000001</Value>
+				</Element>
+			</Element>
+			<Element cardinality="0..1">
+				<Term>cac:PartyName</Term>
+				<Name>Party name</Name>
+				<Element>
+					<Term>cbc:Name</Term>
+					<Name>Economic operator name</Name>
+					<Description>The name of the economic operator.</Description>
+					<DataType>Text</DataType>
+				</Element>
+			</Element>
+		</Element>
+		<Element>
+			<Term>cac:QualificationResolution</Term>
+			<Name>Qualification Resolution</Name>
+			<Description>Qualification Resolution</Description>
+			<Element>
+				<Term>cbc:AdmissionCode</Term>
+				<Name>Admission Code</Name>
+				<Description>Admission Code</Description>
+			</Element>
+			<Element cardinality="0..n">
+				<Term>cbc:Resolution</Term>
+				<Name>Resolution</Name>
+			</Element>
+			<Element>
+				<Term>cbc:ResolutionDate</Term>
+				<Name>Resolution Date</Name>
+			</Element>
+			<Element>
+				<Term>cbc:ResolutionTime</Term>
+				<Name>Resolution Time</Name>
+			</Element>
+			<Element>
+				<Term>cac:ProcurementProjectLot</Term>
+				<Name>Procurement Project Lot</Name>
+				<Element>
+					<Term>cbc:ID</Term>
+					<Name>ID</Name>
+					<DataType>Identifier</DataType>
+				</Element>
+			</Element>
+		</Element>
+	</Document>
+</Structure>

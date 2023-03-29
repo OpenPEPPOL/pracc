@@ -151,6 +151,11 @@
         <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
         <Title>Syntax Mapping T020 - Qualification Reception Confirmation 1.1</Title>
     </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/QualificationRejectionSyntax.xml</Path>
+        <Title>Syntax Mapping T023 - Qualification Rejection 1.1</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
@@ -285,6 +290,14 @@
         <Path>rules/peppol-qualification/PEPPOL-T020.sch</Path>
         <Title>PEPPOL T020 rules - Qualification Reception Confirmation 1.1</Title>
     </Resource>
+    <!--
+    <Resource>
+        <Identifier>T023</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-qualification/PEPPOL-T023.sch</Path>
+        <Title>PEPPOL T023 rules - Qualification Rejection 1.0</Title>
+    </Resource>
+    -->
 
     <!-- Code lists -->
     <Resource>
