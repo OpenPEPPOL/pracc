@@ -2,16 +2,17 @@
 [[price]]
 = Prices
 
-All prices in the format are related to the article or service within this PreAward Catalogue. The following prices can be stated:
+All prices in the format are related to the article or service within this PreAward Catalogue. The following information on prices can be stated:
 
-* Item price is net price including all discounts and charges but excluded Vat.
-* Item comparison unit price defining price for a certain quantity. Used for comparing prices for different articles with various quantities.
-* Conditional price related to a specific location or a certain quantity.
-* Campaign price.
+* Item price is net price including all discounts and charges but excluded Vat
+* Item comparison unit price defining price for a certain quantity. Used for comparing prices for different articles with various quantities
+* Conditional price related to a specific location or a certain quantity
+* Campaign price
+* Allowance Charge used to indicate and justify price discounts, allowances or charges
 
 Be aware that no Gross prices can be sent in the format (price before discount and charges). All prices shall have Currency as an attribute. Currency shall be according to Code list.
 
-Example of Prices in PreAward Catalogue:
+Example of Prices and Allowances in the Pre-Award Catalogue:
 
 [source]
 .Item Price
@@ -47,6 +48,25 @@ Example of Prices in PreAward Catalogue:
       <cbc:StartDate>2012-04-26</cbc:StartDate>
       <cbc:EndDate>2012-05-26</cbc:EndDate>
     </cac:ValidityPeriod>
+  </cac:Price>
+<cac:RequiredItemLocationQuantity>
+----
+
+[source]
+.Allowance Charge
+----
+<cac:RequiredItemLocationQuantity>
+  <cac:Price>
+    <cbc:PriceAmount currencyID="NOK">75.00</cbc:PriceAmount>
+    <cac:ValidityPeriod>
+      <cbc:StartDate>2012-04-26</cbc:StartDate>
+      <cbc:EndDate>2012-05-26</cbc:EndDate>
+    </cac:ValidityPeriod>
+    <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>false(?)</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReason>10% Allowance for multi-order as per contractual framework agreement</cbc:AllowanceChargeReason>
+      <cbc:Amount currencyID="NOK">7.50</cbc:Amount>
+    </cac:AllowanceCharge>
   </cac:Price>
 <cac:RequiredItemLocationQuantity>
 ----

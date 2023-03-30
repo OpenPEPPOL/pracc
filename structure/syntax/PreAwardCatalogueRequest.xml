@@ -429,7 +429,7 @@
 
         <Element cardinality="1..n">
             <Term>cac:CatalogueRequestLine</Term>
-            <Name>Pre award catalogue line</Name>
+            <Name>Pre award catalogue request line</Name>
             <Description>A line in a pre-award catalogue request specifying detailed information of an item, price and its composition.</Description>
             <Property key="doc">structure/docs/line.adoc</Property>
 

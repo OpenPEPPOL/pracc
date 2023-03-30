@@ -1,0 +1,10 @@
+= Order Interval
+
+The order interval is optional in the Catalogue request. The catalogue request provider may use the order interval to indicate a fixed, continuous or reoccurring time period in which a good shall be procured.
+
+
+.Example
+[source, xml, indent=0]
+----
+include::../../../../structure/snippets/request_example_germany.xml[tags=order-interval]
+----
