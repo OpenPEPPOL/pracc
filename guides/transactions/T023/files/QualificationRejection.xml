@@ -5,22 +5,27 @@
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
     <!-- tag::UBL[] -->
-    <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+    <cbc:UBLVersionID>2.2</cbc:UBLVersionID><!--.-->
     <!-- end::UBL[] -->
     <!-- tag::CustomizationID[] -->
-    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t023:1.0</cbc:CustomizationID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t023:1.0</cbc:CustomizationID><!--.-->
     <!-- end::CustomizationID[] -->
     <!-- tag::ProfileID[] -->
-    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p012:1.0</cbc:ProfileID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p012:1.0</cbc:ProfileID><!--.-->
     <!-- end::ProfileID[] -->
-    <cbc:ID schemeURI="urn:uuid">123e4567-e89b-12d3-a456-426614174000</cbc:ID>
-    <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
+    <!-- tag::ID[] -->
+    <cbc:ID schemeURI="urn:uuid">123e4567-e89b-12d3-a456-426614174000</cbc:ID><!--.-->
+    <!-- end::ID[] -->
+    <!-- tag::ContractFolderID[] -->
+    <!-- ReferenceNumber - Procurement project identifier-->
+    <cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID><!--.-->
+    <!-- end::ContractFolderID[] -->
     <!-- tag::IssueDateTime[] -->
-    <cbc:IssueDate>2022-12-07</cbc:IssueDate>
-    <cbc:IssueTime>14:44:33+01:00</cbc:IssueTime>
+    <cbc:IssueDate>2022-12-07</cbc:IssueDate><!--.-->
+    <cbc:IssueTime>14:44:33+01:00</cbc:IssueTime><!--.-->
     <!-- end::IssueDateTime[] -->
     <!-- tag::SenderParty[] -->
-    <cac:SenderParty>
+    <cac:SenderParty> <!--.-->
         <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">7300010000001</cbc:ID>
@@ -28,7 +33,7 @@
     </cac:SenderParty>
     <!-- end::SenderParty[] -->
     <!-- tag::ReceiverParty[] -->
-    <cac:ReceiverParty>
+    <cac:ReceiverParty> <!--.-->
         <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">7300010000001</cbc:ID>
@@ -36,14 +41,46 @@
     </cac:ReceiverParty>
     <!-- end::ReceiverParty[] -->
     <!-- tag::QualificationResolution[] -->
+    <!-- in Case of Multiple Lots - One resolution per Lot-->
+    <!-- a rejection will only take Qualification Resolution Information for those Lots that have been rejected?-->
+    <cac:QualificationResolution>
+        <cbc:AdmissionCode>false</cbc:AdmissionCode>
+        <!-- was gerade hier unter Resolution steht, könnten Inhalte aus der EU-Codelsite "criterion" (https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/criterion)  sein - was übernehmen?-->
+        <cbc:ExclusionReason>?needed?</cbc:ExclusionReason>
+        <!--unter Resolution würde ich begründete Stop-Kriterien verstehen, also die Begründung, an welcher Qualifkationshürde ein Bewerber gescheitert ist-->
+        <!-- Auch hierfür könnte eine Codeliste herangezogen werden, welche Inhalte könnte diese haben - aktuell gibt es keine EU-procurement-Table mit adäquatem Inhalt,-->
+        <!-- theoretisch muss die Begründung aber zu den Auswahlkriterien des CFC passen - dazu gibt es eine Codeliste: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/selection-criterion-->
+        <cbc:Resolution>limited turnover</cbc:Resolution>
+        <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
+        <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate>
+        <cac:ProcurementProjectLot>
+            <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
+            <cbc:ID>001</cbc:ID>
+            <cac:ProcurementProject>
+                <cbc:Name>Der name des 1. Loses (in dieser Noice) zur Identifizierung beim Empfänger</cbc:Name>
+            </cac:ProcurementProject>
+        </cac:ProcurementProjectLot>
+    </cac:QualificationResolution>
+    <!-- end::QualificationResolution[]-->
+    <!-- tag::QualificationResolution[] -->
     <cac:QualificationResolution>
         <cbc:AdmissionCode>false</cbc:AdmissionCode>
         <cbc:Resolution>limited turnover</cbc:Resolution>
         <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate>
         <cac:ProcurementProjectLot>
-            <cbc:ID>001</cbc:ID>
+            <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
+            <cbc:ID>Lot-0002</cbc:ID>
+            <cac:ProcurementProject>
+                <cbc:Name>Der Name des 2. Loses - zur Identifizierung beim Empfänger</cbc:Name>
+            </cac:ProcurementProject>
         </cac:ProcurementProjectLot>
     </cac:QualificationResolution>
     <!-- end::QualificationResolution[] -->
+    <!-- tag::Signature[] -->
+    <cac:Signature><!--.-->
+        <cbc:ID>do we need a Signature-ID, what kind of signature-Id, Leitweg-ID, EAS, other?</cbc:ID><!--.-->
+    </cac:Signature>
+    <!-- end::Signature[] -->
+
 </TendererQualificationResponse>
