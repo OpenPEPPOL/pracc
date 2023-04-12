@@ -1,7 +1,7 @@
 [[item_prop]]
 = Additional Item Properties
 
-Additional properties are meant for product properties that cannot be sent in any of the defined elements in PreAward Catalogue. Additional properties consist of the Name of the property and the actual Value.
+Additional properties are meant for product properties that cannot be sent in any of the defined elements in the Pre-Award Catalogue. Additional properties consist of the Name of the property and the actual Value.
 
 .Example of additional properties:
 * Color

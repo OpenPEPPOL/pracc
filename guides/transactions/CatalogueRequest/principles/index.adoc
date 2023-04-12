@@ -2,7 +2,7 @@
 = Principles and prerequisites
 
 This chapter describes the principles and assumptions that underlie the use of PEPPOL Pre-award Catalogue request. It is
-based on the {bii3} profile 34 Advanced Call for Tenders.
+based on P002 - Procurement Document Access.
 
 This BIS will identify, explain and justify the business requirements for the Pre-award Catalogue request. It
 provides syntax bindings to OASIS UBL 2.1. It also includes a syntax implementation guide.

@@ -18,5 +18,6 @@ include::item-dates.adoc[]
 include::hazardous-item.adoc[]
 include::keyword.adoc[]
 include::vat.adoc[]
+include::order-interval.adoc[]
 
 :leveloffset: -1

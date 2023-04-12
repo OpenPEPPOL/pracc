@@ -1,6 +1,6 @@
 = VAT
 
-VAT-information is optional in the PreAward Catalogue. Catalogue receivers may require VAT-information in the PreAward Catalogue.
+VAT-information is optional in the Pre-Award Catalogue. Catalogue receivers may require VAT-information in the PreAward Catalogue.
 
 Valid VAT category codes can be found in the section <<Item VAT category code>>
 

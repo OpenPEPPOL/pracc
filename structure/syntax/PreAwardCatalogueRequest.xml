@@ -429,7 +429,7 @@
 
         <Element cardinality="1..n">
             <Term>cac:CatalogueRequestLine</Term>
-            <Name>Pre award catalogue line</Name>
+            <Name>Pre award catalogue request line</Name>
             <Description>A line in a pre-award catalogue request specifying detailed information of an item, price and its composition.</Description>
             <Property key="doc">structure/docs/line.adoc</Property>
 
@@ -503,8 +503,8 @@
                 <Element cardinality="0..1">
                     <Term>cbc:TradingRestrictions</Term>
                     <Name>Order Interval</Name>
-                    <Description>This element is used to specify the order interval.</Description>
-                    <Value type="EXAMPLE">2023-02-22 until 2023-02-29</Value>
+                    <Description>This optional element is used to specify the order interval. For example, this field may be used to indicate that a good needs to be procured on a two-weekly basis.</Description>
+                    <Value type="EXAMPLE">Every two weeks</Value>
                 </Element>
 
                 <Element cardinality="0..n">

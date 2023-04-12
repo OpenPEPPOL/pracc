@@ -1,5 +1,5 @@
 [[information-model-pacr]]
-= Information model Pre-award catalogue request
+= Information model of the Pre-Award Catalogue Request
 
-.Class diagram PreAward catalogue request
+.Class diagram of the Pre-Award Catalogue Request
 image::../images/catalogueRequest.png[Pre-award catalogue class diagram]
