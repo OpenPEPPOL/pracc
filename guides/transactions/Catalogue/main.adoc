@@ -35,3 +35,7 @@ include::codes/index.adoc[]
 include::descriptions/index.adoc[]
 
 include::profiles/index.adoc[]
+
+include::../shared/syntax-mapping.adoc[]
+
+include::annex/index.adoc[]

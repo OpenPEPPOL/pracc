@@ -1,6 +1,6 @@
 = Validity period
 
-In the PreAward the following validity periods can be stated:
+The following validity periods can be stated in the Pre-Award Catalogue:
 
 * Validity period on document level (mandatory), used to state the validity period for the entire PreAward Catalogue.
 * Validity period for a catalogue line

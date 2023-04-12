@@ -2,7 +2,7 @@
 [[price]]
 = Prices
 
-All prices in the format are related to the article or service within this PreAward Catalogue. The following information on prices can be stated:
+All prices in the format are related to the article or service within this Pre-Award Catalogue. The following information on prices can be stated:
 
 * Item price is net price including all discounts and charges but excluded Vat
 * Item comparison unit price defining price for a certain quantity. Used for comparing prices for different articles with various quantities
@@ -63,7 +63,7 @@ Example of Prices and Allowances in the Pre-Award Catalogue:
       <cbc:EndDate>2012-05-26</cbc:EndDate>
     </cac:ValidityPeriod>
     <cac:AllowanceCharge>
-      <cbc:ChargeIndicator>false(?)</cbc:ChargeIndicator>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
       <cbc:AllowanceChargeReason>10% Allowance for multi-order as per contractual framework agreement</cbc:AllowanceChargeReason>
       <cbc:Amount currencyID="NOK">7.50</cbc:Amount>
     </cac:AllowanceCharge>

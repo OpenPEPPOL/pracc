@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-   Snippet-file used for the PEPPOL BIS, Pre award catalogue request BIS
-
-
--->
 <ubl:CatalogueRequest
         xmlns:ubl="urn:oasis:names:specification:ubl:schema:xsd:CatalogueRequest-2"
         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"

@@ -1,6 +1,6 @@
 = Logistics Information
 
-The PreAward Catalogue includes elements to support the need for logistics information which is a requirement in many industries. These elements are not mandatory, but trading partners can agree upon the use in the commercial agreements.
+The Pre-Award Catalogue includes elements to support the need for logistics information which is a requirement in many industries. These elements are not mandatory, but trading partners can agree upon the use in the commercial agreements.
 
 The Logistics elements can be used to specify different pack levels for the same article. This shall be done as follows:
 
