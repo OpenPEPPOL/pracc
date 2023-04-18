@@ -265,13 +265,11 @@
                     <Element cardinality="0..1">
                         <Term>rim:Slot@name=BuyerElectronicAddress</Term>
                         <Name>Buyer electronic address identifier</Name>
-                        <Description>The electronic address of the eTendering system or Organisation eDelivery Gateway
-                            (BT-509) which is used by the buyer, contracting authority or contracting entity who is buying
+                        <Description>The electronic address of the eTendering system which is used by the buyer, contracting authority or contracting entity who is buying
                             supplies, services or public works using a tendering procedure as described in the applicable
                             directive (Directives 2014/24/EU, 2014/25/EU). In the later eTendering process the element is
                             used to find the right eTendering Platform for a Procurement Procedure Subscription (P001).
                         </Description>
-                        <Reference type="BUSINESS_TERM">eForms BT-509</Reference>
                         <Reference type="RULE">PEPPOL-T012-R017</Reference>
                         <Attribute>
                             <Term>name</Term>
