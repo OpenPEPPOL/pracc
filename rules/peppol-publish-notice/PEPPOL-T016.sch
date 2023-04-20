@@ -44,13 +44,13 @@
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cbc:CustomizationID">
-        <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:trns:t016:1.1'"
-                flag="fatal" id="PEPPOL-T016-R011">Element 'cbc:CustomizationID' MUST contain value 'urn:fdc:peppol.eu:prac:trns:t016:1.1'.</assert>
+        <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:trns:t016:1.2'"
+                flag="fatal" id="PEPPOL-T016-R011">Element 'cbc:CustomizationID' MUST contain value 'urn:fdc:peppol.eu:prac:trns:t016:1.2'.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cbc:ProfileID">
-            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:bis:p008:1.1'"
-                    flag="fatal" id="PEPPOL-T016-R012">Element 'cbc:ProfileID' MUST contain value 'urn:fdc:peppol.eu:prac:bis:p008:1.1'.</assert>
+            <assert test="normalize-space(text()) = 'urn:fdc:peppol.eu:prac:bis:p008:1.2'"
+                    flag="fatal" id="PEPPOL-T016-R012">Element 'cbc:ProfileID' MUST contain value 'urn:fdc:peppol.eu:prac:bis:p008:1.2'.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cbc:ID"/>
@@ -147,11 +147,10 @@
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference">
             <assert id="PEPPOL-T016-R033" flag="fatal" test="cbc:ID">Element 'cbc:ID' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R034" flag="fatal" test="cbc:UUID">Element 'cbc:UUID' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R035" flag="fatal" test="cbc:DocumentTypeCode">Element 'cbc:DocumentTypeCode' MUST be provided.</assert>
-            <assert id="PEPPOL-T016-R036" flag="fatal" test="cbc:VersionID">Element 'cbc:VersionID' MUST be provided.</assert>
+            <assert id="PEPPOL-T016-R034" flag="fatal" test="count(cbc:UUID) = count(cbc:VersionID)">Element 'cbc:UUID' MUST be provided with cbc:VersionID.</assert>
+            <assert id="PEPPOL-T016-R035" flag="fatal" test="count(cbc:UUID) = count(cbc:DocumentTypeCode)">Element 'cbc:UUID' MUST be provided with cbc:DocumentTypeCode.</assert>
             <assert id="PEPPOL-T016-R037" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:ID)) = count(cac:DocumentReference/cbc:ID)">Element 'cbc:ID' MUST be unique.</assert>
-            <assert id="PEPPOL-T016-R038" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:UUID)) = count(cac:DocumentReference/cbc:ID)">Element 'cbc:ID' MUST be unique.</assert>
+            <assert id="PEPPOL-T016-R038" flag="fatal" test="count(distinct-values(cac:DocumentReference/cbc:UUID)) = count(cac:DocumentReference/cbc:UUID)">Element 'cbc:UUID' MUST be unique.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:DocumentReference/cbc:DocumentTypeCode">
@@ -209,7 +208,7 @@
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/cbc:StatusReasonCode">
-            <assert flag="fatal" id="PEPPOL-T016-R052" test="matches(normalize-space(.),'^(BV|SV|BW)$')">Value MUST be part of code list 'Status Reason Code'.</assert>
+            <assert flag="fatal" id="PEPPOL-T016-R052" test="matches(normalize-space(.),'^(BV|SV|BW)$')">Value MUST be part of code list 'Status Reason Code Subset'.</assert>
         </rule>
 
         <rule context="/ubl:ApplicationResponse/cac:DocumentResponse/cac:LineResponse/cac:Response/cac:Status/*">

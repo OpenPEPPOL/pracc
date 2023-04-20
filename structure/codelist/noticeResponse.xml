@@ -7,17 +7,17 @@
     <Code>
         <Id>RE</Id>
         <Name>Rejected</Name>
-        <Description>Indication that the notice was not processed because of identified issues.</Description>
+        <Description>Response code is used when the receiver will not process the referenced message any further. The reason for rejecting the message shall be stated in ´Status Reason´.</Description>
     </Code>
     <Code>
         <Id>AP</Id>
         <Name>Accepted</Name>
-        <Description>Indication that the notice will be published at a certain time.</Description>
+        <Description>Response code is uses when the referenced message has been accepted by the receiver. </Description>
     </Code>
     <Code>
         <Id>CA</Id>
         <Name>Conditionally accepted</Name>
-        <Description>Indication that the publication of the notice is done with warnings indicated in the message.</Description>
+        <Description>Response code is used when the receiver is accepting the message under conditions stated in ‘Status Reason’ and proceed to continue the process unless disputed by the sender.</Description>
     </Code>
     <Code>
         <Id>PU</Id>

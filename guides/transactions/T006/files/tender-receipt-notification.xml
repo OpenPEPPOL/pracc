@@ -7,10 +7,10 @@
 	<cbc:UBLVersionID>2.2</cbc:UBLVersionID>
 	<!-- end::UBL[] -->
 	<!-- tag::CustomizationID[] -->
-	<cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t006:1.1</cbc:CustomizationID>
+	<cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t006:1.2</cbc:CustomizationID>
 	<!-- end::CustomizationID[] -->
 	<!-- tag::ProfileID[] -->
-	<cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p003:1.1</cbc:ProfileID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p003:1.2</cbc:ProfileID>
 	<!-- end::ProfileID[] -->
 	<cbc:ID schemeURI="urn:uuid">49af1fe0-c0af-4a98-8ffa-309408f9cfac</cbc:ID>
 	<cbc:ContractFolderID>765a9937-16d5-4513-92b4-cc9800925951</cbc:ContractFolderID>
@@ -22,14 +22,14 @@
 	<cbc:RegisteredDate>2017-12-07</cbc:RegisteredDate>
 	<cbc:RegisteredTime>14:44:22+01:00</cbc:RegisteredTime>
 	<!-- end::RegisteredDateTime[] -->
-	<!-- tag::TenderDocumentReference[] -->
+	<!-- tag::TenderDocumentReference1[] -->
 	<cac:TenderDocumentReference>
 		<!-- tag::TenderDocumentReferenceId[] -->
 		<cbc:ID schemeURI="urn:uuid">4946060c-f428-475f-9d81-39409bdf32bd</cbc:ID>
 		<!-- end::TenderDocumentReferenceId[] -->
-		<!-- tag::DocumentTypeCode[] -->
+		<!-- tag::DocumentTypeCode1[] -->
 		<cbc:DocumentTypeCode listID="UNCL1001">13</cbc:DocumentTypeCode> <!--.-->
-		<!-- end::DocumentTypeCode[] -->
+		<!-- end::DocumentTypeCode1[] -->
 		<cac:Attachment>
 			<cac:ExternalReference>
 				<!-- tag::DocumentHash[] -->
@@ -42,24 +42,30 @@
 		</cac:Attachment>
 		<!-- tag::IssuerParty[] -->
 		<cac:IssuerParty>
-			<cbc:EndpointID schemeID="9944">30058019</cbc:EndpointID>
+			<cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>
 		</cac:IssuerParty>
 		<!-- end::IssuerParty[] -->
 	</cac:TenderDocumentReference>
-	<!-- end::TenderDocumentReference[] -->
+	<!-- end::TenderDocumentReference1[] -->
+	<!-- tag::TenderDocumentReference2[] -->
 	<cac:TenderDocumentReference>
 		<cbc:ID schemeURI="urn:uuid">243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:ID> <!--.-->
+		<!-- tag::DocumentTypeCode2[] -->
 		<cbc:DocumentTypeCode listID="UNCL1001">310</cbc:DocumentTypeCode> <!--.-->
+		<!-- end::DocumentTypeCode2[] -->
 		<cac:Attachment>
 			<cac:ExternalReference>
 				<cbc:DocumentHash>72182B98A9DAB9A553CCF161EA049D41337E51DFDF74DDC8AB7B68E7CFFB7D1B</cbc:DocumentHash> <!--.-->
 				<cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod> <!--.-->
 			</cac:ExternalReference>
 		</cac:Attachment>
+		<!-- tag::IssuerParty2[] -->
 		<cac:IssuerParty>
-			<cbc:EndpointID schemeID="9930">30058019</cbc:EndpointID> <!--.-->
+			<cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID> <!--.-->
 		</cac:IssuerParty>
+		<!-- end::IssuerParty2[] -->
 	</cac:TenderDocumentReference>
+	<!-- end::TenderDocumentReference2[] -->
 	<!-- tag::SenderParty[] -->
 	<cac:SenderParty>
 		<cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>

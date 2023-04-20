@@ -27,14 +27,21 @@ include::../{xml-doc-file}[tags=HashAlgorithmMethod]
 ////
 
 [source,xml,indent=0]
-.Tender document reference
+.Tender document reference (REM Evidence)
 
 ----
-include::../{xml-doc-file}[tags=TenderDocumentReference]
+include::../{xml-doc-file}[tags=TenderDocumentReference1]
+----
+
+[source,xml,indent=0]
+.Tender document reference (Tender)
+
+----
+include::../{xml-doc-file}[tags=TenderDocumentReference2]
 ----
 
 
-== Document Type Code
+== Document Type Code (REM Evidence)
 
 The type of business document must also be included in the document reference element. Document Type
 Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
@@ -44,14 +51,35 @@ a tender is 13 (Post receipt)
 [source,xml,indent=0]
 .Document Type Code
 ----
-include::../{xml-doc-file}[tags=DocumentTypeCode]
+include::../{xml-doc-file}[tags=DocumentTypeCode1]
 ----
 
 === Issuer Party
 
-Party, which issued the reception, not always the final receiving party of the message.
+Party, which issued the REM Evidence, usually the receiving access point which is not always the final receiving party of the message.
 
 [source,xml,indent=0]
 ....
 include::../{xml-doc-file}[tags=IssuerParty]
+....
+
+== Document Type Code (Tender)
+
+The tender document received must also be included in the document reference element. Document Type
+Code is coded according to code list 1001 issued by UN/CEFACT. For a complete list of all
+the document types, see https://service.unece.org/trade/untdid/d99a/uncl/uncl1001.htm[UNCL 1001]. The code used to reference a tender is 310 (Offer / quotation)
+
+[source,xml,indent=0]
+.Document Type Code
+----
+include::../{xml-doc-file}[tags=DocumentTypeCode2]
+----
+
+=== Issuer Party
+
+Identifier of the economic operator which issued the tender.
+
+[source,xml,indent=0]
+....
+include::../{xml-doc-file}[tags=IssuerParty2]
 ....

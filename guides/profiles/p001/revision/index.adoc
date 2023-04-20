@@ -89,4 +89,19 @@
 | UKL
 | Editorial changes related to links and references.
 
+| 2.1
+|31-05-2022| Felicia Tsakonas
+| adesso
+| Inclusion of Unsubscribe to Procedure elements.
+
+| 2.2
+|27-06-2022| Ansgar Mondorf
+| UKL
+| Editorial review and inclusion of BPMN for Unsubscribe to Procedure.
+
+| 2.3
+|01-03-2023| Ansgar Mondorf
+| Mondorf IT
+| Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
+
 |===

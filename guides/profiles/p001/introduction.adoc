@@ -7,7 +7,12 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
 
-The {name-profile} describes a process providing electronic messaging support for the business process of the subscription of an economic operator to a tendering procedure.
+The {name-profile} describes a process providing electronic messaging support for the business process of the subscription and unsubscription of an economic operator to a tendering procedure. The key aspects covered by this profile are:
+
+* The economic operator wishes to express his interest to participate in a tendering procedure. He sends a subscription request to the contracting body.
+* The contracting body subscribes the economic operator to the procedure, confirms the subscription to the economic operator and keeps him informed about subsequent procedure steps.
+* The economic operator may wish to unsubsribes from the tendering procedure. He sends an unsubscription request to the contracting body and receives an unsubscription confirmation.
+
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
 

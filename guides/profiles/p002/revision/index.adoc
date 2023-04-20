@@ -13,5 +13,6 @@
 | 0.7	| 2017-01-18 | Chander Khoenkhoen | PIANOo	| Updated schematron file for transaction Trdm097 (based on 2017-01-17 schematron files).
 | 0.8	| 07-02-2017 | Chander Khoenkhoen | PIANOo	| Updated section for technical interoperability, schematron file, business and syntax rules, and example for transaction Trdm097 (based on 2017-02-06 schematron files).
 | 0.9	| 16-02-2017 | Chander Khoenkhoen | PIANOo	| Transaction business and information requirements for Trdm097.
-| 1.0	| 23.04-2021 | Ansgar Mondorf | UKL	| Editorial changes related to links and references.
+| 1.0	| 23-04-2021 | Ansgar Mondorf | UKL	| Editorial changes related to links and references.
+| 1.1	|01-03-2023| Ansgar Mondorf | Mondorf IT | Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
 |===

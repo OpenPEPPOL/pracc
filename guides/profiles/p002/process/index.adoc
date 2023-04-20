@@ -1,7 +1,7 @@
 
 = Business process
 
-The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
+The {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the {name-profile}. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 
 image::../images/tender-status-inquiry.png[align="center", width=800]
@@ -40,8 +40,7 @@ image::../images/tender-status-inquiry.png[align="center", width=800]
 | The economic operator receives the latest information about the procurement project.
 |===
 
-:leveloffset: +1
 
 include::implementation-guidelines.adoc[]
 
-:leveloffset: -1
+

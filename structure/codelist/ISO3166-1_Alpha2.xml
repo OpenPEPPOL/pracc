@@ -2,7 +2,7 @@
 <CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
 
     <Title>Country codes (ISO 3166-1:Alpha2)</Title>
-    <Identifier>ISO3166</Identifier>
+    <Identifier>ISO3166-1:Alpha2</Identifier>
     <Version>2013</Version>
     <Agency>ISO</Agency>
 

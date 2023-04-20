@@ -11,20 +11,20 @@ Example of usage in Sender Electronic Address Identifier and Receiver Electronic
 [source,xml,indent=0]
 .Example of usage of Sender Electronic Address Identifier in `rim:Slot`
 ----
-<rim:Slot name="SenderElectronicAddress">
+<rim:Slot name="SenderElectronicAddress" type="EAS">
     <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>9946:500820007</rim:Value>
-	</rim:SlotValue>
+        <rim:Value>9930:DE122268496</rim:Value>
+    </rim:SlotValue>
 </rim:Slot>
 
 ----
 [source,xml,indent=0]
 .Example of usage of Receiver Electronic Address Identifier in `rim:Slot`
 ----
-<rim:Slot name="ReceiverElectronicAddress">
+<rim:Slot name="ReceiverElectronicAddress" type="EAS">
     <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>9930:DE122268496</rim:Value>
-	</rim:SlotValue>
+        <rim:Value>9946:500820007</rim:Value>
+    </rim:SlotValue>
 </rim:Slot>
 
 ----
@@ -41,7 +41,7 @@ Valid profile identifiers are described in the profile BIS documents. See {link-
 ----
 <rim:Slot name="BusinessProcessTypeIdentifier">
     <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.1</rim:Value>
+        <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.2</rim:Value>
 	</rim:SlotValue>
 </rim:Slot>
 ----
@@ -59,7 +59,7 @@ The following example illustrates the usage of Specification Identification in O
 ----
 <rim:Slot name="SpecificationIdentification">
     <rim:SlotValue xsi:type="rim:StringValueType">
-        <rim:Value>urn:fdc:peppol.eu:prac:trns:t011:1.1</rim:Value>
+        <rim:Value>urn:fdc:peppol.eu:prac:trns:t011:1.2</rim:Value>
     </rim:SlotValue>
 </rim:Slot>
 ----

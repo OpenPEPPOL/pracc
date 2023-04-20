@@ -193,11 +193,13 @@
         <Element>
             <Term>cac:ParentDocumentReference</Term>
             <Name>Parent document reference</Name>
-            <Description>c</Description>
+            <Description>Reference to the procurement procedure that this response refers to.</Description>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
-                <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+                <Description>An identifier that is specified by the buyer and used as a reference number for all
+                    documents in the procurement process. It is also known as procurement project identifier,
+                    procurement reference number or contract folder identifier.</Description>
                 <Attribute>
                     <Term>schemeName</Term>
                     <Name>Scheme name</Name>
@@ -211,12 +213,15 @@
         <Element cardinality="1..n">
             <Term>cac:AdditionalDocumentReference</Term>
             <Name>Additional document references</Name>
-            <Description>Additional document reference are used for different document references, required document, provided document. To reference several types, the additional document should be repeated for each type.</Description>
+            <Description>Additional document reference are used to assign the given answers within the document to the
+                ContractFolderID, LotGroup or Lot. To reference several types, the additional document can be repeated.
+            </Description>
             <Reference type="RULE">PEPPOL-T008-R027</Reference>
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Document identifier</Name>
-                <Description>An identifier that is specified by the buyer and used as a reference number for all documents in the procurement process. It is also known as procurement project identifier, procurement reference number or contract folder identifier.</Description>
+                <Description>Identifier to the contract folder and/or the lots to which the tendering answer applies.
+                    XPath expressions are used to locate the answer within the document.</Description>
                 <Attribute>
                     <Term>schemeName</Term>
                     <Name>Scheme name</Name>

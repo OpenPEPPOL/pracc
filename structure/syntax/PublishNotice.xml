@@ -63,7 +63,7 @@
                     <Term>rim:Value</Term>
                     <Description>The value of the Slot instance.</Description>
                     <Reference type="RULE">PEPPOL-T015-R009</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t015:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t015:1.2</Value>
                 </Element>
             </Element>
         </Element>
@@ -89,7 +89,7 @@
                     <Term>rim:Value</Term>
                     <Description>The value of the Slot instance.</Description>
                     <Reference type="RULE">PEPPOL-T015-R010</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.2</Value>
                 </Element>
             </Element>
         </Element>
@@ -205,6 +205,34 @@
             </Element>
         </Element>
         <Element>
+            <Term>rim:Slot@name=NoticePublicationDatePreferred</Term>
+            <Name>Issue date time</Name>
+            <Description>The "Notice Publication Date Preferred" is the date on which the buyer wishes the notice to be
+                published. It can be used to help the buyer respect the requirements that exist
+                between publications at national and European levels.
+            </Description>
+            <Reference type="BUSINESS_TERM">BT-738</Reference>
+            <Attribute>
+                <Term>name</Term>
+                <Value type="FIXED">NoticePublicationDatePreferred</Value>
+            </Attribute>
+            <Element>
+                <Term>rim:SlotValue</Term>
+                <Description>An abstract class that defines a container for a string value.</Description>
+                <Attribute>
+                    <Term>xsi:type</Term>
+                    <Reference type="RULE">PEPPOL-T015-R033</Reference>
+                    <Reference type="RULE">PEPPOL-T015-R034</Reference>
+                    <Value type="FIXED">rim:DateTimeValueType</Value>
+                </Attribute>
+                <Element>
+                    <Term>rim:Value</Term>
+                    <Description>The value of the Slot instance.</Description>
+                    <DataType>rim:DateTimeValueType</DataType>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
             <Term>rim:RegistryObjectList</Term>
             <Name>Registry object list</Name>
             <Description>The Registry Object List contains the information to be published. It describes the notice
@@ -301,19 +329,19 @@
                     </Element>
                 </Element>
                 <Element>
-                    <Term>rim:Slot@name=eFormsVersion</Term>
+                    <Term>rim:Slot@name=CustomizationID</Term>
                     <Name>eForms version</Name>
-                    <Description>Version of the used eForms specification for the notice. The format is according to the
-                        specification always eforms-x.y.
+                    <Description>This element identifies the customization used for the notice. Identification is based
+                        on the complete set (schemas+rules) limited to the major and minor version numbers.
                     </Description>
                     <Reference type="RULE">PEPPOL-T015-R008</Reference>
                     <Attribute>
                         <Term>name</Term>
-                        <Value type="FIXED">eFormsVersion</Value>
+                        <Value type="FIXED">CustomizationID</Value>
                     </Attribute>
                     <Element>
                         <Term>rim:SlotValue</Term>
-                        <Description>An abstract class that defines a container for an string value.</Description>
+                        <Description>An abstract class that defines a container for a string value.</Description>
                         <Attribute>
                             <Term>xsi:type</Term>
                             <Value type="FIXED">rim:StringValueType</Value>
