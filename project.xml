@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>PEPPOL Pre-Award</Name>
-
+    <Name>Peppol Pre-Award - March 2023 Release</Name>
+    <Documentation path="changelog/index.html">Release Notes - March 2023</Documentation>
     <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.2</Documentation>
     <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure 1.2</Documentation>
     <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation 1.2</Documentation>
@@ -36,7 +36,7 @@
     <Documentation path="profiles/p011/index.html">P011 - Qualification - 1.1</Documentation>
     <Documentation path="transactions/T019/index.html">T019 - Qualification 1.1</Documentation>
     <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation 1.1</Documentation>
-    <Documentation path="changelog/index.html">Changelog</Documentation>
+
 
     <!-- Syntax -->
     <Resource>
