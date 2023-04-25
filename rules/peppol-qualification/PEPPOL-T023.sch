@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -58,6 +59,12 @@
 
         <rule context="ubl:TendererQualificationResponse/cbc:IssueTime">
             <assert id="PEPPOL-T023-R025" flag="fatal" test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">IssueTime MUST have a granularity of seconds</assert>
+        </rule>
+        <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:AdmissionCode">
+            <assert id="PEPPOL-T023-R026" flag="fatal" test="(not(cbc:AdmissionCode = false()))">AdmissionCode must always be "false" in a QualificationRejection</assert>
+        </rule>
+        <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:Resolution">
+            <assert id="PEPPOL-T023-R027" flag="fatal" test="(not(cbc:ExclusionReason) OR not(cbc:Resolution))">At least one Resolution or one ExclusionReason has to be provided in a QualificationRejection </assert>
         </rule>
     </pattern>
 </schema>

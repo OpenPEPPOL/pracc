@@ -64,25 +64,47 @@ include::../files/QualificationRejection.xml[tags=IssueDateTime]
 
 === Sender Party
 
-The party sending an Notice Publication Response message back to the sending party that initiated the request to publish a notice.
+The party sending a Qualification Rejection Response message back to the party that initiated the request to qualify for a Procurement.
 
 [source,xml,indent=0]
 .Example of sender party
 ....
 include::../files/QualificationRejection.xml[tags=SenderParty]
 ....
-<.> Identifies the senders party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the sender party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the sender party itself and the scheme identifier to resolve sender party's identifier
 
 === Receiver Party
 
-The party who is supposed to process the Notice Publication Response. This is the same party that initiated the request to publish a notice.
+The party who is supposed to process the Qualification Rejection Response. This is the same party that initiated the request to qualify for a Procurement.
 
 [source,xml,indent=0]
 .Example of receiver party
 ....
-include::../files/QualificationRejection.xml[tags=receiverParty]
+include::../files/QualificationRejection.xml[tags=ReceiverParty]
 ....
-<.> Identifies the receivers party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the receiver party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the receiver party and the scheme identifier to resolve the receiver party's identifier
+
+== QualificationResolution
+
+The QualificationResolution returned with this transaction will always be negative. If more that one Lots have been aimed to qualify for and need to be rejected, one QualificationResolution has to estblished for each Lot.
+
+[source,xml,indent=0]
+.Example of QualificationResolution
+....
+include::../files/QualificationRejection.xml[tags=QualificationResolution]
+....
+<.> states that the Tenderer is not allowed to attend the further Procurement Process, only "false" is the allowed value here.
+<.> If the QualificationRejection results from ExclusionGrounds, the corresponding values from the underlying codelist shall be taken.
+<.> Otherwise one or more functional Reasons need to be textually given.
+<.> The Date at which QualificationResolution has been passed
+<.> The ProcurementProjectLot referenced in this QualificationRejection
+<.> The ProcurementProjectLot's ID
+<.> The Name of the ProcurementProjectLot as more reliable reference to a human reader - needed?
+
+
+<!-- Still needed or need to be deleted? -->
 
 == Document response
 

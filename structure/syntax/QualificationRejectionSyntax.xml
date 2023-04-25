@@ -171,7 +171,7 @@
 				</Element>
 			</Element>
 		</Element>
-		<Element>
+		<Element cardinality="1..n">
 			<Term>cac:QualificationResolution</Term>
 			<Name>Qualification Resolution</Name>
 			<Description>Qualification Resolution</Description>
@@ -179,7 +179,9 @@
 				<Term>cbc:AdmissionCode</Term>
 				<Name>Admission Code</Name>
 				<Description>Admission Code</Description>
+				<Value type="FIXED">false</Value>
 			</Element>
+			<!--ExclusionReason in addition or in replacing resolutions -->
 			<Element cardinality="0..n">
 				<Term>cbc:Resolution</Term>
 				<Name>Resolution</Name>
