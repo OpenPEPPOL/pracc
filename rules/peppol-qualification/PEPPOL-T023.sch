@@ -1,8 +1,7 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <title>eSENS business and syntax rules for Qualification</title>
+    <title>PEPPOL business and syntax rules for QualificationRejection</title>
 
     <ns prefix="cbc" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
     <ns prefix="cac" uri="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"/>
@@ -15,7 +14,7 @@
         </rule>
     </pattern>
     <pattern>
-        <let name="syntaxError" value="string('A Qualification document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
+        <let name="syntaxError" value="string('A QualificationRejection document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
 
         <rule context="/ubl:TendererQualificationResponse">
             <assert test="cbc:UBLVersionID" flag="fatal" id="PEPPOL-T023-R002">Element 'cbc:CustomizationID' MUST be provided.</assert>
