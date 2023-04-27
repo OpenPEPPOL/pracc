@@ -20,6 +20,7 @@
 		<Reference type="RULE">PEPPOL-T023-R009</Reference>
 		<Reference type="RULE">PEPPOL-T023-R010</Reference>
 		<Reference type="RULE">PEPPOL-T023-R011</Reference>
+		<Reference type="RULE">PEPPOL-T023-R012</Reference>
 		<Element>
 			<Term>cbc:UBLVersionID</Term>
 			<Name>UBL version identifier</Name>
@@ -171,6 +172,20 @@
 				</Element>
 			</Element>
 		</Element>
+		<Element cardinality="1..1">
+			<Term>cac:ResolutionDocumentReference</Term>
+			<Name>Resolution Document Reference</Name>
+			<Element>
+				<Term>cbc:ID</Term>
+				<Name>ResolutionDocumentID</Name>
+				<Description>A reference to the Document that has been sent by the Economic operator to apply to the given Qualification Request and to which this resolution refers to.</Description>
+				<Attribute>
+					<Term>schemeURI</Term>
+					<Name>Scheme identifier</Name>
+					<Value type="FIXED">urn:uuid</Value>
+				</Attribute>
+			</Element>
+		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:QualificationResolution</Term>
 			<Name>Qualification Resolution</Name>
@@ -179,12 +194,21 @@
 				<Term>cbc:AdmissionCode</Term>
 				<Name>Admission Code</Name>
 				<Description>Admission Code</Description>
+				<Reference type="RULE">PEPPOL-T023-R026</Reference>
 				<Value type="FIXED">false</Value>
 			</Element>
-			<!--ExclusionReason in addition or in replacing resolutions -->
+			<Element cardinality="0..n">
+				<Term>cbc:ExclusionReason</Term>
+				<Name>ExclusionReason</Name>
+				<Description>Qualification Rejection based on one of the legally defined Exclusion Grounds is expected to be listed here. </Description>
+				<Reference type="CODE_LIST">exclusionReason</Reference>
+				<DataType>TEXT</DataType>
+				<Value type="EXAMPLE">corruption</Value>
+			</Element>
 			<Element cardinality="0..n">
 				<Term>cbc:Resolution</Term>
 				<Name>Resolution</Name>
+				<Description>Qualification Rejection resulting from evaluating the Tenderer's Qualification Application is documented here.</Description>
 			</Element>
 			<Element>
 				<Term>cbc:ResolutionDate</Term>
@@ -197,10 +221,20 @@
 			<Element>
 				<Term>cac:ProcurementProjectLot</Term>
 				<Name>Procurement Project Lot</Name>
-				<Element>
+				<Element cardinality="1..1">
 					<Term>cbc:ID</Term>
 					<Name>ID</Name>
+					<Reference type="RULE"><!--todo add rule to ruleset--></Reference>
 					<DataType>Identifier</DataType>
+				</Element>
+				<!--Falls der Identifer alleine nicht ausreichen sollte, ist der name des Loses als menschenlesbare Referenz zusätzlich angegeben-->
+				<Element cardinality="0..1">
+					<Term>cac:ProcurementProject</Term>
+					<Name>Procurement Project</Name>
+					<Element>
+						<Term>cbc:Name</Term>
+						<Name>Name</Name>
+					</Element>
 				</Element>
 			</Element>
 		</Element>

@@ -17,16 +17,17 @@
         <let name="syntaxError" value="string('A QualificationRejection document SHOULD only contain elements and attributes described in the syntax mapping. - ')"/>
 
         <rule context="/ubl:TendererQualificationResponse">
-            <assert test="cbc:UBLVersionID" flag="fatal" id="PEPPOL-T023-R002">Element 'cbc:CustomizationID' MUST be provided.</assert>
-            <assert test="cbc:CustomizationID" flag="fatal" id="PEPPOL-T023-R003">Element 'cbc:CustomizationID' MUST be provided.</assert>
-            <assert test="cbc:ProfileID" flag="fatal" id="PEPPOL-T023-R004">Element 'cbc:ProfileID' MUST be provided.</assert>
-            <assert test="cbc:ID" flag="fatal" id="PEPPOL-T023-R005">Element 'cbc:ID' MUST be provided.</assert>
-            <assert test="cbc:ContractFolderID" flag="fatal" id="PEPPOL-T023-R006">Element 'cbc:ContractFolderID' MUST be provided.</assert>
-            <assert test="cbc:IssueDate" flag="fatal" id="PEPPOL-T023-R007">Element 'cbc:IssueDate' MUST be provided.</assert>
-            <assert test="cbc:IssueTime" flag="fatal" id="PEPPOL-T023-R008">Element 'cbc:IssueTime' MUST be provided.</assert>
-            <assert test="cac:SenderParty" flag="fatal" id="PEPPOL-T023-R009">Element 'cac:SenderParty' MUST be provided.</assert>
-            <assert test="cac:ReceiverParty" flag="fatal" id="PEPPOL-T023-R010">Element 'cac:ReceiverParty' MUST be provided.</assert>
-            <assert test="cac:QualificationResolution" flag="fatal" id="PEPPOL-T023-R011">Element 'cac:QualificationResolution' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R002" test="cbc:UBLVersionID" flag="fatal">Element 'cbc:CustomizationID' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R003" test="cbc:CustomizationID" flag="fatal">Element 'cbc:CustomizationID' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R004" test="cbc:ProfileID" flag="fatal">Element 'cbc:ProfileID' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R005" test="cbc:ID" flag="fatal">Element 'cbc:ID' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R006" test="cbc:ContractFolderID" flag="fatal">Element 'cbc:ContractFolderID' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R007" test="cbc:IssueDate" flag="fatal">Element 'cbc:IssueDate' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R008" test="cbc:IssueTime" flag="fatal">Element 'cbc:IssueTime' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R009" test="cac:SenderParty" flag="fatal">Element 'cac:SenderParty' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R010" test="cac:ReceiverParty" flag="fatal">Element 'cac:ReceiverParty' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R011" flag="fatal" test="cac:ResolutionDocumentReference">Element 'cac:ResolutionDocumentReference' MUST be provided.</assert>
+            <assert id="PEPPOL-T023-R012" test="cac:QualificationResolution" flag="fatal">Element 'cac:QualificationResolution' MUST be provided.</assert>
         </rule>
 
         <rule context="ubl:TendererQualificationResponse/cbc:UBLVersionID">
@@ -59,11 +60,17 @@
         <rule context="ubl:TendererQualificationResponse/cbc:IssueTime">
             <assert id="PEPPOL-T023-R025" flag="fatal" test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">IssueTime MUST have a granularity of seconds</assert>
         </rule>
+        <rule context="ubl:TendererQualificationResponse/cac:ResolutionDocumentReference">
+            <assert id="PEPPOL-T023-R026" flag="fatal" test="tbd"><!--wie muss diese Referenz aussehen?--></assert>
+        </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:AdmissionCode">
-            <assert id="PEPPOL-T023-R026" flag="fatal" test="(not(cbc:AdmissionCode = false()))">AdmissionCode must always be "false" in a QualificationRejection</assert>
+            <assert id="PEPPOL-T023-R027" flag="fatal" test="(not(cbc:AdmissionCode = false()))">AdmissionCode must always be "false" in a QualificationRejection</assert>
+        </rule>
+        <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:ExclusionReason">
+            <assert id="PEPPOL-T023-R028" flag="fatal" test="(not(cbc:ExclusionReason) OR not(cbc:Resolution))">At least one Resolution or one ExclusionReason has to be provided in a QualificationRejection </assert>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:Resolution">
-            <assert id="PEPPOL-T023-R027" flag="fatal" test="(not(cbc:ExclusionReason) OR not(cbc:Resolution))">At least one Resolution or one ExclusionReason has to be provided in a QualificationRejection </assert>
+            <assert id="PEPPOL-T023-R029" flag="fatal" test="(not(cbc:ExclusionReason) OR not(cbc:Resolution))">At least one Resolution or one ExclusionReason has to be provided in a QualificationRejection </assert>
         </rule>
     </pattern>
 </schema>

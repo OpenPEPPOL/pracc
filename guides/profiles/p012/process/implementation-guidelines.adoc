@@ -1,4 +1,3 @@
-// TODO replace with rejection
 
 = Implementation guidelines
 

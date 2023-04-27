@@ -40,23 +40,22 @@
         </cac:PartyIdentification>
     </cac:ReceiverParty>
     <!-- end::ReceiverParty[] -->
-
+    <!-- tag::ResolutionDocumentReference[] -->
+    <cac:ResolutionDocumentReference>
+        <cbc:ID schemeURI="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID> <!--.-->
+    </cac:ResolutionDocumentReference>
+    <!-- end::ResolutionDocumentReference[] -->
     <!-- in Case of Multiple Lots - One resolution per Lot-->
     <!-- a rejection will only take Qualification Resolution Information for those Lots that have been rejected-->
     <!-- tag::QualificationResolution[] -->
     <cac:QualificationResolution>
         <cbc:AdmissionCode>false</cbc:AdmissionCode> <!--.-->
-        <!-- was gerade hier unter Resolution steht, könnten Inhalte aus der EU-Codelsite "criterion" (https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/criterion)  sein - was übernehmen?-->
-        <cbc:ExclusionReason>?needed?</cbc:ExclusionReason> <!--.-->
-        <!--unter Resolution würde ich begründete Stop-Kriterien verstehen, also die Begründung, an welcher Qualifkationshürde ein Bewerber gescheitert ist-->
-        <!-- Auch hierfür könnte eine Codeliste herangezogen werden, welche Inhalte könnte diese haben - aktuell gibt es keine EU-procurement-Table mit adäquatem Inhalt,-->
-        <!-- theoretisch muss die Begründung aber zu den Auswahlkriterien des CFC passen - dazu gibt es eine Codeliste: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/selection-criterion-->
             <cbc:Resolution>limited turnover</cbc:Resolution> <!--.-->
             <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate> <!--.-->
        <cac:ProcurementProjectLot><!--.-->
             <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
-            <cbc:ID>0001</cbc:ID><!--.-->
+            <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::1</cbc:ID><!--.-->
             <cac:ProcurementProject>
                 <cbc:Name>Der name des 1. Loses (in dieser Notice) zur Identifizierung beim Empfänger</cbc:Name><!--.-->
             </cac:ProcurementProject>
@@ -71,7 +70,7 @@
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate>
         <cac:ProcurementProjectLot>
             <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
-            <cbc:ID>0002</cbc:ID>
+            <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::3</cbc:ID>
             <cac:ProcurementProject>
                 <cbc:Name>Der Name des 2. Loses - zur Identifizierung beim Empfänger</cbc:Name>
             </cac:ProcurementProject>
