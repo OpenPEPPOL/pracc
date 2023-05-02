@@ -5,7 +5,7 @@ include::../shared/settings.adoc[]
 :name-transaction-org: "Trdm042 Qualification Reception Confirmation transaction"
 :name-transaction: T020 - Qualification Reception Confirmation
 :name-trans-short: Qualification Reception Confirmation
-:name-syntax: QualificationReceptionConfirmation
+:name-syntax: QualificationReception
 
 include::../shared/links.adoc[]
 

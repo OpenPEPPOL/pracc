@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-	<Term>Qualification Rejection</Term>
+	<Term>QualificationRejection</Term>
 	<Name>Qualification Rejection (T023)</Name>
 
 	<Namespace prefix="t023">urn:oasis:names:specification:ubl:schema:xsd:TendererQualificationResponse-2</Namespace>
