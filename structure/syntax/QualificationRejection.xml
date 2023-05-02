@@ -50,7 +50,7 @@
 		<Element>
 			<Term>cbc:ID</Term>
 			<Name>Qualification identifier</Name>
-			<Description>Identifier of the qualificaton document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
+			<Description>Identifier of the qualification document, MUST be expressed in a UUID syntax (RFC 4122)</Description>
 			<Reference type="RULE">PEPPOL-T023-R019</Reference>
 			<Reference type="RULE">PEPPOL-T023-R020</Reference>
 			<Reference type="RULE">PEPPOL-T023-R021</Reference>
@@ -87,6 +87,10 @@
 			<Term>cac:SenderParty</Term>
 			<Name>Contracting body</Name>
 			<Description>The contracting authority or contracting entity who is buying supplies, services or public works using a tendering procedure as described in the applicable directive (Directives 2014/24/EU, 2014/25/EU).</Description>
+			<Reference type="RULE">PEPPOL-T023-R026</Reference>
+			<Reference type="RULE">PEPPOL-T023-R032</Reference>
+			<Reference type="RULE">PEPPOL-T023-R033</Reference>
+			<Reference type="RULE">PEPPOL-T023-R034</Reference>
 			<Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Contracting body electronic address identifier</Name>
@@ -107,6 +111,9 @@
 					<Term>cbc:ID</Term>
 					<Name>Contracting body identifier</Name>
 					<Description>The national identifier of a contracting body as it is legally registered (e.g. VAT identification, such as KBO)</Description>
+					<Reference type="RULE">"PEPPOL-T023-R028"</Reference>
+					<Reference type="RULE">"PEPPOL-T023-R029"</Reference>
+					<Reference type="RULE">"PEPPOL-T023-R030"</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -123,6 +130,7 @@
 					<Term>cbc:Name</Term>
 					<Name>Contracting body name</Name>
 					<Description>The name of the contracting body as it is registered.</Description>
+					<Reference type="RULE">PEPPOL-T023-R031</Reference>
 					<DataType>Text</DataType>
 				</Element>
 			</Element>
@@ -131,7 +139,11 @@
 			<Term>cac:ReceiverParty</Term>
 			<Name>Economic operator</Name>
 			<Description>Any natural or legal person or public entity or group of such persons and/or entities, including any temporary association of undertakings, which offers the execution of works and/or a work, the supply of products or the provision of services on the market. MUST be the Main Qualifying Party who have sent the qualification document.</Description>
-			<Element>
+			<Reference type="RULE">PEPPOL-T023-R027</Reference>
+			<Reference type="RULE">PEPPOL-T023-R032</Reference>
+			<Reference type="RULE">PEPPOL-T023-R033</Reference>
+			<Reference type="RULE">PEPPOL-T023-R034</Reference>
+		    <Element>
 				<Term>cbc:EndpointID</Term>
 				<Name>Economic operator electronic address identifier</Name>
 				<Description>Electronic address of the economic operator being the main qualifying party.</Description>
@@ -151,6 +163,9 @@
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
 					<Description>An identifier that identifies the economic operator, such as a legal registration identifier.</Description>
+					<Reference type="RULE">"PEPPOL-T023-R028"</Reference>
+					<Reference type="RULE">"PEPPOL-T023-R029"</Reference>
+					<Reference type="RULE">"PEPPOL-T023-R030"</Reference>
 					<Attribute>
 						<Term>schemeID</Term>
 						<Name>Scheme identifier</Name>
@@ -168,6 +183,7 @@
 					<Term>cbc:Name</Term>
 					<Name>Economic operator name</Name>
 					<Description>The name of the economic operator.</Description>
+					<Reference type="RULE">PEPPOL-T023-R031</Reference>
 					<DataType>Text</DataType>
 				</Element>
 			</Element>
@@ -179,6 +195,10 @@
 				<Term>cbc:ID</Term>
 				<Name>ResolutionDocumentID</Name>
 				<Description>A reference to the Document that has been sent by the Economic operator to apply to the given Qualification Request and to which this resolution refers to.</Description>
+				<Reference type="RULE">PEPPOL-T023-R035</Reference>
+				<Reference type="RULE">PEPPOL-T023-R036</Reference>
+				<Reference type="RULE">PEPPOL-T023-R037</Reference>
+				<Reference type="RULE">PEPPOL-T023-R038</Reference>
 				<Attribute>
 					<Term>schemeURI</Term>
 					<Name>Scheme identifier</Name>
@@ -190,51 +210,38 @@
 			<Term>cac:QualificationResolution</Term>
 			<Name>Qualification Resolution</Name>
 			<Description>Qualification Resolution</Description>
+			<Reference type="RULE">PEPPOL-T023-R039</Reference>
+			<Reference type="RULE">PEPPOL-T023-R040</Reference>
 			<Element>
 				<Term>cbc:AdmissionCode</Term>
 				<Name>Admission Code</Name>
 				<Description>Admission Code</Description>
-				<Reference type="RULE">PEPPOL-T023-R026</Reference>
+				<Reference type="RULE">PEPPOL-T023-R041</Reference>
 				<Value type="FIXED">false</Value>
-			</Element>
-			<Element cardinality="0..n">
-				<Term>cbc:ExclusionReason</Term>
-				<Name>ExclusionReason</Name>
-				<Description>Qualification Rejection based on one of the legally defined Exclusion Grounds is expected to be listed here. </Description>
-				<Reference type="CODE_LIST">exclusionReason</Reference>
-				<DataType>TEXT</DataType>
-				<Value type="EXAMPLE">corruption</Value>
 			</Element>
 			<Element cardinality="0..n">
 				<Term>cbc:Resolution</Term>
 				<Name>Resolution</Name>
-				<Description>Qualification Rejection resulting from evaluating the Tenderer's Qualification Application is documented here.</Description>
+				<Description>Textual description of the reason why the qualification has been rejected.</Description>
+				<Reference type="RULE">PEPPOL-T023-R042</Reference>
 			</Element>
 			<Element>
 				<Term>cbc:ResolutionDate</Term>
 				<Name>Resolution Date</Name>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cbc:ResolutionTime</Term>
 				<Name>Resolution Time</Name>
 			</Element>
 			<Element>
 				<Term>cac:ProcurementProjectLot</Term>
 				<Name>Procurement Project Lot</Name>
-				<Element cardinality="1..1">
+				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>ID</Name>
-					<Reference type="RULE"><!--todo add rule to ruleset--></Reference>
+					<Description>An identifier for the lot.</Description>
+					<Reference type="RULE">PEPPOL-T023-R034</Reference>
 					<DataType>Identifier</DataType>
-				</Element>
-				<!--Falls der Identifer alleine nicht ausreichen sollte, ist der name des Loses als menschenlesbare Referenz zusätzlich angegeben-->
-				<Element cardinality="0..1">
-					<Term>cac:ProcurementProject</Term>
-					<Name>Procurement Project</Name>
-					<Element>
-						<Term>cbc:Name</Term>
-						<Name>Name</Name>
-					</Element>
 				</Element>
 			</Element>
 		</Element>

@@ -26,18 +26,24 @@
     <!-- end::IssueDateTime[] -->
     <!-- tag::SenderParty[] -->
     <cac:SenderParty>
-        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID><!--.-->
-        <cac:PartyIdentification>
-            <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--.-->
-        </cac:PartyIdentification>
-    </cac:SenderParty>
-    <!-- end::SenderParty[] -->
-    <!-- tag::ReceiverParty[] -->
-    <cac:ReceiverParty> <!--.-->
         <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID><!--.-->
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--.-->
         </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Beschaffungsamt des BMI</cbc:Name> <!--.-->
+        </cac:PartyName>
+    </cac:SenderParty>
+    <!-- end::SenderParty[] -->
+    <!-- tag::ReceiverParty[] -->
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID><!--.-->
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">7300010000001</cbc:ID><!--.-->
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Dutch Tulips Ltd</cbc:Name> <!--.-->
+        </cac:PartyName>
     </cac:ReceiverParty>
     <!-- end::ReceiverParty[] -->
     <!-- tag::ResolutionDocumentReference[] -->
@@ -45,36 +51,24 @@
         <cbc:ID schemeURI="urn:uuid">6bc5f7fe-cb0f-4640-bda6-f1ee7f02576a</cbc:ID> <!--.-->
     </cac:ResolutionDocumentReference>
     <!-- end::ResolutionDocumentReference[] -->
-    <!-- in Case of Multiple Lots - One resolution per Lot-->
-    <!-- a rejection will only take Qualification Resolution Information for those Lots that have been rejected-->
     <!-- tag::QualificationResolution[] -->
     <cac:QualificationResolution>
         <cbc:AdmissionCode>false</cbc:AdmissionCode> <!--.-->
-            <cbc:Resolution>limited turnover</cbc:Resolution> <!--.-->
-            <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
+        <cbc:Resolution languageID="en">limited turnover</cbc:Resolution> <!--.-->
+        <cbc:Resolution languageID="en">criminal conviction - money laundering</cbc:Resolution>
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate> <!--.-->
        <cac:ProcurementProjectLot><!--.-->
-            <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
             <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::1</cbc:ID><!--.-->
-            <cac:ProcurementProject>
-                <cbc:Name>Der name des 1. Loses (in dieser Notice) zur Identifizierung beim Empfänger</cbc:Name><!--.-->
-            </cac:ProcurementProject>
         </cac:ProcurementProjectLot>
     </cac:QualificationResolution>
-    <!-- end::QualificationResolution[]-->
-
+    <!-- end::QualificationResolution[] -->
     <cac:QualificationResolution>
         <cbc:AdmissionCode>false</cbc:AdmissionCode>
         <cbc:Resolution>limited turnover</cbc:Resolution>
         <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate>
         <cac:ProcurementProjectLot>
-            <!-- in case of more tha one Lot - how do we come to the correct LOT-ID-->
             <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::3</cbc:ID>
-            <cac:ProcurementProject>
-                <cbc:Name>Der Name des 2. Loses - zur Identifizierung beim Empfänger</cbc:Name>
-            </cac:ProcurementProject>
         </cac:ProcurementProjectLot>
     </cac:QualificationResolution>
-
 </TendererQualificationResponse>

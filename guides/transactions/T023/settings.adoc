@@ -3,8 +3,7 @@ include::../shared/settings.adoc[]
 :name-profile-org: "Profile BII51 Qualification Rejection" (CWA 17027-116:2016)
 :name-profile: "PEPPOL BIS Profile P012 - Qualification Rejection"
 
-// ToDO: ist hier der ORIGINAL_UBL-Name gemeint?
-:name-transaction-org: "Trdmxxx Tenderer Qualification Response"
+:name-transaction-org: "Trdm087 Qualification Rejection transaction"
 
 :name-trans-short: Qualification Rejection
 :name-transaction: T023 - {name-trans-short}
