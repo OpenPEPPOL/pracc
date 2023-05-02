@@ -164,7 +164,7 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/QualificationRejectionSyntax.xml</Path>
+        <Path>structure/syntax/QualificationRejection.xml</Path>
         <Title>Syntax Mapping T023 - Qualification Rejection 1.0</Title>
     </Resource>
 
