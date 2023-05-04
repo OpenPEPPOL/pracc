@@ -398,15 +398,15 @@
 						<Element cardinality="0..1">
 							<Term>cbc:Telefax</Term>
 							<Name>Contact fax number</Name>
-							<Reference type="RULE">PEPPOL-T019-R070</Reference>
 							<Description>A fax number for the contact point.</Description>
+							<Reference type="RULE">PEPPOL-T019-R070</Reference>
 							<DataType>Text</DataType>
 						</Element>
 						<Element cardinality="0..1">
 							<Term>cbc:ElectronicMail</Term>
 							<Name>Contact email address</Name>
-							<Reference type="RULE">PEPPOL-T019-R071</Reference>
 							<Description>An e-mail address for the contact point.</Description>
+							<Reference type="RULE">PEPPOL-T019-R071</Reference>
 							<DataType>Text</DataType>
 						</Element>
 					</Element>
@@ -575,7 +575,7 @@
 					<Element>
 						<Term>cbc:FileName</Term>
 						<Name>Document name</Name>
-						<Description>The file name of the document.</Description>
+						<Description>The file name of the document. Encrypted qualification documents MUST use the file extension .p7m and use the encryption certificate provided in the call for tender.</Description>
 						<Reference type="RULE">PEPPOL-T019-R045</Reference>
 						<DataType>Text</DataType>
 					</Element>

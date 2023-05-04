@@ -117,7 +117,7 @@
         <cbc:XPath>/TendererQualification/cac:TendererPartyQualification/cac:MainQualifyingParty/cac:Party[1]</cbc:XPath> <!--.-->
         <cbc:LocaleCode listID="ISO639-1">NL</cbc:LocaleCode> <!--.-->
         <cbc:VersionID>1</cbc:VersionID>   <!--.-->
-        <cbc:DocumentDescription>A qualification document description</cbc:DocumentDescription>   <!--.-->
+        <cbc:DocumentDescription>A qualification document of Dutch Tulips Ltd</cbc:DocumentDescription>   <!--.-->
         <cac:Attachment>   <!--.-->
             <cac:ExternalReference>
                 <cbc:URI>243A177F-E4E9-4FC8-B97E-BB1A950DD8F8</cbc:URI> <!--.-->
@@ -125,7 +125,7 @@
                 </cbc:DocumentHash> <!--.-->
                 <cbc:HashAlgorithmMethod>http://www.w3.org/2001/04/xmlenc#sha256</cbc:HashAlgorithmMethod> <!--.-->
                 <cbc:MimeCode>application/xml</cbc:MimeCode> <!--.-->
-                <cbc:FileName>Document name</cbc:FileName> <!--.-->
+                <cbc:FileName>QualificationDutchTulips.pdf.p7m</cbc:FileName> <!--.-->
                 <cbc:Description>size</cbc:Description> <!--.-->
             </cac:ExternalReference>
         </cac:Attachment>

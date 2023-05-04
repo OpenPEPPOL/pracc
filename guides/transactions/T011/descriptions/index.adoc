@@ -17,10 +17,10 @@ include::../files/ExampleSearchNoticeRequest.xml[lines=2..14]
 | name
 | description
 
-| maxResults
+| startIndex
 | This attribute is used to indicate which result must be returned as the first result when iterating over a large result set. The default value is 0, which returns the result set starting with index 0 (first result).
 
-| startIndex
+| maxResults
 | This attribute specifies a limit on the maximum number of results the sender wishes the query to return. A receiver of the request MUST return a result set whose size is less than or equal to the maxResults parameter depending upon whether enough results are available starting at startIndex. If the default value -1 is used, the receiver SHOULD return all the results.
 | id
 | Specifies the unique identifier for an Identifiable Search Notice Request. In case of different start index for same QueryRequest is used it is possible to use the same Search Notice Request identifier.
@@ -107,7 +107,7 @@ The type of the slotValue is a CollectionValueType, so you can enter more than o
 === Notice Type
 [source,xml,indent=0]
 ....
-include::../files/ExampleSearchNoticeRequest.xml[tags=form-type]
+include::../files/ExampleSearchNoticeRequest.xml[tags=notice-type]
 ....
 <.> Just like the form type, you may select the notice type, you want to search for. The ID of the list has to be "_http://publications.europa.eu/resource/authority/notice-type_" in the type attribute of the slot.
 
@@ -150,8 +150,8 @@ This slot is optional and can only be included once.
 include::../files/ExampleSearchNoticeRequest.xml[tag=estimatedValue]
 ....
 <.> The slot for the estimated tender value consists of four different slots, which can all be added to specify the tender value. The slot as a whole is optional, as are each of the three slots in it.
-<.> The first one is minimum, the minimal tender value you are looking for. It has to be declared as a float.
-<.> Corresponding to minimum, the second value you can search for in the tender value is the maximum. Just like the minimum the maximum tender value you are searching for is a float.
+<.> The first one is minimum, the minimal tender value you are looking for. It has to be declared as an integer.
+<.> Corresponding to minimum, the second value you can search for in the tender value is the maximum. Just like the minimum the maximum tender value you are searching for is an integer.
 <.> The third possible criteria is the currency. This one is a CollectionValueType you can enter more than one element. The values are selected from the list "_http://publications.europa.eu/resource/authority/currency_" which ID is deposited in the type-attribute of the slot.
 
 This slot is optional and can only be included once. If Estimated Value is included at least one of minimum, maximum or currency has to be included as well. These can only be included once.

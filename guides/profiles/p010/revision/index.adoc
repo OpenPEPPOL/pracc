@@ -32,4 +32,9 @@
 | University of Koblenz
 | Review and Final Draft
 
+| 0.5
+|01-03-2023| Ansgar Mondorf
+| Mondorf IT
+| Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
+
 |===

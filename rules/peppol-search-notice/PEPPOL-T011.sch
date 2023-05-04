@@ -125,7 +125,7 @@
               query:QueryRequest/query:Query/rim:Slot[@name='EstimatedValue']/rim:Slot[@name='Minimum']/rim:SlotValue
             | query:QueryRequest/query:Query/rim:Slot[@name='EstimatedValue']/rim:Slot[@name='Maximum']/rim:SlotValue
             ">
-            <assert id="PEPPOL-T011-R046" flag="fatal" test="@xsi:type='rim:FloatValueType'">A Minimum or Maximum MUST have an element SlotValue with xsi:type of rim:FloatValueType.</assert>
+            <assert id="PEPPOL-T011-R046" flag="fatal" test="@xsi:type='rim:IntegerValueType'">A Minimum or Maximum MUST have an element SlotValue with xsi:type of rim:IntegerValueType.</assert>
         </rule>
 
         <rule context="query:QueryRequest/query:Query/rim:Slot[@name='EstimatedValue']/rim:Slot[@name='Currency']">

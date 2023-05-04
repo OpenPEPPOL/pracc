@@ -5,7 +5,7 @@ include::../../shared/links.adoc[]
 :link-mapping: link:/pracc/feature/p012/syntax/{name-syntax}/tree/[Syntax mapping for {name-transaction}]
 
 // code list links
-:link-iso3166: link:http://www.iso.org/iso/home/standards/country_codes.htm[ISO3166]
+:link-iso3166: https://docs.peppol.eu/pracc/codelist/ISO3166/[ISO3166]
 
 //RegRep
 :ebrs: http://docs.oasis-open.org/regrep/regrep-core/v4.0/os/regrep-core-rs-v4.0-os.html[Services and Protocols (ebRS) for ebXML RegRep]
@@ -28,4 +28,4 @@ include::../../shared/links.adoc[]
 
 // PRACC Guidelines
 :link-eDelivery: link:/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.3.pdf[BIS eDelivery guide for pre-award]
-:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.pdf[BIS eDocuments guide for pre-award]
+:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.3.pdf[BIS eDocuments guide for pre-award]

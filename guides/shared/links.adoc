@@ -1,9 +1,9 @@
 // all links shared in all files.
 
 //PEPPOL
-:link-peppol: https://peppol.org/[PEPPOL]
+:link-peppol: https://peppol.org/[Peppol]
 :link-bis: https://docs.peppol.eu/pracc/[PEPPOL eTendering BIS]
-:link-common: https://joinup.ec.europa.eu/svn/peppol/PEPPOL%20BIS%20Common%20text%20and%20introduction%20-%20ver%201%202014-04-14.pdf[PEPPOL BIS common text and introduction]
+:link-common: https://peppol.org/[Peppol]
 :preaward-cat: https://docs.peppol.eu/pracc/catalogue/1.0/bis/[BIS pre-award catalogue]
 
 //PEPPOL BIS Preaward
@@ -57,14 +57,14 @@
 :link-ubl: http://docs.oasis-open.org/ubl/UBL-2.3.html[UBL 2.3]
 :link-ubl-22: http://docs.oasis-open.org/ubl/UBL-2.2.html[UBL 2.2]
 
-:link-espd: https://ec.europa.eu/growth/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_de
+:link-espd: https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/european-single-procurement-document-and-ecertis_en
 :link-art43-50: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0025&from=EN
 :link-eu-directive: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0024&from=En
 :link-bpmn: https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
 
 // PRACC Guidelines
 :link-eDelivery: link:/pracc/files/BIS-eDelivery-guide-for-pre-award-v1.3.pdf[BIS eDelivery guide for pre-award]
-:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.2.pdf[BIS eDocuments guide for pre-award]
+:link-eDocument: link:/pracc/files/BIS-eDocuments-guide-for-pre-award-v1.3.pdf[BIS eDocuments guide for pre-award]
 :link-OpenProcedure: link:/pracc/files/Peppol-BIS-pre-award-guide_Notification-and-Open-Procedure-v1.0.pdf[BIS Pre-Award Guide for Notification and Open Procedure]
 
 

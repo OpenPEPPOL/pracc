@@ -56,7 +56,7 @@ include::../files/TenderingAnswers-doc.xml[tags=ref-contract-folder-id;refer-one
 <.> Referencing another lot.
 <.> Referencing the same question and answer (note the same index in square bracket).
 
-=== Reference to multiple attachments
+== Reference to multiple attachments
 
 It's possible to reference multiple `cac:Attachment` elements from an `cac:AdditionalDocumentReference`.
 

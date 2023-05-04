@@ -21,6 +21,8 @@ include::parties-roles.adoc[]
 
 include::non-functional-requirements.adoc[]
 
+include::qualification-encryption.adoc[]
+
 include::../../../shared/interoperability.adoc[]
 
 

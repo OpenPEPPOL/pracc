@@ -1,5 +1,4 @@
 
-= Identification and description of the requirements
 
 [cols="2,10", options="header"]
 .Transaction business requirements of T006

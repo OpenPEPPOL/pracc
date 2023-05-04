@@ -1,7 +1,7 @@
 [[descriptions]]
 = Description of selected parts of the transaction
 
-The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in:
+The transaction including business terms, business rules and code lists are derived from the definitions of the Message Level Response described in:
 
 {name-profile-org}.
 
@@ -95,7 +95,7 @@ A "rejection" (RE) states that the notice was not processed because of identifie
 ....
 include::../files/ExampleTenderingMessageResponseBV.xml[tags=response]
 ....
-<.> An indicator stating whether the referenced message was cleared through validation and advanced to the next step in the process. Refer to codelist notice response.
+<.> A code stating whether the referenced message was cleared through validation and advanced to the next step in the process. Refer to codelist notice response.
 <.> Used to make any comments or instructions relevant to the response. The use of this element requires manual assessment by the receiver.
 
 === Document reference
