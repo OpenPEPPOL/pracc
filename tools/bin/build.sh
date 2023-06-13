@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# Get the current Git branch
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+file_path="../../guides/shared/links.adoc"
+  sed -i '$d' "$file_path"
+if [ "$branch" != "master" ]; then
+  echo ":git-branch: $branch/" >> "$file_path"
+  else
+    echo ":git-branch:" > "$file_path"
+fi
+
 FOLDER=$(cd $(dirname "$0") && pwd | sed "s:/tools/bin::")
 
 script_dir=$(cd $(dirname $0) && pwd)

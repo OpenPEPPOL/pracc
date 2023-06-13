@@ -18,7 +18,6 @@
 :P009: https://docs.peppol.eu/pracc/profiles/p009/index.html[P009 Notify Awarding]
 :P010: https://docs.peppol.eu/pracc/profiles/p010/index.html[P010 Tendering Message Response]
 :P011: https://docs.peppol.eu/pracc/profiles/p011/index.html[P011 Qualification]
-:P012: https://docs.peppol.eu/pracc/profiles/p012/index.html[P011 Qualification Rejection]
 
 //PEPPOL Transactions Preaward
 :T004: https://docs.peppol.eu/pracc/transactions/T004/index.html[T004 Call for Tenders]
@@ -96,3 +95,6 @@
 
 // ESPD
 :espd-edm: https://github.com/OP-TED/ESPD-EDM[ESPD Exchange Data Model version 3.0]
+
+// Git-Branch - This must always be the last Line and is auto-generated
+:git-branch: feature/p012/
