@@ -11,7 +11,7 @@ include::../../shared/peppol.adoc[]
 | `cbc:CustomizationID`
 
 | T020
-| QualificationReceptionNotification
-| The EO sends the qualification reception notification to the CA.
-| urn:fdc:peppol.eu:prac:trns:t020:1.0
+| Qualification Reception Confirmation
+| The CA sends the qualification reception confirmation to the EO.
+| urn:fdc:peppol.eu:prac:trns:t020:1.1
 |===

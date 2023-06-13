@@ -1,5 +1,5 @@
 
-= Errors in scope for a negative/rejecting Message Level Response:
+= Errors in scope of the Tendering Message Response
 
 *Syntax and business rule violation*
 

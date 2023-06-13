@@ -25,7 +25,7 @@
             <Reference type="BUSINESS_TERM">tir81-007</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t001:1.1
+                urn:fdc:peppol.eu:prac:trns:t001:1.2
             </Value>
         </Element>
         <Element>
@@ -37,7 +37,7 @@
             <Reference type="RULE">PEPPOL-T001-R004</Reference>
             <Reference type="BUSINESS_TERM">tir81-006</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.1</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.2</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
@@ -233,7 +233,7 @@
                             </Description>
 							<Reference type="RULE">PEPPOL-T001-R018</Reference>
                             <Reference type="BUSINESS_TERM">tir81-020</Reference>
-                            <Reference type="CODE_LIST">ISO3166</Reference>
+                            <Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
                             <Attribute>
                                 <Term>listID</Term>
                                 <Name>List identifier</Name>
@@ -262,7 +262,7 @@
                                 </Description>
 								<Reference type="RULE">PEPPOL-T001-R018</Reference>
                                 <Reference type="BUSINESS_TERM">tir81-014</Reference>
-                                <Reference type="CODE_LIST">ISO3166</Reference>
+                                <Reference type="CODE_LIST">ISO3166-1:Alpha2</Reference>
                                 <Attribute>
                                     <Term>listID</Term>
                                     <Name>List identifier</Name>

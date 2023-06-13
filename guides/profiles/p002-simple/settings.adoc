@@ -1,6 +1,0 @@
-//include::links.adoc[]
-
-include::../shared/settings.adoc[]
-
-:name-profile-org: "Profile BII47  Call for Tenders" (CWA 17027-112)
-:name-profile: Profile P002 - "Procurement document access"

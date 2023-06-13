@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - 2022-q2
+      - release/2022
+      - feature/p012
       - Pre-Award_Catalogue
 
 jobs:

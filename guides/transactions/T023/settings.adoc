@@ -1,0 +1,14 @@
+include::../shared/settings.adoc[]
+
+:name-profile-org: "Profile BII51 Qualification Rejection" (CWA 17027-116:2016)
+:name-profile: "PEPPOL BIS Profile P012 - Qualification Rejection"
+
+:name-transaction-org: "Trdm087 Qualification Rejection transaction"
+
+:name-trans-short: Qualification Rejection
+:name-transaction: T023 - {name-trans-short}
+:name-syntax: QualificationRejection
+
+include::../shared/links.adoc[]
+
+:xml-doc-file: files/QualificationRejection.xml

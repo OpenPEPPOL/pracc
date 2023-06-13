@@ -8,7 +8,7 @@ image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
 The purpose of the {name-profile} is to describe a common format for a response message that can be used in eTendering procedures. The Tendering Message Response (TMR) shall facilitate an efficient implementation and increased use of electronic collaboration between eTendering platforms. It will improve reliability by allowing a receiver of a business document to inform the sender about the results of receivers validations and processing success, and in case of negative results, to inform the sender about the nature of the errors as well as their details.The TMR than may allow the sender of the document to take appropriate action.
 
-In a nutshell, the {name-profile} is a {link-PEPPOL-MLR} that adds processing exceptions that may occur on the business level of eTendering.
+In a nutshell, the {name-profile} is a {link-PEPPOL-MLR} that adds processing exceptions that may occur on the business level of eTendering in an {link-bis}.
 
 
 == Audience

@@ -1,11 +1,7 @@
 
 = Business process and use cases
 
-The following process flows and use cases describe how the {name-profile} can be used.
-
-== Business process description
-
-The following {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the profile. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
+The {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the {name-profile}. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
 image::bpmnQualification.svg[align="center", width=800]
 
@@ -33,8 +29,6 @@ The contracting body evaluates the qualification information. The evaluation pro
 | Receive qualification reception confirmation | Economic operator | The economic operator receives the qualification reception confirmation document.
 |===
 
-:leveloffset: +1
 
 include::implementation-guidelines.adoc[]
 
-:leveloffset: -1

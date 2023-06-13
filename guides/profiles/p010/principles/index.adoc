@@ -7,8 +7,6 @@ The specification herein is based on the {link-bii3} and the {link-BII107} and i
 
 The eTendering Message Response closely relates to the corresponding {link-PEPPOL-MLR} used in PEPPOL Post-Award.
 
-
-
 NOTE: The {link-BII107} profile document is available from your national standardization body.
 
 The intended scope for this profile includes public procurement, but the profile may also be used in Business to Business (B2B) relations.
@@ -20,16 +18,13 @@ and link:http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L002
 
 
 include::TMRintroduction.adoc[]
-
 include::benefit.adoc[]
-
-include::tendering.adoc[]
-
+include::errors-in-scope.adoc[]
+include::errors-out-of-scope.adoc[]
+include::../../../shared/tendering.adoc[]
 include::parties-roles.adoc[]
-
 include::business-requirements.adoc[]
-
-include::interoperability.adoc[]
+include::../../../shared/interoperability.adoc[]
 
 
 

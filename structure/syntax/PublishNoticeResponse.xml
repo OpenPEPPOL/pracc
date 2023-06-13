@@ -37,7 +37,7 @@
             <Reference type="BUSINESS_TERM">tir65-006</Reference>
             <Reference type="RULE">PEPPOL-T016-R011</Reference>
             <DataType>Identifier</DataType>
-            <Value type="EXAMPLE">urn:fdc:peppol.eu:prac:trns:t016:1.1</Value>
+            <Value type="EXAMPLE">urn:fdc:peppol.eu:prac:trns:t016:1.2</Value>
         </Element>
         <Element>
             <Term>cbc:ProfileID</Term>
@@ -48,7 +48,7 @@
             <Reference type="BUSINESS_TERM">tir65-005</Reference>
             <Reference type="RULE">PEPPOL-T016-R012</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.1</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p008:1.2</Value>
         </Element>
         <Element>
             <Term>cbc:ID</Term>
@@ -225,7 +225,6 @@
                 <Reference type="RULE">PEPPOL-T016-R033</Reference>
                 <Reference type="RULE">PEPPOL-T016-R034</Reference>
                 <Reference type="RULE">PEPPOL-T016-R035</Reference>
-                <Reference type="RULE">PEPPOL-T016-R036</Reference>
                 <Reference type="RULE">PEPPOL-T016-R037</Reference>
                 <Reference type="RULE">PEPPOL-T016-R038</Reference>
                 <Reference type="RULE">PEPPOL-T016-R041</Reference>
@@ -241,7 +240,7 @@
                     <DataType>Identifier</DataType>
                     <Value type="EXAMPLE">4e3517fd-724d-44fc-b90b-5743c33ff68e</Value>
                 </Element>
-                <Element>
+                <Element cardinality="0..1">
                     <Term>cbc:UUID</Term>
                     <Name>Notice identifier</Name>
                     <Description>Specifies the notice identifier (BT-701) allowing to uniquely distinguishing the
@@ -249,6 +248,7 @@
                     </Description>
                     <Reference type="BUSINESS_TERM">BT-701</Reference>
                     <Reference type="RULE">PEPPOL-T016-R034</Reference>
+                    <Reference type="RULE">PEPPOL-T016-R035</Reference>
                     <Reference type="RULE">PEPPOL-T016-R038</Reference>
                     <DataType>Identifier</DataType>
                     <Value type="EXAMPLE">53EB9F20-EE12-474F-9424-78FC604E8FAE</Value>
@@ -260,8 +260,8 @@
                         expressed as a code.
                     </Description>
                     <Reference type="BUSINESS_TERM">tir65-022</Reference>
-                    <Reference type="RULE">PEPPOL-T016-R039</Reference>
                     <Reference type="RULE">PEPPOL-T016-R035</Reference>
+                    <Reference type="RULE">PEPPOL-T016-R039</Reference>
                     <Reference type="CODE_LIST">ublDocumentSchema</Reference>
                     <DataType>Code</DataType>
                     <Value type="FIXED">CN</Value>
@@ -272,7 +272,7 @@
                     <Description>An identification of the version of the underlying notice (BT-757).
                     </Description>
                     <Reference type="BUSINESS_TERM">BT-757</Reference>
-                    <Reference type="RULE">PEPPOL-T016-R036</Reference>
+                    <Reference type="RULE">PEPPOL-T016-R034</Reference>
                     <Reference type="RULE">PEPPOL-T016-R040</Reference>
                     <DataType>Identifier</DataType>
                     <Value type="EXAMPLE">1</Value>

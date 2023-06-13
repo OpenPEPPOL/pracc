@@ -2,6 +2,6 @@
 
 include::../shared/settings.adoc[]
 
-:version: 1.1.0
+:version: 1.2.0
 :name-profile-org: "Profile BII60 Tender Status Inquiry" (CWA 17027-123)
-:name-profile: Profile P002 - "Procurement document access" 1.1
+:name-profile: Profile P002 - "Procurement document access" 1.2

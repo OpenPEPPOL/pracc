@@ -18,7 +18,7 @@
     <rim:Slot name="SpecificationIdentification"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
             <rim:Value>
-                urn:fdc:peppol.eu:prac:trns:t012:1.1
+                urn:fdc:peppol.eu:prac:trns:t012:1.2
             </rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
@@ -26,7 +26,7 @@
     <!-- tag::business-process-type-identifier[] -->
     <rim:Slot name="BusinessProcessTypeIdentifier"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
-            <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.1</rim:Value> <!--.-->
+            <rim:Value>urn:fdc:peppol.eu:prac:bis:p006:1.2</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::business-process-type-identifier[] -->
@@ -58,7 +58,7 @@
                 id="53EB9F20-EE12-474F-9424-78FC604E8FAE"
                 xsi:type="rim:ExtrinsicObjectType"> <!--.-->
             <rim:Slot name="BuyerInformation">
-                <rim:Slot name="BuyerPartyIdentification">
+                <rim:Slot name="BuyerPartyIdentification" type="ICD">
                     <rim:SlotValue xsi:type="rim:StringValueType">  <!--.-->
                         <rim:Value>0204:991-1234512345-06</rim:Value>
                     </rim:SlotValue>
@@ -69,11 +69,13 @@
                     </rim:SlotValue>
                 </rim:Slot>
             </rim:Slot>
+            <!-- tag::UBLDocumentSchema[] -->
             <rim:Slot name="ublDocumentSchema" type="ublDocumentSchema"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>CN</rim:Value>
                 </rim:SlotValue>
             </rim:Slot>
+            <!-- end::UBLDocumentSchema[] -->
             <rim:Slot name="eFormsVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType">
                     <rim:Value>eforms-sdk-1.2</rim:Value>

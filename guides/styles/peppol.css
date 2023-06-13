@@ -779,8 +779,22 @@ p { margin-bottom: 1.25rem; }
 
 #footer { max-width: none; }
 
-body { background-image: url("../shared/images/Draft.svg"); }
-
 table { background: none; }
 
 .hide-callouts .conum { display: none; }
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+pre.CodeRay {
+  background: rgba(247, 247, 249, 0.5) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color:rgba(247, 247, 249, 0.5)  !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color:rgba(255, 255, 255, 0.5)  !important;
+}

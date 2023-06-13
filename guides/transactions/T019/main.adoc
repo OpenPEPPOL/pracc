@@ -15,14 +15,15 @@ include::principles/index.adoc[]
 
 include::requirements/index.adoc[]
 
+include::../shared/syntax-mapping.adoc[]
+
+include::datamodel/index.adoc[]
+
 include::codes/index.adoc[]
 
 include::identifiers/index.adoc[]
 
 include::descriptions/index.adoc[]
 
-include::../shared/syntax-mapping.adoc[]
-
-include::annex/index.adoc[]
 
 :leveloffset: -1

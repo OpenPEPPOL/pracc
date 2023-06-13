@@ -3,6 +3,10 @@ target/
 .idea
 # Ignore Gradle project-specific cache directory
 .gradle
+.project
+.settings
 
 # Ignore Gradle build output directory
 build
+
+.DS_Store

@@ -39,5 +39,10 @@
 | Universität Koblenz-Landau
 | Inclusion of Figures, Graphics and Key Examples
 
+| 0.6
+|01-03-2023| Ansgar Mondorf
+| Mondorf IT
+| Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
+
 
 |===

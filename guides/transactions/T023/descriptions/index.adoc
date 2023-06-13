@@ -1,0 +1,113 @@
+// TODO
+
+[[descriptions]]
+= Description of selected parts of the transaction
+
+The transaction including business terms, business rules and code lists are based upon the definitions of {name-transaction-org} described in:
+
+{name-profile-org}.
+
+== Identifier
+
+=== Qualification Rejection Identifier
+
+The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process. Must be expressed as a UUID.
+
+[source,xml,indent=0]
+.Example of qualification rejection document identifier
+....
+include::../files/QualificationRejection.xml[tags=ID]
+....
+<.> A transaction instance must contain an identifier, being expressed in uuid syntax
+
+
+== Response issue date and time
+
+Response issue date/time must be sent.
+
+Response issue date is a xsi:date data type and is specified as "YYYY-MM-DD" where:
+
+* YYYY - four digits year
+* MM - two digits month (01 to 12)
+* DD - two digits day (0)
+
+Response issue time is a xsi:time data type and is specified as "hh:mm:ss" where:
+
+* hh - two digits of hour (00 to 23) (am/pm NOT allowed).
+* mm - two digits of minute (00 to 59)
+* ss - two digits of second (00 to 59)
+* TZD - time zone designator (Z or +hh:mm or -hh:mm)
+
+The response issue date and time refer to the date when of the issuance of the response.
+
+NOTE: The response issue time must specify the time zone.
+
+[source,xml,indent=0]
+.Example of response issue date and time
+....
+include::../files/QualificationRejection.xml[tags=IssueDateTime]
+....
+<.> Format for the date has to be yyyy-mm-dd
+<.> Format for the time has to be hh:mm:ssTZD, granularity down to seconds and timezone
+
+
+== Party identification
+
+=== Sender Party
+
+The party sending a Qualification Rejection Response message back to the party that initiated the request to qualify for a Procurement.
+The sender party in this case corresponds to the contracting body.
+
+[source,xml,indent=0]
+.Example of sender party
+....
+include::../files/QualificationRejection.xml[tags=SenderParty]
+....
+<.> Identifies the sender party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the sender party itself and the scheme identifier to resolve sender party's identifier
+<.> Contains the sender party's official name.
+
+=== Receiver Party
+
+The party who is supposed to process the Qualification Rejection Response. This is the same party that initiated the request to qualify for a Procurement.
+The receiver party in this case corresponds to the Economic Operator who handed in Qualification, this Qualification Rejection refers to.
+
+[source,xml,indent=0]
+.Example of receiver party
+....
+include::../files/QualificationRejection.xml[tags=ReceiverParty]
+....
+<.> Identifies the receiver party's electronic address and the scheme identifier for the electronic address
+<.> Identifies the receiver party and the scheme identifier to resolve the receiver party's identifier
+<.> Contains the receiver party's official name including the organization's legal form.
+
+
+== ResolutionDocumentReference
+
+The ResolutionDocumentReference contains a reference to the Qualification Document handed in by the Economic Operator (receiver party of this document) to qualify for the procurement.
+
+[source,xml,indent=0]
+.Example of ResolutionDocumentReference
+....
+include::../files/QualificationRejection.xml[tags=ResolutionDocumentReference]
+....
+<.> The ResolutionDocumentReference must contain an identifier, being expressed in uuid syntax.
+
+
+== QualificationResolution
+
+The QualificationResolution is the central part of any QualificationRejection. It contains all information required to inform about the Qualification Rejection.
+
+The QualificationResolution returned with this transaction will always be false. If more than one lot have been aimed to qualify for and need to be rejected, one QualificationResolution for each lot is expected.
+
+[source,xml,indent=0]
+.Example of QualificationResolution
+....
+include::../files/QualificationRejection.xml[tags=QualificationResolution]
+....
+<.> States that the Tenderer is not allowed to attend the further Procurement Process, only "false" is the allowed value here.
+<.> The decision leading to this Qualification Resolution can be explained in one or more Resolution elements. The resolution is expected be te described in plain text. At least one Resolution element should be provided.
+<.> The Date at which the decision expressed in this Qualification Resolution was made.
+<.> The ProcurementProjectLot referenced in this Qualification Resolution
+<.> The ProcurementProjectLot's ID
+

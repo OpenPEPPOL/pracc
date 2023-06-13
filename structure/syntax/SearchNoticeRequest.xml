@@ -76,7 +76,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T011-R011</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t011:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t011:1.2</Value>
                 </Element>
             </Element>
         </Element>
@@ -100,7 +100,7 @@
                 <Element>
                     <Term>rim:Value</Term>
                     <Reference type="RULE">PEPPOL-T011-R012</Reference>
-                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p006:1.1</Value>
+                    <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p006:1.2</Value>
                 </Element>
             </Element>
         </Element>
@@ -151,6 +151,7 @@
                     <Term>rim:Value</Term>
                     <Name>Contracting body electronic address identifier</Name>
                     <Description>Scheme identifier:Identification for the contracting body</Description>
+                    <Reference type="RULE">PEPPOL-T011-R013</Reference>
                     <Reference type="CODE_LIST">EAS</Reference>
                     <DataType>rim:StringValueType</DataType>
                     <Value type="EXAMPLE">9930:DE122268496</Value>
@@ -480,11 +481,11 @@
                         <Reference type="RULE">PEPPOL-T011-R046</Reference>
                         <Attribute>
                             <Term>xsi:type</Term>
-                            <Value type="FIXED">rim:FloatValueType</Value>
+                            <Value type="FIXED">rim:IntegerValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <DataType>rim:FloatValueType</DataType>
+                            <DataType>rim:IntegerValueType</DataType>
                         </Element>
                     </Element>
                 </Element>
@@ -503,11 +504,11 @@
                         <Attribute>
                             <Term>xsi:type</Term>
                             <Reference type="RULE">PEPPOL-T011-R046</Reference>
-                            <Value type="FIXED">rim:FloatValueType</Value>
+                            <Value type="FIXED">rim:IntegerValueType</Value>
                         </Attribute>
                         <Element>
                             <Term>rim:Value</Term>
-                            <DataType>rim:FloatValueType</DataType>
+                            <DataType>rim:IntegerValueType</DataType>
                         </Element>
                     </Element>
                 </Element>
@@ -763,7 +764,7 @@
                     request for additional information (BT-13). Can be used to specify a start date, end date or a time
                     range.
                 </Description>
-                <Reference type="BUSINESS_TERM">eForms BT-1311</Reference>
+                <Reference type="BUSINESS_TERM">eForms BT-13</Reference>
                 <Reference type="RULE">PEPPOL-T011-R051</Reference>
                 <Reference type="RULE">PEPPOL-T011-R052</Reference>
                 <Reference type="RULE">PEPPOL-T011-R053</Reference>
@@ -827,6 +828,7 @@
                     reception of requests to participate (BT-1311). Can be used to specify a start date, end date or a
                     time range.
                 </Description>
+                <Reference type="BUSINESS_TERM">eForms BT-1311</Reference>
                 <Reference type="RULE">PEPPOL-T011-R051</Reference>
                 <Reference type="RULE">PEPPOL-T011-R052</Reference>
                 <Reference type="RULE">PEPPOL-T011-R053</Reference>

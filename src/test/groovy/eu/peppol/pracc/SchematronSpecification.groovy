@@ -3,7 +3,6 @@
  */
 package eu.peppol.pracc
 
-
 import com.helger.schematron.sch.SchematronResourceSCH
 import com.helger.schematron.svrl.jaxb.FailedAssert
 import com.helger.schematron.svrl.jaxb.SchematronOutputType
@@ -16,12 +15,18 @@ import javax.xml.transform.stream.StreamSource
 import javax.xml.validation.Schema
 import javax.xml.validation.SchemaFactory
 
+import static org.hamcrest.Matchers.*
+import static spock.util.matcher.HamcrestSupport.expect
+
 @Slf4j
 class SchematronSpecification extends Specification {
 
     def 'run schematron on instances'() {
         given:
         def schematronFile = new File(schematronFileName)
+        if (!schematronFile.exists()) {
+            throw new FileNotFoundException(schematronFileName)
+        }
         def schematronResource = SchematronResourceSCH.fromFile(schematronFile)
 
         when:
@@ -34,22 +39,18 @@ class SchematronSpecification extends Specification {
         }
 
         def failedAsserts = result?.getActivePatternAndFiredRuleAndFailedAssert()?.findAll { it instanceof FailedAssert || it instanceof SuccessfulReport }
-        failedAsserts?.each {
-            log.error("found ${it.id}: '${it.text.content}' when validating ${xmlFile.absolutePath} with ${schematronFile.name}")
-        }
-
 
         then:
-        failedAsserts?.isEmpty() && result != null
+        expect failedAsserts.collect { it.id }, is(empty())
 
         where:
         schematronFileName                                                  | xmlFileName
         'rules/peppol-procurement-procedure-subscription/PEPPOL-T001.sch'   | 'guides/transactions/T001/files/ExpressionOfInterestRequest-instance.xml'
         'rules/peppol-procurement-procedure-subscription/PEPPOL-T002.sch'   | 'guides/transactions/T002/files/ExpressionOfInterestResponse-instance.xml'
         'rules/peppol-tender-status-inquiry/PEPPOL-T003.sch'                | 'guides/transactions/T003/files/TenderStatusRequest-instance.xml'
-        'rules/peppol-call-for-tender/peppol/PEPPOL-T004.sch'               | 'guides/transactions/T004/files/call-for-tenders-instance.xml'
-        'rules/peppol-tender/peppol/PEPPOL-T005.sch'                        | 'guides/transactions/T005/files/tender-instance.xml'
-        'rules/peppol-tender/peppol/PEPPOL-T006.sch'                        | 'guides/transactions/T006/files/tender-receipt-instance.xml'
+        'rules/peppol-call-for-tender/PEPPOL-T004.sch'                      | 'guides/transactions/T004/files/call-for-tenders-instance.xml'
+        'rules/peppol-tender/PEPPOL-T005.sch'                               | 'guides/transactions/T005/files/tender-instance.xml'
+        'rules/peppol-tender/PEPPOL-T006.sch'                               | 'guides/transactions/T006/files/tender-receipt-instance.xml'
         'rules/peppol-call-for-tender-question-and-answers/PEPPOL-T007.sch' | 'guides/transactions/T007/files/TenderingQuestions-doc.xml'
         'rules/peppol-call-for-tender-question-and-answers/PEPPOL-T008.sch' | 'guides/transactions/T008/files/TenderingAnswers-doc.xml'
         'rules/tender-clarification/PEPPOL-T009.sch'                        | 'guides/transactions/T009/files/TenderClarificationRequest-doc.xml'
@@ -60,6 +61,7 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tender-withdrawal/PEPPOL-T014.sch'                    | 'guides/transactions/T014/files/TenderWithdrawalReceptionNotification.xml'
         'rules/peppol-publish-notice/PEPPOL-T015.sch'                       | 'guides/transactions/T015/files/ExamplePublishNotice.xml'
         'rules/peppol-publish-notice/PEPPOL-T016.sch'                       | 'guides/transactions/T016/files/ExampleNoticePublicationResponse.xml'
+        'rules/peppol-publish-notice/PEPPOL-T016.sch'                       | 'guides/transactions/T016/files/testing/ExampleNoticePublicationResponse-Without_eFroms_Reference.xml'
         'rules/peppol-notify-awarding/PEPPOL-T017.sch'                      | 'guides/transactions/T017/files/NotifyAwarding.xml'
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseAP.xml'
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseDL.xml'
@@ -70,9 +72,31 @@ class SchematronSpecification extends Specification {
         'rules/peppol-tendering-message-response/PEPPOL-T018.sch'           | 'guides/transactions/T018/files/ExampleTenderingMessageResponseSV.xml'
         'rules/peppol-qualification/PEPPOL-T019.sch'                        | 'guides/transactions/T019/files/Qualification-doc.xml'
         'rules/peppol-qualification/PEPPOL-T020.sch'                        | 'guides/transactions/T020/files/QualificationResponse-doc.xml'
+        'rules/peppol-qualification/PEPPOL-T023.sch'                        | 'guides/transactions/T023/files/QualificationRejection.xml'
     }
 
-    static Map<String, Schema> schemaCache = new HashMap<>()
+    def 'run schematron with failing checks'() {
+        given:
+        def schematronResource = SchematronResourceSCH.fromFile(new File(schematronFileName))
+
+        when:
+        def xmlFile = new File(xmlFileName)
+
+        SchematronOutputType result = null
+        schematronResource.setAllowForeignElements(true)
+        xmlFile.withInputStream { InputStream is ->
+            result = schematronResource.applySchematronValidationToSVRL(new StreamSource(is))
+        }
+
+        def failedAsserts = result?.getActivePatternAndFiredRuleAndFailedAssert()?.findAll { it instanceof FailedAssert || it instanceof SuccessfulReport }
+
+        then:
+        expect failedAsserts.collect { it.id }, containsInAnyOrder(expectedFailureIds.toArray())
+
+        where:
+        schematronFileName                            | xmlFileName                                                                                                 || expectedFailureIds
+        'rules/peppol-publish-notice/PEPPOL-T016.sch' | 'guides/transactions/T016/files/testing/ExampleNoticePublicationResponse-With_invalid_eFroms_Reference.xml' || ['PEPPOL-T016-R034', 'PEPPOL-T016-R035']
+    }
 
     def 'XSD schema validation'() {
 
@@ -83,7 +107,7 @@ class SchematronSpecification extends Specification {
         def validator = schema.newValidator()
 
         when:
-        validator.validate(new StreamSource(new FileReader(new File(xml))))
+        validator.validate(new StreamSource(new BufferedReader(new FileReader(new File(xml)))))
 
         then:
         noExceptionThrown()
@@ -120,14 +144,15 @@ class SchematronSpecification extends Specification {
         'guides/transactions/T022/files/UnsubscribeFromProcedureResponse.xml'      | 'xsdrt/maindoc/UBL-UnsubscribeFromProcedureResponse-2.2.xsd'
     }
 
+    static final Map<String, Schema> schemaCache = new HashMap<>()
+
     static Schema loadSchema(SchemaFactory factory, URL xsdSource) {
-        Schema schema
         if (schemaCache.containsKey(xsdSource.toString())) {
-            schema = schemaCache.get(xsdSource.toString())
-        } else {
-            schema = factory.newSchema(xsdSource)
-            schemaCache.put(xsdSource.toString(), schema)
+            return schemaCache.get(xsdSource.toString())
         }
-        schema
+
+        Schema schema = factory.newSchema(xsdSource)
+        schemaCache.put(xsdSource.toString(), schema)
+        return schema
     }
 }

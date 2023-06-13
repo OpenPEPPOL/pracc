@@ -1,9 +1,6 @@
 
-= Identification and description of the requirements
 
 The transaction "{name-transaction}" must be sent to the economic operator when an existing tender is withdrawn. The "{name-transaction}" acknowledges the reception of a tender withdrawal document and noting the date and time of reception.
-
-
 
 
 [cols="2,10a", options="header"]

@@ -16,16 +16,14 @@
     <!-- tag::specification-identification[] -->
     <rim:Slot name="SpecificationIdentification"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
-            <rim:Value>
-                urn:fdc:peppol.eu:prac:trns:t015:1.1
-            </rim:Value> <!--.-->
+            <rim:Value>urn:fdc:peppol.eu:prac:trns:t015:1.2</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::specification-identification[] -->
     <!-- tag::business-process-type-identifier[] -->
     <rim:Slot name="BusinessProcessTypeIdentifier"> <!--.-->
         <rim:SlotValue xsi:type="rim:StringValueType">
-            <rim:Value>urn:fdc:peppol.eu:prac:bis:p008:1.1</rim:Value> <!--.-->
+            <rim:Value>urn:fdc:peppol.eu:prac:bis:p008:1.2</rim:Value> <!--.-->
         </rim:SlotValue>
     </rim:Slot>
     <!-- end::business-process-type-identifier[] -->
@@ -85,7 +83,7 @@
             </rim:Slot>
             <!-- end::notice-version[] -->
             <!-- tag::eforms-version[] -->
-            <rim:Slot name="CustomizationID"> <!--.-->
+            <rim:Slot name="eFormsVersion"> <!--.-->
                 <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                     <rim:Value>eforms-sdk-1.2</rim:Value>
                 </rim:SlotValue>
@@ -94,8 +92,8 @@
             <!-- tag::information-about-buyer[] -->
             <rim:Slot name="BuyerInformation">
                 <!-- tag::buyer-party-identification[] -->
-                <rim:Slot name="BuyerPartyIdentification" type="ICD">
-                    <rim:SlotValue xsi:type="rim:StringValueType">
+                <rim:Slot name="BuyerPartyIdentification" type="ICD"> <!--.-->
+                    <rim:SlotValue xsi:type="rim:StringValueType"> <!--.-->
                         <rim:Value>0204:991-1234512345-06</rim:Value>
                     </rim:SlotValue>
                 </rim:Slot>

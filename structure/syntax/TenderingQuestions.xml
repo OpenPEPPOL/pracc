@@ -213,7 +213,7 @@
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
-            <Element cardinality="0..n">
+            <Element cardinality="1..n">
                 <Term>cbc:XPath</Term>
                 <Name>Reference to an cac:Attachment</Name>
                 <Description>An xpath expression to reference an cac:Attachment where questions can be described or

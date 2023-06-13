@@ -41,12 +41,12 @@
         </rule>
         
          <rule context="ubl:TenderStatusRequest/cbc:CustomizationID">
-             <assert id="PEPPOL-T003-R010" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t003:1.1'">[PEPPOL-T003-R010] CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t003:1.1 '</assert>
+             <assert id="PEPPOL-T003-R010" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:trns:t003:1.2'">[PEPPOL-T003-R010] CustomizationID value MUST be 'urn:fdc:peppol.eu:prac:trns:t003:1.2'</assert>
             <report id="PEPPOL-T003-S303" flag="warning" test="./@*"><value-of select="$syntaxError"/>[PEPPOL-T003-S303] CustomizationID SHOULD NOT have any attributes.</report>
         </rule>
         
         <rule context="ubl:TenderStatusRequest/cbc:ProfileID">
-            <assert id="PEPPOL-T003-R011" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p002:1.1'">[PEPPOL-T003-R011] ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p002:1.1'</assert>
+            <assert id="PEPPOL-T003-R011" flag="fatal" test="normalize-space(.) = 'urn:fdc:peppol.eu:prac:bis:p002:1.2'">[PEPPOL-T003-R011] ProfileID value MUST be 'urn:fdc:peppol.eu:prac:bis:p002:1.2'</assert>
             <report id="PEPPOL-T003-S304" flag="warning" test="./@*"><value-of select="$syntaxError"/>[PEPPOL-T003-S304] ProfileID SHOULD NOT have any attributes.</report>
         </rule>
         

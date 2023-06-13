@@ -38,4 +38,9 @@
 | University of Koblenz-Landau
 | Final Review of Transactions and Syntax Mapping for T015 and T016
 
+| 0.6
+|01-03-2023| Ansgar Mondorf
+| Mondorf IT
+| Final editorial review for March Release 2023: Update Version information, links & examples, editorial improvements, change of transaction structure
+
 |===

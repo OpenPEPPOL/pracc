@@ -12,7 +12,7 @@ include::../../shared/peppol.adoc[]
 | `cbc:CustomizationID`
 
 | T019
-| Tender Qualification Request
+| Qualification
 | The EO sends qualification request to the CA.
 | urn:fdc:peppol.eu:prac:trns:t019:1.1
 
