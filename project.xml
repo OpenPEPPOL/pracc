@@ -34,7 +34,6 @@
     <Documentation path="profiles/p008/index.html">P008 - Publish Notice - 1.2</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice 1.2</Documentation>
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response 1.2</Documentation>
-
     <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
     <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
     <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
@@ -42,19 +41,12 @@
     <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
     <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
     <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
+    <Documentation path="profiles/p012/index.html">P012 - Qualification Rejection - 1.0</Documentation>
+    <Documentation path="transactions/T023/index.html">T023 - Qualification Rejection 1.0</Documentation>
+
     <Documentation path="profiles/p035/index.html">P035 - Pre-Award Catalogue - 1.1</Documentation>
     <Documentation path="transactions/CatalogueRequest/index.html">T035 Pre-Award Catalogue Request</Documentation>
     <Documentation path="transactions/Catalogue/index.html">T036 Pre-Award Catalogue</Documentation>
-    <Documentation path="transactions/T017/index.html">T017 - Awarding Notification 1.1</Documentation>
-    <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.1</Documentation>
-    <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response 1.1</Documentation>
-
-    <Documentation path="profiles/p011/index.html">P011 - Qualification - 1.1</Documentation>
-    <Documentation path="transactions/T019/index.html">T019 - Qualification 1.1</Documentation>
-    <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation 1.1</Documentation>
-
-    <Documentation path="profiles/p012/index.html">P012 - Qualification Rejection - 1.0</Documentation>
-    <Documentation path="transactions/T023/index.html">T023 - Qualification Rejection 1.0</Documentation>
 
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
@@ -168,19 +160,21 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/QualificationReceptionConfirmation.xml</Path>
         <Title>Syntax Mapping T020 - Qualification Reception Confirmation 1.1</Title>
-        <Title>Syntax Mapping T020 - Qualification Reception Confirmation</Title>
-    </Resource>
-    <Resource>
-        <Type>Structure-1</Type>
-        <Path>structure/syntax/PreAwardCatalogueRequest.xml</Path>
-        <Title>Syntax Mapping CatalogueRequest - Pre-Award Catalogue Request</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/QualificationRejection.xml</Path>
         <Title>Syntax Mapping T023 - Qualification Rejection 1.0</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PreAwardCatalogueRequest.xml</Path>
+        <Title>Syntax Mapping T035 - Pre-Award Catalogue Request</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
         <Path>structure/syntax/PreAwardCatalogue.xml</Path>
-        <Title>Syntax Mapping Catalogue - Pre-Award Catalogue</Title>
+        <Title>Syntax Mapping T036 - Pre-Award Catalogue</Title>
     </Resource>
 
     <!-- Rules -->

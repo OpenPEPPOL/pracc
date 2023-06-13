@@ -2,7 +2,7 @@
 == Profile 35 - Advanced Tendering with pre-award catalogue
 
 ProfileID::
-urn:www.cenbii.eu:profile:bii35:ver1.0
+urn:fdc:peppol.eu:prac:bis:p035:1.0
 
 [cols="2,5,2", options="header"]
 |===
@@ -11,10 +11,6 @@ urn:www.cenbii.eu:profile:bii35:ver1.0
 | Role
 
 | PreAward Catalogue
-| urn:www.cenbii.eu:transaction:biitrns068:ver1.0 :extended:urn:www.peppol.eu:bis:peppol35a:ver1.0
+| urn:fdc:peppol.eu:prac:trns:t036:1.0
 | Economic Operator
-
-| PreAward Catalogue request
-| tbd
-| Contracting Authority
 |===
