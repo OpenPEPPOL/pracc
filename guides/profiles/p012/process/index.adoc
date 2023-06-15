@@ -9,21 +9,19 @@ image::bpmnQualificationRejection.svg[align="center", width=800]
 .Business process
 |===
 | Category | Description
-| Description | The Economic operator sends an electronic qualification document containing the information requested for qualification by the contracting body in the call for tenders.
+| Description | The contracting body sends an electronic qualification rejection document to those economic operators to inform about their exclusion from the tendering process.
+| |The economic operator receives the qualification rejection.
 
-The reception of the qualification is confirmed by the contracting body.
 
-The contracting body evaluates the qualification information. The evaluation process can be supported by business information held by trusted third parties acquired through external processes.
-
-| Pre-conditions | A contracting body has issued a call for tenders to potential economic operators, including a call for qualification.
-| Post-conditions | Qualifications have been received by the contracting body and are to be evaluated.
+| Pre-conditions | Economic operators applied for participating in the tendering process and submitted their qualifications.
+| Post-conditions | Those economic operators who received q qualification rejection will not be invited to tender in the next step of the tendering process.
 |===
 
 [cols="3,2,7", options="header"]
 .Role description
 |===
 | Activity | Role involved | Description
-| Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic poerators that will be excluded from the further tendering process due to qualification mismatch .
+| Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic operators that will be excluded from the further tendering process due to qualification mismatch.
 | Receive qualification rejection | Economic operator | The economic operator received the qualification rejection.
 |===
 
