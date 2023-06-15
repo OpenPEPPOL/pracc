@@ -14,7 +14,7 @@ image::bpmnQualificationRejection.svg[align="center", width=800]
 
 
 | Pre-conditions | Economic operators applied for participating in the tendering process and submitted their qualifications.
-| Post-conditions | Those economic operators who received q qualification rejection will not be invited to tender in the next step of the tendering process.
+| Post-conditions | Those economic operators who received a qualification rejection will not be invited to tender in the next step of the tendering process.
 |===
 
 [cols="3,2,7", options="header"]
