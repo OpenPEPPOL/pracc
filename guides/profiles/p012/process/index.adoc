@@ -1,10 +1,9 @@
-// TODO replace with rejection
 
 = Business process and use cases
 
 The {link-bpmn}[BPMN] diagram shows the choreography of the business process implemented by the {name-profile}. The choreography of business collaborations defines the sequence of interactions when the profile is run within its context.
 
-image::bpmnQualification-Rejection.svg[align="center", width=800]
+image::bpmnQualificationRejection.svg[align="center", width=800]
 
 [cols="2,10", options="header"]
 .Business process
@@ -24,10 +23,8 @@ The contracting body evaluates the qualification information. The evaluation pro
 .Role description
 |===
 | Activity | Role involved | Description
-| Send qualification | Economic operator | The economic operator sends an electronic qualification document containing the information required for the economic operator to participate in a tendering process.
-| Receive qualification | Contracting body | The contracting body received the qualification document.
-| Send qualification reception confirmation | Contracting body | The contracting body sends the qualification reception confirmation document.
-| Receive qualification reception confirmation | Economic operator | The economic operator receives the qualification reception confirmation document.
+| Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic poerators that will be excluded from the further tendering process due to qualification mismatch .
+| Receive qualification rejection | Economic operator | The economic operator received the qualification rejection.
 |===
 
 
