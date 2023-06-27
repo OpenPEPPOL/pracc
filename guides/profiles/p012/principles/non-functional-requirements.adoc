@@ -1,4 +1,3 @@
-// TODO replace with rejection
 
 = Business requirements
 
@@ -7,10 +6,8 @@ For the {link-peppol} BIS all non-functional requirements are applicable as docu
 [cols="2,10", options="header"]
 |===
 | Req. ID | Requirement statement
-| br49-001 | All qualifications shall be linked to a procurement project in order for the contracting body to be able to evaluate them.
-| br49-002 | A qualification must enable identifying the candidate as one economic operator or a set of economic operators and their roles.
-| br49-003 | A qualification must provide the minimal information, possibly unstructured to provide sufficient evidences as required by the Contracting body.
-| br49-004 | All qualifications may be encrypted upon submission. Encryption keys are provided by the contracting body.
-| br49-005 | The economic operator shall receive an acknowledgement that his qualification has been received by the contracting body for the purpose of recipient non repudiation.
-| br49-006 | The receipt notification of a qualification shall contain a cryptographic time stamp of the moment the Contracting body received the complete qualification.
+| br51-001 | The contracting body shall inform candidates who failed to meet the exclusion and/or selection criteria of the reasons why they failed before the award decisionThe contracting body shall inform candidates who failed to meet the exclusion and/or selection criteria of the reasons why they failed before the award decision.
+| br51-002 | The contracting body shall inform all unsuccessful tenderers simultaneously and individually of the reasons why they failed.
+| br51-003 | The contracting body shall inform the tenderer of the rejection of their qualification.
+| br51-004 | The contracting body shall specify that the notification does not imply any commitment on behalf of the contracting body.
 |===
