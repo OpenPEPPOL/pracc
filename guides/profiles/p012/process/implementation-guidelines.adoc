@@ -9,9 +9,8 @@ The syntax mapping for {name-profile} is based on transaction description for Qu
 
 * {link-profile}
 * {sig-tender-receipt}
-* {ubl-tender}
-* {ubl-tender-receipt}
+* {ubl-qualificationresponse}
 
-The {link-peppol} {name-profile} business process includes one transactions:
+The {link-peppol} {name-profile} business process includes one transaction:
 
 * link:../../transactions/T023/index.html[T023 - Qualification Rejection]

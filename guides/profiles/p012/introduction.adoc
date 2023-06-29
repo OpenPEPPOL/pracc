@@ -8,12 +8,11 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 .Relationship between BII profiles and PEPPOL BIS
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
-The {name-profile} describes electronic messaging support for the business process of the rejection of the qualification of an economic operator by a contracting authority. It is intended for use by businesses and purchasing authorities in procedures where access to participation is restricted to pre-qualified economic operators. The key aspects covered by this BIS are:
+The {name-profile} describes electronic messaging support for the business process of the rejection of the qualification of an economic operator by a contracting authority. It is intended for use by businesses and purchasing authorities in procedures where access to participation is restricted to qualified economic operators. The key aspects covered by this BIS are:
 
-    * Pre-condition: An economic operator has submitted its qualification documents to a contracting authority as specified in the Call for Tender documents using PEPPOL BIS {P011}.
-    * The contracting authority evaluates the qualification information and needs to report its decision, positive or negative, to the economic operator.
-    * In the case of a positive qualification response the contracting authority can continue with the tendering process. PEPPOL BIS {P012} is *not* used for communicating a positive response. The positive qualification response may contain an invitation to submit a tender (not in scope of this BIS) covered by PEPPOL BIS {P013}.
-    * This PEPPOL BIS {P012} provides capabilities to inform an economic operator that its qualification has been rejected and that it is excluded from the procedure.
+    * Pre-condition: An economic operator has submitted its qualification documents to a contracting authority as specified in the Call for Tender documents using PEPPOL BIS {P011}. The contracting authority evaluates the qualification information and needs to report its decision, positive or negative, to the economic operator.
+    * Out of scope: In the case of a positive qualification response the contracting authority can continue with the tendering process. PEPPOL BIS {P012} is *not* used for communicating a positive response. The positive qualification response is expressed by the invitation to submit a tender (not in scope of this BIS) covered by PEPPOL BIS {P013}.
+    * In scope: This PEPPOL BIS {P012} provides capabilities to inform an economic operator that his qualification has been rejected and that the economic operator is excluded from the procedure by the contracting authority.
 
 In an open procedure this profile is *not* used but the qualification is sent together with the tender, an economic operator submits. In open procedures evaluation results are communicated in PEPPOL BIS {P009}.
 
