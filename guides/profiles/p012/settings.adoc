@@ -5,4 +5,4 @@ include::../shared/settings.adoc[]
 
 :version: 1.0.0
 :name-profile-org: "Profile BII51 Qualification Rejection" (CWA 17027-116:2016)
-:name-profile: Profile P012 - "Qualification Rejection"
+:name-profile: Profile P012 - "Qualification Rejection 1.0"

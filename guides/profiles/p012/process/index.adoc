@@ -9,9 +9,7 @@ image::bpmnQualificationRejection.svg[align="center", width=800]
 .Business process
 |===
 | Category | Description
-| Description | The contracting body sends an electronic qualification rejection document to those economic operators to inform about their exclusion from the tendering process.
-| |The economic operator receives the qualification rejection.
-
+| Description | The contracting body sends the rejection of the qualification to the economic operator that submitted a qualification which was not accepted by the contracting authority.
 
 | Pre-conditions | Economic operators applied for participating in the tendering process and submitted their qualifications.
 | Post-conditions | Those economic operators who received a qualification rejection will not be invited to tender in the next step of the tendering process.
@@ -22,7 +20,7 @@ image::bpmnQualificationRejection.svg[align="center", width=800]
 |===
 | Activity | Role involved | Description
 | Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic operators that will be excluded from the further tendering process due to qualification mismatch.
-| Receive qualification rejection | Economic operator | The economic operator received the qualification rejection.
+| Receive qualification rejection | Economic operator | The economic operator receives the qualification rejection.
 |===
 
 

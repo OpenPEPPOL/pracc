@@ -2,8 +2,7 @@
 
 =	Principles and prerequisites
 
-This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award. It is
-based on the {link-bii3} and it is named:
+This chapter describes the principles and assumptions that underlie the use of {link-peppol} Pre-award. It is based on the {link-bii3} and it is named:
 
 * {link-profile}
 
