@@ -6,7 +6,5 @@ include::../../shared/scope-transaction.adoc[]
 
 include::parties-roles.adoc[]
 
-include::TMR.adoc[]
-
 
 :leveloffset: -1

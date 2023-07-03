@@ -233,7 +233,7 @@
 				<Term>cbc:ResolutionTime</Term>
 				<Name>Resolution Time</Name>
 			</Element>
-			<Element>
+			<Element cardinality="0..1">
 				<Term>cac:ProcurementProjectLot</Term>
 				<Name>Procurement Project Lot</Name>
 				<Element cardinality="0..1">

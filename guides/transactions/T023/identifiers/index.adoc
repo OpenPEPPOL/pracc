@@ -11,6 +11,6 @@ include::../../shared/peppol.adoc[]
 | `cbc:CustomizationID`
 | T023
 | Qualification Rejection
-| The publication body sends a notice publication response to the contracting authority.
+| The contracting body sends the Qualification Rejection to the economic operator that has tendered.
 |  urn:fdc:peppol.eu:prac:trns:t023:1.0
 |===

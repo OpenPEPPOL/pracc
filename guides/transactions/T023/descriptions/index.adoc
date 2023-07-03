@@ -98,14 +98,14 @@ include::../files/QualificationRejection.xml[tags=ResolutionDocumentReference]
 
 The QualificationResolution is the central part of any QualificationRejection. It contains all information required to inform about the Qualification Rejection.
 
-The QualificationResolution returned with this transaction will always be false. If more than one lot have been aimed to qualify for and need to be rejected, one QualificationResolution for each lot is expected.
+*The QualificationResolution returned with this transaction will always be false*. If more than one lot have been aimed to qualify for and need to be rejected, one QualificationResolution for each lot is expected.
 
 [source,xml,indent=0]
 .Example of QualificationResolution
 ....
 include::../files/QualificationRejection.xml[tags=QualificationResolution]
 ....
-<.> States that the Tenderer is not allowed to attend the further Procurement Process, only "false" is the allowed value here.
+<.> States that the Tenderer is not allowed to attend the further Procurement Process, only *false* is the allowed value here.
 <.> The decision leading to this Qualification Resolution can be explained in one or more Resolution elements. The resolution is expected be te described in plain text. At least one Resolution element should be provided.
 <.> The Date at which the decision expressed in this Qualification Resolution was made.
 <.> The ProcurementProjectLot referenced in this Qualification Resolution
