@@ -1,7 +1,7 @@
 
 = Code list for elements
 
-== DocumentTypeCode
+== AdmissionCode
 
 [cols="1h,4"]
 |===
