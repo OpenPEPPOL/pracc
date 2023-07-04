@@ -349,7 +349,7 @@
                         <Element>
                             <Term>rim:Value</Term>
                             <Description>The value of the Slot instance.</Description>
-                            <Reference type="RULE">PEPPOL-T015-R036</Reference>
+                            <Reference type="RULE">PEPPOL-T015-R022</Reference>
                             <DataType>rim:StringValueType</DataType>
                         </Element>
                     </Element>
@@ -474,7 +474,6 @@
                     <Description>The Repository Item Reference specifies a reference to the XML notice that is included
                         to the local ASiC-E container (Associated Signature Container Extended) repository.
                     </Description>
-                    <Reference type="RULE">PEPPOL-T015-R022</Reference>
                     <Attribute>
                         <Term>xlink</Term>
                         <Name>Local identifier</Name>
