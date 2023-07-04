@@ -131,6 +131,10 @@
 					<Name>Contracting body name</Name>
 					<Description>The name of the contracting body as it is registered.</Description>
 					<Reference type="RULE">PEPPOL-T023-R031</Reference>
+					<Reference type="RULE">PEPPOL-T023-R032</Reference>
+					<Reference type="RULE">PEPPOL-T023-R033</Reference>
+					<Reference type="RULE">PEPPOL-T023-R034</Reference>
+					<Reference type="RULE">PEPPOL-T023-R043</Reference>
 					<DataType>Text</DataType>
 				</Element>
 			</Element>
@@ -184,11 +188,15 @@
 					<Name>Economic operator name</Name>
 					<Description>The name of the economic operator.</Description>
 					<Reference type="RULE">PEPPOL-T023-R031</Reference>
+					<Reference type="RULE">PEPPOL-T023-R032</Reference>
+					<Reference type="RULE">PEPPOL-T023-R033</Reference>
+					<Reference type="RULE">PEPPOL-T023-R034</Reference>
+					<Reference type="RULE">PEPPOL-T023-R043</Reference>
 					<DataType>Text</DataType>
 				</Element>
 			</Element>
 		</Element>
-		<Element cardinality="1..1">
+		<Element>
 			<Term>cac:ResolutionDocumentReference</Term>
 			<Name>Resolution Document Reference</Name>
 			<Element>
@@ -219,7 +227,7 @@
 				<Reference type="RULE">PEPPOL-T023-R041</Reference>
 				<Value type="FIXED">false</Value>
 			</Element>
-			<Element cardinality="0..n">
+			<Element>
 				<Term>cbc:Resolution</Term>
 				<Name>Resolution</Name>
 				<Description>Textual description of the reason why the qualification has been rejected.</Description>

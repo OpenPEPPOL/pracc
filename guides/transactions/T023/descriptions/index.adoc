@@ -69,8 +69,8 @@ include::../files/QualificationRejection.xml[tags=SenderParty]
 
 === Receiver Party
 
-The party who is supposed to process the Qualification Rejection Response. This is the same party that initiated the request to qualify for a Procurement.
-The receiver party in this case corresponds to the Economic Operator who handed in Qualification, this Qualification Rejection refers to.
+The party who is supposed to process the Qualification Rejection. This is the same party that initiated the request to qualify for a Procurement.
+The receiver party in this case corresponds to the Economic Operator who handed in the Qualification to which this Qualification Rejection refers to.
 
 [source,xml,indent=0]
 .Example of receiver party
@@ -96,7 +96,7 @@ include::../files/QualificationRejection.xml[tags=ResolutionDocumentReference]
 
 == QualificationResolution
 
-The QualificationResolution is the central part of any QualificationRejection. It contains all information required to inform about the Qualification Rejection.
+The Qualification Resolution is the central part of any Qualification Rejection. It contains all information required to inform about the Qualification Rejection.
 
 *The QualificationResolution returned with this transaction will always be false*. If more than one lot have been aimed to qualify for and need to be rejected, one QualificationResolution for each lot is expected.
 
@@ -106,7 +106,7 @@ The QualificationResolution is the central part of any QualificationRejection. I
 include::../files/QualificationRejection.xml[tags=QualificationResolution]
 ....
 <.> States that the Tenderer is not allowed to attend the further Procurement Process, only *false* is the allowed value here.
-<.> The decision leading to this Qualification Resolution can be explained in one or more Resolution elements. The resolution is expected be te described in plain text. At least one Resolution element should be provided.
+<.> The decision leading to this Qualification Rejection can be explained in one or more Resolution elements. The resolution is expected be te described in plain text. At least one Resolution element should be provided.
 <.> The Date at which the decision expressed in this Qualification Resolution was made.
 <.> The ProcurementProjectLot referenced in this Qualification Resolution
 <.> The ProcurementProjectLot's ID

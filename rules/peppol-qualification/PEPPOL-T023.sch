@@ -10,7 +10,7 @@
 
     <pattern>
         <rule context="*">
-            <report id="PEPPOL-T023-R001" flag="fatal" test="normalize-space(.) = '' and not(*)">A Qualification document MUST NOT contain empty elements.</report>
+            <report id="PEPPOL-T023-R001" flag="fatal" test="normalize-space(.) = '' and not(*)">A Qualification Rejection document MUST NOT contain empty elements.</report>
         </rule>
     </pattern>
     <pattern>
@@ -46,10 +46,10 @@
         </rule>
 
         <rule context="ubl:TendererQualificationResponse/cbc:ID">
-            <assert id="PEPPOL-T023-R019" flag="fatal" test="./@schemeURI">A Submit Tender Identifier MUST have a schemeURI attribute.</assert>
-            <assert id="PEPPOL-T023-R020" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">schemeURI for Submit Tender Identifier MUST be 'urn:uuid'.</assert>
-            <report id="PEPPOL-T023-R021" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>A Submit Tender Identifier SHOULD NOT have any attributes but schemeURI</report>
-            <assert id="PEPPOL-T023-R022" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">A Submit Tender Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
+            <assert id="PEPPOL-T023-R019" flag="fatal" test="./@schemeURI">A Qualification Rejection Identifier MUST have a schemeURI attribute.</assert>
+            <assert id="PEPPOL-T023-R020" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">schemeURI for Qualification Rejection Identifier MUST be 'urn:uuid'.</assert>
+            <report id="PEPPOL-T023-R021" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>A Qualification Rejection Identifier SHOULD NOT have any attributes but schemeURI</report>
+            <assert id="PEPPOL-T023-R022" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">A Qualification Rejection Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
         </rule>
 
         <rule context="ubl:TendererQualificationResponse/cbc:ContractFolderID">
@@ -60,11 +60,11 @@
             <assert id="PEPPOL-T023-R025" flag="fatal" test="matches(normalize-space(.),'^(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]|(24:00:00))(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?$')">IssueTime MUST have a granularity of seconds</assert>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:SenderParty">
-            <assert id="PEPPOL-T023-R026" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">A Tender Qualification Response MUST identify the Contracting Authority as SenderParty by its party and endpoint identifiers.</assert>
+            <assert id="PEPPOL-T023-R026" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">A Qualification Rejection MUST identify the Contracting Authority as SenderParty by its party and endpoint identifiers.</assert>
         </rule>
 
         <rule context="ubl:TendererQualificationResponse/cac:ReceiverParty">
-            <assert id="PEPPOL-T023-R027" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">A Tender Qualification Response MUST identify the Economic Operator as ReceiverParty by its party and endpoint identifiers.</assert>
+            <assert id="PEPPOL-T023-R027" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">A Qualification Rejection MUST identify the Economic Operator as ReceiverParty by its party and endpoint identifiers.</assert>
         </rule>
 
         <rule context="cac:PartyIdentification/cbc:ID">
@@ -81,6 +81,7 @@
             <assert id="PEPPOL-T023-R032" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0"><value-of select="$syntaxError"/> SenderParty or ReceiverParty SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName</assert>
             <assert id="PEPPOL-T023-R033" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of select="$syntaxError"/>PartyIdentification SHOULD be used exactly once.</assert>
             <report id="PEPPOL-T023-R034" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>PartyName SHOULD NOT be used more than once.</report>
+            <report id="PEPPOL-T023-R043" flag="warning" test="count(./cac:PartyName) &lt; 1"><value-of select="$syntaxError"/>PartyName SHOULD be given.</report>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:ResolutionDocumentReference/cbc:ID">
             <assert id="PEPPOL-T023-R035" flag="fatal" test="./@schemeURI">A Resolution Document Reference Identifier MUST have a schemeURI attribute.</assert>
