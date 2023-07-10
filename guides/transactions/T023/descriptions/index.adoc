@@ -55,7 +55,7 @@ include::../files/QualificationRejection.xml[tags=IssueDateTime]
 
 === Sender Party
 
-The party sending a Qualification Rejection Response message back to the party that initiated the request to qualify for a Procurement.
+The party sending a Qualification Rejection to the party that initiated the request to qualify for a Procurement.
 The sender party in this case corresponds to the contracting body.
 
 [source,xml,indent=0]
@@ -69,7 +69,7 @@ include::../files/QualificationRejection.xml[tags=SenderParty]
 
 === Receiver Party
 
-The party who is supposed to process the Qualification Rejection. This is the same party that initiated the request to qualify for a Procurement.
+The party who is supposed to receive the Qualification Rejection. This is the same party that initiated the request to qualify for a Procurement.
 The receiver party in this case corresponds to the Economic Operator who handed in the Qualification to which this Qualification Rejection refers to.
 
 [source,xml,indent=0]
@@ -82,32 +82,32 @@ include::../files/QualificationRejection.xml[tags=ReceiverParty]
 <.> Contains the receiver party's official name including the organization's legal form.
 
 
-== ResolutionDocumentReference
+== Rejection Document Reference
 
-The ResolutionDocumentReference contains a reference to the Qualification Document handed in by the Economic Operator (receiver party of this document) to qualify for the procurement.
+The Rejection Document Reference contains a reference to the original Qualification Document that had been handed in by the Economic Operator (receiver party of this document) to qualify for the procurement.
 
 [source,xml,indent=0]
-.Example of ResolutionDocumentReference
+.Example of Rejection Document Reference
 ....
 include::../files/QualificationRejection.xml[tags=ResolutionDocumentReference]
 ....
-<.> The ResolutionDocumentReference must contain an identifier, being expressed in uuid syntax.
+<.> The Rejection Document Reference must contain an identifier, being expressed in uuid syntax.
 
 
-== QualificationResolution
+== Qualification Rejection Resolution
 
-The Qualification Resolution is the central part of any Qualification Rejection. It contains all information required to inform about the Qualification Rejection.
+The Qualification Rejection Resolution is the central part of any Qualification Rejection. It contains all information required to inform about the Qualification Rejection.
 
-*The QualificationResolution returned with this transaction will always be false*. If more than one lot have been aimed to qualify for and need to be rejected, one QualificationResolution for each lot is expected.
+*The Qualification Rejection Resolution returned with this transaction will always be negative*. If more than one lot have been aimed to qualify for and need to be rejected, one Qualification Rejection Resolution for each lot is expected.
 
 [source,xml,indent=0]
-.Example of QualificationResolution
+.Example of Qualification Rejection Resolution
 ....
 include::../files/QualificationRejection.xml[tags=QualificationResolution]
 ....
 <.> States that the Tenderer is not allowed to attend the further Procurement Process, only *false* is the allowed value here.
-<.> The decision leading to this Qualification Rejection can be explained in one or more Resolution elements. The resolution is expected be te described in plain text. At least one Resolution element should be provided.
-<.> The Date at which the decision expressed in this Qualification Resolution was made.
-<.> The ProcurementProjectLot referenced in this Qualification Resolution
+<.> The decision leading to this Qualification Rejection Resolution can be explained in one or more Reason for Rejection elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided.
+<.> The Date at which the decision expressed in this Qualification Rejection Resolution was made.
+<.> The ProcurementProjectLot referenced in this Qualification Rejection Resolution
 <.> The ProcurementProjectLot's ID
 

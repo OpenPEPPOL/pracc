@@ -81,13 +81,13 @@
             <assert id="PEPPOL-T023-R032" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0"><value-of select="$syntaxError"/> SenderParty or ReceiverParty SHOULD NOT contain any elements but EndpointID, PartyIdentification, PartyName</assert>
             <assert id="PEPPOL-T023-R033" flag="warning" test="count(./cac:PartyIdentification) = 1"><value-of select="$syntaxError"/>PartyIdentification SHOULD be used exactly once.</assert>
             <report id="PEPPOL-T023-R034" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>PartyName SHOULD NOT be used more than once.</report>
-            <report id="PEPPOL-T023-R043" flag="warning" test="count(./cac:PartyName) &lt; 1"><value-of select="$syntaxError"/>PartyName SHOULD be given.</report>
+            <report id="PEPPOL-T023-R043" flag="warning" test="count(./cbc:PartyName) &lt; 1"><value-of select="$syntaxError"/>PartyName SHOULD be given.</report>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:ResolutionDocumentReference/cbc:ID">
-            <assert id="PEPPOL-T023-R035" flag="fatal" test="./@schemeURI">A Resolution Document Reference Identifier MUST have a schemeURI attribute.</assert>
-            <assert id="PEPPOL-T023-R036" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">schemeURI for Resolution Document Reference Identifier MUST be 'urn:uuid'.</assert>
-            <report id="PEPPOL-T023-R037" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>A Resolution Document Reference Identifier SHOULD NOT have any attributes but schemeURI</report>
-            <assert id="PEPPOL-T023-R038" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">A Resolution Document Reference Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
+            <assert id="PEPPOL-T023-R035" flag="fatal" test="./@schemeURI">A Rejection Document Reference Identifier MUST have a schemeURI attribute.</assert>
+            <assert id="PEPPOL-T023-R036" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">schemeURI for Rejection Document Reference Identifier MUST be 'urn:uuid'.</assert>
+            <report id="PEPPOL-T023-R037" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>A Rejection Document Reference Identifier SHOULD NOT have any attributes but schemeURI</report>
+            <assert id="PEPPOL-T023-R038" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">A Rejection Document Reference Identifier MUST be expressed in a UUID syntax (RFC 4122)</assert>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution">
             <assert id="PEPPOL-T023-R039" flag="fatal" test="cbc:AdmissionCode">Element 'cbc:AdmissionCode' MUST be provided.</assert>
@@ -97,7 +97,12 @@
             <assert id="PEPPOL-T023-R041" flag="fatal" test="(not(cbc:AdmissionCode = false()))">AdmissionCode MUST always be "false" in a Qualification Resolution.</assert>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:Resolution">
-            <assert id="PEPPOL-T023-R042" flag="fatal" test="(not(cbc:Resolution))">At least one Resolution is required in a Qualification Resolution Element </assert>
+            <assert id="PEPPOL-T023-R042" flag="fatal" test="(not(cbc:Resolution))">Each Qualification Rejection Resolution element has to have one Reason for Rejection.</assert>
+        </rule>
+        <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cac:ProcurementProjectLot">
+            <report id="PEPPOL-T023-R044" flag="warning" test="(not(cac:ProcurementProjectLot))">If a Qualification Rejection Resolution has to be expressed for more than one lot in a procurement, a dedicated reason for rejection be given per lot and the appropriate lot identifier SHOULD be named.</report>
         </rule>
     </pattern>
 </schema>
+
+
