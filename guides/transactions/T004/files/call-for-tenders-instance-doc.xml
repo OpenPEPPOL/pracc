@@ -78,10 +78,10 @@
 		<cbc:Description>Laptops</cbc:Description>
 		<cbc:ProcurementTypeCode listID="PROJECT_TYPE">2</cbc:ProcurementTypeCode>
 		<cac:MainCommodityClassification>
-			<cbc:ItemClassificationCode listID="CPV">98300000-6</cbc:ItemClassificationCode>
+			<cbc:ItemClassificationCode listID="CPV">44113000</cbc:ItemClassificationCode>
 		</cac:MainCommodityClassification>
 		<cac:RealizedLocation>
-			<cbc:ID schemeID="NUTS">DE01</cbc:ID>
+			<cbc:ID schemeID="NUTS">DE1</cbc:ID>
 		</cac:RealizedLocation>
 	</cac:ProcurementProject>
 	<!-- end::ProcurementProject[] -->

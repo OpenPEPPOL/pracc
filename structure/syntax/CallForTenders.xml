@@ -742,7 +742,7 @@
                 <Element>
                     <Term>cbc:ItemClassificationCode</Term>
                     <Name>CPV</Name>
-                    <Description>Classification code of goods, works and services commonly used in procurement.
+                    <Description>Classification code of goods, works and services commonly using the codelist for Common Procurement Vocabulary link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv[(CPV codes)]
                     </Description>
                     <Attribute>
                         <Term>listID</Term>
@@ -761,7 +761,7 @@
                     <Term>cbc:ItemClassificationCode</Term>
                     <Name>CPV supplementary</Name>
                     <Description>A supplementary code to help contracting bodies describe the subject matter of
-                        contracts comprehensively.
+                        contracts comprehensively using the codelist for Common Procurement Vocabulary retrieved at link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpvsuppl[(CPV Supplement codes)].
                     </Description>
                     <Attribute>
                         <Term>listID</Term>
@@ -779,7 +779,7 @@
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Procurement project location NUTS code</Name>
-                    <Description>The identification with the NUTS code of the project location.</Description>
+                    <Description>The identification with the NUTS code of the project location using the codelist for Nomenclature of Territorial Units for Statistics retrieved at link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nuts.</Description>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
