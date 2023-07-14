@@ -212,7 +212,7 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MimeCode</Term>
                         <Name>Document mime type code</Name>
-                        <Description>Stands for</Description>
+                        <Description>Mime code of the attached document</Description>
                         <DataType>Code</DataType>
                     </Element>
 
