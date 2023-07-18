@@ -74,17 +74,17 @@
 	<!-- end::TenderingProcess[] -->
 	<!-- tag::ProcurementProject[] -->
 	<cac:ProcurementProject>
-		<cbc:Name>Laptops</cbc:Name>
-		<cbc:Description>Laptops</cbc:Description>
+		<cbc:Name>Office Machinery</cbc:Name>
+		<cbc:Description>Purchase of notebooks and associated equipment</cbc:Description>
 		<cbc:ProcurementTypeCode listID="PROJECT_TYPE">2</cbc:ProcurementTypeCode>
 		<cac:MainCommodityClassification>
-			<cbc:ItemClassificationCode listID="CPV">44113000</cbc:ItemClassificationCode>
+			<cbc:ItemClassificationCode listID="CPV">30100000</cbc:ItemClassificationCode>
 		</cac:MainCommodityClassification>
 		<cac:AdditionalCommodityClassification>
-			<cbc:ItemClassificationCode listID="CPV">44113120</cbc:ItemClassificationCode>
+			<cbc:ItemClassificationCode listID="CPV">30120000</cbc:ItemClassificationCode>
 		</cac:AdditionalCommodityClassification>
 		<cac:RealizedLocation>
-			<cbc:ID schemeID="NUTS">DE1</cbc:ID>
+			<cbc:ID schemeID="NUTS">DE148</cbc:ID>
 		</cac:RealizedLocation>
 	</cac:ProcurementProject>
 	<!-- end::ProcurementProject[] -->
@@ -92,13 +92,13 @@
 	<cac:ProcurementProjectLot>
 		<cbc:ID>1</cbc:ID>
 		<cac:ProcurementProject>
-			<cbc:Name>First part of the works project</cbc:Name>
+			<cbc:Name>Provision of Notebooks</cbc:Name>
 		</cac:ProcurementProject>
 	</cac:ProcurementProjectLot>
 	<cac:ProcurementProjectLot>
 		<cbc:ID>2</cbc:ID>
 		<cac:ProcurementProject>
-			<cbc:Name>Second part of the works project</cbc:Name>
+			<cbc:Name>Provision of photocopying and offset printing equipment</cbc:Name>
 		</cac:ProcurementProject>
 	</cac:ProcurementProjectLot>
 	<!-- end::ProcurementProjectLot[] -->

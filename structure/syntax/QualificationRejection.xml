@@ -106,7 +106,7 @@
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
-				<Name>Party identification</Name>
+				<Name>Contracting body identification</Name>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Contracting body identifier</Name>
@@ -126,6 +126,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
+				<Name>Contracting body name</Name>
 				<Reference type="RULE">PEPPOL-T023-R032</Reference>
 				<Reference type="RULE">PEPPOL-T023-R033</Reference>
 				<Reference type="RULE">PEPPOL-T023-R034</Reference>
@@ -162,7 +163,7 @@
 			</Element>
 			<Element>
 				<Term>cac:PartyIdentification</Term>
-				<Name>Party identification</Name>
+				<Name>Economic operator identification</Name>
 				<Element>
 					<Term>cbc:ID</Term>
 					<Name>Economic operator identifier</Name>
@@ -182,7 +183,7 @@
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:PartyName</Term>
-				<Name>Party name</Name>
+				<Name>Economic operator name</Name>
 				<Reference type="RULE">PEPPOL-T023-R032</Reference>
 				<Reference type="RULE">PEPPOL-T023-R033</Reference>
 				<Reference type="RULE">PEPPOL-T023-R034</Reference>
@@ -198,10 +199,10 @@
 		</Element>
 		<Element>
 			<Term>cac:ResolutionDocumentReference</Term>
-			<Name>Rejection document reference</Name>
+			<Name>Reference to rejected document</Name>
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>ResolutionDocumentID</Name>
+				<Name>Identifer of rejected document</Name>
 				<Description>A reference to the document that has been submitted by the Economic operator to apply for the given Qualification Request and to which this qualification rejection resolution refers to.</Description>
 				<Reference type="RULE">PEPPOL-T023-R035</Reference>
 				<Reference type="RULE">PEPPOL-T023-R036</Reference>
@@ -248,7 +249,7 @@
 				<Name>Procurement project lot concerned</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
-					<Name>ID</Name>
+					<Name>Lot identifier</Name>
 					<Description>An identifier for the lot that is concerned by the rejection.</Description>
 					<Reference type="RULE">PEPPOL-T023-R044</Reference>
 					<DataType>Identifier</DataType>

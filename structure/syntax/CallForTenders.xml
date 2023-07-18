@@ -710,14 +710,14 @@
             <Element>
                 <Term>cbc:Name</Term>
                 <Name>Procurement project name</Name>
-                <Description>Title attributed to the contract by the contracting body.</Description>
+                <Description>Title attributed to the procurement project by the contracting body.</Description>
                 <DataType>Text</DataType>
             </Element>
 
             <Element>
                 <Term>cbc:Description</Term>
                 <Name>Procurement project description</Name>
-                <Description>A textual description of this Procurement project.</Description>
+                <Description>A textual description of this procurement project.</Description>
                 <DataType>Text</DataType>
             </Element>
 
