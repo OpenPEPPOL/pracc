@@ -738,11 +738,13 @@
             <Element>
                 <Term>cac:MainCommodityClassification</Term>
                 <Name>Main commodity classification</Name>
+                <Description>The main commodity is the one representing the highest value fraction of the procurement.
+                </Description>
 
                 <Element>
                     <Term>cbc:ItemClassificationCode</Term>
-                    <Name>CPV</Name>
-                    <Description>Classification code of goods, works and services commonly using the codelist for Common Procurement Vocabulary retrieved at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv
+                    <Name>Main item classification code</Name>
+                    <Description>The main commodity classification code for goods, works and services is specified using the codelist for Common Procurement Vocabulary (CPV). (External Codelist provided at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv)
                     </Description>
                     <Attribute>
                         <Term>listID</Term>
@@ -755,13 +757,13 @@
 
             <Element cardinality="0..n">
                 <Term>cac:AdditionalCommodityClassification</Term>
-                <Name>Additional Document Classification</Name>
+                <Name>Additional commodity classification</Name>
+                <Description>Additional commodities are other commodities belonging to the same procurement and which, taken individually and compared to the main commodity, represent a lower portion of the overall procurement.</Description>
 
                 <Element>
                     <Term>cbc:ItemClassificationCode</Term>
-                    <Name>CPV supplementary</Name>
-                    <Description>A supplementary code to help contracting bodies describe the subject matter of
-                        contracts comprehensively using the codelist for Common Procurement Vocabulary Supplement retrieved at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpvsuppl.
+                    <Name>Additional item classification code</Name>
+                    <Description>Additional classification codes of goods, works and services are specified using the codelist for Common Procurement Vocabulary (CPV). (External Codelist provided at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa).eu/resource/dataset/cpv
                     </Description>
                     <Attribute>
                         <Term>listID</Term>
@@ -776,11 +778,12 @@
             <Element cardinality="1..n">
                 <Term>cac:RealizedLocation</Term>
                 <Name>Realized location</Name>
+                <Description>Description of the procurement project location</Description>
 
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Procurement project location NUTS code</Name>
-                    <Description>The identification with the NUTS code of the project location using the codelist for Nomenclature of Territorial Units for Statistics retrieved at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nuts.</Description>
+                    <Description>The identification of the project location using the codelist for Nomenclature of Territorial Units for Statistics (NUTS) (External Codelist provided at https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nuts )</Description>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>

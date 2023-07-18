@@ -114,17 +114,6 @@
 | link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv[CPV codes]
 |===
 
-== Common Procurement Vocabulary Supplement (CPV Supplement)
-[cols="1h,4"]
-|===
-| Qualifier
-| CPV (listID)
-| Document location
-| `cac:AdditionalCommodityClassification/cbc:ItemClassificationCode`
-| Source codelist
-| link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpvsuppl[CPV Supplement codes]
-|===
-
 == Nomenclature of Territorial Units for Statistics (NUTS)
 [cols="1h,4"]
 |===

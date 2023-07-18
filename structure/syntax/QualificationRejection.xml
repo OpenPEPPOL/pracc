@@ -198,11 +198,11 @@
 		</Element>
 		<Element>
 			<Term>cac:ResolutionDocumentReference</Term>
-			<Name>Rejection Document Reference</Name>
+			<Name>Rejection document reference</Name>
 			<Element>
 				<Term>cbc:ID</Term>
 				<Name>ResolutionDocumentID</Name>
-				<Description>A reference to the Document that has been sent by the Economic operator to apply to the given Qualification Request and to which this qualification rejection resolution refers to.</Description>
+				<Description>A reference to the document that has been submitted by the Economic operator to apply for the given Qualification Request and to which this qualification rejection resolution refers to.</Description>
 				<Reference type="RULE">PEPPOL-T023-R035</Reference>
 				<Reference type="RULE">PEPPOL-T023-R036</Reference>
 				<Reference type="RULE">PEPPOL-T023-R037</Reference>
@@ -216,40 +216,40 @@
 		</Element>
 		<Element cardinality="1..n">
 			<Term>cac:QualificationResolution</Term>
-			<Name>Qualification Rejection Resolution</Name>
-			<Description>The Qualification Rejection Resolution is expected to contain all information the economic operator needs to understand how and why the qualification application has been rejected. These information include a short description of the qualification resolution as well as the decision date. In case a qualification application had been heen handed in to apply for more than one Lot, a dedicated qualification resolution rejection should be given for each lot with reference to the appropriate lot identifier. </Description>
+			<Name>Qualification rejection resolution</Name>
+			<Description>The qualification rejection resolution shall contain all information necessary for the economic operator to understand how and why its qualification application has been rejected. The information includes a short description of the reason for rejection and the decision date. If a qualification application has been submitted for more than one lot, a separate qualification resolution rejection should be issued for each lot, indicating the relevant lot identifier. </Description>
 			<Reference type="RULE">PEPPOL-T023-R039</Reference>
 			<Reference type="RULE">PEPPOL-T023-R040</Reference>
 			<Element>
 				<Term>cbc:AdmissionCode</Term>
-				<Name>Admission Code</Name>
-				<Description>The Admission Code describes the qualification result. In case of a qualification rejection resolution the only valid entry here will be "false". </Description>
+				<Name>Admission code</Name>
+				<Description>The admission code describes the qualification result. Because this document only contains information about rejected qualifications, the fixed value "false" must be entered here. </Description>
 				<Reference type="RULE">PEPPOL-T023-R041</Reference>
 				<Value type="FIXED">false</Value>
 			</Element>
 			<Element>
 				<Term>cbc:Resolution</Term>
-				<Name>Reason For Rejection</Name>
-				<Description>A literal description of the reason why the qualification has been rejected. In case a qualification rejection resolution is related to more than one lot, a reason for rejection should be given per lot.</Description>
+				<Name>Reason ror rejection</Name>
+				<Description>A literal description of the reason why the qualification has been rejected. In case a qualification rejection resolution is related to more than one lot, a reason for rejection should be given for each lot.</Description>
 				<Reference type="RULE">PEPPOL-T023-R042</Reference>
 			</Element>
 			<Element>
 				<Term>cbc:ResolutionDate</Term>
-				<Name>Resolution Date</Name>
+				<Name>Resolution date</Name>
 				<Description>The date at which the qualification rejection resolution had been made.</Description>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cbc:ResolutionTime</Term>
-				<Name>Resolution Time</Name>
-				<Description>If necessary, the time at which the qualification rejection resolution has been made, could also be added. </Description>
+				<Name>Resolution time</Name>
+				<Description>If necessary, the time at which the qualification rejection resolution has been made. </Description>
 			</Element>
 			<Element cardinality="0..1">
 				<Term>cac:ProcurementProjectLot</Term>
-				<Name>Procurement Project Lot</Name>
+				<Name>Procurement project lot concerned</Name>
 				<Element cardinality="0..1">
 					<Term>cbc:ID</Term>
 					<Name>ID</Name>
-					<Description>An identifier for the lot. Naming the lot is expected if the qualification rejection resolution is explicitly given for a specific lot.</Description>
+					<Description>An identifier for the lot that is concerned by the rejection.</Description>
 					<Reference type="RULE">PEPPOL-T023-R044</Reference>
 					<DataType>Identifier</DataType>
 				</Element>

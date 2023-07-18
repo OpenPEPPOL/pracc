@@ -80,6 +80,9 @@
 		<cac:MainCommodityClassification>
 			<cbc:ItemClassificationCode listID="CPV">44113000</cbc:ItemClassificationCode>
 		</cac:MainCommodityClassification>
+		<cac:AdditionalCommodityClassification>
+			<cbc:ItemClassificationCode listID="CPV">44113120</cbc:ItemClassificationCode>
+		</cac:AdditionalCommodityClassification>
 		<cac:RealizedLocation>
 			<cbc:ID schemeID="NUTS">DE1</cbc:ID>
 		</cac:RealizedLocation>
