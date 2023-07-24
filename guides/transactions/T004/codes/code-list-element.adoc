@@ -62,7 +62,7 @@
 [cols="1h,4"]
 |===
 | Qualifier
-|-
+| Media Types (IANA)
 | Document location
 | `cbc:MimeCode`
 | Source codelist
