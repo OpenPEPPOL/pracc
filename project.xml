@@ -47,6 +47,10 @@
     <Documentation path="profiles/p012/index.html">P012 - Qualification Rejection - 1.0</Documentation>
     <Documentation path="transactions/T023/index.html">T023 - Qualification Rejection 1.0</Documentation>
 
+    <Documentation path="profiles/p013/index.html">P013 - Invitation to tender - 1.1</Documentation>
+    <Documentation path="transactions/T024/index.html">T024 - Invitation to tender 1.1</Documentation>
+    <Documentation path="transactions/T025/index.html">T025 - Tender Status Inquiry 1.2</Documentation>
+
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
     <!-- Syntax -->

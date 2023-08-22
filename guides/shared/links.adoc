@@ -23,6 +23,7 @@
 
 //PEPPOL Transactions Preaward
 :T004: https://docs.peppol.eu/pracc/transactions/T004/index.html[T004 Call for Tenders]
+:T024: https://docs.peppol.eu/pracc/transactions/T024/index.html[T024 Invitation to tender]
 
 
 //CEN BII3
