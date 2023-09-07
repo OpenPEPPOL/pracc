@@ -627,7 +627,6 @@
                     dynamic purchasing system or not.
                 </Description>
                 <Reference type="CODE_LIST">contractType</Reference>
-                <Reference type="RULE">PEPPOL-T004-R038</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>

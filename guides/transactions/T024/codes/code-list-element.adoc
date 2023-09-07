@@ -90,7 +90,6 @@
 | `cbc:ContractingSystemCode`
 | Source codelist
 | See codelist section on {link-main-site}
-Since the invitation to tender may also be sent out to one or more tenderers holding a framework agreement or participating in a dynamic purchasing system, all values given in this codelist are allowed in an invitation to tender whereas a call for tender may use only codes 1-3.
 |===
 
 == Backup for electronic submission indicator /Electronic submission required indicator
