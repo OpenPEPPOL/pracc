@@ -24,16 +24,10 @@ include::introduction.adoc[]
 
 include::principles/index.adoc[]
 
-include::requirements/requirements.adoc[]
-
 include::process/index.adoc[]
 
-include::rules/index.adoc[]
-
-include::model/index.adoc[]
-
-include::codes/index.adoc[]
-
-include::descriptions/index.adoc[]
-
 include::profiles/index.adoc[]
+
+include::revision/index.adoc[]
+
+include::contributors/index.adoc[]
