@@ -3,7 +3,7 @@ include::../shared/settings.adoc[]
 :name-profile: Profile P013 - "Invitation to tender"
 
 :name-transaction-org: "Trdm088 Invitation to tender"(CWA3456 Part 117 Profile 52)
-:name-transaction: T024 - Invitation to tender 1.2
+:name-transaction: T024 - Invitation to tender 1.0
 :name-trans-short: Invitation to tender
 :name-syntax: CallForTenders
 
