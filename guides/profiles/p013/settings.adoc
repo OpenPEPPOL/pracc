@@ -5,3 +5,6 @@ include::../shared/settings.adoc[]
 :version: 1.0.0
 :name-profile-org: "Profile BII52 Invitation to tender" (CWA 3456-117)
 :name-profile: Profile P013 - "Invitation to tender" 1.0
+
+
+
