@@ -6,7 +6,7 @@ For the {link-peppol} BIS all {link-peppol} non-functional requirements are appl
 [cols="2,10", options="header"]
 |===
 | Req. ID | Requirement statement
-| br52-001 | The contracting body decides to invite a reduced number of candidates based on a previous selection (either based on a pre-qualification business process or on a pre-selection list based on other criteria). In open procedures economic operators may access to all contract documents.
+| br52-001 | The contracting body decides to invite a reduced number of candidates based on a previous selection (either based on a pre-qualification business process or on a pre-selection list based on other criteria). In open procedures economic operators may access to all contract documents .
 | br52-002 | The contracting body prepares the Invitation to tender as a structured document and optionally an unstructured Invitation to Tender and sends it to the pre-selected economic operators.
 | br52-003 | The economic operator receives and evaluates the Invitation to tender and decides whether to participate or not in the tendering process.
 | br52-004 | It is the responsibility of the contracting body that data contained in the transactions is valid from a technical as well as a business point of view.
