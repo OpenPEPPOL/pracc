@@ -5,7 +5,7 @@
 urn:oasis:names:specification:ubl:schema:xsd:InvitationToTender-2
 urn:oasis:names:specification:ubl:schema:xsd:TenderStatusRequest-2
 
-The syntax mapping for {name-profile} has been tested and revised during the {link-esens} pilot and is based on transaction description for Tender Status Inquiry (Trdm097) and  Call for Tenders (Trdm083) done by {link-bii3}. Requirements, business rules and code lists used are inherited from the following documents:
+The syntax mapping for {name-profile} has been tested and revised during the {link-esens} pilot and is based on transaction description for Tender Status Inquiry (Trdm097) and  Invitation to Tender (Trdm088) done by {link-bii3}. Requirements, business rules and code lists used are inherited from the following documents:
 
 * {link-profile}
 * {link-profile2}

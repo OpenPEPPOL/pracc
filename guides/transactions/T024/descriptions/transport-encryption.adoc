@@ -1,9 +1,9 @@
 
-= Transport of encryption certificate via any invitation to tender
+= Transport of encryption certificate via any Invitation to Tender
 
 == Introduction
 
-The Invitation to tender (ItT) business document is used by the contracting authority to provide a qualified economic operator with the latest updated procurement documents. Sending the invitation to tender to any of the remaining economic operators determines the final step of the procurement procedure. Besides transporting procurement documents it MUST be used to transport the encryption certificate needed by the economic operator to encrypt his tender for submission.
+The Invitation to Tender (ItT) business document is used by the contracting authority to provide a qualified economic operator with the latest updated procurement documents. Sending the invitation to tender to any of the remaining economic operators determines the final step of the procurement procedure. Besides transporting procurement documents it MUST be used to transport the encryption certificate needed by the economic operator to encrypt his tender for submission.
 #Since the invitation to tender is also used to sent out business document changes after the tenderer has requested for status-updates (by sending a status-update-inquiry), any Invitation to tender MUST contain the encryption certificate needed by the economic operator to encrypt his tender for submission.
 == Encryption certificate
 

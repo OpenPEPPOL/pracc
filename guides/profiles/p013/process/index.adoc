@@ -12,20 +12,20 @@ image::../images/InvitationToTender.svg[align="center", width=800]
 | Category
 | Description
 | Description
-| The contracting body sends an electronic invitation to tender document containing the information required for the economic operator to participate in a tendering process.
-The contracting body may send a formal invitation to tender as an attachment to the invitation to tender document.
-The economic operator evaluates the information given with the invitation to tender and decides whether to accept the invitation or to reject it.
-If the economic operator accepts the invitation, the business process follows through an external process.
+| The contracting body sends an electronic Invitation to Tender document containing the information required for the economic operator to participate in a tendering process.
+The contracting body may send a formal Invitation to Tender as an attachment to the Invitation to Tender document.
+The economic operator evaluates the information given with the Invitation to Tender and decides whether to submit an tender or not.
+If the economic operator accepts the invitation and submits a tender the business process continuous through the external process Tender Submission.
 If the economic operator rejects the invitation, no notification needs to be sent back to the contracting body.
 
 | Pre-conditions
-| The contracting body had pre-selected a list of candidate economic operators (shortlist).
+| The contracting body has pre-selected a list of candidate economic operators (shortlist).
 
 | Post-conditions
-| The economic operator has received the invitation to tender and can proceed to prepare and submit the qualification or tender.
+| The economic operator has received the Invitation to Tender and can proceed to prepare and submit the tender.
 
 | Remarks
-| The invitation to tender is used in a negotiated procedure to submit the tender documents to a list of preselected economic operators.
+| The Invitation to Tender is typically used in negotiated procedure and restricted procedures where the economic operator could not view the call for tenders information and a list of selected economic operators is created at a first step.
 |===
 
 
@@ -34,16 +34,21 @@ If the economic operator rejects the invitation, no notification needs to be sen
 | Activity
 | Role involved
 | Description
-| Send invitation to tender
+| Send Invitation to Tender
 | Contracting body
-| The contracting body sends an invitation to tender to an economic operator.
-| Receive invitation to tender
+| The contracting body sends an Invitation to Tender to an economic operator.
+| Receive Invitation to Tender
 | Economic operator
-| The economic operator receives the invitation to tender, enabling him to prepare a bid.
+| The economic operator receives the Invitation to Tender, enabling him to prepare a bid.
 | Send Invitation to Tender Status Inquiry
 | Economic Operator
 | The economic operator (regularly) asks for Tender Document Status changes.
-| 
+| Receive Invitation to Tender Status Inquiry
+| Contracting body
+| The contracting body receives an Invitation to Tender status update request from the Economic operator.
+| Sent current version of the Invitation to Tender
+| Contracting body
+| The contracting body sents the current version of the to the Economic operator.
 |===
 
 

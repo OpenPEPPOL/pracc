@@ -20,21 +20,15 @@ In the table below you will find the values to be used as the specification iden
 
 | TransactionID | Transaction name | Short Description | *Element* `cbc:CustomizationID`
 
+| T024
+| Invitation to Tender
+| CA sends an Invitation to Tender to the EO
+| _urn:fdc:peppol.eu:prac:trns:t024:1.0_
+
 | T003
-| TenderStatusRequest
-| EO requests CA for the procurement project documents
+| Tender Status Inquiry
+| EO requests CA for the latest procurement project documents
 | _urn:fdc:peppol.eu:prac:trns:t003:1.2_
-
-
-| T004
-| CallForTenders here knows as InvitationToTender
-| CA sends all procurement project documents to the formerly chosen EOs
-| _urn:fdc:peppol.eu:prac:trns:t004:1.2_
-
-| T013
-| TenderWithdrawal
-| EO resigns from participating in tendering process
-| _urn:fdc:peppol.eu:prac:trns:t013:1.2_
 
 |===
 
