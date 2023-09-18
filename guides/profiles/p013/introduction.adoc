@@ -1,4 +1,3 @@
-// TODO adapt to Invitation for Tender
 [preface]
 = Introduction to openPEPPOL and BIS
 
@@ -7,13 +6,13 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 .Relationship between BII profiles and PEPPOL BIS
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
-The {name-profile} describes electronic messaging support for the business process where an economic operator requests the status of a procurement project from the contracting body, who provides the economic operator with the latest procurement project metadata by call for tender message.
+The {name-profile} describes electronic messaging support for the business process where a contracting authority invites the formerly prequalified economic operators to participate in the final tendering process.
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
 
 == Audience
 
-The audience for this document is organizations wishing to be PEPPOL enabled for exchanging electronic pre-award catalogues, and/or their ICT-suppliers. These organizations may be:
+The audience for this document are organizations taking part in a "closed" procurement process. Organizations may be:
 
      * Service providers
      * Contracting Authorities (CA)
