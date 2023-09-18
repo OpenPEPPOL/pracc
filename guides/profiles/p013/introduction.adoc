@@ -1,3 +1,4 @@
+// TODO adapt to Invitation for Tender
 [preface]
 = Introduction to openPEPPOL and BIS
 
@@ -6,13 +7,20 @@ This {link-peppol} BIS provides a set of specifications for implementing a {link
 .Relationship between BII profiles and PEPPOL BIS
 image::../../../shared/images/BII_relationship.png[align="center", width=600]
 
-The {name-profile} describes electronic messaging support for the business process where a contracting authority invites the formerly prequalified economic operators to participate in the final tendering process.
+The {name-profile} describes electronic messaging support for the business process of inviting economic operators in a pre-awarding phase.
 
-The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
+The key aspects covered by this profile are:
+
+* The contracting body has decided to invite an economic operator to participate in a tendering procedure, sending the invitation to tender.
+* The contracting body makes the Invitation to tender document available to the economic operator
+* The economic operator decides whether he participates in the tendering process, but no communication needs to be sent back to the contracting body if he decides not to.
+* After having received the invitation to tender, an economic operator can request the status of the procurement project from the contracting body, who provides the economic operator with the latest procurement project call for tender.
+
+In this {name-profile}, most information about the call for tenders is defined in (unstructured) attachments. The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the tendering process based on these formats.
 
 == Audience
 
-The audience for this document are organizations taking part in a "closed" procurement process. Organizations may be:
+The audience for this document is organizations wishing to be PEPPOL enabled for exchanging electronic pre-award catalogues, and/or their ICT-suppliers. These organizations may be:
 
      * Service providers
      * Contracting Authorities (CA)
