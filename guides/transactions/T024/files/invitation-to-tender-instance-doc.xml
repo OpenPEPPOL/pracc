@@ -51,6 +51,27 @@
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
 	<!-- end::AdditionalDocumentReference2[] -->
+	<!-- tag::AdditionalDocumentReference5[] -->
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>ISO 27001 Certificate</cbc:ID>
+		<cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">REQ</cbc:DocumentTypeCode>
+		<cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">RWOS</cbc:DocumentStatusCode>
+	</cac:AdditionalDocumentReference>
+	<!-- end::AdditionalDocumentReference5[] -->
+	<!-- tag::AdditionalDocumentReference6[] -->
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>Product classification and pricing</cbc:ID>
+		<cbc:IssueDate>2016-10-20+02:00</cbc:IssueDate>
+		<cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
+		<cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">RWOS</cbc:DocumentStatusCode>
+		<cac:Attachment>
+			<cac:ExternalReference>
+				<cbc:MimeCode>application/vnd.ms-excel</cbc:MimeCode>
+				<cbc:FileName>ProductDescriptionTemplate.xlsx</cbc:FileName>
+			</cac:ExternalReference>
+		</cac:Attachment>
+	</cac:AdditionalDocumentReference>
+	<!-- end::AdditionalDocumentReference6[] -->
 	<cac:ContractingParty>
 		<cac:Party>
 			<cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>

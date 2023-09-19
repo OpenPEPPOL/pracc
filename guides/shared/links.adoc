@@ -4,7 +4,7 @@
 :link-peppol: https://peppol.org/[Peppol]
 :link-bis: https://docs.peppol.eu/pracc/[PEPPOL eTendering BIS]
 :link-common: https://peppol.org/[Peppol]
-:preaward-cat: https://docs.peppol.eu/pracc/catalogue/1.0/bis/[BIS pre-award catalogue]
+:preaward-cat: https://docs.peppol.eu/pracc/catalogue/1.0/bis/[P035 Pre-Award Catalogue]
 
 //PEPPOL BIS Preaward
 :P001: https://docs.peppol.eu/pracc/profiles/p001/index.html[P001 Procurement procedure subscription]

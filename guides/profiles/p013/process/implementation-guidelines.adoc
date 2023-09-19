@@ -10,11 +10,12 @@ The syntax mapping for {name-profile} has been tested and revised during the {li
 * {link-profile}
 * {link-profile2}
 * {sig-cft}
-* {tender-status}
 * {call-for-tenders}
+* {tender-status}
+
 
 {link-peppol} {name-profile} business process includes 2 transactions:
 
 * link:../../transactions/T024/index.html[T024 Invitation To Tender]
-* link:../../transactions/T003/index.html[T003 Invitation To Tender Status Inquiry]
+* link:../../transactions/T003/index.html[T003 Tender Status Inquiry]
 
