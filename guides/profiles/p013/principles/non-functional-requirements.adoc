@@ -1,4 +1,3 @@
-// TODO adapt to Invitation for Tender
 = Non-functional requirements
 
 For the {link-peppol} BIS all {link-peppol} non-functional requirements are applicable as mentioned on {link-profile}. When adopting the {link-peppol} BIS implementers must comply to these requirements.

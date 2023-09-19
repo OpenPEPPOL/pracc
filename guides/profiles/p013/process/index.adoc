@@ -48,7 +48,7 @@ If the economic operator rejects the invitation, no notification needs to be sen
 | The contracting body receives an Invitation to Tender status update request from the Economic operator.
 | Sent current version of the Invitation to Tender
 | Contracting body
-| The contracting body sents the current version of the to the Economic operator.
+| The contracting body sends the current version of the to the Economic operator.
 |===
 
 
