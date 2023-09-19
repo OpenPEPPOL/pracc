@@ -769,7 +769,7 @@
 
             <Element cardinality="0..n">
                 <Term>cac:AdditionalCommodityClassification</Term>
-                <Name>Additional Document Classification</Name>
+                <Name>Additional Commodity Classification</Name>
 
                 <Element>
                     <Term>cbc:ItemClassificationCode</Term>
