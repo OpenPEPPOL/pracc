@@ -2,7 +2,7 @@
 
 
 The Invitation to Tender is intended to provide unstructured information of the procurement only to those participants who have been qualified based on a pre-qualification business process or on a pre-selection list of candidate economic operators (shortlist) based on other criteria: e.g. restricted or negotiated procedures as well as participation in a Dynamic Purchasing System. The economic operators are expected to read the provided documents and prepare their tenders following the requirements established as unstructured information.
-The Invitation to Tender message is syntactically identical to the {T004} Call for Tenders that is used in open procedures or has been used in the first step of procurement procedures with qualification stages involved.
+The Invitation to Tender message is syntactically identical to the {T004} that is used in open procedures or has been used in the first step of procurement procedures with qualification stages involved.
 
 ==	Invitation to Tender without lots
 

@@ -31,7 +31,7 @@ Value supplied by tendering system of the CA. Is not necessarily populated with 
 | Provided document name | 1..1 | cac:Attachment/cac:ExternalReference/cbc:FileName | Name of a document that is provided as part of a tender or call for tenders. The extension of the file MUST be  “cer”.
 |===
 
-Alternatively a provided document URI could be used to reference the encryption certificate.
+Instead of `Provided document name`, alternatively a `Provided document URI` could be used to reference the encryption certificate.
 
 [cols="3,2,3,4"]
 |===
