@@ -1,4 +1,3 @@
-// TODO adapt to Invitation for Tender
 [preface]
 = Introduction to openPEPPOL and BIS
 
