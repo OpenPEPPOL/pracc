@@ -57,16 +57,15 @@
 | See codelist section on {link-main-site}
 |===
 
-
 == Document mime type code
 [cols="1h,4"]
 |===
 | Qualifier
-|
+| Media Types (IANA)
 | Document location
 | `cbc:MimeCode`
 | Source codelist
-| link:ftp://ftp.cen.eu/public/CWAs/BII2/CWA16558/CWA16558-Annex-G-BII-CodeLists-V2_0_4.pdf[IANA]
+| link:https://www.iana.org/assignments/media-types/media-types.xhtml[IANA Media Types]
 |===
 
 
@@ -113,3 +112,27 @@
 | Source codelist
 | See codelist section on {link-main-site}
 |===
+
+== Common Procurement Vocabulary (CPV)
+[cols="1h,4"]
+|===
+| Qualifier
+| CPV (listID)
+| Document location
+| `cac:MainCommodityClassification/cbc:ItemClassificationCode`
+`cac:AdditionalCommodityClassification/cbc:ItemClassificationCode`
+| Source codelist
+| link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv[CPV codes]
+|===
+
+== Nomenclature of Territorial Units for Statistics (NUTS)
+[cols="1h,4"]
+|===
+| Qualifier
+| NUTS (listID)
+| Document location
+| `cac:RealizedLocation/cbc:ID`
+| Source codelist
+| link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nuts[NUTS codes]
+|===
+

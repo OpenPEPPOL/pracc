@@ -29,7 +29,7 @@
             <Reference type="RULE">PEPPOL-T024-R002</Reference>
             <DataType>Identifier</DataType>
             <Value type="FIXED">
-                urn:fdc:peppol.eu:prac:trns:t024:1.2
+                urn:fdc:peppol.eu:prac:trns:t024:1.0
             </Value>
         </Element>
 
@@ -41,7 +41,7 @@
             </Description>
             <Reference type="RULE">PEPPOL-T024-R003</Reference>
             <DataType>Identifier</DataType>
-            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p002:1.2</Value>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p013:1.0</Value>
         </Element>
 
         <Element>

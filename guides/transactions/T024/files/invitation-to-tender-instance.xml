@@ -4,8 +4,8 @@
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
     <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
-    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t024:1.2</cbc:CustomizationID>
-    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p013:1.2</cbc:ProfileID>
+    <cbc:CustomizationID>urn:fdc:peppol.eu:prac:trns:t024:1.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:prac:bis:p013:1.0</cbc:ProfileID>
     <cbc:ID schemeURI="urn:uuid">be8943ce-9d65-4eed-93c5-fa4748148c8f</cbc:ID>
     <cbc:ContractFolderID>3dab5e45-2bb3-4dbf-bc1f-0b812d8b9a58</cbc:ContractFolderID>
     <cbc:IssueDate>2016-10-20</cbc:IssueDate>
@@ -23,13 +23,13 @@
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
-        <cbc:ID>EinladungAngebotsabgabe</cbc:ID>
+        <cbc:ID>Invitation to Tender</cbc:ID>
         <cbc:IssueDate>2016-10-20+02:00</cbc:IssueDate>
         <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
         <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
         <cac:Attachment>
             <cac:ExternalReference>
-                <cbc:FileName>einladungAngebotsabgabe.html</cbc:FileName>
+                <cbc:FileName>TenderInviatation.html</cbc:FileName>
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
@@ -62,10 +62,10 @@
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>PO Box 20061</cbc:StreetName>
-            <cbc:AdditionalStreetName>just for demonstration purposes</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName>Tulip Street 33</cbc:AdditionalStreetName>
             <cbc:CityName>The Hague</cbc:CityName>
             <cbc:PostalZone>2500 EB</cbc:PostalZone>
-            <cbc:CountrySubentity>province of South Holland</cbc:CountrySubentity>
+            <cbc:CountrySubentity>Province of South Holland</cbc:CountrySubentity>
             <cac:Country>
                 <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
             </cac:Country>
@@ -86,8 +86,8 @@
         </cac:TenderRecipientParty>
     </cac:TenderingTerms>
     <cac:TenderingProcess>
-        <cbc:ProcedureCode listID="PR_PROC">open</cbc:ProcedureCode>
-        <cbc:ContractingSystemCode listID="CONTRACT_TYPE">4</cbc:ContractingSystemCode>
+        <cbc:ProcedureCode listID="PR_PROC">2</cbc:ProcedureCode>
+        <cbc:ContractingSystemCode listID="CONTRACT_TYPE">5</cbc:ContractingSystemCode>
         <cbc:SubmissionMethodCode listID="BII_SUBMISSION">ELECTRONIC</cbc:SubmissionMethodCode>
         <cac:TenderSubmissionDeadlinePeriod>
             <cbc:EndDate>2016-10-20+02:00</cbc:EndDate>
@@ -99,10 +99,13 @@
         <cbc:Description>Laptops</cbc:Description>
         <cbc:ProcurementTypeCode listID="PROJECT_TYPE">2</cbc:ProcurementTypeCode>
         <cac:MainCommodityClassification>
-            <cbc:ItemClassificationCode listID="CPV">98300000-6</cbc:ItemClassificationCode>
+            <cbc:ItemClassificationCode listID="CPV">30100000</cbc:ItemClassificationCode>
         </cac:MainCommodityClassification>
+        <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listID="CPV">30120000</cbc:ItemClassificationCode>
+        </cac:AdditionalCommodityClassification>
         <cac:RealizedLocation>
-            <cbc:ID schemeID="NUTS">DE01</cbc:ID>
+            <cbc:ID schemeID="NUTS">DE148</cbc:ID>
         </cac:RealizedLocation>
     </cac:ProcurementProject>
 </CallForTenders>

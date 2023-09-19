@@ -184,7 +184,7 @@
         </rule>
 
         <rule context="cbc:IndustryClassificationCode">
-            <assert id="PEPPOL-T024-R0038" flags="fatal" test="./@listID>[PEPPOL-T024-R038] The Codelist used to define the receiver's economic operator role in this tender MUST be named by using the attribute listID and the ID has to be /"TendererRole/".</assert>
+            <assert id="PEPPOL-T024-R0038" flags="fatal" test="./@listID">[PEPPOL-T024-R038] The Codelist used to define the receiver's economic operator role in this tender MUST be named by using the attribute listID and the ID has to be /"TendererRole/".</assert>
             <report id="PEPPOL-T024-S360" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[PEPPOL-T024-S360] cbc:IndustryClassificationCode SHOULD NOT have any further attributes but listID</report>
         </rule>
 
@@ -275,7 +275,7 @@
 
         <rule context="ubl:CallForTenders/cac:TenderingProcess/cbc:ContractingSystemCode">
             <report id="PEPPOL-T024-S397" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[PEPPOL-T024-S397] ContractingSystemCode SHOULD NOT have any attributes but listID.</report>
-            <assert id="PEPPOL-T024-R038" flag="fatal" test="not (cbc:ContractingSystemCode in ('1', '2', '3')>[PEPPOL-T024-R038] A Call For Tender is only allowed to use une of the following ContractSystemCodes: 'Public Contract', 'Establishment of a Framework agreement' or 'Setting up a Dynamic Purchasing System'.</assert>        </rule>
+            <assert id="PEPPOL-T024-R038" flag="fatal" test="not (cbc:ContractingSystemCode in ('1', '2', '3')">[PEPPOL-T024-R038] A Call For Tender is only allowed to use une of the following ContractSystemCodes: 'Public Contract', 'Establishment of a Framework agreement' or 'Setting up a Dynamic Purchasing System'.</assert>        </rule>
 
         <rule context="ubl:CallForTenders/cac:TenderingProcess/cbc:SubmissionMethodCode">
             <report id="PEPPOL-T024-S372" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[PEPPOL-T024-S372] SubmissionMethodCode SHOULD NOT have any attributes but listID.</report>
