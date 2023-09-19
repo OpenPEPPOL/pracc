@@ -41,7 +41,7 @@ Instead of `Provided document name`, alternatively a `Provided document URI` cou
 
 
 [source,xml,indent=0]
-.Example of the CfT (partly) for transporting the encryption certificate with cbc:FileName
+.Example of the Invitation to Tender transporting an encryption certificate with cbc:FileName
 
 ----
 include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
@@ -49,7 +49,7 @@ include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
 ----
 
 [source,xml,indent=0]
-.Example of the CfT (partly) for transporting the encryption certificate with cbc:URI
+.Example of the Invitation to Tender transporting an encryption certificate with cbc:URI
 
 ----
 include::../{xml-doc-file}[tags=AdditionalDocumentReference4]

@@ -48,7 +48,17 @@ include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
 
 
 [source,xml,indent=0]
-.Example of the CfT (partly) for transporting the encryption certificate with cbc:URI
+.Example of the Call for Tenders transporting an encryption certificate with cbc:URI
+
+----
+include::../{xml-doc-file}[tags=AdditionalDocumentReference4]
+
+----
+
+----
+
+[source,xml,indent=0]
+.Example of the Call for Tenders transporting an encryption certificate with cbc:URI
 
 ----
 include::../{xml-doc-file}[tags=AdditionalDocumentReference4]
