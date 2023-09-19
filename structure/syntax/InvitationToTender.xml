@@ -212,14 +212,14 @@
                     <Element cardinality="0..1">
                         <Term>cbc:MimeCode</Term>
                         <Name>Document mime type code</Name>
-                        <Description>Stands for the document type and allows finding the correct application to open the document at the download sink.</Description>
+                        <Description>A code specifying the type of the document. The mime type of the file that and allows finding the correct application to open the document at the download sink. MUST be 'application/pkix-cert' for the encryption certificate. </Description>
                         <DataType>Code</DataType>
                     </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:FileName</Term>
                         <Name>Provided document name</Name>
-                        <Description>Name of a document that is provided as part of the invitation to tender.
+                        <Description>Name of a document that is provided as part of the invitation to tender. The extension of the file MUST be 'cer' for the encryption certificate.
                         </Description>
                         <Reference type="RULE">PEPPOL-T024-R035</Reference>
                         <DataType>Text</DataType>

@@ -22,6 +22,7 @@
 :P013: https://docs.peppol.eu/pracc/profiles/p013/index.html[P013 Invitation to Tender]
 
 //PEPPOL Transactions Preaward
+:T003: https://docs.peppol.eu/pracc/transactions/T003/index.html[T003 - Tender Status Inquiry]
 :T004: https://docs.peppol.eu/pracc/transactions/T004/index.html[T004 Call for Tenders]
 :T024: https://docs.peppol.eu/pracc/transactions/T024/index.html[T024 Invitation to tender]
 

@@ -23,13 +23,13 @@ include::../{xml-doc-file}[tags=ProcurementProject]
 
 ----
 
-==	Invitation to tender with lots
+==	Invitation to Tender with lots
 
 When the Invitation to Tender has to be split into lots, the `cac:ProcurementProject` class must define the overall summary of the project and there must be a `cac:ProcurementProjectLot` class per each lot.
 
 The `cac:ProcurementProjectLot` class only requires to define the lot identifier and the name of the Lot. All the details on the lot are described as unstructured documents referred from the `cac:AdditionalDocumentReference` class.
 
-The details of each lot are described using unstructured documents referred into this invitation to tender.
+The details of each lot are described using unstructured documents referred in the Invitation to Tender.
 
 [source,xml,indent=0]
 .{name-trans-short} with lots

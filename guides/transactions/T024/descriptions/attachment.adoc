@@ -4,9 +4,12 @@ Using this transaction, the information of the tendering process and the details
 
 The `cac:AdditionalDocumentReference` class contains references to all the files for the tenderers to prepare their bids. The mandatory `cbc:ID` element contains an identifier of the file, and the `cac:DocumentStatusCode` is used to inform the tenderers about the action that has to be done with the current document.
 
-Find below an example on how to define a provided document reference.
+Find below an example on how to define a document reference that provides a document for reading purposes only.
 
-In this example, the contents of the coded elements DocumentTypeCode and DocumentStatusCode have been defined following the coded values of `documentTypeCode` to indicate if a document is provided for reading and information or required for return as part of the bid (e.g. a template that need to be filled).
+In this example, the contents of the coded elements DocumentTypeCode and DocumentStatusCode have been defined following the coded values of `documentTypeCode`:
+
+* The code `Provided` or `Pro` is used to indicate that a document is provided as part of an Invitation to Tender or tender. It must include a physical attachment. The value `No Return (NR)` of the codelist `documentStatusCode` indicates that the document must not be returned during the bid or tender (e.g. the encryption certificate to encrypt a tender)
+* The code `Required` or `Req` is used to indicate that a document must be created by the economic operator as part of the bid or tender  (e.g. a template that need to be filled). As documents that are classified as `Required` must be returned, they cannot use the value `No Return (NR)` of the codelist `documentStatusCode`. The remaining values of that codelist however, could indicate that document MUST be returned but no signature is required (e.g. `Return without signature (RWOS)`) or that an advanced signature is required.
 
 
 [source,xml,indent=0]

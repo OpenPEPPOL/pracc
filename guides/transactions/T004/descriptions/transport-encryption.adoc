@@ -29,12 +29,29 @@ Value supplied by tendering system of the CA. Is not necessarily populated with 
 | Provided document name | 1..1 | cac:Attachment/cac:ExternalReference/cbc:FileName | Name of a document that is provided as part of a tender or call for tenders. The extension of the file MUST be  “cer”.
 |===
 
+Alternatively a provided document URI could be used to reference the encryption certificate.
+
+[cols="3,2,3,4"]
+|===
+
+| Provided document URI | 1..1  | cac:Attachment/cac:ExternalReference/cbc:URI | A URI to the document provided inside the ASIC-E package. The extension of the file MUST be  “cer”.
+|===
+
 
 [source,xml,indent=0]
-.Example of the CfT (partly) for transporting the encryption certificate
+.Example of the CfT (partly) for transporting the encryption certificate with cbc:FileName
 
 ----
 include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
+
+----
+
+
+[source,xml,indent=0]
+.Example of the CfT (partly) for transporting the encryption certificate with cbc:URI
+
+----
+include::../{xml-doc-file}[tags=AdditionalDocumentReference4]
 
 ----
 

@@ -3,11 +3,13 @@
 
 == Introduction
 
-The Invitation to Tender (ItT) business document is used by the contracting authority to provide a qualified economic operator with the latest updated procurement documents. Sending the invitation to tender to any of the remaining economic operators determines the final step of the procurement procedure. Besides transporting procurement documents it MUST be used to transport the encryption certificate needed by the economic operator to encrypt his tender for submission.
-#Since the invitation to tender is also used to sent out business document changes after the tenderer has requested for status-updates (by sending a status-update-inquiry), any Invitation to tender MUST contain the encryption certificate needed by the economic operator to encrypt his tender for submission.
+The Invitation to Tender (ItT) business document is used by the contracting authority to provide a qualified economic operator with the latest updated procurement documents. Sending the Invitation to Tender to any of the remaining economic operators determines the second step of the restricted procurement procedure. Besides transporting procurement documents it MUST be used to transport the encryption certificate needed by the economic operator to encrypt his tender for submission.
+
+Since the Invitation to Tender is also used to sent out business document changes after a {T003} (by sending a status-update-inquiry), any Invitation to Tender MUST contain the encryption certificate needed by the economic operator to encrypt his tender for submission.
+
 == Encryption certificate
 
-The encryption certificate MUST be transported as an attachment within the invitation to tender's'ASIC. The Invitation to tender business document contains metadata regarding all attachments thus also for the tender encryption certificate.
+The encryption certificate MUST be transported as an attachment within the Invitation to Tender's'ASIC. The Invitation to Tender business document contains metadata regarding all attachments thus also for the tender encryption certificate.
 
 This metadata is resembled by the UBL container cac:AdditionalDocumentReference. In the case of the encryption certificate this container MUST contain the elements and values mentioned in the table below.
 
@@ -29,12 +31,28 @@ Value supplied by tendering system of the CA. Is not necessarily populated with 
 | Provided document name | 1..1 | cac:Attachment/cac:ExternalReference/cbc:FileName | Name of a document that is provided as part of a tender or call for tenders. The extension of the file MUST be  “cer”.
 |===
 
+Alternatively a provided document URI could be used to reference the encryption certificate.
+
+[cols="3,2,3,4"]
+|===
+
+| Provided document URI | 1..1  | cac:Attachment/cac:ExternalReference/cbc:URI | A URI to the document provided inside the ASIC-E package. The extension of the file MUST be  “cer”.
+|===
+
 
 [source,xml,indent=0]
-.Example of the CfT (partly) for transporting the encryption certificate
+.Example of the CfT (partly) for transporting the encryption certificate with cbc:FileName
 
 ----
 include::../{xml-doc-file}[tags=AdditionalDocumentReference1]
+
+----
+
+[source,xml,indent=0]
+.Example of the CfT (partly) for transporting the encryption certificate with cbc:URI
+
+----
+include::../{xml-doc-file}[tags=AdditionalDocumentReference4]
 
 ----
 

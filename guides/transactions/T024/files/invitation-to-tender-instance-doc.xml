@@ -12,7 +12,7 @@
 	<cbc:VersionID>1</cbc:VersionID>
 	<!-- tag::AdditionalDocumentReference1[] -->
 	<cac:AdditionalDocumentReference>
-		<cbc:ID>tenderenckey.cer</cbc:ID>
+		<cbc:ID>TenderEncryptionCertificate</cbc:ID>
 		<cbc:IssueDate>2016-06-27+02:00</cbc:IssueDate>
 		<cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
 		<cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
@@ -24,6 +24,20 @@
 		</cac:Attachment>
 	</cac:AdditionalDocumentReference>
 	<!-- end::AdditionalDocumentReference1[] -->
+	<!-- tag::AdditionalDocumentReference4[] -->
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>TenderEncryptionCertificate</cbc:ID>
+		<cbc:IssueDate>2016-06-27+02:00</cbc:IssueDate>
+		<cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
+		<cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
+		<cac:Attachment>
+			<cac:ExternalReference>
+				<cbc:URI>cid:tenderenckey.cer</cbc:URI>
+				<cbc:MimeCode>application/pkix-cert</cbc:MimeCode>
+			</cac:ExternalReference>
+		</cac:Attachment>
+	</cac:AdditionalDocumentReference>
+	<!-- end::AdditionalDocumentReference4[] -->
 	<!-- tag::AdditionalDocumentReference2[] -->
 	<cac:AdditionalDocumentReference>
 		<cbc:ID>Invitation to Tender</cbc:ID>
