@@ -184,7 +184,7 @@
         </rule>
 
         <rule context="cbc:IndustryClassificationCode">
-            <assert id="PEPPOL-T024-R0038" flags="fatal" test="./@listID>[PEPPOL-T024-R038] The Codelist used to define the receiver's economic operator role in this tender MUST be named by using the attribute listID and the ID has to be /"TendererRole/".</assert>
+            <assert id="PEPPOL-T024-R0038" flags="fatal" test="./@listID">[PEPPOL-T024-R038] The Codelist used to define the receiver's economic operator role in this tender MUST be named by using the attribute listID and the ID has to be /"TendererRole/".</assert>
             <report id="PEPPOL-T024-S360" flag="warning" test="./@*[not(name()='listID')]"><value-of select="$syntaxError"/>[PEPPOL-T024-S360] cbc:IndustryClassificationCode SHOULD NOT have any further attributes but listID</report>
         </rule>
 
