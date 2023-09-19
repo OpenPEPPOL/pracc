@@ -8,7 +8,7 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
 
-        <Term>t024:InvitationToTender</Term>
+        <Term>t004:CallForTenders</Term>
         <Name>Invitation to tender, root element</Name>
 
         <Element>

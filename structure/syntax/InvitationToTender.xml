@@ -8,7 +8,7 @@
     <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
     <Document>
 
-        <Term>t024:InvitationToTender</Term>
+        <Term>t024:CallForTenders</Term>
         <Name>Invitation To Tender, root element</Name>
 
         <Element>
@@ -16,7 +16,7 @@
             <Name>UBL version identifier</Name>
             <Description>Requires UBL version 2.2</Description>
             <Reference type="RULE">PEPPOL-T024-R001</Reference>
-            <Reference type="RULE">PEPPOL-T024-R039</Reference>
+            <Reference type="RULE">PEPPOL-T024-R040</Reference>
             <Value type="FIXED">2.2</Value>
         </Element>
 
@@ -346,11 +346,13 @@
                 <Term>cbc:IndustryClassificationCode</Term>
                 <Name>Economic operator role</Name>
                 <Description>The role of the economic operator when bidding from a consortium (main contractor, subcontractor , additional).</Description>
+                <Reference type="CODE_LIST">tendererRole</Reference>
                 <Attribute>
                     <Term>listID</Term>
-                    <Name>The identification of a list of codes.</Name>
-                    <Reference type="RULE">PEPPOL-T024-R0038</Reference>
-                    <Reference type="RULE">PEPPOL-T024-S0360</Reference>
+                    <Name>List identifier</Name>
+                    <Reference type="RULE">PEPPOL-T024-R041</Reference>
+                    <Reference type="RULE">PEPPOL-T024-S360</Reference>
+                    <Value type="FIXED">tendererRole</Value>
                 </Attribute>
                 <DataType>Identifier</DataType>
             </Element>
@@ -638,6 +640,7 @@
                     indicates whether the new contract will be based on an already established framework agreement or
                     dynamic purchasing system or not.
                 </Description>
+                <Reference type="RULE">PEPPOL-T024-R039</Reference>
                 <Reference type="CODE_LIST">contractType</Reference>
                 <Attribute>
                     <Term>listID</Term>
