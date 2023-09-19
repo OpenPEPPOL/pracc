@@ -59,7 +59,7 @@
         </cac:TenderRecipientParty>
     </cac:TenderingTerms>
     <cac:TenderingProcess>
-        <cbc:ProcedureCode listID="PR_PROC">open</cbc:ProcedureCode>
+        <cbc:ProcedureCode listID="PR_PROC">1</cbc:ProcedureCode>
         <cbc:SubmissionMethodCode listID="BII_SUBMISSION">ELECTRONIC</cbc:SubmissionMethodCode>
         <cac:TenderSubmissionDeadlinePeriod>
             <cbc:EndDate>2016-10-20+02:00</cbc:EndDate>

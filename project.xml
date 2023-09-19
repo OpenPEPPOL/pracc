@@ -317,7 +317,7 @@
     <Resource>
         <Identifier>T024</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-procurement-procedure-subscription/PEPPOL-T024.sch</Path>
+        <Path>rules/peppol-invitation-to-tender/PEPPOL-T024.sch</Path>
         <Title>PEPPOL T024 rules - Invitation to Tender 1.0</Title>
     </Resource>
 

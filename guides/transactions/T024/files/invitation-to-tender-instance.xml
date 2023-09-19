@@ -23,13 +23,13 @@
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
     <cac:AdditionalDocumentReference>
-        <cbc:ID>EinladungAngebotsabgabe</cbc:ID>
+        <cbc:ID>Invitation to Tender</cbc:ID>
         <cbc:IssueDate>2016-10-20+02:00</cbc:IssueDate>
         <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
         <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
         <cac:Attachment>
             <cac:ExternalReference>
-                <cbc:FileName>einladungAngebotsabgabe.html</cbc:FileName>
+                <cbc:FileName>TenderInviatation.html</cbc:FileName>
             </cac:ExternalReference>
         </cac:Attachment>
     </cac:AdditionalDocumentReference>
@@ -62,10 +62,10 @@
         </cac:PartyName>
         <cac:PostalAddress>
             <cbc:StreetName>PO Box 20061</cbc:StreetName>
-            <cbc:AdditionalStreetName>just for demonstration purposes</cbc:AdditionalStreetName>
+            <cbc:AdditionalStreetName>Tulip Street 33</cbc:AdditionalStreetName>
             <cbc:CityName>The Hague</cbc:CityName>
             <cbc:PostalZone>2500 EB</cbc:PostalZone>
-            <cbc:CountrySubentity>province of South Holland</cbc:CountrySubentity>
+            <cbc:CountrySubentity>Province of South Holland</cbc:CountrySubentity>
             <cac:Country>
                 <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NL</cbc:IdentificationCode>
             </cac:Country>
