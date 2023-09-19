@@ -54,7 +54,7 @@
     </cac:ContractingParty>
     <cac:ReceiverParty>
         <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
-        <cbc:IndustryClassificationCode listID="TendererRole">MT</cbc:IndustryClassificationCode>
+        <cbc:IndustryClassificationCode listID="tendererRole">MT</cbc:IndustryClassificationCode>
         <cac:PartyIdentification>
             <cbc:ID schemeID="0088">7300010000001</cbc:ID>
         </cac:PartyIdentification>
