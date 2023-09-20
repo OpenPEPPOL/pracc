@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
-    <Term>CallForTenders</Term>
+    <Term>InvitationToTender</Term>
 
     <Name>Invitation To Tender (T024)</Name>
     <Namespace prefix="t024">urn:oasis:names:specification:ubl:schema:xsd:CallForTenders-2</Namespace>
