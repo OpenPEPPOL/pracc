@@ -9,7 +9,7 @@
     <Document>
 
         <Term>t004:CallForTenders</Term>
-        <Name>Invitation to tender, root element</Name>
+        <Name>Call For Tenders, root element</Name>
 
         <Element>
             <Term>cbc:UBLVersionID</Term>
