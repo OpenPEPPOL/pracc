@@ -7,6 +7,7 @@ on:
       - feature/p012
       - feature/p013
       - 2023
+      - Pre-Award_Catalogue
 
 jobs:
   build:

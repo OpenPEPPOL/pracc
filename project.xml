@@ -34,22 +34,23 @@
     <Documentation path="profiles/p008/index.html">P008 - Publish Notice - 1.2</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice 1.2</Documentation>
     <Documentation path="transactions/T016/index.html">T016 - Notice Publication Response 1.2</Documentation>
-
     <Documentation path="profiles/p009/index.html">P009 - Notify Awarding - 1.1</Documentation>
-    <Documentation path="transactions/T017/index.html">T017 - Awarding Notification 1.1</Documentation>
-    <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.1</Documentation>
-    <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response 1.1</Documentation>
-
-    <Documentation path="profiles/p011/index.html">P011 - Qualification - 1.1</Documentation>
-    <Documentation path="transactions/T019/index.html">T019 - Qualification 1.1</Documentation>
-    <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation 1.1</Documentation>
-
+    <Documentation path="transactions/T017/index.html">T017 - Awarding Notification</Documentation>
+    <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
+    <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response</Documentation>
+    <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
+    <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
+    <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
     <Documentation path="profiles/p012/index.html">P012 - Qualification Rejection - 1.0</Documentation>
     <Documentation path="transactions/T023/index.html">T023 - Qualification Rejection 1.0</Documentation>
 
     <Documentation path="profiles/p013/index.html">P013 - Invitation to Tender - 1.0</Documentation>
     <Documentation path="transactions/T024/index.html">T024 - Invitation to Tender 1.0</Documentation>
     <Documentation path="transactions/T025/index.html">T003 - Tender Status Inquiry 1.2</Documentation>
+
+    <Documentation path="profiles/p035/index.html">P035 - Pre-Award Catalogue - 1.1</Documentation>
+    <Documentation path="transactions/CatalogueRequest/index.html">T035 Pre-Award Catalogue Request</Documentation>
+    <Documentation path="transactions/Catalogue/index.html">T036 Pre-Award Catalogue</Documentation>
 
     <Documentation path="changelog/index.html">Changelog</Documentation>
 
@@ -168,6 +169,16 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/QualificationRejection.xml</Path>
         <Title>Syntax Mapping T023 - Qualification Rejection 1.0</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PreAwardCatalogueRequest.xml</Path>
+        <Title>Syntax Mapping T035 - Pre-Award Catalogue Request</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>structure/syntax/PreAwardCatalogue.xml</Path>
+        <Title>Syntax Mapping T036 - Pre-Award Catalogue</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -401,6 +412,34 @@
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/uncl1001.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5305.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL5387.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL8273.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNECERec20-11e.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/TransactionConditions.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL6313.xml</Path>
+    </Resource>
+    <Resource>
+        <Type>CodeList-1</Type>
+        <Path>structure/codelist/UNCL7143.xml</Path>
     </Resource>
 
     <Resource>
