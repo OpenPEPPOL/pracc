@@ -737,6 +737,8 @@
             <Element>
                 <Term>cac:MainCommodityClassification</Term>
                 <Name>Main commodity classification</Name>
+                <Description>The main commodity is the one representing the highest value fraction of the procurement.
+                </Description>
 
                 <Element>
                     <Term>cbc:ItemClassificationCode</Term>
@@ -765,6 +767,7 @@
                     <Attribute>
                         <Term>listID</Term>
                         <Name>List identifier</Name>
+                        <!--Schould be CPV Supplement-->
                         <Value type="FIXED">CPV</Value>
                     </Attribute>
 					<DataType>Code</DataType>
@@ -774,6 +777,7 @@
             <Element cardinality="1..n">
                 <Term>cac:RealizedLocation</Term>
                 <Name>Realized location</Name>
+                <Description>Description of the procurement project location</Description>
 
                 <Element>
                     <Term>cbc:ID</Term>

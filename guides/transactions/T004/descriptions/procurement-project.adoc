@@ -9,8 +9,8 @@ A Call for tenders without lots has a single `cac:ProcurementProject` class. The
 In this case, the document instance must not contain any `cac:ProcurementProjectLot` class.
 
 
-The example below demonstrates the use of the `cac:ProcurementProject` class for a tendering process without lots. The structured information does not convey economic information. It is used to describe the project, to provide classification codes using the Common Procurement Vocabulary and the location where the project will be executed using the NUTS code.
-The procurement project in does not describe the tender deliverables.
+The example below demonstrates the use of the `cac:ProcurementProject` class for a tendering process without lots. The structured information does not convey economic information. It is used to describe the project, to provide classification codes for main commodity and additional commodity using the Common Procurement Vocabulary link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/cpv[(CPV codes)] and the location where the project will be executed using the codelist for Nomenclature of Territorial Units for Statistics link:https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/nuts[(NUTS codes)].
+The procurement project does not describe the tender deliverables.
 
 
 [source,xml,indent=0]

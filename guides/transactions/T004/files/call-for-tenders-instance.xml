@@ -68,14 +68,17 @@
         </cac:TenderSubmissionDeadlinePeriod>
     </cac:TenderingProcess>
     <cac:ProcurementProject>
-        <cbc:Name>Laptops</cbc:Name>
-        <cbc:Description>Laptops</cbc:Description>
+        <cbc:Name>Office Machinery</cbc:Name>
+        <cbc:Description>Purchase of notebooks and associated equipment</cbc:Description>
         <cbc:ProcurementTypeCode listID="PROJECT_TYPE">2</cbc:ProcurementTypeCode>
         <cac:MainCommodityClassification>
-            <cbc:ItemClassificationCode listID="CPV">98300000-6</cbc:ItemClassificationCode>
+            <cbc:ItemClassificationCode listID="CPV">30100000</cbc:ItemClassificationCode>
         </cac:MainCommodityClassification>
+        <cac:AdditionalCommodityClassification>
+            <cbc:ItemClassificationCode listID="CPV">30120000</cbc:ItemClassificationCode>
+        </cac:AdditionalCommodityClassification>
         <cac:RealizedLocation>
-            <cbc:ID schemeID="NUTS">DE01</cbc:ID>
+            <cbc:ID schemeID="NUTS">DE148</cbc:ID>
         </cac:RealizedLocation>
     </cac:ProcurementProject>
 </CallForTenders>
