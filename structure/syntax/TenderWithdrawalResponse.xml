@@ -110,7 +110,7 @@
             <Reference type="RULE">PEPPOL-T014-R012</Reference>
             <DataType>Time</DataType>
         </Element>
-        <Element>
+        <Element cardinality="1..n">
             <Term>cac:TenderDocumentReference</Term>
             <Name>Received document reference</Name>
             <Description>The tender reception notification contains the reference to the tender document sent by the
@@ -136,7 +136,7 @@
             <Element>
                 <Term>cbc:DocumentTypeCode</Term>
                 <Name>Document type code</Name>
-                <Description>Document Type Code is coded according to code list 1001 issued by UN/CEFACT.</Description>
+                <Description>Document Type Code is coded according to code list 1001 issued by UN/CEFACT. Must be 13 to reference the REM evidence and 310 to reference the Tender.</Description>
                 <Reference type="RULE">PEPPOL-T014-R017</Reference>
                 <Attribute>
                     <Term>listID</Term>
@@ -146,7 +146,7 @@
                     <Value type="FIXED">UNCL1001</Value>
                 </Attribute>
                 <DataType>Code</DataType>
-                <Value type="FIXED">23</Value>
+                <Value type="FIXED">13 or 310</Value>
             </Element>
             <Element>
                 <Term>cac:Attachment</Term>

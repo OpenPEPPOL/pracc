@@ -9,7 +9,9 @@
 === P012 - New Profile - Invitation to Tender 1.0
 
 
-=== Business Rules
+=== Business Rules and Syntax Mapping
+
+* T14: Change the cardinality of cac:TenderDocumentReference in T014 from 1..1 to 1..n. TenderDocumentReference SHOULD NOT be used "more than once" was changed to "more than twice". Corresponding description were added as defined by the transaction to use code 13 for REM evidence and 310 for Tender reference. Fixed value 23 (typo - should be 13) was removed to allow for both values.
 
 
 === Editorial changes
