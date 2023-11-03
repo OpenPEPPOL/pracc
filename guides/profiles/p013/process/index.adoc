@@ -13,7 +13,7 @@ image::../images/InvitationToTender.svg[align="center", width=800]
 | Description
 | Description
 | The contracting body sends an electronic Invitation to Tender document containing the information required for the economic operator to participate in a tendering process.
-The contracting body may send a formal Invitation to Tender letter as an attachment to the Invitation to Tender message.
+The contracting body may send a formal Invitation to Tender as an attachment to the Invitation to Tender document.
 The economic operator evaluates the information given with the Invitation to Tender and decides whether to submit an tender or not.
 If the economic operator accepts the invitation and submits a tender the business process continuous through the external process Tender Submission.
 If the economic operator rejects the invitation, no notification needs to be sent back to the contracting body.
@@ -25,7 +25,7 @@ If the economic operator rejects the invitation, no notification needs to be sen
 | The economic operator has received the Invitation to Tender and can proceed to prepare and submit the tender.
 
 | Remarks
-| The Invitation to Tender is typically used in negotiated procedure and restricted procedures where the economic operator could not view the call for tenders information and a list of selected/qualified economic operators is created at a first step.
+| The Invitation to Tender is typically used in negotiated procedure and restricted procedures where the economic operator could not view the call for tenders information and a list of selected economic operators is created at a first step.
 |===
 
 
@@ -42,13 +42,13 @@ If the economic operator rejects the invitation, no notification needs to be sen
 | The economic operator receives the Invitation to Tender, enabling him to prepare a bid.
 | Send Invitation to Tender Status Inquiry
 | Economic Operator
-| The economic operator (regularly) asks for status changes of the procurement documents.
+| The economic operator (regularly) asks for Tender Document Status changes.
 | Receive Invitation to Tender Status Inquiry
 | Contracting body
 | The contracting body receives an Invitation to Tender status update request from the Economic operator.
 | Sent current version of the Invitation to Tender
 | Contracting body
-| The contracting body sents the current version of the Invitation to Tender to the Economic operator.
+| The contracting body sends the current version of the to the Economic operator.
 |===
 
 
