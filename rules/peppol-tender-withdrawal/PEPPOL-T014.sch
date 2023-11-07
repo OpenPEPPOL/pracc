@@ -142,8 +142,7 @@
         </rule>
 
         <rule context="ubl:TenderReceipt/cac:TenderDocumentReference/cbc:DocumentTypeCode">
-            <assert id="PEPPOL-T014-R017" flag="fatal" test="(normalize-space(.)='13') or (normalize-space(.)='310')">[PEPPOL-T014-R014] The document
-                type code for the document reference (the tender withdrawal) MUST be '310' or '13' if you refer to a REM evidence.
+            <assert id="PEPPOL-T014-R017" flag="fatal" test="(normalize-space(.)='13') or (normalize-space(.)='310')">[PEPPOL-T014-R014] The document type code for the document reference (the received tender) MUST be '310' or '13' if you refer to a REM evidence.
             </assert>
             <assert id="PEPPOL-T014-R023" flag="fatal" test="normalize-space(./@listID)='UNCL1001'">[PEPPOL-T014-R023]
                 listID for Document Type Code MUST be 'UNCL1001'.
