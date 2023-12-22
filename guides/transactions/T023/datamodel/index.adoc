@@ -2,18 +2,18 @@
 
 The following transaction data model illustrates the classes and information elements of {name-transaction}.
 
-image::../files/QualificationRejection.png[align="center"]
+image::../files/QualificationResponse.png[align="center"]
 
 == XML example
 
 The following XML example illustrates the structure of an instance of {name-transaction}.
 
-link:files/QualificationRejection.xml[Link to example file]
+link:files/QualificationResponse.xml[Link to example file]
 
 [source,xml,indent=0]
 ----
 
-include::../files/QualificationRejection.xml[tag=**]
+include::../files/QualificationResponse.xml[tag=**]
 
 ----
 

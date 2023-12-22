@@ -1,4 +1,3 @@
-// TODO replace with rejection
 
 = PEPPOL identifiers
 
@@ -23,8 +22,8 @@ In the table below you will find the values to be used as the specification iden
 | TransactionID | Transaction name | Short Description | *Element* `cbc:CustomizationID`
 
 | T023
-| Qualification
-| The CA sends the rejection of the qualification to the EO.
+| Qualification Response
+| The CA sends a qualification response to the EO.
 | _urn:fdc:peppol.eu:prac:trns:t023:1.0_
 
 |===

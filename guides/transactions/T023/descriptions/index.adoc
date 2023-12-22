@@ -1,4 +1,3 @@
-// TODO
 
 [[descriptions]]
 = Description of selected parts of the transaction
@@ -16,7 +15,7 @@ The identifier enables positive referencing the transaction instance for various
 [source,xml,indent=0]
 .Example of qualification rejection document identifier
 ....
-include::../files/QualificationRejection.xml[tags=ID]
+include::../files/QualificationResponse.xml[tags=ID]
 ....
 <.> A transaction instance must contain an identifier, being expressed in uuid syntax
 
@@ -45,7 +44,7 @@ NOTE: The response issue time must specify the time zone.
 [source,xml,indent=0]
 .Example of response issue date and time
 ....
-include::../files/QualificationRejection.xml[tags=IssueDateTime]
+include::../files/QualificationResponse.xml[tags=IssueDateTime]
 ....
 <.> Format for the date has to be yyyy-mm-dd
 <.> Format for the time has to be hh:mm:ssTZD, granularity down to seconds and timezone
@@ -55,13 +54,13 @@ include::../files/QualificationRejection.xml[tags=IssueDateTime]
 
 === Sender Party
 
-The party sending a Qualification Rejection to the party that initiated the request to qualify for a Procurement.
+The party sending a Qualification Response to the party that initiated the request to qualify for a Procurement.
 The sender party in this case corresponds to the contracting body.
 
 [source,xml,indent=0]
 .Example of sender party
 ....
-include::../files/QualificationRejection.xml[tags=SenderParty]
+include::../files/QualificationResponse.xml[tags=SenderParty]
 ....
 <.> Identifies the sender party's electronic address and the scheme identifier for the electronic address
 <.> Identifies the sender party itself and the scheme identifier to resolve sender party's identifier
@@ -69,45 +68,45 @@ include::../files/QualificationRejection.xml[tags=SenderParty]
 
 === Receiver Party
 
-The party who is supposed to receive the Qualification Rejection. This is the same party that initiated the request to qualify for a Procurement.
-The receiver party in this case corresponds to the Economic Operator who handed in the Qualification to which this Qualification Rejection refers to.
+The party who is supposed to receive the Qualification Response. This is the same party that initiated the request to qualify for a Procurement.
+The receiver party in this case corresponds to the Economic Operator who handed in the Qualification to which this Qualification Response refers to.
 
 [source,xml,indent=0]
 .Example of receiver party
 ....
-include::../files/QualificationRejection.xml[tags=ReceiverParty]
+include::../files/QualificationResponse.xml[tags=ReceiverParty]
 ....
 <.> Identifies the receiver party's electronic address and the scheme identifier for the electronic address
 <.> Identifies the receiver party and the scheme identifier to resolve the receiver party's identifier
 <.> Contains the receiver party's official name including the organization's legal form.
 
 
-== Rejection Document Reference
+== Response Document Reference
 
-The Rejection Document Reference contains a reference to the original Qualification Document that had been handed in by the Economic Operator (receiver party of this document) to qualify for the procurement.
+The Response Document Reference contains a reference to the original Qualification Document that had been handed in by the Economic Operator (receiver party of this document) to qualify for the procurement.
 
 [source,xml,indent=0]
-.Example of Rejection Document Reference
+.Example of Response Document Reference
 ....
-include::../files/QualificationRejection.xml[tags=ResolutionDocumentReference]
+include::../files/QualificationResponse.xml[tags=ResolutionDocumentReference]
 ....
-<.> The Rejection Document Reference must contain an identifier, being expressed in uuid syntax.
+<.> The Response Document Reference must contain an identifier, being expressed in uuid syntax.
 
 
-== Qualification Rejection Resolution
+== Qualification Response Resolution
 
-The Qualification Rejection Resolution is the central part of any Qualification Rejection. It contains all information required to inform about the Qualification Rejection.
+The Qualification Response Resolution is the central part of any Qualification Response. It contains all information required to inform about the Qualification Rejection.
 
-*The Qualification Rejection Resolution returned with this transaction will always be negative*. If more than one lot have been aimed to qualify for and need to be rejected, one Qualification Rejection Resolution for each lot is expected.
+*The Qualification Response Resolution returned with this transaction may be positive or negative*. It is expected to respond every rejection but it is also possible to respond any acceptance. If more than one lot have been aimed to qualify for and need to be responded, one Qualification Response Resolution for each lot is expected.
 
 [source,xml,indent=0]
 .Example of Qualification Rejection Resolution
 ....
-include::../files/QualificationRejection.xml[tags=QualificationResolution]
+include::../files/QualificationResponse.xml[tags=QualificationResolution]
 ....
-<.> States that the Tenderer is not allowed to attend the further Procurement Process, only *false* is the allowed value here.
-<.> The decision leading to this Qualification Rejection Resolution can be explained in one or more Reason for Rejection elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided.
+<.> Gives the qualification result. If the result ist *false*, it states that the Tenderer is not allowed to attend the further Procurement Process. Any qualification rejection is required to be answered with *false*. A positive answer resulting in *true* may also be given, but is not necessarily requested.
+<.> If the decision leading to a Qualification Rejection Resolution can be explained in one or more Reason for Rejection elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided.
 <.> The Date at which the decision expressed in this Qualification Rejection Resolution was made.
-<.> The ProcurementProjectLot referenced in this Qualification Rejection Resolution
+<.> The ProcurementProjectLot referenced in this Qualification Response
 <.> The ProcurementProjectLot's ID
 

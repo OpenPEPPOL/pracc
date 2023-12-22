@@ -10,7 +10,7 @@ include::../../shared/peppol.adoc[]
 | Short Description
 | `cbc:CustomizationID`
 | T023
-| Qualification Rejection
-| The contracting body sends the Qualification Rejection to the economic operator that has tendered.
+| Qualification Response
+| The contracting body sends the Qualification Response to the economic operator that has tendered.
 |  urn:fdc:peppol.eu:prac:trns:t023:1.0
 |===
