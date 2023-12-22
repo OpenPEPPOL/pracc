@@ -8,7 +8,7 @@ image::../files/QualificationResponse.png[align="center"]
 
 The following XML example illustrates the structure of an instance of {name-transaction}.
 
-link:files/QualificationResponse.xml[Link to example file]
+link:../files/QualificationResponse.xml[Link to example file]
 
 [source,xml,indent=0]
 ----
