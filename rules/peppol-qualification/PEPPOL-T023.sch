@@ -93,14 +93,11 @@
             <assert id="PEPPOL-T023-R039" flag="fatal" test="cbc:AdmissionCode">Element 'cbc:AdmissionCode' MUST be provided.</assert>
             <assert id="PEPPOL-T023-R040" flag="fatal" test="cbc:ResolutionDate">Element 'cbc:ResolutionDate' MUST be provided.</assert>
         </rule>
-        <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:AdmissionCode">
-            <assert id="PEPPOL-T023-R041" flag="fatal" test="(not(cbc:AdmissionCode = false()))">AdmissionCode MUST always be "false" in a Qualification Resolution.</assert>
-        </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cbc:Resolution">
-            <assert id="PEPPOL-T023-R042" flag="fatal" test="(not(cbc:Resolution))">Each Qualification Response Resolution element has to have one Reason for response.</assert>
+            <assert id="PEPPOL-T023-R042" flag="fatal" test="(../cbc:AdmissionCode = 'false' and not(cbc:Resolution))">Qualification Resolution Element with cbc:AdmissionCode 'false'  has to have at least one Resolution element.</assert>
         </rule>
         <rule context="ubl:TendererQualificationResponse/cac:QualificationResolution/cac:ProcurementProjectLot">
-            <report id="PEPPOL-T023-R044" flag="warning" test="(not(cac:ProcurementProjectLot))">If a Qualification Response Resolution has to be expressed for more than one lot in a procurement, a dedicated reason for response be given per lot and the appropriate lot identifier SHOULD be named.</report>
+            <report id="PEPPOL-T023-R044" flag="warning" test="(not(cac:ProcurementProjectLot))">If a Qualification Response Resolution has to be expressed for more than one lot in a procurement, the appropriate lot identifier SHOULD be named.</report>
         </rule>
     </pattern>
 </schema>

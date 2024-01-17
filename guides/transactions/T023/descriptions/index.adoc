@@ -8,12 +8,12 @@ The transaction including business terms, business rules and code lists are base
 
 == Identifier
 
-=== Qualification Rejection Identifier
+=== Qualification Response Identifier
 
 The identifier enables positive referencing the transaction instance for various purposes including referencing between transactions that are part of the same process. Must be expressed as a UUID.
 
 [source,xml,indent=0]
-.Example of qualification rejection document identifier
+.Example of qualification response document identifier
 ....
 include::../files/QualificationResponse.xml[tags=ID]
 ....
@@ -100,12 +100,12 @@ The Qualification Response Resolution is the central part of any Qualification R
 *The Qualification Response Resolution returned with this transaction may be positive or negative*. It is expected to respond every rejection but it is also possible to respond any acceptance. If more than one lot have been aimed to qualify for and need to be responded, one Qualification Response Resolution for each lot is expected.
 
 [source,xml,indent=0]
-.Example of Qualification Rejection Resolution
+.Example of Qualification Response Resolution
 ....
 include::../files/QualificationResponse.xml[tags=QualificationResolution]
 ....
-<.> Gives the qualification result. If the result ist *false*, it states that the Tenderer is not allowed to attend the further Procurement Process. Any qualification rejection is required to be answered with *false*. A positive answer resulting in *true* may also be given, but is not necessarily requested.
-<.> If the decision leading to a Qualification Rejection Resolution can be explained in one or more Reason for Rejection elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided.
+<.> Gives the qualification result. If the result ist *false*, it states that the Tenderer is not allowed to attend the further Procurement Process and the (generally neutral) qualification response can alo be seen as qualification rejection. Any qualification rejection is required to be answered. A positive answer resulting in *true* may also be given, but is not necessarily requested.
+<.> If the decision leading to a Qualification Rejection, the Reason for Rejection  can be explained in one or more resolution elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided. A positive answer may be sent without a specific resolution element.
 <.> The Date at which the decision expressed in this Qualification Rejection Resolution was made.
 <.> The ProcurementProjectLot referenced in this Qualification Response
 <.> The ProcurementProjectLot's ID

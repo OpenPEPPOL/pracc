@@ -63,9 +63,7 @@
     </cac:QualificationResolution>
     <!-- end::QualificationResolution[] -->
     <cac:QualificationResolution>
-        <cbc:AdmissionCode>false</cbc:AdmissionCode>
-        <cbc:Resolution>limited turnover</cbc:Resolution>
-        <cbc:Resolution>criminal conviction - money laundering</cbc:Resolution>
+        <cbc:AdmissionCode>true</cbc:AdmissionCode>
         <cbc:ResolutionDate>2023-01-07</cbc:ResolutionDate>
         <cac:ProcurementProjectLot>
             <cbc:ID>765a9937-16d5-4513-92b4-cc9800925951::3</cbc:ID>

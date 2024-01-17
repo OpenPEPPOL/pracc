@@ -9,6 +9,5 @@
 | cbc:AdmissionCode
 | Document location
 | __cac:QualificationResolution/cbc:AdmissionCode__
-| Fixed Value
-|  `false`
+|  `true`, `false`
 |===
