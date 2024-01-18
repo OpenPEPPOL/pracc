@@ -41,8 +41,8 @@
     <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
     <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
     <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
-    <Documentation path="profiles/p012/index.html">P012 - Qualification Rejection - 1.0</Documentation>
-    <Documentation path="transactions/T023/index.html">T023 - Qualification Rejection 1.0</Documentation>
+    <Documentation path="profiles/p012/index.html">P012 - Qualification Response - 1.0</Documentation>
+    <Documentation path="transactions/T023/index.html">T023 - Qualification Response 1.0</Documentation>
 
     <Documentation path="profiles/p013/index.html">P013 - Invitation to Tender - 1.0</Documentation>
     <Documentation path="transactions/T024/index.html">T024 - Invitation to Tender 1.0</Documentation>
