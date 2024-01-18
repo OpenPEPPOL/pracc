@@ -167,8 +167,8 @@
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/QualificationRejection.xml</Path>
-        <Title>Syntax Mapping T023 - Qualification Rejection 1.0</Title>
+        <Path>structure/syntax/QualificationResponse.xml</Path>
+        <Title>Syntax Mapping T023 - Qualification Response 1.0</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -323,7 +323,7 @@
         <Identifier>T023</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-qualification/PEPPOL-T023.sch</Path>
-        <Title>PEPPOL T023 rules - Qualification Rejection 1.0</Title>
+        <Title>PEPPOL T023 rules - Qualification Response 1.0</Title>
     </Resource>
     <Resource>
         <Identifier>T024</Identifier>
@@ -462,6 +462,13 @@
         <Title>Peppol BIS pre-award guide - Notification and Open Procedure</Title>
         <Description>The Peppol BIS pre-award guide - Notification and Open Procedure</Description>
         <Property key="download">Peppol-BIS-pre-award-guide_Notification-and-Open-Procedure-v1.0.pdf</Property>
+    </Resource>
+    <Resource>
+        <Type>native:File</Type>
+        <Path>guides/Peppol-BIS-pre-award-guide_Notification-and-Restricted-Procedure-v1.0.pdf</Path>
+        <Title>Peppol BIS pre-award guide - Notification and Restricted Procedure</Title>
+        <Description>The Peppol BIS pre-award guide - Notification and Restricted Procedure</Description>
+        <!--<Property key="download">Peppol-BIS-pre-award-guide_Notification-and-Restricted-Procedure-v1.0.pdf</Property>-->
     </Resource>
     <Resource>
         <Type>native:File</Type>
