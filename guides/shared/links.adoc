@@ -95,6 +95,7 @@
 :2014-23-EU: https://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX:32014L0023[Directive 2014/23/EU]
 :2014-24-EU: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32014L0024[Directive 2014/24/EU]
 :2014-25-EU: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32014L0025[Directive 2014/25/EU]
+:2009-81-EC: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32009L0081
 :espd-reg: https://eur-lex.europa.eu/eli/reg_impl/2016/7/oj[Commission Implementing Regulation (EU) 2016/7]
 
 // ESPD

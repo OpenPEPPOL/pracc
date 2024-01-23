@@ -19,7 +19,7 @@ image::../images/bpmnQualificationResponse.svg[align="center", width=800]
 .Role description
 |===
 | Activity | Role involved | Description
-| Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic operators that will be excluded from the further tendering process due to qualification mismatch.
+| Send qualification rejection | Contracting body | The contracting body sends an electronic qualification rejection to those economic operators being excluded from the further tendering process due to qualification mismatch.
 | Receive qualification rejection | Economic operator | The economic operator receives the qualification rejection.
 |===
 

@@ -55,7 +55,7 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 285, 158)" id="gfx-523c0baa-577b-436e-bacd-36efcd3703b1" display="block" class="djs-element djs-shape" data-element-id="523c0baa-577b-436e-bacd-36efcd3703b1">
+    <g transform="matrix(1, 0, 0, 1, 285, 158)" id="gfx-cb77625d-52d8-449c-bc14-7c4054dac481" display="block" class="djs-element djs-shape" data-element-id="cb77625d-52d8-449c-bc14-7c4054dac481">
       <g class="djs-visual">
         <rect x="0" y="0" width="92" height="53" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="92" height="48" class="djs-svg-text">
@@ -84,7 +84,7 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 280, 586)" id="gfx-1614ba22-7398-4278-9b93-6fd12e5e27a9" display="block" class="djs-element djs-shape" data-element-id="1614ba22-7398-4278-9b93-6fd12e5e27a9">
+    <g transform="matrix(1, 0, 0, 1, 280, 586)" id="gfx-5bc9fd01-37ba-4c6b-b979-77925a4ae061" display="block" class="djs-element djs-shape" data-element-id="5bc9fd01-37ba-4c6b-b979-77925a4ae061">
       <g class="djs-visual">
         <rect x="0" y="0" width="90" height="50" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="90" height="45" class="djs-svg-text">
@@ -110,7 +110,7 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 124, 214)" id="gfx-511129dc-5c8a-499c-af78-0c2cd4f49131" display="block" class="djs-element djs-shape" data-element-id="511129dc-5c8a-499c-af78-0c2cd4f49131">
+    <g transform="matrix(1, 0, 0, 1, 124, 214)" id="gfx-ccce4103-aa97-4cdd-9f89-4816c3979b61" display="block" class="djs-element djs-shape" data-element-id="ccce4103-aa97-4cdd-9f89-4816c3979b61">
       <g class="djs-visual">
         <rect x="0" y="0" width="121" height="53" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="121" height="48" class="djs-svg-text">
@@ -146,7 +146,7 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 448, 214)" id="gfx-0c09231c-96ea-469b-b6c1-09b52a108378" display="block" class="djs-element djs-shape" data-element-id="0c09231c-96ea-469b-b6c1-09b52a108378">
+    <g transform="matrix(1, 0, 0, 1, 448, 214)" id="gfx-59ea1490-f395-4666-b454-c510779d79f0" display="block" class="djs-element djs-shape" data-element-id="59ea1490-f395-4666-b454-c510779d79f0">
       <g class="djs-visual">
         <rect x="0" y="0" width="119" height="53" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="119" height="48" class="djs-svg-text">
@@ -170,7 +170,7 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 490, 553)" id="gfx-29cee314-327a-47fe-bb71-705d5dac10e9" display="block" class="djs-element djs-shape" data-element-id="29cee314-327a-47fe-bb71-705d5dac10e9">
+    <g transform="matrix(1, 0, 0, 1, 490, 553)" id="gfx-bb1e6dac-0183-4087-b51a-0cac3139046e" display="block" class="djs-element djs-shape" data-element-id="bb1e6dac-0183-4087-b51a-0cac3139046e">
       <g class="djs-visual">
         <rect x="0" y="0" width="107" height="79" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="107" height="74" class="djs-svg-text">
@@ -195,12 +195,12 @@
     </g>
   </g>
   <g class="djs-group">
-    <g transform="matrix(1, 0, 0, 1, 465, 752)" id="gfx-3537060b-9178-4c24-b1d9-37fa538ef6a0" display="block" class="djs-element djs-shape" data-element-id="3537060b-9178-4c24-b1d9-37fa538ef6a0">
+    <g transform="matrix(1, 0, 0, 1, 465, 752)" id="gfx-513e7bb9-659c-4e26-ac77-6952e3448287" display="block" class="djs-element djs-shape" data-element-id="513e7bb9-659c-4e26-ac77-6952e3448287">
       <g class="djs-visual">
         <rect x="0" y="0" width="120" height="79" fill-opacity="0" stroke-opacity="0" style="fill:#FFFFFF;stroke:transparent;" />
         <svg width="120" height="74" class="djs-svg-text">
           <text font-family="'Segoe UI'" font-size="10.6252px" font-style="normal" font-weight="normal" lineHeight="1.2" textDirection="0" textAlign="center" class="djs-label" style="fill:black;">
-            <tspan x="7.750519" y="14.75">Qualificaiton accepted</tspan>
+            <tspan x="7.750519" y="14.75">Qualification accepted</tspan>
           </text>
         </svg>
       </g>

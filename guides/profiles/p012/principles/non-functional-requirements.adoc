@@ -7,7 +7,9 @@ For the {link-peppol} BIS all non-functional requirements are applicable as docu
 |===
 | Req. ID | Requirement statement
 | br51-001 | The contracting body shall inform candidates who failed to meet the exclusion and/or selection criteria of the reasons why they failed before the award decision.
-| br51-002 | The contracting body shall inform all unsuccessful tenderers simultaneously and individually of the reasons why they failed.
-| br51-003 | The contracting body shall inform the tenderer of the rejection of their qualification.
+             The contracting body may also inform those candidates whose qualification requests have been accepted. This should be good practice in those cases when qualification is directly followed by any invitation to tender (e.g. when using a DPS).
+| br51-002 | The contracting body shall inform at least any unsuccessful tenderer simultaneously and individually of the reasons why they failed.
+              In case of a positive qualification response, a reason may be left out.
+| br51-003 | The contracting body shall inform any unsuccessful tenderer of the rejection of their qualification.
 | br51-004 | The contracting body shall specify that the notification does not imply any commitment on behalf of the contracting body.
 |===
