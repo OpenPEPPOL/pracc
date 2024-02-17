@@ -468,7 +468,7 @@
         <Path>guides/Peppol-BIS-pre-award-guide_Notification-and-Restricted-Procedure-v1.0.pdf</Path>
         <Title>Peppol BIS pre-award guide - Notification and Restricted Procedure</Title>
         <Description>The Peppol BIS pre-award guide - Notification and Restricted Procedure</Description>
-        <!--<Property key="download">Peppol-BIS-pre-award-guide_Notification-and-Restricted-Procedure-v1.0.pdf</Property>-->
+        <Property key="download">Peppol-BIS-pre-award-guide_Notification-and-Two-Stage-Procedures-v1.0.pdf</Property>
     </Resource>
     <Resource>
         <Type>native:File</Type>
