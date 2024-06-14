@@ -644,7 +644,7 @@
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Value type="FIXED">SUBMISSION_METHOD</Value>
+                    <Value type="FIXED">BII_SUBMISSION</Value>
                 </Attribute>
 				<DataType>Indicator</DataType>
             </Element>

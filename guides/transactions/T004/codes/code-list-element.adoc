@@ -97,7 +97,7 @@ Only codes 1-3 are allowed in a Call for tender.
 [cols="1h,4"]
 |===
 | Qualifier
-| SUBMISSION_METHOD (listID)
+| BII_SUBMISSION (listID)
 | Document location
 | `cbc:SubmissionMethodCode`
 | Source codelist
