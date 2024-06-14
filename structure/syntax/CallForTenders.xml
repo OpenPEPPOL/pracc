@@ -637,15 +637,14 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:SubmissionMethodCode</Term>
-                <Name>Backup for electronic submission indicator</Name>
-                <Description>Indicator whether postal submission of the tender is merely a backup for the electronic
-                    submission
+                <Name>Submission Method Code</Name>
+                <Description>A code signifying the method to be followed in submitting tenders
                 </Description>
                 <Reference type="CODE_LIST">submissionMethod</Reference>
                 <Attribute>
                     <Term>listID</Term>
                     <Name>List identifier</Name>
-                    <Value type="FIXED">BII_SUBMISSION</Value>
+                    <Value type="FIXED">SUBMISSION_METHOD</Value>
                 </Attribute>
 				<DataType>Indicator</DataType>
             </Element>

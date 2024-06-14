@@ -12,6 +12,10 @@
         <Id>ELECTRONIC</Id>
         <Name>Electronic submission</Name>
     </Code>
+    <Code>
+        <Id>ANY</Id>
+        <Name>Paper and/or Electronic submission</Name>
+    </Code>
 </CodeList>
 
 

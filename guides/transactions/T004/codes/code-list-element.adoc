@@ -93,11 +93,11 @@
 Only codes 1-3 are allowed in a Call for tender.
 |===
 
-== Backup for electronic submission indicator /Electronic submission required indicator
+== Submission Method Code
 [cols="1h,4"]
 |===
 | Qualifier
-| BII_SUBMISSION (listID)
+| SUBMISSION_METHOD (listID)
 | Document location
 | `cbc:SubmissionMethodCode`
 | Source codelist
