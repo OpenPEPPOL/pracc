@@ -55,30 +55,30 @@ include::../files/QualificationResponse.xml[tags=IssueDateTime]
 === Sender Party
 
 The party sending a Qualification Response to the party that initiated the request to qualify for a Procurement.
-The sender party in this case corresponds to the contracting body.
+The sender party corresponds to the contracting body.
 
 [source,xml,indent=0]
-.Example of sender party
+.Example of contracting body as sender party
 ....
 include::../files/QualificationResponse.xml[tags=SenderParty]
 ....
-<.> Identifies the sender party's electronic address and the scheme identifier for the electronic address
-<.> Identifies the sender party itself and the scheme identifier to resolve sender party's identifier
-<.> Contains the sender party's official name.
+<.> Identifies the contracting body's electronic address and the scheme identifier for the electronic address
+<.> Identifies the contracting body itself and the scheme identifier to resolve sender party's identifier
+<.> Contains the contracting body's official name.
 
 === Receiver Party
 
 The party who is supposed to receive the Qualification Response. This is the same party that initiated the request to qualify for a Procurement.
-The receiver party in this case corresponds to the Economic Operator who handed in the Qualification to which this Qualification Response refers to.
+The receiver party corresponds to the economic operator who handed in the Qualification to which this Qualification Response refers to.
 
 [source,xml,indent=0]
-.Example of receiver party
+.Example of economic operator as receiver party
 ....
 include::../files/QualificationResponse.xml[tags=ReceiverParty]
 ....
-<.> Identifies the receiver party's electronic address and the scheme identifier for the electronic address
-<.> Identifies the receiver party and the scheme identifier to resolve the receiver party's identifier
-<.> Contains the receiver party's official name including the organization's legal form.
+<.> Identifies the economic operator's electronic address and the scheme identifier for the electronic address
+<.> Identifies the economic operator and the scheme identifier to resolve the receiver party's identifier
+<.> Contains the reconomic operator's official name including the organization's legal form.
 
 
 == Response Document Reference
@@ -90,23 +90,23 @@ The Response Document Reference contains a reference to the original Qualificati
 ....
 include::../files/QualificationResponse.xml[tags=ResolutionDocumentReference]
 ....
-<.> The Response Document Reference must contain an identifier, being expressed in uuid syntax.
+<.> The response document reference must contain an identifier, being expressed in uuid syntax.
 
 
 == Qualification Response Resolution
 
-The Qualification Response Resolution is the central part of any Qualification Response. It contains all information required to inform about the Qualification Rejection.
+The qualification response resolution is the central part of any qualification response. It contains all information required to inform about the qualification result (rejected or accepted).
 
-*The Qualification Response Resolution returned with this transaction may be positive or negative*. It is expected to respond every rejection but it is also possible to respond any acceptance. If more than one lot have been aimed to qualify for and need to be responded, one Qualification Response Resolution for each lot is expected.
+*The qualification response resolution returned with this transaction may be positive or negative*. It is expected to respond every rejection but it is also possible to respond any acceptance. If more than one lot have been aimed to qualify for and need to be responded, one qualification response resolution for each lot is expected.
 
 [source,xml,indent=0]
 .Example of Qualification Response Resolution
 ....
 include::../files/QualificationResponse.xml[tags=QualificationResolution]
 ....
-<.> Gives the qualification result. If the result ist *false*, it states that the Tenderer is not allowed to attend the further Procurement Process and the (generally neutral) qualification response can alo be seen as qualification rejection. Any qualification rejection is required to be answered. A positive answer resulting in *true* may also be given, but is not necessarily requested.
-<.> If the decision leading to a Qualification Rejection, the Reason for Rejection  can be explained in one or more resolution elements. The Qualification Rejection Resolution is expected be te described in plain text. At least one Reason for Rejection element should be provided. A positive answer may be sent without a specific resolution element.
-<.> The Date at which the decision expressed in this Qualification Rejection Resolution was made.
-<.> The ProcurementProjectLot referenced in this Qualification Response
+<.> Names the qualification result. If the result ist *false*, it states that the economic operator is not allowed to attend the further procurement process and the qualification response can alo be named as qualification rejection. Any qualification rejection is required to be answered. A positive answer resulting in *true* may also be given, but is not necessarily requested.
+<.> If the qualification response contains a qualification rejection, the reason for rejection must be explained in one or more resolution elements. The qualification rejection resolution is expected be te described in plain text. At least one reason for rejection element must be provided. A positive answer may be sent without a specific resolution element.
+<.> The date at which the decision expressed in this qualification rejection resolution was made.
+<.> The ProcurementProjectLot referenced in this qualification response
 <.> The ProcurementProjectLot's ID
 

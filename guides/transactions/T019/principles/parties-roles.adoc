@@ -25,7 +25,7 @@ The following parties participate as business partners in this transaction, acti
 | Role
 | Description
 | *Contracting body*
-| The Contracting Authority or Contracting Entity who is buying supplies, services or tendering public works.
+| The contracting authority or contracting entity who is buying supplies, services or tendering public works.
 | *Economic operator*
 | Party participating with a bid in a procurement process to sell goods, services or works.
 |===

@@ -9,7 +9,7 @@ The `@type` attribute must be populated in all instances of the ID element when 
 Example of usage in Sender Electronic Address Identifier and Receiver Electronic Address Identifier:
 
 [source,xml,indent=0]
-.Example of usage of Sender Electronic Address Identifier in `cac:SenderParty`
+.Example of using the contracting body's electronic address identifier in `cac:SenderParty`
 ----
 <cac:SenderParty>
     <cbc:EndpointID schemeID="9946">500820007</cbc:EndpointID>
@@ -17,7 +17,7 @@ Example of usage in Sender Electronic Address Identifier and Receiver Electronic
 
 ----
 [source,xml,indent=0]
-.Example of usage of Receiver Electronic Address Identifier in `cac:ReceiverParty`
+.Example of using the economic operator's electronic address identifier in `cac:ReceiverParty`
 ----
 <cac:ReceiverParty>
     <cbc:EndpointID schemeID="9930">DE122268496</cbc:EndpointID>

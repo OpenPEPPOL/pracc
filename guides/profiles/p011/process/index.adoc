@@ -9,7 +9,7 @@ image::bpmnQualification.svg[align="center", width=800]
 .Business process
 |===
 | Category | Description
-| Description | The Economic operator sends an electronic qualification document containing the information requested for qualification by the contracting body in the call for tenders.
+| Description | The economic operator sends an electronic qualification document containing the information requested for qualification by the contracting body in the call for tenders.
 
 The reception of the qualification is confirmed by the contracting body.
 

@@ -22,7 +22,7 @@ The following table describe the transaction business and information requiremen
 
 * Call for tenders ID and version
 * Procurement Reference number
-| tbr86-007 | The  message  shall  contain  either  credentials  issued  by  the  Contracting  Body,  or  the  following information about the business:
+| tbr86-007 | The message shall contain either credentials issued by the contracting body, or the following information about the business:
 
 * Economic operator ID
 * Economic operator ID type

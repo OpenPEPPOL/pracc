@@ -1,7 +1,7 @@
 
 = Date and time
 
-In the tender both the issue date and time must be sent. The issue date and time  is indicative. The contracting authority shall reply to the qualification document with a qualification receipt notification where the actual registration date and time for the tender will be indicated.
+In the tender both the issue date and time must be sent. The issue date and time  is indicative. The contracting body shall reply to the qualification document with a qualification receipt notification where the actual registration date and time for the tender will be indicated.
 
 Issue date is xs:date data type, and the date is specified as "YYYY-MM-DD" where:
 

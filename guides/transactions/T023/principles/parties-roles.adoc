@@ -13,10 +13,10 @@ The following parties participate as business partners in this transaction, acti
 | Example of roles
 | *Customer*
 | The Customer is the legal person or organization who is in demand of a product or service.
-| Examples of customer roles are Buyer, Consignee, Debtor and contracting body.
+| Examples of customer roles are buyer, consignee, debtor and contracting body.
 | *Supplier*
 | The Supplier is the legal person or organization who provides a product or service.
-| Examples of Supplier roles are Seller, Consignor, Creditor and economic operator.
+| Examples of Supplier roles are seller, consignor, creditor and economic operator.
 |===
 
 
@@ -26,7 +26,7 @@ The following parties participate as business partners in this transaction, acti
 | Role
 | Description
 | *Contracting body*
-| The Contracting Authority or Contracting Entity who is buying supplies, services or tendering public works.
+| The contracting authority or contracting entity who is buying supplies, services or tendering public works.
 | *Economic operator*
 | Party participating with a bid in a procurement process to sell goods, services or works.
 |===
