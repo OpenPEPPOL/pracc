@@ -331,6 +331,12 @@
         <Path>rules/peppol-invitation-to-tender/PEPPOL-T024.sch</Path>
         <Title>PEPPOL T024 rules - Invitation to Tender 1.0</Title>
     </Resource>
+    <Resource>
+        <Identifier>T036</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/peppol-call-for-tender/PEPPOL-T036.sch</Path>
+        <Title>PEPPOL T036 rules - Pre-Award Catalogue 1.0</Title>
+    </Resource>
 
     <!-- Code lists -->
     <Resource>
