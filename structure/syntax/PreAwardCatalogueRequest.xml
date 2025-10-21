@@ -276,7 +276,8 @@
                 <Element cardinality="0..1">
                     <Term>cac:RegistrationAddress</Term>
                     <Name>Registration Address</Name>
-                    <Description>The registered address of the party within a corporate registration scheme.</Description>
+                    <Description>The registered address of the party within a corporate registration scheme.
+                    </Description>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
@@ -527,7 +528,8 @@
                 <Element cardinality="0..1">
                     <Term>cac:RegistrationAddress</Term>
                     <Name>Registration Address</Name>
-                    <Description>The registered address of the party within a corporate registration scheme.</Description>
+                    <Description>The registered address of the party within a corporate registration scheme.
+                    </Description>
 
                     <Element cardinality="0..1">
                         <Term>cbc:CityName</Term>
@@ -805,6 +807,28 @@
             </Element>
         </Element>
 
+        <Element cardinality="0..n">
+            <Term>cac:TradingTerms</Term>
+            <Name>Trading terms</Name>
+            <Description>Commercial or trading terms relevant for the request (e.g., INCOTERMS or other terms that may
+                affect price). Multiple terms are allowed.
+            </Description>
+
+            <Element cardinality="0..1">
+                <Term>cbc:Information</Term>
+                <Name>Trading terms information</Name>
+                <Description>Free-text description of the trading term.</Description>
+                <Value type="EXAMPLE">INCOTERMS 2020 DDP</Value>
+            </Element>
+
+            <Element cardinality="0..1">
+                <Term>cbc:Reference</Term>
+                <Name>Trading terms reference</Name>
+                <Description>An indicator or reference code denoting the type of term.</Description>
+                <Value type="EXAMPLE">INCO</Value>
+            </Element>
+        </Element>
+
         <Element cardinality="1..n">
             <Term>cac:CatalogueRequestLine</Term>
             <Name>Pre award catalogue request line</Name>
@@ -820,6 +844,13 @@
                     reference the line. For example, from other documents.
                 </Description>
                 <Value type="EXAMPLE">1</Value>
+            </Element>
+
+            <Element cardinality="0..n">
+                <Term>cbc:Note</Term>
+                <Name>Line note</Name>
+                <Description>Free-form text conveying information that is not contained explicitly in other structures.</Description>
+                <Value type="EXAMPLE">Please include on-site installation and training.</Value>
             </Element>
 
             <Element cardinality="0..1">
@@ -878,11 +909,53 @@
                     <Value type="EXAMPLE">100.00</Value>
                 </Element>
 
+                <Element cardinality="0..1">
+                    <Term>cbc:MaximumQuantity</Term>
+                    <Name>Maximum quantity</Name>
+                    <Description>The maximum quantity for this item request/location. To quote an exact quantity,
+                        specify the same value as in Minimum quantity.
+                    </Description>
+
+                    <Attribute>
+                        <Term>unitCode</Term>
+                        <Name>Quantity unit code</Name>
+                        <Description>The unit of the quantity. Codes for unit of packaging from UNECE Recommendation No.
+                            21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE
+                            Recommendation 20, Revision 11 (2015): The 2 character alphanumeric code values in UNECE
+                            Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE
+                            Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with
+                            an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
+                        </Description>
+                        <Reference type="CODE_LIST">UNECERec20</Reference>
+                        <Value type="EXAMPLE">EA</Value>
+                    </Attribute>
+
+                    <Value type="EXAMPLE">100.00</Value>
+                </Element>
+
                 <Element cardinality="0..n">
                     <Term>cac:ApplicableTerritoryAddress</Term>
                     <Name>Delivery location</Name>
                     <Description>This element is used if there are specific locations requested for the item.
                     </Description>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:ID</Term>
+                        <Name>Location identifier</Name>
+                        <Description>An identifier for the applicable territory or area (e.g., region code, zone ID,
+                            campus ID).
+                        </Description>
+                        <Value type="EXAMPLE">ZONE-45</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
+                        <Term>cbc:AddressTypeCode</Term>
+                        <Name>Address type code</Name>
+                        <Description>Code that identifies the type of geographical area (e.g., REGION, CAMPUS,
+                            DELIVERY_ZONE).
+                        </Description>
+                        <Value type="EXAMPLE">REGION</Value>
+                    </Element>
 
                     <Element cardinality="0..1">
                         <Term>cbc:StreetName</Term>
@@ -965,6 +1038,22 @@
                     </Element>
 
                     <Element cardinality="0..1">
+                        <Term>cbc:BaseQuantity</Term>
+                        <Name>Price base quantity</Name>
+                        <Description>The quantity at which this price applies.</Description>
+
+                        <Attribute>
+                            <Term>unitCode</Term>
+                            <Name>Quantity unit code</Name>
+                            <Description>Unit of the base quantity (UNECE Rec 20/21).</Description>
+                            <Reference type="CODE_LIST">UNECERec20</Reference>
+                            <Value type="EXAMPLE">C62</Value>
+                        </Attribute>
+
+                        <Value type="EXAMPLE">100</Value>
+                    </Element>
+
+                    <Element cardinality="0..1">
                         <Term>cbc:PriceTypeCode</Term>
                         <Name>Item price type</Name>
                         <Description>The type of the price so that the receiver knows if the price may be changed is
@@ -1035,6 +1124,26 @@
                 </Element>
 
                 <Element cardinality="0..1">
+                    <Term>cac:BuyersItemIdentification</Term>
+                    <Name>Buyers item identification</Name>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Buyers item ID</Name>
+                        <Description>Identifying information for this item, assigned by the buyer.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cac:SellersItemIdentification</Term>
+                    <Name>Sellers item identification</Name>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Sellers item ID</Name>
+                        <Description>Identifying information for this item, assigned by the seller.</Description>
+                    </Element>
+                </Element>
+
+                <Element cardinality="0..1">
                     <Term>cac:StandardItemIdentification</Term>
                     <Name>Standard item identification</Name>
 
@@ -1066,6 +1175,19 @@
                         <Name>Code list identifier</Name>
                         <Value type="EXAMPLE">STI</Value>
                         <Reference type="CODE_LIST">UNCL7143</Reference>
+                    </Attribute>
+
+                    <Attribute usage="Optional">
+                        <Term>listVersionID</Term>
+                        <Name>Code list version</Name>
+                        <Description>The version of the code list.</Description>
+                    </Attribute>
+
+                    <Attribute usage="Optional">
+                        <Term>name</Term>
+                        <Name>Code list name</Name>
+                        <Description>The name of the classification list.</Description>
+                        <Value type="EXAMPLE">UNSPSC</Value>
                     </Attribute>
 
                     <Value type="EXAMPLE">53131502</Value>
@@ -1133,6 +1255,13 @@
                                 <Description>Mime type of the attached document</Description>
                                 <Reference type="CODE_LIST">MimeCode</Reference>
                                 <Value type="EXAMPLE">application/pdf</Value>
+                            </Attribute>
+
+                            <Attribute>
+                                <Term>filename</Term>
+                                <Name>Attachment file name</Name>
+                                <Description>The file name of the embedded attachment.</Description>
+                                <Value type="EXAMPLE">specification.pdf</Value>
                             </Attribute>
 
                             <Value type="EXAMPLE">UEVQUE9MIEJJUyBQcmUgYXdhcmQgQ2F0YWxvZ3VlIGV4YW1wbGUgYXR0YWNoZW1lbnQ=
@@ -1258,6 +1387,27 @@
                         <Name>Item property identifier</Name>
                         <Description>A property identifier for the property of the item request.</Description>
                         <Value type="EXAMPLE">PROP-34</Value>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeDataURI</Term>
+                            <Name>Scheme data URI</Name>
+                            <Description>URI to the data template or property scheme definition.</Description>
+                        </Attribute>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+                            <Description>Identifier of the property scheme.</Description>
+                            <Value type="EXAMPLE">ISO-23386</Value>
+                        </Attribute>
+
+                        <Attribute usage="Optional">
+                            <Term>schemeVersionID</Term>
+                            <Name>Scheme version</Name>
+                            <Description>Version of the property scheme.</Description>
+                            <Value type="EXAMPLE">1.0</Value>
+                        </Attribute>
+
                     </Element>
 
                     <Element>
