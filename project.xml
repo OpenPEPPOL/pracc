@@ -334,7 +334,7 @@
     <Resource>
         <Identifier>T036</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/peppol-call-for-tender/PEPPOL-T036.sch</Path>
+        <Path>rules/peppol-pre-award-catalogue/PEPPOL-T036.sch</Path>
         <Title>PEPPOL T036 rules - Pre-Award Catalogue 1.0</Title>
     </Resource>
 
