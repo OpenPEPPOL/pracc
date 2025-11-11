@@ -8,6 +8,16 @@
 
 === P012 - New Profile - Invitation to Tender 1.0
 
+=== P035 - Pre-Award Catalogue - Business Requirements Update
+
+Business requirement identifiers for T036 Pre-Award Catalogue have been updated from op-t68-xxx to op-t36-xxx to align with the transaction identifier T036. This change affects all business requirements in both the transaction documentation and the profile documentation. The previous version used op-t68 identifiers which were confusing and inconsistent with the transaction naming convention.
+
+Updated requirement IDs:
+* General business requirements: op-t36-001 to op-t36-004 (previously op-t68-001 to op-t68-004)
+* Metadata requirements: op-t36-011 to op-t36-022 (previously op-t68-011 to op-t68-022)
+* Catalogue line requirements: op-t36-030 to op-t36-037 (previously op-t68-030 to op-t68-037)
+* Item requirements: op-t36-040 to op-t36-061 (previously op-t68-040 to op-t68-061)
+* Item property requirements: op-t36-070 to op-t36-075 (previously op-t68-070 to op-t68-075)
 
 === Business Rules and Syntax Mapping
 
