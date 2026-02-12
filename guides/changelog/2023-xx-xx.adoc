@@ -5,9 +5,10 @@
 *Release date 2023-xx-xx*
 
 === P012 - New Profile - Qualification Rejection 1.0
+new profile
 
 === P012 - New Profile - Invitation to Tender 1.0
-
+new profile
 
 === Business Rules and Syntax Mapping
 
