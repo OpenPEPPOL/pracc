@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>PEPPOL Pre-Award</Name>
+    <Name>PEPPOL Pre-Award - April 2026 Release</Name>
 
+    <Documentation path="changelog/index.html">Release Notes - April 2026</Documentation>
     <Documentation path="profiles/p001/index.html">P001 - Procurement procedure subscription - 1.2</Documentation>
     <Documentation path="transactions/T001/index.html">T001 - Subscribe to Procedure 1.2</Documentation>
     <Documentation path="transactions/T002/index.html">T002 - Subscribe to Procedure Confirmation 1.2</Documentation>
@@ -10,7 +11,7 @@
     <Documentation path="transactions/T022/index.html">T022 - Unsubscribe from Procedure Confirmation 1.2</Documentation>
 
     <Documentation path="profiles/p002/index.html">P002 - Procurement document access - 1.2</Documentation>
-    <Documentation path="transactions/T003/index.html">T003 - Tender Status Inquiry 1.2</Documentation>
+    <Documentation path="transactions/T003/index.html">T003 - Tender Status Request 1.2</Documentation>
     <Documentation path="transactions/T004/index.html">T004 - Call for Tenders 1.2</Documentation>
 
     <Documentation path="profiles/p003/index.html">P003 - Tender Submission - 1.2</Documentation>
@@ -29,7 +30,7 @@
     <Documentation path="transactions/T012/index.html">T012 - Search Notice Response 1.2</Documentation>
     <Documentation path="profiles/p007/index.html">P007 - Tender Withdrawal - 1.1</Documentation>
     <Documentation path="transactions/T013/index.html">T013 - Tender Withdrawal 1.1</Documentation>
-    <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification 1.1</Documentation>
+    <Documentation path="transactions/T014/index.html">T014 - Tender Withdrawal Notification 1.2</Documentation>
 
     <Documentation path="profiles/p008/index.html">P008 - Publish Notice - 1.2</Documentation>
     <Documentation path="transactions/T015/index.html">T015 - Publish Notice 1.2</Documentation>
@@ -39,20 +40,20 @@
     <Documentation path="profiles/p010/index.html">P010 - Tendering Message Response - 1.0</Documentation>
     <Documentation path="transactions/T018/index.html">T018 - Tendering Message Response</Documentation>
     <Documentation path="profiles/p011/index.html">P011 - Tenderer Qualification - 1.0</Documentation>
-    <Documentation path="transactions/T019/index.html">T019 - Qualification</Documentation>
-    <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation</Documentation>
+    <Documentation path="transactions/T019/index.html">T019 - Qualification - 1.1</Documentation>
+    <Documentation path="transactions/T020/index.html">T020 - Qualification Reception Confirmation - 1.1</Documentation>
     <Documentation path="profiles/p012/index.html">P012 - Qualification Response - 1.0</Documentation>
     <Documentation path="transactions/T023/index.html">T023 - Qualification Response 1.0</Documentation>
 
     <Documentation path="profiles/p013/index.html">P013 - Invitation to Tender - 1.0</Documentation>
     <Documentation path="transactions/T024/index.html">T024 - Invitation to Tender 1.0</Documentation>
-    <Documentation path="transactions/T025/index.html">T003 - Tender Status Inquiry 1.2</Documentation>
+    <Documentation path="transactions/T025/index.html">T003 - Tender Status Request 1.2</Documentation>
 
     <Documentation path="profiles/p035/index.html">P035 - Pre-Award Catalogue - 1.1</Documentation>
     <Documentation path="transactions/CatalogueRequest/index.html">T035 Pre-Award Catalogue Request</Documentation>
     <Documentation path="transactions/Catalogue/index.html">T036 Pre-Award Catalogue</Documentation>
 
-    <Documentation path="changelog/index.html">Changelog</Documentation>
+
 
     <!-- Syntax -->
     <Resource>
@@ -133,7 +134,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/TenderWithdrawalResponse.xml</Path>
-        <Title>Syntax Mapping T014 - Tender Withdrawal Notification 1.1</Title>
+        <Title>Syntax Mapping T014 - Tender Withdrawal Notification 1.2</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
@@ -281,7 +282,7 @@
         <Identifier>T014</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/peppol-tender-withdrawal/PEPPOL-T014.sch</Path>
-        <Title>PEPPOL T014 rules - Tender Withdrawal Notification 1.1</Title>
+        <Title>PEPPOL T014 rules - Tender Withdrawal Notification 1.2</Title>
     </Resource>
     <Resource>
         <Identifier>T015</Identifier>
