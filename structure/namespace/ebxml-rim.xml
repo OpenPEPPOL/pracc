@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Namespace xmlns="urn:fdc:difi.no:2017:vefa:structure:Namespace-1">
+    <Identifier prefix="rim">urn:oasis:names:tc:ebxml-regrep:xsd:rim:4.0</Identifier>
+    <Version>4.0</Version>
+    <Element name="Identifiable">
+    </Element>
+    <Element name="Slot">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='SpecificationIdentification']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='BusinessProcessTypeIdentifier']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='Minimum']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+      <Element name="Slot[@name='Maximum']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+      <Element name="Slot[@name='Currency']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='EstimatedValue']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='ProcedureType']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='SubmissionLanguage']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='StartDate']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='EndDate']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='PublicationDate']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='DeadlineReceiptTenders']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='AdditionalInformationDeadline']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='DeadlineReceiptRequests']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='NoticeIdentifier']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='ProcedureIdentifier']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='ProcedureLegalBasis']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='ReservedParticipation']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='SuitableForSMEs']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='WinnerEconomicOperatorName']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='AwardCriterionType']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='Name']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='OrganisationNumber']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='City']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='PostCode']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='OrganizationCountrySubdivision']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='CountryCode']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+     <Element name="Slot[@name='LegalType']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='MainActivity']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    
+    <Element name="Slot[@name='IssueDateTime']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='SenderElectronicAddress']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='ReceiverElectronicAddress']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='PublicationRequested']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='NoticePublicationDatePreferred']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='BuyerInformation']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='BuyerPartyIdentification']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='BuyerElectronicAddress']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='ublDocumentSchema']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='eFormsVersion']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='NoticeVersion']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='CustomizationID']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='Keywords']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='FormType']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='NoticeType']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='Classification']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='ContractNature']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='PlaceOfPerformance']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="Slot[@name='AdditionalDocumentReference']">
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..n">rim:SlotValue</Ref>
+    </Element>
+    <Element name="SlotValue">
+        <Ref card="0..1">rim:Value</Ref>
+    </Element>
+    <Element name="Value" />
+    <Element name="Name" />
+    <Element name="Description" />
+    <Element name="VersionInfo" />
+    <Element name="Classification" />
+    <Element name="ExternalIdentifier" />
+    <Element name="ExternalLink" />
+    <Element name="Event" />
+    <Element name="IdentifiableList">
+        <Ref card="0..n">rim:Identifiable</Ref>
+    </Element>
+    <Element name="Notification">
+        <Ref card="0..n">rim:Slot</Ref>
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..1">rim:Description</Ref>
+        <Ref card="0..1">rim:VersionInfo</Ref>
+        <Ref card="0..n">rim:Classification</Ref>
+        <Ref card="0..n">rim:ExternalIdentifier</Ref>
+        <Ref card="0..n">rim:ExternalLink</Ref>
+        <Ref card="1..n">rim:Event</Ref>
+    </Element>
+    <Element name="ObjectRef">
+        <Ref card="0..n">rim:Slot</Ref>
+    </Element>
+    <Element name="ObjectRefList">
+        <Ref card="0..n">rim:ObjectRef</Ref>
+    </Element>
+    <Element name="RegistryObject">
+        <Ref card="0..n">rim:Slot</Ref>
+        <Ref card="0..1">rim:Name</Ref>
+        <Ref card="0..1">rim:Description</Ref>
+        <Ref card="0..1">rim:VersionInfo</Ref>
+        <Ref card="0..n">rim:Classification</Ref>
+        <Ref card="0..n">rim:ExternalIdentifier</Ref>
+        <Ref card="0..n">rim:ExternalLink</Ref>
+    </Element>
+    <Element name="RegistryObjectList">
+        <Ref card="0..n">rim:RegistryObject</Ref>
+    </Element>
+    <Element name="Element" />
+    <Element name="RepositoryItemRef" />
+</Namespace>

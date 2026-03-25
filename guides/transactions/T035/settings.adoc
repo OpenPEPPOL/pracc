@@ -1,0 +1,17 @@
+:lang: en
+
+include::../shared/settings.adoc[]
+
+:doctitle: image:../../../shared/images/peppol.png[float="right"] Peppol T035 - Pre-Award Catalogue Request 1.0
+
+:name-trans-short: Pre-Award Catalogue Request
+:name-transaction: T035 - {name-trans-short}
+:name-syntax: CatalogueRequest
+
+include::../shared/links.adoc[]
+
+:minor: 1.0
+:revision: 1.0.0
+:shared-dir: ../shared
+:rules-dir: /tmp/rules
+:snippet-dir: ../../../../rules/snippets/T035

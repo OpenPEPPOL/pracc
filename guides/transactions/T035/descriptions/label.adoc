@@ -1,0 +1,46 @@
+[[labels]]
+= Labels and Requirements
+
+The party requesting the pre-award catalogue may have have requirements related to the environment, fair trade and other factors. They may also demand 
+that basic human rights are respected in the product production and trade. To be able to specify which of these criterias that are requested for each 
+line, the Pre-Award Catalogue Request contains elements to document Environmental labelling and Social certificates. In the Catalogue the Supplier is
+expected to confirm that the item fulfills these requirements by returning the labels. Detailed information about the different labels can be found 
+on the issuing party’s web-site which is referred to via an URI.
+
+Introducing these classification codes in pre-award catalogue request will support the aim for sustainable procurement, and make it possible to measure the 
+purchasing behaviour and monitor that the requirements from the tendering process are fulfilled.
+
+.Example of Classification codes
+[cols="^.^2a,8a", options="header"]
+|===
+<| Logo
+| Information
+
+| image:label-neo.png[Svanemerket]
+| *Svanemerket* +
+Classification Code (ID): NEO +
+Certificate TypeCode: EcoLabel (Environment)
+
+| image:label-fbl.png[Fairtrade]
+| *Fairtrade* +
+Classification Code (ID): FBL +
+Certificate TypeCode: SosialLabel (Social responsibility)
+
+| image:label-eop.png[EU organic products label]
+| *EU organic products label* +
+Classification Code (ID): EOP +
+Certificate TypeCode: OrganicLabel (Ecological)
+|===
+
+.Example of requesting labeling in an PreAward Catalogue request message
+include::{snippet-dir}/Snippet-1.xml[tags=certificate-2]
+
+
+Furthermore, the Catalogue request sender may also have requirements regarding register enrollment, quality assurance standards or other relevant factors. 
+These requirements may be met by the economic operator through certificates, self-declarations or other means of proof.
+
+For this matter, eCertis may be used to specify both requirements and their means of proof. A guide to eCertis can be found here: 
+link:https://ec.europa.eu/tools/ecertis/assets/eCertisQuickGuidePublic_en.pdf[]
+
+.Example of eCertis requirements and certifications in a pre-award Catalogue request
+include::{snippet-dir}/Snippet-1.xml[tags=certificate]

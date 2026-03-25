@@ -1,0 +1,13 @@
+[[keyword]]
+= Keyword
+
+Keywords are sent to let the Buyer search for a product without knowing the Product ID or name. Keywords can be repeated, but the number should 
+be limited to ensure correct handling in the receiving system.  If more than one Keyword is sent, they should be put in the same tag separated 
+by the %-sign since this is already being used by several actors (but a different sign can be agreed by the trading partners).
+
+
+[source]
+.Example of several Keywords in the same tag.
+----
+include::{snippet-dir}/Snippet-1.xml[tags=keyword]
+----

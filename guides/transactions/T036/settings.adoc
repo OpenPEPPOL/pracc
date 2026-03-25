@@ -1,0 +1,17 @@
+:lang: en
+
+include::../../shared/settings.adoc[]
+
+:doctitle: image:../../../shared/images/peppol.png[float="right"] Peppol T036 - Pre-Award Catalogue 1.0
+
+:name-trans-short: Pre-Award Catalogue
+:name-transaction: T036 - {name-trans-short}
+:name-syntax: Catalogue
+
+include::../shared/links.adoc[]
+
+:minor: 1.0
+:revision: 1.0.0
+:shared-dir: ../shared
+:rules-dir: /tmp/rules
+:snippet-dir: ../../../../rules/snippets/T036

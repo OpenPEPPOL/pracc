@@ -6,6 +6,6 @@ include::../../shared/codelists.adoc[]
 
 include::code-list-element.adoc[]
 include::code-list-identifers-scheme.adoc[]
-//include::status-codes.adoc[]
+include::status-codes.adoc[]
 
 :leveloffset: -1

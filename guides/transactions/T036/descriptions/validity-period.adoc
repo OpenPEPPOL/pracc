@@ -1,0 +1,31 @@
+[[validity-period]]
+= Validity period
+
+In the PreAward the following validity periods can be stated:
+
+* Validity period on document level (mandatory), used to state the validity period for the entire PreAward Catalogue.
+* Validity period for a catalogue line, used to specify the Delivery Period of the Goods or Services.
+* Validity period for price (See also <<price>>)
+
+WARNING: All validity periods shall have both start date and end date, and the start date shall be earlier than the end date
+
+
+Example of validity periods in a PreAward Catalogue:
+
+[source]
+.Document level (mandatory)
+----
+include::{snippet-dir}/Snippet-1.xml[tags=period-h]
+----
+
+[source]
+.Catalogue line (Delivery period)
+----
+include::{snippet-dir}/Snippet-1.xml[tags=period-l]
+----
+
+[source]
+.Two different validity period for a given price
+----
+include::{snippet-dir}/Snippet-1.xml[tags=period-p]
+----

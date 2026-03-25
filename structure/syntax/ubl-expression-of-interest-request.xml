@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+    <Term>ExpressionOfInterestRequest</Term>
+    <Name>Peppol Expression Of Interest Request (T001)</Name>
+
+    <Property key="sch:prefix">PEPPOL-T001</Property>
+    <Property key="sch:identifier">T001-basic</Property>
+    
+    <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:ExpressionOfInterestRequest-2</Namespace>
+    <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2</Namespace>
+    <Namespace prefix="cbc">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2</Namespace>
+    <Document>
+        <Term>ubl:ExpressionOfInterestRequest</Term>
+        <Name>Expression Of Interest Request, root element</Name>
+        <Element>
+            <Term>cbc:UBLVersionID</Term>
+            <Name>UBL version identifier</Name>
+            <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T001-R033</Reference>
+            <Reference type="RULE">PEPPOL-T001-R034</Reference>
+            <Value type="FIXED">2.2</Value>
+        </Element>
+        <Element>
+            <Term>cbc:CustomizationID</Term>
+            <Name>Customization identifier</Name>
+            <Description>Identifies the specification of content and rules that apply to the transaction.</Description>
+            <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T001-R001</Reference>
+            <Reference type="RULE">PEPPOL-T001-R002</Reference>
+            <Reference type="BUSINESS_TERM">tir81-007</Reference>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:trns:t001:1.3</Value>
+        </Element>
+        <Element>
+            <Term>cbc:ProfileID</Term>
+            <Name>Profile identifier</Name>
+            <Description>Identifies the BII profile or business process context in which the transaction appears.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T001-R003</Reference>
+            <Reference type="RULE">PEPPOL-T001-R004</Reference>
+            <Reference type="BUSINESS_TERM">tir81-006</Reference>
+            <Value type="FIXED">urn:fdc:peppol.eu:prac:bis:p001:1.3</Value>
+        </Element>
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Expression of interest identifier</Name>
+            <Description>An identifier that is suitable for identifying or referencing a document, MUST be expressed in
+                a UUID syntax (RFC 4122).
+            </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T001-R005</Reference>
+            <Reference type="RULE">PEPPOL-T001-R008</Reference>
+            <Reference type="BUSINESS_TERM">tir81-001</Reference>
+            <Attribute>
+                <Term>schemeURI</Term>
+                <Name>Scheme identifier</Name>
+                <Reference type="RULE">PEPPOL-T001-R006</Reference>
+                <Reference type="RULE">PEPPOL-T001-R007</Reference>
+                <Value type="FIXED">urn:uuid</Value>
+            </Attribute>
+        </Element>
+        <Element>
+            <Term>cbc:ContractFolderID</Term>
+            <Name>Reference number</Name>
+            <Description>An identifier that is specified by the buyer and used as a reference number for all documents
+                in the procurement process. It is also known as procurement project identifier, procurement reference
+                number or contract folder identifier. Used as a link to the call for tenders.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="RULE">PEPPOL-T001-R009</Reference>
+            <Reference type="BUSINESS_TERM">tir81-005</Reference>
+        </Element>
+        <Element>
+            <Term>cbc:IssueDate</Term>
+            <Name>Expression of interest issue date</Name>
+            <Description>The date on which transaction is issued.</Description>
+            <DataType>Date</DataType>
+            <Reference type="RULE">PEPPOL-T001-R010</Reference>
+            <Reference type="BUSINESS_TERM">tir81-002</Reference>
+        </Element>
+        <Element>
+            <Term>cbc:IssueTime</Term>
+            <Name>Expression of interest issue time</Name>
+            <Description>Time of issue of Transaction.The issue time must have granularity of seconds, and include time
+                zone information
+            </Description>
+            <DataType>Time</DataType>
+            <Reference type="RULE">PEPPOL-T001-R011</Reference>
+            <Reference type="RULE">PEPPOL-T001-R012</Reference>
+            <Reference type="RULE">PEPPOL-T001-R030</Reference>
+            <Reference type="BUSINESS_TERM">tir81-003</Reference>
+			<Value type="EXAMPLE">10:00:00+01:00</Value>
+        </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:PreferredLanguageLocaleCode</Term>
+            <Name>Economic operator preferred language</Name>
+            <Description>The language the economic operator prefers to use when receiving documents from the contracting
+                body. Use the ISO 639 1 code list
+            </Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">tir81-029</Reference>
+            <Attribute>
+                <Term>listID</Term>
+                <Name>Economic operator preferred language</Name>
+                <Value type="FIXED">ISO639-1</Value>
+            </Attribute>
+        </Element>
+        <Element>
+            <Term>cac:EconomicOperatorParty</Term>
+            <Name>Economic operator</Name>
+            <Element>
+                <Term>cac:Party</Term>
+                <Name>Party information</Name>
+                <Element>
+                    <Term>cbc:EndpointID</Term>
+                    <Name>Economic operator electronic address identifier</Name>
+                    <Description>Electronic address of the economic operator.</Description>
+                    <DataType>Identifier</DataType>
+					<Reference type="RULE">PEPPOL-T001-R014</Reference>
+                    <Reference type="BUSINESS_TERM">tir81-030</Reference>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+                        <Reference type="CODE_LIST">eas</Reference>
+                        <Value type="EXAMPLE">9946</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">500820007</Value>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cbc:IndustryClassificationCode</Term>
+                    <Name>Economic operator type code</Name>
+                    <DataType>Code</DataType>
+					<Reference type="RULE">PEPPOL-T001-R026</Reference>
+                    <Reference type="BUSINESS_TERM">tir81-028</Reference>
+                    <Attribute>
+                        <Term>listID</Term>
+                        <Name>List identifier</Name>
+                        <Reference type="CODE_LIST">tendererRole</Reference>
+                        <Value type="FIXED">TendererRole</Value>
+                    </Attribute>
+                </Element>
+                <Element>
+                    <Term>cac:PartyIdentification</Term>
+                    <Name>Party identification</Name>
+					<Reference type="RULE">PEPPOL-T001-R014</Reference>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Economic operator identifier</Name>
+                        <Description>An identifier that identifies the economic operator, such as a legal registration
+                            identifier. Can be the registration number in the professional registry.
+                        </Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">tir81-012</Reference>
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
+                            <Value type="EXAMPLE">0088</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">7300010000001</Value>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term>cac:PartyName</Term>
+                    <Name>Party name</Name>
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Economic operator name</Name>
+                        <Description>The name of the economic operator.</Description>
+						<DataType>Text</DataType>
+                        <Reference type="RULE">PEPPOL-T001-R017</Reference>
+						<Reference type="BUSINESS_TERM">tir81-013</Reference>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cac:PostalAddress</Term>
+                    <Name>Postal address</Name>
+                    <Element cardinality="0..1">
+                        <Term>cbc:StreetName</Term>
+                        <Name>Address line 1</Name>
+                        <Description>The main address line in an address. Usually the street name and number or post
+                            office box
+                        </Description>
+                        <DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-015</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:AdditionalStreetName</Term>
+                        <Name>Address line 2</Name>
+                        <Description>An additional address line in an address that can be used to give further details
+                            supplementing the main line.
+                        </Description>
+                        <DataType>Text</DataType>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:CityName</Term>
+                        <Name>City</Name>
+                        <Description>The common name of a city where the address is located.</Description>
+                        <DataType>Text</DataType>
+						<Reference type="BUSINESS_TERM">tir81-017</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:PostalZone</Term>
+                        <Name>Post code</Name>
+                        <Description>The identifier for an addressable group of properties according to the relevant
+                            postal service, such as a ZIP code or Post Code.
+                        </Description>
+						<DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">tir81-018</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:CountrySubentity</Term>
+                        <Name>Country subdivision</Name>
+                        <Description>The subdivision of a country such as region, county, state, province etc.
+                        </Description>
+						<DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">tir81-019</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cac:Country</Term>
+                        <Element>
+                            <Term>cbc:IdentificationCode</Term>
+                            <Name>Country code</Name>
+                            <Description>A code that identifies the country. The lists of valid countries are registered
+                                with the ISO 3166-1 Maintenance agency, "Codes for the representation of names of
+                                countries and their subdivisions". It is recommended to use the alpha-2 representation.
+                            </Description>
+                            <DataType>Code</DataType>
+                            <Reference type="BUSINESS_TERM">tir81-020</Reference>
+                            <Reference type="CODE_LIST">ISO3166</Reference>
+                            <Attribute>
+                                <Term>listID</Term>
+                                <Name>List identifier</Name>
+                                <Value type="FIXED">ISO3166</Value>
+                            </Attribute>
+							<Value type="EXAMPLE">SE</Value>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element cardinality="0..1">
+                    <Term>cac:PartyLegalEntity</Term>
+                    <Name>Economic operator legal entity</Name>
+                    <Element cardinality="0..1">
+                        <Term>cac:RegistrationAddress</Term>
+                        <Name>Registration address</Name>
+                        <Element cardinality="0..1">
+                            <Term>cac:Country</Term>
+                            <Name>Country</Name>
+                            <Element>
+                                <Term>cbc:IdentificationCode</Term>
+                                <Name>Economic operator registration country code</Name>
+                                <Description>The registration country code of the economic operator. The country should
+                                    always be given by using ISO code 3166 alpha 2
+                                </Description>
+                                <DataType>Code</DataType>
+                                <Reference type="BUSINESS_TERM">tir81-014</Reference>
+                                <Reference type="CODE_LIST">ISO3166</Reference>
+                                <Attribute>
+                                    <Term>listID</Term>
+                                    <Name>List identifier</Name>
+                                    <Value type="FIXED">ISO3166</Value>
+                                </Attribute>
+								<Value type="EXAMPLE">SE</Value>
+                            </Element>
+                        </Element>
+                    </Element>
+                </Element>
+                <Element>
+                    <Term>cac:Contact</Term>
+                    <Name>Contacting details</Name>
+					<Reference type="RULE">PEPPOL-T001-R031</Reference>
+                    <Element>
+                        <Term>cbc:Name</Term>
+                        <Name>Contact point</Name>
+                        <Description>The name of the contact point.</Description>
+						<DataType>Text</DataType>
+                        <Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="BUSINESS_TERM">tir81-021</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:Telephone</Term>
+                        <Name>Contact telephone number</Name>
+                        <Description>TA phone number for the contact point</Description>
+						<DataType>Text</DataType>
+                        <Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="BUSINESS_TERM">tir81-023</Reference>
+                    </Element>
+                    <Element cardinality="0..1">
+                        <Term>cbc:Telefax</Term>
+                        <Name>Contact fax number</Name>
+                        <Description>A fax number for the contact point.</Description>
+						<DataType>Text</DataType>
+                        <Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="BUSINESS_TERM">tir81-022</Reference>
+                    </Element>
+                    <Element>
+                        <Term>cbc:ElectronicMail</Term>
+                        <Name>Contact email address</Name>
+                        <Description>An e-mail address for the contact point.</Description>
+						<DataType>Text</DataType>
+                        <Reference type="RULE">PEPPOL-T001-R032</Reference>
+						<Reference type="BUSINESS_TERM">tir81-024</Reference>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>cac:ContractingParty</Term>
+            <Name>Contracting body</Name>
+            <Element>
+                <Term>cac:Party</Term>
+                <Name>Party information</Name>
+                <Element>
+                    <Term>cbc:EndpointID</Term>
+                    <Name>Contracting body electronic address identifier</Name>
+                    <Description>Electronic address of the contracting body.</Description>
+                    <DataType>Identifier</DataType>
+					<Reference type="RULE">PEPPOL-T001-R013</Reference>
+                    <Attribute>
+                        <Term>schemeID</Term>
+                        <Name>Electronic address identifier</Name>
+						<Reference type="RULE">PEPPOL-T001-R024</Reference>
+                        <Reference type="CODE_LIST">eas</Reference>
+                        <Value type="EXAMPLE">9930</Value>
+                    </Attribute>
+                    <Value type="EXAMPLE">DE122268496</Value>
+                </Element>
+                <Element>
+                    <Term>cac:PartyIdentification</Term>
+                    <Name>Party identification</Name>
+					<Reference type="RULE">PEPPOL-T001-R013</Reference>
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Name>Contracting body identifier</Name>
+                        <Description>The national identifier of a contracting body as it is legally registered (e.g. VAT
+                            identification, such as KBO)
+                        </Description>
+                        <DataType>Identifier</DataType>
+                        <Reference type="BUSINESS_TERM">tir81-009</Reference>
+                        <Attribute>
+                            <Term>schemeID</Term>
+                            <Name>Scheme identifier</Name>
+							<Reference type="RULE">PEPPOL-T001-R015</Reference>
+                            <Reference type="CODE_LIST">ICD</Reference>
+                            <Value type="EXAMPLE">0204</Value>
+                        </Attribute>
+                        <Value type="EXAMPLE">991-1234512345-06</Value>
+                    </Element>
+                </Element>
+            </Element>
+        </Element>
+        <Element>
+            <Term>cac:ProcurementProjectLotReference</Term>
+            <Name>Requested lot</Name>
+            <Element cardinality="0..1">
+                <Term>cbc:ID</Term>
+                <Name>Lot identifier</Name>
+                <Description>An identifier for the lot.</Description>
+				<DataType>Identifier</DataType>
+                <Reference type="RULE">PEPPOL-T001-R029</Reference>
+				<Reference type="BUSINESS_TERM">tir81-026</Reference>
+				<Value type="EXAMPLE">123456</Value>
+            </Element>
+        </Element>
+    </Document>
+</Structure>

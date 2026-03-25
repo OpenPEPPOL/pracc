@@ -1,0 +1,10 @@
+[[vat]]
+= VAT
+
+VAT-information is optional in the Pre-Award Catalogue Request. Catalogue receivers may require VAT-information in the Pre-Award Catalogue.
+
+Valid VAT category codes can be found in the section <<Item VAT category code>>
+
+
+.Example
+include::{snippet-dir}/Snippet-1.xml[tags=vat]

@@ -1,0 +1,18 @@
+include::../shared/settings.adoc[]
+
+:name-profile-org: "Profile BII51 Qualification Rejection" (CWA 17027-116:2016)
+:name-profile: "Peppol BIS Profile P012 - Qualification Response"
+
+:name-transaction-org: "Trdm087 Qualification Response transaction"
+
+:name-trans-short: Qualification Response
+:name-transaction: T023 - {name-trans-short} 1.0
+:name-syntax: QualificationResponse
+
+include::../shared/links.adoc[]
+
+:examples-dir: ../../../../rules/examples/T023
+:snippets-dir: ../../../../rules/snippets/T023
+
+:xml-doc-file: {examples-dir}/QualificationResponse.xml
+:xml-snippets-file: {snippets-dir}/QualificationResponse.xml

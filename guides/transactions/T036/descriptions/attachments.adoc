@@ -1,0 +1,19 @@
+[[attachments]]
+= Attachments
+
+Attachments can be sent on line level in the Catalogue. This can be images or additional descriptions of a product. It is strongly recommended 
+to use external references in the form of URI’s for attachments.
+
+If binary objects are attached to the PreAward Catalogue, the valid values for mimetype can be found in section <<Mime code of attached document>>
+
+[source]
+.Example of using external reference
+----
+include::{snippet-dir}/Snippet-1.xml[tags=attachment-2]
+----
+
+[source, xml, indent=0]
+.Example of using attached binary objects
+----
+include::{snippet-dir}/Snippet-1.xml[tags=attachment-1]
+----

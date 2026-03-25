@@ -5,7 +5,10 @@ include::settings.adoc[]
 v{version}
 
 {main-description}
+
 include::../../shared/copyright.adoc[]
+
+:doctype: book
 
 :leveloffset: +1
 
@@ -22,7 +25,5 @@ include::codes/index.adoc[]
 include::identifiers/index.adoc[]
 
 include::descriptions/index.adoc[]
-
-
 
 :leveloffset: -1
