@@ -501,7 +501,7 @@
                 <Description>Indicates if variants are accepted in the tender. Use true when variants are allowed.
                 </Description>
                 <DataType>Indicator</DataType>
-                <Value type="EXAMPLE">0</Value>
+                <Value type="EXAMPLE">NA</Value>
             </Element>
 
             <Element cardinality="0..1">
