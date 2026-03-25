@@ -15,7 +15,7 @@ jobs:
 
       # Step 2: Run the Sync Script
       - name: Sync from Peppol repos
-        run: ./sync_repos.sh
+        run: bash ./sync_repos.sh
 
       # Step 3: Build Spec
       - name: Build Spec
