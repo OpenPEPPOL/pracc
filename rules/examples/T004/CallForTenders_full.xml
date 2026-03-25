@@ -63,7 +63,7 @@
       </cac:Contact>
    </cac:ReceiverParty>
    <cac:TenderingTerms>
-      <cbc:VariantConstraintIndicator>0</cbc:VariantConstraintIndicator>
+      <cbc:VariantConstraintIndicator>NA</cbc:VariantConstraintIndicator>
       <cac:ProcurementLegislationDocumentReference>
          <cbc:ID>ID-001</cbc:ID>
          <cbc:DocumentDescription>Example</cbc:DocumentDescription>
