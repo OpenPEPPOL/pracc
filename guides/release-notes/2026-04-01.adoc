@@ -13,8 +13,8 @@
 === P035 - Pre-Award Catalogue - Business Requirements Update
 
 * Update of P36 - Pre-Award Catalogue (Version 1.0): Profile ID changed from "urn:www.cenbii.eu:profile:bii35:ver3.0" to "urn:fdc:peppol.eu:prac:bis:p035:1.0"
-* New T035 Pre-Award Catalogue Request (Version 1.1): Customization ID "urn:fdc:peppol.eu:prac:trns:t035:1.0"
-* Update of T036 Pre-Award Catalogue (New Version 1.1): Customization ID changed from "urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0" to "urn:fdc:peppol.eu:prac:bis:p036:1.0"
+* New T035 Pre-Award Catalogue Request (Version 1.0): Customization ID "urn:fdc:peppol.eu:prac:trns:t035:1.0"
+* Update of T036 Pre-Award Catalogue (New Version 1.0): Customization ID changed from "urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0" to "urn:fdc:peppol.eu:prac:bis:p036:1.0"
 
 Business requirement identifiers for T036 Pre-Award Catalogue have been updated from op-t68-xxx to op-t36-xxx to align with the transaction identifier T036. This change affects all business requirements in both the transaction documentation and the profile documentation. The previous version used op-t68 identifiers which were confusing and inconsistent with the transaction naming convention.
 
@@ -50,4 +50,17 @@ transactions and the transaction information requirements are listed and defined
 
 * Updated XML example for NUTS codes and CPV codes (Main /Additional commodity classification) in T004 and provided reference to the corresponding codelists of the publication office
 
+=== Technical changes
+
+* The process of generating the documentation is upgraded to the same level that other parts of Peppol use (PoAC and LoC). That will have the following benefits:
+** Xml code is during generation automatically validated with rules and codelists, which will reduce the risk of errors in the documentation.
+	As a part of this change, a number of inconsistences in the documentation have been identified and fixed.
+** New "Common rules", shown in the documentation, are automatically created during generation of the documentation and included for all UBL transactions.
+** New "Basic rules", shown in the documentation, are automatically created during generation of the documentation and included for all UBL transactions.
+	In some cases these generated rules (Common and Basic) are identical with existing rules. In this release we have not eliminated the duplicate existing 
+	rules, but in future releases we may remove the existing rules when they are identical with the generated ones. Meanwhile one mistake may result in two 
+	error messages.
+** Codelists that are common with PoAC are automatically syncronized during generation.
+
+* New "Unit tests" are added as a technique to verify the rules - in this release only for a few rules. More may come in future releases.
 
