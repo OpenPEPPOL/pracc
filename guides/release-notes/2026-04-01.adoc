@@ -30,7 +30,7 @@ Updated requirement IDs:
 
 **Update of T14 - Tender Withdrawal Notification (New Version 1.2):** Change the cardinality of cac:TenderDocumentReference in T014 from 1..1 to 1..n. TenderDocumentReference SHOULD NOT be used "more than once" was changed to "more than twice". Corresponding description were added as defined by the transaction to use code 13 for REM evidence and 310 for Tender reference. Fixed value 23 (typo - should be 13) was removed to allow for both values.
 
-**Correction of T15 = Publish Notice (New Version 1.2): ** Moved AdditionalDocumentreference from wrong position in syntax (within BuyerPArtyIdentification) to correct pacement in RegistryObject.
+**Correction of T15 = Publish Notice (New Version 1.2): ** Moved AdditionalDocumentreference from wrong position in syntax (within BuyerPartyIdentification) to correct pacement in RegistryObject.
 
 === Codelist
 
