@@ -48,6 +48,8 @@ transactions and the transaction information requirements are listed and defined
 
 **Update of SubmissionMethodCode (new version: 2026-04-01)**: Updating Codelist for SubmissionMethodCode with value "Paper and/or electronic submission". Also, the corresponding business term and descriptions have been updated
 
+**Update to latest EAS and ISO 6523 ICD codelist version**
+
 === Editorial changes
 
 * Update description on the use of Additional document reference and Encryption Certificate in T004 and syntax mapping. Providing further examples.
