@@ -2,19 +2,19 @@
 
 == New Profiles
 
-*Release date 2024-04-01*
+*Release date 2026-04-01*
 
 === P012 - New Profile - Qualification Response 1.0
-* New T023 - Qualification Response (Version 1.0)
+* New T023 - Qualification Response (Version 1.0) profile with ID "urn:fdc:peppol.eu:prac:bis:p012:1.0" and transaction Qualification Response Transaction 1.0 "urn:fdc:peppol.eu:prac:trns:t023:1.0"
 
 === P013 - New Profile - Invitation to Tender 1.0
-* New T024 - Invitation to Tender (Version 1.0)
+* New T024 - Invitation to Tender (Version 1.0) profile with ID "urn:fdc:peppol.eu:prac:bis:p013:1.0" and Invitation to Tender Transaction 1.0 transaction "urn:fdc:peppol.eu:prac:trns:t024:1.0" and linked Tender Status Request Transaction 1.3 "urn:fdc:peppol.eu:prac:trns:t003:1.3"
 
 === P035 - Pre-Award Catalogue - Business Requirements Update
 
-* Update of P36 - Pre-Award Catalogue (Version 1.0): Profile ID changed from "urn:www.cenbii.eu:profile:bii35:ver3.0" to "urn:fdc:peppol.eu:prac:bis:p035:1.0"
+* New P36 - Pre-Award Catalogue (Version 1.0): Profile ID "urn:fdc:peppol.eu:prac:bis:p035:1.0"
 * New T035 Pre-Award Catalogue Request (Version 1.0): Customization ID "urn:fdc:peppol.eu:prac:trns:t035:1.0"
-* Update of T036 Pre-Award Catalogue (New Version 1.0): Customization ID changed from "urn:www.cenbii.eu:transaction:biitrdm068:ver3.0:extended:urn:www.peppol.eu:bis:peppol35a:ver1.0" to "urn:fdc:peppol.eu:prac:bis:p036:1.0"
+* New Pre-Award Catalogue (Version 1.0): Customization ID "urn:fdc:peppol.eu:prac:bis:p036:1.0"
 
 Business requirement identifiers for T036 Pre-Award Catalogue have been updated from op-t68-xxx to op-t36-xxx to align with the transaction identifier T036. This change affects all business requirements in both the transaction documentation and the profile documentation. The previous version used op-t68 identifiers which were confusing and inconsistent with the transaction naming convention.
 

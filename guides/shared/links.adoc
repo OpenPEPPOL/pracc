@@ -1,8 +1,8 @@
 //description and subheading text
 :description: The Peppol Business Interoperability Specification, “BIS” from here on after, has been developed by the OpenPeppol AISBL Pre-Award Coordinating Community and is published as part of the Peppol specifications.
 :author: OpenPeppol AISBL and Peppol Pre-Award Coordinating Community
-:version: 1.0.0
-:ord_version: 1.0.0
+:version: April 2026
+:ord_version: April 2026
 //Peppol
 :link-peppol: https://peppol.org/[Peppol]
 :peppol: https://peppol.org/[Peppol]
