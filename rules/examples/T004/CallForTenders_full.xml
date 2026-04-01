@@ -79,7 +79,7 @@
       </cac:TenderRecipientParty>
    </cac:TenderingTerms>
    <cac:TenderingProcess>
-      <cbc:ProcedureCode listID="PR_PROC">2</cbc:ProcedureCode>
+      <cbc:ProcedureCode listID="PR_PROC">1</cbc:ProcedureCode>
       <cac:TenderSubmissionDeadlinePeriod>
          <cbc:EndDate>2026-03-06</cbc:EndDate>
       </cac:TenderSubmissionDeadlinePeriod>
