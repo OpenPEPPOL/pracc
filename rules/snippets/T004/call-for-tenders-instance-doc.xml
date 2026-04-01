@@ -125,7 +125,7 @@
 	</cac:TenderingTerms>
 	<!-- tag::TenderingProcess[] -->
 	<cac:TenderingProcess>
-		<cbc:ProcedureCode listID="PR_PROC">1</cbc:ProcedureCode>
+		<cbc:ProcedureCode listID="PR_PROC">2</cbc:ProcedureCode>
 		<cbc:SubmissionMethodCode listID="BII_SUBMISSION">ELECTRONIC</cbc:SubmissionMethodCode>
 		<cac:TenderSubmissionDeadlinePeriod>
 			<cbc:EndDate>2017-10-20</cbc:EndDate>

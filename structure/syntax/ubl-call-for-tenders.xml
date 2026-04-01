@@ -613,7 +613,7 @@
                     <Name>List identifier</Name>
                     <Value type="FIXED">PR_PROC</Value>
                 </Attribute>
-				<Value type="EXAMPLE">1</Value>
+				<Value type="EXAMPLE">2</Value>
             </Element>
 
             <Element cardinality="0..1">
