@@ -8,10 +8,12 @@
    <cbc:ID schemeURI="urn:uuid">123e4567-e89b-12d3-a456-426614174000</cbc:ID>
    <cbc:ContractFolderID>ID-001</cbc:ContractFolderID>
    <cbc:IssueDate>2026-03-06</cbc:IssueDate>
-   <cbc:IssueTime>10:00:00</cbc:IssueTime>
+   <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
    <cbc:VersionID>ID-001</cbc:VersionID>
    <cac:AdditionalDocumentReference>
       <cbc:ID>ID-001</cbc:ID>
+      <cbc:DocumentTypeCode listID="urn:eu:esens:cenbii:documentType">PRO</cbc:DocumentTypeCode>
+      <cbc:DocumentStatusCode listID="urn:eu:esens:cenbii:documentStatusType">NR</cbc:DocumentStatusCode>
       <cac:Attachment>
          <cac:ExternalReference>
             <cbc:URI>https://www.publicurl.com</cbc:URI>
@@ -30,7 +32,7 @@
          <cac:PartyLegalEntity>
             <cac:RegistrationAddress>
                <cac:Country>
-                  <cbc:IdentificationCode listID="ISO3166">311</cbc:IdentificationCode>
+                  <cbc:IdentificationCode listID="ISO3166">SE</cbc:IdentificationCode>
                </cac:Country>
             </cac:RegistrationAddress>
          </cac:PartyLegalEntity>
@@ -46,13 +48,13 @@
       </cac:PartyName>
       <cac:PostalAddress>
          <cac:Country>
-            <cbc:IdentificationCode listID="sample">311</cbc:IdentificationCode>
+            <cbc:IdentificationCode listID="sample">SE</cbc:IdentificationCode>
          </cac:Country>
       </cac:PostalAddress>
       <cac:PartyLegalEntity>
          <cac:RegistrationAddress>
             <cac:Country>
-               <cbc:IdentificationCode listID="sample">311</cbc:IdentificationCode>
+               <cbc:IdentificationCode listID="sample">SE</cbc:IdentificationCode>
             </cac:Country>
          </cac:RegistrationAddress>
       </cac:PartyLegalEntity>
@@ -63,6 +65,7 @@
       </cac:Contact>
    </cac:ReceiverParty>
    <cac:TenderingTerms>
+      <cbc:MaximumVariantQuantity>1</cbc:MaximumVariantQuantity>
       <cbc:VariantConstraintIndicator>true</cbc:VariantConstraintIndicator>
       <cac:ProcurementLegislationDocumentReference>
          <cbc:ID>ID-001</cbc:ID>
@@ -76,7 +79,7 @@
       </cac:TenderRecipientParty>
    </cac:TenderingTerms>
    <cac:TenderingProcess>
-      <cbc:ProcedureCode listID="PR_PROC">311</cbc:ProcedureCode>
+      <cbc:ProcedureCode listID="PR_PROC">2</cbc:ProcedureCode>
       <cac:TenderSubmissionDeadlinePeriod>
          <cbc:EndDate>2026-03-06</cbc:EndDate>
       </cac:TenderSubmissionDeadlinePeriod>
@@ -87,7 +90,7 @@
    <cac:ProcurementProject>
       <cbc:Name>Example</cbc:Name>
       <cbc:Description>Example</cbc:Description>
-      <cbc:ProcurementTypeCode listID="PROJECT_TYPE">311</cbc:ProcurementTypeCode>
+      <cbc:ProcurementTypeCode listID="PROJECT_TYPE">1</cbc:ProcurementTypeCode>
       <cac:MainCommodityClassification>
          <cbc:ItemClassificationCode listID="CPV">311</cbc:ItemClassificationCode>
       </cac:MainCommodityClassification>
