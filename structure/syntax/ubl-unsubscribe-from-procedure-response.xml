@@ -53,7 +53,9 @@
 				<Reference type="RULE">PEPPOL-T022-R007</Reference>
 				<Value type="FIXED">urn:uuid</Value>
 			</Attribute>
+			<Value type="EXAMPLE">12e48425-fa27-4680-afe5-ed98d80321a7</Value>
 		</Element>
+		
 		<Element>
 			<Term>cbc:ContractFolderID</Term>
 			<Name>Reference number</Name>
@@ -98,6 +100,7 @@
 					<Reference type="RULE">PEPPOL-T022-R026</Reference>
 					<Value type="FIXED">urn:uuid</Value>
 				</Attribute>
+				<Value type="EXAMPLE">227d771e-bbc9-4dae-b5fa-1518b1bdbfed</Value>
 			</Element>
 		</Element>
 		<Element>
