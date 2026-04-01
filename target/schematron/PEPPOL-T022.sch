@@ -456,9 +456,9 @@
                  flag="warning"
                  test="./@*[not(name()='schemeURI')]">
             <value-of select="$syntaxError"/>[PEPPOL-T022-S318] Unsubscribe from Procedure Document Reference Identifier SHOULD NOT have any further attributes but schemeURI</report>
-        <report id="PEPPOL-T022-R028"
+        <assert id="PEPPOL-T022-R028"
                  flag="fatal"
-                 test="normalize-space(.) = normalize-space(/ubl:UnsubscribeFromProcedureResponse/cbc:ID)">[PEPPOL-T022-R028] Unsubscribe from Procedure Document Reference Identifier MUSTS NOT be identical to the Unsubscribe from Procedure Confirmation Identifier</report>
+                 test="not(normalize-space(.) = normalize-space(/ubl:UnsubscribeFromProcedureResponse/cbc:ID))">[PEPPOL-T022-R028] Unsubscribe from Procedure Document Reference Identifier MUSTS NOT be identical to the Unsubscribe from Procedure Confirmation Identifier</assert>
       </rule>
     
       <rule context="ubl:UnsubscribeFromProcedureResponse/cac:EconomicOperatorParty">
