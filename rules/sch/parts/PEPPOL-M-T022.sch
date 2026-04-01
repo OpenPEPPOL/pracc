@@ -63,7 +63,7 @@
         <assert id="PEPPOL-T022-R026" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[PEPPOL-T022-R026] schemeURI for Unsubscribe from Procedure Document Reference Identifier SHOULD be 'urn:uuid'.</assert>
         <assert id="PEPPOL-T022-R027" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">[PEPPOL-T022-R027] Unsubscribe from Procedure Document Reference Identifier value MUST be expressed in a UUID syntax (RFC 4122)</assert>
         <report id="PEPPOL-T022-S318" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>[PEPPOL-T022-S318] Unsubscribe from Procedure Document Reference Identifier SHOULD NOT have any further attributes but schemeURI</report>
-        <report id="PEPPOL-T022-R028" flag="fatal" test="normalize-space(.) = normalize-space(/ubl:UnsubscribeFromProcedureResponse/cbc:ID)">[PEPPOL-T022-R028] Unsubscribe from Procedure Document Reference Identifier MUSTS NOT be identical to the Unsubscribe from Procedure Confirmation Identifier</report>
+        <assert id="PEPPOL-T022-R028" flag="fatal" test="not(normalize-space(.) = normalize-space(/ubl:UnsubscribeFromProcedureResponse/cbc:ID))">[PEPPOL-T022-R028] Unsubscribe from Procedure Document Reference Identifier MUSTS NOT be identical to the Unsubscribe from Procedure Confirmation Identifier</assert>
     </rule>
     
     <rule context="ubl:UnsubscribeFromProcedureResponse/cac:EconomicOperatorParty">
