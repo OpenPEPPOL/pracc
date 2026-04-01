@@ -472,9 +472,9 @@
                  flag="warning"
                  test="./@*[not(name()='schemeURI')]">
             <value-of select="$syntaxError"/>[PEPPOL-T002-S318] Expression of Interest Document Reference Identifier SHOULD NOT have any further attributes but schemeURI</report>
-            <report id="PEPPOL-T002-R028"
+            <assert id="PEPPOL-T002-R028"
                  flag="fatal"
-                 test="normalize-space(.) = normalize-space(/ubl:ExpressionOfInterestResponse/cbc:ID)">[PEPPOL-T002-R028] Expression of Interest Document Reference Identifier MUSTS NOT be identical to the Expression of Interest Confirmation Identifier</report>
+                 test="not(normalize-space(.) = normalize-space(/ubl:ExpressionOfInterestResponse/cbc:ID))">[PEPPOL-T002-R028] Expression of Interest Document Reference Identifier MUSTS NOT be identical to the Expression of Interest Confirmation Identifier</assert>
         </rule>
         
         <rule context="ubl:ExpressionOfInterestResponse/cac:EconomicOperatorParty">
