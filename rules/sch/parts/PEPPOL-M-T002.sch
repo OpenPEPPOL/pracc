@@ -70,7 +70,7 @@
             <assert id="PEPPOL-T002-R026" flag="fatal" test="normalize-space(./@schemeURI)='urn:uuid'">[PEPPOL-T002-R026] schemeURI for Expression of Interest Document Reference Identifier SHOULD be 'urn:uuid'.</assert>
             <assert id="PEPPOL-T002-R027" flag="fatal" test="matches(normalize-space(.),'^[a-fA-F0-9]{8}(\-[a-fA-F0-9]{4}){3}\-[a-fA-F0-9]{12}$')">[PEPPOL-T002-R027] Expression of Interest Document Reference Identifier value MUST be expressed in a UUID syntax (RFC 4122)</assert>
             <report id="PEPPOL-T002-S318" flag="warning" test="./@*[not(name()='schemeURI')]"><value-of select="$syntaxError"/>[PEPPOL-T002-S318] Expression of Interest Document Reference Identifier SHOULD NOT have any further attributes but schemeURI</report>
-            <report id="PEPPOL-T002-R028" flag="fatal" test="normalize-space(.) = normalize-space(/ubl:ExpressionOfInterestResponse/cbc:ID)">[PEPPOL-T002-R028] Expression of Interest Document Reference Identifier MUSTS NOT be identical to the Expression of Interest Confirmation Identifier</report>
+            <assert id="PEPPOL-T002-R028" flag="fatal" test="not(normalize-space(.) = normalize-space(/ubl:ExpressionOfInterestResponse/cbc:ID))">[PEPPOL-T002-R028] Expression of Interest Document Reference Identifier MUSTS NOT be identical to the Expression of Interest Confirmation Identifier</assert>
         </rule>
         
         <rule context="ubl:ExpressionOfInterestResponse/cac:EconomicOperatorParty">
