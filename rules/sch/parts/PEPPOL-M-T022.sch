@@ -83,7 +83,6 @@
         <assert id="PEPPOL-T022-S324" flag="warning" test="count(./*)-count(./cac:PartyIdentification)-count(./cbc:EndpointID)-count(./cac:PartyName)= 0"><value-of select="$syntaxError"/>[PEPPOL-T022-S324] A ContractingParty/cac:Party element SHOULD NOT contain any other elements but EndpointID, PartyIdentification, PartyName</assert>
         <assert id="PEPPOL-T022-R014" flag="fatal" test="(./cac:PartyIdentification) and (./cbc:EndpointID)">[PEPPOL-T022-R014] An Unsubscribe from Procedure Confirmation MUST identify the Contracting Body by its party identifier and its endpoint identifier.</assert>
     </rule>    
-    
     <rule context="cac:Party">
         <report id="PEPPOL-T022-S325" flag="warning" test="count(./cac:PartyIdentification) &gt; 1"><value-of select="$syntaxError"/>[PEPPOL-T022-S325] PartyIdentification SHOULD NOT be used more than once</report>
         <report id="PEPPOL-T022-S326" flag="warning" test="count(./cac:PartyName) &gt; 1"><value-of select="$syntaxError"/>[PEPPOL-T022-S326] PartyName SHOULD NOT be used more than once</report>
